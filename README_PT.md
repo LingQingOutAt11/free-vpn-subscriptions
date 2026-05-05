@@ -4,7 +4,7 @@
 
 <p align="center"><img src="https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/assets/hero.png" alt="Free VPN Subscriptions — hourly-refreshed free VPN subscriptions for Clash, sing-box, v2ray" width="780"></p>
 
-![nós](https://img.shields.io/badge/nós-150-brightgreen) ![ativos](https://img.shields.io/badge/ativos-2284-blue) ![rtt--mediano](https://img.shields.io/badge/rtt--mediano-140ms-orange) ![atualizado](https://img.shields.io/badge/atualizado-2026-05-05_04:36_UTC-informational)
+![nós](https://img.shields.io/badge/nós-150-brightgreen) ![ativos](https://img.shields.io/badge/ativos-2285-blue) ![rtt--mediano](https://img.shields.io/badge/rtt--mediano-142ms-orange) ![atualizado](https://img.shields.io/badge/atualizado-2026-05-05_05:38_UTC-informational)
 
 > **A forma mais fácil de obter uma VPN gratuita funcional — copie um link de assinatura, cole no seu cliente, conecte.**  
 > Sem cadastro. Sem pagamento. Sem instalar nenhum binário. Atualizado a cada hora a partir de fontes públicas — cada nó publicado encaminhou tráfego HTTP real através do sing-box minutos atrás.
@@ -103,14 +103,14 @@ Novo nos clientes VPN? Escolha sua plataforma e siga o tutorial:
 ## 📊 Estatísticas ao vivo
 
 - **Nós selecionados**: 150
-- **Ativos em todas as fontes**: 2284
-- **RTT do nó mais rápido**: 23 ms
-- **RTT mediano**: 140 ms
-- **Última atualização (UTC)**: 2026-05-05 04:36 UTC
+- **Ativos em todas as fontes**: 2285
+- **RTT do nó mais rápido**: 29 ms
+- **RTT mediano**: 142 ms
+- **Última atualização (UTC)**: 2026-05-05 05:38 UTC
 
 **Mix de protocolos:** shadowsocks × 35 · trojan × 20 · vless × 85 · vmess × 10
 
-**Fontes usadas nesta execução:** `barry-far-v2ray` × 24 · `ebrasha-v2ray` × 1 · `epodonios` × 10 · `lagzian-mix` × 4 · `mahdi0024` × 5 · `mahdibland-aggregator` × 9 · `mahdibland-shadowsocks` × 8 · `mfuu-clash` × 5 · `ninjastrikers` × 76 · `pawdroid` × 1 · `ruking-clash` × 1 · `surfboard-eternity` × 5 · `vxiaov-clash` × 1
+**Fontes usadas nesta execução:** `barry-far-v2ray` × 24 · `ebrasha-v2ray` × 1 · `epodonios` × 8 · `lagzian-mix` × 2 · `mahdi0024` × 5 · `mahdibland-aggregator` × 10 · `mahdibland-shadowsocks` × 9 · `mfuu-clash` × 1 · `ninjastrikers` × 77 · `pawdroid` × 1 · `ruking-clash` × 4 · `surfboard-eternity` × 8
 
 ## ❓ Perguntas frequentes
 
