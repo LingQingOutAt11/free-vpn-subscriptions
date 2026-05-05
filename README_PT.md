@@ -4,7 +4,7 @@
 
 <p align="center"><img src="https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/assets/hero.png" alt="Free VPN Subscriptions — hourly-refreshed free VPN subscriptions for Clash, sing-box, v2ray" width="780"></p>
 
-![nós](https://img.shields.io/badge/nós-148-brightgreen) ![ativos](https://img.shields.io/badge/ativos-2253-blue) ![rtt--mediano](https://img.shields.io/badge/rtt--mediano-289ms-orange) ![atualizado](https://img.shields.io/badge/atualizado-2026-05-05_14:33_UTC-informational)
+![nós](https://img.shields.io/badge/nós-146-brightgreen) ![ativos](https://img.shields.io/badge/ativos-2249-blue) ![rtt--mediano](https://img.shields.io/badge/rtt--mediano-290ms-orange) ![atualizado](https://img.shields.io/badge/atualizado-2026-05-05_15:19_UTC-informational)
 
 > **A forma mais fácil de obter uma VPN gratuita funcional — copie um link de assinatura, cole no seu cliente, conecte.**  
 > Sem cadastro. Sem pagamento. Sem instalar nenhum binário. Atualizado a cada hora a partir de fontes públicas — cada nó publicado encaminhou tráfego HTTP real através do sing-box minutos atrás.
@@ -102,15 +102,15 @@ Novo nos clientes VPN? Escolha sua plataforma e siga o tutorial:
 
 ## 📊 Estatísticas ao vivo
 
-- **Nós selecionados**: 148
-- **Ativos em todas as fontes**: 2253
-- **RTT do nó mais rápido**: 31 ms
-- **RTT mediano**: 289 ms
-- **Última atualização (UTC)**: 2026-05-05 14:33 UTC
+- **Nós selecionados**: 146
+- **Ativos em todas as fontes**: 2249
+- **RTT do nó mais rápido**: 33 ms
+- **RTT mediano**: 290 ms
+- **Última atualização (UTC)**: 2026-05-05 15:19 UTC
 
-**Mix de protocolos:** shadowsocks × 35 · trojan × 28 · vless × 73 · vmess × 12
+**Mix de protocolos:** shadowsocks × 35 · trojan × 28 · vless × 71 · vmess × 12
 
-**Fontes usadas nesta execução:** `barry-far-v2ray` × 30 · `ebrasha-v2ray` × 1 · `epodonios` × 9 · `lagzian-mix` × 3 · `mahdi0024` × 11 · `mahdibland-aggregator` × 8 · `mahdibland-shadowsocks` × 7 · `matin-v2ray` × 2 · `mfuu-clash` × 3 · `ninjastrikers` × 63 · `pawdroid` × 1 · `ruking-clash` × 1 · `snakem982` × 1 · `surfboard-eternity` × 8
+**Fontes usadas nesta execução:** `barry-far-v2ray` × 31 · `ebrasha-v2ray` × 2 · `epodonios` × 8 · `lagzian-mix` × 4 · `mahdi0024` × 9 · `mahdibland-aggregator` × 5 · `mahdibland-shadowsocks` × 12 · `matin-v2ray` × 1 · `mfuu-clash` × 3 · `ninjastrikers` × 61 · `pawdroid` × 3 · `snakem982` × 1 · `surfboard-eternity` × 5 · `vxiaov-clash` × 1
 
 ## ❓ Perguntas frequentes
 
