@@ -1,9 +1,9 @@
 proxies:
     - cipher: aes-128-gcm
-      name: "01-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.240-4052"
+      name: "01-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.241-4048"
       password: shadowsocks
       port: 443
-      server: 149.22.87.240
+      server: 149.22.87.241
       type: ss
       udp: true
     - cipher: aes-128-gcm
@@ -14,10 +14,10 @@ proxies:
       type: ss
       udp: true
     - cipher: aes-128-gcm
-      name: "03-shadowsocks-\U0001F1EF\U0001F1F5 Join Telegram:@Farah_VPN \U0001F1EF\U0001F1F5"
+      name: "03-shadowsocks-\U0001F1EF\U0001F1F5 JP | SS | @outlinereleasedkey 1"
       password: shadowsocks
       port: 443
-      server: 149.22.87.241
+      server: 149.22.87.240
       type: ss
       udp: true
     - client-fingerprint: chrome
@@ -34,33 +34,23 @@ proxies:
       type: vless
       udp: true
       uuid: 15b84012-d261-4b4c-807a-061bb4a901fd
-    - name: 05-trojan-⚡ b2n.ir/v2ray-configs | 158
-      password: ba62c023f9bce796ae334fecb20ef7cc
-      port: 2511
-      server: 18.179.108.192
-      skip-cert-verify: true
-      sni: www.nintendogames.net
-      type: trojan
-      udp: true
 proxy-groups:
     - interval: 300
       name: auto
       proxies:
-        - "01-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.240-4052"
+        - "01-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.241-4048"
         - "02-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.204-0216"
-        - "03-shadowsocks-\U0001F1EF\U0001F1F5 Join Telegram:@Farah_VPN \U0001F1EF\U0001F1F5"
+        - "03-shadowsocks-\U0001F1EF\U0001F1F5 JP | SS | @outlinereleasedkey 1"
         - "04-vless-\U0001F534\U0001F1EF\U0001F1F5[\U0001F3AC\U0001F916\U0001F4FA\U0001F3AA]_github.com/Ruk1ng001_c6654493"
-        - 05-trojan-⚡ b2n.ir/v2ray-configs | 158
       type: url-test
       url: https://www.gstatic.com/generate_204
     - name: select
       proxies:
         - auto
-        - "01-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.240-4052"
+        - "01-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.241-4048"
         - "02-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.204-0216"
-        - "03-shadowsocks-\U0001F1EF\U0001F1F5 Join Telegram:@Farah_VPN \U0001F1EF\U0001F1F5"
+        - "03-shadowsocks-\U0001F1EF\U0001F1F5 JP | SS | @outlinereleasedkey 1"
         - "04-vless-\U0001F534\U0001F1EF\U0001F1F5[\U0001F3AC\U0001F916\U0001F4FA\U0001F3AA]_github.com/Ruk1ng001_c6654493"
-        - 05-trojan-⚡ b2n.ir/v2ray-configs | 158
       type: select
 rules:
     - MATCH,select
