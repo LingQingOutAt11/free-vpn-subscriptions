@@ -1,29 +1,37 @@
 {
   "outbounds": [
     {
-      "server": "45.131.209.191",
+      "method": "aes-256-cfb",
+      "password": "f8f7aCzcPKbsF8p3",
+      "server": "79.127.227.53",
+      "server_port": 989,
+      "tag": "01-shadowsocks-🇳🇱NL-79.127.227.53-0270",
+      "type": "shadowsocks"
+    },
+    {
+      "method": "aes-256-cfb",
+      "password": "f8f7aCzcPKbsF8p3",
+      "server": "51.15.23.166",
+      "server_port": 989,
+      "tag": "02-shadowsocks-🇳🇱NL-51.15.23.166-0245",
+      "type": "shadowsocks"
+    },
+    {
+      "server": "45.131.211.238",
       "server_port": 2096,
-      "tag": "01-vless-\u003e\u003e@oneclickvpnkeys::US",
+      "tag": "03-vless-🕳️42@oneclickvpnkeys",
       "tls": {
         "enabled": true,
         "insecure": false,
-        "server_name": "sni.my111000.tech"
+        "server_name": "sni.jpmj.dev"
       },
       "type": "vless",
       "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d"
     },
     {
-      "method": "aes-128-cfb",
-      "password": "shadowsocks",
-      "server": "109.201.152.181",
-      "server_port": 443,
-      "tag": "02-shadowsocks-🇳🇱NL-109.201.152.181-0265",
-      "type": "shadowsocks"
-    },
-    {
       "server": "5.10.247.138",
       "server_port": 2096,
-      "tag": "03-vless-\u003e\u003e@oneclickvpnkeys::US",
+      "tag": "04-vless-\u003e\u003e@oneclickvpnkeys::US",
       "tls": {
         "enabled": true,
         "insecure": false,
@@ -33,20 +41,25 @@
       "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d"
     },
     {
-      "method": "aes-256-cfb",
-      "password": "f8f7aCzcPKbsF8p3",
-      "server": "51.15.23.63",
-      "server_port": 989,
-      "tag": "04-shadowsocks-🇳🇱NL-51.15.23.63-0297",
-      "type": "shadowsocks"
+      "server": "45.131.209.191",
+      "server_port": 2096,
+      "tag": "05-vless-\u003e\u003e@oneclickvpnkeys::US",
+      "tls": {
+        "enabled": true,
+        "insecure": false,
+        "server_name": "sni.my111000.tech"
+      },
+      "type": "vless",
+      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d"
     },
     {
       "interval": "5m",
       "outbounds": [
-        "01-vless-\u003e\u003e@oneclickvpnkeys::US",
-        "02-shadowsocks-🇳🇱NL-109.201.152.181-0265",
-        "03-vless-\u003e\u003e@oneclickvpnkeys::US",
-        "04-shadowsocks-🇳🇱NL-51.15.23.63-0297"
+        "01-shadowsocks-🇳🇱NL-79.127.227.53-0270",
+        "02-shadowsocks-🇳🇱NL-51.15.23.166-0245",
+        "03-vless-🕳️42@oneclickvpnkeys",
+        "04-vless-\u003e\u003e@oneclickvpnkeys::US",
+        "05-vless-\u003e\u003e@oneclickvpnkeys::US"
       ],
       "tag": "auto",
       "type": "urltest",
@@ -55,10 +68,11 @@
     {
       "outbounds": [
         "auto",
-        "01-vless-\u003e\u003e@oneclickvpnkeys::US",
-        "02-shadowsocks-🇳🇱NL-109.201.152.181-0265",
-        "03-vless-\u003e\u003e@oneclickvpnkeys::US",
-        "04-shadowsocks-🇳🇱NL-51.15.23.63-0297"
+        "01-shadowsocks-🇳🇱NL-79.127.227.53-0270",
+        "02-shadowsocks-🇳🇱NL-51.15.23.166-0245",
+        "03-vless-🕳️42@oneclickvpnkeys",
+        "04-vless-\u003e\u003e@oneclickvpnkeys::US",
+        "05-vless-\u003e\u003e@oneclickvpnkeys::US"
       ],
       "tag": "select",
       "type": "selector"
