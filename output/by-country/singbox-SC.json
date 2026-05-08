@@ -1,9 +1,17 @@
 {
   "outbounds": [
     {
+      "method": "aes-256-cfb",
+      "password": "f8f7aCzcPKbsF8p3",
+      "server": "154.90.63.177",
+      "server_port": 989,
+      "tag": "01-shadowsocks-🇸🇨SC-154.90.63.177-0272",
+      "type": "shadowsocks"
+    },
+    {
       "server": "156.243.83.138",
       "server_port": 2096,
-      "tag": "01-vless-🐵23@oneclickvpnkeys",
+      "tag": "02-vless-🐵23@oneclickvpnkeys",
       "tls": {
         "enabled": true,
         "insecure": false,
@@ -15,25 +23,17 @@
     {
       "method": "aes-256-cfb",
       "password": "f8f7aCzcPKbsF8p3",
-      "server": "154.90.63.177",
-      "server_port": 989,
-      "tag": "02-shadowsocks-🇸🇨SC-154.90.63.177-0272",
-      "type": "shadowsocks"
-    },
-    {
-      "method": "aes-256-cfb",
-      "password": "f8f7aCzcPKbsF8p3",
       "server": "154.90.62.168",
       "server_port": 989,
-      "tag": "03-shadowsocks-🇸🇨SC-154.90.62.168-0202",
+      "tag": "03-shadowsocks-🇸🇨SC-154.90.62.168-0270",
       "type": "shadowsocks"
     },
     {
       "interval": "5m",
       "outbounds": [
-        "01-vless-🐵23@oneclickvpnkeys",
-        "02-shadowsocks-🇸🇨SC-154.90.63.177-0272",
-        "03-shadowsocks-🇸🇨SC-154.90.62.168-0202"
+        "01-shadowsocks-🇸🇨SC-154.90.63.177-0272",
+        "02-vless-🐵23@oneclickvpnkeys",
+        "03-shadowsocks-🇸🇨SC-154.90.62.168-0270"
       ],
       "tag": "auto",
       "type": "urltest",
@@ -42,9 +42,9 @@
     {
       "outbounds": [
         "auto",
-        "01-vless-🐵23@oneclickvpnkeys",
-        "02-shadowsocks-🇸🇨SC-154.90.63.177-0272",
-        "03-shadowsocks-🇸🇨SC-154.90.62.168-0202"
+        "01-shadowsocks-🇸🇨SC-154.90.63.177-0272",
+        "02-vless-🐵23@oneclickvpnkeys",
+        "03-shadowsocks-🇸🇨SC-154.90.62.168-0270"
       ],
       "tag": "select",
       "type": "selector"
