@@ -1,10 +1,10 @@
 proxies:
     - alterId: 0
       cipher: auto
-      name: "01-vmess-\U0001F1E8\U0001F1FF CZ 1"
+      name: "01-vmess-\U0001F1EC\U0001F1E7 英国 V2CROSS.COM"
       network: tcp
       port: 180
-      server: 82.198.246.97
+      server: 82.198.246.214
       type: vmess
       udp: true
       uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
@@ -19,28 +19,28 @@ proxies:
       uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
     - alterId: 0
       cipher: auto
-      name: "03-vmess-\U0001F1FA\U0001F1F8 美国 | USA 7"
-      network: tcp
-      port: 180
-      server: 82.198.246.233
-      type: vmess
-      udp: true
-      uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    - alterId: 0
-      cipher: auto
-      name: "04-vmess-\U0001F1EC\U0001F1E7 英国 V2CROSS.COM"
-      network: tcp
-      port: 180
-      server: 82.198.246.214
-      type: vmess
-      udp: true
-      uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    - alterId: 0
-      cipher: auto
-      name: "05-vmess-\U0001F1FA\U0001F1F8 Join+Telegram:@Farah_VPN \U0001F1FA\U0001F1F8"
+      name: "03-vmess-\U0001F1FA\U0001F1F8 Join+Telegram:@Farah_VPN \U0001F1FA\U0001F1F8"
       network: tcp
       port: 180
       server: 82.198.246.250
+      type: vmess
+      udp: true
+      uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    - alterId: 0
+      cipher: auto
+      name: "04-vmess-\U0001F1EC\U0001F1E7 GB英国(mibei77.com 米贝节点分享)"
+      network: tcp
+      port: 180
+      server: 82.198.246.97
+      type: vmess
+      udp: true
+      uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    - alterId: 0
+      cipher: auto
+      name: "05-vmess-\U0001F1FA\U0001F1F8 美国 | USA 7"
+      network: tcp
+      port: 180
+      server: 82.198.246.233
       type: vmess
       udp: true
       uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
@@ -68,11 +68,11 @@ proxy-groups:
     - interval: 300
       name: auto
       proxies:
-        - "01-vmess-\U0001F1E8\U0001F1FF CZ 1"
+        - "01-vmess-\U0001F1EC\U0001F1E7 英国 V2CROSS.COM"
         - "02-vmess-\U0001F1FA\U0001F1F8 US美国(mibei77.com 米贝节点分享)"
-        - "03-vmess-\U0001F1FA\U0001F1F8 美国 | USA 7"
-        - "04-vmess-\U0001F1EC\U0001F1E7 英国 V2CROSS.COM"
-        - "05-vmess-\U0001F1FA\U0001F1F8 Join+Telegram:@Farah_VPN \U0001F1FA\U0001F1F8"
+        - "03-vmess-\U0001F1FA\U0001F1F8 Join+Telegram:@Farah_VPN \U0001F1FA\U0001F1F8"
+        - "04-vmess-\U0001F1EC\U0001F1E7 GB英国(mibei77.com 米贝节点分享)"
+        - "05-vmess-\U0001F1FA\U0001F1F8 美国 | USA 7"
         - "06-vless-\U0001F31E58@oneclickvpnkeys"
         - 07-vless->>@oneclickvpnkeys::US
       type: url-test
@@ -80,11 +80,11 @@ proxy-groups:
     - name: select
       proxies:
         - auto
-        - "01-vmess-\U0001F1E8\U0001F1FF CZ 1"
+        - "01-vmess-\U0001F1EC\U0001F1E7 英国 V2CROSS.COM"
         - "02-vmess-\U0001F1FA\U0001F1F8 US美国(mibei77.com 米贝节点分享)"
-        - "03-vmess-\U0001F1FA\U0001F1F8 美国 | USA 7"
-        - "04-vmess-\U0001F1EC\U0001F1E7 英国 V2CROSS.COM"
-        - "05-vmess-\U0001F1FA\U0001F1F8 Join+Telegram:@Farah_VPN \U0001F1FA\U0001F1F8"
+        - "03-vmess-\U0001F1FA\U0001F1F8 Join+Telegram:@Farah_VPN \U0001F1FA\U0001F1F8"
+        - "04-vmess-\U0001F1EC\U0001F1E7 GB英国(mibei77.com 米贝节点分享)"
+        - "05-vmess-\U0001F1FA\U0001F1F8 美国 | USA 7"
         - "06-vless-\U0001F31E58@oneclickvpnkeys"
         - 07-vless->>@oneclickvpnkeys::US
       type: select
