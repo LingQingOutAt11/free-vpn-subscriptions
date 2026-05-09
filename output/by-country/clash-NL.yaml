@@ -9,8 +9,8 @@ proxies:
     - name: 02-vless->>@oneclickvpnkeys::US
       network: ws
       port: 2096
-      server: 45.131.209.191
-      servername: sni.my111000.tech
+      server: 5.10.247.138
+      servername: sni.111000.indevs.in
       skip-cert-verify: false
       tls: true
       type: vless
@@ -19,8 +19,8 @@ proxies:
     - name: 03-vless->>@oneclickvpnkeys::US
       network: ws
       port: 2096
-      server: 5.10.247.138
-      servername: sni.111000.indevs.in
+      server: 45.131.209.191
+      servername: sni.my111000.tech
       skip-cert-verify: false
       tls: true
       type: vless
@@ -28,7 +28,35 @@ proxies:
       uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
     - client-fingerprint: chrome
       flow: xtls-rprx-vision
-      name: 04-vless-v2ray_dalghak
+      name: 04-vless->>@oneclickvpnkeys::NL
+      network: tcp
+      port: 23576
+      reality-opts:
+        public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+        short-id: "01"
+      server: 51.158.206.19
+      servername: fuck.rkn
+      tls: true
+      type: vless
+      udp: true
+      uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    - client-fingerprint: chrome
+      flow: xtls-rprx-vision
+      name: "05-vless-\U0001F51127@oneclickvpnkeys"
+      network: tcp
+      port: 23576
+      reality-opts:
+        public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+        short-id: "01"
+      server: 51.158.206.80
+      servername: fuck.rkn
+      tls: true
+      type: vless
+      udp: true
+      uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    - client-fingerprint: chrome
+      flow: xtls-rprx-vision
+      name: 06-vless-v2ray_dalghak
       network: tcp
       port: 23576
       reality-opts:
@@ -42,7 +70,7 @@ proxies:
       uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
     - client-fingerprint: chrome
       flow: xtls-rprx-vision
-      name: "05-vless-\U0001F33377@oneclickvpnkeys"
+      name: "07-vless-\U0001F30F23@oneclickvpnkeys"
       network: tcp
       port: 8443
       reality-opts:
@@ -61,8 +89,10 @@ proxy-groups:
         - "01-shadowsocks-\U0001F1F3\U0001F1F1NL-109.201.152.181-4178"
         - 02-vless->>@oneclickvpnkeys::US
         - 03-vless->>@oneclickvpnkeys::US
-        - 04-vless-v2ray_dalghak
-        - "05-vless-\U0001F33377@oneclickvpnkeys"
+        - 04-vless->>@oneclickvpnkeys::NL
+        - "05-vless-\U0001F51127@oneclickvpnkeys"
+        - 06-vless-v2ray_dalghak
+        - "07-vless-\U0001F30F23@oneclickvpnkeys"
       type: url-test
       url: https://www.gstatic.com/generate_204
     - name: select
@@ -71,8 +101,10 @@ proxy-groups:
         - "01-shadowsocks-\U0001F1F3\U0001F1F1NL-109.201.152.181-4178"
         - 02-vless->>@oneclickvpnkeys::US
         - 03-vless->>@oneclickvpnkeys::US
-        - 04-vless-v2ray_dalghak
-        - "05-vless-\U0001F33377@oneclickvpnkeys"
+        - 04-vless->>@oneclickvpnkeys::NL
+        - "05-vless-\U0001F51127@oneclickvpnkeys"
+        - 06-vless-v2ray_dalghak
+        - "07-vless-\U0001F30F23@oneclickvpnkeys"
       type: select
 rules:
     - MATCH,select
