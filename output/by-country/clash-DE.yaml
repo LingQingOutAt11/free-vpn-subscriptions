@@ -19,16 +19,7 @@ proxies:
       uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
     - alterId: 0
       cipher: auto
-      name: "03-vmess-\U0001F1FA\U0001F1F8 美国 | USA 5"
-      network: tcp
-      port: 180
-      server: 82.198.246.250
-      type: vmess
-      udp: true
-      uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    - alterId: 0
-      cipher: auto
-      name: 04-vmess-英国 V2CROSS.COM
+      name: 03-vmess-英国 V2CROSS.COM
       network: tcp
       port: 180
       server: 82.198.246.233
@@ -37,10 +28,19 @@ proxies:
       uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
     - alterId: 0
       cipher: auto
+      name: "04-vmess-\U0001F1FA\U0001F1F8 Join+Telegram:@Farah_VPN \U0001F1FA\U0001F1F8"
+      network: tcp
+      port: 180
+      server: 82.198.246.250
+      type: vmess
+      udp: true
+      uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    - alterId: 0
+      cipher: auto
       name: 05-vmess-英国 V2CROSS.COM
       network: tcp
       port: 180
-      server: 82.198.246.37
+      server: 82.198.246.9
       type: vmess
       udp: true
       uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
@@ -49,25 +49,18 @@ proxies:
       name: 06-vmess-英国 V2CROSS.COM
       network: tcp
       port: 180
-      server: 82.198.246.9
+      server: 82.198.246.37
       type: vmess
       udp: true
       uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    - cipher: aes-256-gcm
-      name: 07-shadowsocks- ⚡ [By EbraSha]
-      password: 1662abcf-b4d9-4b41-b9d6-d5b8bfe80118
-      port: 443
-      server: 84.200.91.158
-      type: ss
-      udp: true
     - cipher: chacha20-ietf-poly1305
-      name: "08-shadowsocks-\U0001F1E9\U0001F1EADE-8.209.74.72-0235"
+      name: "07-shadowsocks-\U0001F1E9\U0001F1EADE-8.209.74.72-0235"
       password: PWpjPo3tqhPN4yRZ
       port: 20001
       server: 8.209.74.72
       type: ss
       udp: true
-    - name: 09-vless->>@oneclickvpnkeys::US
+    - name: 08-vless->>@oneclickvpnkeys::US
       network: ws
       port: 2096
       server: 188.244.122.138
@@ -83,13 +76,12 @@ proxy-groups:
       proxies:
         - "01-vmess-\U0001F1E8\U0001F1FF CZ 1"
         - 02-vmess-英国 V2CROSS.COM
-        - "03-vmess-\U0001F1FA\U0001F1F8 美国 | USA 5"
-        - 04-vmess-英国 V2CROSS.COM
+        - 03-vmess-英国 V2CROSS.COM
+        - "04-vmess-\U0001F1FA\U0001F1F8 Join+Telegram:@Farah_VPN \U0001F1FA\U0001F1F8"
         - 05-vmess-英国 V2CROSS.COM
         - 06-vmess-英国 V2CROSS.COM
-        - 07-shadowsocks- ⚡ [By EbraSha]
-        - "08-shadowsocks-\U0001F1E9\U0001F1EADE-8.209.74.72-0235"
-        - 09-vless->>@oneclickvpnkeys::US
+        - "07-shadowsocks-\U0001F1E9\U0001F1EADE-8.209.74.72-0235"
+        - 08-vless->>@oneclickvpnkeys::US
       type: url-test
       url: https://www.gstatic.com/generate_204
     - name: select
@@ -97,13 +89,12 @@ proxy-groups:
         - auto
         - "01-vmess-\U0001F1E8\U0001F1FF CZ 1"
         - 02-vmess-英国 V2CROSS.COM
-        - "03-vmess-\U0001F1FA\U0001F1F8 美国 | USA 5"
-        - 04-vmess-英国 V2CROSS.COM
+        - 03-vmess-英国 V2CROSS.COM
+        - "04-vmess-\U0001F1FA\U0001F1F8 Join+Telegram:@Farah_VPN \U0001F1FA\U0001F1F8"
         - 05-vmess-英国 V2CROSS.COM
         - 06-vmess-英国 V2CROSS.COM
-        - 07-shadowsocks- ⚡ [By EbraSha]
-        - "08-shadowsocks-\U0001F1E9\U0001F1EADE-8.209.74.72-0235"
-        - 09-vless->>@oneclickvpnkeys::US
+        - "07-shadowsocks-\U0001F1E9\U0001F1EADE-8.209.74.72-0235"
+        - 08-vless->>@oneclickvpnkeys::US
       type: select
 rules:
     - MATCH,select
