@@ -1,5 +1,26 @@
 proxies:
-    - name: 01-vless->>@oneclickvpnkeys::US
+    - cipher: aes-128-cfb
+      name: "01-shadowsocks-\U0001F1F3\U0001F1F1NL-109.201.152.181-0217"
+      password: shadowsocks
+      port: 443
+      server: 109.201.152.181
+      type: ss
+      udp: true
+    - cipher: aes-256-cfb
+      name: "02-shadowsocks-\U0001F1F3\U0001F1F1NL-79.127.227.53-0293"
+      password: f8f7aCzcPKbsF8p3
+      port: 989
+      server: 79.127.227.53
+      type: ss
+      udp: true
+    - cipher: aes-256-cfb
+      name: "03-shadowsocks-\U0001F1F3\U0001F1F1NL-51.15.23.166-0229"
+      password: f8f7aCzcPKbsF8p3
+      port: 989
+      server: 51.15.23.166
+      type: ss
+      udp: true
+    - name: 04-vless->>@oneclickvpnkeys::US
       network: ws
       port: 2096
       server: 45.131.209.191
@@ -9,47 +30,9 @@ proxies:
       type: vless
       udp: true
       uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    - cipher: aes-128-cfb
-      name: "02-shadowsocks-\U0001F1F3\U0001F1F1NL-109.201.152.181-0265"
-      password: shadowsocks
-      port: 443
-      server: 109.201.152.181
-      type: ss
-      udp: true
-    - cipher: chacha20-ietf-poly1305
-      name: "03-shadowsocks-\U0001F1F3\U0001F1F1NL-159.223.236.36-0238"
-      password: WC0GbiCk67K8nHDaDHmYIX
-      port: 19582
-      server: 159.223.236.36
-      type: ss
-      udp: true
-    - cipher: aes-256-cfb
-      name: "04-shadowsocks-\U0001F1F3\U0001F1F1NL-79.127.227.53-0293"
-      password: f8f7aCzcPKbsF8p3
-      port: 989
-      server: 79.127.227.53
-      type: ss
-      udp: true
-    - name: 05-vless->>@oneclickvpnkeys::US
-      network: ws
-      port: 2096
-      server: 5.10.247.138
-      servername: sni.111000.indevs.in
-      skip-cert-verify: false
-      tls: true
-      type: vless
-      udp: true
-      uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    - cipher: aes-256-cfb
-      name: "06-shadowsocks-\U0001F1F3\U0001F1F1NL-51.15.23.166-0229"
-      password: f8f7aCzcPKbsF8p3
-      port: 989
-      server: 51.15.23.166
-      type: ss
-      udp: true
     - client-fingerprint: chrome
       flow: xtls-rprx-vision
-      name: 07-vless-v2ray_dalghak
+      name: 05-vless-v2ray_dalghak
       network: tcp
       port: 23576
       reality-opts:
@@ -63,7 +46,7 @@ proxies:
       uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
     - client-fingerprint: chrome
       flow: xtls-rprx-vision
-      name: "08-vless-\U0001F310 TCP-Reality | @Express_alaki | src @V2"
+      name: "06-vless-@v2ray313 کانالمون \U0001F62F"
       network: tcp
       port: 23576
       reality-opts:
@@ -75,63 +58,27 @@ proxies:
       type: vless
       udp: true
       uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-    - client-fingerprint: chrome
-      flow: xtls-rprx-vision
-      name: 09-vless-@VPNSSHOCEAN 306
-      network: tcp
-      port: 23576
-      reality-opts:
-        public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-        short-id: "01"
-      server: 51.158.206.29
-      servername: fuck.rkn
-      tls: true
-      type: vless
-      udp: true
-      uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-    - client-fingerprint: chrome
-      flow: xtls-rprx-vision
-      name: 10-vless-@unvisible_drops•4
-      network: tcp
-      port: 23576
-      reality-opts:
-        public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-        short-id: "01"
-      server: 51.158.206.97
-      servername: fuck.rkn
-      tls: true
-      type: vless
-      udp: true
-      uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
 proxy-groups:
     - interval: 300
       name: auto
       proxies:
-        - 01-vless->>@oneclickvpnkeys::US
-        - "02-shadowsocks-\U0001F1F3\U0001F1F1NL-109.201.152.181-0265"
-        - "03-shadowsocks-\U0001F1F3\U0001F1F1NL-159.223.236.36-0238"
-        - "04-shadowsocks-\U0001F1F3\U0001F1F1NL-79.127.227.53-0293"
-        - 05-vless->>@oneclickvpnkeys::US
-        - "06-shadowsocks-\U0001F1F3\U0001F1F1NL-51.15.23.166-0229"
-        - 07-vless-v2ray_dalghak
-        - "08-vless-\U0001F310 TCP-Reality | @Express_alaki | src @V2"
-        - 09-vless-@VPNSSHOCEAN 306
-        - 10-vless-@unvisible_drops•4
+        - "01-shadowsocks-\U0001F1F3\U0001F1F1NL-109.201.152.181-0217"
+        - "02-shadowsocks-\U0001F1F3\U0001F1F1NL-79.127.227.53-0293"
+        - "03-shadowsocks-\U0001F1F3\U0001F1F1NL-51.15.23.166-0229"
+        - 04-vless->>@oneclickvpnkeys::US
+        - 05-vless-v2ray_dalghak
+        - "06-vless-@v2ray313 کانالمون \U0001F62F"
       type: url-test
       url: https://www.gstatic.com/generate_204
     - name: select
       proxies:
         - auto
-        - 01-vless->>@oneclickvpnkeys::US
-        - "02-shadowsocks-\U0001F1F3\U0001F1F1NL-109.201.152.181-0265"
-        - "03-shadowsocks-\U0001F1F3\U0001F1F1NL-159.223.236.36-0238"
-        - "04-shadowsocks-\U0001F1F3\U0001F1F1NL-79.127.227.53-0293"
-        - 05-vless->>@oneclickvpnkeys::US
-        - "06-shadowsocks-\U0001F1F3\U0001F1F1NL-51.15.23.166-0229"
-        - 07-vless-v2ray_dalghak
-        - "08-vless-\U0001F310 TCP-Reality | @Express_alaki | src @V2"
-        - 09-vless-@VPNSSHOCEAN 306
-        - 10-vless-@unvisible_drops•4
+        - "01-shadowsocks-\U0001F1F3\U0001F1F1NL-109.201.152.181-0217"
+        - "02-shadowsocks-\U0001F1F3\U0001F1F1NL-79.127.227.53-0293"
+        - "03-shadowsocks-\U0001F1F3\U0001F1F1NL-51.15.23.166-0229"
+        - 04-vless->>@oneclickvpnkeys::US
+        - 05-vless-v2ray_dalghak
+        - "06-vless-@v2ray313 کانالمون \U0001F62F"
       type: select
 rules:
     - MATCH,select
