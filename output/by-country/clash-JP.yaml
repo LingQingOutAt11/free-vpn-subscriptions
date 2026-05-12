@@ -1,9 +1,9 @@
 proxies:
     - cipher: aes-128-gcm
-      name: "01-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.204-0236"
+      name: 01-shadowsocks- ⚡ [By EbraSha]
       password: shadowsocks
       port: 443
-      server: 149.22.87.204
+      server: 149.22.87.241
       type: ss
       udp: true
     - cipher: aes-128-gcm
@@ -14,10 +14,10 @@ proxies:
       type: ss
       udp: true
     - cipher: aes-128-gcm
-      name: 03-shadowsocks- ⚡ [By EbraSha]
+      name: "03-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.204-0236"
       password: shadowsocks
       port: 443
-      server: 149.22.87.241
+      server: 149.22.87.204
       type: ss
       udp: true
     - name: "04-trojan-\U0001F534\U0001F1EF\U0001F1F5[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_641c0ad2"
@@ -32,18 +32,18 @@ proxy-groups:
     - interval: 300
       name: auto
       proxies:
-        - "01-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.204-0236"
+        - 01-shadowsocks- ⚡ [By EbraSha]
         - "02-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.240-4052"
-        - 03-shadowsocks- ⚡ [By EbraSha]
+        - "03-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.204-0236"
         - "04-trojan-\U0001F534\U0001F1EF\U0001F1F5[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_641c0ad2"
       type: url-test
       url: https://www.gstatic.com/generate_204
     - name: select
       proxies:
         - auto
-        - "01-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.204-0236"
+        - 01-shadowsocks- ⚡ [By EbraSha]
         - "02-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.240-4052"
-        - 03-shadowsocks- ⚡ [By EbraSha]
+        - "03-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.204-0236"
         - "04-trojan-\U0001F534\U0001F1EF\U0001F1F5[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_641c0ad2"
       type: select
 rules:
