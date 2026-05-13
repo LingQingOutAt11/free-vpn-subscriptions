@@ -4,7 +4,7 @@
 
 <p align="center"><img src="https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/assets/hero.png" alt="Free VPN Subscriptions — hourly-refreshed free VPN subscriptions for Clash, sing-box, v2ray" width="780"></p>
 
-![nós](https://img.shields.io/badge/nós-150-brightgreen) ![ativos](https://img.shields.io/badge/ativos-2387-blue) ![rtt--mediano](https://img.shields.io/badge/rtt--mediano-101ms-orange) ![atualizado](https://img.shields.io/badge/atualizado-2026-05-13_10:18_UTC-informational)
+![nós](https://img.shields.io/badge/nós-150-brightgreen) ![ativos](https://img.shields.io/badge/ativos-2383-blue) ![rtt--mediano](https://img.shields.io/badge/rtt--mediano-102ms-orange) ![atualizado](https://img.shields.io/badge/atualizado-2026-05-13_11:19_UTC-informational)
 
 > **A forma mais fácil de obter uma VPN gratuita funcional — copie um link de assinatura, cole no seu cliente, conecte.**  
 > Sem cadastro. Sem pagamento. Sem instalar nenhum binário. Atualizado a cada hora a partir de fontes públicas — cada nó publicado encaminhou tráfego HTTP real através do sing-box minutos atrás.
@@ -102,14 +102,14 @@ Novo nos clientes VPN? Escolha sua plataforma e siga o tutorial:
 ## 📊 Estatísticas ao vivo
 
 - **Nós selecionados**: 150
-- **Ativos em todas as fontes**: 2387
-- **RTT do nó mais rápido**: 28 ms
-- **RTT mediano**: 101 ms
-- **Última atualização (UTC)**: 2026-05-13 10:18 UTC
+- **Ativos em todas as fontes**: 2383
+- **RTT do nó mais rápido**: 27 ms
+- **RTT mediano**: 102 ms
+- **Última atualização (UTC)**: 2026-05-13 11:19 UTC
 
-**Mix de protocolos:** shadowsocks × 36 · trojan × 14 · vless × 87 · vmess × 13
+**Mix de protocolos:** shadowsocks × 36 · trojan × 15 · vless × 86 · vmess × 13
 
-**Fontes usadas nesta execução:** `barry-far-v2ray` × 17 · `ebrasha-v2ray` × 4 · `epodonios` × 8 · `lagzian-mix` × 2 · `mahdi0024` × 37 · `mahdibland-aggregator` × 6 · `mahdibland-shadowsocks` × 5 · `matin-v2ray` × 1 · `ninjastrikers` × 60 · `pawdroid` × 3 · `snakem982` × 2 · `surfboard-eternity` × 5
+**Fontes usadas nesta execução:** `barry-far-v2ray` × 21 · `ebrasha-v2ray` × 2 · `epodonios` × 8 · `lagzian-mix` × 2 · `mahdi0024` × 35 · `mahdibland-aggregator` × 6 · `mahdibland-shadowsocks` × 6 · `ninjastrikers` × 58 · `pawdroid` × 4 · `snakem982` × 2 · `surfboard-eternity` × 5 · `vxiaov-clash` × 1
 
 ## ❓ Perguntas frequentes
 
