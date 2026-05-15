@@ -1,0 +1,71 @@
+{
+  "outbounds": [
+    {
+      "method": "aes-128-gcm",
+      "password": "shadowsocks",
+      "server": "149.22.87.240",
+      "server_port": 443,
+      "tag": "01-shadowsocks-🇯🇵JP-149.22.87.240-4052",
+      "type": "shadowsocks"
+    },
+    {
+      "method": "aes-128-gcm",
+      "password": "shadowsocks",
+      "server": "149.22.87.241",
+      "server_port": 443,
+      "tag": "02-shadowsocks-🇯🇵JP-149.22.87.241-4048",
+      "type": "shadowsocks"
+    },
+    {
+      "method": "aes-128-gcm",
+      "password": "shadowsocks",
+      "server": "149.22.87.204",
+      "server_port": 443,
+      "tag": "03-shadowsocks-🇯🇵JP-149.22.87.204-0216",
+      "type": "shadowsocks"
+    },
+    {
+      "flow": "xtls-rprx-vision",
+      "server": "jpvless.yydzx.xyz",
+      "server_port": 12083,
+      "tag": "04-vless-🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001_2dc1b2ee",
+      "tls": {
+        "enabled": true,
+        "insecure": false,
+        "server_name": "jpvless.yydzx.xyz"
+      },
+      "type": "vless",
+      "uuid": "2219a1b1-9290-4ac5-94fd-6cfc1fb25280"
+    },
+    {
+      "interval": "5m",
+      "outbounds": [
+        "01-shadowsocks-🇯🇵JP-149.22.87.240-4052",
+        "02-shadowsocks-🇯🇵JP-149.22.87.241-4048",
+        "03-shadowsocks-🇯🇵JP-149.22.87.204-0216",
+        "04-vless-🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001_2dc1b2ee"
+      ],
+      "tag": "auto",
+      "type": "urltest",
+      "url": "https://www.gstatic.com/generate_204"
+    },
+    {
+      "outbounds": [
+        "auto",
+        "01-shadowsocks-🇯🇵JP-149.22.87.240-4052",
+        "02-shadowsocks-🇯🇵JP-149.22.87.241-4048",
+        "03-shadowsocks-🇯🇵JP-149.22.87.204-0216",
+        "04-vless-🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001_2dc1b2ee"
+      ],
+      "tag": "select",
+      "type": "selector"
+    },
+    {
+      "tag": "direct",
+      "type": "direct"
+    }
+  ],
+  "route": {
+    "final": "select"
+  }
+}
