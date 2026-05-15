@@ -21,7 +21,7 @@
       "password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=",
       "server": "79.127.200.169",
       "server_port": 990,
-      "tag": "03-shadowsocks-🇨🇦CA-79.127.200.169-0045",
+      "tag": "03-shadowsocks-🇨🇦 CA 1",
       "type": "shadowsocks"
     },
     {
@@ -33,13 +33,12 @@
       "type": "shadowsocks"
     },
     {
-      "alter_id": 0,
-      "security": "auto",
-      "server": "134.195.196.211",
-      "server_port": 18000,
-      "tag": "05-vmess-🇨🇦 CA 6",
-      "type": "vmess",
-      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe"
+      "method": "chacha20-ietf-poly1305",
+      "password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=",
+      "server": "45.154.204.7",
+      "server_port": 990,
+      "tag": "05-shadowsocks-🇨🇦CA-45.154.204.7-0137",
+      "type": "shadowsocks"
     },
     {
       "method": "rc4-md5",
@@ -50,12 +49,13 @@
       "type": "shadowsocks"
     },
     {
-      "method": "chacha20-ietf-poly1305",
-      "password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=",
-      "server": "45.154.204.7",
-      "server_port": 990,
-      "tag": "07-shadowsocks-🇦🇿 SS-阿塞拜疆-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-",
-      "type": "shadowsocks"
+      "alter_id": 0,
+      "security": "auto",
+      "server": "134.195.196.211",
+      "server_port": 18000,
+      "tag": "07-vmess-🇨🇦 CA 6",
+      "type": "vmess",
+      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe"
     },
     {
       "method": "aes-256-cfb",
@@ -88,17 +88,40 @@
       "uuid": "57d94cf7-ca36-4c2a-bec5-90cf38588cda"
     },
     {
+      "flow": "xtls-rprx-vision",
+      "server": "35.182.252.92",
+      "server_port": 51072,
+      "tag": "10-vless-🇨🇦 CA 3",
+      "tls": {
+        "enabled": true,
+        "insecure": false,
+        "reality": {
+          "enabled": true,
+          "public_key": "5KJ1tLErCUEfqxc3IsnY_49p_gWe0mPB8eXJ3MLucgU",
+          "short_id": "0675732ab101"
+        },
+        "server_name": "www.sony.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "type": "vless",
+      "uuid": "b6b2c827-4ac1-4e2c-af28-dfa7edbfeb81"
+    },
+    {
       "interval": "5m",
       "outbounds": [
         "01-shadowsocks-🇨🇦CA-149.22.95.183-4005",
         "02-shadowsocks-🇨🇦 CA 5",
-        "03-shadowsocks-🇨🇦CA-79.127.200.169-0045",
+        "03-shadowsocks-🇨🇦 CA 1",
         "04-shadowsocks-🇨🇦CA-23.95.76.59-0129",
-        "05-vmess-🇨🇦 CA 6",
+        "05-shadowsocks-🇨🇦CA-45.154.204.7-0137",
         "06-shadowsocks-🇨🇦CA-137.184.174.93-0094",
-        "07-shadowsocks-🇦🇿 SS-阿塞拜疆-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-",
+        "07-vmess-🇨🇦 CA 6",
         "08-shadowsocks-🇨🇦CA-79.127.200.162-4252",
-        "09-vless-🇨🇦 CA 2"
+        "09-vless-🇨🇦 CA 2",
+        "10-vless-🇨🇦 CA 3"
       ],
       "tag": "auto",
       "type": "urltest",
@@ -109,13 +132,14 @@
         "auto",
         "01-shadowsocks-🇨🇦CA-149.22.95.183-4005",
         "02-shadowsocks-🇨🇦 CA 5",
-        "03-shadowsocks-🇨🇦CA-79.127.200.169-0045",
+        "03-shadowsocks-🇨🇦 CA 1",
         "04-shadowsocks-🇨🇦CA-23.95.76.59-0129",
-        "05-vmess-🇨🇦 CA 6",
+        "05-shadowsocks-🇨🇦CA-45.154.204.7-0137",
         "06-shadowsocks-🇨🇦CA-137.184.174.93-0094",
-        "07-shadowsocks-🇦🇿 SS-阿塞拜疆-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-",
+        "07-vmess-🇨🇦 CA 6",
         "08-shadowsocks-🇨🇦CA-79.127.200.162-4252",
-        "09-vless-🇨🇦 CA 2"
+        "09-vless-🇨🇦 CA 2",
+        "10-vless-🇨🇦 CA 3"
       ],
       "tag": "select",
       "type": "selector"
