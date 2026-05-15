@@ -3,9 +3,17 @@
     {
       "method": "aes-128-gcm",
       "password": "shadowsocks",
+      "server": "149.22.87.241",
+      "server_port": 443,
+      "tag": "01-shadowsocks- ⚡ [By EbraSha]",
+      "type": "shadowsocks"
+    },
+    {
+      "method": "aes-128-gcm",
+      "password": "shadowsocks",
       "server": "149.22.87.204",
       "server_port": 443,
-      "tag": "01-shadowsocks-🇯🇵 Join Telegram:@Farah_VPN 🇯🇵",
+      "tag": "02-shadowsocks-🇯🇵JP-149.22.87.204-3716",
       "type": "shadowsocks"
     },
     {
@@ -13,23 +21,57 @@
       "password": "shadowsocks",
       "server": "149.22.87.240",
       "server_port": 443,
-      "tag": "02-shadowsocks-🇯🇵 t.me/Natrixo AA",
+      "tag": "03-shadowsocks-🇯🇵JP-149.22.87.240-4052",
       "type": "shadowsocks"
     },
     {
-      "method": "aes-128-gcm",
-      "password": "shadowsocks",
-      "server": "149.22.87.241",
-      "server_port": 443,
-      "tag": "03-shadowsocks- ⚡ [By EbraSha]",
-      "type": "shadowsocks"
+      "flow": "xtls-rprx-vision",
+      "server": "jpvless.yydzx.xyz",
+      "server_port": 12608,
+      "tag": "04-vless-🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001_c1f78a41",
+      "tls": {
+        "enabled": true,
+        "insecure": false,
+        "server_name": "jpvless.yydzx.xyz"
+      },
+      "type": "vless",
+      "uuid": "2219a1b1-9290-4ac5-94fd-6cfc1fb25280"
+    },
+    {
+      "flow": "xtls-rprx-vision",
+      "server": "jpvless.yydzx.xyz",
+      "server_port": 12578,
+      "tag": "05-vless-🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001_d49794d1",
+      "tls": {
+        "enabled": true,
+        "insecure": false,
+        "server_name": "jpvless.yydzx.xyz"
+      },
+      "type": "vless",
+      "uuid": "2219a1b1-9290-4ac5-94fd-6cfc1fb25280"
+    },
+    {
+      "flow": "xtls-rprx-vision",
+      "server": "jpvless.yydzx.xyz",
+      "server_port": 12783,
+      "tag": "06-vless-🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001_f3f09a48",
+      "tls": {
+        "enabled": true,
+        "insecure": false,
+        "server_name": "jpvless.yydzx.xyz"
+      },
+      "type": "vless",
+      "uuid": "2219a1b1-9290-4ac5-94fd-6cfc1fb25280"
     },
     {
       "interval": "5m",
       "outbounds": [
-        "01-shadowsocks-🇯🇵 Join Telegram:@Farah_VPN 🇯🇵",
-        "02-shadowsocks-🇯🇵 t.me/Natrixo AA",
-        "03-shadowsocks- ⚡ [By EbraSha]"
+        "01-shadowsocks- ⚡ [By EbraSha]",
+        "02-shadowsocks-🇯🇵JP-149.22.87.204-3716",
+        "03-shadowsocks-🇯🇵JP-149.22.87.240-4052",
+        "04-vless-🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001_c1f78a41",
+        "05-vless-🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001_d49794d1",
+        "06-vless-🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001_f3f09a48"
       ],
       "tag": "auto",
       "type": "urltest",
@@ -38,9 +80,12 @@
     {
       "outbounds": [
         "auto",
-        "01-shadowsocks-🇯🇵 Join Telegram:@Farah_VPN 🇯🇵",
-        "02-shadowsocks-🇯🇵 t.me/Natrixo AA",
-        "03-shadowsocks- ⚡ [By EbraSha]"
+        "01-shadowsocks- ⚡ [By EbraSha]",
+        "02-shadowsocks-🇯🇵JP-149.22.87.204-3716",
+        "03-shadowsocks-🇯🇵JP-149.22.87.240-4052",
+        "04-vless-🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001_c1f78a41",
+        "05-vless-🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001_d49794d1",
+        "06-vless-🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001_f3f09a48"
       ],
       "tag": "select",
       "type": "selector"
