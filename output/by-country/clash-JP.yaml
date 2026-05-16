@@ -1,0 +1,50 @@
+proxies:
+    - cipher: aes-128-gcm
+      name: "01-shadowsocks-\U0001F1EF\U0001F1F5"
+      password: shadowsocks
+      port: 443
+      server: 149.22.87.241
+      type: ss
+      udp: true
+    - cipher: aes-128-gcm
+      name: "02-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.204-0108"
+      password: shadowsocks
+      port: 443
+      server: 149.22.87.204
+      type: ss
+      udp: true
+    - cipher: aes-128-gcm
+      name: "03-shadowsocks-\U0001F1EF\U0001F1F5 JP 2"
+      password: shadowsocks
+      port: 443
+      server: 149.22.87.240
+      type: ss
+      udp: true
+    - name: 04-trojan-美国 伊利诺伊州库克与杜佩奇县芝加哥市Nobis技术集团有限公司Ubiquity
+      password: 8r<[9'l6hAO#8ZQi
+      port: 443
+      server: 142.91.108.54
+      skip-cert-verify: true
+      sni: Koma-YT.PAGeS.Dev
+      type: trojan
+      udp: true
+proxy-groups:
+    - interval: 300
+      name: auto
+      proxies:
+        - "01-shadowsocks-\U0001F1EF\U0001F1F5"
+        - "02-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.204-0108"
+        - "03-shadowsocks-\U0001F1EF\U0001F1F5 JP 2"
+        - 04-trojan-美国 伊利诺伊州库克与杜佩奇县芝加哥市Nobis技术集团有限公司Ubiquity
+      type: url-test
+      url: https://www.gstatic.com/generate_204
+    - name: select
+      proxies:
+        - auto
+        - "01-shadowsocks-\U0001F1EF\U0001F1F5"
+        - "02-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.204-0108"
+        - "03-shadowsocks-\U0001F1EF\U0001F1F5 JP 2"
+        - 04-trojan-美国 伊利诺伊州库克与杜佩奇县芝加哥市Nobis技术集团有限公司Ubiquity
+      type: select
+rules:
+    - MATCH,select

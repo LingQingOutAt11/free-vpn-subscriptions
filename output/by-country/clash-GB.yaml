@@ -9,11 +9,11 @@ proxies:
       type: vless
       udp: true
       uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    - name: 02-vless-英国 V2CROSS.COM
+    - name: "02-vless-\U0001F43E92@oneclickvpnkeys"
       network: ws
-      port: 2096
-      server: 25.26.27.191
-      servername: sni.my111000.tech
+      port: 443
+      server: 217.163.76.46
+      servername: sni.111000.v6.navy
       skip-cert-verify: false
       tls: true
       type: vless
@@ -39,35 +39,23 @@ proxies:
       type: vless
       udp: true
       uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    - name: "05-vless-\U0001F43E92@oneclickvpnkeys"
-      network: ws
-      port: 443
-      server: 217.163.76.46
-      servername: sni.111000.v6.navy
-      skip-cert-verify: false
-      tls: true
-      type: vless
-      udp: true
-      uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
 proxy-groups:
     - interval: 300
       name: auto
       proxies:
         - 01-vless->>@oneclickvpnkeys::US
-        - 02-vless-英国 V2CROSS.COM
+        - "02-vless-\U0001F43E92@oneclickvpnkeys"
         - 03-vless->>@oneclickvpnkeys::US
         - 04-vless->>@oneclickvpnkeys::US
-        - "05-vless-\U0001F43E92@oneclickvpnkeys"
       type: url-test
       url: https://www.gstatic.com/generate_204
     - name: select
       proxies:
         - auto
         - 01-vless->>@oneclickvpnkeys::US
-        - 02-vless-英国 V2CROSS.COM
+        - "02-vless-\U0001F43E92@oneclickvpnkeys"
         - 03-vless->>@oneclickvpnkeys::US
         - 04-vless->>@oneclickvpnkeys::US
-        - "05-vless-\U0001F43E92@oneclickvpnkeys"
       type: select
 rules:
     - MATCH,select
