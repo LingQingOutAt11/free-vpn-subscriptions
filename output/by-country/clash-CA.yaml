@@ -1,20 +1,20 @@
 proxies:
     - cipher: aes-128-gcm
-      name: "01-shadowsocks-@V2raysCollector \U0001F511"
+      name: "01-shadowsocks-\U0001F1E8\U0001F1E6 CA 4"
       password: shadowsocks
       port: 443
       server: 149.22.95.183
       type: ss
       udp: true
     - cipher: aes-256-cfb
-      name: "02-shadowsocks-\U0001F1E8\U0001F1E6 CA 5"
+      name: "02-shadowsocks-\U0001F1E8\U0001F1E6CA-79.127.233.170-0051"
       password: f8f7aCzcPKbsF8p3
       port: 989
       server: 79.127.233.170
       type: ss
       udp: true
     - cipher: chacha20-ietf-poly1305
-      name: "03-shadowsocks-\U0001F1E8\U0001F1E6 t.me/Natrixo AA"
+      name: "03-shadowsocks-\U0001F1E8\U0001F1E6CA-79.127.200.169-0054"
       password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
       port: 990
       server: 79.127.200.169
@@ -29,22 +29,22 @@ proxies:
       type: vmess
       udp: true
       uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+    - cipher: chacha20-ietf-poly1305
+      name: "05-shadowsocks-\U0001F1E8\U0001F1E6 CA 8"
+      password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+      port: 990
+      server: 45.154.204.7
+      type: ss
+      udp: true
     - cipher: rc4-md5
-      name: "05-shadowsocks-\U0001F1E8\U0001F1E6CA-137.184.174.93-0058"
+      name: "06-shadowsocks-\U0001F1E8\U0001F1E6CA-137.184.174.93-0058"
       password: 14fFPrbezE3HDZzsMOr6
       port: 8080
       server: 137.184.174.93
       type: ss
       udp: true
     - cipher: chacha20-ietf-poly1305
-      name: "06-shadowsocks-\U0001F1E6\U0001F1FF SS-阿塞拜疆-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-"
-      password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
-      port: 990
-      server: 45.154.204.7
-      type: ss
-      udp: true
-    - cipher: chacha20-ietf-poly1305
-      name: 07-shadowsocks-SS-美国-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTu
+      name: "07-shadowsocks-\U0001F1E8\U0001F1E6CA-23.95.76.59-0117"
       password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
       port: 990
       server: 23.95.76.59
@@ -75,13 +75,13 @@ proxy-groups:
     - interval: 300
       name: auto
       proxies:
-        - "01-shadowsocks-@V2raysCollector \U0001F511"
-        - "02-shadowsocks-\U0001F1E8\U0001F1E6 CA 5"
-        - "03-shadowsocks-\U0001F1E8\U0001F1E6 t.me/Natrixo AA"
+        - "01-shadowsocks-\U0001F1E8\U0001F1E6 CA 4"
+        - "02-shadowsocks-\U0001F1E8\U0001F1E6CA-79.127.233.170-0051"
+        - "03-shadowsocks-\U0001F1E8\U0001F1E6CA-79.127.200.169-0054"
         - "04-vmess-\U0001F1E8\U0001F1E6 CA 6"
-        - "05-shadowsocks-\U0001F1E8\U0001F1E6CA-137.184.174.93-0058"
-        - "06-shadowsocks-\U0001F1E6\U0001F1FF SS-阿塞拜疆-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-"
-        - 07-shadowsocks-SS-美国-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTu
+        - "05-shadowsocks-\U0001F1E8\U0001F1E6 CA 8"
+        - "06-shadowsocks-\U0001F1E8\U0001F1E6CA-137.184.174.93-0058"
+        - "07-shadowsocks-\U0001F1E8\U0001F1E6CA-23.95.76.59-0117"
         - "08-shadowsocks-\U0001F1E8\U0001F1E6CA-79.127.200.162-4252"
         - "09-vless-\U0001F1E8\U0001F1E6 CA 2"
       type: url-test
@@ -89,13 +89,13 @@ proxy-groups:
     - name: select
       proxies:
         - auto
-        - "01-shadowsocks-@V2raysCollector \U0001F511"
-        - "02-shadowsocks-\U0001F1E8\U0001F1E6 CA 5"
-        - "03-shadowsocks-\U0001F1E8\U0001F1E6 t.me/Natrixo AA"
+        - "01-shadowsocks-\U0001F1E8\U0001F1E6 CA 4"
+        - "02-shadowsocks-\U0001F1E8\U0001F1E6CA-79.127.233.170-0051"
+        - "03-shadowsocks-\U0001F1E8\U0001F1E6CA-79.127.200.169-0054"
         - "04-vmess-\U0001F1E8\U0001F1E6 CA 6"
-        - "05-shadowsocks-\U0001F1E8\U0001F1E6CA-137.184.174.93-0058"
-        - "06-shadowsocks-\U0001F1E6\U0001F1FF SS-阿塞拜疆-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-"
-        - 07-shadowsocks-SS-美国-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTu
+        - "05-shadowsocks-\U0001F1E8\U0001F1E6 CA 8"
+        - "06-shadowsocks-\U0001F1E8\U0001F1E6CA-137.184.174.93-0058"
+        - "07-shadowsocks-\U0001F1E8\U0001F1E6CA-23.95.76.59-0117"
         - "08-shadowsocks-\U0001F1E8\U0001F1E6CA-79.127.200.162-4252"
         - "09-vless-\U0001F1E8\U0001F1E6 CA 2"
       type: select
