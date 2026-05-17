@@ -7,15 +7,22 @@ proxies:
       type: ss
       udp: true
     - cipher: aes-256-cfb
-      name: "02-shadowsocks-\U0001F1FA\U0001F1F8US-104.192.226.106-4194"
+      name: "02-shadowsocks-\U0001F1FA\U0001F1F8 US 43"
       password: f8f7aCzcPKbsF8p3
       port: 989
       server: 104.192.226.106
       type: ss
       udp: true
+    - name: "03-vless-\U0001F1FA\U0001F1F8 US 45"
+      network: tcp
+      port: 13000
+      server: 38.55.146.153
+      type: vless
+      udp: true
+      uuid: b852270a-1283-4ea8-8a2f-5bae8e644a3e
     - client-fingerprint: chrome
       flow: xtls-rprx-vision
-      name: "03-vless-\U0001F7E2\U0001F1FA\U0001F1F8[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_f47d6ea8"
+      name: "04-vless-\U0001F7E2\U0001F1FA\U0001F1F8[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_f47d6ea8"
       network: tcp
       port: 443
       reality-opts:
@@ -28,17 +35,10 @@ proxies:
       udp: true
       uuid: b831381d-6324-4d53-ad4f-8cda48b30811
     - cipher: aes-128-gcm
-      name: "04-shadowsocks-\U0001F1FA\U0001F1F8US-173.244.56.9-0084"
+      name: "05-shadowsocks-\U0001F1FA\U0001F1F8US-173.244.56.9-3803"
       password: shadowsocks
       port: 443
       server: 173.244.56.9
-      type: ss
-      udp: true
-    - cipher: aes-128-gcm
-      name: "05-shadowsocks-\U0001F1FA\U0001F1F8 US 38"
-      password: shadowsocks
-      port: 443
-      server: 173.244.56.6
       type: ss
       udp: true
     - name: "06-vless-\U0001F534\U0001F1FA\U0001F1F8[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_ace7e9a1"
@@ -48,7 +48,28 @@ proxies:
       type: vless
       udp: true
       uuid: e4e7866d-920b-4a53-a8e2-6ae9b2a42fc2
-    - name: "07-vless-\U0001F1FA\U0001F1F8 692 - US - VLESS/WS/TLS - 443"
+    - cipher: aes-128-gcm
+      name: "07-shadowsocks-\U0001F1FA\U0001F1F8US-173.244.56.6-0083"
+      password: shadowsocks
+      port: 443
+      server: 173.244.56.6
+      type: ss
+      udp: true
+    - cipher: chacha20-ietf-poly1305
+      name: "08-shadowsocks-\U0001F1FA\U0001F1F8 US 67"
+      password: gqkUCvmeOTghYJXF1YIuk5
+      port: 443
+      server: 71.19.148.74
+      type: ss
+      udp: true
+    - cipher: chacha20-ietf-poly1305
+      name: "09-shadowsocks-\U0001F1FA\U0001F1F8US-71.19.148.74-0193"
+      password: XUMTygEM1jVYIvysXKqA5T
+      port: 443
+      server: hackney-latest-strike.freesocks.work
+      type: ss
+      udp: true
+    - name: "10-vless-\U0001F1FA\U0001F1F8 692 - US - VLESS/WS/TLS - 443"
       network: ws
       port: 443
       server: 209.102.207.120
@@ -58,35 +79,11 @@ proxies:
       type: vless
       udp: true
       uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    - name: "08-vless-\U0001F1FA\U0001F1F8 629 - US - VLESS/WS/TLS - 2096"
+    - name: 11-vless->>@oneclickvpnkeys::US
       network: ws
       port: 2096
-      server: 155.46.167.138
-      servername: sni.111000.indevs.in
-      skip-cert-verify: false
-      tls: true
-      type: vless
-      udp: true
-      uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    - cipher: chacha20-ietf-poly1305
-      name: "09-shadowsocks-\U0001F1FA\U0001F1F8 US 68"
-      password: XUMTygEM1jVYIvysXKqA5T
-      port: 443
-      server: 71.19.148.74
-      type: ss
-      udp: true
-    - cipher: chacha20-ietf-poly1305
-      name: "10-shadowsocks-\U0001F1FA\U0001F1F8US-71.19.148.74-0193"
-      password: XUMTygEM1jVYIvysXKqA5T
-      port: 443
-      server: hackney-latest-strike.freesocks.work
-      type: ss
-      udp: true
-    - name: "11-vless-\U0001F42679@oneclickvpnkeys"
-      network: ws
-      port: 2096
-      server: 167.68.11.138
-      servername: sni.111000.indevs.in
+      server: 45.40.153.191
+      servername: sni.my111000.tech
       skip-cert-verify: false
       tls: true
       type: vless
@@ -104,107 +101,27 @@ proxies:
       uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
     - name: 13-vless->>@oneclickvpnkeys::US
       network: ws
-      port: 443
-      server: 135.84.64.226
-      servername: sni.111000.dynv6.net
-      skip-cert-verify: false
-      tls: true
-      type: vless
-      udp: true
-      uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    - name: "14-vless-\U0001F43288@oneclickvpnkeys"
-      network: ws
-      port: 443
-      server: 135.84.72.75
-      servername: sni.111000.dynv6.net
-      skip-cert-verify: false
-      tls: true
-      type: vless
-      udp: true
-      uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    - name: 15-vless->>@oneclickvpnkeys::US
-      network: ws
       port: 2096
-      server: 216.205.52.238
-      servername: sni.jpmj.dev
+      server: 104.129.166.138
+      servername: sni.111000.indevs.in
       skip-cert-verify: false
       tls: true
       type: vless
       udp: true
       uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    - name: "16-vless-\U0001F1FA\U0001F1F8 616 - US - VLESS/WS/TLS - 443"
+    - name: "14-vless-\U0001F41D70@oneclickvpnkeys"
       network: ws
       port: 443
-      server: 135.84.74.155
-      servername: sni.111000.v6.navy
+      server: 66.81.247.231
+      servername: babayaga-6i7.pages.dev
       skip-cert-verify: false
       tls: true
       type: vless
       udp: true
-      uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    - name: "17-vless-\U0001F1FA\U0001F1F8 US 45"
-      network: tcp
-      port: 13000
-      server: 38.55.146.153
-      type: vless
-      udp: true
-      uuid: b852270a-1283-4ea8-8a2f-5bae8e644a3e
-    - name: "18-vless-\U0001F1FA\U0001F1F8 690 - US - VLESS/WS/TLS - 443"
-      network: ws
-      port: 443
-      server: 199.34.228.41
-      servername: sni.111000.v6.navy
-      skip-cert-verify: false
-      tls: true
-      type: vless
-      udp: true
-      uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    - alterId: 0
-      cipher: auto
-      name: "19-vmess-Channel : @FreeConfigForYou\U0001F3F4\U0001F3F3"
-      network: tcp
-      port: 443
-      server: 165.140.216.141
-      type: vmess
-      udp: true
-      uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
-    - name: "20-vless-\U0001F1FA\U0001F1F8 611 - US - VLESS/WS/TLS - 443"
-      network: ws
-      port: 443
-      server: 135.84.72.18
-      servername: sni.111000.dynv6.net
-      skip-cert-verify: false
-      tls: true
-      type: vless
-      udp: true
-      uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    - name: 21-vless->>@oneclickvpnkeys::US
-      network: ws
-      port: 443
-      server: 216.24.57.1
-      servername: qyi.fqjd663.ggff.net
-      skip-cert-verify: false
-      tls: true
-      type: vless
-      udp: true
-      uuid: 8c4604ef-749c-4b56-adf1-7da405002a21
-    - cipher: chacha20-ietf-poly1305
-      name: "22-shadowsocks-\U0001F1FA\U0001F1F8US-149.28.255.6-0139"
-      password: GyZ5Xo0ht41vYmW3H4
-      port: 816
-      server: 149.28.255.6
-      type: ss
-      udp: true
-    - name: "23-hysteria2-\U0001F7E2\U0001F1FA\U0001F1F8[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_42e6504c"
-      password: 10550754-cf62-3d3b-ba6a-50be27a275d7
-      port: 443
-      server: 185.106.96.231
-      skip-cert-verify: false
-      sni: s559.ccgfw.top
-      type: hysteria2
+      uuid: 981fca81-5be1-41f8-ac9b-d138e8109943
     - client-fingerprint: chrome
       flow: xtls-rprx-vision
-      name: "24-vless-\U0001F1FA\U0001F1F8 US 37"
+      name: "15-vless-\U0001F1FA\U0001F1F8 US 37"
       network: tcp
       port: 443
       reality-opts:
@@ -216,7 +133,27 @@ proxies:
       type: vless
       udp: true
       uuid: e43dd231-7c75-4606-80ec-50fbb8335ce7
-    - name: 25-vless->>@oneclickvpnkeys::US
+    - name: "16-vless-\U0001F1FA\U0001F1F8 610 - US - VLESS/WS/TLS - 443"
+      network: ws
+      port: 443
+      server: 135.84.64.226
+      servername: sni.111000.dynv6.net
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    - name: 17-vless->>@oneclickvpnkeys::US
+      network: ws
+      port: 443
+      server: 216.24.57.1
+      servername: qyi.fqjd663.ggff.net
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: 8c4604ef-749c-4b56-adf1-7da405002a21
+    - name: 18-vless->>@oneclickvpnkeys::US
       network: ws
       port: 443
       server: 135.84.73.184
@@ -226,17 +163,68 @@ proxies:
       type: vless
       udp: true
       uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    - name: "26-vless-\U0001F33F25@oneclickvpnkeys"
+    - alterId: 0
+      cipher: auto
+      name: 19-vmess-@chillguy_vpn
+      network: tcp
+      port: 443
+      server: 165.140.216.141
+      type: vmess
+      udp: true
+      uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
+    - name: "20-hysteria2-\U0001F7E2\U0001F1FA\U0001F1F8[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_42e6504c"
+      password: 10550754-cf62-3d3b-ba6a-50be27a275d7
+      port: 443
+      server: 185.106.96.231
+      skip-cert-verify: false
+      sni: s559.ccgfw.top
+      type: hysteria2
+    - cipher: chacha20-ietf-poly1305
+      name: "21-shadowsocks-\U0001F1FA\U0001F1F8US-149.28.255.6-0139"
+      password: GyZ5Xo0ht41vYmW3H4
+      port: 816
+      server: 149.28.255.6
+      type: ss
+      udp: true
+    - name: 22-vless->>@oneclickvpnkeys::US
+      network: ws
+      port: 2096
+      server: 216.205.52.238
+      servername: sni.jpmj.dev
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    - name: 23-trojan-美国 V2CROSS.COM
+      password: 8r<[9'l6hAO#8ZQi
+      port: 443
+      server: 45.40.144.253
+      skip-cert-verify: true
+      sni: Koma-YT.PAGeS.Dev
+      type: trojan
+      udp: true
+    - name: 24-vless-美国 V2CROSS.COM
       network: ws
       port: 2053
-      server: 216.24.57.1
+      server: 63.141.128.3
       servername: qyi.fqjd663.ggff.net
       skip-cert-verify: false
       tls: true
       type: vless
       udp: true
       uuid: 8c4604ef-749c-4b56-adf1-7da405002a21
-    - name: "27-vless-\U0001F1FA\U0001F1F8 633 - US - VLESS/WS/TLS - 443"
+    - name: "25-vless-\U0001F1FA\U0001F1F8 611 - US - VLESS/WS/TLS - 443"
+      network: ws
+      port: 443
+      server: 135.84.72.18
+      servername: sni.111000.dynv6.net
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    - name: "26-vless-\U0001F1FA\U0001F1F8 633 - US - VLESS/WS/TLS - 443"
       network: ws
       port: 443
       server: 160.153.1.122
@@ -246,21 +234,21 @@ proxies:
       type: vless
       udp: true
       uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    - name: 28-vless->>@oneclickvpnkeys::US
+    - name: "27-vless-\U0001F33F25@oneclickvpnkeys"
       network: ws
-      port: 2096
-      server: 104.129.166.138
-      servername: sni.111000.indevs.in
+      port: 2053
+      server: 216.24.57.1
+      servername: qyi.fqjd663.ggff.net
       skip-cert-verify: false
       tls: true
       type: vless
       udp: true
-      uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    - name: "29-vless-\U0001F573️51@oneclickvpnkeys"
+      uuid: 8c4604ef-749c-4b56-adf1-7da405002a21
+    - name: "28-vless-\U0001F1FA\U0001F1F8 629 - US - VLESS/WS/TLS - 2096"
       network: ws
       port: 2096
-      server: 14.102.228.191
-      servername: sni.my111000.tech
+      server: 155.46.167.138
+      servername: sni.111000.indevs.in
       skip-cert-verify: false
       tls: true
       type: vless
@@ -268,7 +256,7 @@ proxies:
       uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
     - client-fingerprint: chrome
       flow: xtls-rprx-vision
-      name: "30-vless-\U0001F1FA\U0001F1F8 US 42"
+      name: "29-vless-\U0001F1FA\U0001F1F8 US 42"
       network: tcp
       port: 443
       reality-opts:
@@ -280,7 +268,27 @@ proxies:
       type: vless
       udp: true
       uuid: 18805ff3-b420-45de-af18-93be14024ae8
-    - name: 31-vless->>@oneclickvpnkeys::US
+    - name: "30-vless-\U0001F1FA\U0001F1F8 609 - US - VLESS/WS/TLS - 443"
+      network: ws
+      port: 443
+      server: 135.84.64.222
+      servername: sni.111000.dynv6.net
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    - name: "31-vless-\U0001F1FA\U0001F1F8 690 - US - VLESS/WS/TLS - 443"
+      network: ws
+      port: 443
+      server: 199.34.228.41
+      servername: sni.111000.v6.navy
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    - name: 32-vless->>@oneclickvpnkeys::US
       network: ws
       port: 2053
       server: witzendcomputing.com
@@ -290,42 +298,35 @@ proxies:
       type: vless
       udp: true
       uuid: 8c4604ef-749c-4b56-adf1-7da405002a21
-    - name: "32-vless-\U0001F41D70@oneclickvpnkeys"
+    - name: "33-vless-\U0001F43288@oneclickvpnkeys"
       network: ws
       port: 443
-      server: 66.81.247.231
-      servername: babayaga-6i7.pages.dev
+      server: 135.84.72.75
+      servername: sni.111000.dynv6.net
       skip-cert-verify: false
       tls: true
       type: vless
       udp: true
-      uuid: 981fca81-5be1-41f8-ac9b-d138e8109943
+      uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
     - cipher: aes-256-gcm
-      name: "33-shadowsocks-\U0001F1FA\U0001F1F8 US 40"
-      password: jd9FR12wprKPNJHg
-      port: 443
-      server: 62.146.171.57
-      type: ss
-      udp: true
-    - cipher: aes-256-gcm
-      name: "34-shadowsocks-\U0001F1FA\U0001F1F8 US 39"
-      password: jd9FR12wprKPNJHg
-      port: 80
-      server: 62.146.171.57
-      type: ss
-      udp: true
-    - cipher: aes-256-gcm
-      name: "35-shadowsocks-\U0001F1FA\U0001F1F8 US 69"
-      password: ZfbPFDdeBj0B1Txs
-      port: 80
-      server: 154.53.60.212
-      type: ss
-      udp: true
-    - cipher: aes-256-gcm
-      name: "36-shadowsocks-\U0001F1FA\U0001F1F8 US 46"
+      name: "34-shadowsocks-\U0001F1FA\U0001F1F8 US 46"
       password: 8rb580EBG4l7tO8K
       port: 443
       server: 154.53.60.197
+      type: ss
+      udp: true
+    - cipher: aes-256-gcm
+      name: "35-shadowsocks-\U0001F1FA\U0001F1F8 US 55"
+      password: QzM0NfuMNngbVnZK
+      port: 80
+      server: 144.126.145.77
+      type: ss
+      udp: true
+    - cipher: aes-256-gcm
+      name: "36-shadowsocks-\U0001F1FA\U0001F1F8 US 39"
+      password: jd9FR12wprKPNJHg
+      port: 80
+      server: 62.146.171.57
       type: ss
       udp: true
     - cipher: aes-256-gcm
@@ -336,32 +337,39 @@ proxies:
       type: ss
       udp: true
     - cipher: aes-256-gcm
-      name: "38-shadowsocks-\U0001F1FA\U0001F1F8 614 - US - SS/AEAD - 80"
+      name: "38-shadowsocks-\U0001F1FA\U0001F1F8 US 40"
+      password: jd9FR12wprKPNJHg
+      port: 443
+      server: 62.146.171.57
+      type: ss
+      udp: true
+    - cipher: aes-256-gcm
+      name: "39-shadowsocks-\U0001F1FA\U0001F1F8 614 - US - SS/AEAD - 80"
       password: 14CLBaFBqwqxBJy6
       port: 80
       server: 66.94.125.178
       type: ss
       udp: true
-    - cipher: aes-256-gcm
-      name: "39-shadowsocks-\U0001F1FA\U0001F1F8 US 55"
-      password: QzM0NfuMNngbVnZK
-      port: 80
-      server: 144.126.145.77
-      type: ss
-      udp: true
     - name: 40-vless->>@oneclickvpnkeys::US
       network: ws
-      port: 2096
-      server: 45.40.153.191
-      servername: sni.my111000.tech
+      port: 2053
+      server: franklinandwillow.com
+      servername: qyi.fqjd663.ggff.net
       skip-cert-verify: false
       tls: true
       type: vless
       udp: true
-      uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+      uuid: 8c4604ef-749c-4b56-adf1-7da405002a21
+    - cipher: aes-256-gcm
+      name: "41-shadowsocks-\U0001F1FA\U0001F1F8 US 69"
+      password: ZfbPFDdeBj0B1Txs
+      port: 80
+      server: 154.53.60.212
+      type: ss
+      udp: true
     - client-fingerprint: chrome
       flow: xtls-rprx-vision
-      name: "41-vless-\U0001F1FA\U0001F1F8 418 - US - VLESS/REALITY/PBK/SID/VISI"
+      name: "42-vless-\U0001F1FA\U0001F1F8 418 - US - VLESS/REALITY/PBK/SID/VISI"
       network: tcp
       port: 23576
       reality-opts:
@@ -373,110 +381,102 @@ proxies:
       type: vless
       udp: true
       uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    - client-fingerprint: chrome
+      flow: xtls-rprx-vision
+      name: 43-vless-@Daily_Configs
+      network: tcp
+      port: 23576
+      reality-opts:
+        public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+        short-id: "01"
+      server: 15.204.97.198
+      servername: fuck.rkn
+      tls: true
+      type: vless
+      udp: true
+      uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    - cipher: aes-128-gcm
+      name: "44-shadowsocks-\U0001F1FA\U0001F1F8 Join Telegram:@Farah_VPN \U0001F1FA\U0001F1F8"
+      password: shadowsocks
+      port: 443
+      server: 156.146.38.167
+      type: ss
+      udp: true
     - cipher: aes-256-gcm
-      name: "42-shadowsocks-\U0001F1FA\U0001F1F8 US 71"
+      name: "45-shadowsocks-\U0001F1FA\U0001F1F8 US 71"
       password: jJHq807bQ7TM0yOh
       port: 443
       server: 94.72.127.58
       type: ss
       udp: true
-    - name: "43-vless-\U0001F9F855@oneclickvpnkeys"
-      network: ws
-      port: 2053
-      server: www.bigcommerce.com
-      servername: qyi.fqjd663.ggff.net
-      skip-cert-verify: false
-      tls: true
-      type: vless
-      udp: true
-      uuid: 8c4604ef-749c-4b56-adf1-7da405002a21
-    - cipher: chacha20-ietf-poly1305
-      name: "44-shadowsocks-\U0001F1FA\U0001F1F8US-173.234.29.2-0086"
-      password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
-      port: 990
-      server: 173.234.29.2
+    - cipher: aes-128-gcm
+      name: "46-shadowsocks-\U0001F1FA\U0001F1F8US-156.146.38.169-4169"
+      password: shadowsocks
+      port: 443
+      server: 156.146.38.169
       type: ss
       udp: true
     - cipher: aes-128-gcm
-      name: "45-shadowsocks-\U0001F1FA\U0001F1F8US-156.146.38.170-0206"
+      name: "47-shadowsocks-\U0001F1FA\U0001F1F8 Join Telegram:@Farah_VPN \U0001F1FA\U0001F1F8"
       password: shadowsocks
       port: 443
       server: 156.146.38.170
       type: ss
       udp: true
     - cipher: aes-128-gcm
-      name: "46-shadowsocks-\U0001F1FA\U0001F1F8US-37.19.198.244-3684"
-      password: shadowsocks
-      port: 443
-      server: 37.19.198.244
-      type: ss
-      udp: true
-    - cipher: chacha20-ietf-poly1305
-      name: "47-shadowsocks-\U0001F1FA\U0001F1F8US-107.172.250.161-0138"
-      password: QTmLViU4VEmuwbOxUw4IXd
-      port: 59556
-      server: 107.172.250.161
-      type: ss
-      udp: true
-    - cipher: aes-128-gcm
-      name: "48-shadowsocks-\U0001F1FA\U0001F1F8US-156.146.38.168-0204"
+      name: "48-shadowsocks-\U0001F1FA\U0001F1F8US-156.146.38.168-4139"
       password: shadowsocks
       port: 443
       server: 156.146.38.168
       type: ss
       udp: true
-    - cipher: aes-128-gcm
-      name: "49-shadowsocks-\U0001F1FA\U0001F1F8US-156.146.38.169-4169"
-      password: shadowsocks
-      port: 443
-      server: 156.146.38.169
-      type: ss
-      udp: true
-    - name: 50-trojan-美国 V2CROSS.COM
-      password: 8r<[9'l6hAO#8ZQi
-      port: 443
-      server: 216.128.134.116
-      skip-cert-verify: true
-      sni: Koma-YT.PAGeS.Dev
-      type: trojan
-      udp: true
-    - flow: xtls-rprx-vision
-      name: "51-vless-\U0001F7E2\U0001F1FA\U0001F1F8[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_ca728a2c"
-      network: tcp
-      port: 17122
-      server: usvless.yydzx.xyz
-      servername: usvless.yydzx.xyz
-      skip-cert-verify: false
-      tls: true
-      type: vless
-      udp: true
-      uuid: 2219a1b1-9290-4ac5-94fd-6cfc1fb25280
-    - cipher: aes-128-gcm
-      name: "52-shadowsocks-\U0001F1FA\U0001F1F8US-156.146.38.167-0123"
-      password: shadowsocks
-      port: 443
-      server: 156.146.38.167
+    - cipher: chacha20-ietf-poly1305
+      name: "49-shadowsocks-\U0001F1FA\U0001F1F8US-107.172.250.161-0138"
+      password: QTmLViU4VEmuwbOxUw4IXd
+      port: 59556
+      server: 107.172.250.161
       type: ss
       udp: true
     - cipher: chacha20-ietf-poly1305
-      name: 53-shadowsocks- ⚡ [By EbraSha]
+      name: 50-shadowsocks- ⚡ [By EbraSha]
       password: RSo52SbxW40r
       port: 8388
       server: 108.181.57.93
       type: ss
       udp: true
+    - cipher: aes-256-gcm
+      name: "51-shadowsocks-\U0001F1FA\U0001F1F8 US 70"
+      password: mK7eN3z276Tr0vVA
+      port: 80
+      server: 154.12.240.141
+      type: ss
+      udp: true
+    - cipher: aes-128-gcm
+      name: "52-shadowsocks-\U0001F1FA\U0001F1F8US-37.19.198.236-0134"
+      password: shadowsocks
+      port: 443
+      server: 37.19.198.236
+      type: ss
+      udp: true
+    - cipher: aes-128-gcm
+      name: "53-shadowsocks-\U0001F1FA\U0001F1F8US-37.19.198.243-0224"
+      password: shadowsocks
+      port: 443
+      server: 37.19.198.243
+      type: ss
+      udp: true
     - cipher: chacha20-ietf-poly1305
-      name: "54-shadowsocks-\U0001F1FA\U0001F1F8US-167.172.249.115-4582"
+      name: 54-shadowsocks- ⚡ [By EbraSha]
       password: SUSbr2eLCXmbc64xOHhgEt
       port: 41195
       server: 167.172.249.115
       type: ss
       udp: true
-    - cipher: aes-128-gcm
-      name: "55-shadowsocks-\U0001F1FA\U0001F1F8US-37.19.198.236-4101"
-      password: shadowsocks
-      port: 443
-      server: 37.19.198.236
+    - cipher: chacha20-ietf-poly1305
+      name: "55-shadowsocks-\U0001F1FA\U0001F1F8 US 30"
+      password: elTuo73FsQwO90EbLo96Ve
+      port: 49726
+      server: 45.55.40.127
       type: ss
       udp: true
     - cipher: chacha20-ietf-poly1305
@@ -486,36 +486,29 @@ proxies:
       server: 142.93.73.182
       type: ss
       udp: true
-    - cipher: chacha20-ietf-poly1305
-      name: "57-shadowsocks-\U0001F1FA\U0001F1F8 US 30"
-      password: elTuo73FsQwO90EbLo96Ve
-      port: 49726
-      server: 45.55.40.127
+    - cipher: aes-128-gcm
+      name: "57-shadowsocks-\U0001F1FA\U0001F1F8US-37.19.198.244-0137"
+      password: shadowsocks
+      port: 443
+      server: 37.19.198.244
       type: ss
       udp: true
     - cipher: aes-128-gcm
-      name: "58-shadowsocks-\U0001F1FA\U0001F1F8US-37.19.198.160-0213"
+      name: "58-shadowsocks-\U0001F1FA\U0001F1F8US-37.19.198.160-4079"
       password: shadowsocks
       port: 443
       server: 37.19.198.160
       type: ss
       udp: true
-    - cipher: aes-128-gcm
-      name: "59-shadowsocks-\U0001F1FA\U0001F1F8US-37.19.198.243-4267"
-      password: shadowsocks
-      port: 443
-      server: 37.19.198.243
-      type: ss
-      udp: true
     - cipher: chacha20-ietf-poly1305
-      name: "60-shadowsocks-\U0001F1FA\U0001F1F8 US美国(mibei77.com 米贝节点分享)"
+      name: "59-shadowsocks-\U0001F1FA\U0001F1F8 US美国(mibei77.com 米贝节点分享)"
       password: hbGrpfvNrJsUmKmPbR3iY2
       port: 443
       server: tinkered-pennies-puppies.freesocks.work
       type: ss
       udp: true
     - client-fingerprint: chrome
-      name: "61-vless-\U0001F1FA\U0001F1F8 US 75"
+      name: "60-vless-\U0001F1FA\U0001F1F8 US 75"
       network: grpc
       port: 443
       reality-opts:
@@ -528,14 +521,7 @@ proxies:
       udp: true
       uuid: ad546c31-82ec-4558-ac49-5ce28883b59f
     - cipher: aes-256-gcm
-      name: "62-shadowsocks-\U0001F1FA\U0001F1F8 US 41"
-      password: QzM0NfuMNngbVnZK
-      port: 443
-      server: 144.126.145.77
-      type: ss
-      udp: true
-    - cipher: aes-256-gcm
-      name: "63-shadowsocks-\U0001F1FA\U0001F1F8 US 65"
+      name: "61-shadowsocks-\U0001F1FA\U0001F1F8 US 65"
       password: nKeE2ZFWVaE4DyjR
       port: 443
       server: 154.38.176.7
@@ -543,35 +529,7 @@ proxies:
       udp: true
     - client-fingerprint: chrome
       flow: xtls-rprx-vision
-      name: "64-vless-\U0001F1FA\U0001F1F8 US 57"
-      network: tcp
-      port: 443
-      reality-opts:
-        public-key: Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc
-        short-id: ""
-      server: 47.253.226.114
-      servername: www.cloudflare.com
-      tls: true
-      type: vless
-      udp: true
-      uuid: 055a1ce8-2a16-4a0d-a2c2-22826c9b2413
-    - client-fingerprint: chrome
-      flow: xtls-rprx-vision
-      name: "65-vless-\U0001F1FA\U0001F1F8 US 19"
-      network: tcp
-      port: 36925
-      reality-opts:
-        public-key: lJ9INPpO4rdnm2Tek_yg0PGFyUrBB6MoKyvqt_Mfqm0
-        short-id: ""
-      server: 137.184.218.169
-      servername: www.cloudflare.com
-      tls: true
-      type: vless
-      udp: true
-      uuid: c9fd0fb1-8251-4106-b09a-f4b426736f67
-    - client-fingerprint: chrome
-      flow: xtls-rprx-vision
-      name: 66-vless->>@oneclickvpnkeys::US
+      name: 62-vless->>@oneclickvpnkeys::US
       network: tcp
       port: 28190
       reality-opts:
@@ -585,21 +543,7 @@ proxies:
       uuid: 14c80e0e-f7ce-4991-94fc-99a1db4a9b1e
     - client-fingerprint: chrome
       flow: xtls-rprx-vision
-      name: "67-vless-\U0001F1FA\U0001F1F8 US 2"
-      network: tcp
-      port: 443
-      reality-opts:
-        public-key: nAEubzfxjDBY00k_13U-GNjviSXosEaJ5dpwnmGV90Y
-        short-id: ""
-      server: 38.54.104.230
-      servername: www.cloudflare.com
-      tls: true
-      type: vless
-      udp: true
-      uuid: 9be451e0-10a1-4344-a282-cdae536b98d3
-    - client-fingerprint: chrome
-      flow: xtls-rprx-vision
-      name: "68-vless-\U0001F1FA\U0001F1F8 US 22"
+      name: "63-vless-\U0001F1FA\U0001F1F8 US 22"
       network: tcp
       port: 56565
       reality-opts:
@@ -611,161 +555,218 @@ proxies:
       type: vless
       udp: true
       uuid: 7b188eea-b08f-42c2-bac7-d3b0e74218b8
-    - name: 69-trojan-美国 纽约DigitalOcean数据中心
-      password: 8r<[9'l6hAO#8ZQi
+    - client-fingerprint: chrome
+      flow: xtls-rprx-vision
+      name: "64-vless-\U0001F1FA\U0001F1F8 US 19"
+      network: tcp
+      port: 36925
+      reality-opts:
+        public-key: lJ9INPpO4rdnm2Tek_yg0PGFyUrBB6MoKyvqt_Mfqm0
+        short-id: ""
+      server: 137.184.218.169
+      servername: www.cloudflare.com
+      tls: true
+      type: vless
+      udp: true
+      uuid: c9fd0fb1-8251-4106-b09a-f4b426736f67
+    - client-fingerprint: chrome
+      flow: xtls-rprx-vision
+      name: "65-vless-\U0001F1FA\U0001F1F8 US 2"
+      network: tcp
       port: 443
-      server: 167.99.49.60
-      skip-cert-verify: true
+      reality-opts:
+        public-key: nAEubzfxjDBY00k_13U-GNjviSXosEaJ5dpwnmGV90Y
+        short-id: ""
+      server: 38.54.104.230
+      servername: www.cloudflare.com
+      tls: true
+      type: vless
+      udp: true
+      uuid: 9be451e0-10a1-4344-a282-cdae536b98d3
+    - cipher: aes-256-gcm
+      name: "66-shadowsocks-\U0001F1FA\U0001F1F8 US 41"
+      password: QzM0NfuMNngbVnZK
+      port: 443
+      server: 144.126.145.77
+      type: ss
+      udp: true
+    - name: 67-trojan-美国 V2CROSS.COM
+      password: 8r<[9'l6hAO#8ZQi
+      port: 8443
+      server: 205.172.57.218
+      skip-cert-verify: false
       sni: Koma-YT.PAGeS.Dev
       type: trojan
       udp: true
+    - name: 68-trojan-美国加利福尼亚州洛杉矶 V2CROSS.COM
+      password: 8r<[9'l6hAO#8ZQi
+      port: 2053
+      server: 45.156.24.228
+      skip-cert-verify: false
+      sni: Koma-YT.PAGeS.Dev
+      type: trojan
+      udp: true
+    - client-fingerprint: chrome
+      flow: xtls-rprx-vision
+      name: "69-vless-\U0001F1FA\U0001F1F8 US 59"
+      network: tcp
+      port: 10001
+      reality-opts:
+        public-key: 4jNz4Bw-FZlaX-WtfAdwK0hegY28W_k8AttGd-7hZn4
+        short-id: fb2c6678
+      server: 156.229.161.107
+      servername: www.icloud.com
+      tls: true
+      type: vless
+      udp: true
+      uuid: 9c79aceb-4649-44ea-9698-b5e9ecf6d6da
 proxy-groups:
     - interval: 300
       name: auto
       proxies:
         - 01-shadowsocks- ⚡ [By EbraSha]
-        - "02-shadowsocks-\U0001F1FA\U0001F1F8US-104.192.226.106-4194"
-        - "03-vless-\U0001F7E2\U0001F1FA\U0001F1F8[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_f47d6ea8"
-        - "04-shadowsocks-\U0001F1FA\U0001F1F8US-173.244.56.9-0084"
-        - "05-shadowsocks-\U0001F1FA\U0001F1F8 US 38"
+        - "02-shadowsocks-\U0001F1FA\U0001F1F8 US 43"
+        - "03-vless-\U0001F1FA\U0001F1F8 US 45"
+        - "04-vless-\U0001F7E2\U0001F1FA\U0001F1F8[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_f47d6ea8"
+        - "05-shadowsocks-\U0001F1FA\U0001F1F8US-173.244.56.9-3803"
         - "06-vless-\U0001F534\U0001F1FA\U0001F1F8[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_ace7e9a1"
-        - "07-vless-\U0001F1FA\U0001F1F8 692 - US - VLESS/WS/TLS - 443"
-        - "08-vless-\U0001F1FA\U0001F1F8 629 - US - VLESS/WS/TLS - 2096"
-        - "09-shadowsocks-\U0001F1FA\U0001F1F8 US 68"
-        - "10-shadowsocks-\U0001F1FA\U0001F1F8US-71.19.148.74-0193"
-        - "11-vless-\U0001F42679@oneclickvpnkeys"
+        - "07-shadowsocks-\U0001F1FA\U0001F1F8US-173.244.56.6-0083"
+        - "08-shadowsocks-\U0001F1FA\U0001F1F8 US 67"
+        - "09-shadowsocks-\U0001F1FA\U0001F1F8US-71.19.148.74-0193"
+        - "10-vless-\U0001F1FA\U0001F1F8 692 - US - VLESS/WS/TLS - 443"
+        - 11-vless->>@oneclickvpnkeys::US
         - 12-vless-@V2ray_confiig`
         - 13-vless->>@oneclickvpnkeys::US
-        - "14-vless-\U0001F43288@oneclickvpnkeys"
-        - 15-vless->>@oneclickvpnkeys::US
-        - "16-vless-\U0001F1FA\U0001F1F8 616 - US - VLESS/WS/TLS - 443"
-        - "17-vless-\U0001F1FA\U0001F1F8 US 45"
-        - "18-vless-\U0001F1FA\U0001F1F8 690 - US - VLESS/WS/TLS - 443"
-        - "19-vmess-Channel : @FreeConfigForYou\U0001F3F4\U0001F3F3"
-        - "20-vless-\U0001F1FA\U0001F1F8 611 - US - VLESS/WS/TLS - 443"
-        - 21-vless->>@oneclickvpnkeys::US
-        - "22-shadowsocks-\U0001F1FA\U0001F1F8US-149.28.255.6-0139"
-        - "23-hysteria2-\U0001F7E2\U0001F1FA\U0001F1F8[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_42e6504c"
-        - "24-vless-\U0001F1FA\U0001F1F8 US 37"
-        - 25-vless->>@oneclickvpnkeys::US
-        - "26-vless-\U0001F33F25@oneclickvpnkeys"
-        - "27-vless-\U0001F1FA\U0001F1F8 633 - US - VLESS/WS/TLS - 443"
-        - 28-vless->>@oneclickvpnkeys::US
-        - "29-vless-\U0001F573️51@oneclickvpnkeys"
-        - "30-vless-\U0001F1FA\U0001F1F8 US 42"
-        - 31-vless->>@oneclickvpnkeys::US
-        - "32-vless-\U0001F41D70@oneclickvpnkeys"
-        - "33-shadowsocks-\U0001F1FA\U0001F1F8 US 40"
-        - "34-shadowsocks-\U0001F1FA\U0001F1F8 US 39"
-        - "35-shadowsocks-\U0001F1FA\U0001F1F8 US 69"
-        - "36-shadowsocks-\U0001F1FA\U0001F1F8 US 46"
+        - "14-vless-\U0001F41D70@oneclickvpnkeys"
+        - "15-vless-\U0001F1FA\U0001F1F8 US 37"
+        - "16-vless-\U0001F1FA\U0001F1F8 610 - US - VLESS/WS/TLS - 443"
+        - 17-vless->>@oneclickvpnkeys::US
+        - 18-vless->>@oneclickvpnkeys::US
+        - 19-vmess-@chillguy_vpn
+        - "20-hysteria2-\U0001F7E2\U0001F1FA\U0001F1F8[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_42e6504c"
+        - "21-shadowsocks-\U0001F1FA\U0001F1F8US-149.28.255.6-0139"
+        - 22-vless->>@oneclickvpnkeys::US
+        - 23-trojan-美国 V2CROSS.COM
+        - 24-vless-美国 V2CROSS.COM
+        - "25-vless-\U0001F1FA\U0001F1F8 611 - US - VLESS/WS/TLS - 443"
+        - "26-vless-\U0001F1FA\U0001F1F8 633 - US - VLESS/WS/TLS - 443"
+        - "27-vless-\U0001F33F25@oneclickvpnkeys"
+        - "28-vless-\U0001F1FA\U0001F1F8 629 - US - VLESS/WS/TLS - 2096"
+        - "29-vless-\U0001F1FA\U0001F1F8 US 42"
+        - "30-vless-\U0001F1FA\U0001F1F8 609 - US - VLESS/WS/TLS - 443"
+        - "31-vless-\U0001F1FA\U0001F1F8 690 - US - VLESS/WS/TLS - 443"
+        - 32-vless->>@oneclickvpnkeys::US
+        - "33-vless-\U0001F43288@oneclickvpnkeys"
+        - "34-shadowsocks-\U0001F1FA\U0001F1F8 US 46"
+        - "35-shadowsocks-\U0001F1FA\U0001F1F8 US 55"
+        - "36-shadowsocks-\U0001F1FA\U0001F1F8 US 39"
         - "37-shadowsocks-\U0001F1FA\U0001F1F8 US 47"
-        - "38-shadowsocks-\U0001F1FA\U0001F1F8 614 - US - SS/AEAD - 80"
-        - "39-shadowsocks-\U0001F1FA\U0001F1F8 US 55"
+        - "38-shadowsocks-\U0001F1FA\U0001F1F8 US 40"
+        - "39-shadowsocks-\U0001F1FA\U0001F1F8 614 - US - SS/AEAD - 80"
         - 40-vless->>@oneclickvpnkeys::US
-        - "41-vless-\U0001F1FA\U0001F1F8 418 - US - VLESS/REALITY/PBK/SID/VISI"
-        - "42-shadowsocks-\U0001F1FA\U0001F1F8 US 71"
-        - "43-vless-\U0001F9F855@oneclickvpnkeys"
-        - "44-shadowsocks-\U0001F1FA\U0001F1F8US-173.234.29.2-0086"
-        - "45-shadowsocks-\U0001F1FA\U0001F1F8US-156.146.38.170-0206"
-        - "46-shadowsocks-\U0001F1FA\U0001F1F8US-37.19.198.244-3684"
-        - "47-shadowsocks-\U0001F1FA\U0001F1F8US-107.172.250.161-0138"
-        - "48-shadowsocks-\U0001F1FA\U0001F1F8US-156.146.38.168-0204"
-        - "49-shadowsocks-\U0001F1FA\U0001F1F8US-156.146.38.169-4169"
-        - 50-trojan-美国 V2CROSS.COM
-        - "51-vless-\U0001F7E2\U0001F1FA\U0001F1F8[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_ca728a2c"
-        - "52-shadowsocks-\U0001F1FA\U0001F1F8US-156.146.38.167-0123"
-        - 53-shadowsocks- ⚡ [By EbraSha]
-        - "54-shadowsocks-\U0001F1FA\U0001F1F8US-167.172.249.115-4582"
-        - "55-shadowsocks-\U0001F1FA\U0001F1F8US-37.19.198.236-4101"
+        - "41-shadowsocks-\U0001F1FA\U0001F1F8 US 69"
+        - "42-vless-\U0001F1FA\U0001F1F8 418 - US - VLESS/REALITY/PBK/SID/VISI"
+        - 43-vless-@Daily_Configs
+        - "44-shadowsocks-\U0001F1FA\U0001F1F8 Join Telegram:@Farah_VPN \U0001F1FA\U0001F1F8"
+        - "45-shadowsocks-\U0001F1FA\U0001F1F8 US 71"
+        - "46-shadowsocks-\U0001F1FA\U0001F1F8US-156.146.38.169-4169"
+        - "47-shadowsocks-\U0001F1FA\U0001F1F8 Join Telegram:@Farah_VPN \U0001F1FA\U0001F1F8"
+        - "48-shadowsocks-\U0001F1FA\U0001F1F8US-156.146.38.168-4139"
+        - "49-shadowsocks-\U0001F1FA\U0001F1F8US-107.172.250.161-0138"
+        - 50-shadowsocks- ⚡ [By EbraSha]
+        - "51-shadowsocks-\U0001F1FA\U0001F1F8 US 70"
+        - "52-shadowsocks-\U0001F1FA\U0001F1F8US-37.19.198.236-0134"
+        - "53-shadowsocks-\U0001F1FA\U0001F1F8US-37.19.198.243-0224"
+        - 54-shadowsocks- ⚡ [By EbraSha]
+        - "55-shadowsocks-\U0001F1FA\U0001F1F8 US 30"
         - "56-shadowsocks-\U0001F1FA\U0001F1F8 US 28"
-        - "57-shadowsocks-\U0001F1FA\U0001F1F8 US 30"
-        - "58-shadowsocks-\U0001F1FA\U0001F1F8US-37.19.198.160-0213"
-        - "59-shadowsocks-\U0001F1FA\U0001F1F8US-37.19.198.243-4267"
-        - "60-shadowsocks-\U0001F1FA\U0001F1F8 US美国(mibei77.com 米贝节点分享)"
-        - "61-vless-\U0001F1FA\U0001F1F8 US 75"
-        - "62-shadowsocks-\U0001F1FA\U0001F1F8 US 41"
-        - "63-shadowsocks-\U0001F1FA\U0001F1F8 US 65"
-        - "64-vless-\U0001F1FA\U0001F1F8 US 57"
-        - "65-vless-\U0001F1FA\U0001F1F8 US 19"
-        - 66-vless->>@oneclickvpnkeys::US
-        - "67-vless-\U0001F1FA\U0001F1F8 US 2"
-        - "68-vless-\U0001F1FA\U0001F1F8 US 22"
-        - 69-trojan-美国 纽约DigitalOcean数据中心
+        - "57-shadowsocks-\U0001F1FA\U0001F1F8US-37.19.198.244-0137"
+        - "58-shadowsocks-\U0001F1FA\U0001F1F8US-37.19.198.160-4079"
+        - "59-shadowsocks-\U0001F1FA\U0001F1F8 US美国(mibei77.com 米贝节点分享)"
+        - "60-vless-\U0001F1FA\U0001F1F8 US 75"
+        - "61-shadowsocks-\U0001F1FA\U0001F1F8 US 65"
+        - 62-vless->>@oneclickvpnkeys::US
+        - "63-vless-\U0001F1FA\U0001F1F8 US 22"
+        - "64-vless-\U0001F1FA\U0001F1F8 US 19"
+        - "65-vless-\U0001F1FA\U0001F1F8 US 2"
+        - "66-shadowsocks-\U0001F1FA\U0001F1F8 US 41"
+        - 67-trojan-美国 V2CROSS.COM
+        - 68-trojan-美国加利福尼亚州洛杉矶 V2CROSS.COM
+        - "69-vless-\U0001F1FA\U0001F1F8 US 59"
       type: url-test
       url: https://www.gstatic.com/generate_204
     - name: select
       proxies:
         - auto
         - 01-shadowsocks- ⚡ [By EbraSha]
-        - "02-shadowsocks-\U0001F1FA\U0001F1F8US-104.192.226.106-4194"
-        - "03-vless-\U0001F7E2\U0001F1FA\U0001F1F8[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_f47d6ea8"
-        - "04-shadowsocks-\U0001F1FA\U0001F1F8US-173.244.56.9-0084"
-        - "05-shadowsocks-\U0001F1FA\U0001F1F8 US 38"
+        - "02-shadowsocks-\U0001F1FA\U0001F1F8 US 43"
+        - "03-vless-\U0001F1FA\U0001F1F8 US 45"
+        - "04-vless-\U0001F7E2\U0001F1FA\U0001F1F8[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_f47d6ea8"
+        - "05-shadowsocks-\U0001F1FA\U0001F1F8US-173.244.56.9-3803"
         - "06-vless-\U0001F534\U0001F1FA\U0001F1F8[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_ace7e9a1"
-        - "07-vless-\U0001F1FA\U0001F1F8 692 - US - VLESS/WS/TLS - 443"
-        - "08-vless-\U0001F1FA\U0001F1F8 629 - US - VLESS/WS/TLS - 2096"
-        - "09-shadowsocks-\U0001F1FA\U0001F1F8 US 68"
-        - "10-shadowsocks-\U0001F1FA\U0001F1F8US-71.19.148.74-0193"
-        - "11-vless-\U0001F42679@oneclickvpnkeys"
+        - "07-shadowsocks-\U0001F1FA\U0001F1F8US-173.244.56.6-0083"
+        - "08-shadowsocks-\U0001F1FA\U0001F1F8 US 67"
+        - "09-shadowsocks-\U0001F1FA\U0001F1F8US-71.19.148.74-0193"
+        - "10-vless-\U0001F1FA\U0001F1F8 692 - US - VLESS/WS/TLS - 443"
+        - 11-vless->>@oneclickvpnkeys::US
         - 12-vless-@V2ray_confiig`
         - 13-vless->>@oneclickvpnkeys::US
-        - "14-vless-\U0001F43288@oneclickvpnkeys"
-        - 15-vless->>@oneclickvpnkeys::US
-        - "16-vless-\U0001F1FA\U0001F1F8 616 - US - VLESS/WS/TLS - 443"
-        - "17-vless-\U0001F1FA\U0001F1F8 US 45"
-        - "18-vless-\U0001F1FA\U0001F1F8 690 - US - VLESS/WS/TLS - 443"
-        - "19-vmess-Channel : @FreeConfigForYou\U0001F3F4\U0001F3F3"
-        - "20-vless-\U0001F1FA\U0001F1F8 611 - US - VLESS/WS/TLS - 443"
-        - 21-vless->>@oneclickvpnkeys::US
-        - "22-shadowsocks-\U0001F1FA\U0001F1F8US-149.28.255.6-0139"
-        - "23-hysteria2-\U0001F7E2\U0001F1FA\U0001F1F8[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_42e6504c"
-        - "24-vless-\U0001F1FA\U0001F1F8 US 37"
-        - 25-vless->>@oneclickvpnkeys::US
-        - "26-vless-\U0001F33F25@oneclickvpnkeys"
-        - "27-vless-\U0001F1FA\U0001F1F8 633 - US - VLESS/WS/TLS - 443"
-        - 28-vless->>@oneclickvpnkeys::US
-        - "29-vless-\U0001F573️51@oneclickvpnkeys"
-        - "30-vless-\U0001F1FA\U0001F1F8 US 42"
-        - 31-vless->>@oneclickvpnkeys::US
-        - "32-vless-\U0001F41D70@oneclickvpnkeys"
-        - "33-shadowsocks-\U0001F1FA\U0001F1F8 US 40"
-        - "34-shadowsocks-\U0001F1FA\U0001F1F8 US 39"
-        - "35-shadowsocks-\U0001F1FA\U0001F1F8 US 69"
-        - "36-shadowsocks-\U0001F1FA\U0001F1F8 US 46"
+        - "14-vless-\U0001F41D70@oneclickvpnkeys"
+        - "15-vless-\U0001F1FA\U0001F1F8 US 37"
+        - "16-vless-\U0001F1FA\U0001F1F8 610 - US - VLESS/WS/TLS - 443"
+        - 17-vless->>@oneclickvpnkeys::US
+        - 18-vless->>@oneclickvpnkeys::US
+        - 19-vmess-@chillguy_vpn
+        - "20-hysteria2-\U0001F7E2\U0001F1FA\U0001F1F8[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_42e6504c"
+        - "21-shadowsocks-\U0001F1FA\U0001F1F8US-149.28.255.6-0139"
+        - 22-vless->>@oneclickvpnkeys::US
+        - 23-trojan-美国 V2CROSS.COM
+        - 24-vless-美国 V2CROSS.COM
+        - "25-vless-\U0001F1FA\U0001F1F8 611 - US - VLESS/WS/TLS - 443"
+        - "26-vless-\U0001F1FA\U0001F1F8 633 - US - VLESS/WS/TLS - 443"
+        - "27-vless-\U0001F33F25@oneclickvpnkeys"
+        - "28-vless-\U0001F1FA\U0001F1F8 629 - US - VLESS/WS/TLS - 2096"
+        - "29-vless-\U0001F1FA\U0001F1F8 US 42"
+        - "30-vless-\U0001F1FA\U0001F1F8 609 - US - VLESS/WS/TLS - 443"
+        - "31-vless-\U0001F1FA\U0001F1F8 690 - US - VLESS/WS/TLS - 443"
+        - 32-vless->>@oneclickvpnkeys::US
+        - "33-vless-\U0001F43288@oneclickvpnkeys"
+        - "34-shadowsocks-\U0001F1FA\U0001F1F8 US 46"
+        - "35-shadowsocks-\U0001F1FA\U0001F1F8 US 55"
+        - "36-shadowsocks-\U0001F1FA\U0001F1F8 US 39"
         - "37-shadowsocks-\U0001F1FA\U0001F1F8 US 47"
-        - "38-shadowsocks-\U0001F1FA\U0001F1F8 614 - US - SS/AEAD - 80"
-        - "39-shadowsocks-\U0001F1FA\U0001F1F8 US 55"
+        - "38-shadowsocks-\U0001F1FA\U0001F1F8 US 40"
+        - "39-shadowsocks-\U0001F1FA\U0001F1F8 614 - US - SS/AEAD - 80"
         - 40-vless->>@oneclickvpnkeys::US
-        - "41-vless-\U0001F1FA\U0001F1F8 418 - US - VLESS/REALITY/PBK/SID/VISI"
-        - "42-shadowsocks-\U0001F1FA\U0001F1F8 US 71"
-        - "43-vless-\U0001F9F855@oneclickvpnkeys"
-        - "44-shadowsocks-\U0001F1FA\U0001F1F8US-173.234.29.2-0086"
-        - "45-shadowsocks-\U0001F1FA\U0001F1F8US-156.146.38.170-0206"
-        - "46-shadowsocks-\U0001F1FA\U0001F1F8US-37.19.198.244-3684"
-        - "47-shadowsocks-\U0001F1FA\U0001F1F8US-107.172.250.161-0138"
-        - "48-shadowsocks-\U0001F1FA\U0001F1F8US-156.146.38.168-0204"
-        - "49-shadowsocks-\U0001F1FA\U0001F1F8US-156.146.38.169-4169"
-        - 50-trojan-美国 V2CROSS.COM
-        - "51-vless-\U0001F7E2\U0001F1FA\U0001F1F8[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_ca728a2c"
-        - "52-shadowsocks-\U0001F1FA\U0001F1F8US-156.146.38.167-0123"
-        - 53-shadowsocks- ⚡ [By EbraSha]
-        - "54-shadowsocks-\U0001F1FA\U0001F1F8US-167.172.249.115-4582"
-        - "55-shadowsocks-\U0001F1FA\U0001F1F8US-37.19.198.236-4101"
+        - "41-shadowsocks-\U0001F1FA\U0001F1F8 US 69"
+        - "42-vless-\U0001F1FA\U0001F1F8 418 - US - VLESS/REALITY/PBK/SID/VISI"
+        - 43-vless-@Daily_Configs
+        - "44-shadowsocks-\U0001F1FA\U0001F1F8 Join Telegram:@Farah_VPN \U0001F1FA\U0001F1F8"
+        - "45-shadowsocks-\U0001F1FA\U0001F1F8 US 71"
+        - "46-shadowsocks-\U0001F1FA\U0001F1F8US-156.146.38.169-4169"
+        - "47-shadowsocks-\U0001F1FA\U0001F1F8 Join Telegram:@Farah_VPN \U0001F1FA\U0001F1F8"
+        - "48-shadowsocks-\U0001F1FA\U0001F1F8US-156.146.38.168-4139"
+        - "49-shadowsocks-\U0001F1FA\U0001F1F8US-107.172.250.161-0138"
+        - 50-shadowsocks- ⚡ [By EbraSha]
+        - "51-shadowsocks-\U0001F1FA\U0001F1F8 US 70"
+        - "52-shadowsocks-\U0001F1FA\U0001F1F8US-37.19.198.236-0134"
+        - "53-shadowsocks-\U0001F1FA\U0001F1F8US-37.19.198.243-0224"
+        - 54-shadowsocks- ⚡ [By EbraSha]
+        - "55-shadowsocks-\U0001F1FA\U0001F1F8 US 30"
         - "56-shadowsocks-\U0001F1FA\U0001F1F8 US 28"
-        - "57-shadowsocks-\U0001F1FA\U0001F1F8 US 30"
-        - "58-shadowsocks-\U0001F1FA\U0001F1F8US-37.19.198.160-0213"
-        - "59-shadowsocks-\U0001F1FA\U0001F1F8US-37.19.198.243-4267"
-        - "60-shadowsocks-\U0001F1FA\U0001F1F8 US美国(mibei77.com 米贝节点分享)"
-        - "61-vless-\U0001F1FA\U0001F1F8 US 75"
-        - "62-shadowsocks-\U0001F1FA\U0001F1F8 US 41"
-        - "63-shadowsocks-\U0001F1FA\U0001F1F8 US 65"
-        - "64-vless-\U0001F1FA\U0001F1F8 US 57"
-        - "65-vless-\U0001F1FA\U0001F1F8 US 19"
-        - 66-vless->>@oneclickvpnkeys::US
-        - "67-vless-\U0001F1FA\U0001F1F8 US 2"
-        - "68-vless-\U0001F1FA\U0001F1F8 US 22"
-        - 69-trojan-美国 纽约DigitalOcean数据中心
+        - "57-shadowsocks-\U0001F1FA\U0001F1F8US-37.19.198.244-0137"
+        - "58-shadowsocks-\U0001F1FA\U0001F1F8US-37.19.198.160-4079"
+        - "59-shadowsocks-\U0001F1FA\U0001F1F8 US美国(mibei77.com 米贝节点分享)"
+        - "60-vless-\U0001F1FA\U0001F1F8 US 75"
+        - "61-shadowsocks-\U0001F1FA\U0001F1F8 US 65"
+        - 62-vless->>@oneclickvpnkeys::US
+        - "63-vless-\U0001F1FA\U0001F1F8 US 22"
+        - "64-vless-\U0001F1FA\U0001F1F8 US 19"
+        - "65-vless-\U0001F1FA\U0001F1F8 US 2"
+        - "66-shadowsocks-\U0001F1FA\U0001F1F8 US 41"
+        - 67-trojan-美国 V2CROSS.COM
+        - 68-trojan-美国加利福尼亚州洛杉矶 V2CROSS.COM
+        - "69-vless-\U0001F1FA\U0001F1F8 US 59"
       type: select
 rules:
     - MATCH,select
