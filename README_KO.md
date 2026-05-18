@@ -4,7 +4,7 @@
 
 <p align="center"><img src="https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/assets/hero.png" alt="Free VPN Subscriptions — hourly-refreshed free VPN subscriptions for Clash, sing-box, v2ray" width="780"></p>
 
-![노드](https://img.shields.io/badge/노드-126-brightgreen) ![생존](https://img.shields.io/badge/생존-2298-blue) ![중앙값--rtt](https://img.shields.io/badge/중앙값--rtt-83ms-orange) ![업데이트](https://img.shields.io/badge/업데이트-2026-05-18_16:38_UTC-informational)
+![노드](https://img.shields.io/badge/노드-125-brightgreen) ![생존](https://img.shields.io/badge/생존-2291-blue) ![중앙값--rtt](https://img.shields.io/badge/중앙값--rtt-78ms-orange) ![업데이트](https://img.shields.io/badge/업데이트-2026-05-18_17:27_UTC-informational)
 
 > **작동하는 무료 VPN을 얻는 가장 쉬운 방법 —— 구독 링크를 복사하고 클라이언트에 붙여 넣고 연결하세요.**  
 > 가입 불필요. 결제 불필요. 바이너리 설치 불필요. 공개 소스에서 매시간 자동 갱신 —— 발행되는 모든 노드는 몇 분 전에 sing-box 를 통해 실제 HTTP 트래픽을 전달한 이력이 있습니다.
@@ -77,7 +77,7 @@ proxy-groups:
 
 | 국가 | 노드 수 | Clash | sing-box | v2ray |
 |---|---|---|---|---|
-| 🇺🇸 United States (`US`) | 51 | [clash-US.yaml](https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/output/by-country/clash-US.yaml) | [singbox-US.json](https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/output/by-country/singbox-US.json) | [v2ray-base64-US.txt](https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/output/by-country/v2ray-base64-US.txt) |
+| 🇺🇸 United States (`US`) | 46 | [clash-US.yaml](https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/output/by-country/clash-US.yaml) | [singbox-US.json](https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/output/by-country/singbox-US.json) | [v2ray-base64-US.txt](https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/output/by-country/v2ray-base64-US.txt) |
 | 🇩🇪 Germany (`DE`) | 8 | [clash-DE.yaml](https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/output/by-country/clash-DE.yaml) | [singbox-DE.json](https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/output/by-country/singbox-DE.json) | [v2ray-base64-DE.txt](https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/output/by-country/v2ray-base64-DE.txt) |
 | 🇳🇱 Netherlands (`NL`) | 4 | [clash-NL.yaml](https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/output/by-country/clash-NL.yaml) | [singbox-NL.json](https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/output/by-country/singbox-NL.json) | [v2ray-base64-NL.txt](https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/output/by-country/v2ray-base64-NL.txt) |
 | 🇬🇧 United Kingdom (`GB`) | 3 | [clash-GB.yaml](https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/output/by-country/clash-GB.yaml) | [singbox-GB.json](https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/output/by-country/singbox-GB.json) | [v2ray-base64-GB.txt](https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/output/by-country/v2ray-base64-GB.txt) |
@@ -101,15 +101,15 @@ proxy-groups:
 
 ## 📊 실시간 통계
 
-- **선정된 노드**: 126
-- **전체 소스 생존 수**: 2298
-- **최고 속도 RTT**: 31 ms
-- **중앙값 RTT**: 83 ms
-- **최종 업데이트 (UTC)**: 2026-05-18 16:38 UTC
+- **선정된 노드**: 125
+- **전체 소스 생존 수**: 2291
+- **최고 속도 RTT**: 30 ms
+- **중앙값 RTT**: 78 ms
+- **최종 업데이트 (UTC)**: 2026-05-18 17:27 UTC
 
-**프로토콜 분포:** hysteria2 × 1 · shadowsocks × 16 · trojan × 22 · vless × 68 · vmess × 19
+**프로토콜 분포:** shadowsocks × 14 · trojan × 25 · vless × 67 · vmess × 19
 
-**이번 실행에 사용된 소스:** `barry-far-v2ray` × 24 · `ebrasha-v2ray` × 1 · `epodonios` × 7 · `lagzian-mix` × 1 · `mahdi0024` × 21 · `mahdibland-aggregator` × 4 · `mahdibland-shadowsocks` × 5 · `mfuu-clash` × 1 · `ninjastrikers` × 50 · `pawdroid` × 6 · `ruking-clash` × 2 · `surfboard-eternity` × 4
+**이번 실행에 사용된 소스:** `barry-far-v2ray` × 22 · `epodonios` × 6 · `lagzian-mix` × 1 · `mahdi0024` × 19 · `mahdibland-aggregator` × 2 · `mahdibland-shadowsocks` × 4 · `ninjastrikers` × 53 · `pawdroid` × 10 · `ruking-clash` × 3 · `surfboard-eternity` × 5
 
 ## ❓ 자주 묻는 질문
 
