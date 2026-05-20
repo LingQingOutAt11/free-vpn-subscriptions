@@ -1,23 +1,23 @@
 proxies:
     - cipher: aes-128-gcm
-      name: "01-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.240-4052"
+      name: "01-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.241-4048"
       password: shadowsocks
       port: 443
-      server: 149.22.87.240
+      server: 149.22.87.241
       type: ss
       udp: true
     - cipher: aes-128-gcm
-      name: "02-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.204-3716"
+      name: "02-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.204-0140"
       password: shadowsocks
       port: 443
       server: 149.22.87.204
       type: ss
       udp: true
     - cipher: aes-128-gcm
-      name: "03-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.241-4048"
+      name: "03-shadowsocks-\U0001F1EF\U0001F1F5 JP | SS | @outlinereleasedkey 1"
       password: shadowsocks
       port: 443
-      server: 149.22.87.241
+      server: 149.22.87.240
       type: ss
       udp: true
     - alterId: 1
@@ -29,32 +29,23 @@ proxies:
       type: vmess
       udp: true
       uuid: 04621bae-ab36-11ec-b909-0242ac120002
-    - name: "05-vless-\U0001F1EF\U0001F1F5 JP 2"
-      network: ws
-      port: 25242
-      server: 47.79.144.103
-      type: vless
-      udp: true
-      uuid: a12b0d31-f599-498e-b76e-8558a14b766b
 proxy-groups:
     - interval: 300
       name: auto
       proxies:
-        - "01-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.240-4052"
-        - "02-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.204-3716"
-        - "03-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.241-4048"
+        - "01-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.241-4048"
+        - "02-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.204-0140"
+        - "03-shadowsocks-\U0001F1EF\U0001F1F5 JP | SS | @outlinereleasedkey 1"
         - "04-vmess-\U0001F1EF\U0001F1F5 JP 1"
-        - "05-vless-\U0001F1EF\U0001F1F5 JP 2"
       type: url-test
       url: https://www.gstatic.com/generate_204
     - name: select
       proxies:
         - auto
-        - "01-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.240-4052"
-        - "02-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.204-3716"
-        - "03-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.241-4048"
+        - "01-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.241-4048"
+        - "02-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.204-0140"
+        - "03-shadowsocks-\U0001F1EF\U0001F1F5 JP | SS | @outlinereleasedkey 1"
         - "04-vmess-\U0001F1EF\U0001F1F5 JP 1"
-        - "05-vless-\U0001F1EF\U0001F1F5 JP 2"
       type: select
 rules:
     - MATCH,select
