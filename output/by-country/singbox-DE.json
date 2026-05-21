@@ -1,21 +1,21 @@
 {
   "outbounds": [
     {
-      "server": "188.244.122.138",
-      "server_port": 2096,
-      "tag": "01-vless-\u003e\u003e@oneclickvpnkeys::US",
-      "tls": {
-        "enabled": true,
-        "insecure": false,
-        "server_name": "sni.111000.indevs.in"
-      },
-      "type": "vless",
-      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    },
-    {
       "server": "45.80.111.138",
       "server_port": 2096,
-      "tag": "02-vless-欧盟 V2CROSS.COM",
+      "tag": "01-vless-欧盟 V2CROSS.COM",
+      "tls": {
+        "enabled": true,
+        "insecure": false,
+        "server_name": "sni.111000.indevs.in"
+      },
+      "type": "vless",
+      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    },
+    {
+      "server": "188.244.122.138",
+      "server_port": 2096,
+      "tag": "02-vless-\u003e\u003e@oneclickvpnkeys::US",
       "tls": {
         "enabled": true,
         "insecure": false,
@@ -27,18 +27,9 @@
     {
       "alter_id": 0,
       "security": "auto",
-      "server": "82.198.246.37",
+      "server": "82.198.246.9",
       "server_port": 180,
-      "tag": "03-vmess-🇨🇿 CZ 10",
-      "type": "vmess",
-      "uuid": "d13fc2f5-3e05-4795-81eb-44143a09e552"
-    },
-    {
-      "alter_id": 0,
-      "security": "auto",
-      "server": "82.198.246.214",
-      "server_port": 180,
-      "tag": "04-vmess-🇨🇿 CZ 8",
+      "tag": "03-vmess-🇨🇿 CZ 7",
       "type": "vmess",
       "uuid": "d13fc2f5-3e05-4795-81eb-44143a09e552"
     },
@@ -47,18 +38,37 @@
       "security": "auto",
       "server": "82.198.246.250",
       "server_port": 180,
-      "tag": "05-vmess-🇨🇿 CZ 3",
+      "tag": "04-vmess-🇺🇸 美国 | USA 5",
+      "type": "vmess",
+      "uuid": "d13fc2f5-3e05-4795-81eb-44143a09e552"
+    },
+    {
+      "alter_id": 0,
+      "security": "auto",
+      "server": "82.198.246.214",
+      "server_port": 180,
+      "tag": "05-vmess-🇨🇿 CZ 1",
+      "type": "vmess",
+      "uuid": "d13fc2f5-3e05-4795-81eb-44143a09e552"
+    },
+    {
+      "alter_id": 0,
+      "security": "auto",
+      "server": "82.198.246.37",
+      "server_port": 180,
+      "tag": "06-vmess-🇨🇿 CZ 6",
       "type": "vmess",
       "uuid": "d13fc2f5-3e05-4795-81eb-44143a09e552"
     },
     {
       "interval": "5m",
       "outbounds": [
-        "01-vless-\u003e\u003e@oneclickvpnkeys::US",
-        "02-vless-欧盟 V2CROSS.COM",
-        "03-vmess-🇨🇿 CZ 10",
-        "04-vmess-🇨🇿 CZ 8",
-        "05-vmess-🇨🇿 CZ 3"
+        "01-vless-欧盟 V2CROSS.COM",
+        "02-vless-\u003e\u003e@oneclickvpnkeys::US",
+        "03-vmess-🇨🇿 CZ 7",
+        "04-vmess-🇺🇸 美国 | USA 5",
+        "05-vmess-🇨🇿 CZ 1",
+        "06-vmess-🇨🇿 CZ 6"
       ],
       "tag": "auto",
       "type": "urltest",
@@ -67,11 +77,12 @@
     {
       "outbounds": [
         "auto",
-        "01-vless-\u003e\u003e@oneclickvpnkeys::US",
-        "02-vless-欧盟 V2CROSS.COM",
-        "03-vmess-🇨🇿 CZ 10",
-        "04-vmess-🇨🇿 CZ 8",
-        "05-vmess-🇨🇿 CZ 3"
+        "01-vless-欧盟 V2CROSS.COM",
+        "02-vless-\u003e\u003e@oneclickvpnkeys::US",
+        "03-vmess-🇨🇿 CZ 7",
+        "04-vmess-🇺🇸 美国 | USA 5",
+        "05-vmess-🇨🇿 CZ 1",
+        "06-vmess-🇨🇿 CZ 6"
       ],
       "tag": "select",
       "type": "selector"

@@ -1,15 +1,5 @@
 proxies:
-    - name: "01-vless-\U0001F33F87@oneclickvpnkeys"
-      network: ws
-      port: 2096
-      server: 45.149.12.138
-      servername: sni.111000.indevs.in
-      skip-cert-verify: false
-      tls: true
-      type: vless
-      udp: true
-      uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    - name: 02-vless->>@oneclickvpnkeys::US
+    - name: 01-vless->>@oneclickvpnkeys::US
       network: ws
       port: 2096
       server: 5.10.247.138
@@ -19,7 +9,7 @@ proxies:
       type: vless
       udp: true
       uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    - name: 03-vless->>@oneclickvpnkeys::US
+    - name: 02-vless->>@oneclickvpnkeys::US
       network: ws
       port: 2096
       server: 45.131.209.191
@@ -29,7 +19,7 @@ proxies:
       type: vless
       udp: true
       uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    - name: "04-vless-\U0001F33A97@oneclickvpnkeys"
+    - name: "03-vless-\U0001F33A97@oneclickvpnkeys"
       network: ws
       port: 443
       server: 5.10.244.43
@@ -39,23 +29,33 @@ proxies:
       type: vless
       udp: true
       uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    - name: "04-vless-\U0001F33F87@oneclickvpnkeys"
+      network: ws
+      port: 2096
+      server: 45.149.12.138
+      servername: sni.111000.indevs.in
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
 proxy-groups:
     - interval: 300
       name: auto
       proxies:
-        - "01-vless-\U0001F33F87@oneclickvpnkeys"
+        - 01-vless->>@oneclickvpnkeys::US
         - 02-vless->>@oneclickvpnkeys::US
-        - 03-vless->>@oneclickvpnkeys::US
-        - "04-vless-\U0001F33A97@oneclickvpnkeys"
+        - "03-vless-\U0001F33A97@oneclickvpnkeys"
+        - "04-vless-\U0001F33F87@oneclickvpnkeys"
       type: url-test
       url: https://www.gstatic.com/generate_204
     - name: select
       proxies:
         - auto
-        - "01-vless-\U0001F33F87@oneclickvpnkeys"
+        - 01-vless->>@oneclickvpnkeys::US
         - 02-vless->>@oneclickvpnkeys::US
-        - 03-vless->>@oneclickvpnkeys::US
-        - "04-vless-\U0001F33A97@oneclickvpnkeys"
+        - "03-vless-\U0001F33A97@oneclickvpnkeys"
+        - "04-vless-\U0001F33F87@oneclickvpnkeys"
       type: select
 rules:
     - MATCH,select
