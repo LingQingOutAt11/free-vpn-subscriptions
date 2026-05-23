@@ -9,10 +9,10 @@ proxies:
       type: vless
       udp: true
       uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    - name: "02-vless-\U0001F35184@oneclickvpnkeys"
+    - name: "02-vless-\U0001F3884@oneclickvpnkeys"
       network: ws
       port: 2096
-      server: 185.135.9.138
+      server: 185.158.133.138
       servername: sni.111000.indevs.in
       skip-cert-verify: false
       tls: true
@@ -20,44 +20,8 @@ proxies:
       udp: true
       uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
     - alterId: 0
-      cipher: auto
-      name: "03-vmess-\U0001F1E8\U0001F1FF CZ 20"
-      network: tcp
-      port: 180
-      server: 82.198.246.97
-      type: vmess
-      udp: true
-      uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    - alterId: 0
-      cipher: auto
-      name: "04-vmess-\U0001F1E8\U0001F1FF CZ 16"
-      network: tcp
-      port: 180
-      server: 82.198.246.9
-      type: vmess
-      udp: true
-      uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    - alterId: 0
-      cipher: auto
-      name: "05-vmess-\U0001F534\U0001F1FA\U0001F1F8[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_91614699"
-      network: tcp
-      port: 180
-      server: 82.198.246.233
-      type: vmess
-      udp: true
-      uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    - alterId: 0
-      cipher: auto
-      name: "06-vmess-\U0001F534\U0001F1FA\U0001F1F8[\U0001F3AC\U0001F916\U0001F4FA\U0001F3AD]_github.com/Ruk1ng001_999afe87"
-      network: tcp
-      port: 180
-      server: 82.198.246.250
-      type: vmess
-      udp: true
-      uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    - alterId: 0
-      cipher: auto
-      name: "07-vmess-\U0001F1FA\U0001F1F8 US美国(mibei77.com 米贝节点分享)"
+      cipher: aes-128-gcm
+      name: "03-vmess-\U0001F534\U0001F1FA\U0001F1F8[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_4c938bcf"
       network: tcp
       port: 180
       server: 82.198.246.37
@@ -66,10 +30,37 @@ proxies:
       uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
     - alterId: 0
       cipher: auto
-      name: "08-vmess-\U0001F1E8\U0001F1FF CZ 3"
+      name: "04-vmess-\U0001F1E8\U0001F1FF CZ 2"
+      network: tcp
+      port: 180
+      server: 82.198.246.9
+      type: vmess
+      udp: true
+      uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    - alterId: 0
+      cipher: auto
+      name: "05-vmess-\U0001F1EC\U0001F1E7 GB英国(mibei77.com 米贝节点分享)"
       network: tcp
       port: 180
       server: 82.198.246.214
+      type: vmess
+      udp: true
+      uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    - alterId: 0
+      cipher: auto
+      name: "06-vmess-\U0001F1E8\U0001F1FF CZ 5"
+      network: tcp
+      port: 180
+      server: 82.198.246.233
+      type: vmess
+      udp: true
+      uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    - alterId: 0
+      cipher: auto
+      name: "07-vmess-\U0001F1FA\U0001F1F8 美国 | USA 5"
+      network: tcp
+      port: 180
+      server: 82.198.246.250
       type: vmess
       udp: true
       uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
@@ -78,26 +69,24 @@ proxy-groups:
       name: auto
       proxies:
         - 01-vless->>@oneclickvpnkeys::US
-        - "02-vless-\U0001F35184@oneclickvpnkeys"
-        - "03-vmess-\U0001F1E8\U0001F1FF CZ 20"
-        - "04-vmess-\U0001F1E8\U0001F1FF CZ 16"
-        - "05-vmess-\U0001F534\U0001F1FA\U0001F1F8[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_91614699"
-        - "06-vmess-\U0001F534\U0001F1FA\U0001F1F8[\U0001F3AC\U0001F916\U0001F4FA\U0001F3AD]_github.com/Ruk1ng001_999afe87"
-        - "07-vmess-\U0001F1FA\U0001F1F8 US美国(mibei77.com 米贝节点分享)"
-        - "08-vmess-\U0001F1E8\U0001F1FF CZ 3"
+        - "02-vless-\U0001F3884@oneclickvpnkeys"
+        - "03-vmess-\U0001F534\U0001F1FA\U0001F1F8[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_4c938bcf"
+        - "04-vmess-\U0001F1E8\U0001F1FF CZ 2"
+        - "05-vmess-\U0001F1EC\U0001F1E7 GB英国(mibei77.com 米贝节点分享)"
+        - "06-vmess-\U0001F1E8\U0001F1FF CZ 5"
+        - "07-vmess-\U0001F1FA\U0001F1F8 美国 | USA 5"
       type: url-test
       url: https://www.gstatic.com/generate_204
     - name: select
       proxies:
         - auto
         - 01-vless->>@oneclickvpnkeys::US
-        - "02-vless-\U0001F35184@oneclickvpnkeys"
-        - "03-vmess-\U0001F1E8\U0001F1FF CZ 20"
-        - "04-vmess-\U0001F1E8\U0001F1FF CZ 16"
-        - "05-vmess-\U0001F534\U0001F1FA\U0001F1F8[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_91614699"
-        - "06-vmess-\U0001F534\U0001F1FA\U0001F1F8[\U0001F3AC\U0001F916\U0001F4FA\U0001F3AD]_github.com/Ruk1ng001_999afe87"
-        - "07-vmess-\U0001F1FA\U0001F1F8 US美国(mibei77.com 米贝节点分享)"
-        - "08-vmess-\U0001F1E8\U0001F1FF CZ 3"
+        - "02-vless-\U0001F3884@oneclickvpnkeys"
+        - "03-vmess-\U0001F534\U0001F1FA\U0001F1F8[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_4c938bcf"
+        - "04-vmess-\U0001F1E8\U0001F1FF CZ 2"
+        - "05-vmess-\U0001F1EC\U0001F1E7 GB英国(mibei77.com 米贝节点分享)"
+        - "06-vmess-\U0001F1E8\U0001F1FF CZ 5"
+        - "07-vmess-\U0001F1FA\U0001F1F8 美国 | USA 5"
       type: select
 rules:
     - MATCH,select
