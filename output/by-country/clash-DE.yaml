@@ -11,25 +11,7 @@ proxies:
       uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
     - alterId: 0
       cipher: auto
-      name: "02-vmess-\U0001F1E8\U0001F1FF CZ 12"
-      network: tcp
-      port: 180
-      server: 82.198.246.9
-      type: vmess
-      udp: true
-      uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    - alterId: 0
-      cipher: auto
-      name: "03-vmess-\U0001F1E8\U0001F1FF CZ 3"
-      network: tcp
-      port: 180
-      server: 82.198.246.214
-      type: vmess
-      udp: true
-      uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    - alterId: 0
-      cipher: auto
-      name: "04-vmess-\U0001F1E8\U0001F1FF CZ 16"
+      name: "02-vmess-\U0001F1E8\U0001F1FF CZ 4"
       network: tcp
       port: 180
       server: 82.198.246.233
@@ -38,28 +20,28 @@ proxies:
       uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
     - alterId: 0
       cipher: auto
-      name: "05-vmess-\U0001F1E8\U0001F1FF CZ 2"
+      name: "03-vmess-\U0001F1E8\U0001F1FF CZ 17"
       network: tcp
       port: 180
-      server: 82.198.246.250
+      server: 82.198.246.9
       type: vmess
       udp: true
       uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
     - alterId: 0
-      cipher: auto
-      name: "06-vmess-\U0001F534\U0001F1FA\U0001F1F8[\U0001F3AC\U0001F916\U0001F4FA\U0001F3AD]_github.com/Ruk1ng001_rT8TKIqy"
-      network: tcp
-      port: 180
-      server: 82.198.246.97
-      type: vmess
-      udp: true
-      uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    - alterId: 0
-      cipher: auto
-      name: "07-vmess-\U0001F534\U0001F1FA\U0001F1F8[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_94bc394d"
+      cipher: aes-128-gcm
+      name: "04-vmess-\U0001F534\U0001F1FA\U0001F1F8[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_4c938bcf"
       network: tcp
       port: 180
       server: 82.198.246.37
+      type: vmess
+      udp: true
+      uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    - alterId: 0
+      cipher: auto
+      name: 05-vmess-英国 V2CROSS.COM
+      network: tcp
+      port: 180
+      server: 82.198.246.250
       type: vmess
       udp: true
       uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
@@ -68,24 +50,20 @@ proxy-groups:
       name: auto
       proxies:
         - 01-vless->>@oneclickvpnkeys::US
-        - "02-vmess-\U0001F1E8\U0001F1FF CZ 12"
-        - "03-vmess-\U0001F1E8\U0001F1FF CZ 3"
-        - "04-vmess-\U0001F1E8\U0001F1FF CZ 16"
-        - "05-vmess-\U0001F1E8\U0001F1FF CZ 2"
-        - "06-vmess-\U0001F534\U0001F1FA\U0001F1F8[\U0001F3AC\U0001F916\U0001F4FA\U0001F3AD]_github.com/Ruk1ng001_rT8TKIqy"
-        - "07-vmess-\U0001F534\U0001F1FA\U0001F1F8[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_94bc394d"
+        - "02-vmess-\U0001F1E8\U0001F1FF CZ 4"
+        - "03-vmess-\U0001F1E8\U0001F1FF CZ 17"
+        - "04-vmess-\U0001F534\U0001F1FA\U0001F1F8[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_4c938bcf"
+        - 05-vmess-英国 V2CROSS.COM
       type: url-test
       url: https://www.gstatic.com/generate_204
     - name: select
       proxies:
         - auto
         - 01-vless->>@oneclickvpnkeys::US
-        - "02-vmess-\U0001F1E8\U0001F1FF CZ 12"
-        - "03-vmess-\U0001F1E8\U0001F1FF CZ 3"
-        - "04-vmess-\U0001F1E8\U0001F1FF CZ 16"
-        - "05-vmess-\U0001F1E8\U0001F1FF CZ 2"
-        - "06-vmess-\U0001F534\U0001F1FA\U0001F1F8[\U0001F3AC\U0001F916\U0001F4FA\U0001F3AD]_github.com/Ruk1ng001_rT8TKIqy"
-        - "07-vmess-\U0001F534\U0001F1FA\U0001F1F8[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_94bc394d"
+        - "02-vmess-\U0001F1E8\U0001F1FF CZ 4"
+        - "03-vmess-\U0001F1E8\U0001F1FF CZ 17"
+        - "04-vmess-\U0001F534\U0001F1FA\U0001F1F8[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_4c938bcf"
+        - 05-vmess-英国 V2CROSS.COM
       type: select
 rules:
     - MATCH,select
