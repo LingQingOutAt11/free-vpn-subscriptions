@@ -3,9 +3,17 @@
     {
       "method": "aes-128-gcm",
       "password": "shadowsocks",
+      "server": "149.22.87.240",
+      "server_port": 443,
+      "tag": "01-shadowsocks-🇯🇵JP-149.22.87.240-0143",
+      "type": "shadowsocks"
+    },
+    {
+      "method": "aes-128-gcm",
+      "password": "shadowsocks",
       "server": "149.22.87.204",
       "server_port": 443,
-      "tag": "01-shadowsocks-🇯🇵JP-149.22.87.204-3716",
+      "tag": "02-shadowsocks-🇯🇵JP-149.22.87.204-0141",
       "type": "shadowsocks"
     },
     {
@@ -13,7 +21,7 @@
       "password": "shadowsocks",
       "server": "149.22.87.241",
       "server_port": 443,
-      "tag": "02-shadowsocks-🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001_G4c6jjuO",
+      "tag": "03-shadowsocks-🇯🇵JP-149.22.87.241-4048",
       "type": "shadowsocks"
     },
     {
@@ -21,15 +29,29 @@
       "password": "XKFKl2rULjIp74",
       "server": "103.106.228.175",
       "server_port": 8009,
-      "tag": "03-shadowsocks-🇯🇵JP-103.106.228.175-0145",
+      "tag": "04-shadowsocks-🇯🇵JP-103.106.228.175-0145",
       "type": "shadowsocks"
+    },
+    {
+      "server": "178.249.213.177",
+      "server_port": 8443,
+      "tag": "05-vless-⛳88@oneclickvpnkeys",
+      "tls": {
+        "enabled": true,
+        "insecure": false,
+        "server_name": "jp1.fromblancwithlove.com"
+      },
+      "type": "vless",
+      "uuid": "394f6981-a782-4779-9a85-e6cf22935d93"
     },
     {
       "interval": "5m",
       "outbounds": [
-        "01-shadowsocks-🇯🇵JP-149.22.87.204-3716",
-        "02-shadowsocks-🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001_G4c6jjuO",
-        "03-shadowsocks-🇯🇵JP-103.106.228.175-0145"
+        "01-shadowsocks-🇯🇵JP-149.22.87.240-0143",
+        "02-shadowsocks-🇯🇵JP-149.22.87.204-0141",
+        "03-shadowsocks-🇯🇵JP-149.22.87.241-4048",
+        "04-shadowsocks-🇯🇵JP-103.106.228.175-0145",
+        "05-vless-⛳88@oneclickvpnkeys"
       ],
       "tag": "auto",
       "type": "urltest",
@@ -38,9 +60,11 @@
     {
       "outbounds": [
         "auto",
-        "01-shadowsocks-🇯🇵JP-149.22.87.204-3716",
-        "02-shadowsocks-🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001_G4c6jjuO",
-        "03-shadowsocks-🇯🇵JP-103.106.228.175-0145"
+        "01-shadowsocks-🇯🇵JP-149.22.87.240-0143",
+        "02-shadowsocks-🇯🇵JP-149.22.87.204-0141",
+        "03-shadowsocks-🇯🇵JP-149.22.87.241-4048",
+        "04-shadowsocks-🇯🇵JP-103.106.228.175-0145",
+        "05-vless-⛳88@oneclickvpnkeys"
       ],
       "tag": "select",
       "type": "selector"
