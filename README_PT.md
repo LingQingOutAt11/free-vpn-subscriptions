@@ -4,7 +4,7 @@
 
 <p align="center"><img src="https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/assets/hero.png" alt="Free VPN Subscriptions — hourly-refreshed free VPN subscriptions for Clash, sing-box, v2ray" width="780"></p>
 
-![nós](https://img.shields.io/badge/nós-71-brightgreen) ![ativos](https://img.shields.io/badge/ativos-2011-blue) ![rtt--mediano](https://img.shields.io/badge/rtt--mediano-152ms-orange) ![atualizado](https://img.shields.io/badge/atualizado-2026-05-27_14:26_UTC-informational)
+![nós](https://img.shields.io/badge/nós-66-brightgreen) ![ativos](https://img.shields.io/badge/ativos-2023-blue) ![rtt--mediano](https://img.shields.io/badge/rtt--mediano-151ms-orange) ![atualizado](https://img.shields.io/badge/atualizado-2026-05-27_15:14_UTC-informational)
 
 > **A forma mais fácil de obter uma VPN gratuita funcional — copie um link de assinatura, cole no seu cliente, conecte.**  
 > Sem cadastro. Sem pagamento. Sem instalar nenhum binário. Atualizado a cada hora a partir de fontes públicas — cada nó publicado encaminhou tráfego HTTP real através do sing-box minutos atrás.
@@ -77,8 +77,8 @@ Quer nós apenas em uma região específica? Use uma dessas URLs de assinatura d
 
 | País | Nós | Clash | sing-box | v2ray |
 |---|---|---|---|---|
-| 🇺🇸 United States (`US`) | 37 | [clash-US.yaml](https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/output/by-country/clash-US.yaml) | [singbox-US.json](https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/output/by-country/singbox-US.json) | [v2ray-base64-US.txt](https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/output/by-country/v2ray-base64-US.txt) |
-| 🇩🇪 Germany (`DE`) | 6 | [clash-DE.yaml](https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/output/by-country/clash-DE.yaml) | [singbox-DE.json](https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/output/by-country/singbox-DE.json) | [v2ray-base64-DE.txt](https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/output/by-country/v2ray-base64-DE.txt) |
+| 🇺🇸 United States (`US`) | 32 | [clash-US.yaml](https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/output/by-country/clash-US.yaml) | [singbox-US.json](https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/output/by-country/singbox-US.json) | [v2ray-base64-US.txt](https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/output/by-country/v2ray-base64-US.txt) |
+| 🇩🇪 Germany (`DE`) | 5 | [clash-DE.yaml](https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/output/by-country/clash-DE.yaml) | [singbox-DE.json](https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/output/by-country/singbox-DE.json) | [v2ray-base64-DE.txt](https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/output/by-country/v2ray-base64-DE.txt) |
 
 ## 📖 Tutoriais passo a passo
 
@@ -99,15 +99,15 @@ Novo nos clientes VPN? Escolha sua plataforma e siga o tutorial:
 
 ## 📊 Estatísticas ao vivo
 
-- **Nós selecionados**: 71
-- **Ativos em todas as fontes**: 2011
-- **RTT do nó mais rápido**: 38 ms
-- **RTT mediano**: 152 ms
-- **Última atualização (UTC)**: 2026-05-27 14:26 UTC
+- **Nós selecionados**: 66
+- **Ativos em todas as fontes**: 2023
+- **RTT do nó mais rápido**: 36 ms
+- **RTT mediano**: 151 ms
+- **Última atualização (UTC)**: 2026-05-27 15:14 UTC
 
-**Mix de protocolos:** shadowsocks × 28 · trojan × 17 · vless × 16 · vmess × 10
+**Mix de protocolos:** shadowsocks × 21 · trojan × 17 · vless × 18 · vmess × 10
 
-**Fontes usadas nesta execução:** `barry-far-v2ray` × 28 · `ebrasha-v2ray` × 1 · `epodonios` × 1 · `lagzian-mix` × 5 · `mahdi0024` × 7 · `mahdibland-aggregator` × 8 · `mahdibland-shadowsocks` × 4 · `matin-v2ray` × 2 · `mfuu-clash` × 1 · `ninjastrikers` × 8 · `ruking-clash` × 4 · `snakem982` × 1 · `surfboard-eternity` × 1
+**Fontes usadas nesta execução:** `barry-far-v2ray` × 22 · `ebrasha-v2ray` × 2 · `epodonios` × 4 · `lagzian-mix` × 4 · `mahdi0024` × 5 · `mahdibland-aggregator` × 5 · `mahdibland-shadowsocks` × 4 · `matin-v2ray` × 2 · `mfuu-clash` × 1 · `ninjastrikers` × 8 · `pawdroid` × 2 · `ruking-clash` × 3 · `snakem982` × 1 · `surfboard-eternity` × 3
 
 ## ❓ Perguntas frequentes
 
