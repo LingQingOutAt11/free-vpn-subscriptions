@@ -14,17 +14,17 @@ proxies:
       type: ss
       udp: true
     - cipher: chacha20-ietf-poly1305
-      name: "03-shadowsocks-\U0001F1E8\U0001F1E6CA-23.95.76.59-0149"
-      password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
-      port: 990
-      server: 23.95.76.59
-      type: ss
-      udp: true
-    - cipher: chacha20-ietf-poly1305
-      name: "04-shadowsocks-\U0001F1E8\U0001F1E6CA-45.154.204.7-0173"
+      name: "03-shadowsocks-\U0001F1E8\U0001F1E6CA-45.154.204.7-0173"
       password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
       port: 990
       server: 45.154.204.7
+      type: ss
+      udp: true
+    - cipher: chacha20-ietf-poly1305
+      name: "04-shadowsocks-\U0001F1E8\U0001F1E6CA-23.95.76.59-0149"
+      password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+      port: 990
+      server: 23.95.76.59
       type: ss
       udp: true
     - cipher: rc4-md5
@@ -40,8 +40,8 @@ proxy-groups:
       proxies:
         - "01-shadowsocks-\U0001F1E8\U0001F1E6CA-149.22.95.183-0766"
         - "02-shadowsocks-\U0001F1E8\U0001F1E6CA-79.127.200.169-0084"
-        - "03-shadowsocks-\U0001F1E8\U0001F1E6CA-23.95.76.59-0149"
-        - "04-shadowsocks-\U0001F1E8\U0001F1E6CA-45.154.204.7-0173"
+        - "03-shadowsocks-\U0001F1E8\U0001F1E6CA-45.154.204.7-0173"
+        - "04-shadowsocks-\U0001F1E8\U0001F1E6CA-23.95.76.59-0149"
         - "05-shadowsocks-\U0001F1E8\U0001F1E6CA-137.184.174.93-0121"
       type: url-test
       url: https://www.gstatic.com/generate_204
@@ -50,8 +50,8 @@ proxy-groups:
         - auto
         - "01-shadowsocks-\U0001F1E8\U0001F1E6CA-149.22.95.183-0766"
         - "02-shadowsocks-\U0001F1E8\U0001F1E6CA-79.127.200.169-0084"
-        - "03-shadowsocks-\U0001F1E8\U0001F1E6CA-23.95.76.59-0149"
-        - "04-shadowsocks-\U0001F1E8\U0001F1E6CA-45.154.204.7-0173"
+        - "03-shadowsocks-\U0001F1E8\U0001F1E6CA-45.154.204.7-0173"
+        - "04-shadowsocks-\U0001F1E8\U0001F1E6CA-23.95.76.59-0149"
         - "05-shadowsocks-\U0001F1E8\U0001F1E6CA-137.184.174.93-0121"
       type: select
 rules:
