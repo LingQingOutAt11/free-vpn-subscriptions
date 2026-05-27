@@ -1,71 +1,40 @@
 proxies:
     - cipher: aes-128-gcm
-      name: "01-shadowsocks-\U0001F1EF\U0001F1F5 JP | SS | @outlinereleasedkey 1"
-      password: shadowsocks
-      port: 443
-      server: 149.22.87.240
-      type: ss
-      udp: true
-    - cipher: aes-128-gcm
-      name: "02-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.241-4048"
-      password: shadowsocks
-      port: 443
-      server: 149.22.87.241
-      type: ss
-      udp: true
-    - cipher: aes-128-gcm
-      name: "03-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.204-0145"
+      name: "01-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.204-3716"
       password: shadowsocks
       port: 443
       server: 149.22.87.204
       type: ss
       udp: true
+    - cipher: aes-128-gcm
+      name: "02-shadowsocks-\U0001F534\U0001F1EF\U0001F1F5[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_G4c6jjuO"
+      password: shadowsocks
+      port: 443
+      server: 149.22.87.241
+      type: ss
+      udp: true
     - cipher: aes-256-gcm
-      name: "04-shadowsocks-\U0001F1EF\U0001F1F5JP-103.106.228.175-4721"
+      name: "03-shadowsocks-\U0001F1EF\U0001F1F5JP-103.106.228.175-0145"
       password: XKFKl2rULjIp74
       port: 8009
       server: 103.106.228.175
       type: ss
       udp: true
-    - name: 05-vless-⛳88@oneclickvpnkeys
-      network: tcp
-      port: 8443
-      server: 178.249.213.177
-      servername: jp1.fromblancwithlove.com
-      skip-cert-verify: false
-      tls: true
-      type: vless
-      udp: true
-      uuid: 394f6981-a782-4779-9a85-e6cf22935d93
-    - name: 06-trojan- ⛳36@oneclickvpnkeys
-      password: "162534"
-      port: 443
-      server: 198.13.37.176
-      skip-cert-verify: true
-      sni: cchh2.pages.dev
-      type: trojan
-      udp: true
 proxy-groups:
     - interval: 300
       name: auto
       proxies:
-        - "01-shadowsocks-\U0001F1EF\U0001F1F5 JP | SS | @outlinereleasedkey 1"
-        - "02-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.241-4048"
-        - "03-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.204-0145"
-        - "04-shadowsocks-\U0001F1EF\U0001F1F5JP-103.106.228.175-4721"
-        - 05-vless-⛳88@oneclickvpnkeys
-        - 06-trojan- ⛳36@oneclickvpnkeys
+        - "01-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.204-3716"
+        - "02-shadowsocks-\U0001F534\U0001F1EF\U0001F1F5[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_G4c6jjuO"
+        - "03-shadowsocks-\U0001F1EF\U0001F1F5JP-103.106.228.175-0145"
       type: url-test
       url: https://www.gstatic.com/generate_204
     - name: select
       proxies:
         - auto
-        - "01-shadowsocks-\U0001F1EF\U0001F1F5 JP | SS | @outlinereleasedkey 1"
-        - "02-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.241-4048"
-        - "03-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.204-0145"
-        - "04-shadowsocks-\U0001F1EF\U0001F1F5JP-103.106.228.175-4721"
-        - 05-vless-⛳88@oneclickvpnkeys
-        - 06-trojan- ⛳36@oneclickvpnkeys
+        - "01-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.204-3716"
+        - "02-shadowsocks-\U0001F534\U0001F1EF\U0001F1F5[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_G4c6jjuO"
+        - "03-shadowsocks-\U0001F1EF\U0001F1F5JP-103.106.228.175-0145"
       type: select
 rules:
     - MATCH,select
