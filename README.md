@@ -4,7 +4,7 @@
 
 <p align="center"><img src="https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/assets/hero.png" alt="Free VPN Subscriptions — hourly-refreshed free VPN subscriptions for Clash, sing-box, v2ray" width="780"></p>
 
-![nodes](https://img.shields.io/badge/nodes-70-brightgreen) ![alive](https://img.shields.io/badge/alive-1930-blue) ![median--rtt](https://img.shields.io/badge/median--rtt-84ms-orange) ![updated](https://img.shields.io/badge/updated-2026-05-27_12:22_UTC-informational)
+![nodes](https://img.shields.io/badge/nodes-78-brightgreen) ![alive](https://img.shields.io/badge/alive-1958-blue) ![median--rtt](https://img.shields.io/badge/median--rtt-106ms-orange) ![updated](https://img.shields.io/badge/updated-2026-05-27_13:34_UTC-informational)
 
 > **The easiest way to get a working free VPN — copy a subscription link, paste it into your client, connect.**  
 > No signup. No payment. No installation of binaries. Refreshed hourly from public sources — every published node has demonstrably forwarded real HTTP traffic through sing-box minutes ago.
@@ -99,15 +99,15 @@ New to VPN clients? Pick your platform and follow the tutorial:
 
 ## 📊 Live Stats
 
-- **Nodes selected**: 70
-- **Alive across all sources**: 1930
+- **Nodes selected**: 78
+- **Alive across all sources**: 1958
 - **Fastest node RTT**: 36 ms
-- **Median RTT**: 84 ms
-- **Last updated (UTC)**: 2026-05-27 12:22 UTC
+- **Median RTT**: 106 ms
+- **Last updated (UTC)**: 2026-05-27 13:34 UTC
 
-**Protocol mix:** shadowsocks × 25 · trojan × 9 · vless × 26 · vmess × 10
+**Protocol mix:** shadowsocks × 25 · trojan × 18 · vless × 25 · vmess × 10
 
-**Sources used this run:** `barry-far-v2ray` × 27 · `ebrasha-v2ray` × 2 · `epodonios` × 2 · `lagzian-mix` × 2 · `mahdi0024` × 8 · `mahdibland-aggregator` × 3 · `mahdibland-shadowsocks` × 7 · `matin-v2ray` × 1 · `ninjastrikers` × 9 · `ruking-clash` × 4 · `snakem982` × 1 · `surfboard-eternity` × 4
+**Sources used this run:** `barry-far-v2ray` × 36 · `ebrasha-v2ray` × 2 · `epodonios` × 1 · `lagzian-mix` × 3 · `mahdi0024` × 7 · `mahdibland-aggregator` × 8 · `mahdibland-shadowsocks` × 3 · `ninjastrikers` × 11 · `ruking-clash` × 4 · `snakem982` × 1 · `surfboard-eternity` × 2
 
 ## ❓ FAQ
 
