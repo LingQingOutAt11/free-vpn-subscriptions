@@ -4,7 +4,7 @@
 
 <p align="center"><img src="https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/assets/hero.png" alt="Free VPN Subscriptions — hourly-refreshed free VPN subscriptions for Clash, sing-box, v2ray" width="780"></p>
 
-![nodes](https://img.shields.io/badge/nodes-93-brightgreen) ![alive](https://img.shields.io/badge/alive-2029-blue) ![median--rtt](https://img.shields.io/badge/median--rtt-223ms-orange) ![updated](https://img.shields.io/badge/updated-2026-05-28_05:18_UTC-informational)
+![nodes](https://img.shields.io/badge/nodes-86-brightgreen) ![alive](https://img.shields.io/badge/alive-2055-blue) ![median--rtt](https://img.shields.io/badge/median--rtt-199ms-orange) ![updated](https://img.shields.io/badge/updated-2026-05-28_06:27_UTC-informational)
 
 > **The easiest way to get a working free VPN — copy a subscription link, paste it into your client, connect.**  
 > No signup. No payment. No installation of binaries. Refreshed hourly from public sources — every published node has demonstrably forwarded real HTTP traffic through sing-box minutes ago.
@@ -80,7 +80,6 @@ Want nodes in a specific region only? Use one of these targeted subscription URL
 | 🇺🇸 United States (`US`) | 34 | [clash-US.yaml](https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/output/by-country/clash-US.yaml) | [singbox-US.json](https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/output/by-country/singbox-US.json) | [v2ray-base64-US.txt](https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/output/by-country/v2ray-base64-US.txt) |
 | 🇨🇦 Canada (`CA`) | 7 | [clash-CA.yaml](https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/output/by-country/clash-CA.yaml) | [singbox-CA.json](https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/output/by-country/singbox-CA.json) | [v2ray-base64-CA.txt](https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/output/by-country/v2ray-base64-CA.txt) |
 | 🇩🇪 Germany (`DE`) | 6 | [clash-DE.yaml](https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/output/by-country/clash-DE.yaml) | [singbox-DE.json](https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/output/by-country/singbox-DE.json) | [v2ray-base64-DE.txt](https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/output/by-country/v2ray-base64-DE.txt) |
-| 🇨🇭 Switzerland (`CH`) | 3 | [clash-CH.yaml](https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/output/by-country/clash-CH.yaml) | [singbox-CH.json](https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/output/by-country/singbox-CH.json) | [v2ray-base64-CH.txt](https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/output/by-country/v2ray-base64-CH.txt) |
 
 ## 📖 Step-by-step Guides
 
@@ -101,15 +100,15 @@ New to VPN clients? Pick your platform and follow the tutorial:
 
 ## 📊 Live Stats
 
-- **Nodes selected**: 93
-- **Alive across all sources**: 2029
-- **Fastest node RTT**: 35 ms
-- **Median RTT**: 223 ms
-- **Last updated (UTC)**: 2026-05-28 05:18 UTC
+- **Nodes selected**: 86
+- **Alive across all sources**: 2055
+- **Fastest node RTT**: 32 ms
+- **Median RTT**: 199 ms
+- **Last updated (UTC)**: 2026-05-28 06:27 UTC
 
-**Protocol mix:** shadowsocks × 27 · trojan × 30 · vless × 25 · vmess × 11
+**Protocol mix:** hysteria2 × 1 · shadowsocks × 28 · trojan × 25 · vless × 21 · vmess × 11
 
-**Sources used this run:** `barry-far-v2ray` × 18 · `ebrasha-v2ray` × 2 · `epodonios` × 19 · `lagzian-mix` × 4 · `mahdi0024` × 8 · `mahdibland-aggregator` × 7 · `mahdibland-shadowsocks` × 10 · `ninjastrikers` × 19 · `pawdroid` × 1 · `ruking-clash` × 2 · `snakem982` × 1 · `surfboard-eternity` × 2
+**Sources used this run:** `barry-far-v2ray` × 19 · `ebrasha-v2ray` × 2 · `epodonios` × 18 · `lagzian-mix` × 2 · `mahdi0024` × 7 · `mahdibland-aggregator` × 7 · `mahdibland-shadowsocks` × 10 · `mfuu-clash` × 1 · `ninjastrikers` × 9 · `pawdroid` × 3 · `ruking-clash` × 1 · `snakem982` × 3 · `surfboard-eternity` × 4
 
 ## ❓ FAQ
 
