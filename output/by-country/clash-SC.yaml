@@ -9,23 +9,7 @@ proxies:
       type: vless
       udp: true
       uuid: e258977b-e413-4718-a3af-02d75492c349
-    - name: 02-trojan-TEL;Father_vpn⁸
-      password: Mitivpn
-      port: 443
-      server: 45.130.125.76
-      skip-cert-verify: true
-      sni: www.hitgram.ir
-      type: trojan
-      udp: true
-    - name: "03-trojan-\U0001F1F8\U0001F1E835433 | ⚡️Telegram = t.me/SOSkeyNET"
-      password: Mitivpn
-      port: 2053
-      server: 45.130.125.241
-      skip-cert-verify: true
-      sni: dash.hitgram.ir
-      type: trojan
-      udp: true
-    - name: "04-trojan-\U0001F1F8\U0001F1E835438 | ⚡️Telegram = t.me/SOSkeyNET"
+    - name: "02-trojan-\U0001F1F8\U0001F1E835439 | ⚡️Telegram = t.me/SOSkeyNET"
       password: Mitivpn
       port: 8443
       server: 45.130.125.237
@@ -33,15 +17,23 @@ proxies:
       sni: dash.hitgram.ir
       type: trojan
       udp: true
-    - name: '05-trojan-[66205] - Telegram : @V2All'
+    - name: "03-trojan-@hi_proxy_iran :\U0001F448کانال تلگرام"
       password: Mitivpn
       port: 2053
       server: 45.130.125.76
+      skip-cert-verify: false
+      sni: dash.hitgram.ir
+      type: trojan
+      udp: true
+    - name: "04-trojan-\U0001F1F8\U0001F1E835433 | ⚡️Telegram = t.me/SOSkeyNET"
+      password: Mitivpn
+      port: 2053
+      server: 45.130.125.241
       skip-cert-verify: true
       sni: dash.hitgram.ir
       type: trojan
       udp: true
-    - name: "06-trojan-\U0001F1F8\U0001F1E835434 | ⚡️Telegram = t.me/SOSkeyNET"
+    - name: "05-trojan-\U0001F1F8\U0001F1E835434 | ⚡️Telegram = t.me/SOSkeyNET"
       password: Mitivpn
       port: 2053
       server: 45.130.125.91
@@ -49,7 +41,15 @@ proxies:
       sni: dash.hitgram.ir
       type: trojan
       udp: true
-    - name: 07-trojan-CONNECTED
+    - name: 06-trojan-TEL;Father_vpn⁸
+      password: Mitivpn
+      port: 443
+      server: 45.130.125.76
+      skip-cert-verify: true
+      sni: www.hitgram.ir
+      type: trojan
+      udp: true
+    - name: 07-trojan-@Iranvasll
       password: humanity
       port: 443
       server: 45.130.125.69
@@ -62,24 +62,24 @@ proxy-groups:
       name: auto
       proxies:
         - 01-vless-https://t.me/VIPV2rayNGNP
-        - 02-trojan-TEL;Father_vpn⁸
-        - "03-trojan-\U0001F1F8\U0001F1E835433 | ⚡️Telegram = t.me/SOSkeyNET"
-        - "04-trojan-\U0001F1F8\U0001F1E835438 | ⚡️Telegram = t.me/SOSkeyNET"
-        - '05-trojan-[66205] - Telegram : @V2All'
-        - "06-trojan-\U0001F1F8\U0001F1E835434 | ⚡️Telegram = t.me/SOSkeyNET"
-        - 07-trojan-CONNECTED
+        - "02-trojan-\U0001F1F8\U0001F1E835439 | ⚡️Telegram = t.me/SOSkeyNET"
+        - "03-trojan-@hi_proxy_iran :\U0001F448کانال تلگرام"
+        - "04-trojan-\U0001F1F8\U0001F1E835433 | ⚡️Telegram = t.me/SOSkeyNET"
+        - "05-trojan-\U0001F1F8\U0001F1E835434 | ⚡️Telegram = t.me/SOSkeyNET"
+        - 06-trojan-TEL;Father_vpn⁸
+        - 07-trojan-@Iranvasll
       type: url-test
       url: https://www.gstatic.com/generate_204
     - name: select
       proxies:
         - auto
         - 01-vless-https://t.me/VIPV2rayNGNP
-        - 02-trojan-TEL;Father_vpn⁸
-        - "03-trojan-\U0001F1F8\U0001F1E835433 | ⚡️Telegram = t.me/SOSkeyNET"
-        - "04-trojan-\U0001F1F8\U0001F1E835438 | ⚡️Telegram = t.me/SOSkeyNET"
-        - '05-trojan-[66205] - Telegram : @V2All'
-        - "06-trojan-\U0001F1F8\U0001F1E835434 | ⚡️Telegram = t.me/SOSkeyNET"
-        - 07-trojan-CONNECTED
+        - "02-trojan-\U0001F1F8\U0001F1E835439 | ⚡️Telegram = t.me/SOSkeyNET"
+        - "03-trojan-@hi_proxy_iran :\U0001F448کانال تلگرام"
+        - "04-trojan-\U0001F1F8\U0001F1E835433 | ⚡️Telegram = t.me/SOSkeyNET"
+        - "05-trojan-\U0001F1F8\U0001F1E835434 | ⚡️Telegram = t.me/SOSkeyNET"
+        - 06-trojan-TEL;Father_vpn⁸
+        - 07-trojan-@Iranvasll
       type: select
 rules:
     - MATCH,select
