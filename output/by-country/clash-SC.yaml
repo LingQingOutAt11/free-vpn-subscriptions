@@ -1,5 +1,13 @@
 proxies:
-    - name: 01-trojan-@VPN_PASARGAD
+    - name: 01-trojan-@filembad
+      password: Mitivpn
+      port: 443
+      server: 45.130.125.69
+      skip-cert-verify: true
+      sni: www.hitgram.ir
+      type: trojan
+      udp: true
+    - name: "02-trojan-\U0001F31D29@oneclickvpnkeys"
       password: Mitivpn
       port: 443
       server: 45.130.125.76
@@ -7,51 +15,29 @@ proxies:
       sni: www.hitgram.ir
       type: trojan
       udp: true
-    - name: "02-trojan-@hi_proxy_iran :\U0001F448کانال تلگرام"
+    - name: 03-trojan-@meliproxyy
       password: Mitivpn
       port: 2053
       server: 45.130.125.76
-      skip-cert-verify: false
+      skip-cert-verify: true
       sni: dash.hitgram.ir
       type: trojan
       udp: true
-    - name: 03-trojan-CONNECTED
-      password: humanity
-      port: 443
-      server: 45.130.125.69
-      skip-cert-verify: true
-      sni: www.calmloud.com
-      type: trojan
-      udp: true
-    - alterId: 0
-      cipher: auto
-      name: 04-vmess-Seychelles
-      network: ws
-      port: 2087
-      server: 45.130.125.76
-      servername: wIn.CcNnx.IR
-      skip-cert-verify: false
-      tls: true
-      type: vmess
-      udp: true
-      uuid: 78e64117-fb24-4e32-adaa-788ab7876cd3
 proxy-groups:
     - interval: 300
       name: auto
       proxies:
-        - 01-trojan-@VPN_PASARGAD
-        - "02-trojan-@hi_proxy_iran :\U0001F448کانال تلگرام"
-        - 03-trojan-CONNECTED
-        - 04-vmess-Seychelles
+        - 01-trojan-@filembad
+        - "02-trojan-\U0001F31D29@oneclickvpnkeys"
+        - 03-trojan-@meliproxyy
       type: url-test
       url: https://www.gstatic.com/generate_204
     - name: select
       proxies:
         - auto
-        - 01-trojan-@VPN_PASARGAD
-        - "02-trojan-@hi_proxy_iran :\U0001F448کانال تلگرام"
-        - 03-trojan-CONNECTED
-        - 04-vmess-Seychelles
+        - 01-trojan-@filembad
+        - "02-trojan-\U0001F31D29@oneclickvpnkeys"
+        - 03-trojan-@meliproxyy
       type: select
 rules:
     - MATCH,select
