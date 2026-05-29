@@ -4,7 +4,7 @@
 
 <p align="center"><img src="https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/assets/hero.png" alt="Free VPN Subscriptions — hourly-refreshed free VPN subscriptions for Clash, sing-box, v2ray" width="780"></p>
 
-![узлы](https://img.shields.io/badge/узлы-113-brightgreen) ![живые](https://img.shields.io/badge/живые-2156-blue) ![медиана--rtt](https://img.shields.io/badge/медиана--rtt-136ms-orange) ![обновлено](https://img.shields.io/badge/обновлено-2026-05-29_00:28_UTC-informational)
+![узлы](https://img.shields.io/badge/узлы-111-brightgreen) ![живые](https://img.shields.io/badge/живые-2159-blue) ![медиана--rtt](https://img.shields.io/badge/медиана--rtt-136ms-orange) ![обновлено](https://img.shields.io/badge/обновлено-2026-05-29_01:35_UTC-informational)
 
 > **Самый простой способ получить рабочий бесплатный VPN — скопируйте ссылку подписки, вставьте в клиент, подключитесь.**  
 > Без регистрации. Без оплаты. Без установки каких-либо бинарников. Обновляется каждый час из публичных источников — каждый публикуемый узел несколько минут назад реально пропустил HTTP-трафик через sing-box.
@@ -101,15 +101,15 @@ proxy-groups:
 
 ## 📊 Статистика в реальном времени
 
-- **Выбрано узлов**: 113
-- **Живых во всех источниках**: 2156
-- **RTT самого быстрого узла**: 28 ms
+- **Выбрано узлов**: 111
+- **Живых во всех источниках**: 2159
+- **RTT самого быстрого узла**: 19 ms
 - **Медиана RTT**: 136 ms
-- **Последнее обновление (UTC)**: 2026-05-29 00:28 UTC
+- **Последнее обновление (UTC)**: 2026-05-29 01:35 UTC
 
-**Распределение протоколов:** hysteria2 × 1 · shadowsocks × 26 · trojan × 40 · vless × 38 · vmess × 8
+**Распределение протоколов:** shadowsocks × 25 · trojan × 39 · vless × 37 · vmess × 10
 
-**Источники в этом запуске:** `barry-far-v2ray` × 28 · `ebrasha-v2ray` × 2 · `epodonios` × 15 · `lagzian-mix` × 3 · `mahdi0024` × 6 · `mahdibland-aggregator` × 7 · `mahdibland-shadowsocks` × 10 · `ninjastrikers` × 40 · `ruking-clash` × 2
+**Источники в этом запуске:** `barry-far-v2ray` × 31 · `ebrasha-v2ray` × 1 · `epodonios` × 14 · `lagzian-mix` × 2 · `mahdi0024` × 6 · `mahdibland-aggregator` × 5 · `mahdibland-shadowsocks` × 5 · `ninjastrikers` × 38 · `ruking-clash` × 3 · `snakem982` × 1 · `surfboard-eternity` × 5
 
 ## ❓ Часто задаваемые вопросы
 

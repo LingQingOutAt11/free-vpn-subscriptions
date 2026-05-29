@@ -1,19 +1,11 @@
 {
   "outbounds": [
     {
-      "method": "aes-256-cfb",
-      "password": "amazonskr05",
-      "server": "35.183.96.211",
-      "server_port": 443,
-      "tag": "01-shadowsocks-🇨🇦CA-35.183.96.211-0124",
-      "type": "shadowsocks"
-    },
-    {
       "method": "aes-128-gcm",
       "password": "shadowsocks",
       "server": "149.22.95.183",
       "server_port": 443,
-      "tag": "02-shadowsocks-🇨🇦CA-149.22.95.183-0097",
+      "tag": "01-shadowsocks-🇨🇦 CA 1",
       "type": "shadowsocks"
     },
     {
@@ -21,15 +13,23 @@
       "password": "amazonskr05",
       "server": "15.157.68.13",
       "server_port": 443,
-      "tag": "03-shadowsocks-🇨🇦CA-15.157.68.13-0125",
+      "tag": "02-shadowsocks-🇨🇦CA-15.157.68.13-0125",
       "type": "shadowsocks"
     },
     {
       "method": "aes-256-cfb",
       "password": "amazonskr05",
-      "server": "35.183.129.131",
+      "server": "16.52.154.170",
       "server_port": 443,
-      "tag": "04-shadowsocks-🇨🇦CA-35.183.129.131-0115",
+      "tag": "03-shadowsocks-🇨🇦CA-16.52.154.170-0116",
+      "type": "shadowsocks"
+    },
+    {
+      "method": "aes-256-cfb",
+      "password": "amazonskr05",
+      "server": "35.183.96.211",
+      "server_port": 443,
+      "tag": "04-shadowsocks-🇨🇦CA-35.183.96.211-0124",
       "type": "shadowsocks"
     },
     {
@@ -43,20 +43,20 @@
     {
       "method": "aes-256-cfb",
       "password": "amazonskr05",
-      "server": "16.52.154.170",
+      "server": "35.183.129.131",
       "server_port": 443,
-      "tag": "06-shadowsocks-🇨🇦CA-16.52.154.170-0116",
+      "tag": "06-shadowsocks-🇨🇦CA-35.183.129.131-0115",
       "type": "shadowsocks"
     },
     {
       "interval": "5m",
       "outbounds": [
-        "01-shadowsocks-🇨🇦CA-35.183.96.211-0124",
-        "02-shadowsocks-🇨🇦CA-149.22.95.183-0097",
-        "03-shadowsocks-🇨🇦CA-15.157.68.13-0125",
-        "04-shadowsocks-🇨🇦CA-35.183.129.131-0115",
+        "01-shadowsocks-🇨🇦 CA 1",
+        "02-shadowsocks-🇨🇦CA-15.157.68.13-0125",
+        "03-shadowsocks-🇨🇦CA-16.52.154.170-0116",
+        "04-shadowsocks-🇨🇦CA-35.183.96.211-0124",
         "05-shadowsocks-🇨🇦 CA 2",
-        "06-shadowsocks-🇨🇦CA-16.52.154.170-0116"
+        "06-shadowsocks-🇨🇦CA-35.183.129.131-0115"
       ],
       "tag": "auto",
       "type": "urltest",
@@ -65,12 +65,12 @@
     {
       "outbounds": [
         "auto",
-        "01-shadowsocks-🇨🇦CA-35.183.96.211-0124",
-        "02-shadowsocks-🇨🇦CA-149.22.95.183-0097",
-        "03-shadowsocks-🇨🇦CA-15.157.68.13-0125",
-        "04-shadowsocks-🇨🇦CA-35.183.129.131-0115",
+        "01-shadowsocks-🇨🇦 CA 1",
+        "02-shadowsocks-🇨🇦CA-15.157.68.13-0125",
+        "03-shadowsocks-🇨🇦CA-16.52.154.170-0116",
+        "04-shadowsocks-🇨🇦CA-35.183.96.211-0124",
         "05-shadowsocks-🇨🇦 CA 2",
-        "06-shadowsocks-🇨🇦CA-16.52.154.170-0116"
+        "06-shadowsocks-🇨🇦CA-35.183.129.131-0115"
       ],
       "tag": "select",
       "type": "selector"
