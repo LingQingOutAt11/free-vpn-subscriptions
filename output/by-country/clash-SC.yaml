@@ -1,5 +1,5 @@
 proxies:
-    - name: 01-trojan-@meliproxyy
+    - name: "01-trojan-\U0001F31D70@oneclickvpnkeys"
       password: Mitivpn
       port: 2053
       server: 45.130.125.76
@@ -7,15 +7,7 @@ proxies:
       sni: dash.hitgram.ir
       type: trojan
       udp: true
-    - name: 02-trojan-@VPN_PASARGAD
-      password: Mitivpn
-      port: 2053
-      server: 45.130.125.241
-      skip-cert-verify: true
-      sni: dash.hitgram.ir
-      type: trojan
-      udp: true
-    - name: 03-trojan-@VPN_PASARGAD
+    - name: 02-trojan-@filembad
       password: Mitivpn
       port: 443
       server: 45.130.125.76
@@ -23,7 +15,7 @@ proxies:
       sni: dash.hitgram.ir
       type: trojan
       udp: true
-    - name: 04-trojan-@spiderxman69
+    - name: 03-trojan-@sogoandfuckyourlove
       password: Mitivpn
       port: 443
       server: 45.130.125.69
@@ -31,23 +23,31 @@ proxies:
       sni: www.hitgram.ir
       type: trojan
       udp: true
+    - name: 04-trojan-@VPN_PASARGAD
+      password: Mitivpn
+      port: 2053
+      server: 45.130.125.241
+      skip-cert-verify: true
+      sni: dash.hitgram.ir
+      type: trojan
+      udp: true
 proxy-groups:
     - interval: 300
       name: auto
       proxies:
-        - 01-trojan-@meliproxyy
-        - 02-trojan-@VPN_PASARGAD
-        - 03-trojan-@VPN_PASARGAD
-        - 04-trojan-@spiderxman69
+        - "01-trojan-\U0001F31D70@oneclickvpnkeys"
+        - 02-trojan-@filembad
+        - 03-trojan-@sogoandfuckyourlove
+        - 04-trojan-@VPN_PASARGAD
       type: url-test
       url: https://www.gstatic.com/generate_204
     - name: select
       proxies:
         - auto
-        - 01-trojan-@meliproxyy
-        - 02-trojan-@VPN_PASARGAD
-        - 03-trojan-@VPN_PASARGAD
-        - 04-trojan-@spiderxman69
+        - "01-trojan-\U0001F31D70@oneclickvpnkeys"
+        - 02-trojan-@filembad
+        - 03-trojan-@sogoandfuckyourlove
+        - 04-trojan-@VPN_PASARGAD
       type: select
 rules:
     - MATCH,select
