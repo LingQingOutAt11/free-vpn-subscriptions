@@ -1,17 +1,17 @@
 proxies:
-    - name: "01-trojan-\U0001F1F8\U0001F1E837789 | ⚡️Telegram = t.me/SOSkeyNET"
-      password: xrayVpnTPbot
-      port: 443
-      server: 45.130.125.76
-      skip-cert-verify: true
-      sni: world.thepouria.xyz
-      type: trojan
-      udp: true
-    - name: "02-trojan-\U0001F1F8\U0001F1E837866 | ⚡️Telegram = t.me/SOSkeyNET"
+    - name: "01-trojan-\U0001F1F8\U0001F1E837866 | ⚡️Telegram = t.me/SOSkeyNET"
       password: humanity
       port: 443
       server: 45.130.125.160
       skip-cert-verify: false
+      sni: www.calmlunch.com
+      type: trojan
+      udp: true
+    - name: 02-trojan-@filembad
+      password: humanity
+      port: 443
+      server: 45.130.125.76
+      skip-cert-verify: true
       sni: www.calmlunch.com
       type: trojan
       udp: true
@@ -27,16 +27,16 @@ proxy-groups:
     - interval: 300
       name: auto
       proxies:
-        - "01-trojan-\U0001F1F8\U0001F1E837789 | ⚡️Telegram = t.me/SOSkeyNET"
-        - "02-trojan-\U0001F1F8\U0001F1E837866 | ⚡️Telegram = t.me/SOSkeyNET"
+        - "01-trojan-\U0001F1F8\U0001F1E837866 | ⚡️Telegram = t.me/SOSkeyNET"
+        - 02-trojan-@filembad
         - 03-trojan-@outline_ir
       type: url-test
       url: https://www.gstatic.com/generate_204
     - name: select
       proxies:
         - auto
-        - "01-trojan-\U0001F1F8\U0001F1E837789 | ⚡️Telegram = t.me/SOSkeyNET"
-        - "02-trojan-\U0001F1F8\U0001F1E837866 | ⚡️Telegram = t.me/SOSkeyNET"
+        - "01-trojan-\U0001F1F8\U0001F1E837866 | ⚡️Telegram = t.me/SOSkeyNET"
+        - 02-trojan-@filembad
         - 03-trojan-@outline_ir
       type: select
 rules:
