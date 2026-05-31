@@ -1,43 +1,7 @@
 proxies:
     - alterId: 0
       cipher: auto
-      name: "01-vmess-\U0001F1E8\U0001F1FF CZ 58"
-      network: tcp
-      port: 180
-      server: 82.198.246.97
-      type: vmess
-      udp: true
-      uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    - alterId: 0
-      cipher: auto
-      name: "02-vmess-\U0001F1E8\U0001F1FF CZ 70"
-      network: tcp
-      port: 180
-      server: 82.198.246.233
-      type: vmess
-      udp: true
-      uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    - alterId: 0
-      cipher: auto
-      name: "03-vmess-\U0001F1E8\U0001F1FF CZ 16"
-      network: tcp
-      port: 180
-      server: 82.198.246.250
-      type: vmess
-      udp: true
-      uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    - alterId: 0
-      cipher: auto
-      name: "04-vmess-\U0001F1E8\U0001F1FF CZ 32"
-      network: tcp
-      port: 180
-      server: 82.198.246.37
-      type: vmess
-      udp: true
-      uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    - alterId: 0
-      cipher: auto
-      name: "05-vmess-\U0001F1E8\U0001F1FF CZ 75"
+      name: "01-vmess-\U0001F1E8\U0001F1FF CZ 56"
       network: tcp
       port: 180
       server: 82.198.246.9
@@ -46,7 +10,34 @@ proxies:
       uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
     - alterId: 0
       cipher: auto
-      name: "06-vmess-\U0001F1E8\U0001F1FF CZ 105"
+      name: "02-vmess-\U0001F1E8\U0001F1FF CZ 100"
+      network: tcp
+      port: 180
+      server: 82.198.246.97
+      type: vmess
+      udp: true
+      uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    - alterId: 0
+      cipher: auto
+      name: "03-vmess-\U0001F1E8\U0001F1FF CZ 14"
+      network: tcp
+      port: 180
+      server: 82.198.246.214
+      type: vmess
+      udp: true
+      uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    - alterId: 0
+      cipher: auto
+      name: "04-vmess-\U0001F1E8\U0001F1FF CZ 108"
+      network: tcp
+      port: 180
+      server: 82.198.246.233
+      type: vmess
+      udp: true
+      uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    - alterId: 0
+      cipher: auto
+      name: "05-vmess-\U0001F1E8\U0001F1FF CZ 112"
       network: tcp
       port: 180
       server: 82.198.246.46
@@ -55,10 +46,19 @@ proxies:
       uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
     - alterId: 0
       cipher: auto
+      name: "06-vmess-\U0001F1FA\U0001F1F8 US美国(mibei77.com 米贝节点分享)"
+      network: tcp
+      port: 180
+      server: 82.198.246.250
+      type: vmess
+      udp: true
+      uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    - alterId: 0
+      cipher: auto
       name: "07-vmess-\U0001F1EC\U0001F1E7 GB英国(mibei77.com 米贝节点分享)"
       network: tcp
       port: 180
-      server: 82.198.246.214
+      server: 82.198.246.37
       type: vmess
       udp: true
       uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
@@ -66,24 +66,24 @@ proxy-groups:
     - interval: 300
       name: auto
       proxies:
-        - "01-vmess-\U0001F1E8\U0001F1FF CZ 58"
-        - "02-vmess-\U0001F1E8\U0001F1FF CZ 70"
-        - "03-vmess-\U0001F1E8\U0001F1FF CZ 16"
-        - "04-vmess-\U0001F1E8\U0001F1FF CZ 32"
-        - "05-vmess-\U0001F1E8\U0001F1FF CZ 75"
-        - "06-vmess-\U0001F1E8\U0001F1FF CZ 105"
+        - "01-vmess-\U0001F1E8\U0001F1FF CZ 56"
+        - "02-vmess-\U0001F1E8\U0001F1FF CZ 100"
+        - "03-vmess-\U0001F1E8\U0001F1FF CZ 14"
+        - "04-vmess-\U0001F1E8\U0001F1FF CZ 108"
+        - "05-vmess-\U0001F1E8\U0001F1FF CZ 112"
+        - "06-vmess-\U0001F1FA\U0001F1F8 US美国(mibei77.com 米贝节点分享)"
         - "07-vmess-\U0001F1EC\U0001F1E7 GB英国(mibei77.com 米贝节点分享)"
       type: url-test
       url: https://www.gstatic.com/generate_204
     - name: select
       proxies:
         - auto
-        - "01-vmess-\U0001F1E8\U0001F1FF CZ 58"
-        - "02-vmess-\U0001F1E8\U0001F1FF CZ 70"
-        - "03-vmess-\U0001F1E8\U0001F1FF CZ 16"
-        - "04-vmess-\U0001F1E8\U0001F1FF CZ 32"
-        - "05-vmess-\U0001F1E8\U0001F1FF CZ 75"
-        - "06-vmess-\U0001F1E8\U0001F1FF CZ 105"
+        - "01-vmess-\U0001F1E8\U0001F1FF CZ 56"
+        - "02-vmess-\U0001F1E8\U0001F1FF CZ 100"
+        - "03-vmess-\U0001F1E8\U0001F1FF CZ 14"
+        - "04-vmess-\U0001F1E8\U0001F1FF CZ 108"
+        - "05-vmess-\U0001F1E8\U0001F1FF CZ 112"
+        - "06-vmess-\U0001F1FA\U0001F1F8 US美国(mibei77.com 米贝节点分享)"
         - "07-vmess-\U0001F1EC\U0001F1E7 GB英国(mibei77.com 米贝节点分享)"
       type: select
 rules:
