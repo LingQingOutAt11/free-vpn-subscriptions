@@ -9,18 +9,18 @@ proxies:
       type: vless
       udp: true
       uuid: 47422044-85e3-426b-b6c4-3588cb24a3e5
-    - name: "02-trojan-Config0plus\U0001F30F\U0001F4A5"
+    - name: "02-trojan-Config0plus\U0001F7E2\U0001F31F`"
       password: Config0plus
       port: 443
-      server: 45.130.125.160
+      server: 45.130.125.69
       skip-cert-verify: false
       sni: api24-normal.tiktokv.com.cyylr.eu.cc
       type: trojan
       udp: true
-    - name: "03-trojan-Config0plus\U0001F7E2\U0001F31F`"
+    - name: "03-trojan-Config0plus\U0001F30F\U0001F4A5"
       password: Config0plus
       port: 443
-      server: 45.130.125.69
+      server: 45.130.125.160
       skip-cert-verify: false
       sni: api24-normal.tiktokv.com.cyylr.eu.cc
       type: trojan
@@ -38,8 +38,8 @@ proxy-groups:
       name: auto
       proxies:
         - "01-vless-\U0001F451\U0001F310T.me/Config0plus`"
-        - "02-trojan-Config0plus\U0001F30F\U0001F4A5"
-        - "03-trojan-Config0plus\U0001F7E2\U0001F31F`"
+        - "02-trojan-Config0plus\U0001F7E2\U0001F31F`"
+        - "03-trojan-Config0plus\U0001F30F\U0001F4A5"
         - 04-trojan-@Proxy_Vpney (6)
       type: url-test
       url: https://www.gstatic.com/generate_204
@@ -47,8 +47,8 @@ proxy-groups:
       proxies:
         - auto
         - "01-vless-\U0001F451\U0001F310T.me/Config0plus`"
-        - "02-trojan-Config0plus\U0001F30F\U0001F4A5"
-        - "03-trojan-Config0plus\U0001F7E2\U0001F31F`"
+        - "02-trojan-Config0plus\U0001F7E2\U0001F31F`"
+        - "03-trojan-Config0plus\U0001F30F\U0001F4A5"
         - 04-trojan-@Proxy_Vpney (6)
       type: select
 rules:
