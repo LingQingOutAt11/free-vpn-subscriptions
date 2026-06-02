@@ -1,25 +1,7 @@
 proxies:
     - alterId: 0
       cipher: auto
-      name: "01-vmess-\U0001F1E8\U0001F1FF CZ 103"
-      network: tcp
-      port: 180
-      server: 82.198.246.97
-      type: vmess
-      udp: true
-      uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    - alterId: 0
-      cipher: auto
-      name: "02-vmess-\U0001F1E8\U0001F1FF CZ 146"
-      network: tcp
-      port: 180
-      server: 82.198.246.250
-      type: vmess
-      udp: true
-      uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    - alterId: 0
-      cipher: auto
-      name: "03-vmess-\U0001F1E8\U0001F1FF CZ 90"
+      name: "01-vmess-\U0001F1E8\U0001F1FF CZ 83"
       network: tcp
       port: 180
       server: 82.198.246.9
@@ -28,7 +10,16 @@ proxies:
       uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
     - alterId: 0
       cipher: auto
-      name: "04-vmess-\U0001F1E8\U0001F1FF CZ 48"
+      name: "02-vmess-\U0001F1E8\U0001F1FF CZ 87"
+      network: tcp
+      port: 180
+      server: 82.198.246.97
+      type: vmess
+      udp: true
+      uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    - alterId: 0
+      cipher: auto
+      name: "03-vmess-\U0001F1E8\U0001F1FF CZ 47"
       network: tcp
       port: 180
       server: 82.198.246.233
@@ -37,7 +28,16 @@ proxies:
       uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
     - alterId: 0
       cipher: auto
-      name: "05-vmess-\U0001F1E8\U0001F1FF CZ 3"
+      name: "04-vmess-\U0001F1E8\U0001F1FF CZ 119"
+      network: tcp
+      port: 180
+      server: 82.198.246.37
+      type: vmess
+      udp: true
+      uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    - alterId: 0
+      cipher: auto
+      name: "05-vmess-\U0001F1E8\U0001F1FF CZ 9"
       network: tcp
       port: 180
       server: 82.198.246.46
@@ -46,45 +46,65 @@ proxies:
       uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
     - alterId: 0
       cipher: auto
-      name: "06-vmess-\U0001F1E8\U0001F1FF CZ 63"
+      name: "06-vmess-\U0001F1E8\U0001F1FF CZ 49"
       network: tcp
       port: 180
-      server: 82.198.246.37
+      server: 82.198.246.250
       type: vmess
       udp: true
       uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
     - alterId: 0
-      cipher: aes-128-gcm
-      name: "07-vmess-\U0001F1E9\U0001F1EA 德国 | DEU"
+      cipher: auto
+      name: "07-vmess-\U0001F1EC\U0001F1E7 英国 starcorenode.com"
       network: tcp
       port: 180
       server: 82.198.246.214
       type: vmess
       udp: true
       uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    - name: "08-trojan-\U0001F1FA\U0001F1F8 美国 Akamai科技公司CDN网络节点"
+      password: s_WEN9lMmufG+qDIsn-4C7JOVAnDdbS3Ui
+      port: 443
+      server: 172.236.220.10
+      skip-cert-verify: true
+      sni: 172.236.220.10
+      type: trojan
+      udp: true
+    - name: "09-trojan-\U0001F1E9\U0001F1EA DE 11"
+      password: r-_YbwF.j0TtHVewoFIppramjAnmSfqYzJ
+      port: 443
+      server: 172.238.120.124
+      skip-cert-verify: false
+      sni: ""
+      type: trojan
+      udp: true
 proxy-groups:
     - interval: 300
       name: auto
       proxies:
-        - "01-vmess-\U0001F1E8\U0001F1FF CZ 103"
-        - "02-vmess-\U0001F1E8\U0001F1FF CZ 146"
-        - "03-vmess-\U0001F1E8\U0001F1FF CZ 90"
-        - "04-vmess-\U0001F1E8\U0001F1FF CZ 48"
-        - "05-vmess-\U0001F1E8\U0001F1FF CZ 3"
-        - "06-vmess-\U0001F1E8\U0001F1FF CZ 63"
-        - "07-vmess-\U0001F1E9\U0001F1EA 德国 | DEU"
+        - "01-vmess-\U0001F1E8\U0001F1FF CZ 83"
+        - "02-vmess-\U0001F1E8\U0001F1FF CZ 87"
+        - "03-vmess-\U0001F1E8\U0001F1FF CZ 47"
+        - "04-vmess-\U0001F1E8\U0001F1FF CZ 119"
+        - "05-vmess-\U0001F1E8\U0001F1FF CZ 9"
+        - "06-vmess-\U0001F1E8\U0001F1FF CZ 49"
+        - "07-vmess-\U0001F1EC\U0001F1E7 英国 starcorenode.com"
+        - "08-trojan-\U0001F1FA\U0001F1F8 美国 Akamai科技公司CDN网络节点"
+        - "09-trojan-\U0001F1E9\U0001F1EA DE 11"
       type: url-test
       url: https://www.gstatic.com/generate_204
     - name: select
       proxies:
         - auto
-        - "01-vmess-\U0001F1E8\U0001F1FF CZ 103"
-        - "02-vmess-\U0001F1E8\U0001F1FF CZ 146"
-        - "03-vmess-\U0001F1E8\U0001F1FF CZ 90"
-        - "04-vmess-\U0001F1E8\U0001F1FF CZ 48"
-        - "05-vmess-\U0001F1E8\U0001F1FF CZ 3"
-        - "06-vmess-\U0001F1E8\U0001F1FF CZ 63"
-        - "07-vmess-\U0001F1E9\U0001F1EA 德国 | DEU"
+        - "01-vmess-\U0001F1E8\U0001F1FF CZ 83"
+        - "02-vmess-\U0001F1E8\U0001F1FF CZ 87"
+        - "03-vmess-\U0001F1E8\U0001F1FF CZ 47"
+        - "04-vmess-\U0001F1E8\U0001F1FF CZ 119"
+        - "05-vmess-\U0001F1E8\U0001F1FF CZ 9"
+        - "06-vmess-\U0001F1E8\U0001F1FF CZ 49"
+        - "07-vmess-\U0001F1EC\U0001F1E7 英国 starcorenode.com"
+        - "08-trojan-\U0001F1FA\U0001F1F8 美国 Akamai科技公司CDN网络节点"
+        - "09-trojan-\U0001F1E9\U0001F1EA DE 11"
       type: select
 rules:
     - MATCH,select
