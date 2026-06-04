@@ -12,25 +12,27 @@ proxies:
     - name: "02-vless-@hi_proxy_iran :\U0001F448کانال تلگرام"
       network: ws
       port: 443
-      server: 45.130.125.160
-      servername: s.blibli.com.cyylr.eu.cc
+      server: 45.130.125.76
+      servername: partner.catchplay.com.cyylr.eu.cc
       skip-cert-verify: false
       tls: true
       type: vless
       udp: true
-      uuid: 47422044-85e3-426b-b6c4-3588cb24a3e5
-    - name: "03-trojan-Config0plus\U0001F1EB\U0001F1F7\U0001F680`"
-      password: Config0plus
-      port: 443
-      server: 45.130.125.96
-      skip-cert-verify: false
-      sni: api24-normal.tiktokv.com.cyylr.eu.cc
-      type: trojan
-      udp: true
-    - name: 04-trojan-未知3
-      password: Config0plus
+      uuid: 8ad2869d-1571-45cc-8d02-10aea6d600ac
+    - name: 03-vless-node
+      network: ws
       port: 443
       server: 45.130.125.160
+      servername: partner.catchplay.com.cyylr.eu.cc
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: 8ad2869d-1571-45cc-8d02-10aea6d600ac
+    - name: "04-trojan-Config0plus\U0001F7E2\U0001F31F`"
+      password: Config0plus
+      port: 443
+      server: 45.130.125.69
       skip-cert-verify: false
       sni: api24-normal.tiktokv.com.cyylr.eu.cc
       type: trojan
@@ -43,7 +45,15 @@ proxies:
       sni: api24-normal.tiktokv.com.cyylr.eu.cc
       type: trojan
       udp: true
-    - name: 06-trojan-未知8
+    - name: 06-trojan-⚡@V2ray_official
+      password: Config0plus
+      port: 443
+      server: 45.130.125.96
+      skip-cert-verify: false
+      sni: api24-normal.tiktokv.com.cyylr.eu.cc
+      type: trojan
+      udp: true
+    - name: "07-trojan-@Config0plus\U0001F336️\U0001F680```"
       password: Config0plus
       port: 443
       server: 45.130.125.76
@@ -51,36 +61,26 @@ proxies:
       sni: unnes.ac.id.cyylr.eu.cc
       type: trojan
       udp: true
-    - name: "07-trojan-Config0plus\U0001F7E2\U0001F31F`"
+    - name: "08-trojan-Config0plus\U0001F30F\U0001F4A5"
       password: Config0plus
       port: 443
-      server: 45.130.125.69
+      server: 45.130.125.160
       skip-cert-verify: false
       sni: api24-normal.tiktokv.com.cyylr.eu.cc
       type: trojan
       udp: true
-    - name: "08-vless-@hi_proxy_iran :\U0001F448کانال تلگرام"
-      network: ws
-      port: 443
-      server: 45.130.125.76
-      servername: partner.catchplay.com.cyylr.eu.cc
-      skip-cert-verify: false
-      tls: true
-      type: vless
-      udp: true
-      uuid: 8ad2869d-1571-45cc-8d02-10aea6d600ac
 proxy-groups:
     - interval: 300
       name: auto
       proxies:
         - "01-vless-\U0001F69868@oneclickvpnkeys"
         - "02-vless-@hi_proxy_iran :\U0001F448کانال تلگرام"
-        - "03-trojan-Config0plus\U0001F1EB\U0001F1F7\U0001F680`"
-        - 04-trojan-未知3
+        - 03-vless-node
+        - "04-trojan-Config0plus\U0001F7E2\U0001F31F`"
         - "05-trojan-Config0plus\U0001F1E9\U0001F1EA\U0001F680```"
-        - 06-trojan-未知8
-        - "07-trojan-Config0plus\U0001F7E2\U0001F31F`"
-        - "08-vless-@hi_proxy_iran :\U0001F448کانال تلگرام"
+        - 06-trojan-⚡@V2ray_official
+        - "07-trojan-@Config0plus\U0001F336️\U0001F680```"
+        - "08-trojan-Config0plus\U0001F30F\U0001F4A5"
       type: url-test
       url: https://www.gstatic.com/generate_204
     - name: select
@@ -88,12 +88,12 @@ proxy-groups:
         - auto
         - "01-vless-\U0001F69868@oneclickvpnkeys"
         - "02-vless-@hi_proxy_iran :\U0001F448کانال تلگرام"
-        - "03-trojan-Config0plus\U0001F1EB\U0001F1F7\U0001F680`"
-        - 04-trojan-未知3
+        - 03-vless-node
+        - "04-trojan-Config0plus\U0001F7E2\U0001F31F`"
         - "05-trojan-Config0plus\U0001F1E9\U0001F1EA\U0001F680```"
-        - 06-trojan-未知8
-        - "07-trojan-Config0plus\U0001F7E2\U0001F31F`"
-        - "08-vless-@hi_proxy_iran :\U0001F448کانال تلگرام"
+        - 06-trojan-⚡@V2ray_official
+        - "07-trojan-@Config0plus\U0001F336️\U0001F680```"
+        - "08-trojan-Config0plus\U0001F30F\U0001F4A5"
       type: select
 rules:
     - MATCH,select
