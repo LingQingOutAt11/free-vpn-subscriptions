@@ -4,7 +4,7 @@
 
 <p align="center"><img src="https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/assets/hero.png" alt="Free VPN Subscriptions — hourly-refreshed free VPN subscriptions for Clash, sing-box, v2ray" width="780"></p>
 
-![nodes](https://img.shields.io/badge/nodes-111-brightgreen) ![alive](https://img.shields.io/badge/alive-1961-blue) ![median--rtt](https://img.shields.io/badge/median--rtt-121ms-orange) ![updated](https://img.shields.io/badge/updated-2026-06-04_02:11_UTC-informational)
+![nodes](https://img.shields.io/badge/nodes-111-brightgreen) ![alive](https://img.shields.io/badge/alive-1987-blue) ![median--rtt](https://img.shields.io/badge/median--rtt-125ms-orange) ![updated](https://img.shields.io/badge/updated-2026-06-04_03:15_UTC-informational)
 
 > **The easiest way to get a working free VPN — copy a subscription link, paste it into your client, connect.**  
 > No signup. No payment. No installation of binaries. Refreshed hourly from public sources — every published node has demonstrably forwarded real HTTP traffic through sing-box minutes ago.
@@ -102,14 +102,14 @@ New to VPN clients? Pick your platform and follow the tutorial:
 ## 📊 Live Stats
 
 - **Nodes selected**: 111
-- **Alive across all sources**: 1961
-- **Fastest node RTT**: 29 ms
-- **Median RTT**: 121 ms
-- **Last updated (UTC)**: 2026-06-04 02:11 UTC
+- **Alive across all sources**: 1987
+- **Fastest node RTT**: 33 ms
+- **Median RTT**: 125 ms
+- **Last updated (UTC)**: 2026-06-04 03:15 UTC
 
-**Protocol mix:** shadowsocks × 24 · trojan × 43 · vless × 35 · vmess × 9
+**Protocol mix:** shadowsocks × 24 · trojan × 46 · vless × 31 · vmess × 10
 
-**Sources used this run:** `barry-far-v2ray` × 28 · `epodonios` × 24 · `lagzian-mix` × 1 · `mahdi0024` × 15 · `mahdibland-aggregator` × 3 · `mahdibland-shadowsocks` × 7 · `matin-v2ray` × 2 · `ninjastrikers` × 29 · `surfboard-eternity` × 2
+**Sources used this run:** `barry-far-v2ray` × 28 · `ebrasha-v2ray` × 2 · `epodonios` × 28 · `lagzian-mix` × 1 · `mahdi0024` × 11 · `mahdibland-aggregator` × 5 · `mahdibland-shadowsocks` × 5 · `ninjastrikers` × 24 · `pawdroid` × 3 · `surfboard-eternity` × 4
 
 ## ❓ FAQ
 

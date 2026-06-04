@@ -1,25 +1,7 @@
 proxies:
     - alterId: 0
       cipher: auto
-      name: "01-vmess-\U0001F1E8\U0001F1FF CZ 25"
-      network: tcp
-      port: 180
-      server: 82.198.246.214
-      type: vmess
-      udp: true
-      uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    - alterId: 0
-      cipher: auto
-      name: "02-vmess-\U0001F1E8\U0001F1FF CZ 47"
-      network: tcp
-      port: 180
-      server: 82.198.246.9
-      type: vmess
-      udp: true
-      uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    - alterId: 0
-      cipher: auto
-      name: "03-vmess-\U0001F1E8\U0001F1FF CZ 14"
+      name: "01-vmess-\U0001F1E8\U0001F1FF CZ 17"
       network: tcp
       port: 180
       server: 82.198.246.37
@@ -28,7 +10,7 @@ proxies:
       uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
     - alterId: 0
       cipher: auto
-      name: "04-vmess-\U0001F1E8\U0001F1FF CZ 28"
+      name: "02-vmess-\U0001F1E8\U0001F1FF CZ 28"
       network: tcp
       port: 180
       server: 82.198.246.233
@@ -37,14 +19,32 @@ proxies:
       uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
     - alterId: 0
       cipher: auto
-      name: "05-vmess-\U0001F1FA\U0001F1F8 Join+Telegram:@Farah_VPN \U0001F1FA\U0001F1F8"
+      name: "03-vmess-\U0001F1E8\U0001F1FF CZ 31"
+      network: tcp
+      port: 180
+      server: 82.198.246.214
+      type: vmess
+      udp: true
+      uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    - alterId: 0
+      cipher: auto
+      name: "04-vmess-\U0001F1FA\U0001F1F8 US美国(mibei77.com 米贝节点分享)"
       network: tcp
       port: 180
       server: 82.198.246.250
       type: vmess
       udp: true
       uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    - name: "06-trojan-@GozargahAzad|\U0001F3C1"
+    - alterId: 0
+      cipher: auto
+      name: "05-vmess-\U0001F1E8\U0001F1FF CZ 47"
+      network: tcp
+      port: 180
+      server: 82.198.246.9
+      type: vmess
+      udp: true
+      uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    - name: 06-trojan-TEL:Father_vpn
       password: de4dbc41-fe13-4498-b5b4-083e451270f6
       port: 443
       server: 89.116.46.68
@@ -76,12 +76,12 @@ proxy-groups:
     - interval: 300
       name: auto
       proxies:
-        - "01-vmess-\U0001F1E8\U0001F1FF CZ 25"
-        - "02-vmess-\U0001F1E8\U0001F1FF CZ 47"
-        - "03-vmess-\U0001F1E8\U0001F1FF CZ 14"
-        - "04-vmess-\U0001F1E8\U0001F1FF CZ 28"
-        - "05-vmess-\U0001F1FA\U0001F1F8 Join+Telegram:@Farah_VPN \U0001F1FA\U0001F1F8"
-        - "06-trojan-@GozargahAzad|\U0001F3C1"
+        - "01-vmess-\U0001F1E8\U0001F1FF CZ 17"
+        - "02-vmess-\U0001F1E8\U0001F1FF CZ 28"
+        - "03-vmess-\U0001F1E8\U0001F1FF CZ 31"
+        - "04-vmess-\U0001F1FA\U0001F1F8 US美国(mibei77.com 米贝节点分享)"
+        - "05-vmess-\U0001F1E8\U0001F1FF CZ 47"
+        - 06-trojan-TEL:Father_vpn
         - 07-vless-14https://t.me/irconfiig`
         - 08-vless-8https://t.me/irconfiig
       type: url-test
@@ -89,12 +89,12 @@ proxy-groups:
     - name: select
       proxies:
         - auto
-        - "01-vmess-\U0001F1E8\U0001F1FF CZ 25"
-        - "02-vmess-\U0001F1E8\U0001F1FF CZ 47"
-        - "03-vmess-\U0001F1E8\U0001F1FF CZ 14"
-        - "04-vmess-\U0001F1E8\U0001F1FF CZ 28"
-        - "05-vmess-\U0001F1FA\U0001F1F8 Join+Telegram:@Farah_VPN \U0001F1FA\U0001F1F8"
-        - "06-trojan-@GozargahAzad|\U0001F3C1"
+        - "01-vmess-\U0001F1E8\U0001F1FF CZ 17"
+        - "02-vmess-\U0001F1E8\U0001F1FF CZ 28"
+        - "03-vmess-\U0001F1E8\U0001F1FF CZ 31"
+        - "04-vmess-\U0001F1FA\U0001F1F8 US美国(mibei77.com 米贝节点分享)"
+        - "05-vmess-\U0001F1E8\U0001F1FF CZ 47"
+        - 06-trojan-TEL:Father_vpn
         - 07-vless-14https://t.me/irconfiig`
         - 08-vless-8https://t.me/irconfiig
       type: select
