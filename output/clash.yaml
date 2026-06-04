@@ -1,16 +1,39 @@
 proxies:
+    - cipher: chacha20-ietf-poly1305
+      name: "01-shadowsocks-\U0001F1FA\U0001F1F8US-108.181.0.177-0061"
+      password: G5p6ww4o67HB
+      port: 8388
+      server: 108.181.0.177
+      type: ss
+      udp: true
     - alterId: 0
       cipher: auto
-      name: "01-vmess-\U0001F1E9\U0001F1EADE-82.198.246.250-56"
+      name: "02-vmess-\U0001F1E8\U0001F1FF CZ 5"
+      network: tcp
+      port: 180
+      server: 82.198.246.97
+      type: vmess
+      udp: true
+      uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    - alterId: 0
+      cipher: auto
+      name: "03-vmess-\U0001F1E8\U0001F1FF CZ 3"
       network: tcp
       port: 180
       server: 82.198.246.250
       type: vmess
       udp: true
       uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    - cipher: chacha20-ietf-poly1305
+      name: "04-shadowsocks-\U0001F1E8\U0001F1E6CA-108.181.118.10-0062"
+      password: G5p6ww4o67HB
+      port: 8388
+      server: 108.181.118.10
+      type: ss
+      udp: true
     - alterId: 0
       cipher: auto
-      name: "02-vmess-\U0001F1FA\U0001F1F8 US美国(mibei77.com 米贝节点分享)"
+      name: "05-vmess-\U0001F1E8\U0001F1FF CZ 4"
       network: tcp
       port: 180
       server: 82.198.246.37
@@ -19,14 +42,14 @@ proxies:
       uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
     - alterId: 0
       cipher: auto
-      name: "03-vmess-\U0001F1E8\U0001F1FF CZ 8"
+      name: "06-vmess-\U0001F1E8\U0001F1FF CZ 7"
       network: tcp
       port: 180
-      server: 82.198.246.233
+      server: 82.198.246.214
       type: vmess
       udp: true
       uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    - name: "04-trojan-\U0001F1FA\U0001F1F8 US 1"
+    - name: "07-trojan-\U0001F1FA\U0001F1F8 US 6"
       password: bX_lNHWoW6ywq82mI=KUr+8i__VSp0Hs_E
       port: 443
       server: 172.235.63.252
@@ -36,92 +59,16 @@ proxies:
       udp: true
     - alterId: 0
       cipher: auto
-      name: "05-vmess-\U0001F1E8\U0001F1FF CZ 2"
+      name: "08-vmess-\U0001F1E8\U0001F1FF CZ 8"
       network: tcp
       port: 180
-      server: 82.198.246.214
+      server: 82.198.246.233
       type: vmess
       udp: true
       uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    - alterId: 0
-      cipher: auto
-      name: "06-vmess-\U0001F1E8\U0001F1FF CZ 5"
-      network: tcp
-      port: 180
-      server: 82.198.246.97
-      type: vmess
-      udp: true
-      uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    - alterId: 0
-      cipher: auto
-      name: "07-vmess-\U0001F534\U0001F1FA\U0001F1F8[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_33b6e62b"
-      network: ws
-      port: 10086
-      server: 107.148.185.16
-      type: vmess
-      udp: true
-      uuid: a75d95d5-ae5b-4207-a6a3-ada2943776b9
-    - cipher: chacha20-ietf-poly1305
-      name: "08-shadowsocks-\U0001F1FA\U0001F1F8US-108.181.0.177-0089"
-      password: G5p6ww4o67HB
-      port: 8388
-      server: 108.181.0.177
-      type: ss
-      udp: true
-    - cipher: chacha20-ietf-poly1305
-      name: "09-shadowsocks-\U0001F1E8\U0001F1E6CA-108.181.118.10-0084"
-      password: G5p6ww4o67HB
-      port: 8388
-      server: 108.181.118.10
-      type: ss
-      udp: true
-    - client-fingerprint: chrome
-      name: "10-vless-⚪\U0001F3F3️[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_85fd2b4e"
-      network: tcp
-      port: 443
-      reality-opts:
-        public-key: OZVjfQBboTDTBw0baMFqzVPsVUI4FNQmspTEb0b0zW4
-        short-id: a1b2c3d4
-      server: 45.158.127.5
-      servername: www.samsung.com
-      tls: true
-      type: vless
-      udp: true
-      uuid: 301d514e-4aa0-47b0-ba44-a0cb891cd52f
-    - cipher: aes-128-gcm
-      name: "11-shadowsocks-\U0001F1FA\U0001F1F8US-173.244.56.9-3803"
-      password: shadowsocks
-      port: 443
-      server: 173.244.56.9
-      type: ss
-      udp: true
-    - cipher: chacha20-ietf-poly1305
-      name: 12-shadowsocks-Free 77 @Outline_ir
-      password: GyZ5Xo0ht41vYmW3H4
-      port: 816
-      server: 149.28.255.6
-      type: ss
-      udp: true
-    - cipher: aes-128-gcm
-      name: "13-shadowsocks-\U0001F1FA\U0001F1F8US-173.244.56.6-0094"
-      password: shadowsocks
-      port: 443
-      server: 173.244.56.6
-      type: ss
-      udp: true
-    - name: "14-vless-\U0001F69868@oneclickvpnkeys"
-      network: ws
-      port: 443
-      server: 45.130.125.0
-      servername: support.zoom.us.cyylr.eu.cc
-      skip-cert-verify: false
-      tls: true
-      type: vless
-      udp: true
-      uuid: 1eb8c38b-0bc2-4a6f-a860-5239c446abc8
     - client-fingerprint: firefox
       flow: xtls-rprx-vision
-      name: "15-vless-\U0001F534\U0001F1FA\U0001F1F8[\U0001F3AC\U0001F916\U0001F4FA\U0001F3AA]_github.com/Ruk1ng001_932c0202"
+      name: "09-vless-\U0001F534\U0001F1FA\U0001F1F8[\U0001F3AC\U0001F916\U0001F4FA\U0001F3AA]_github.com/Ruk1ng001_932c0202"
       network: tcp
       port: 50513
       reality-opts:
@@ -133,61 +80,34 @@ proxies:
       type: vless
       udp: true
       uuid: 6245c3d6-348f-44a4-f18b-9d13168a3425
-    - name: "16-vless-@hi_proxy_iran :\U0001F448کانال تلگرام"
-      network: ws
+    - cipher: aes-128-gcm
+      name: "10-shadowsocks-\U0001F1FA\U0001F1F8US-173.244.56.9-0055"
+      password: shadowsocks
       port: 443
-      server: 45.130.125.160
-      servername: s.blibli.com.cyylr.eu.cc
-      skip-cert-verify: false
-      tls: true
-      type: vless
-      udp: true
-      uuid: 47422044-85e3-426b-b6c4-3588cb24a3e5
-    - alterId: 0
-      cipher: auto
-      name: "17-vmess-\U0001F1FA\U0001F1F8 US 15"
-      network: tcp
-      port: 3593
-      server: 69.12.91.52
-      type: vmess
-      udp: true
-      uuid: a3de462b-0276-4003-8f34-536b0f9d340c
-    - cipher: chacha20-ietf-poly1305
-      name: "18-shadowsocks-\U0001F1FA\U0001F1F8US-216.105.168.18-0153"
-      password: hCCWOcIsK5wrFz4OX70rWf
-      port: 443
-      server: 216.105.168.18
+      server: 173.244.56.9
       type: ss
       udp: true
-    - name: "19-vless-@hi_proxy_iran :\U0001F448کانال تلگرام"
-      network: ws
+    - cipher: aes-128-gcm
+      name: "11-shadowsocks-\U0001F1FA\U0001F1F8US-173.244.56.6-3876"
+      password: shadowsocks
       port: 443
-      server: 45.130.125.76
-      servername: partner.catchplay.com.cyylr.eu.cc
-      skip-cert-verify: false
+      server: 173.244.56.6
+      type: ss
+      udp: true
+    - client-fingerprint: chrome
+      name: "12-vless-⚪\U0001F3F3️[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_85fd2b4e"
+      network: tcp
+      port: 443
+      reality-opts:
+        public-key: OZVjfQBboTDTBw0baMFqzVPsVUI4FNQmspTEb0b0zW4
+        short-id: a1b2c3d4
+      server: 45.158.127.5
+      servername: www.samsung.com
       tls: true
       type: vless
       udp: true
-      uuid: 8ad2869d-1571-45cc-8d02-10aea6d600ac
-    - name: 20-trojan-Telegram:Config0plus⚡
-      password: Config0plus
-      port: 443
-      server: 104.16.75.127
-      skip-cert-verify: false
-      sni: api24-normal.tiktokv.com.cyylr.eu.cc
-      type: trojan
-      udp: true
-    - name: "21-vless-\U0001F680@V2Ray_Hub1200"
-      network: ws
-      port: 443
-      server: 188.114.97.6
-      servername: support.zoom.us.cyylr.eu.cc
-      skip-cert-verify: false
-      tls: true
-      type: vless
-      udp: true
-      uuid: 58341346-98dd-4094-a26c-c378e86261e1
-    - name: "22-vless-\U0001F69864@oneclickvpnkeys"
+      uuid: 301d514e-4aa0-47b0-ba44-a0cb891cd52f
+    - name: "13-vless-\U0001F98436@oneclickvpnkeys"
       network: ws
       port: 443
       server: 104.19.229.21
@@ -197,68 +117,33 @@ proxies:
       type: vless
       udp: true
       uuid: cc752a3e-1537-4e86-bb50-1b897bf7b33c
-    - name: "23-trojan-\U0001F1F8\U0001F1EC t.me/Natrixo BB"
-      password: Config0plus
-      port: 443
-      server: 45.130.125.160
-      skip-cert-verify: false
-      sni: investors.spotify.com.cyylr.eu.cc
-      type: trojan
-      udp: true
-    - cipher: aes-128-gcm
-      name: "24-shadowsocks-\U0001F1FA\U0001F1F8US-156.146.38.170-4074"
-      password: shadowsocks
-      port: 443
-      server: 156.146.38.170
-      type: ss
-      udp: true
-    - name: 25-trojan-未知3
-      password: Config0plus
-      port: 443
-      server: 45.130.125.76
-      skip-cert-verify: false
-      sni: unnes.ac.id.cyylr.eu.cc
-      type: trojan
-      udp: true
-    - name: "26-trojan-\U0001F69880@oneclickvpnkeys"
-      password: aa710f78-eddb-45b4-bd32-1f8692a754e5
-      port: 443
-      server: 104.19.229.21
-      skip-cert-verify: false
-      sni: s.blibli.com.cyylr.eu.cc
-      type: trojan
-      udp: true
-    - cipher: aes-128-gcm
-      name: "27-shadowsocks-\U0001F1FA\U0001F1F8US-156.146.38.168-4139"
-      password: shadowsocks
-      port: 443
-      server: 156.146.38.168
-      type: ss
-      udp: true
-    - cipher: aes-128-gcm
-      name: "28-shadowsocks-\U0001F1FA\U0001F1F8US-156.146.38.169-0070"
-      password: shadowsocks
-      port: 443
-      server: 156.146.38.169
+    - cipher: chacha20-ietf-poly1305
+      name: "14-shadowsocks-\U0001F1FA\U0001F1F8US-149.28.255.6-0180"
+      password: GyZ5Xo0ht41vYmW3H4
+      port: 816
+      server: 149.28.255.6
       type: ss
       udp: true
     - alterId: 0
       cipher: auto
-      name: "29-vmess-\U0001F1FA\U0001F1F8 US 16"
-      network: tcp
-      port: 55310
-      server: 23.226.135.232
+      name: "15-vmess-\U0001F534\U0001F1FA\U0001F1F8[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_33b6e62b"
+      network: ws
+      port: 10086
+      server: 107.148.185.16
       type: vmess
       udp: true
-      uuid: 22066968-ef90-455e-b981-4bf782d25386
-    - cipher: aes-128-gcm
-      name: "30-shadowsocks-\U0001F1FA\U0001F1F8US-156.146.38.167-3995"
-      password: shadowsocks
+      uuid: a75d95d5-ae5b-4207-a6a3-ada2943776b9
+    - name: "16-vless-\U0001F69868@oneclickvpnkeys"
+      network: ws
       port: 443
-      server: 156.146.38.167
-      type: ss
+      server: 45.130.125.0
+      servername: support.zoom.us.cyylr.eu.cc
+      skip-cert-verify: false
+      tls: true
+      type: vless
       udp: true
-    - name: "31-trojan-@Arvand_soul @Arvand_soul ❤️\U0001F9D1‍\U0001F4BB: کانفیگ "
+      uuid: 1eb8c38b-0bc2-4a6f-a860-5239c446abc8
+    - name: "17-trojan-@Arvand_soul ❤️\U0001F9D1‍\U0001F4BBکانفیگ نت ملی1"
       password: 386bd471-4e29-4e79-9a3c-6bc6076ce4b6
       port: 443
       server: 208.103.161.170
@@ -266,7 +151,15 @@ proxies:
       sni: edu.ruangguru.com.cyylr.eu.cc
       type: trojan
       udp: true
-    - name: "32-vless-\U0001F1F3\U0001F1F1@proxy_kafee"
+    - name: 18-trojan-@v2reya88 | @confinghub2
+      password: cf3d48cf-750c-4f18-89a7-f81d2e153fbe
+      port: 443
+      server: 45.130.125.158
+      skip-cert-verify: false
+      sni: blog.webex.com.cyylr.eu.cc
+      type: trojan
+      udp: true
+    - name: "19-vless-\U0001F1F3\U0001F1F1@proxy_kafee"
       network: ws
       port: 443
       server: 141.193.213.11
@@ -276,31 +169,97 @@ proxies:
       type: vless
       udp: true
       uuid: 9232a847-8f7d-4548-a23a-a8b3550e0f15
-    - name: "33-trojan-Config0plus\U0001F1E9\U0001F1EA\U0001F680```"
+    - alterId: 0
+      cipher: auto
+      name: 20-vmess-@chillguy_vpn
+      network: tcp
+      port: 443
+      server: 165.140.216.141
+      type: vmess
+      udp: true
+      uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
+    - cipher: aes-128-gcm
+      name: "21-shadowsocks-\U0001F1FA\U0001F1F8US-156.146.38.168-0059"
+      password: shadowsocks
+      port: 443
+      server: 156.146.38.168
+      type: ss
+      udp: true
+    - cipher: aes-128-gcm
+      name: "22-shadowsocks-\U0001F1FA\U0001F1F8US-156.146.38.169-0209"
+      password: shadowsocks
+      port: 443
+      server: 156.146.38.169
+      type: ss
+      udp: true
+    - cipher: aes-128-gcm
+      name: "23-shadowsocks-\U0001F1FA\U0001F1F8US-156.146.38.170-4074"
+      password: shadowsocks
+      port: 443
+      server: 156.146.38.170
+      type: ss
+      udp: true
+    - cipher: aes-128-gcm
+      name: "24-shadowsocks-\U0001F1FA\U0001F1F8US-156.146.38.167-0057"
+      password: shadowsocks
+      port: 443
+      server: 156.146.38.167
+      type: ss
+      udp: true
+    - name: 25-trojan-@bored_vpn
       password: Config0plus
       port: 443
-      server: 45.130.125.0
+      server: 45.130.125.160
       skip-cert-verify: false
       sni: api24-normal.tiktokv.com.cyylr.eu.cc
       type: trojan
       udp: true
-    - name: "34-trojan-Telegram:Config0plus\U0001F680```"
+    - name: "26-vless-@hi_proxy_iran :\U0001F448کانال تلگرام"
+      network: ws
+      port: 443
+      server: 45.130.125.76
+      servername: partner.catchplay.com.cyylr.eu.cc
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: 8ad2869d-1571-45cc-8d02-10aea6d600ac
+    - name: "27-vless-\U0001F69863@oneclickvpnkeys"
+      network: ws
+      port: 443
+      server: 45.130.125.160
+      servername: s.blibli.com.cyylr.eu.cc
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: 47422044-85e3-426b-b6c4-3588cb24a3e5
+    - cipher: chacha20-ietf-poly1305
+      name: 28-shadowsocks-⚡ b2n.ir/v2ray-configs | 415
+      password: hCCWOcIsK5wrFz4OX70rWf
+      port: 443
+      server: 216.105.168.18
+      type: ss
+      udp: true
+    - name: "29-trojan-@Net2ray Server\U0001F525 3"
       password: Config0plus
       port: 443
-      server: 104.17.121.71
+      server: 104.16.75.127
       skip-cert-verify: false
       sni: api24-normal.tiktokv.com.cyylr.eu.cc
       type: trojan
       udp: true
-    - name: 35-trojan-⚡@V2ray_official
-      password: Config0plus
+    - name: "30-vless-\U0001F680@V2Ray_Hub1200"
+      network: ws
       port: 443
-      server: 45.130.125.96
+      server: 188.114.97.6
+      servername: support.zoom.us.cyylr.eu.cc
       skip-cert-verify: false
-      sni: api24-normal.tiktokv.com.cyylr.eu.cc
-      type: trojan
+      tls: true
+      type: vless
       udp: true
-    - name: 36-trojan-未知8
+      uuid: 58341346-98dd-4094-a26c-c378e86261e1
+    - name: "31-trojan-@Arvand_soul @Arvand_soul ❤️\U0001F9D1‍\U0001F4BB: کانفیگ "
       password: bb45f73f-795b-4a05-a8e0-ba717bce87e3
       port: 443
       server: 141.193.213.30
@@ -308,7 +267,90 @@ proxies:
       sni: api24-normal.tiktokv.com.cyylr.eu.cc
       type: trojan
       udp: true
-    - name: "37-vless-\U0001F1EB\U0001F1F7@Config0plus"
+    - name: 32-trojan-@meliproxyy
+      password: Config0plus
+      port: 443
+      server: 45.130.125.0
+      skip-cert-verify: false
+      sni: api24-normal.tiktokv.com.cyylr.eu.cc
+      type: trojan
+      udp: true
+    - name: "33-trojan-Config0plus\U0001F1EA\U0001F1E6\U0001F977\U0001F3FB"
+      password: bb45f73f-795b-4a05-a8e0-ba717bce87e3
+      port: 443
+      server: 104.19.229.21
+      skip-cert-verify: false
+      sni: api24-normal.tiktokv.com.cyylr.eu.cc
+      type: trojan
+      udp: true
+    - name: 34-trojan-未知3
+      password: Config0plus
+      port: 443
+      server: 45.130.125.76
+      skip-cert-verify: false
+      sni: unnes.ac.id.cyylr.eu.cc
+      type: trojan
+      udp: true
+    - alterId: 0
+      cipher: auto
+      name: "35-vmess-\U0001F1FA\U0001F1F8 US 16"
+      network: tcp
+      port: 55310
+      server: 23.226.135.232
+      type: vmess
+      udp: true
+      uuid: 22066968-ef90-455e-b981-4bf782d25386
+    - name: "36-vless-\U0001F1FA\U0001F1F8 US 12"
+      network: ws
+      port: 443
+      server: cyylr.eu.cc
+      servername: help.viu.com.cyylr.eu.cc
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: 28f79470-c550-40b0-9e46-834a46ac8da8
+    - name: "37-trojan-Telegram:Config0plus\U0001F680```"
+      password: Config0plus
+      port: 443
+      server: 104.17.121.71
+      skip-cert-verify: false
+      sni: api24-normal.tiktokv.com.cyylr.eu.cc
+      type: trojan
+      udp: true
+    - name: "38-trojan-Config0plus\U0001F1EA\U0001F1E6\U0001F977\U0001F3FB`"
+      password: bb45f73f-795b-4a05-a8e0-ba717bce87e3
+      port: 443
+      server: 216.24.57.7
+      skip-cert-verify: false
+      sni: api24-normal.tiktokv.com.cyylr.eu.cc
+      type: trojan
+      udp: true
+    - name: 39-trojan-⚡@V2ray_official
+      password: Config0plus
+      port: 443
+      server: 45.130.125.96
+      skip-cert-verify: false
+      sni: api24-normal.tiktokv.com.cyylr.eu.cc
+      type: trojan
+      udp: true
+    - name: 40-trojan-TEL:Father_vpn
+      password: de4dbc41-fe13-4498-b5b4-083e451270f6
+      port: 443
+      server: 89.116.46.68
+      skip-cert-verify: false
+      sni: zaintest.vuclip.com.cyylr.eu.cc
+      type: trojan
+      udp: true
+    - name: 41-trojan-⚡ b2n.ir/v2ray-configs | 829
+      password: Config0plus
+      port: 443
+      server: 45.130.125.69
+      skip-cert-verify: false
+      sni: api24-normal.tiktokv.com.cyylr.eu.cc
+      type: trojan
+      udp: true
+    - name: "42-vless-\U0001F1EB\U0001F1F7@Config0plus"
       network: ws
       port: 443
       server: 104.17.121.71
@@ -318,63 +360,7 @@ proxies:
       type: vless
       udp: true
       uuid: 47422044-85e3-426b-b6c4-3588cb24a3e5
-    - name: '38-trojan-[70773] - Telegram : @V2All'
-      password: 6b7f37af-a853-4f01-a031-5fa4eca4f5bf
-      port: 443
-      server: 141.193.213.10
-      skip-cert-verify: false
-      sni: ads.ruangguru.com.cyylr.eu.cc
-      type: trojan
-      udp: true
-    - name: "39-trojan-\U0001F1F8\U0001F1E848109 | ⚡️Telegram = t.me/SOSkeyNET"
-      password: Config0plus
-      port: 443
-      server: 45.130.125.69
-      skip-cert-verify: false
-      sni: api24-normal.tiktokv.com.cyylr.eu.cc
-      type: trojan
-      udp: true
-    - name: "40-trojan-\U0001F1EA\U0001F1F848217 | ⚡️Telegram = t.me/SOSkeyNET"
-      password: Config0plus
-      port: 443
-      server: 185.18.250.252
-      skip-cert-verify: false
-      sni: investors.spotify.com.cyylr.eu.cc
-      type: trojan
-      udp: true
-    - name: 41-trojan-@v2reya88 | @confinghub2
-      password: cf3d48cf-750c-4f18-89a7-f81d2e153fbe
-      port: 443
-      server: 45.130.125.158
-      skip-cert-verify: false
-      sni: blog.webex.com.cyylr.eu.cc
-      type: trojan
-      udp: true
-    - name: 42-trojan-@VPsave
-      password: cf3d48cf-750c-4f18-89a7-f81d2e153fbe
-      port: 443
-      server: cyylr.eu.cc
-      skip-cert-verify: false
-      sni: blog.webex.com.cyylr.eu.cc
-      type: trojan
-      udp: true
-    - name: 43-trojan-⚡ b2n.ir/v2ray-configs | 790
-      password: bb45f73f-795b-4a05-a8e0-ba717bce87e3
-      port: 443
-      server: 216.24.57.7
-      skip-cert-verify: false
-      sni: api24-normal.tiktokv.com.cyylr.eu.cc
-      type: trojan
-      udp: true
-    - name: 44-trojan-TEL:Father_vpn
-      password: de4dbc41-fe13-4498-b5b4-083e451270f6
-      port: 443
-      server: 89.116.46.68
-      skip-cert-verify: false
-      sni: zaintest.vuclip.com.cyylr.eu.cc
-      type: trojan
-      udp: true
-    - name: "45-trojan-@Arvand_soul ❤️\U0001F9D1‍\U0001F4BB: کانفیگ ملی در 8"
+    - name: "43-trojan-@Arvand_soul ❤️\U0001F9D1‍\U0001F4BB: کانفیگ ملی در 8"
       password: A_amr79
       port: 443
       server: 188.114.97.6
@@ -382,8 +368,24 @@ proxies:
       sni: cyylr.eu.cc
       type: trojan
       udp: true
+    - name: 44-trojan-@Pirimod
+      password: bb45f73f-795b-4a05-a8e0-ba717bce87e3
+      port: 443
+      server: api24-normal.tiktokv.com.cyylr.eu.cc
+      skip-cert-verify: false
+      sni: api24-normal.tiktokv.com.cyylr.eu.cc
+      type: trojan
+      udp: true
+    - name: "45-trojan-\U0001F5B2️40@oneclickvpnkeys"
+      password: 6b7f37af-a853-4f01-a031-5fa4eca4f5bf
+      port: 443
+      server: 141.193.213.10
+      skip-cert-verify: false
+      sni: ads.ruangguru.com.cyylr.eu.cc
+      type: trojan
+      udp: true
     - cipher: aes-128-gcm
-      name: "46-shadowsocks-\U0001F1E8\U0001F1E6CA-149.22.95.183-0098"
+      name: "46-shadowsocks-\U0001F1E8\U0001F1E6CA-149.22.95.183-4005"
       password: shadowsocks
       port: 443
       server: 149.22.95.183
@@ -413,56 +415,73 @@ proxies:
       udp: true
       uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
     - cipher: chacha20-ietf-poly1305
-      name: "49-shadowsocks-\U0001F1FA\U0001F1F8US-107.172.250.161-0091"
+      name: "49-shadowsocks-\U0001F1FA\U0001F1F8US-107.172.250.161-0085"
       password: QTmLViU4VEmuwbOxUw4IXd
       port: 59556
       server: 107.172.250.161
       type: ss
       udp: true
+    - name: 50-vless-美国 CloudFlare节点
+      network: ws
+      port: 443
+      server: 104.25.242.61
+      servername: juzi.qea.ccwu.cc
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: a6f1755f-0140-4bea-8727-0db1bed7c4df
     - cipher: aes-128-gcm
-      name: "50-shadowsocks-\U0001F1FA\U0001F1F8US-37.19.198.236-0145"
+      name: "51-shadowsocks-\U0001F534\U0001F1FA\U0001F1F8[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_45a7dea7"
+      password: t6d26id0pjzdo3x5wtlf
+      port: 10878
+      server: 69.164.240.83
+      type: ss
+      udp: true
+    - cipher: aes-128-gcm
+      name: "52-shadowsocks-\U0001F1FA\U0001F1F8US-37.19.198.236-0080"
       password: shadowsocks
       port: 443
       server: 37.19.198.236
       type: ss
       udp: true
     - cipher: aes-128-gcm
-      name: "51-shadowsocks-\U0001F1FA\U0001F1F8US-37.19.198.243-0065"
-      password: shadowsocks
-      port: 443
-      server: 37.19.198.243
-      type: ss
-      udp: true
-    - cipher: aes-128-gcm
-      name: "52-shadowsocks-\U0001F1FA\U0001F1F8US-37.19.198.160-0063"
+      name: "53-shadowsocks-\U0001F1FA\U0001F1F8US-37.19.198.160-0077"
       password: shadowsocks
       port: 443
       server: 37.19.198.160
       type: ss
       udp: true
     - cipher: aes-128-gcm
-      name: "53-shadowsocks-\U0001F1FA\U0001F1F8US-37.19.198.244-3684"
+      name: "54-shadowsocks-\U0001F1FA\U0001F1F8US-37.19.198.244-3684"
       password: shadowsocks
       port: 443
       server: 37.19.198.244
       type: ss
       udp: true
     - cipher: aes-128-gcm
-      name: "54-shadowsocks-\U0001F1FA\U0001F1F848228 | ⚡️Telegram = t.me/SOSkeyNET"
-      password: 3px0wmx0e81145g568ga
-      port: 10880
-      server: 69.164.240.86
+      name: "55-shadowsocks-\U0001F1FA\U0001F1F8US-37.19.198.243-0224"
+      password: shadowsocks
+      port: 443
+      server: 37.19.198.243
       type: ss
       udp: true
-    - cipher: aes-128-gcm
-      name: "55-shadowsocks-\U0001F1FA\U0001F1F848226 | ⚡️Telegram = t.me/SOSkeyNET"
-      password: t6d26id0pjzdo3x5wtlf
-      port: 10878
-      server: 69.164.240.83
+    - cipher: chacha20-ietf-poly1305
+      name: "56-shadowsocks-\U0001F1FA\U0001F1F8US-38.135.24.131-0211"
+      password: hbGrpfvNrJsUmKmPbR3iY2
+      port: 443
+      server: tinkered-pennies-puppies.freesocks.work
+      type: ss
+      udp: true
+    - cipher: chacha20-ietf-poly1305
+      name: 57-shadowsocks-All-@V2rayAlpha--15
+      password: hbGrpfvNrJsUmKmPbR3iY2
+      port: 443
+      server: 38.135.24.131
       type: ss
       udp: true
     - cipher: rc4-md5
-      name: "56-shadowsocks-\U0001F1E8\U0001F1E6CA-137.184.174.93-0197"
+      name: "58-shadowsocks-\U0001F1E8\U0001F1E6CA-137.184.174.93-0063"
       password: 14fFPrbezE3HDZzsMOr6
       port: 8080
       server: 137.184.174.93
@@ -470,7 +489,7 @@ proxies:
       udp: true
     - alterId: 0
       cipher: auto
-      name: "57-vmess-\U0001F1FA\U0001F1F8 US 19"
+      name: "59-vmess-\U0001F1FA\U0001F1F8 US 19"
       network: tcp
       port: 10086
       server: 107.172.75.141
@@ -478,88 +497,76 @@ proxies:
       udp: true
       uuid: e02c67a8-d769-4d73-833a-ab6acdb86e6e
     - cipher: chacha20-ietf-poly1305
-      name: "58-shadowsocks- By EbraSha \U0001F988"
-      password: 4e287631dc4fc8fc
-      port: 12012
-      server: 62.146.231.112
+      name: "60-shadowsocks-\U0001F1FA\U0001F1F8US-71.19.148.74-0724"
+      password: XUMTygEM1jVYIvysXKqA5T
+      port: 443
+      server: hackney-latest-strike.freesocks.work
       type: ss
       udp: true
+    - name: "61-trojan-\U0001F1FA\U0001F1F848346 | ⚡️Telegram = t.me/SOSkeyNET"
+      password: 4f4d1167-ef14-4304-9bce-0740472503ef
+      port: 45553
+      server: 155.117.198.87
+      skip-cert-verify: true
+      sni: ch.01.naiun.bilibili.com
+      type: trojan
+      udp: true
+    - name: "62-trojan-\U0001F1FA\U0001F1F8US-\U0001F680@VPNine1"
+      password: 4f4d1167-ef14-4304-9bce-0740472503ef
+      port: 47909
+      server: 155.117.198.82
+      skip-cert-verify: true
+      sni: is.01.naiun.bilibili.com
+      type: trojan
+      udp: true
+    - name: "63-trojan-\U0001F1FA\U0001F1F8US-\U0001F680@VPNine1"
+      password: 4f4d1167-ef14-4304-9bce-0740472503ef
+      port: 46424
+      server: 155.117.198.86
+      skip-cert-verify: true
+      sni: de.01.naiun.bilibili.com
+      type: trojan
+      udp: true
+    - name: 64-trojan-⚡@V2ray_official
+      password: humanity
+      port: 443
+      server: 104.18.152.233
+      skip-cert-verify: false
+      sni: www.calmloud.com
+      type: trojan
+      udp: true
+    - name: "65-trojan-@V2raysCollector \U0001FA75"
+      password: humanity
+      port: 443
+      server: 185.18.250.252
+      skip-cert-verify: false
+      sni: www.calmlunch.com
+      type: trojan
+      udp: true
+    - name: "66-trojan-@V2raysCollector \U0001F495"
+      password: humanity
+      port: 443
+      server: 185.18.250.245
+      skip-cert-verify: false
+      sni: www.calmlunch.com
+      type: trojan
+      udp: true
+    - name: 67-trojan-@filembad
+      password: humanity
+      port: 443
+      server: 188.114.98.0
+      skip-cert-verify: true
+      sni: www.calmlunch.com
+      type: trojan
+      udp: true
     - cipher: chacha20-ietf-poly1305
-      name: "59-shadowsocks-\U0001F1FA\U0001F1F8US-71.19.148.74-0176"
+      name: "68-shadowsocks-\U0001F1FA\U0001F1F8US-71.19.148.74-0160"
       password: gqkUCvmeOTghYJXF1YIuk5
       port: 443
       server: 71.19.148.74
       type: ss
       udp: true
-    - name: 60-trojan-t.me/iProxyChannel
-      password: humanity
-      port: 443
-      server: 66.81.247.155
-      skip-cert-verify: false
-      sni: www.calmloud.com
-      type: trojan
-      udp: true
-    - name: 61-vless-14https://t.me/irconfiig`
-      network: ws
-      port: 443
-      server: 89.116.46.68
-      servername: octopusss4.com
-      skip-cert-verify: false
-      tls: true
-      type: vless
-      udp: true
-      uuid: fc965ad9-bdd7-4815-ad71-b39ec5972dc1
-    - name: 62-vless-13https://t.me/irconfiig
-      network: ws
-      port: 443
-      server: 141.193.213.10
-      servername: octopusss4.com
-      skip-cert-verify: false
-      tls: true
-      type: vless
-      udp: true
-      uuid: fc965ad9-bdd7-4815-ad71-b39ec5972dc1
-    - name: 63-vless-@v2ray_configs_pools
-      network: ws
-      port: 443
-      server: 172.64.32.75
-      servername: octopusss4.com
-      skip-cert-verify: false
-      tls: true
-      type: vless
-      udp: true
-      uuid: fc965ad9-bdd7-4815-ad71-b39ec5972dc1
-    - name: 64-vless-@v2ray_configs_pools
-      network: ws
-      port: 443
-      server: betty.ns.cloudflare.com
-      servername: octopusss4.com
-      skip-cert-verify: false
-      tls: true
-      type: vless
-      udp: true
-      uuid: fc965ad9-bdd7-4815-ad71-b39ec5972dc1
-    - name: 65-vless-@v2ray_configs_pools
-      network: ws
-      port: 443
-      server: 172.64.147.137
-      servername: octopusss4.com
-      skip-cert-verify: false
-      tls: true
-      type: vless
-      udp: true
-      uuid: fc965ad9-bdd7-4815-ad71-b39ec5972dc1
-    - name: 66-vless-9https://t.me/irconfiig
-      network: ws
-      port: 443
-      server: 141.193.213.30
-      servername: octopusss4.com
-      skip-cert-verify: false
-      tls: true
-      type: vless
-      udp: true
-      uuid: fc965ad9-bdd7-4815-ad71-b39ec5972dc1
-    - name: 67-vless-8https://t.me/irconfiig
+    - name: 69-vless-8https://t.me/irconfiig
       network: ws
       port: 443
       server: 89.116.46.210
@@ -569,15 +576,7 @@ proxies:
       type: vless
       udp: true
       uuid: fc965ad9-bdd7-4815-ad71-b39ec5972dc1
-    - name: "68-trojan-\U0001F680@V2Ray_Hub1200"
-      password: humanity
-      port: 443
-      server: 188.114.97.57
-      skip-cert-verify: false
-      sni: www.calmloud.com
-      type: trojan
-      udp: true
-    - name: 69-trojan-https://t.me/VIPV2rayNGNP
+    - name: 70-trojan-https://t.me/VIPV2rayNGNP
       password: humanity
       port: 443
       server: www.calmloud.com
@@ -585,7 +584,7 @@ proxies:
       sni: www.calmloud.com
       type: trojan
       udp: true
-    - name: 70-vless-@v2ray_configs_pools
+    - name: 71-vless-@v2ray_configs_pools
       network: ws
       port: 443
       server: 173.245.58.75
@@ -595,23 +594,75 @@ proxies:
       type: vless
       udp: true
       uuid: fc965ad9-bdd7-4815-ad71-b39ec5972dc1
-    - name: "71-trojan-\U0001F1FA\U0001F1F8 83 - US - Trojan/WS/TLS/UTLS - 443"
-      password: humanity
+    - name: 72-vless-@v2ray_configs_pools
+      network: ws
       port: 443
-      server: www.ignitelimit.com
+      server: 172.64.32.75
+      servername: octopusss4.com
       skip-cert-verify: false
-      sni: www.ignitelimit.com
-      type: trojan
+      tls: true
+      type: vless
       udp: true
-    - name: "72-trojan-@V2raySup0 | \U0001F680"
+      uuid: fc965ad9-bdd7-4815-ad71-b39ec5972dc1
+    - name: 73-trojan-@V2raysCollector
       password: humanity
       port: 443
-      server: 104.18.152.233
-      skip-cert-verify: false
+      server: 141.193.213.11
+      skip-cert-verify: true
       sni: www.calmloud.com
       type: trojan
       udp: true
-    - name: 73-trojan-未知22
+    - name: 74-vless-@v2ray_configs_pools
+      network: ws
+      port: 443
+      server: 172.64.147.137
+      servername: octopusss4.com
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: fc965ad9-bdd7-4815-ad71-b39ec5972dc1
+    - name: 75-vless-@v2ray_configs_pools
+      network: ws
+      port: 443
+      server: betty.ns.cloudflare.com
+      servername: octopusss4.com
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: fc965ad9-bdd7-4815-ad71-b39ec5972dc1
+    - name: 76-vless-13https://t.me/irconfiig
+      network: ws
+      port: 443
+      server: 141.193.213.10
+      servername: octopusss4.com
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: fc965ad9-bdd7-4815-ad71-b39ec5972dc1
+    - name: 77-vless-14https://t.me/irconfiig`
+      network: ws
+      port: 443
+      server: 89.116.46.68
+      servername: octopusss4.com
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: fc965ad9-bdd7-4815-ad71-b39ec5972dc1
+    - name: 78-vless-9https://t.me/irconfiig
+      network: ws
+      port: 443
+      server: 141.193.213.30
+      servername: octopusss4.com
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: fc965ad9-bdd7-4815-ad71-b39ec5972dc1
+    - name: 79-trojan-t.me/iProxyChannel
       password: humanity
       port: 443
       server: 141.193.213.21
@@ -619,7 +670,48 @@ proxies:
       sni: www.calmloud.com
       type: trojan
       udp: true
-    - name: 74-trojan-未知2
+    - alterId: 0
+      cipher: auto
+      name: "80-vmess-\U0001F3C1RELAY-172.67.137.42-4673"
+      network: ws
+      port: 80
+      server: heu83ujieiwoeu83j2ewjehuwehu8.dentiscan.ca
+      type: vmess
+      udp: true
+      uuid: e2923bc6-8204-4768-98ea-379d48ea8a7a
+    - name: "81-trojan-\U0001F1E8\U0001F1E648339 | ⚡️Telegram = t.me/SOSkeyNET"
+      password: 4f4d1167-ef14-4304-9bce-0740472503ef
+      port: 45553
+      server: 103.177.136.41
+      skip-cert-verify: true
+      sni: ch.01.naiun.bilibili.com
+      type: trojan
+      udp: true
+    - name: 82-trojan-未知15
+      password: humanity
+      port: 443
+      server: 66.81.247.155
+      skip-cert-verify: false
+      sni: www.calmloud.com
+      type: trojan
+      udp: true
+    - name: "83-trojan-\U0001F680@V2Ray_Hub1200"
+      password: humanity
+      port: 443
+      server: 188.114.97.57
+      skip-cert-verify: false
+      sni: www.calmloud.com
+      type: trojan
+      udp: true
+    - name: "84-trojan-\U0001F1FA\U0001F1F8 US 27"
+      password: humanity
+      port: 443
+      server: www.multiplydose.com
+      skip-cert-verify: false
+      sni: ""
+      type: trojan
+      udp: true
+    - name: 85-trojan-未知2
       password: humanity
       port: 443
       server: 162.159.195.173
@@ -627,70 +719,15 @@ proxies:
       sni: www.calmloud.com
       type: trojan
       udp: true
-    - name: "75-trojan-\U0001F54A️Tel: @Proxy_Vpney (7)"
+    - name: 86-trojan-美国 CloudFlare节点
       password: humanity
       port: 443
-      server: 104.16.174.36
+      server: 104.20.6.134
       skip-cert-verify: false
-      sni: www.ignitelimit.com
+      sni: www.calmloud.com
       type: trojan
       udp: true
-    - name: "76-trojan-\U0001F54A️Tel: @Proxy_Vpney (3)"
-      password: humanity
-      port: 443
-      server: 104.18.152.219
-      skip-cert-verify: false
-      sni: www.ignitelimit.com
-      type: trojan
-      udp: true
-    - name: "77-trojan-\U0001F680@V2Ray_Hub1200"
-      password: humanity
-      port: 443
-      server: 104.18.152.133
-      skip-cert-verify: false
-      sni: www.ignitelimit.com
-      type: trojan
-      udp: true
-    - name: "78-trojan-@V2raysCollector \U0001F496"
-      password: humanity
-      port: 443
-      server: 185.18.250.245
-      skip-cert-verify: true
-      sni: www.calmlunch.com
-      type: trojan
-      udp: true
-    - name: 79-trojan-proxymelimon
-      password: humanity
-      port: 443
-      server: 104.18.152.229
-      skip-cert-verify: false
-      sni: www.ignitelimit.com
-      type: trojan
-      udp: true
-    - name: "80-trojan-\U0001F1FA\U0001F1F8 US 25"
-      password: humanity
-      port: 443
-      server: www.multiplydose.com
-      skip-cert-verify: false
-      sni: www.multiplydose.com
-      type: trojan
-      udp: true
-    - cipher: chacha20-ietf-poly1305
-      name: "81-shadowsocks-\U0001F1FA\U0001F1F8US-71.19.148.74-0174"
-      password: XUMTygEM1jVYIvysXKqA5T
-      port: 443
-      server: hackney-latest-strike.freesocks.work
-      type: ss
-      udp: true
-    - name: "82-trojan-\U0001F54A️Tel: @Proxy_Vpney (9)"
-      password: humanity
-      port: 443
-      server: 104.18.152.50
-      skip-cert-verify: false
-      sni: www.ignitelimit.com
-      type: trojan
-      udp: true
-    - name: "83-trojan-\U0001F310 WS-TLS | @Express_alaki | src @v2Line"
+    - name: "87-trojan-\U0001F310 WS-TLS | @Express_alaki | src @v2Line"
       password: humanity
       port: 443
       server: 172.67.180.92
@@ -698,71 +735,7 @@ proxies:
       sni: www.multiplydose.com
       type: trojan
       udp: true
-    - alterId: 0
-      cipher: auto
-      name: "84-vmess-\U0001F1FA\U0001F1F8 US 32"
-      network: tcp
-      port: 10086
-      server: 57.151.100.27
-      type: vmess
-      udp: true
-      uuid: 550e8400-e29b-41d4-a716-446655440000
-    - name: '85-trojan-« کانال روبیکآ » : best_internet_iran@'
-      password: humanity
-      port: 443
-      server: 104.16.174.101
-      skip-cert-verify: false
-      sni: www.ignitelimit.com
-      type: trojan
-      udp: true
-    - client-fingerprint: chrome
-      flow: xtls-rprx-vision
-      name: 86-vless->>@oneclickvpnkeys::US
-      network: tcp
-      port: 28190
-      reality-opts:
-        public-key: ZJRnFU-1s1JOnO8E9uZ7b00l1fPEh63fGRbdBANFRno
-        short-id: ""
-      server: 159.89.87.21
-      servername: aws.amazon.com
-      tls: true
-      type: vless
-      udp: true
-      uuid: 14c80e0e-f7ce-4991-94fc-99a1db4a9b1e
-    - name: "87-trojan-\U0001F54A️Tel: @Proxy_Vpney (2)"
-      password: humanity
-      port: 443
-      server: 104.16.174.12
-      skip-cert-verify: false
-      sni: www.ignitelimit.com
-      type: trojan
-      udp: true
-    - name: "88-trojan-\U0001F680@V2Ray_Hub1200"
-      password: humanity
-      port: 443
-      server: 104.18.152.204
-      skip-cert-verify: false
-      sni: www.ignitelimit.com
-      type: trojan
-      udp: true
-    - name: "89-trojan-\U0001F54A️Tel: @Proxy_Vpney (1)"
-      password: humanity
-      port: 443
-      server: 104.16.174.44
-      skip-cert-verify: false
-      sni: www.ignitelimit.com
-      type: trojan
-      udp: true
-    - alterId: 0
-      cipher: auto
-      name: "90-vmess-\U0001F1FA\U0001F1F8 US 26"
-      network: ws
-      port: 80
-      server: heu83ujieiwoeu83j2ewjehuwehu8.dentiscan.ca
-      type: vmess
-      udp: true
-      uuid: e2923bc6-8204-4768-98ea-379d48ea8a7a
-    - name: "91-trojan-\U0001F310 WS-TLS | @Express_alaki | src @V2rayng"
+    - name: "88-trojan-\U0001F310 WS-TLS | @Express_alaki | src @V2rayng"
       password: humanity
       port: 443
       server: 188.114.96.3
@@ -770,71 +743,16 @@ proxies:
       sni: www.calmlunch.com
       type: trojan
       udp: true
-    - name: "92-trojan-\U0001F680@V2Ray_Hub1200"
-      password: humanity
-      port: 443
-      server: 104.16.174.143
-      skip-cert-verify: false
-      sni: www.ignitelimit.com
-      type: trojan
+    - alterId: 0
+      cipher: auto
+      name: 89-vmess-V2 - 17
+      network: tcp
+      port: 10086
+      server: 57.151.100.27
+      type: vmess
       udp: true
-    - name: "93-trojan-\U0001F680@V2Ray_Hub1200"
-      password: humanity
-      port: 443
-      server: 104.16.174.46
-      skip-cert-verify: false
-      sni: www.ignitelimit.com
-      type: trojan
-      udp: true
-    - name: "94-trojan-\U0001F680@V2Ray_Hub1200"
-      password: humanity
-      port: 443
-      server: 104.18.152.244
-      skip-cert-verify: false
-      sni: www.ignitelimit.com
-      type: trojan
-      udp: true
-    - name: "95-trojan-\U0001F54A️Tel: @Proxy_Vpney (5)"
-      password: humanity
-      port: 443
-      server: 104.18.152.208
-      skip-cert-verify: false
-      sni: www.ignitelimit.com
-      type: trojan
-      udp: true
-    - name: "96-trojan-\U0001F1E8\U0001F1E648201 | ⚡️Telegram = t.me/SOSkeyNET"
-      password: humanity
-      port: 443
-      server: 104.19.208.184
-      skip-cert-verify: false
-      sni: www.multiplydose.com
-      type: trojan
-      udp: true
-    - name: "97-trojan-\U0001F54A️Tel: @Proxy_Vpney (4)"
-      password: humanity
-      port: 443
-      server: 104.16.174.185
-      skip-cert-verify: false
-      sni: www.ignitelimit.com
-      type: trojan
-      udp: true
-    - name: "98-trojan-\U0001F525@bubuv2raybot"
-      password: humanity
-      port: 443
-      server: 104.18.12.149
-      skip-cert-verify: false
-      sni: www.multiplydose.com
-      type: trojan
-      udp: true
-    - name: 99-trojan-vmesskhodam
-      password: humanity
-      port: 443
-      server: 104.18.152.179
-      skip-cert-verify: false
-      sni: www.ignitelimit.com
-      type: trojan
-      udp: true
-    - name: "100-trojan-\U0001F1FA\U0001F1F8 26 - US - Trojan/WS/TLS - 443"
+      uuid: 550e8400-e29b-41d4-a716-446655440000
+    - name: "90-trojan-\U0001F1FA\U0001F1F8 26 - US - Trojan/WS/TLS - 443"
       password: humanity
       port: 443
       server: 104.18.11.110
@@ -842,265 +760,245 @@ proxies:
       sni: www.multiplydose.com
       type: trojan
       udp: true
-    - name: "101-trojan-\U0001F54A️Tel: @Proxy_Vpney (6)"
+    - name: "91-trojan-\U0001D403\U0001D400\U0001D40B\U0001D413\U0001D40E\U0001D40D \U0001D40F\U0001D408\U0001D40D\U0001D406"
       password: humanity
       port: 443
-      server: 104.18.152.108
+      server: 104.16.174.44
       skip-cert-verify: false
       sni: www.ignitelimit.com
       type: trojan
       udp: true
-    - name: "102-trojan-\U0001F680@V2Ray_Hub1200"
+    - name: "92-trojan-\U0001F525@bubuv2raybot"
       password: humanity
       port: 443
-      server: 104.16.174.148
+      server: 104.18.12.149
+      skip-cert-verify: false
+      sni: www.multiplydose.com
+      type: trojan
+      udp: true
+    - name: "93-trojan-\U0001F1FA\U0001F1F8 83 - US - Trojan/WS/TLS/UTLS - 443"
+      password: humanity
+      port: 443
+      server: www.ignitelimit.com
       skip-cert-verify: false
       sni: www.ignitelimit.com
       type: trojan
       udp: true
-    - name: "103-trojan-\U0001F680@V2Ray_Hub1200"
+    - name: "94-trojan-\U0001F54A️Tel: @Proxy_Vpney (2)"
       password: humanity
       port: 443
-      server: 104.18.152.210
+      server: 104.16.174.12
       skip-cert-verify: false
       sni: www.ignitelimit.com
       type: trojan
       udp: true
-    - name: 104-trojan-@filembad
+    - name: "95-trojan-\U0001F1FA\U0001F1F8 44 - US - Trojan/WS/TLS - 443"
       password: humanity
       port: 443
-      server: 188.114.98.0
+      server: 172.64.147.24
       skip-cert-verify: true
-      sni: www.calmlunch.com
-      type: trojan
-      udp: true
-    - name: "105-trojan-\U0001F680@V2Ray_Hub1200"
-      password: humanity
-      port: 443
-      server: 104.18.152.144
-      skip-cert-verify: false
-      sni: www.ignitelimit.com
+      sni: www.gossipglove.com
       type: trojan
       udp: true
 proxy-groups:
     - interval: 300
       name: auto
       proxies:
-        - "01-vmess-\U0001F1E9\U0001F1EADE-82.198.246.250-56"
-        - "02-vmess-\U0001F1FA\U0001F1F8 US美国(mibei77.com 米贝节点分享)"
-        - "03-vmess-\U0001F1E8\U0001F1FF CZ 8"
-        - "04-trojan-\U0001F1FA\U0001F1F8 US 1"
-        - "05-vmess-\U0001F1E8\U0001F1FF CZ 2"
-        - "06-vmess-\U0001F1E8\U0001F1FF CZ 5"
-        - "07-vmess-\U0001F534\U0001F1FA\U0001F1F8[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_33b6e62b"
-        - "08-shadowsocks-\U0001F1FA\U0001F1F8US-108.181.0.177-0089"
-        - "09-shadowsocks-\U0001F1E8\U0001F1E6CA-108.181.118.10-0084"
-        - "10-vless-⚪\U0001F3F3️[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_85fd2b4e"
-        - "11-shadowsocks-\U0001F1FA\U0001F1F8US-173.244.56.9-3803"
-        - 12-shadowsocks-Free 77 @Outline_ir
-        - "13-shadowsocks-\U0001F1FA\U0001F1F8US-173.244.56.6-0094"
-        - "14-vless-\U0001F69868@oneclickvpnkeys"
-        - "15-vless-\U0001F534\U0001F1FA\U0001F1F8[\U0001F3AC\U0001F916\U0001F4FA\U0001F3AA]_github.com/Ruk1ng001_932c0202"
-        - "16-vless-@hi_proxy_iran :\U0001F448کانال تلگرام"
-        - "17-vmess-\U0001F1FA\U0001F1F8 US 15"
-        - "18-shadowsocks-\U0001F1FA\U0001F1F8US-216.105.168.18-0153"
-        - "19-vless-@hi_proxy_iran :\U0001F448کانال تلگرام"
-        - 20-trojan-Telegram:Config0plus⚡
-        - "21-vless-\U0001F680@V2Ray_Hub1200"
-        - "22-vless-\U0001F69864@oneclickvpnkeys"
-        - "23-trojan-\U0001F1F8\U0001F1EC t.me/Natrixo BB"
-        - "24-shadowsocks-\U0001F1FA\U0001F1F8US-156.146.38.170-4074"
-        - 25-trojan-未知3
-        - "26-trojan-\U0001F69880@oneclickvpnkeys"
-        - "27-shadowsocks-\U0001F1FA\U0001F1F8US-156.146.38.168-4139"
-        - "28-shadowsocks-\U0001F1FA\U0001F1F8US-156.146.38.169-0070"
-        - "29-vmess-\U0001F1FA\U0001F1F8 US 16"
-        - "30-shadowsocks-\U0001F1FA\U0001F1F8US-156.146.38.167-3995"
+        - "01-shadowsocks-\U0001F1FA\U0001F1F8US-108.181.0.177-0061"
+        - "02-vmess-\U0001F1E8\U0001F1FF CZ 5"
+        - "03-vmess-\U0001F1E8\U0001F1FF CZ 3"
+        - "04-shadowsocks-\U0001F1E8\U0001F1E6CA-108.181.118.10-0062"
+        - "05-vmess-\U0001F1E8\U0001F1FF CZ 4"
+        - "06-vmess-\U0001F1E8\U0001F1FF CZ 7"
+        - "07-trojan-\U0001F1FA\U0001F1F8 US 6"
+        - "08-vmess-\U0001F1E8\U0001F1FF CZ 8"
+        - "09-vless-\U0001F534\U0001F1FA\U0001F1F8[\U0001F3AC\U0001F916\U0001F4FA\U0001F3AA]_github.com/Ruk1ng001_932c0202"
+        - "10-shadowsocks-\U0001F1FA\U0001F1F8US-173.244.56.9-0055"
+        - "11-shadowsocks-\U0001F1FA\U0001F1F8US-173.244.56.6-3876"
+        - "12-vless-⚪\U0001F3F3️[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_85fd2b4e"
+        - "13-vless-\U0001F98436@oneclickvpnkeys"
+        - "14-shadowsocks-\U0001F1FA\U0001F1F8US-149.28.255.6-0180"
+        - "15-vmess-\U0001F534\U0001F1FA\U0001F1F8[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_33b6e62b"
+        - "16-vless-\U0001F69868@oneclickvpnkeys"
+        - "17-trojan-@Arvand_soul ❤️\U0001F9D1‍\U0001F4BBکانفیگ نت ملی1"
+        - 18-trojan-@v2reya88 | @confinghub2
+        - "19-vless-\U0001F1F3\U0001F1F1@proxy_kafee"
+        - 20-vmess-@chillguy_vpn
+        - "21-shadowsocks-\U0001F1FA\U0001F1F8US-156.146.38.168-0059"
+        - "22-shadowsocks-\U0001F1FA\U0001F1F8US-156.146.38.169-0209"
+        - "23-shadowsocks-\U0001F1FA\U0001F1F8US-156.146.38.170-4074"
+        - "24-shadowsocks-\U0001F1FA\U0001F1F8US-156.146.38.167-0057"
+        - 25-trojan-@bored_vpn
+        - "26-vless-@hi_proxy_iran :\U0001F448کانال تلگرام"
+        - "27-vless-\U0001F69863@oneclickvpnkeys"
+        - 28-shadowsocks-⚡ b2n.ir/v2ray-configs | 415
+        - "29-trojan-@Net2ray Server\U0001F525 3"
+        - "30-vless-\U0001F680@V2Ray_Hub1200"
         - "31-trojan-@Arvand_soul @Arvand_soul ❤️\U0001F9D1‍\U0001F4BB: کانفیگ "
-        - "32-vless-\U0001F1F3\U0001F1F1@proxy_kafee"
-        - "33-trojan-Config0plus\U0001F1E9\U0001F1EA\U0001F680```"
-        - "34-trojan-Telegram:Config0plus\U0001F680```"
-        - 35-trojan-⚡@V2ray_official
-        - 36-trojan-未知8
-        - "37-vless-\U0001F1EB\U0001F1F7@Config0plus"
-        - '38-trojan-[70773] - Telegram : @V2All'
-        - "39-trojan-\U0001F1F8\U0001F1E848109 | ⚡️Telegram = t.me/SOSkeyNET"
-        - "40-trojan-\U0001F1EA\U0001F1F848217 | ⚡️Telegram = t.me/SOSkeyNET"
-        - 41-trojan-@v2reya88 | @confinghub2
-        - 42-trojan-@VPsave
-        - 43-trojan-⚡ b2n.ir/v2ray-configs | 790
-        - 44-trojan-TEL:Father_vpn
-        - "45-trojan-@Arvand_soul ❤️\U0001F9D1‍\U0001F4BB: کانفیگ ملی در 8"
-        - "46-shadowsocks-\U0001F1E8\U0001F1E6CA-149.22.95.183-0098"
+        - 32-trojan-@meliproxyy
+        - "33-trojan-Config0plus\U0001F1EA\U0001F1E6\U0001F977\U0001F3FB"
+        - 34-trojan-未知3
+        - "35-vmess-\U0001F1FA\U0001F1F8 US 16"
+        - "36-vless-\U0001F1FA\U0001F1F8 US 12"
+        - "37-trojan-Telegram:Config0plus\U0001F680```"
+        - "38-trojan-Config0plus\U0001F1EA\U0001F1E6\U0001F977\U0001F3FB`"
+        - 39-trojan-⚡@V2ray_official
+        - 40-trojan-TEL:Father_vpn
+        - 41-trojan-⚡ b2n.ir/v2ray-configs | 829
+        - "42-vless-\U0001F1EB\U0001F1F7@Config0plus"
+        - "43-trojan-@Arvand_soul ❤️\U0001F9D1‍\U0001F4BB: کانفیگ ملی در 8"
+        - 44-trojan-@Pirimod
+        - "45-trojan-\U0001F5B2️40@oneclickvpnkeys"
+        - "46-shadowsocks-\U0001F1E8\U0001F1E6CA-149.22.95.183-4005"
         - "47-vless-\U0001F1FA\U0001F1F8 418 - US - VLESS/REALITY/PBK/SID/VISI"
         - "48-vmess-\U0001F1FA\U0001F1F8 US 20"
-        - "49-shadowsocks-\U0001F1FA\U0001F1F8US-107.172.250.161-0091"
-        - "50-shadowsocks-\U0001F1FA\U0001F1F8US-37.19.198.236-0145"
-        - "51-shadowsocks-\U0001F1FA\U0001F1F8US-37.19.198.243-0065"
-        - "52-shadowsocks-\U0001F1FA\U0001F1F8US-37.19.198.160-0063"
-        - "53-shadowsocks-\U0001F1FA\U0001F1F8US-37.19.198.244-3684"
-        - "54-shadowsocks-\U0001F1FA\U0001F1F848228 | ⚡️Telegram = t.me/SOSkeyNET"
-        - "55-shadowsocks-\U0001F1FA\U0001F1F848226 | ⚡️Telegram = t.me/SOSkeyNET"
-        - "56-shadowsocks-\U0001F1E8\U0001F1E6CA-137.184.174.93-0197"
-        - "57-vmess-\U0001F1FA\U0001F1F8 US 19"
-        - "58-shadowsocks- By EbraSha \U0001F988"
-        - "59-shadowsocks-\U0001F1FA\U0001F1F8US-71.19.148.74-0176"
-        - 60-trojan-t.me/iProxyChannel
-        - 61-vless-14https://t.me/irconfiig`
-        - 62-vless-13https://t.me/irconfiig
-        - 63-vless-@v2ray_configs_pools
-        - 64-vless-@v2ray_configs_pools
-        - 65-vless-@v2ray_configs_pools
-        - 66-vless-9https://t.me/irconfiig
-        - 67-vless-8https://t.me/irconfiig
-        - "68-trojan-\U0001F680@V2Ray_Hub1200"
-        - 69-trojan-https://t.me/VIPV2rayNGNP
-        - 70-vless-@v2ray_configs_pools
-        - "71-trojan-\U0001F1FA\U0001F1F8 83 - US - Trojan/WS/TLS/UTLS - 443"
-        - "72-trojan-@V2raySup0 | \U0001F680"
-        - 73-trojan-未知22
-        - 74-trojan-未知2
-        - "75-trojan-\U0001F54A️Tel: @Proxy_Vpney (7)"
-        - "76-trojan-\U0001F54A️Tel: @Proxy_Vpney (3)"
-        - "77-trojan-\U0001F680@V2Ray_Hub1200"
-        - "78-trojan-@V2raysCollector \U0001F496"
-        - 79-trojan-proxymelimon
-        - "80-trojan-\U0001F1FA\U0001F1F8 US 25"
-        - "81-shadowsocks-\U0001F1FA\U0001F1F8US-71.19.148.74-0174"
-        - "82-trojan-\U0001F54A️Tel: @Proxy_Vpney (9)"
-        - "83-trojan-\U0001F310 WS-TLS | @Express_alaki | src @v2Line"
-        - "84-vmess-\U0001F1FA\U0001F1F8 US 32"
-        - '85-trojan-« کانال روبیکآ » : best_internet_iran@'
-        - 86-vless->>@oneclickvpnkeys::US
-        - "87-trojan-\U0001F54A️Tel: @Proxy_Vpney (2)"
-        - "88-trojan-\U0001F680@V2Ray_Hub1200"
-        - "89-trojan-\U0001F54A️Tel: @Proxy_Vpney (1)"
-        - "90-vmess-\U0001F1FA\U0001F1F8 US 26"
-        - "91-trojan-\U0001F310 WS-TLS | @Express_alaki | src @V2rayng"
-        - "92-trojan-\U0001F680@V2Ray_Hub1200"
-        - "93-trojan-\U0001F680@V2Ray_Hub1200"
-        - "94-trojan-\U0001F680@V2Ray_Hub1200"
-        - "95-trojan-\U0001F54A️Tel: @Proxy_Vpney (5)"
-        - "96-trojan-\U0001F1E8\U0001F1E648201 | ⚡️Telegram = t.me/SOSkeyNET"
-        - "97-trojan-\U0001F54A️Tel: @Proxy_Vpney (4)"
-        - "98-trojan-\U0001F525@bubuv2raybot"
-        - 99-trojan-vmesskhodam
-        - "100-trojan-\U0001F1FA\U0001F1F8 26 - US - Trojan/WS/TLS - 443"
-        - "101-trojan-\U0001F54A️Tel: @Proxy_Vpney (6)"
-        - "102-trojan-\U0001F680@V2Ray_Hub1200"
-        - "103-trojan-\U0001F680@V2Ray_Hub1200"
-        - 104-trojan-@filembad
-        - "105-trojan-\U0001F680@V2Ray_Hub1200"
+        - "49-shadowsocks-\U0001F1FA\U0001F1F8US-107.172.250.161-0085"
+        - 50-vless-美国 CloudFlare节点
+        - "51-shadowsocks-\U0001F534\U0001F1FA\U0001F1F8[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_45a7dea7"
+        - "52-shadowsocks-\U0001F1FA\U0001F1F8US-37.19.198.236-0080"
+        - "53-shadowsocks-\U0001F1FA\U0001F1F8US-37.19.198.160-0077"
+        - "54-shadowsocks-\U0001F1FA\U0001F1F8US-37.19.198.244-3684"
+        - "55-shadowsocks-\U0001F1FA\U0001F1F8US-37.19.198.243-0224"
+        - "56-shadowsocks-\U0001F1FA\U0001F1F8US-38.135.24.131-0211"
+        - 57-shadowsocks-All-@V2rayAlpha--15
+        - "58-shadowsocks-\U0001F1E8\U0001F1E6CA-137.184.174.93-0063"
+        - "59-vmess-\U0001F1FA\U0001F1F8 US 19"
+        - "60-shadowsocks-\U0001F1FA\U0001F1F8US-71.19.148.74-0724"
+        - "61-trojan-\U0001F1FA\U0001F1F848346 | ⚡️Telegram = t.me/SOSkeyNET"
+        - "62-trojan-\U0001F1FA\U0001F1F8US-\U0001F680@VPNine1"
+        - "63-trojan-\U0001F1FA\U0001F1F8US-\U0001F680@VPNine1"
+        - 64-trojan-⚡@V2ray_official
+        - "65-trojan-@V2raysCollector \U0001FA75"
+        - "66-trojan-@V2raysCollector \U0001F495"
+        - 67-trojan-@filembad
+        - "68-shadowsocks-\U0001F1FA\U0001F1F8US-71.19.148.74-0160"
+        - 69-vless-8https://t.me/irconfiig
+        - 70-trojan-https://t.me/VIPV2rayNGNP
+        - 71-vless-@v2ray_configs_pools
+        - 72-vless-@v2ray_configs_pools
+        - 73-trojan-@V2raysCollector
+        - 74-vless-@v2ray_configs_pools
+        - 75-vless-@v2ray_configs_pools
+        - 76-vless-13https://t.me/irconfiig
+        - 77-vless-14https://t.me/irconfiig`
+        - 78-vless-9https://t.me/irconfiig
+        - 79-trojan-t.me/iProxyChannel
+        - "80-vmess-\U0001F3C1RELAY-172.67.137.42-4673"
+        - "81-trojan-\U0001F1E8\U0001F1E648339 | ⚡️Telegram = t.me/SOSkeyNET"
+        - 82-trojan-未知15
+        - "83-trojan-\U0001F680@V2Ray_Hub1200"
+        - "84-trojan-\U0001F1FA\U0001F1F8 US 27"
+        - 85-trojan-未知2
+        - 86-trojan-美国 CloudFlare节点
+        - "87-trojan-\U0001F310 WS-TLS | @Express_alaki | src @v2Line"
+        - "88-trojan-\U0001F310 WS-TLS | @Express_alaki | src @V2rayng"
+        - 89-vmess-V2 - 17
+        - "90-trojan-\U0001F1FA\U0001F1F8 26 - US - Trojan/WS/TLS - 443"
+        - "91-trojan-\U0001D403\U0001D400\U0001D40B\U0001D413\U0001D40E\U0001D40D \U0001D40F\U0001D408\U0001D40D\U0001D406"
+        - "92-trojan-\U0001F525@bubuv2raybot"
+        - "93-trojan-\U0001F1FA\U0001F1F8 83 - US - Trojan/WS/TLS/UTLS - 443"
+        - "94-trojan-\U0001F54A️Tel: @Proxy_Vpney (2)"
+        - "95-trojan-\U0001F1FA\U0001F1F8 44 - US - Trojan/WS/TLS - 443"
       type: url-test
       url: https://www.gstatic.com/generate_204
     - name: select
       proxies:
         - auto
-        - "01-vmess-\U0001F1E9\U0001F1EADE-82.198.246.250-56"
-        - "02-vmess-\U0001F1FA\U0001F1F8 US美国(mibei77.com 米贝节点分享)"
-        - "03-vmess-\U0001F1E8\U0001F1FF CZ 8"
-        - "04-trojan-\U0001F1FA\U0001F1F8 US 1"
-        - "05-vmess-\U0001F1E8\U0001F1FF CZ 2"
-        - "06-vmess-\U0001F1E8\U0001F1FF CZ 5"
-        - "07-vmess-\U0001F534\U0001F1FA\U0001F1F8[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_33b6e62b"
-        - "08-shadowsocks-\U0001F1FA\U0001F1F8US-108.181.0.177-0089"
-        - "09-shadowsocks-\U0001F1E8\U0001F1E6CA-108.181.118.10-0084"
-        - "10-vless-⚪\U0001F3F3️[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_85fd2b4e"
-        - "11-shadowsocks-\U0001F1FA\U0001F1F8US-173.244.56.9-3803"
-        - 12-shadowsocks-Free 77 @Outline_ir
-        - "13-shadowsocks-\U0001F1FA\U0001F1F8US-173.244.56.6-0094"
-        - "14-vless-\U0001F69868@oneclickvpnkeys"
-        - "15-vless-\U0001F534\U0001F1FA\U0001F1F8[\U0001F3AC\U0001F916\U0001F4FA\U0001F3AA]_github.com/Ruk1ng001_932c0202"
-        - "16-vless-@hi_proxy_iran :\U0001F448کانال تلگرام"
-        - "17-vmess-\U0001F1FA\U0001F1F8 US 15"
-        - "18-shadowsocks-\U0001F1FA\U0001F1F8US-216.105.168.18-0153"
-        - "19-vless-@hi_proxy_iran :\U0001F448کانال تلگرام"
-        - 20-trojan-Telegram:Config0plus⚡
-        - "21-vless-\U0001F680@V2Ray_Hub1200"
-        - "22-vless-\U0001F69864@oneclickvpnkeys"
-        - "23-trojan-\U0001F1F8\U0001F1EC t.me/Natrixo BB"
-        - "24-shadowsocks-\U0001F1FA\U0001F1F8US-156.146.38.170-4074"
-        - 25-trojan-未知3
-        - "26-trojan-\U0001F69880@oneclickvpnkeys"
-        - "27-shadowsocks-\U0001F1FA\U0001F1F8US-156.146.38.168-4139"
-        - "28-shadowsocks-\U0001F1FA\U0001F1F8US-156.146.38.169-0070"
-        - "29-vmess-\U0001F1FA\U0001F1F8 US 16"
-        - "30-shadowsocks-\U0001F1FA\U0001F1F8US-156.146.38.167-3995"
+        - "01-shadowsocks-\U0001F1FA\U0001F1F8US-108.181.0.177-0061"
+        - "02-vmess-\U0001F1E8\U0001F1FF CZ 5"
+        - "03-vmess-\U0001F1E8\U0001F1FF CZ 3"
+        - "04-shadowsocks-\U0001F1E8\U0001F1E6CA-108.181.118.10-0062"
+        - "05-vmess-\U0001F1E8\U0001F1FF CZ 4"
+        - "06-vmess-\U0001F1E8\U0001F1FF CZ 7"
+        - "07-trojan-\U0001F1FA\U0001F1F8 US 6"
+        - "08-vmess-\U0001F1E8\U0001F1FF CZ 8"
+        - "09-vless-\U0001F534\U0001F1FA\U0001F1F8[\U0001F3AC\U0001F916\U0001F4FA\U0001F3AA]_github.com/Ruk1ng001_932c0202"
+        - "10-shadowsocks-\U0001F1FA\U0001F1F8US-173.244.56.9-0055"
+        - "11-shadowsocks-\U0001F1FA\U0001F1F8US-173.244.56.6-3876"
+        - "12-vless-⚪\U0001F3F3️[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_85fd2b4e"
+        - "13-vless-\U0001F98436@oneclickvpnkeys"
+        - "14-shadowsocks-\U0001F1FA\U0001F1F8US-149.28.255.6-0180"
+        - "15-vmess-\U0001F534\U0001F1FA\U0001F1F8[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_33b6e62b"
+        - "16-vless-\U0001F69868@oneclickvpnkeys"
+        - "17-trojan-@Arvand_soul ❤️\U0001F9D1‍\U0001F4BBکانفیگ نت ملی1"
+        - 18-trojan-@v2reya88 | @confinghub2
+        - "19-vless-\U0001F1F3\U0001F1F1@proxy_kafee"
+        - 20-vmess-@chillguy_vpn
+        - "21-shadowsocks-\U0001F1FA\U0001F1F8US-156.146.38.168-0059"
+        - "22-shadowsocks-\U0001F1FA\U0001F1F8US-156.146.38.169-0209"
+        - "23-shadowsocks-\U0001F1FA\U0001F1F8US-156.146.38.170-4074"
+        - "24-shadowsocks-\U0001F1FA\U0001F1F8US-156.146.38.167-0057"
+        - 25-trojan-@bored_vpn
+        - "26-vless-@hi_proxy_iran :\U0001F448کانال تلگرام"
+        - "27-vless-\U0001F69863@oneclickvpnkeys"
+        - 28-shadowsocks-⚡ b2n.ir/v2ray-configs | 415
+        - "29-trojan-@Net2ray Server\U0001F525 3"
+        - "30-vless-\U0001F680@V2Ray_Hub1200"
         - "31-trojan-@Arvand_soul @Arvand_soul ❤️\U0001F9D1‍\U0001F4BB: کانفیگ "
-        - "32-vless-\U0001F1F3\U0001F1F1@proxy_kafee"
-        - "33-trojan-Config0plus\U0001F1E9\U0001F1EA\U0001F680```"
-        - "34-trojan-Telegram:Config0plus\U0001F680```"
-        - 35-trojan-⚡@V2ray_official
-        - 36-trojan-未知8
-        - "37-vless-\U0001F1EB\U0001F1F7@Config0plus"
-        - '38-trojan-[70773] - Telegram : @V2All'
-        - "39-trojan-\U0001F1F8\U0001F1E848109 | ⚡️Telegram = t.me/SOSkeyNET"
-        - "40-trojan-\U0001F1EA\U0001F1F848217 | ⚡️Telegram = t.me/SOSkeyNET"
-        - 41-trojan-@v2reya88 | @confinghub2
-        - 42-trojan-@VPsave
-        - 43-trojan-⚡ b2n.ir/v2ray-configs | 790
-        - 44-trojan-TEL:Father_vpn
-        - "45-trojan-@Arvand_soul ❤️\U0001F9D1‍\U0001F4BB: کانفیگ ملی در 8"
-        - "46-shadowsocks-\U0001F1E8\U0001F1E6CA-149.22.95.183-0098"
+        - 32-trojan-@meliproxyy
+        - "33-trojan-Config0plus\U0001F1EA\U0001F1E6\U0001F977\U0001F3FB"
+        - 34-trojan-未知3
+        - "35-vmess-\U0001F1FA\U0001F1F8 US 16"
+        - "36-vless-\U0001F1FA\U0001F1F8 US 12"
+        - "37-trojan-Telegram:Config0plus\U0001F680```"
+        - "38-trojan-Config0plus\U0001F1EA\U0001F1E6\U0001F977\U0001F3FB`"
+        - 39-trojan-⚡@V2ray_official
+        - 40-trojan-TEL:Father_vpn
+        - 41-trojan-⚡ b2n.ir/v2ray-configs | 829
+        - "42-vless-\U0001F1EB\U0001F1F7@Config0plus"
+        - "43-trojan-@Arvand_soul ❤️\U0001F9D1‍\U0001F4BB: کانفیگ ملی در 8"
+        - 44-trojan-@Pirimod
+        - "45-trojan-\U0001F5B2️40@oneclickvpnkeys"
+        - "46-shadowsocks-\U0001F1E8\U0001F1E6CA-149.22.95.183-4005"
         - "47-vless-\U0001F1FA\U0001F1F8 418 - US - VLESS/REALITY/PBK/SID/VISI"
         - "48-vmess-\U0001F1FA\U0001F1F8 US 20"
-        - "49-shadowsocks-\U0001F1FA\U0001F1F8US-107.172.250.161-0091"
-        - "50-shadowsocks-\U0001F1FA\U0001F1F8US-37.19.198.236-0145"
-        - "51-shadowsocks-\U0001F1FA\U0001F1F8US-37.19.198.243-0065"
-        - "52-shadowsocks-\U0001F1FA\U0001F1F8US-37.19.198.160-0063"
-        - "53-shadowsocks-\U0001F1FA\U0001F1F8US-37.19.198.244-3684"
-        - "54-shadowsocks-\U0001F1FA\U0001F1F848228 | ⚡️Telegram = t.me/SOSkeyNET"
-        - "55-shadowsocks-\U0001F1FA\U0001F1F848226 | ⚡️Telegram = t.me/SOSkeyNET"
-        - "56-shadowsocks-\U0001F1E8\U0001F1E6CA-137.184.174.93-0197"
-        - "57-vmess-\U0001F1FA\U0001F1F8 US 19"
-        - "58-shadowsocks- By EbraSha \U0001F988"
-        - "59-shadowsocks-\U0001F1FA\U0001F1F8US-71.19.148.74-0176"
-        - 60-trojan-t.me/iProxyChannel
-        - 61-vless-14https://t.me/irconfiig`
-        - 62-vless-13https://t.me/irconfiig
-        - 63-vless-@v2ray_configs_pools
-        - 64-vless-@v2ray_configs_pools
-        - 65-vless-@v2ray_configs_pools
-        - 66-vless-9https://t.me/irconfiig
-        - 67-vless-8https://t.me/irconfiig
-        - "68-trojan-\U0001F680@V2Ray_Hub1200"
-        - 69-trojan-https://t.me/VIPV2rayNGNP
-        - 70-vless-@v2ray_configs_pools
-        - "71-trojan-\U0001F1FA\U0001F1F8 83 - US - Trojan/WS/TLS/UTLS - 443"
-        - "72-trojan-@V2raySup0 | \U0001F680"
-        - 73-trojan-未知22
-        - 74-trojan-未知2
-        - "75-trojan-\U0001F54A️Tel: @Proxy_Vpney (7)"
-        - "76-trojan-\U0001F54A️Tel: @Proxy_Vpney (3)"
-        - "77-trojan-\U0001F680@V2Ray_Hub1200"
-        - "78-trojan-@V2raysCollector \U0001F496"
-        - 79-trojan-proxymelimon
-        - "80-trojan-\U0001F1FA\U0001F1F8 US 25"
-        - "81-shadowsocks-\U0001F1FA\U0001F1F8US-71.19.148.74-0174"
-        - "82-trojan-\U0001F54A️Tel: @Proxy_Vpney (9)"
-        - "83-trojan-\U0001F310 WS-TLS | @Express_alaki | src @v2Line"
-        - "84-vmess-\U0001F1FA\U0001F1F8 US 32"
-        - '85-trojan-« کانال روبیکآ » : best_internet_iran@'
-        - 86-vless->>@oneclickvpnkeys::US
-        - "87-trojan-\U0001F54A️Tel: @Proxy_Vpney (2)"
-        - "88-trojan-\U0001F680@V2Ray_Hub1200"
-        - "89-trojan-\U0001F54A️Tel: @Proxy_Vpney (1)"
-        - "90-vmess-\U0001F1FA\U0001F1F8 US 26"
-        - "91-trojan-\U0001F310 WS-TLS | @Express_alaki | src @V2rayng"
-        - "92-trojan-\U0001F680@V2Ray_Hub1200"
-        - "93-trojan-\U0001F680@V2Ray_Hub1200"
-        - "94-trojan-\U0001F680@V2Ray_Hub1200"
-        - "95-trojan-\U0001F54A️Tel: @Proxy_Vpney (5)"
-        - "96-trojan-\U0001F1E8\U0001F1E648201 | ⚡️Telegram = t.me/SOSkeyNET"
-        - "97-trojan-\U0001F54A️Tel: @Proxy_Vpney (4)"
-        - "98-trojan-\U0001F525@bubuv2raybot"
-        - 99-trojan-vmesskhodam
-        - "100-trojan-\U0001F1FA\U0001F1F8 26 - US - Trojan/WS/TLS - 443"
-        - "101-trojan-\U0001F54A️Tel: @Proxy_Vpney (6)"
-        - "102-trojan-\U0001F680@V2Ray_Hub1200"
-        - "103-trojan-\U0001F680@V2Ray_Hub1200"
-        - 104-trojan-@filembad
-        - "105-trojan-\U0001F680@V2Ray_Hub1200"
+        - "49-shadowsocks-\U0001F1FA\U0001F1F8US-107.172.250.161-0085"
+        - 50-vless-美国 CloudFlare节点
+        - "51-shadowsocks-\U0001F534\U0001F1FA\U0001F1F8[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_45a7dea7"
+        - "52-shadowsocks-\U0001F1FA\U0001F1F8US-37.19.198.236-0080"
+        - "53-shadowsocks-\U0001F1FA\U0001F1F8US-37.19.198.160-0077"
+        - "54-shadowsocks-\U0001F1FA\U0001F1F8US-37.19.198.244-3684"
+        - "55-shadowsocks-\U0001F1FA\U0001F1F8US-37.19.198.243-0224"
+        - "56-shadowsocks-\U0001F1FA\U0001F1F8US-38.135.24.131-0211"
+        - 57-shadowsocks-All-@V2rayAlpha--15
+        - "58-shadowsocks-\U0001F1E8\U0001F1E6CA-137.184.174.93-0063"
+        - "59-vmess-\U0001F1FA\U0001F1F8 US 19"
+        - "60-shadowsocks-\U0001F1FA\U0001F1F8US-71.19.148.74-0724"
+        - "61-trojan-\U0001F1FA\U0001F1F848346 | ⚡️Telegram = t.me/SOSkeyNET"
+        - "62-trojan-\U0001F1FA\U0001F1F8US-\U0001F680@VPNine1"
+        - "63-trojan-\U0001F1FA\U0001F1F8US-\U0001F680@VPNine1"
+        - 64-trojan-⚡@V2ray_official
+        - "65-trojan-@V2raysCollector \U0001FA75"
+        - "66-trojan-@V2raysCollector \U0001F495"
+        - 67-trojan-@filembad
+        - "68-shadowsocks-\U0001F1FA\U0001F1F8US-71.19.148.74-0160"
+        - 69-vless-8https://t.me/irconfiig
+        - 70-trojan-https://t.me/VIPV2rayNGNP
+        - 71-vless-@v2ray_configs_pools
+        - 72-vless-@v2ray_configs_pools
+        - 73-trojan-@V2raysCollector
+        - 74-vless-@v2ray_configs_pools
+        - 75-vless-@v2ray_configs_pools
+        - 76-vless-13https://t.me/irconfiig
+        - 77-vless-14https://t.me/irconfiig`
+        - 78-vless-9https://t.me/irconfiig
+        - 79-trojan-t.me/iProxyChannel
+        - "80-vmess-\U0001F3C1RELAY-172.67.137.42-4673"
+        - "81-trojan-\U0001F1E8\U0001F1E648339 | ⚡️Telegram = t.me/SOSkeyNET"
+        - 82-trojan-未知15
+        - "83-trojan-\U0001F680@V2Ray_Hub1200"
+        - "84-trojan-\U0001F1FA\U0001F1F8 US 27"
+        - 85-trojan-未知2
+        - 86-trojan-美国 CloudFlare节点
+        - "87-trojan-\U0001F310 WS-TLS | @Express_alaki | src @v2Line"
+        - "88-trojan-\U0001F310 WS-TLS | @Express_alaki | src @V2rayng"
+        - 89-vmess-V2 - 17
+        - "90-trojan-\U0001F1FA\U0001F1F8 26 - US - Trojan/WS/TLS - 443"
+        - "91-trojan-\U0001D403\U0001D400\U0001D40B\U0001D413\U0001D40E\U0001D40D \U0001D40F\U0001D408\U0001D40D\U0001D406"
+        - "92-trojan-\U0001F525@bubuv2raybot"
+        - "93-trojan-\U0001F1FA\U0001F1F8 83 - US - Trojan/WS/TLS/UTLS - 443"
+        - "94-trojan-\U0001F54A️Tel: @Proxy_Vpney (2)"
+        - "95-trojan-\U0001F1FA\U0001F1F8 44 - US - Trojan/WS/TLS - 443"
       type: select
 rules:
     - MATCH,select
