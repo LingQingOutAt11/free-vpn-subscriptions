@@ -17,15 +17,23 @@ proxies:
       sni: www.calmlunch.com
       type: trojan
       udp: true
-    - name: 03-trojan-7https://t.me/irconfiig
+    - name: 03-trojan-t.me/iProxyChannel
       password: humanity
       port: 443
-      server: 45.130.125.0
-      skip-cert-verify: true
+      server: 45.130.125.96
+      skip-cert-verify: false
       sni: www.calmloud.com
       type: trojan
       udp: true
-    - name: 04-trojan-t.me/iProxyChannel
+    - name: 04-trojan-未知11
+      password: humanity
+      port: 443
+      server: 45.130.125.0
+      skip-cert-verify: false
+      sni: www.calmloud.com
+      type: trojan
+      udp: true
+    - name: 05-trojan-t.me/iProxyChannel
       password: humanity
       port: 443
       server: 45.130.125.69
@@ -39,8 +47,9 @@ proxy-groups:
       proxies:
         - 01-vless-12https://t.me/irconfiig
         - 02-trojan-node
-        - 03-trojan-7https://t.me/irconfiig
-        - 04-trojan-t.me/iProxyChannel
+        - 03-trojan-t.me/iProxyChannel
+        - 04-trojan-未知11
+        - 05-trojan-t.me/iProxyChannel
       type: url-test
       url: https://www.gstatic.com/generate_204
     - name: select
@@ -48,8 +57,9 @@ proxy-groups:
         - auto
         - 01-vless-12https://t.me/irconfiig
         - 02-trojan-node
-        - 03-trojan-7https://t.me/irconfiig
-        - 04-trojan-t.me/iProxyChannel
+        - 03-trojan-t.me/iProxyChannel
+        - 04-trojan-未知11
+        - 05-trojan-t.me/iProxyChannel
       type: select
 rules:
     - MATCH,select
