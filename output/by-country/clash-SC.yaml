@@ -1,109 +1,55 @@
 proxies:
-    - name: "01-vless-\U0001F69868@oneclickvpnkeys"
-      network: ws
-      port: 443
-      server: 45.130.125.0
-      servername: support.zoom.us.cyylr.eu.cc
-      skip-cert-verify: false
-      tls: true
-      type: vless
-      udp: true
-      uuid: 1eb8c38b-0bc2-4a6f-a860-5239c446abc8
-    - name: "02-vless-\U0001F451\U0001F310T.me/Config0plus`"
-      network: ws
-      port: 443
-      server: 45.130.125.160
-      servername: s.blibli.com.cyylr.eu.cc
-      skip-cert-verify: false
-      tls: true
-      type: vless
-      udp: true
-      uuid: 47422044-85e3-426b-b6c4-3588cb24a3e5
-    - name: "03-vless-@hi_proxy_iran :\U0001F448کانال تلگرام"
+    - name: 01-vless-12https://t.me/irconfiig
       network: ws
       port: 443
       server: 45.130.125.76
-      servername: partner.catchplay.com.cyylr.eu.cc
+      servername: octopusss4.com
       skip-cert-verify: false
       tls: true
       type: vless
       udp: true
-      uuid: 8ad2869d-1571-45cc-8d02-10aea6d600ac
-    - name: 04-trojan-未知26
-      password: Config0plus
-      port: 443
-      server: 45.130.125.69
-      skip-cert-verify: false
-      sni: api24-normal.tiktokv.com.cyylr.eu.cc
-      type: trojan
-      udp: true
-    - name: "05-trojan-\U0001F680@V2ray_official"
-      password: Config0plus
-      port: 443
-      server: 45.130.125.0
-      skip-cert-verify: false
-      sni: api24-normal.tiktokv.com.cyylr.eu.cc
-      type: trojan
-      udp: true
-    - name: "06-trojan-Config0plus\U0001F30F\U0001F4A5"
-      password: Config0plus
-      port: 443
-      server: 45.130.125.160
-      skip-cert-verify: false
-      sni: api24-normal.tiktokv.com.cyylr.eu.cc
-      type: trojan
-      udp: true
-    - name: 07-trojan-⚡@V2ray_official
-      password: Config0plus
+      uuid: fc965ad9-bdd7-4815-ad71-b39ec5972dc1
+    - name: 02-trojan-t.me/iProxyChannel
+      password: humanity
       port: 443
       server: 45.130.125.96
       skip-cert-verify: false
-      sni: api24-normal.tiktokv.com.cyylr.eu.cc
+      sni: www.calmloud.com
       type: trojan
       udp: true
-    - name: "08-trojan-\U0001F1F8\U0001F1E849651 | ⚡️Telegram = t.me/SOSkeyNET"
-      password: Telegram-Config0plus
+    - name: 03-trojan-⚡ b2n.ir/v2ray-configs | 135
+      password: humanity
       port: 443
-      server: 45.130.125.2
+      server: 45.130.125.0
       skip-cert-verify: false
-      sni: media-sin6-3.cdn.whatsapp.net.cyylr.eu.cc
+      sni: www.calmloud.com
       type: trojan
       udp: true
-    - name: "09-trojan-@Config0plus\U0001F336️\U0001F680```"
-      password: Config0plus
+    - name: 04-trojan-t.me/iProxyChannel
+      password: humanity
       port: 443
-      server: 45.130.125.76
+      server: 45.130.125.69
       skip-cert-verify: false
-      sni: unnes.ac.id.cyylr.eu.cc
+      sni: www.calmloud.com
       type: trojan
       udp: true
 proxy-groups:
     - interval: 300
       name: auto
       proxies:
-        - "01-vless-\U0001F69868@oneclickvpnkeys"
-        - "02-vless-\U0001F451\U0001F310T.me/Config0plus`"
-        - "03-vless-@hi_proxy_iran :\U0001F448کانال تلگرام"
-        - 04-trojan-未知26
-        - "05-trojan-\U0001F680@V2ray_official"
-        - "06-trojan-Config0plus\U0001F30F\U0001F4A5"
-        - 07-trojan-⚡@V2ray_official
-        - "08-trojan-\U0001F1F8\U0001F1E849651 | ⚡️Telegram = t.me/SOSkeyNET"
-        - "09-trojan-@Config0plus\U0001F336️\U0001F680```"
+        - 01-vless-12https://t.me/irconfiig
+        - 02-trojan-t.me/iProxyChannel
+        - 03-trojan-⚡ b2n.ir/v2ray-configs | 135
+        - 04-trojan-t.me/iProxyChannel
       type: url-test
       url: https://www.gstatic.com/generate_204
     - name: select
       proxies:
         - auto
-        - "01-vless-\U0001F69868@oneclickvpnkeys"
-        - "02-vless-\U0001F451\U0001F310T.me/Config0plus`"
-        - "03-vless-@hi_proxy_iran :\U0001F448کانال تلگرام"
-        - 04-trojan-未知26
-        - "05-trojan-\U0001F680@V2ray_official"
-        - "06-trojan-Config0plus\U0001F30F\U0001F4A5"
-        - 07-trojan-⚡@V2ray_official
-        - "08-trojan-\U0001F1F8\U0001F1E849651 | ⚡️Telegram = t.me/SOSkeyNET"
-        - "09-trojan-@Config0plus\U0001F336️\U0001F680```"
+        - 01-vless-12https://t.me/irconfiig
+        - 02-trojan-t.me/iProxyChannel
+        - 03-trojan-⚡ b2n.ir/v2ray-configs | 135
+        - 04-trojan-t.me/iProxyChannel
       type: select
 rules:
     - MATCH,select
