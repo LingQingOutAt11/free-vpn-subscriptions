@@ -4,7 +4,7 @@
 
 <p align="center"><img src="https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/assets/hero.png" alt="Free VPN Subscriptions — hourly-refreshed free VPN subscriptions for Clash, sing-box, v2ray" width="780"></p>
 
-![nodes](https://img.shields.io/badge/nodes-83-brightgreen) ![alive](https://img.shields.io/badge/alive-2145-blue) ![median--rtt](https://img.shields.io/badge/median--rtt-171ms-orange) ![updated](https://img.shields.io/badge/updated-2026-06-05_22:13_UTC-informational)
+![nodes](https://img.shields.io/badge/nodes-82-brightgreen) ![alive](https://img.shields.io/badge/alive-2134-blue) ![median--rtt](https://img.shields.io/badge/median--rtt-170ms-orange) ![updated](https://img.shields.io/badge/updated-2026-06-05_23:21_UTC-informational)
 
 > **The easiest way to get a working free VPN — copy a subscription link, paste it into your client, connect.**  
 > No signup. No payment. No installation of binaries. Refreshed hourly from public sources — every published node has demonstrably forwarded real HTTP traffic through sing-box minutes ago.
@@ -101,15 +101,15 @@ New to VPN clients? Pick your platform and follow the tutorial:
 
 ## 📊 Live Stats
 
-- **Nodes selected**: 83
-- **Alive across all sources**: 2145
-- **Fastest node RTT**: 33 ms
-- **Median RTT**: 171 ms
-- **Last updated (UTC)**: 2026-06-05 22:13 UTC
+- **Nodes selected**: 82
+- **Alive across all sources**: 2134
+- **Fastest node RTT**: 19 ms
+- **Median RTT**: 170 ms
+- **Last updated (UTC)**: 2026-06-05 23:21 UTC
 
-**Protocol mix:** shadowsocks × 25 · trojan × 28 · vless × 12 · vmess × 18
+**Protocol mix:** shadowsocks × 25 · trojan × 27 · vless × 12 · vmess × 18
 
-**Sources used this run:** `barry-far-v2ray` × 2 · `epodonios` × 26 · `lagzian-mix` × 1 · `mahdi0024` × 23 · `mahdibland-aggregator` × 10 · `mahdibland-shadowsocks` × 7 · `ninjastrikers` × 12 · `surfboard-eternity` × 2
+**Sources used this run:** `barry-far-v2ray` × 7 · `epodonios` × 26 · `lagzian-mix` × 2 · `mahdi0024` × 21 · `mahdibland-aggregator` × 10 · `mahdibland-shadowsocks` × 6 · `ninjastrikers` × 10
 
 ## ❓ FAQ
 

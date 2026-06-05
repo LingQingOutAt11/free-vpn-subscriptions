@@ -7,12 +7,12 @@ proxies:
       sni: www.calmloud.com
       type: trojan
       udp: true
-    - name: 02-trojan-node
+    - name: 02-trojan-未知11
       password: humanity
       port: 443
-      server: 45.130.125.160
+      server: 45.130.125.0
       skip-cert-verify: false
-      sni: www.calmlunch.com
+      sni: www.calmloud.com
       type: trojan
       udp: true
     - name: 03-trojan-t.me/iProxyChannel
@@ -23,12 +23,12 @@ proxies:
       sni: www.calmloud.com
       type: trojan
       udp: true
-    - name: 04-trojan-7https://t.me/irconfiig
+    - name: 04-trojan-node
       password: humanity
       port: 443
-      server: 45.130.125.0
-      skip-cert-verify: true
-      sni: www.calmloud.com
+      server: 45.130.125.160
+      skip-cert-verify: false
+      sni: www.calmlunch.com
       type: trojan
       udp: true
     - name: 05-vless-12https://t.me/irconfiig
@@ -46,9 +46,9 @@ proxy-groups:
       name: auto
       proxies:
         - 01-trojan-未知
-        - 02-trojan-node
+        - 02-trojan-未知11
         - 03-trojan-t.me/iProxyChannel
-        - 04-trojan-7https://t.me/irconfiig
+        - 04-trojan-node
         - 05-vless-12https://t.me/irconfiig
       type: url-test
       url: https://www.gstatic.com/generate_204
@@ -56,9 +56,9 @@ proxy-groups:
       proxies:
         - auto
         - 01-trojan-未知
-        - 02-trojan-node
+        - 02-trojan-未知11
         - 03-trojan-t.me/iProxyChannel
-        - 04-trojan-7https://t.me/irconfiig
+        - 04-trojan-node
         - 05-vless-12https://t.me/irconfiig
       type: select
 rules:

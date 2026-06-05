@@ -4,7 +4,7 @@
 
 <p align="center"><img src="https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/assets/hero.png" alt="Free VPN Subscriptions — hourly-refreshed free VPN subscriptions for Clash, sing-box, v2ray" width="780"></p>
 
-![узлы](https://img.shields.io/badge/узлы-83-brightgreen) ![живые](https://img.shields.io/badge/живые-2145-blue) ![медиана--rtt](https://img.shields.io/badge/медиана--rtt-171ms-orange) ![обновлено](https://img.shields.io/badge/обновлено-2026-06-05_22:13_UTC-informational)
+![узлы](https://img.shields.io/badge/узлы-82-brightgreen) ![живые](https://img.shields.io/badge/живые-2134-blue) ![медиана--rtt](https://img.shields.io/badge/медиана--rtt-170ms-orange) ![обновлено](https://img.shields.io/badge/обновлено-2026-06-05_23:21_UTC-informational)
 
 > **Самый простой способ получить рабочий бесплатный VPN — скопируйте ссылку подписки, вставьте в клиент, подключитесь.**  
 > Без регистрации. Без оплаты. Без установки каких-либо бинарников. Обновляется каждый час из публичных источников — каждый публикуемый узел несколько минут назад реально пропустил HTTP-трафик через sing-box.
@@ -101,15 +101,15 @@ proxy-groups:
 
 ## 📊 Статистика в реальном времени
 
-- **Выбрано узлов**: 83
-- **Живых во всех источниках**: 2145
-- **RTT самого быстрого узла**: 33 ms
-- **Медиана RTT**: 171 ms
-- **Последнее обновление (UTC)**: 2026-06-05 22:13 UTC
+- **Выбрано узлов**: 82
+- **Живых во всех источниках**: 2134
+- **RTT самого быстрого узла**: 19 ms
+- **Медиана RTT**: 170 ms
+- **Последнее обновление (UTC)**: 2026-06-05 23:21 UTC
 
-**Распределение протоколов:** shadowsocks × 25 · trojan × 28 · vless × 12 · vmess × 18
+**Распределение протоколов:** shadowsocks × 25 · trojan × 27 · vless × 12 · vmess × 18
 
-**Источники в этом запуске:** `barry-far-v2ray` × 2 · `epodonios` × 26 · `lagzian-mix` × 1 · `mahdi0024` × 23 · `mahdibland-aggregator` × 10 · `mahdibland-shadowsocks` × 7 · `ninjastrikers` × 12 · `surfboard-eternity` × 2
+**Источники в этом запуске:** `barry-far-v2ray` × 7 · `epodonios` × 26 · `lagzian-mix` × 2 · `mahdi0024` × 21 · `mahdibland-aggregator` × 10 · `mahdibland-shadowsocks` × 6 · `ninjastrikers` × 10
 
 ## ❓ Часто задаваемые вопросы
 
