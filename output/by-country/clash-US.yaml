@@ -1,39 +1,39 @@
 proxies:
+    - cipher: chacha20-ietf-poly1305
+      name: "01-shadowsocks-\U0001F1FA\U0001F1F8US-108.181.0.177-0114"
+      password: G5p6ww4o67HB
+      port: 8388
+      server: 108.181.0.177
+      type: ss
+      udp: true
+    - cipher: chacha20-ietf-poly1305
+      name: "02-shadowsocks-\U0001F1FA\U0001F1F8US-216.105.168.18-0201"
+      password: hCCWOcIsK5wrFz4OX70rWf
+      port: 443
+      server: 216.105.168.18
+      type: ss
+      udp: true
     - cipher: aes-128-gcm
-      name: "01-shadowsocks-\U0001F1FA\U0001F1F8US-173.244.56.9-0124"
+      name: "03-shadowsocks-\U0001F1FA\U0001F1F8US-173.244.56.9-0124"
       password: shadowsocks
       port: 443
       server: 173.244.56.9
       type: ss
       udp: true
     - cipher: aes-128-gcm
-      name: "02-shadowsocks-\U0001F1FA\U0001F1F8US-173.244.56.6-0125"
+      name: "04-shadowsocks-\U0001F1FA\U0001F1F8US-173.244.56.6-0125"
       password: shadowsocks
       port: 443
       server: 173.244.56.6
       type: ss
       udp: true
-    - cipher: chacha20-ietf-poly1305
-      name: "03-shadowsocks-\U0001F1FA\U0001F1F8US-108.181.0.177-0114"
-      password: G5p6ww4o67HB
-      port: 8388
-      server: 108.181.0.177
-      type: ss
-      udp: true
-    - name: "04-trojan-\U0001F1FA\U0001F1F8 US 11"
+    - name: 05-trojan-美国 Akamai科技公司CDN网络节点
       password: bX_lNHWoW6ywq82mI=KUr+8i__VSp0Hs_E
       port: 443
       server: 172.235.63.252
       skip-cert-verify: false
-      sni: 172.235.63.252
+      sni: ""
       type: trojan
-      udp: true
-    - cipher: aes-128-gcm
-      name: "05-shadowsocks-\U0001F1FA\U0001F1F8US-156.146.38.170-0126"
-      password: shadowsocks
-      port: 443
-      server: 156.146.38.170
-      type: ss
       udp: true
     - alterId: 0
       cipher: auto
@@ -44,15 +44,36 @@ proxies:
       type: vmess
       udp: true
       uuid: a3de462b-0276-4003-8f34-536b0f9d340c
+    - cipher: chacha20-ietf-poly1305
+      name: "07-shadowsocks-\U0001F1FA\U0001F1F8US-149.28.255.6-0168"
+      password: GyZ5Xo0ht41vYmW3H4
+      port: 816
+      server: 149.28.255.6
+      type: ss
+      udp: true
     - cipher: aes-128-gcm
-      name: "07-shadowsocks-\U0001F1FA\U0001F1F8US-156.146.38.168-0122"
+      name: "08-shadowsocks-\U0001F1FA\U0001F1F8US-156.146.38.168-0122"
       password: shadowsocks
       port: 443
       server: 156.146.38.168
       type: ss
       udp: true
     - cipher: aes-128-gcm
-      name: "08-shadowsocks-\U0001F1FA\U0001F1F8US-156.146.38.167-0205"
+      name: "09-shadowsocks-\U0001F1FA\U0001F1F8US-156.146.38.170-4074"
+      password: shadowsocks
+      port: 443
+      server: 156.146.38.170
+      type: ss
+      udp: true
+    - cipher: aes-128-gcm
+      name: "10-shadowsocks-\U0001F1FA\U0001F1F8US-156.146.38.169-0209"
+      password: shadowsocks
+      port: 443
+      server: 156.146.38.169
+      type: ss
+      udp: true
+    - cipher: aes-128-gcm
+      name: "11-shadowsocks-\U0001F1FA\U0001F1F8US-156.146.38.167-0205"
       password: shadowsocks
       port: 443
       server: 156.146.38.167
@@ -60,36 +81,13 @@ proxies:
       udp: true
     - alterId: 0
       cipher: auto
-      name: "09-vmess-\U0001F1FA\U0001F1F8 US 16"
+      name: "12-vmess-\U0001F1FA\U0001F1F8 US 16"
       network: tcp
       port: 55310
       server: 23.226.135.232
       type: vmess
       udp: true
       uuid: 22066968-ef90-455e-b981-4bf782d25386
-    - cipher: aes-128-gcm
-      name: "10-shadowsocks-\U0001F1FA\U0001F1F8US-156.146.38.169-4169"
-      password: shadowsocks
-      port: 443
-      server: 156.146.38.169
-      type: ss
-      udp: true
-    - alterId: 0
-      cipher: auto
-      name: "11-vmess-\U0001F1FA\U0001F1F8 US 17"
-      network: tcp
-      port: 443
-      server: 165.140.216.141
-      type: vmess
-      udp: true
-      uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
-    - cipher: chacha20-ietf-poly1305
-      name: "12-shadowsocks-[@zorexvon]-\U0001F1E8\U0001F1E605"
-      password: GyZ5Xo0ht41vYmW3H4
-      port: 816
-      server: 149.28.255.6
-      type: ss
-      udp: true
     - alterId: 0
       cipher: auto
       name: "13-vmess-\U0001F1FA\U0001F1F8US-173.249.209.146-4784"
@@ -99,7 +97,16 @@ proxies:
       type: vmess
       udp: true
       uuid: 3935c2dc-dbb0-43f7-b367-fe89abe87fdf
-    - name: "14-trojan-\U0001F1FA\U0001F1F8US-45.79.8.17-0747"
+    - alterId: 0
+      cipher: auto
+      name: "14-vmess-Channel : @FreeConfigForYou\U0001F3F4\U0001F3F3"
+      network: tcp
+      port: 443
+      server: 165.140.216.141
+      type: vmess
+      udp: true
+      uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
+    - name: "15-trojan-\U0001F1FA\U0001F1F8US-45.79.8.17-0747"
       password: rXyShM8Jni+5Sbq3k4gkyr5Lq0zOMRL2Uf
       port: 443
       server: 45.79.8.17
@@ -107,9 +114,23 @@ proxies:
       sni: 45.79.8.17
       type: trojan
       udp: true
+    - client-fingerprint: chrome
+      flow: xtls-rprx-vision
+      name: "16-vless-\U0001F534\U0001F1FA\U0001F1F8[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_198d7330"
+      network: tcp
+      port: 35535
+      reality-opts:
+        public-key: g1f1wLjim5gOVGnI5LGUV0dL4iFXPoiepOPZfSxJe14
+        short-id: ""
+      server: a.cflive.top
+      servername: www.speedtest.org
+      tls: true
+      type: vless
+      udp: true
+      uuid: 35939cbe-5d57-4413-f4d0-cc115db0e000
     - alterId: 0
       cipher: auto
-      name: "15-vmess-\U0001F1FA\U0001F1F8 US 20"
+      name: "17-vmess-\U0001F1FA\U0001F1F8 US 20"
       network: tcp
       port: 18000
       server: 169.197.142.22
@@ -118,7 +139,7 @@ proxies:
       uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
     - client-fingerprint: chrome
       flow: xtls-rprx-vision
-      name: "16-vless-\U0001F1FA\U0001F1F8 418 - US - VLESS/REALITY/PBK/SID/VISI"
+      name: "18-vless-\U0001F1FA\U0001F1F8 418 - US - VLESS/REALITY/PBK/SID/VISI"
       network: tcp
       port: 23576
       reality-opts:
@@ -130,49 +151,42 @@ proxies:
       type: vless
       udp: true
       uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-    - cipher: chacha20-ietf-poly1305
-      name: 17-shadowsocks-@v2reya88
-      password: QTmLViU4VEmuwbOxUw4IXd
-      port: 59556
-      server: 107.172.250.161
-      type: ss
-      udp: true
     - cipher: aes-128-gcm
-      name: "18-shadowsocks-\U0001F1FA\U0001F1F8US-37.19.198.244-3684"
+      name: "19-shadowsocks-\U0001F1FA\U0001F1F8US-37.19.198.243-0098"
       password: shadowsocks
       port: 443
-      server: 37.19.198.244
+      server: 37.19.198.243
       type: ss
       udp: true
     - cipher: aes-128-gcm
-      name: "19-shadowsocks-\U0001F1FA\U0001F1F8US-37.19.198.236-0145"
+      name: "20-shadowsocks-\U0001F1FA\U0001F1F8US-37.19.198.236-0097"
       password: shadowsocks
       port: 443
       server: 37.19.198.236
       type: ss
       udp: true
     - cipher: aes-128-gcm
-      name: "20-shadowsocks-\U0001F1FA\U0001F1F8US-37.19.198.160-0213"
+      name: "21-shadowsocks-\U0001F1FA\U0001F1F8US-37.19.198.244-3684"
+      password: shadowsocks
+      port: 443
+      server: 37.19.198.244
+      type: ss
+      udp: true
+    - cipher: aes-128-gcm
+      name: "22-shadowsocks-\U0001F1FA\U0001F1F8US-37.19.198.160-0094"
       password: shadowsocks
       port: 443
       server: 37.19.198.160
       type: ss
       udp: true
-    - cipher: aes-128-gcm
-      name: "21-shadowsocks-\U0001F1FA\U0001F1F8US-37.19.198.243-4267"
-      password: shadowsocks
-      port: 443
-      server: 37.19.198.243
-      type: ss
-      udp: true
     - cipher: chacha20-ietf-poly1305
-      name: "22-shadowsocks-\U0001D402\U0001D421\U0001D41A\U0001D427\U0001D427\U0001D41E\U0001D425: @ISVvpn"
+      name: 23-shadowsocks-@meliproxyy
       password: hbGrpfvNrJsUmKmPbR3iY2
       port: 443
       server: 38.135.24.131
       type: ss
       udp: true
-    - name: "23-trojan-\U0001F1FA\U0001F1F8US-172.237.145.189-0197"
+    - name: "24-trojan-\U0001F1FA\U0001F1F8US-172.237.145.189-0197"
       password: A3uIh_5NqMg3hFa.gDYWT.afz0UuJ6=VIM
       port: 443
       server: 172.237.145.189
@@ -182,38 +196,50 @@ proxies:
       udp: true
     - alterId: 0
       cipher: auto
-      name: "24-vmess-\U0001F1FA\U0001F1F8 US 19"
+      name: "25-vmess-\U0001F1FA\U0001F1F8 US 19"
       network: tcp
       port: 10086
       server: 107.172.75.141
       type: vmess
       udp: true
       uuid: e02c67a8-d769-4d73-833a-ab6acdb86e6e
+    - client-fingerprint: chrome
+      flow: xtls-rprx-vision
+      name: "26-vless-\U0001F1FA\U0001F1F8 140 - US - VLESS/REALITY/PBK/VISION/U"
+      network: tcp
+      port: 28190
+      reality-opts:
+        public-key: ZJRnFU-1s1JOnO8E9uZ7b00l1fPEh63fGRbdBANFRno
+        short-id: ""
+      server: 159.89.87.21
+      servername: aws.amazon.com
+      tls: true
+      type: vless
+      udp: true
+      uuid: 14c80e0e-f7ce-4991-94fc-99a1db4a9b1e
     - cipher: chacha20-ietf-poly1305
-      name: "25-shadowsocks-\U0001F1FA\U0001F1F8US-71.19.148.74-0761"
+      name: "27-shadowsocks-\U0001F1E9\U0001F1EA DE德国(mibei77.com 米贝节点分享)"
       password: XUMTygEM1jVYIvysXKqA5T
       port: 443
       server: hackney-latest-strike.freesocks.work
       type: ss
       udp: true
-    - name: 26-vless-9https://t.me/irconfiig
-      network: ws
-      port: 443
-      server: 141.193.213.30
-      servername: octopusss4.com
-      skip-cert-verify: false
-      tls: true
-      type: vless
-      udp: true
-      uuid: fc965ad9-bdd7-4815-ad71-b39ec5972dc1
     - cipher: chacha20-ietf-poly1305
-      name: "27-shadowsocks-\U0001F1FA\U0001F1F8US-71.19.148.74-0211"
+      name: "28-shadowsocks-\U0001F1FA\U0001F1F8US-71.19.148.74-0211"
       password: gqkUCvmeOTghYJXF1YIuk5
       port: 443
       server: 71.19.148.74
       type: ss
       udp: true
-    - name: 28-vless-13https://t.me/irconfiig
+    - name: 29-trojan-⚡ b2n.ir/v2ray-configs | 265
+      password: 4f4d1167-ef14-4304-9bce-0740472503ef
+      port: 41943
+      server: 90081bb25c.node.tro.cac.cab
+      skip-cert-verify: true
+      sni: az.01.naiun.bilibili.com
+      type: trojan
+      udp: true
+    - name: 30-vless-13https://t.me/irconfiig
       network: ws
       port: 443
       server: 141.193.213.10
@@ -223,7 +249,7 @@ proxies:
       type: vless
       udp: true
       uuid: fc965ad9-bdd7-4815-ad71-b39ec5972dc1
-    - name: 29-trojan-未知8
+    - name: 31-trojan-t.me/iProxyChannel
       password: humanity
       port: 443
       server: 141.193.213.21
@@ -231,7 +257,14 @@ proxies:
       sni: www.calmloud.com
       type: trojan
       udp: true
-    - name: 30-trojan-t.me/iProxyChannel
+    - cipher: chacha20-ietf-poly1305
+      name: "32-shadowsocks-\U0001F1FA\U0001F1F8US-107.172.250.161-0131"
+      password: QTmLViU4VEmuwbOxUw4IXd
+      port: 59556
+      server: 107.172.250.161
+      type: ss
+      udp: true
+    - name: 33-trojan-t.me/iProxyChannel
       password: humanity
       port: 443
       server: 141.193.213.30
@@ -239,75 +272,124 @@ proxies:
       sni: www.calmloud.com
       type: trojan
       udp: true
+    - name: 34-trojan-@V2raysCollector
+      password: humanity
+      port: 443
+      server: 141.193.213.11
+      skip-cert-verify: true
+      sni: www.calmloud.com
+      type: trojan
+      udp: true
+    - name: 35-trojan-未知33
+      password: humanity
+      port: 443
+      server: 66.81.247.155
+      skip-cert-verify: false
+      sni: www.calmloud.com
+      type: trojan
+      udp: true
+    - name: 36-vless-9https://t.me/irconfiig
+      network: ws
+      port: 443
+      server: 141.193.213.30
+      servername: octopusss4.com
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: fc965ad9-bdd7-4815-ad71-b39ec5972dc1
+    - alterId: 0
+      cipher: auto
+      name: 37-vmess-V2 - 17
+      network: tcp
+      port: 10086
+      server: 57.151.100.27
+      type: vmess
+      udp: true
+      uuid: 550e8400-e29b-41d4-a716-446655440000
 proxy-groups:
     - interval: 300
       name: auto
       proxies:
-        - "01-shadowsocks-\U0001F1FA\U0001F1F8US-173.244.56.9-0124"
-        - "02-shadowsocks-\U0001F1FA\U0001F1F8US-173.244.56.6-0125"
-        - "03-shadowsocks-\U0001F1FA\U0001F1F8US-108.181.0.177-0114"
-        - "04-trojan-\U0001F1FA\U0001F1F8 US 11"
-        - "05-shadowsocks-\U0001F1FA\U0001F1F8US-156.146.38.170-0126"
+        - "01-shadowsocks-\U0001F1FA\U0001F1F8US-108.181.0.177-0114"
+        - "02-shadowsocks-\U0001F1FA\U0001F1F8US-216.105.168.18-0201"
+        - "03-shadowsocks-\U0001F1FA\U0001F1F8US-173.244.56.9-0124"
+        - "04-shadowsocks-\U0001F1FA\U0001F1F8US-173.244.56.6-0125"
+        - 05-trojan-美国 Akamai科技公司CDN网络节点
         - "06-vmess-\U0001F1FA\U0001F1F8 US 15"
-        - "07-shadowsocks-\U0001F1FA\U0001F1F8US-156.146.38.168-0122"
-        - "08-shadowsocks-\U0001F1FA\U0001F1F8US-156.146.38.167-0205"
-        - "09-vmess-\U0001F1FA\U0001F1F8 US 16"
-        - "10-shadowsocks-\U0001F1FA\U0001F1F8US-156.146.38.169-4169"
-        - "11-vmess-\U0001F1FA\U0001F1F8 US 17"
-        - "12-shadowsocks-[@zorexvon]-\U0001F1E8\U0001F1E605"
+        - "07-shadowsocks-\U0001F1FA\U0001F1F8US-149.28.255.6-0168"
+        - "08-shadowsocks-\U0001F1FA\U0001F1F8US-156.146.38.168-0122"
+        - "09-shadowsocks-\U0001F1FA\U0001F1F8US-156.146.38.170-4074"
+        - "10-shadowsocks-\U0001F1FA\U0001F1F8US-156.146.38.169-0209"
+        - "11-shadowsocks-\U0001F1FA\U0001F1F8US-156.146.38.167-0205"
+        - "12-vmess-\U0001F1FA\U0001F1F8 US 16"
         - "13-vmess-\U0001F1FA\U0001F1F8US-173.249.209.146-4784"
-        - "14-trojan-\U0001F1FA\U0001F1F8US-45.79.8.17-0747"
-        - "15-vmess-\U0001F1FA\U0001F1F8 US 20"
-        - "16-vless-\U0001F1FA\U0001F1F8 418 - US - VLESS/REALITY/PBK/SID/VISI"
-        - 17-shadowsocks-@v2reya88
-        - "18-shadowsocks-\U0001F1FA\U0001F1F8US-37.19.198.244-3684"
-        - "19-shadowsocks-\U0001F1FA\U0001F1F8US-37.19.198.236-0145"
-        - "20-shadowsocks-\U0001F1FA\U0001F1F8US-37.19.198.160-0213"
-        - "21-shadowsocks-\U0001F1FA\U0001F1F8US-37.19.198.243-4267"
-        - "22-shadowsocks-\U0001D402\U0001D421\U0001D41A\U0001D427\U0001D427\U0001D41E\U0001D425: @ISVvpn"
-        - "23-trojan-\U0001F1FA\U0001F1F8US-172.237.145.189-0197"
-        - "24-vmess-\U0001F1FA\U0001F1F8 US 19"
-        - "25-shadowsocks-\U0001F1FA\U0001F1F8US-71.19.148.74-0761"
-        - 26-vless-9https://t.me/irconfiig
-        - "27-shadowsocks-\U0001F1FA\U0001F1F8US-71.19.148.74-0211"
-        - 28-vless-13https://t.me/irconfiig
-        - 29-trojan-未知8
-        - 30-trojan-t.me/iProxyChannel
+        - "14-vmess-Channel : @FreeConfigForYou\U0001F3F4\U0001F3F3"
+        - "15-trojan-\U0001F1FA\U0001F1F8US-45.79.8.17-0747"
+        - "16-vless-\U0001F534\U0001F1FA\U0001F1F8[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_198d7330"
+        - "17-vmess-\U0001F1FA\U0001F1F8 US 20"
+        - "18-vless-\U0001F1FA\U0001F1F8 418 - US - VLESS/REALITY/PBK/SID/VISI"
+        - "19-shadowsocks-\U0001F1FA\U0001F1F8US-37.19.198.243-0098"
+        - "20-shadowsocks-\U0001F1FA\U0001F1F8US-37.19.198.236-0097"
+        - "21-shadowsocks-\U0001F1FA\U0001F1F8US-37.19.198.244-3684"
+        - "22-shadowsocks-\U0001F1FA\U0001F1F8US-37.19.198.160-0094"
+        - 23-shadowsocks-@meliproxyy
+        - "24-trojan-\U0001F1FA\U0001F1F8US-172.237.145.189-0197"
+        - "25-vmess-\U0001F1FA\U0001F1F8 US 19"
+        - "26-vless-\U0001F1FA\U0001F1F8 140 - US - VLESS/REALITY/PBK/VISION/U"
+        - "27-shadowsocks-\U0001F1E9\U0001F1EA DE德国(mibei77.com 米贝节点分享)"
+        - "28-shadowsocks-\U0001F1FA\U0001F1F8US-71.19.148.74-0211"
+        - 29-trojan-⚡ b2n.ir/v2ray-configs | 265
+        - 30-vless-13https://t.me/irconfiig
+        - 31-trojan-t.me/iProxyChannel
+        - "32-shadowsocks-\U0001F1FA\U0001F1F8US-107.172.250.161-0131"
+        - 33-trojan-t.me/iProxyChannel
+        - 34-trojan-@V2raysCollector
+        - 35-trojan-未知33
+        - 36-vless-9https://t.me/irconfiig
+        - 37-vmess-V2 - 17
       type: url-test
       url: https://www.gstatic.com/generate_204
     - name: select
       proxies:
         - auto
-        - "01-shadowsocks-\U0001F1FA\U0001F1F8US-173.244.56.9-0124"
-        - "02-shadowsocks-\U0001F1FA\U0001F1F8US-173.244.56.6-0125"
-        - "03-shadowsocks-\U0001F1FA\U0001F1F8US-108.181.0.177-0114"
-        - "04-trojan-\U0001F1FA\U0001F1F8 US 11"
-        - "05-shadowsocks-\U0001F1FA\U0001F1F8US-156.146.38.170-0126"
+        - "01-shadowsocks-\U0001F1FA\U0001F1F8US-108.181.0.177-0114"
+        - "02-shadowsocks-\U0001F1FA\U0001F1F8US-216.105.168.18-0201"
+        - "03-shadowsocks-\U0001F1FA\U0001F1F8US-173.244.56.9-0124"
+        - "04-shadowsocks-\U0001F1FA\U0001F1F8US-173.244.56.6-0125"
+        - 05-trojan-美国 Akamai科技公司CDN网络节点
         - "06-vmess-\U0001F1FA\U0001F1F8 US 15"
-        - "07-shadowsocks-\U0001F1FA\U0001F1F8US-156.146.38.168-0122"
-        - "08-shadowsocks-\U0001F1FA\U0001F1F8US-156.146.38.167-0205"
-        - "09-vmess-\U0001F1FA\U0001F1F8 US 16"
-        - "10-shadowsocks-\U0001F1FA\U0001F1F8US-156.146.38.169-4169"
-        - "11-vmess-\U0001F1FA\U0001F1F8 US 17"
-        - "12-shadowsocks-[@zorexvon]-\U0001F1E8\U0001F1E605"
+        - "07-shadowsocks-\U0001F1FA\U0001F1F8US-149.28.255.6-0168"
+        - "08-shadowsocks-\U0001F1FA\U0001F1F8US-156.146.38.168-0122"
+        - "09-shadowsocks-\U0001F1FA\U0001F1F8US-156.146.38.170-4074"
+        - "10-shadowsocks-\U0001F1FA\U0001F1F8US-156.146.38.169-0209"
+        - "11-shadowsocks-\U0001F1FA\U0001F1F8US-156.146.38.167-0205"
+        - "12-vmess-\U0001F1FA\U0001F1F8 US 16"
         - "13-vmess-\U0001F1FA\U0001F1F8US-173.249.209.146-4784"
-        - "14-trojan-\U0001F1FA\U0001F1F8US-45.79.8.17-0747"
-        - "15-vmess-\U0001F1FA\U0001F1F8 US 20"
-        - "16-vless-\U0001F1FA\U0001F1F8 418 - US - VLESS/REALITY/PBK/SID/VISI"
-        - 17-shadowsocks-@v2reya88
-        - "18-shadowsocks-\U0001F1FA\U0001F1F8US-37.19.198.244-3684"
-        - "19-shadowsocks-\U0001F1FA\U0001F1F8US-37.19.198.236-0145"
-        - "20-shadowsocks-\U0001F1FA\U0001F1F8US-37.19.198.160-0213"
-        - "21-shadowsocks-\U0001F1FA\U0001F1F8US-37.19.198.243-4267"
-        - "22-shadowsocks-\U0001D402\U0001D421\U0001D41A\U0001D427\U0001D427\U0001D41E\U0001D425: @ISVvpn"
-        - "23-trojan-\U0001F1FA\U0001F1F8US-172.237.145.189-0197"
-        - "24-vmess-\U0001F1FA\U0001F1F8 US 19"
-        - "25-shadowsocks-\U0001F1FA\U0001F1F8US-71.19.148.74-0761"
-        - 26-vless-9https://t.me/irconfiig
-        - "27-shadowsocks-\U0001F1FA\U0001F1F8US-71.19.148.74-0211"
-        - 28-vless-13https://t.me/irconfiig
-        - 29-trojan-未知8
-        - 30-trojan-t.me/iProxyChannel
+        - "14-vmess-Channel : @FreeConfigForYou\U0001F3F4\U0001F3F3"
+        - "15-trojan-\U0001F1FA\U0001F1F8US-45.79.8.17-0747"
+        - "16-vless-\U0001F534\U0001F1FA\U0001F1F8[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_198d7330"
+        - "17-vmess-\U0001F1FA\U0001F1F8 US 20"
+        - "18-vless-\U0001F1FA\U0001F1F8 418 - US - VLESS/REALITY/PBK/SID/VISI"
+        - "19-shadowsocks-\U0001F1FA\U0001F1F8US-37.19.198.243-0098"
+        - "20-shadowsocks-\U0001F1FA\U0001F1F8US-37.19.198.236-0097"
+        - "21-shadowsocks-\U0001F1FA\U0001F1F8US-37.19.198.244-3684"
+        - "22-shadowsocks-\U0001F1FA\U0001F1F8US-37.19.198.160-0094"
+        - 23-shadowsocks-@meliproxyy
+        - "24-trojan-\U0001F1FA\U0001F1F8US-172.237.145.189-0197"
+        - "25-vmess-\U0001F1FA\U0001F1F8 US 19"
+        - "26-vless-\U0001F1FA\U0001F1F8 140 - US - VLESS/REALITY/PBK/VISION/U"
+        - "27-shadowsocks-\U0001F1E9\U0001F1EA DE德国(mibei77.com 米贝节点分享)"
+        - "28-shadowsocks-\U0001F1FA\U0001F1F8US-71.19.148.74-0211"
+        - 29-trojan-⚡ b2n.ir/v2ray-configs | 265
+        - 30-vless-13https://t.me/irconfiig
+        - 31-trojan-t.me/iProxyChannel
+        - "32-shadowsocks-\U0001F1FA\U0001F1F8US-107.172.250.161-0131"
+        - 33-trojan-t.me/iProxyChannel
+        - 34-trojan-@V2raysCollector
+        - 35-trojan-未知33
+        - 36-vless-9https://t.me/irconfiig
+        - 37-vmess-V2 - 17
       type: select
 rules:
     - MATCH,select
