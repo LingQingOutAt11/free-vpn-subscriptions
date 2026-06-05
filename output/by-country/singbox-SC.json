@@ -1,26 +1,26 @@
 {
   "outbounds": [
     {
+      "server": "45.130.125.76",
+      "server_port": 443,
+      "tag": "01-vless-12https://t.me/irconfiig",
+      "tls": {
+        "enabled": true,
+        "insecure": false,
+        "server_name": "octopusss4.com"
+      },
+      "type": "vless",
+      "uuid": "fc965ad9-bdd7-4815-ad71-b39ec5972dc1"
+    },
+    {
       "password": "humanity",
       "server": "45.130.125.160",
       "server_port": 443,
-      "tag": "01-trojan-node",
+      "tag": "02-trojan-node",
       "tls": {
         "enabled": true,
         "insecure": false,
         "server_name": "www.calmlunch.com"
-      },
-      "type": "trojan"
-    },
-    {
-      "password": "humanity",
-      "server": "45.130.125.69",
-      "server_port": 443,
-      "tag": "02-trojan-t.me/iProxyChannel",
-      "tls": {
-        "enabled": true,
-        "insecure": false,
-        "server_name": "www.calmloud.com"
       },
       "type": "trojan"
     },
@@ -38,7 +38,7 @@
     },
     {
       "password": "humanity",
-      "server": "45.130.125.96",
+      "server": "45.130.125.69",
       "server_port": 443,
       "tag": "04-trojan-t.me/iProxyChannel",
       "tls": {
@@ -51,8 +51,8 @@
     {
       "interval": "5m",
       "outbounds": [
-        "01-trojan-node",
-        "02-trojan-t.me/iProxyChannel",
+        "01-vless-12https://t.me/irconfiig",
+        "02-trojan-node",
         "03-trojan-7https://t.me/irconfiig",
         "04-trojan-t.me/iProxyChannel"
       ],
@@ -63,8 +63,8 @@
     {
       "outbounds": [
         "auto",
-        "01-trojan-node",
-        "02-trojan-t.me/iProxyChannel",
+        "01-vless-12https://t.me/irconfiig",
+        "02-trojan-node",
         "03-trojan-7https://t.me/irconfiig",
         "04-trojan-t.me/iProxyChannel"
       ],
