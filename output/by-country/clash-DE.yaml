@@ -1,7 +1,7 @@
 proxies:
     - alterId: 0
-      cipher: aes-128-gcm
-      name: "01-vmess-\U0001F534\U0001F1FA\U0001F1F8[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_4c938bcf"
+      cipher: auto
+      name: "01-vmess-\U0001F1E8\U0001F1FF CZ 4"
       network: tcp
       port: 180
       server: 82.198.246.37
@@ -10,16 +10,7 @@ proxies:
       uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
     - alterId: 0
       cipher: auto
-      name: "02-vmess-\U0001F1E8\U0001F1FF CZ 8"
-      network: tcp
-      port: 180
-      server: 82.198.246.233
-      type: vmess
-      udp: true
-      uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    - alterId: 0
-      cipher: auto
-      name: "03-vmess-\U0001F1E8\U0001F1FF CZ 5"
+      name: "02-vmess-\U0001F1E8\U0001F1FF CZ 5"
       network: tcp
       port: 180
       server: 82.198.246.97
@@ -27,8 +18,8 @@ proxies:
       udp: true
       uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
     - alterId: 0
-      cipher: aes-128-gcm
-      name: "04-vmess-\U0001F1E9\U0001F1EA 德国 | DEU"
+      cipher: auto
+      name: "03-vmess-\U0001F1E8\U0001F1FF CZ 7"
       network: tcp
       port: 180
       server: 82.198.246.214
@@ -37,14 +28,23 @@ proxies:
       uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
     - alterId: 0
       cipher: auto
-      name: "05-vmess-\U0001F1FA\U0001F1F8 Join+Telegram:@Farah_VPN \U0001F1FA\U0001F1F8"
+      name: "04-vmess-\U0001F1E8\U0001F1FF CZ 8"
+      network: tcp
+      port: 180
+      server: 82.198.246.233
+      type: vmess
+      udp: true
+      uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    - alterId: 0
+      cipher: auto
+      name: "05-vmess-\U0001F1E8\U0001F1FF CZ 3"
       network: tcp
       port: 180
       server: 82.198.246.250
       type: vmess
       udp: true
       uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    - name: "06-trojan-\U0001F1E9\U0001F1EADE-\U0001F680@V2Ray_Hub1200"
+    - name: 06-trojan-未知20
       password: humanity
       port: 443
       server: 89.116.46.68
@@ -52,20 +52,20 @@ proxies:
       sni: www.calmloud.com
       type: trojan
       udp: true
-    - name: 07-vless-8https://t.me/irconfiig
+    - name: 07-vless-14https://t.me/irconfiig`
       network: ws
       port: 443
-      server: 89.116.46.210
+      server: 89.116.46.68
       servername: octopusss4.com
       skip-cert-verify: false
       tls: true
       type: vless
       udp: true
       uuid: fc965ad9-bdd7-4815-ad71-b39ec5972dc1
-    - name: 08-vless-14https://t.me/irconfiig`
+    - name: 08-vless-8https://t.me/irconfiig
       network: ws
       port: 443
-      server: 89.116.46.68
+      server: 89.116.46.210
       servername: octopusss4.com
       skip-cert-verify: false
       tls: true
@@ -76,27 +76,27 @@ proxy-groups:
     - interval: 300
       name: auto
       proxies:
-        - "01-vmess-\U0001F534\U0001F1FA\U0001F1F8[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_4c938bcf"
-        - "02-vmess-\U0001F1E8\U0001F1FF CZ 8"
-        - "03-vmess-\U0001F1E8\U0001F1FF CZ 5"
-        - "04-vmess-\U0001F1E9\U0001F1EA 德国 | DEU"
-        - "05-vmess-\U0001F1FA\U0001F1F8 Join+Telegram:@Farah_VPN \U0001F1FA\U0001F1F8"
-        - "06-trojan-\U0001F1E9\U0001F1EADE-\U0001F680@V2Ray_Hub1200"
-        - 07-vless-8https://t.me/irconfiig
-        - 08-vless-14https://t.me/irconfiig`
+        - "01-vmess-\U0001F1E8\U0001F1FF CZ 4"
+        - "02-vmess-\U0001F1E8\U0001F1FF CZ 5"
+        - "03-vmess-\U0001F1E8\U0001F1FF CZ 7"
+        - "04-vmess-\U0001F1E8\U0001F1FF CZ 8"
+        - "05-vmess-\U0001F1E8\U0001F1FF CZ 3"
+        - 06-trojan-未知20
+        - 07-vless-14https://t.me/irconfiig`
+        - 08-vless-8https://t.me/irconfiig
       type: url-test
       url: https://www.gstatic.com/generate_204
     - name: select
       proxies:
         - auto
-        - "01-vmess-\U0001F534\U0001F1FA\U0001F1F8[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_4c938bcf"
-        - "02-vmess-\U0001F1E8\U0001F1FF CZ 8"
-        - "03-vmess-\U0001F1E8\U0001F1FF CZ 5"
-        - "04-vmess-\U0001F1E9\U0001F1EA 德国 | DEU"
-        - "05-vmess-\U0001F1FA\U0001F1F8 Join+Telegram:@Farah_VPN \U0001F1FA\U0001F1F8"
-        - "06-trojan-\U0001F1E9\U0001F1EADE-\U0001F680@V2Ray_Hub1200"
-        - 07-vless-8https://t.me/irconfiig
-        - 08-vless-14https://t.me/irconfiig`
+        - "01-vmess-\U0001F1E8\U0001F1FF CZ 4"
+        - "02-vmess-\U0001F1E8\U0001F1FF CZ 5"
+        - "03-vmess-\U0001F1E8\U0001F1FF CZ 7"
+        - "04-vmess-\U0001F1E8\U0001F1FF CZ 8"
+        - "05-vmess-\U0001F1E8\U0001F1FF CZ 3"
+        - 06-trojan-未知20
+        - 07-vless-14https://t.me/irconfiig`
+        - 08-vless-8https://t.me/irconfiig
       type: select
 rules:
     - MATCH,select
