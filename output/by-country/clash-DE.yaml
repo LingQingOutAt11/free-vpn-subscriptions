@@ -1,7 +1,7 @@
 proxies:
     - alterId: 0
       cipher: auto
-      name: "01-vmess-\U0001F1E8\U0001F1FF CZ 44"
+      name: "01-vmess-\U0001F1E8\U0001F1FF CZ 102"
       network: tcp
       port: 180
       server: 82.198.246.37
@@ -9,44 +9,8 @@ proxies:
       udp: true
       uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
     - alterId: 0
-      cipher: aes-128-gcm
-      name: "02-vmess-\U0001F1E9\U0001F1EA 德国 | DEU 2"
-      network: tcp
-      port: 180
-      server: 82.198.246.214
-      type: vmess
-      udp: true
-      uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    - alterId: 0
       cipher: auto
-      name: "03-vmess-\U0001F1E8\U0001F1FF CZ 70"
-      network: tcp
-      port: 180
-      server: 82.198.246.46
-      type: vmess
-      udp: true
-      uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    - alterId: 0
-      cipher: auto
-      name: "04-vmess-\U0001F1E8\U0001F1FF CZ 73"
-      network: tcp
-      port: 180
-      server: 82.198.246.9
-      type: vmess
-      udp: true
-      uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    - alterId: 0
-      cipher: auto
-      name: "05-vmess-\U0001F1E8\U0001F1FF CZ 32"
-      network: tcp
-      port: 180
-      server: 82.198.246.233
-      type: vmess
-      udp: true
-      uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    - alterId: 0
-      cipher: auto
-      name: "06-vmess-\U0001F1E8\U0001F1FF CZ 125"
+      name: "02-vmess-\U0001F1E8\U0001F1FF CZ 116"
       network: tcp
       port: 180
       server: 82.198.246.97
@@ -55,7 +19,43 @@ proxies:
       uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
     - alterId: 0
       cipher: auto
-      name: "07-vmess-\U0001F1E8\U0001F1FF CZ 143"
+      name: "03-vmess-\U0001F1E8\U0001F1FF CZ 93"
+      network: tcp
+      port: 180
+      server: 82.198.246.233
+      type: vmess
+      udp: true
+      uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    - alterId: 0
+      cipher: auto
+      name: "04-vmess-\U0001F1E8\U0001F1FF CZ 97"
+      network: tcp
+      port: 180
+      server: 82.198.246.9
+      type: vmess
+      udp: true
+      uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    - alterId: 0
+      cipher: auto
+      name: "05-vmess-\U0001F1E8\U0001F1FF CZ 68"
+      network: tcp
+      port: 180
+      server: 82.198.246.46
+      type: vmess
+      udp: true
+      uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    - alterId: 0
+      cipher: auto
+      name: "06-vmess-\U0001F534\U0001F1FA\U0001F1F8_github.com/Ruk1ng001_8f3cfa4f"
+      network: tcp
+      port: 180
+      server: 82.198.246.214
+      type: vmess
+      udp: true
+      uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    - alterId: 0
+      cipher: auto
+      name: "07-vmess-\U0001F1E8\U0001F1FF CZ 154"
       network: tcp
       port: 180
       server: 82.198.246.250
@@ -94,13 +94,13 @@ proxy-groups:
     - interval: 300
       name: auto
       proxies:
-        - "01-vmess-\U0001F1E8\U0001F1FF CZ 44"
-        - "02-vmess-\U0001F1E9\U0001F1EA 德国 | DEU 2"
-        - "03-vmess-\U0001F1E8\U0001F1FF CZ 70"
-        - "04-vmess-\U0001F1E8\U0001F1FF CZ 73"
-        - "05-vmess-\U0001F1E8\U0001F1FF CZ 32"
-        - "06-vmess-\U0001F1E8\U0001F1FF CZ 125"
-        - "07-vmess-\U0001F1E8\U0001F1FF CZ 143"
+        - "01-vmess-\U0001F1E8\U0001F1FF CZ 102"
+        - "02-vmess-\U0001F1E8\U0001F1FF CZ 116"
+        - "03-vmess-\U0001F1E8\U0001F1FF CZ 93"
+        - "04-vmess-\U0001F1E8\U0001F1FF CZ 97"
+        - "05-vmess-\U0001F1E8\U0001F1FF CZ 68"
+        - "06-vmess-\U0001F534\U0001F1FA\U0001F1F8_github.com/Ruk1ng001_8f3cfa4f"
+        - "07-vmess-\U0001F1E8\U0001F1FF CZ 154"
         - 08-vless-8https://t.me/irconfiig
         - 09-vless-14https://t.me/irconfiig`
         - "10-trojan-\U0001F1E9\U0001F1EADE-\U0001F680@V2Ray_Hub1200"
@@ -109,13 +109,13 @@ proxy-groups:
     - name: select
       proxies:
         - auto
-        - "01-vmess-\U0001F1E8\U0001F1FF CZ 44"
-        - "02-vmess-\U0001F1E9\U0001F1EA 德国 | DEU 2"
-        - "03-vmess-\U0001F1E8\U0001F1FF CZ 70"
-        - "04-vmess-\U0001F1E8\U0001F1FF CZ 73"
-        - "05-vmess-\U0001F1E8\U0001F1FF CZ 32"
-        - "06-vmess-\U0001F1E8\U0001F1FF CZ 125"
-        - "07-vmess-\U0001F1E8\U0001F1FF CZ 143"
+        - "01-vmess-\U0001F1E8\U0001F1FF CZ 102"
+        - "02-vmess-\U0001F1E8\U0001F1FF CZ 116"
+        - "03-vmess-\U0001F1E8\U0001F1FF CZ 93"
+        - "04-vmess-\U0001F1E8\U0001F1FF CZ 97"
+        - "05-vmess-\U0001F1E8\U0001F1FF CZ 68"
+        - "06-vmess-\U0001F534\U0001F1FA\U0001F1F8_github.com/Ruk1ng001_8f3cfa4f"
+        - "07-vmess-\U0001F1E8\U0001F1FF CZ 154"
         - 08-vless-8https://t.me/irconfiig
         - 09-vless-14https://t.me/irconfiig`
         - "10-trojan-\U0001F1E9\U0001F1EADE-\U0001F680@V2Ray_Hub1200"
