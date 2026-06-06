@@ -4,7 +4,7 @@
 
 <p align="center"><img src="https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/assets/hero.png" alt="Free VPN Subscriptions — hourly-refreshed free VPN subscriptions for Clash, sing-box, v2ray" width="780"></p>
 
-![узлы](https://img.shields.io/badge/узлы-72-brightgreen) ![живые](https://img.shields.io/badge/живые-2157-blue) ![медиана--rtt](https://img.shields.io/badge/медиана--rtt-169ms-orange) ![обновлено](https://img.shields.io/badge/обновлено-2026-06-06_13:11_UTC-informational)
+![узлы](https://img.shields.io/badge/узлы-90-brightgreen) ![живые](https://img.shields.io/badge/живые-2185-blue) ![медиана--rtt](https://img.shields.io/badge/медиана--rtt-217ms-orange) ![обновлено](https://img.shields.io/badge/обновлено-2026-06-06_14:13_UTC-informational)
 
 > **Самый простой способ получить рабочий бесплатный VPN — скопируйте ссылку подписки, вставьте в клиент, подключитесь.**  
 > Без регистрации. Без оплаты. Без установки каких-либо бинарников. Обновляется каждый час из публичных источников — каждый публикуемый узел несколько минут назад реально пропустил HTTP-трафик через sing-box.
@@ -77,10 +77,11 @@ proxy-groups:
 
 | Страна | Узлов | Clash | sing-box | v2ray |
 |---|---|---|---|---|
-| 🇺🇸 United States (`US`) | 35 | [clash-US.yaml](https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/output/by-country/clash-US.yaml) | [singbox-US.json](https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/output/by-country/singbox-US.json) | [v2ray-base64-US.txt](https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/output/by-country/v2ray-base64-US.txt) |
+| 🇺🇸 United States (`US`) | 40 | [clash-US.yaml](https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/output/by-country/clash-US.yaml) | [singbox-US.json](https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/output/by-country/singbox-US.json) | [v2ray-base64-US.txt](https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/output/by-country/v2ray-base64-US.txt) |
+| 🇯🇵 Japan (`JP`) | 8 | [clash-JP.yaml](https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/output/by-country/clash-JP.yaml) | [singbox-JP.json](https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/output/by-country/singbox-JP.json) | [v2ray-base64-JP.txt](https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/output/by-country/v2ray-base64-JP.txt) |
+| 🇨🇦 Canada (`CA`) | 7 | [clash-CA.yaml](https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/output/by-country/clash-CA.yaml) | [singbox-CA.json](https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/output/by-country/singbox-CA.json) | [v2ray-base64-CA.txt](https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/output/by-country/v2ray-base64-CA.txt) |
 | 🇩🇪 Germany (`DE`) | 7 | [clash-DE.yaml](https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/output/by-country/clash-DE.yaml) | [singbox-DE.json](https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/output/by-country/singbox-DE.json) | [v2ray-base64-DE.txt](https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/output/by-country/v2ray-base64-DE.txt) |
-| 🇨🇦 Canada (`CA`) | 5 | [clash-CA.yaml](https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/output/by-country/clash-CA.yaml) | [singbox-CA.json](https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/output/by-country/singbox-CA.json) | [v2ray-base64-CA.txt](https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/output/by-country/v2ray-base64-CA.txt) |
-| 🇸🇨 SC (`SC`) | 3 | [clash-SC.yaml](https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/output/by-country/clash-SC.yaml) | [singbox-SC.json](https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/output/by-country/singbox-SC.json) | [v2ray-base64-SC.txt](https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/output/by-country/v2ray-base64-SC.txt) |
+| 🇸🇨 SC (`SC`) | 4 | [clash-SC.yaml](https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/output/by-country/clash-SC.yaml) | [singbox-SC.json](https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/output/by-country/singbox-SC.json) | [v2ray-base64-SC.txt](https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/output/by-country/v2ray-base64-SC.txt) |
 
 ## 📖 Пошаговые инструкции
 
@@ -101,15 +102,15 @@ proxy-groups:
 
 ## 📊 Статистика в реальном времени
 
-- **Выбрано узлов**: 72
-- **Живых во всех источниках**: 2157
-- **RTT самого быстрого узла**: 26 ms
-- **Медиана RTT**: 169 ms
-- **Последнее обновление (UTC)**: 2026-06-06 13:11 UTC
+- **Выбрано узлов**: 90
+- **Живых во всех источниках**: 2185
+- **RTT самого быстрого узла**: 30 ms
+- **Медиана RTT**: 217 ms
+- **Последнее обновление (UTC)**: 2026-06-06 14:13 UTC
 
-**Распределение протоколов:** shadowsocks × 24 · trojan × 24 · vless × 7 · vmess × 17
+**Распределение протоколов:** shadowsocks × 29 · trojan × 33 · vless × 5 · vmess × 23
 
-**Источники в этом запуске:** `barry-far-v2ray` × 5 · `epodonios` × 12 · `lagzian-mix` × 2 · `mahdi0024` × 22 · `mahdibland-aggregator` × 5 · `mahdibland-shadowsocks` × 11 · `mfuu-clash` × 1 · `ninjastrikers` × 11 · `pawdroid` × 3
+**Источники в этом запуске:** `barry-far-v2ray` × 4 · `epodonios` × 17 · `lagzian-mix` × 2 · `mahdi0024` × 33 · `mahdibland-aggregator` × 7 · `mahdibland-shadowsocks` × 8 · `matin-v2ray` × 1 · `mfuu-clash` × 1 · `ninjastrikers` × 11 · `pawdroid` × 3 · `surfboard-eternity` × 3
 
 ## ❓ Часто задаваемые вопросы
 

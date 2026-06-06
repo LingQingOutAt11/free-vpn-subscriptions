@@ -1,10 +1,10 @@
 proxies:
-    - name: 01-trojan-node
+    - name: 01-trojan-⚡ b2n.ir/v2ray-configs | 75
       password: humanity
       port: 443
-      server: 45.130.125.160
+      server: 45.130.125.69
       skip-cert-verify: false
-      sni: www.calmlunch.com
+      sni: www.calmloud.com
       type: trojan
       udp: true
     - name: 02-trojan-未知20
@@ -23,21 +23,31 @@ proxies:
       sni: www.calmloud.com
       type: trojan
       udp: true
+    - name: 04-trojan-node
+      password: humanity
+      port: 443
+      server: 45.130.125.160
+      skip-cert-verify: false
+      sni: www.calmlunch.com
+      type: trojan
+      udp: true
 proxy-groups:
     - interval: 300
       name: auto
       proxies:
-        - 01-trojan-node
+        - 01-trojan-⚡ b2n.ir/v2ray-configs | 75
         - 02-trojan-未知20
         - 03-trojan-未知17
+        - 04-trojan-node
       type: url-test
       url: https://www.gstatic.com/generate_204
     - name: select
       proxies:
         - auto
-        - 01-trojan-node
+        - 01-trojan-⚡ b2n.ir/v2ray-configs | 75
         - 02-trojan-未知20
         - 03-trojan-未知17
+        - 04-trojan-node
       type: select
 rules:
     - MATCH,select
