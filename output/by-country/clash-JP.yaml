@@ -7,24 +7,24 @@ proxies:
       type: ss
       udp: true
     - cipher: aes-128-gcm
-      name: "02-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.204-3716"
+      name: "02-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.240-0099"
+      password: shadowsocks
+      port: 443
+      server: 149.22.87.240
+      type: ss
+      udp: true
+    - cipher: aes-128-gcm
+      name: "03-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.204-0101"
       password: shadowsocks
       port: 443
       server: 149.22.87.204
       type: ss
       udp: true
     - cipher: aes-128-gcm
-      name: "03-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.241-0100"
+      name: "04-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.241-4048"
       password: shadowsocks
       port: 443
       server: 149.22.87.241
-      type: ss
-      udp: true
-    - cipher: aes-128-gcm
-      name: "04-shadowsocks-\U0001F1EF\U0001F1F5 JP | SS | @outlinereleasedkey 1"
-      password: shadowsocks
-      port: 443
-      server: 149.22.87.240
       type: ss
       udp: true
     - alterId: 1
@@ -52,7 +52,7 @@ proxies:
       type: vmess
       udp: true
       uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
-    - name: "08-vless-\U0001D5DD\U0001D5FC\U0001D5F6\U0001D5FB ➠ @MoOon_proxy 2"
+    - name: "08-vless-برای اتصال دائمی جوین شو\U0001F5FE prrofile_purpl"
       network: ws
       port: 443
       server: 151.101.108.223
@@ -61,32 +61,32 @@ proxies:
       tls: true
       type: vless
       udp: true
-      uuid: fdab366a-367e-4996-ae05-aebd594f92dc
+      uuid: 8bcdc02a-6197-4e5b-bbbf-4e7790d2796a
 proxy-groups:
     - interval: 300
       name: auto
       proxies:
         - "01-shadowsocks-\U0001F1EF\U0001F1F5JP-47.79.144.115-0161"
-        - "02-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.204-3716"
-        - "03-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.241-0100"
-        - "04-shadowsocks-\U0001F1EF\U0001F1F5 JP | SS | @outlinereleasedkey 1"
+        - "02-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.240-0099"
+        - "03-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.204-0101"
+        - "04-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.241-4048"
         - "05-vmess-\U0001F1EF\U0001F1F5 JP 6"
         - "06-shadowsocks-\U0001F1EF\U0001F1F5 JP 10"
         - "07-vmess-\U0001F1EF\U0001F1F5JP-168.138.43.75-4729"
-        - "08-vless-\U0001D5DD\U0001D5FC\U0001D5F6\U0001D5FB ➠ @MoOon_proxy 2"
+        - "08-vless-برای اتصال دائمی جوین شو\U0001F5FE prrofile_purpl"
       type: url-test
       url: https://www.gstatic.com/generate_204
     - name: select
       proxies:
         - auto
         - "01-shadowsocks-\U0001F1EF\U0001F1F5JP-47.79.144.115-0161"
-        - "02-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.204-3716"
-        - "03-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.241-0100"
-        - "04-shadowsocks-\U0001F1EF\U0001F1F5 JP | SS | @outlinereleasedkey 1"
+        - "02-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.240-0099"
+        - "03-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.204-0101"
+        - "04-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.241-4048"
         - "05-vmess-\U0001F1EF\U0001F1F5 JP 6"
         - "06-shadowsocks-\U0001F1EF\U0001F1F5 JP 10"
         - "07-vmess-\U0001F1EF\U0001F1F5JP-168.138.43.75-4729"
-        - "08-vless-\U0001D5DD\U0001D5FC\U0001D5F6\U0001D5FB ➠ @MoOon_proxy 2"
+        - "08-vless-برای اتصال دائمی جوین شو\U0001F5FE prrofile_purpl"
       type: select
 rules:
     - MATCH,select
