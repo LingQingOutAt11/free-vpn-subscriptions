@@ -1,0 +1,59 @@
+{
+  "outbounds": [
+    {
+      "method": "rc4-md5",
+      "password": "14fFPrbezE3HDZzsMOr6",
+      "server": "146.70.61.37",
+      "server_port": 8080,
+      "tag": "01-shadowsocks-🇬🇧GB-146.70.61.37-0088",
+      "type": "shadowsocks"
+    },
+    {
+      "server": "152.233.28.198",
+      "server_port": 8443,
+      "tag": "02-vless-🇬🇧 GB 2",
+      "tls": {
+        "enabled": true,
+        "insecure": false,
+        "server_name": "uk1.fromblancwithlove.com"
+      },
+      "type": "vless",
+      "uuid": "394f6981-a782-4779-9a85-e6cf22935d93"
+    },
+    {
+      "server": "206.189.20.90",
+      "server_port": 27774,
+      "tag": "03-vless-🇬🇧 GB 4",
+      "type": "vless",
+      "uuid": "c83014e0-ad3e-4ebd-9e8f-8f7a1f6088d6"
+    },
+    {
+      "interval": "5m",
+      "outbounds": [
+        "01-shadowsocks-🇬🇧GB-146.70.61.37-0088",
+        "02-vless-🇬🇧 GB 2",
+        "03-vless-🇬🇧 GB 4"
+      ],
+      "tag": "auto",
+      "type": "urltest",
+      "url": "https://www.gstatic.com/generate_204"
+    },
+    {
+      "outbounds": [
+        "auto",
+        "01-shadowsocks-🇬🇧GB-146.70.61.37-0088",
+        "02-vless-🇬🇧 GB 2",
+        "03-vless-🇬🇧 GB 4"
+      ],
+      "tag": "select",
+      "type": "selector"
+    },
+    {
+      "tag": "direct",
+      "type": "direct"
+    }
+  ],
+  "route": {
+    "final": "select"
+  }
+}
