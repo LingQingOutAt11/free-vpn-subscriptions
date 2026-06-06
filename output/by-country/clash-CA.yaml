@@ -23,17 +23,10 @@ proxies:
       udp: true
       uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
     - cipher: rc4-md5
-      name: "04-shadowsocks-\U0001F1E8\U0001F1E6CA-\U0001F680@VPNine1"
+      name: "04-shadowsocks-\U0001F1E8\U0001F1E6CA-137.184.174.93-0103"
       password: 14fFPrbezE3HDZzsMOr6
       port: 8080
       server: 137.184.174.93
-      type: ss
-      udp: true
-    - cipher: aes-256-cfb
-      name: "05-shadowsocks-\U0001F1E8\U0001F1E6CA-15.223.63.40-0148"
-      password: amazonskr05
-      port: 443
-      server: 15.223.63.40
       type: ss
       udp: true
 proxy-groups:
@@ -43,8 +36,7 @@ proxy-groups:
         - "01-shadowsocks-\U0001F1E8\U0001F1E6CA-108.181.118.10-0096"
         - "02-shadowsocks-\U0001F1E8\U0001F1E6CA-149.22.95.183-0097"
         - "03-vmess-\U0001F1E8\U0001F1E6 CA 1"
-        - "04-shadowsocks-\U0001F1E8\U0001F1E6CA-\U0001F680@VPNine1"
-        - "05-shadowsocks-\U0001F1E8\U0001F1E6CA-15.223.63.40-0148"
+        - "04-shadowsocks-\U0001F1E8\U0001F1E6CA-137.184.174.93-0103"
       type: url-test
       url: https://www.gstatic.com/generate_204
     - name: select
@@ -53,8 +45,7 @@ proxy-groups:
         - "01-shadowsocks-\U0001F1E8\U0001F1E6CA-108.181.118.10-0096"
         - "02-shadowsocks-\U0001F1E8\U0001F1E6CA-149.22.95.183-0097"
         - "03-vmess-\U0001F1E8\U0001F1E6 CA 1"
-        - "04-shadowsocks-\U0001F1E8\U0001F1E6CA-\U0001F680@VPNine1"
-        - "05-shadowsocks-\U0001F1E8\U0001F1E6CA-15.223.63.40-0148"
+        - "04-shadowsocks-\U0001F1E8\U0001F1E6CA-137.184.174.93-0103"
       type: select
 rules:
     - MATCH,select
