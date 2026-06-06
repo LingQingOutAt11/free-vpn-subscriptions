@@ -1,25 +1,7 @@
 proxies:
     - alterId: 0
       cipher: auto
-      name: "01-vmess-\U0001F1E8\U0001F1FF CZ 150"
-      network: tcp
-      port: 180
-      server: 82.198.246.250
-      type: vmess
-      udp: true
-      uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    - alterId: 0
-      cipher: auto
-      name: "02-vmess-\U0001F1E8\U0001F1FF CZ 76"
-      network: tcp
-      port: 180
-      server: 82.198.246.233
-      type: vmess
-      udp: true
-      uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    - alterId: 0
-      cipher: auto
-      name: "03-vmess-\U0001F1E8\U0001F1FF CZ 106"
+      name: "01-vmess-\U0001F1E8\U0001F1FF CZ 40"
       network: tcp
       port: 180
       server: 82.198.246.97
@@ -28,7 +10,25 @@ proxies:
       uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
     - alterId: 0
       cipher: auto
-      name: "04-vmess-\U0001F1E8\U0001F1FF CZ 22"
+      name: "02-vmess-\U0001F1E8\U0001F1FF CZ 101"
+      network: tcp
+      port: 180
+      server: 82.198.246.9
+      type: vmess
+      udp: true
+      uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    - alterId: 0
+      cipher: aes-128-gcm
+      name: "03-vmess-\U0001F1E9\U0001F1EA 德国 | DEU 2"
+      network: tcp
+      port: 180
+      server: 82.198.246.214
+      type: vmess
+      udp: true
+      uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    - alterId: 0
+      cipher: auto
+      name: "04-vmess-\U0001F1E8\U0001F1FF CZ 131"
       network: tcp
       port: 180
       server: 82.198.246.37
@@ -37,16 +37,7 @@ proxies:
       uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
     - alterId: 0
       cipher: auto
-      name: "05-vmess-\U0001F1E8\U0001F1FF CZ 86"
-      network: tcp
-      port: 180
-      server: 82.198.246.9
-      type: vmess
-      udp: true
-      uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    - alterId: 0
-      cipher: auto
-      name: "06-vmess-\U0001F1E8\U0001F1FF CZ 68"
+      name: "05-vmess-\U0001F1E8\U0001F1FF CZ 69"
       network: tcp
       port: 180
       server: 82.198.246.46
@@ -55,10 +46,19 @@ proxies:
       uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
     - alterId: 0
       cipher: auto
-      name: "07-vmess-\U0001F1E8\U0001F1FF CZ 17"
+      name: "06-vmess-\U0001F1E8\U0001F1FF CZ 51"
       network: tcp
       port: 180
-      server: 82.198.246.214
+      server: 82.198.246.233
+      type: vmess
+      udp: true
+      uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    - alterId: 0
+      cipher: auto
+      name: "07-vmess-\U0001F1FA\U0001F1F8 美国4|@ripaojiedian"
+      network: tcp
+      port: 180
+      server: 82.198.246.250
       type: vmess
       udp: true
       uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
@@ -70,20 +70,20 @@ proxies:
       sni: www.calmloud.com
       type: trojan
       udp: true
-    - name: 09-vless-14https://t.me/irconfiig`
+    - name: 09-vless-8https://t.me/irconfiig
       network: ws
       port: 443
-      server: 89.116.46.68
+      server: 89.116.46.210
       servername: octopusss4.com
       skip-cert-verify: false
       tls: true
       type: vless
       udp: true
       uuid: fc965ad9-bdd7-4815-ad71-b39ec5972dc1
-    - name: 10-vless-8https://t.me/irconfiig
+    - name: 10-vless-14https://t.me/irconfiig`
       network: ws
       port: 443
-      server: 89.116.46.210
+      server: 89.116.46.68
       servername: octopusss4.com
       skip-cert-verify: false
       tls: true
@@ -94,31 +94,31 @@ proxy-groups:
     - interval: 300
       name: auto
       proxies:
-        - "01-vmess-\U0001F1E8\U0001F1FF CZ 150"
-        - "02-vmess-\U0001F1E8\U0001F1FF CZ 76"
-        - "03-vmess-\U0001F1E8\U0001F1FF CZ 106"
-        - "04-vmess-\U0001F1E8\U0001F1FF CZ 22"
-        - "05-vmess-\U0001F1E8\U0001F1FF CZ 86"
-        - "06-vmess-\U0001F1E8\U0001F1FF CZ 68"
-        - "07-vmess-\U0001F1E8\U0001F1FF CZ 17"
+        - "01-vmess-\U0001F1E8\U0001F1FF CZ 40"
+        - "02-vmess-\U0001F1E8\U0001F1FF CZ 101"
+        - "03-vmess-\U0001F1E9\U0001F1EA 德国 | DEU 2"
+        - "04-vmess-\U0001F1E8\U0001F1FF CZ 131"
+        - "05-vmess-\U0001F1E8\U0001F1FF CZ 69"
+        - "06-vmess-\U0001F1E8\U0001F1FF CZ 51"
+        - "07-vmess-\U0001F1FA\U0001F1F8 美国4|@ripaojiedian"
         - "08-trojan-\U0001F1E9\U0001F1EADE-\U0001F680@V2Ray_Hub1200"
-        - 09-vless-14https://t.me/irconfiig`
-        - 10-vless-8https://t.me/irconfiig
+        - 09-vless-8https://t.me/irconfiig
+        - 10-vless-14https://t.me/irconfiig`
       type: url-test
       url: https://www.gstatic.com/generate_204
     - name: select
       proxies:
         - auto
-        - "01-vmess-\U0001F1E8\U0001F1FF CZ 150"
-        - "02-vmess-\U0001F1E8\U0001F1FF CZ 76"
-        - "03-vmess-\U0001F1E8\U0001F1FF CZ 106"
-        - "04-vmess-\U0001F1E8\U0001F1FF CZ 22"
-        - "05-vmess-\U0001F1E8\U0001F1FF CZ 86"
-        - "06-vmess-\U0001F1E8\U0001F1FF CZ 68"
-        - "07-vmess-\U0001F1E8\U0001F1FF CZ 17"
+        - "01-vmess-\U0001F1E8\U0001F1FF CZ 40"
+        - "02-vmess-\U0001F1E8\U0001F1FF CZ 101"
+        - "03-vmess-\U0001F1E9\U0001F1EA 德国 | DEU 2"
+        - "04-vmess-\U0001F1E8\U0001F1FF CZ 131"
+        - "05-vmess-\U0001F1E8\U0001F1FF CZ 69"
+        - "06-vmess-\U0001F1E8\U0001F1FF CZ 51"
+        - "07-vmess-\U0001F1FA\U0001F1F8 美国4|@ripaojiedian"
         - "08-trojan-\U0001F1E9\U0001F1EADE-\U0001F680@V2Ray_Hub1200"
-        - 09-vless-14https://t.me/irconfiig`
-        - 10-vless-8https://t.me/irconfiig
+        - 09-vless-8https://t.me/irconfiig
+        - 10-vless-14https://t.me/irconfiig`
       type: select
 rules:
     - MATCH,select
