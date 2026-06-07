@@ -1,7 +1,16 @@
 proxies:
     - alterId: 0
       cipher: auto
-      name: "01-vmess-\U0001F1E9\U0001F1EADE-82.198.246.37-67"
+      name: "01-vmess-\U0001F534\U0001F1FA\U0001F1F8[\U0001F4FA]_github.com/Ruk1ng001_8f3cfa4f"
+      network: tcp
+      port: 180
+      server: 82.198.246.214
+      type: vmess
+      udp: true
+      uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    - alterId: 0
+      cipher: auto
+      name: "02-vmess-\U0001F1E9\U0001F1EADE-82.198.246.37-67"
       network: tcp
       port: 180
       server: 82.198.246.37
@@ -10,19 +19,10 @@ proxies:
       uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
     - alterId: 0
       cipher: auto
-      name: "02-vmess-\U0001F1EC\U0001F1E7 英国 V2CROSS.COM"
+      name: "03-vmess-\U0001F1E9\U0001F1EADE-82.198.246.250-47"
       network: tcp
       port: 180
       server: 82.198.246.250
-      type: vmess
-      udp: true
-      uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    - alterId: 0
-      cipher: auto
-      name: "03-vmess-\U0001F1E9\U0001F1EADE-82.198.246.214-50"
-      network: tcp
-      port: 180
-      server: 82.198.246.214
       type: vmess
       udp: true
       uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
@@ -34,21 +34,20 @@ proxies:
       type: ss
       udp: true
     - cipher: chacha20-ietf-poly1305
-      name: "05-shadowsocks-\U0001F1E9\U0001F1EADE-8.209.74.72-0086"
+      name: "05-shadowsocks-\U0001F1E9\U0001F1EADE-209.46.102.22-0073"
+      password: 1hhrqrokj3ag
+      port: 8388
+      server: 209.46.102.22
+      type: ss
+      udp: true
+    - cipher: chacha20-ietf-poly1305
+      name: "06-shadowsocks-\U0001F1E9\U0001F1EADE-8.209.74.72-0086"
       password: PWpjPo3tqhPN4yRZ
       port: 20001
       server: 8.209.74.72
       type: ss
       udp: true
-    - name: 06-trojan-@HajmVPN_Config ⚡
-      password: I1vtf6pjYsAu-nFnraWAMjKTy90AHitdAz
-      port: 443
-      server: 91.233.8.25
-      skip-cert-verify: false
-      sni: fra34.tracker-ws.click
-      type: trojan
-      udp: true
-    - name: "07-trojan-\U0001F1F7\U0001F1F4 罗马尼亚 V2CROSS.COM"
+    - name: "07-trojan-\U0001F1F7\U0001F1F4 罗马尼亚 starcorenode.com"
       password: hxn2jK9Uzezogua0oHuq9Y8viN=UCe.2Jd
       port: 443
       server: 185.137.157.254
@@ -56,7 +55,15 @@ proxies:
       sni: www.directorypipeline.click
       type: trojan
       udp: true
-    - name: "08-trojan-\U0001F1E9\U0001F1EADE-172.236.220.10-0112"
+    - name: "08-trojan-\U0001F1E9\U0001F1EADE-172.238.120.124-31"
+      password: r-_YbwF.j0TtHVewoFIppramjAnmSfqYzJ
+      port: 443
+      server: 172.238.120.124
+      skip-cert-verify: true
+      sni: ""
+      type: trojan
+      udp: true
+    - name: "09-trojan-\U0001F1E9\U0001F1EADE-172.236.220.10-0112"
       password: s_WEN9lMmufG+qDIsn-4C7JOVAnDdbS3Ui
       port: 443
       server: 172.236.220.10
@@ -64,53 +71,42 @@ proxies:
       sni: 172.236.220.10
       type: trojan
       udp: true
-    - name: "09-trojan-\U0001F1FA\U0001F1F8 美国 Akamai科技公司CDN网络节点 2"
-      password: r-_YbwF.j0TtHVewoFIppramjAnmSfqYzJ
-      port: 443
-      server: 172.238.120.124
-      skip-cert-verify: false
-      sni: ""
-      type: trojan
+    - cipher: aes-256-gcm
+      name: 10-shadowsocks-@Ap_Ir6
+      password: RexnBgU7EV5ADxG
+      port: 7001
+      server: 213.202.208.199
+      type: ss
       udp: true
-    - name: 10-vless-v2ray_dalghak
-      network: tcp
-      port: 8443
-      server: 152.233.35.228
-      servername: de1.fromblancwithlove.com
-      skip-cert-verify: false
-      tls: true
-      type: vless
-      udp: true
-      uuid: 394f6981-a782-4779-9a85-e6cf22935d93
 proxy-groups:
     - interval: 300
       name: auto
       proxies:
-        - "01-vmess-\U0001F1E9\U0001F1EADE-82.198.246.37-67"
-        - "02-vmess-\U0001F1EC\U0001F1E7 英国 V2CROSS.COM"
-        - "03-vmess-\U0001F1E9\U0001F1EADE-82.198.246.214-50"
+        - "01-vmess-\U0001F534\U0001F1FA\U0001F1F8[\U0001F4FA]_github.com/Ruk1ng001_8f3cfa4f"
+        - "02-vmess-\U0001F1E9\U0001F1EADE-82.198.246.37-67"
+        - "03-vmess-\U0001F1E9\U0001F1EADE-82.198.246.250-47"
         - "04-shadowsocks-\U0001F4C01@BIGAntony"
-        - "05-shadowsocks-\U0001F1E9\U0001F1EADE-8.209.74.72-0086"
-        - 06-trojan-@HajmVPN_Config ⚡
-        - "07-trojan-\U0001F1F7\U0001F1F4 罗马尼亚 V2CROSS.COM"
-        - "08-trojan-\U0001F1E9\U0001F1EADE-172.236.220.10-0112"
-        - "09-trojan-\U0001F1FA\U0001F1F8 美国 Akamai科技公司CDN网络节点 2"
-        - 10-vless-v2ray_dalghak
+        - "05-shadowsocks-\U0001F1E9\U0001F1EADE-209.46.102.22-0073"
+        - "06-shadowsocks-\U0001F1E9\U0001F1EADE-8.209.74.72-0086"
+        - "07-trojan-\U0001F1F7\U0001F1F4 罗马尼亚 starcorenode.com"
+        - "08-trojan-\U0001F1E9\U0001F1EADE-172.238.120.124-31"
+        - "09-trojan-\U0001F1E9\U0001F1EADE-172.236.220.10-0112"
+        - 10-shadowsocks-@Ap_Ir6
       type: url-test
       url: https://www.gstatic.com/generate_204
     - name: select
       proxies:
         - auto
-        - "01-vmess-\U0001F1E9\U0001F1EADE-82.198.246.37-67"
-        - "02-vmess-\U0001F1EC\U0001F1E7 英国 V2CROSS.COM"
-        - "03-vmess-\U0001F1E9\U0001F1EADE-82.198.246.214-50"
+        - "01-vmess-\U0001F534\U0001F1FA\U0001F1F8[\U0001F4FA]_github.com/Ruk1ng001_8f3cfa4f"
+        - "02-vmess-\U0001F1E9\U0001F1EADE-82.198.246.37-67"
+        - "03-vmess-\U0001F1E9\U0001F1EADE-82.198.246.250-47"
         - "04-shadowsocks-\U0001F4C01@BIGAntony"
-        - "05-shadowsocks-\U0001F1E9\U0001F1EADE-8.209.74.72-0086"
-        - 06-trojan-@HajmVPN_Config ⚡
-        - "07-trojan-\U0001F1F7\U0001F1F4 罗马尼亚 V2CROSS.COM"
-        - "08-trojan-\U0001F1E9\U0001F1EADE-172.236.220.10-0112"
-        - "09-trojan-\U0001F1FA\U0001F1F8 美国 Akamai科技公司CDN网络节点 2"
-        - 10-vless-v2ray_dalghak
+        - "05-shadowsocks-\U0001F1E9\U0001F1EADE-209.46.102.22-0073"
+        - "06-shadowsocks-\U0001F1E9\U0001F1EADE-8.209.74.72-0086"
+        - "07-trojan-\U0001F1F7\U0001F1F4 罗马尼亚 starcorenode.com"
+        - "08-trojan-\U0001F1E9\U0001F1EADE-172.238.120.124-31"
+        - "09-trojan-\U0001F1E9\U0001F1EADE-172.236.220.10-0112"
+        - 10-shadowsocks-@Ap_Ir6
       type: select
 rules:
     - MATCH,select
