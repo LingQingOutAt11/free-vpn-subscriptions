@@ -1,28 +1,35 @@
 proxies:
-    - cipher: aes-128-gcm
-      name: "01-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.241-4048"
-      password: shadowsocks
-      port: 443
-      server: 149.22.87.241
+    - cipher: aes-256-gcm
+      name: "01-shadowsocks-\U0001F1EF\U0001F1F5JP-47.79.144.115-0161"
+      password: GTZI5AbjNAeWQG0oVNptvWJogHNKiiKA
+      port: 40003
+      server: 47.79.144.115
       type: ss
       udp: true
     - cipher: aes-128-gcm
-      name: "02-shadowsocks-\U0001F1EF\U0001F1F5 JP 1"
+      name: "02-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.240-0099"
+      password: shadowsocks
+      port: 443
+      server: 149.22.87.240
+      type: ss
+      udp: true
+    - cipher: aes-128-gcm
+      name: "03-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.204-3716"
       password: shadowsocks
       port: 443
       server: 149.22.87.204
       type: ss
       udp: true
     - cipher: aes-128-gcm
-      name: "03-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.240-0099"
+      name: "04-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.241-4048"
       password: shadowsocks
       port: 443
-      server: 149.22.87.240
+      server: 149.22.87.241
       type: ss
       udp: true
     - alterId: 1
       cipher: auto
-      name: "04-vmess-\U0001F1EF\U0001F1F5 JP 6"
+      name: "05-vmess-\U0001F1EF\U0001F1F5 JP 6"
       network: tcp
       port: 22324
       server: 172.104.80.66
@@ -30,44 +37,13 @@ proxies:
       udp: true
       uuid: 04621bae-ab36-11ec-b909-0242ac120002
     - cipher: aes-256-gcm
-      name: "05-shadowsocks-\U0001F1EF\U0001F1F5JP-103.106.228.175-0104"
+      name: "06-shadowsocks-\U0001F1EF\U0001F1F5 JP 10"
       password: XKFKl2rULjIp74
       port: 8009
       server: 103.106.228.175
       type: ss
       udp: true
-    - name: "06-trojan-\U0001F1EF\U0001F1F5 JP 8"
-      password: tsuchiya
-      port: 443
-      server: 161.34.39.108
-      skip-cert-verify: false
-      sni: aa.ccmusic.jp
-      type: trojan
-      udp: true
-    - alterId: 0
-      cipher: auto
-      name: "07-vmess-\U0001F1EF\U0001F1F5JP-168.138.43.75-4729"
-      network: ws
-      port: 80
-      server: jp01.a0a.xyz
-      type: vmess
-      udp: true
-      uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
-    - client-fingerprint: chrome
-      flow: xtls-rprx-vision
-      name: "08-vless-\U0001F534\U0001F1EF\U0001F1F5[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_08980dad"
-      network: tcp
-      port: 1443
-      reality-opts:
-        public-key: 0i_xAxYgSNx5NMpK2lOaWGS-CvAiD_LneYPO0MF0owo
-        short-id: 1a
-      server: 160.16.220.197
-      servername: www.amazon.com
-      tls: true
-      type: vless
-      udp: true
-      uuid: b98d4c6e-6770-4a31-8256-a4750cdea0e7
-    - name: 09-vless-@proxy_kafeeچنل‌تلگراممون
+    - name: 07-vless-日本 东京Fastly节点
       network: ws
       port: 443
       server: 151.101.108.223
@@ -76,43 +52,30 @@ proxies:
       tls: true
       type: vless
       udp: true
-      uuid: 98c9f668-1f2f-4a6d-bd7a-606fab0ac035
-    - cipher: aes-256-gcm
-      name: "10-shadowsocks-\U0001F1EF\U0001F1F5 JP 11"
-      password: GTZI5AbjNAeWQG0oVNptvWJogHNKiiKA
-      port: 40003
-      server: 47.79.144.115
-      type: ss
-      udp: true
+      uuid: c838bbcc-db6b-4663-bc22-18db4dc62847
 proxy-groups:
     - interval: 300
       name: auto
       proxies:
-        - "01-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.241-4048"
-        - "02-shadowsocks-\U0001F1EF\U0001F1F5 JP 1"
-        - "03-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.240-0099"
-        - "04-vmess-\U0001F1EF\U0001F1F5 JP 6"
-        - "05-shadowsocks-\U0001F1EF\U0001F1F5JP-103.106.228.175-0104"
-        - "06-trojan-\U0001F1EF\U0001F1F5 JP 8"
-        - "07-vmess-\U0001F1EF\U0001F1F5JP-168.138.43.75-4729"
-        - "08-vless-\U0001F534\U0001F1EF\U0001F1F5[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_08980dad"
-        - 09-vless-@proxy_kafeeچنل‌تلگراممون
-        - "10-shadowsocks-\U0001F1EF\U0001F1F5 JP 11"
+        - "01-shadowsocks-\U0001F1EF\U0001F1F5JP-47.79.144.115-0161"
+        - "02-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.240-0099"
+        - "03-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.204-3716"
+        - "04-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.241-4048"
+        - "05-vmess-\U0001F1EF\U0001F1F5 JP 6"
+        - "06-shadowsocks-\U0001F1EF\U0001F1F5 JP 10"
+        - 07-vless-日本 东京Fastly节点
       type: url-test
       url: https://www.gstatic.com/generate_204
     - name: select
       proxies:
         - auto
-        - "01-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.241-4048"
-        - "02-shadowsocks-\U0001F1EF\U0001F1F5 JP 1"
-        - "03-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.240-0099"
-        - "04-vmess-\U0001F1EF\U0001F1F5 JP 6"
-        - "05-shadowsocks-\U0001F1EF\U0001F1F5JP-103.106.228.175-0104"
-        - "06-trojan-\U0001F1EF\U0001F1F5 JP 8"
-        - "07-vmess-\U0001F1EF\U0001F1F5JP-168.138.43.75-4729"
-        - "08-vless-\U0001F534\U0001F1EF\U0001F1F5[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_08980dad"
-        - 09-vless-@proxy_kafeeچنل‌تلگراممون
-        - "10-shadowsocks-\U0001F1EF\U0001F1F5 JP 11"
+        - "01-shadowsocks-\U0001F1EF\U0001F1F5JP-47.79.144.115-0161"
+        - "02-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.240-0099"
+        - "03-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.204-3716"
+        - "04-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.241-4048"
+        - "05-vmess-\U0001F1EF\U0001F1F5 JP 6"
+        - "06-shadowsocks-\U0001F1EF\U0001F1F5 JP 10"
+        - 07-vless-日本 东京Fastly节点
       type: select
 rules:
     - MATCH,select
