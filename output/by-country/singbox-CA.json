@@ -13,15 +13,7 @@
       "password": "shadowsocks",
       "server": "149.22.95.183",
       "server_port": 443,
-      "tag": "02-shadowsocks-🇨🇦CA-149.22.95.183-0071",
-      "type": "shadowsocks"
-    },
-    {
-      "method": "rc4-md5",
-      "password": "14fFPrbezE3HDZzsMOr6",
-      "server": "137.184.174.93",
-      "server_port": 8080,
-      "tag": "03-shadowsocks-🇨🇦CA-137.184.174.93-0053",
+      "tag": "02-shadowsocks-🇨🇦CA-149.22.95.183-4005",
       "type": "shadowsocks"
     },
     {
@@ -29,7 +21,15 @@
       "password": "amazonskr05",
       "server": "3.96.152.83",
       "server_port": 443,
-      "tag": "04-shadowsocks-🇨🇦CA-3.96.152.83-0075",
+      "tag": "03-shadowsocks-🇨🇦CA-3.96.152.83-0075",
+      "type": "shadowsocks"
+    },
+    {
+      "method": "rc4-md5",
+      "password": "14fFPrbezE3HDZzsMOr6",
+      "server": "137.184.174.93",
+      "server_port": 8080,
+      "tag": "04-shadowsocks-🇨🇦CA-137.184.174.93-0053",
       "type": "shadowsocks"
     },
     {
@@ -41,13 +41,36 @@
       "type": "shadowsocks"
     },
     {
+      "flow": "xtls-rprx-vision",
+      "server": "35.182.252.92",
+      "server_port": 51072,
+      "tag": "06-vless-🔴🇨🇦[🎬🤖📺🔍]_github.com/Ruk1ng001_0c17dedd",
+      "tls": {
+        "enabled": true,
+        "insecure": false,
+        "reality": {
+          "enabled": true,
+          "public_key": "5KJ1tLErCUEfqxc3IsnY_49p_gWe0mPB8eXJ3MLucgU",
+          "short_id": "0675732ab101"
+        },
+        "server_name": "www.sony.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "type": "vless",
+      "uuid": "b6b2c827-4ac1-4e2c-af28-dfa7edbfeb81"
+    },
+    {
       "interval": "5m",
       "outbounds": [
         "01-shadowsocks-🇨🇦CA-108.181.118.10-0078",
-        "02-shadowsocks-🇨🇦CA-149.22.95.183-0071",
-        "03-shadowsocks-🇨🇦CA-137.184.174.93-0053",
-        "04-shadowsocks-🇨🇦CA-3.96.152.83-0075",
-        "05-shadowsocks-🇨🇦CA-52.60.99.199-1551"
+        "02-shadowsocks-🇨🇦CA-149.22.95.183-4005",
+        "03-shadowsocks-🇨🇦CA-3.96.152.83-0075",
+        "04-shadowsocks-🇨🇦CA-137.184.174.93-0053",
+        "05-shadowsocks-🇨🇦CA-52.60.99.199-1551",
+        "06-vless-🔴🇨🇦[🎬🤖📺🔍]_github.com/Ruk1ng001_0c17dedd"
       ],
       "tag": "auto",
       "type": "urltest",
@@ -57,10 +80,11 @@
       "outbounds": [
         "auto",
         "01-shadowsocks-🇨🇦CA-108.181.118.10-0078",
-        "02-shadowsocks-🇨🇦CA-149.22.95.183-0071",
-        "03-shadowsocks-🇨🇦CA-137.184.174.93-0053",
-        "04-shadowsocks-🇨🇦CA-3.96.152.83-0075",
-        "05-shadowsocks-🇨🇦CA-52.60.99.199-1551"
+        "02-shadowsocks-🇨🇦CA-149.22.95.183-4005",
+        "03-shadowsocks-🇨🇦CA-3.96.152.83-0075",
+        "04-shadowsocks-🇨🇦CA-137.184.174.93-0053",
+        "05-shadowsocks-🇨🇦CA-52.60.99.199-1551",
+        "06-vless-🔴🇨🇦[🎬🤖📺🔍]_github.com/Ruk1ng001_0c17dedd"
       ],
       "tag": "select",
       "type": "selector"
