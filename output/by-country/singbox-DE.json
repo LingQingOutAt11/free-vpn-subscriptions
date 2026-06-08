@@ -19,19 +19,23 @@
       "uuid": "d13fc2f5-3e05-4795-81eb-44143a09e552"
     },
     {
-      "method": "aes-256-gcm",
-      "password": "RexnBgU7EV5ADxG",
-      "server": "213.202.208.199",
-      "server_port": 7001,
-      "tag": "03-shadowsocks-🇩🇪DE-213.202.208.199-0121",
-      "type": "shadowsocks"
+      "server": "89.116.46.210",
+      "server_port": 443,
+      "tag": "03-vless-立陶宛 V2CROSS.COM",
+      "tls": {
+        "enabled": true,
+        "insecure": false,
+        "server_name": "octopusss4.com"
+      },
+      "type": "vless",
+      "uuid": "fc965ad9-bdd7-4815-ad71-b39ec5972dc1"
     },
     {
       "interval": "5m",
       "outbounds": [
         "01-vmess-🇺🇸 美国4|@ripaojiedian",
         "02-vmess-🇬🇧 英国 starcorenode.com 2",
-        "03-shadowsocks-🇩🇪DE-213.202.208.199-0121"
+        "03-vless-立陶宛 V2CROSS.COM"
       ],
       "tag": "auto",
       "type": "urltest",
@@ -42,7 +46,7 @@
         "auto",
         "01-vmess-🇺🇸 美国4|@ripaojiedian",
         "02-vmess-🇬🇧 英国 starcorenode.com 2",
-        "03-shadowsocks-🇩🇪DE-213.202.208.199-0121"
+        "03-vless-立陶宛 V2CROSS.COM"
       ],
       "tag": "select",
       "type": "selector"
