@@ -1,23 +1,23 @@
 proxies:
     - cipher: chacha20-ietf-poly1305
-      name: 01-shadowsocks-@fastkanfig 5
+      name: "01-shadowsocks-\U0001F1EC\U0001F1E7GB-4.158.34.177-0075"
       password: W74XFALLLuw6m5IA
       port: 443
-      server: series-a1.samanehha.co
+      server: admin.c1.webramz.co
       type: ss
       udp: true
-    - cipher: rc4-md5
-      name: "02-shadowsocks-\U0001F1EC\U0001F1E7GB-146.70.61.37-0041"
-      password: 14fFPrbezE3HDZzsMOr6
-      port: 8080
-      server: 146.70.61.37
+    - cipher: chacha20-ietf-poly1305
+      name: '02-shadowsocks-☑➜چنلمون: Express_freevpn@'
+      password: W74XFALLLuw6m5IA
+      port: 443
+      server: series-a2.samanehha.co
       type: ss
       udp: true
-    - cipher: aes-256-gcm
-      name: "03-shadowsocks-\U0001F1EC\U0001F1E7GB-94.156.250.148-0094"
-      password: RexnBgU7EV5ADxG
-      port: 7001
-      server: 94.156.250.148
+    - cipher: chacha20-ietf-poly1305
+      name: "03-shadowsocks-\U0001F1EC\U0001F1E7GB-4.158.34.177-0076"
+      password: 1kVr0KATIJI7mwOF
+      port: 443
+      server: admin.c1.havij.co
       type: ss
       udp: true
     - cipher: aes-128-gcm
@@ -28,20 +28,34 @@ proxies:
       type: ss
       udp: true
     - cipher: aes-128-gcm
-      name: "05-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.179-0082"
+      name: "05-shadowsocks-\U0001F1EC\U0001F1E7 GB | SS | @netfreedom0 1"
       password: shadowsocks
       port: 443
-      server: 141.98.101.179
+      server: 141.98.101.182
       type: ss
       udp: true
     - cipher: aes-128-gcm
-      name: "06-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.178-0281"
+      name: "06-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.178-0080"
       password: shadowsocks
       port: 443
       server: 141.98.101.178
       type: ss
       udp: true
-    - name: 07-vless->>@oneclickvpnkeys::GB
+    - cipher: aes-256-gcm
+      name: "07-shadowsocks-\U0001F1EC\U0001F1E7GB-94.156.250.148-0094"
+      password: RexnBgU7EV5ADxG
+      port: 7001
+      server: 94.156.250.148
+      type: ss
+      udp: true
+    - cipher: chacha20-ietf-poly1305
+      name: 08-shadowsocks-TEL;Father_vpn
+      password: 4a055e9e903128a1
+      port: 19308
+      server: 57.129.129.247
+      type: ss
+      udp: true
+    - name: 09-vless->>@oneclickvpnkeys::GB
       network: tcp
       port: 8443
       server: 152.233.28.198
@@ -55,25 +69,29 @@ proxy-groups:
     - interval: 300
       name: auto
       proxies:
-        - 01-shadowsocks-@fastkanfig 5
-        - "02-shadowsocks-\U0001F1EC\U0001F1E7GB-146.70.61.37-0041"
-        - "03-shadowsocks-\U0001F1EC\U0001F1E7GB-94.156.250.148-0094"
+        - "01-shadowsocks-\U0001F1EC\U0001F1E7GB-4.158.34.177-0075"
+        - '02-shadowsocks-☑➜چنلمون: Express_freevpn@'
+        - "03-shadowsocks-\U0001F1EC\U0001F1E7GB-4.158.34.177-0076"
         - "04-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.181-0083"
-        - "05-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.179-0082"
-        - "06-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.178-0281"
-        - 07-vless->>@oneclickvpnkeys::GB
+        - "05-shadowsocks-\U0001F1EC\U0001F1E7 GB | SS | @netfreedom0 1"
+        - "06-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.178-0080"
+        - "07-shadowsocks-\U0001F1EC\U0001F1E7GB-94.156.250.148-0094"
+        - 08-shadowsocks-TEL;Father_vpn
+        - 09-vless->>@oneclickvpnkeys::GB
       type: url-test
       url: https://www.gstatic.com/generate_204
     - name: select
       proxies:
         - auto
-        - 01-shadowsocks-@fastkanfig 5
-        - "02-shadowsocks-\U0001F1EC\U0001F1E7GB-146.70.61.37-0041"
-        - "03-shadowsocks-\U0001F1EC\U0001F1E7GB-94.156.250.148-0094"
+        - "01-shadowsocks-\U0001F1EC\U0001F1E7GB-4.158.34.177-0075"
+        - '02-shadowsocks-☑➜چنلمون: Express_freevpn@'
+        - "03-shadowsocks-\U0001F1EC\U0001F1E7GB-4.158.34.177-0076"
         - "04-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.181-0083"
-        - "05-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.179-0082"
-        - "06-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.178-0281"
-        - 07-vless->>@oneclickvpnkeys::GB
+        - "05-shadowsocks-\U0001F1EC\U0001F1E7 GB | SS | @netfreedom0 1"
+        - "06-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.178-0080"
+        - "07-shadowsocks-\U0001F1EC\U0001F1E7GB-94.156.250.148-0094"
+        - 08-shadowsocks-TEL;Father_vpn
+        - 09-vless->>@oneclickvpnkeys::GB
       type: select
 rules:
     - MATCH,select
