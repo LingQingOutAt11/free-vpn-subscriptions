@@ -1,12 +1,12 @@
 proxies:
-    - name: 01-hysteria2->>@oneclickvpnkeys::FR
+    - name: "01-hysteria2- By EbraSha \U0001F4A3"
       password: dongtaiwang.com
       port: 22000
       server: 62.210.124.146
       skip-cert-verify: true
       sni: www.microsoft.com
       type: hysteria2
-    - name: "02-trojan-\U0001F1EB\U0001F1F7FR-217.69.2.107-0076"
+    - name: "02-trojan-\U0001F1EB\U0001F1F7FR-217.69.2.107-0095"
       password: YGWIMlg.W1wRWQkRDcKfjZY7sng09aC=Yh
       port: 443
       server: 217.69.2.107
@@ -14,16 +14,20 @@ proxies:
       sni: www.weavenet.click
       type: trojan
       udp: true
-    - name: 03-vless-@v2raybaaz (3)
-      network: tcp
-      port: 8443
-      server: 79.127.196.11
-      servername: cdg-1.fromblancwithlove.com
-      skip-cert-verify: false
+    - client-fingerprint: chrome
+      flow: xtls-rprx-vision
+      name: "03-vless-\U0001F534\U0001F1EB\U0001F1F7[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_cfc0a959"
+      network: raw
+      port: 12453
+      reality-opts:
+        public-key: 7Bp5RgrAqaiXOsiKaWnu6uliLDG8Eey2gA0coU9oay0
+        short-id: 52f510cea0a0a5ef
+      server: 52.47.86.31
+      servername: yahoo.com
       tls: true
       type: vless
       udp: true
-      uuid: 55f7d143-a594-4a91-b030-f227039f85ef
+      uuid: c9f0224c-c509-427e-b314-cef6cab20646
     - client-fingerprint: chrome
       flow: xtls-rprx-vision
       name: "04-vless-\U0001F534\U0001F1EB\U0001F1F7[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_397f6327"
@@ -38,55 +42,23 @@ proxies:
       type: vless
       udp: true
       uuid: deb96819-bdaa-4f52-a536-d4751290ce47
-    - client-fingerprint: chrome
-      flow: xtls-rprx-vision
-      name: "05-vless-\U0001F534\U0001F1EB\U0001F1F7[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_cfc0a959"
-      network: raw
-      port: 12453
-      reality-opts:
-        public-key: 7Bp5RgrAqaiXOsiKaWnu6uliLDG8Eey2gA0coU9oay0
-        short-id: 52f510cea0a0a5ef
-      server: 52.47.86.31
-      servername: yahoo.com
-      tls: true
-      type: vless
-      udp: true
-      uuid: c9f0224c-c509-427e-b314-cef6cab20646
-    - client-fingerprint: chrome
-      flow: xtls-rprx-vision
-      name: "06-vless-\U0001F534\U0001F1EB\U0001F1F7[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_b31db3ef"
-      network: tcp
-      port: 31413
-      reality-opts:
-        public-key: nMlxwhP34_5wFPscbso_hOfRDmsj9DonMpDSXUrnJR8
-        short-id: ead3d6f82a9d
-      server: 51.44.16.107
-      servername: yahoo.com
-      tls: true
-      type: vless
-      udp: true
-      uuid: 5454343b-541b-4c96-8c2a-52e81079d124
 proxy-groups:
     - interval: 300
       name: auto
       proxies:
-        - 01-hysteria2->>@oneclickvpnkeys::FR
-        - "02-trojan-\U0001F1EB\U0001F1F7FR-217.69.2.107-0076"
-        - 03-vless-@v2raybaaz (3)
+        - "01-hysteria2- By EbraSha \U0001F4A3"
+        - "02-trojan-\U0001F1EB\U0001F1F7FR-217.69.2.107-0095"
+        - "03-vless-\U0001F534\U0001F1EB\U0001F1F7[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_cfc0a959"
         - "04-vless-\U0001F534\U0001F1EB\U0001F1F7[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_397f6327"
-        - "05-vless-\U0001F534\U0001F1EB\U0001F1F7[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_cfc0a959"
-        - "06-vless-\U0001F534\U0001F1EB\U0001F1F7[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_b31db3ef"
       type: url-test
       url: https://www.gstatic.com/generate_204
     - name: select
       proxies:
         - auto
-        - 01-hysteria2->>@oneclickvpnkeys::FR
-        - "02-trojan-\U0001F1EB\U0001F1F7FR-217.69.2.107-0076"
-        - 03-vless-@v2raybaaz (3)
+        - "01-hysteria2- By EbraSha \U0001F4A3"
+        - "02-trojan-\U0001F1EB\U0001F1F7FR-217.69.2.107-0095"
+        - "03-vless-\U0001F534\U0001F1EB\U0001F1F7[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_cfc0a959"
         - "04-vless-\U0001F534\U0001F1EB\U0001F1F7[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_397f6327"
-        - "05-vless-\U0001F534\U0001F1EB\U0001F1F7[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_cfc0a959"
-        - "06-vless-\U0001F534\U0001F1EB\U0001F1F7[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_b31db3ef"
       type: select
 rules:
     - MATCH,select
