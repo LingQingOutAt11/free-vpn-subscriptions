@@ -1,23 +1,23 @@
 proxies:
     - cipher: aes-256-gcm
-      name: 01-shadowsocks-kurdconfig
+      name: "01-shadowsocks-\U0001F1EF\U0001F1F5JP-47.79.144.115-0161"
       password: GTZI5AbjNAeWQG0oVNptvWJogHNKiiKA
       port: 40003
       server: 47.79.144.115
       type: ss
       udp: true
     - cipher: aes-128-gcm
-      name: "02-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.240-0088"
-      password: shadowsocks
-      port: 443
-      server: 149.22.87.240
-      type: ss
-      udp: true
-    - cipher: aes-128-gcm
-      name: "03-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.204-0078"
+      name: "02-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.204-0216"
       password: shadowsocks
       port: 443
       server: 149.22.87.204
+      type: ss
+      udp: true
+    - cipher: aes-128-gcm
+      name: "03-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.240-0088"
+      password: shadowsocks
+      port: 443
+      server: 149.22.87.240
       type: ss
       udp: true
     - cipher: aes-128-gcm
@@ -34,21 +34,7 @@ proxies:
       server: 103.106.228.175
       type: ss
       udp: true
-    - client-fingerprint: chrome
-      flow: xtls-rprx-vision
-      name: "06-vless-\U0001F534\U0001F1EF\U0001F1F5[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_08980dad"
-      network: tcp
-      port: 1443
-      reality-opts:
-        public-key: 0i_xAxYgSNx5NMpK2lOaWGS-CvAiD_LneYPO0MF0owo
-        short-id: 1a
-      server: 160.16.220.197
-      servername: www.amazon.com
-      tls: true
-      type: vless
-      udp: true
-      uuid: b98d4c6e-6770-4a31-8256-a4750cdea0e7
-    - name: 07-vless-@proxy_kafeeچنل‌تلگراممون
+    - name: 06-vless-@proxy_kafeeچنل‌تلگراممون
       network: ws
       port: 443
       server: 151.101.108.223
@@ -62,25 +48,23 @@ proxy-groups:
     - interval: 300
       name: auto
       proxies:
-        - 01-shadowsocks-kurdconfig
-        - "02-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.240-0088"
-        - "03-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.204-0078"
+        - "01-shadowsocks-\U0001F1EF\U0001F1F5JP-47.79.144.115-0161"
+        - "02-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.204-0216"
+        - "03-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.240-0088"
         - "04-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.241-4048"
         - "05-shadowsocks-\U0001F1EF\U0001F1F5JP-103.106.228.175-0084"
-        - "06-vless-\U0001F534\U0001F1EF\U0001F1F5[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_08980dad"
-        - 07-vless-@proxy_kafeeچنل‌تلگراممون
+        - 06-vless-@proxy_kafeeچنل‌تلگراممون
       type: url-test
       url: https://www.gstatic.com/generate_204
     - name: select
       proxies:
         - auto
-        - 01-shadowsocks-kurdconfig
-        - "02-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.240-0088"
-        - "03-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.204-0078"
+        - "01-shadowsocks-\U0001F1EF\U0001F1F5JP-47.79.144.115-0161"
+        - "02-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.204-0216"
+        - "03-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.240-0088"
         - "04-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.241-4048"
         - "05-shadowsocks-\U0001F1EF\U0001F1F5JP-103.106.228.175-0084"
-        - "06-vless-\U0001F534\U0001F1EF\U0001F1F5[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_08980dad"
-        - 07-vless-@proxy_kafeeچنل‌تلگراممون
+        - 06-vless-@proxy_kafeeچنل‌تلگراممون
       type: select
 rules:
     - MATCH,select
