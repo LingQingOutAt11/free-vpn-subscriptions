@@ -1,19 +1,19 @@
 {
   "outbounds": [
     {
-      "method": "aes-128-gcm",
-      "password": "shadowsocks",
-      "server": "149.22.87.240",
-      "server_port": 443,
-      "tag": "01-shadowsocks-🇯🇵JP-149.22.87.240-4052",
+      "method": "aes-256-gcm",
+      "password": "GTZI5AbjNAeWQG0oVNptvWJogHNKiiKA",
+      "server": "47.79.144.115",
+      "server_port": 40003,
+      "tag": "01-shadowsocks-🇯🇵JP-47.79.144.115-0167",
       "type": "shadowsocks"
     },
     {
-      "method": "aes-128-gcm",
-      "password": "shadowsocks",
-      "server": "149.22.87.241",
-      "server_port": 443,
-      "tag": "02-shadowsocks-🇯🇵JP-149.22.87.241-4048",
+      "method": "chacha20-ietf-poly1305",
+      "password": "792e0bdb-01db-450c-94c4-925151eb396e",
+      "server": "ss.041.node-for-bigairport.win",
+      "server_port": 16688,
+      "tag": "02-shadowsocks-⚪🏳️_github.com/Ruk1ng001_8aeb2c19",
       "type": "shadowsocks"
     },
     {
@@ -25,18 +25,34 @@
       "type": "shadowsocks"
     },
     {
+      "method": "aes-128-gcm",
+      "password": "shadowsocks",
+      "server": "149.22.87.240",
+      "server_port": 443,
+      "tag": "04-shadowsocks-🇯🇵JP-149.22.87.240-0088",
+      "type": "shadowsocks"
+    },
+    {
+      "method": "aes-128-gcm",
+      "password": "shadowsocks",
+      "server": "149.22.87.241",
+      "server_port": 443,
+      "tag": "05-shadowsocks-🇯🇵JP-149.22.87.241-0089",
+      "type": "shadowsocks"
+    },
+    {
       "method": "aes-256-gcm",
       "password": "XKFKl2rULjIp74",
       "server": "103.106.228.175",
       "server_port": 8009,
-      "tag": "04-shadowsocks-🇯🇵JP-103.106.228.175-0095",
+      "tag": "06-shadowsocks-🇯🇵JP-103.106.228.175-0095",
       "type": "shadowsocks"
     },
     {
       "password": "dbyec1mkz198dzk9",
       "server": "151.101.108.223",
       "server_port": 443,
-      "tag": "05-trojan-@HajmVPN_Config ⚡",
+      "tag": "07-trojan-@HajmVPN_Config ⚡",
       "tls": {
         "enabled": true,
         "insecure": true,
@@ -45,22 +61,28 @@
       "type": "trojan"
     },
     {
-      "method": "aes-256-gcm",
-      "password": "GTZI5AbjNAeWQG0oVNptvWJogHNKiiKA",
-      "server": "47.79.144.115",
-      "server_port": 40003,
-      "tag": "06-shadowsocks-kurdconfig",
-      "type": "shadowsocks"
+      "server": "151.101.108.223",
+      "server_port": 443,
+      "tag": "08-vless-日本 东京Fastly节点",
+      "tls": {
+        "enabled": true,
+        "insecure": false,
+        "server_name": "default.ssl.fastly.net"
+      },
+      "type": "vless",
+      "uuid": "e7c13fda-6089-41a7-8367-dcbba30ce844"
     },
     {
       "interval": "5m",
       "outbounds": [
-        "01-shadowsocks-🇯🇵JP-149.22.87.240-4052",
-        "02-shadowsocks-🇯🇵JP-149.22.87.241-4048",
+        "01-shadowsocks-🇯🇵JP-47.79.144.115-0167",
+        "02-shadowsocks-⚪🏳️_github.com/Ruk1ng001_8aeb2c19",
         "03-shadowsocks-🇯🇵JP-149.22.87.204-0091",
-        "04-shadowsocks-🇯🇵JP-103.106.228.175-0095",
-        "05-trojan-@HajmVPN_Config ⚡",
-        "06-shadowsocks-kurdconfig"
+        "04-shadowsocks-🇯🇵JP-149.22.87.240-0088",
+        "05-shadowsocks-🇯🇵JP-149.22.87.241-0089",
+        "06-shadowsocks-🇯🇵JP-103.106.228.175-0095",
+        "07-trojan-@HajmVPN_Config ⚡",
+        "08-vless-日本 东京Fastly节点"
       ],
       "tag": "auto",
       "type": "urltest",
@@ -69,12 +91,14 @@
     {
       "outbounds": [
         "auto",
-        "01-shadowsocks-🇯🇵JP-149.22.87.240-4052",
-        "02-shadowsocks-🇯🇵JP-149.22.87.241-4048",
+        "01-shadowsocks-🇯🇵JP-47.79.144.115-0167",
+        "02-shadowsocks-⚪🏳️_github.com/Ruk1ng001_8aeb2c19",
         "03-shadowsocks-🇯🇵JP-149.22.87.204-0091",
-        "04-shadowsocks-🇯🇵JP-103.106.228.175-0095",
-        "05-trojan-@HajmVPN_Config ⚡",
-        "06-shadowsocks-kurdconfig"
+        "04-shadowsocks-🇯🇵JP-149.22.87.240-0088",
+        "05-shadowsocks-🇯🇵JP-149.22.87.241-0089",
+        "06-shadowsocks-🇯🇵JP-103.106.228.175-0095",
+        "07-trojan-@HajmVPN_Config ⚡",
+        "08-vless-日本 东京Fastly节点"
       ],
       "tag": "select",
       "type": "selector"
