@@ -9,27 +9,41 @@ proxies:
       udp: true
       uuid: 04621bae-ab36-11ec-b909-0242ac120002
     - cipher: chacha20-ietf-poly1305
-      name: "02-shadowsocks-برای اتصال دائمی جوین شو\U0001F38F TelegramID ⌲Ex"
+      name: "02-shadowsocks-https://t.me/v2rayNplus |\U0001F1EC\U0001F1E7"
+      password: W74XFALLLuw6m5IA
+      port: 443
+      server: 40.120.60.135
+      type: ss
+      udp: true
+    - cipher: chacha20-ietf-poly1305
+      name: "03-shadowsocks-@hi_proxy_iran :\U0001F448کانال تلگرام"
       password: W74XFALLLuw6m5IA
       port: 443
       server: series-a2.samanehha.co
       type: ss
       udp: true
     - cipher: aes-256-gcm
-      name: "03-shadowsocks-\U0001F1EC\U0001F1E7GB-94.156.250.148-0098"
+      name: 04-shadowsocks-⚡ b2n.ir/v2ray-configs | 372
       password: RexnBgU7EV5ADxG
       port: 7001
       server: 94.156.250.148
       type: ss
       udp: true
     - cipher: chacha20-ietf-poly1305
-      name: '04-shadowsocks-☑➜چنلمون: Express_freevpn@'
-      password: W74XFALLLuw6m5IA
-      port: 443
-      server: series-a1.samanehha.co
+      name: "05-shadowsocks-\U0001F1EC\U0001F1E7GB-\U0001F680@VPNine1"
+      password: 7a5af500cb295935
+      port: 18337
+      server: 149.102.144.110
       type: ss
       udp: true
-    - name: 05-vless->>@oneclickvpnkeys::GB
+    - cipher: rc4-md5
+      name: "06-shadowsocks-\U0001F1EC\U0001F1E7GB-146.70.61.37-0195"
+      password: 14fFPrbezE3HDZzsMOr6
+      port: 8080
+      server: 146.70.61.37
+      type: ss
+      udp: true
+    - name: 07-vless->>@oneclickvpnkeys::GB
       network: tcp
       port: 8443
       server: 152.233.28.198
@@ -44,20 +58,24 @@ proxy-groups:
       name: auto
       proxies:
         - "01-vmess-\U0001F1EC\U0001F1E7 GB 5"
-        - "02-shadowsocks-برای اتصال دائمی جوین شو\U0001F38F TelegramID ⌲Ex"
-        - "03-shadowsocks-\U0001F1EC\U0001F1E7GB-94.156.250.148-0098"
-        - '04-shadowsocks-☑➜چنلمون: Express_freevpn@'
-        - 05-vless->>@oneclickvpnkeys::GB
+        - "02-shadowsocks-https://t.me/v2rayNplus |\U0001F1EC\U0001F1E7"
+        - "03-shadowsocks-@hi_proxy_iran :\U0001F448کانال تلگرام"
+        - 04-shadowsocks-⚡ b2n.ir/v2ray-configs | 372
+        - "05-shadowsocks-\U0001F1EC\U0001F1E7GB-\U0001F680@VPNine1"
+        - "06-shadowsocks-\U0001F1EC\U0001F1E7GB-146.70.61.37-0195"
+        - 07-vless->>@oneclickvpnkeys::GB
       type: url-test
       url: https://www.gstatic.com/generate_204
     - name: select
       proxies:
         - auto
         - "01-vmess-\U0001F1EC\U0001F1E7 GB 5"
-        - "02-shadowsocks-برای اتصال دائمی جوین شو\U0001F38F TelegramID ⌲Ex"
-        - "03-shadowsocks-\U0001F1EC\U0001F1E7GB-94.156.250.148-0098"
-        - '04-shadowsocks-☑➜چنلمون: Express_freevpn@'
-        - 05-vless->>@oneclickvpnkeys::GB
+        - "02-shadowsocks-https://t.me/v2rayNplus |\U0001F1EC\U0001F1E7"
+        - "03-shadowsocks-@hi_proxy_iran :\U0001F448کانال تلگرام"
+        - 04-shadowsocks-⚡ b2n.ir/v2ray-configs | 372
+        - "05-shadowsocks-\U0001F1EC\U0001F1E7GB-\U0001F680@VPNine1"
+        - "06-shadowsocks-\U0001F1EC\U0001F1E7GB-146.70.61.37-0195"
+        - 07-vless->>@oneclickvpnkeys::GB
       type: select
 rules:
     - MATCH,select
