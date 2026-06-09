@@ -1,11 +1,11 @@
 {
   "outbounds": [
     {
-      "method": "aes-128-gcm",
-      "password": "shadowsocks",
-      "server": "149.22.87.241",
-      "server_port": 443,
-      "tag": "01-shadowsocks-🇯🇵JP-149.22.87.241-0072",
+      "method": "aes-256-gcm",
+      "password": "GTZI5AbjNAeWQG0oVNptvWJogHNKiiKA",
+      "server": "47.79.144.115",
+      "server_port": 40003,
+      "tag": "01-shadowsocks-🇯🇵JP-47.79.144.115-0170",
       "type": "shadowsocks"
     },
     {
@@ -13,7 +13,15 @@
       "password": "shadowsocks",
       "server": "149.22.87.240",
       "server_port": 443,
-      "tag": "02-shadowsocks-🇯🇵 JP | SS | @outlinereleasedkey 1",
+      "tag": "02-shadowsocks-🇯🇵JP-149.22.87.240-4052",
+      "type": "shadowsocks"
+    },
+    {
+      "method": "aes-128-gcm",
+      "password": "shadowsocks",
+      "server": "149.22.87.241",
+      "server_port": 443,
+      "tag": "03-shadowsocks-🇯🇵JP-149.22.87.241-0072",
       "type": "shadowsocks"
     },
     {
@@ -21,7 +29,7 @@
       "password": "shadowsocks",
       "server": "149.22.87.204",
       "server_port": 443,
-      "tag": "03-shadowsocks-🇯🇵JP-149.22.87.204-0073",
+      "tag": "04-shadowsocks-🇯🇵JP-149.22.87.204-0216",
       "type": "shadowsocks"
     },
     {
@@ -29,23 +37,36 @@
       "password": "XKFKl2rULjIp74",
       "server": "103.106.228.175",
       "server_port": 8009,
-      "tag": "04-shadowsocks-Ajomong 🇯🇵",
+      "tag": "05-shadowsocks-🇯🇵JP-103.106.228.175-0081",
       "type": "shadowsocks"
     },
     {
-      "alter_id": 0,
-      "security": "auto",
-      "server": "168.138.43.75",
-      "server_port": 80,
-      "tag": "05-vmess-🇯🇵 JP 5",
-      "type": "vmess",
-      "uuid": "11c3627f-31e8-4695-dfbd-34076e2f1f5d"
+      "flow": "xtls-rprx-vision",
+      "server": "160.16.220.197",
+      "server_port": 1443,
+      "tag": "06-vless-🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001_08980dad",
+      "tls": {
+        "enabled": true,
+        "insecure": false,
+        "reality": {
+          "enabled": true,
+          "public_key": "0i_xAxYgSNx5NMpK2lOaWGS-CvAiD_LneYPO0MF0owo",
+          "short_id": "1a"
+        },
+        "server_name": "www.amazon.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "type": "vless",
+      "uuid": "b98d4c6e-6770-4a31-8256-a4750cdea0e7"
     },
     {
       "flow": "xtls-rprx-vision",
       "server": "212.135.211.105",
       "server_port": 443,
-      "tag": "06-vless-🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001_8b19c097",
+      "tag": "07-vless-🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001_8b19c097",
       "tls": {
         "enabled": true,
         "insecure": false,
@@ -64,23 +85,25 @@
       "uuid": "99e50b7b-e551-46b3-b74f-d39806835b10"
     },
     {
-      "method": "aes-256-gcm",
-      "password": "GTZI5AbjNAeWQG0oVNptvWJogHNKiiKA",
-      "server": "47.79.144.115",
-      "server_port": 40003,
-      "tag": "07-shadowsocks-🇯🇵JP-47.79.144.115-0170",
-      "type": "shadowsocks"
+      "alter_id": 0,
+      "security": "auto",
+      "server": "168.138.43.75",
+      "server_port": 80,
+      "tag": "08-vmess-🇯🇵 JP 5",
+      "type": "vmess",
+      "uuid": "11c3627f-31e8-4695-dfbd-34076e2f1f5d"
     },
     {
       "interval": "5m",
       "outbounds": [
-        "01-shadowsocks-🇯🇵JP-149.22.87.241-0072",
-        "02-shadowsocks-🇯🇵 JP | SS | @outlinereleasedkey 1",
-        "03-shadowsocks-🇯🇵JP-149.22.87.204-0073",
-        "04-shadowsocks-Ajomong 🇯🇵",
-        "05-vmess-🇯🇵 JP 5",
-        "06-vless-🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001_8b19c097",
-        "07-shadowsocks-🇯🇵JP-47.79.144.115-0170"
+        "01-shadowsocks-🇯🇵JP-47.79.144.115-0170",
+        "02-shadowsocks-🇯🇵JP-149.22.87.240-4052",
+        "03-shadowsocks-🇯🇵JP-149.22.87.241-0072",
+        "04-shadowsocks-🇯🇵JP-149.22.87.204-0216",
+        "05-shadowsocks-🇯🇵JP-103.106.228.175-0081",
+        "06-vless-🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001_08980dad",
+        "07-vless-🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001_8b19c097",
+        "08-vmess-🇯🇵 JP 5"
       ],
       "tag": "auto",
       "type": "urltest",
@@ -89,13 +112,14 @@
     {
       "outbounds": [
         "auto",
-        "01-shadowsocks-🇯🇵JP-149.22.87.241-0072",
-        "02-shadowsocks-🇯🇵 JP | SS | @outlinereleasedkey 1",
-        "03-shadowsocks-🇯🇵JP-149.22.87.204-0073",
-        "04-shadowsocks-Ajomong 🇯🇵",
-        "05-vmess-🇯🇵 JP 5",
-        "06-vless-🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001_8b19c097",
-        "07-shadowsocks-🇯🇵JP-47.79.144.115-0170"
+        "01-shadowsocks-🇯🇵JP-47.79.144.115-0170",
+        "02-shadowsocks-🇯🇵JP-149.22.87.240-4052",
+        "03-shadowsocks-🇯🇵JP-149.22.87.241-0072",
+        "04-shadowsocks-🇯🇵JP-149.22.87.204-0216",
+        "05-shadowsocks-🇯🇵JP-103.106.228.175-0081",
+        "06-vless-🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001_08980dad",
+        "07-vless-🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001_8b19c097",
+        "08-vmess-🇯🇵 JP 5"
       ],
       "tag": "select",
       "type": "selector"
