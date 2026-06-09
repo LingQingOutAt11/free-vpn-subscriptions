@@ -1,0 +1,45 @@
+proxies:
+    - alterId: 0
+      cipher: auto
+      name: "01-vmess-\U0001F1EC\U0001F1E7 GB 5"
+      network: tcp
+      port: 22324
+      server: 66.163.117.58
+      type: vmess
+      udp: true
+      uuid: 04621bae-ab36-11ec-b909-0242ac120002
+    - cipher: aes-256-gcm
+      name: "02-shadowsocks-\U0001F1EC\U0001F1E7GB-94.156.250.148-0098"
+      password: RexnBgU7EV5ADxG
+      port: 7001
+      server: 94.156.250.148
+      type: ss
+      udp: true
+    - name: 03-vless->>@oneclickvpnkeys::GB
+      network: tcp
+      port: 8443
+      server: 152.233.28.198
+      servername: uk1.fromblancwithlove.com
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+proxy-groups:
+    - interval: 300
+      name: auto
+      proxies:
+        - "01-vmess-\U0001F1EC\U0001F1E7 GB 5"
+        - "02-shadowsocks-\U0001F1EC\U0001F1E7GB-94.156.250.148-0098"
+        - 03-vless->>@oneclickvpnkeys::GB
+      type: url-test
+      url: https://www.gstatic.com/generate_204
+    - name: select
+      proxies:
+        - auto
+        - "01-vmess-\U0001F1EC\U0001F1E7 GB 5"
+        - "02-shadowsocks-\U0001F1EC\U0001F1E7GB-94.156.250.148-0098"
+        - 03-vless->>@oneclickvpnkeys::GB
+      type: select
+rules:
+    - MATCH,select
