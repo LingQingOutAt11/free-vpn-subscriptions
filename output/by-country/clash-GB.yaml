@@ -8,14 +8,28 @@ proxies:
       type: vmess
       udp: true
       uuid: 04621bae-ab36-11ec-b909-0242ac120002
+    - cipher: chacha20-ietf-poly1305
+      name: "02-shadowsocks-برای اتصال دائمی جوین شو\U0001F38F TelegramID ⌲Ex"
+      password: W74XFALLLuw6m5IA
+      port: 443
+      server: series-a2.samanehha.co
+      type: ss
+      udp: true
     - cipher: aes-256-gcm
-      name: "02-shadowsocks-\U0001F1EC\U0001F1E7GB-94.156.250.148-0098"
+      name: "03-shadowsocks-\U0001F1EC\U0001F1E7GB-94.156.250.148-0098"
       password: RexnBgU7EV5ADxG
       port: 7001
       server: 94.156.250.148
       type: ss
       udp: true
-    - name: 03-vless->>@oneclickvpnkeys::GB
+    - cipher: chacha20-ietf-poly1305
+      name: '04-shadowsocks-☑➜چنلمون: Express_freevpn@'
+      password: W74XFALLLuw6m5IA
+      port: 443
+      server: series-a1.samanehha.co
+      type: ss
+      udp: true
+    - name: 05-vless->>@oneclickvpnkeys::GB
       network: tcp
       port: 8443
       server: 152.233.28.198
@@ -30,16 +44,20 @@ proxy-groups:
       name: auto
       proxies:
         - "01-vmess-\U0001F1EC\U0001F1E7 GB 5"
-        - "02-shadowsocks-\U0001F1EC\U0001F1E7GB-94.156.250.148-0098"
-        - 03-vless->>@oneclickvpnkeys::GB
+        - "02-shadowsocks-برای اتصال دائمی جوین شو\U0001F38F TelegramID ⌲Ex"
+        - "03-shadowsocks-\U0001F1EC\U0001F1E7GB-94.156.250.148-0098"
+        - '04-shadowsocks-☑➜چنلمون: Express_freevpn@'
+        - 05-vless->>@oneclickvpnkeys::GB
       type: url-test
       url: https://www.gstatic.com/generate_204
     - name: select
       proxies:
         - auto
         - "01-vmess-\U0001F1EC\U0001F1E7 GB 5"
-        - "02-shadowsocks-\U0001F1EC\U0001F1E7GB-94.156.250.148-0098"
-        - 03-vless->>@oneclickvpnkeys::GB
+        - "02-shadowsocks-برای اتصال دائمی جوین شو\U0001F38F TelegramID ⌲Ex"
+        - "03-shadowsocks-\U0001F1EC\U0001F1E7GB-94.156.250.148-0098"
+        - '04-shadowsocks-☑➜چنلمون: Express_freevpn@'
+        - 05-vless->>@oneclickvpnkeys::GB
       type: select
 rules:
     - MATCH,select

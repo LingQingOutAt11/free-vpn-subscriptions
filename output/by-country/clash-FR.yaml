@@ -1,0 +1,95 @@
+proxies:
+    - name: "01-trojan-\U0001F1EB\U0001F1F7FR-217.69.2.107-0105"
+      password: YGWIMlg.W1wRWQkRDcKfjZY7sng09aC=Yh
+      port: 443
+      server: 217.69.2.107
+      skip-cert-verify: false
+      sni: www.weavenet.click
+      type: trojan
+      udp: true
+    - client-fingerprint: chrome
+      flow: xtls-rprx-vision
+      name: "02-vless-\U0001F534\U0001F1EB\U0001F1F7[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_b31db3ef"
+      network: tcp
+      port: 31413
+      reality-opts:
+        public-key: nMlxwhP34_5wFPscbso_hOfRDmsj9DonMpDSXUrnJR8
+        short-id: ead3d6f82a9d
+      server: 51.44.16.107
+      servername: yahoo.com
+      tls: true
+      type: vless
+      udp: true
+      uuid: 5454343b-541b-4c96-8c2a-52e81079d124
+    - alterId: 0
+      cipher: auto
+      name: "03-vmess-\U0001F1EB\U0001F1F7 FR 22"
+      network: ws
+      port: 19792
+      server: 185.248.33.173
+      servername: imafake.locker
+      skip-cert-verify: false
+      tls: true
+      type: vmess
+      udp: true
+      uuid: 12929592-a7bd-41eb-ab4d-d804f76c4ff9
+    - alterId: 0
+      cipher: auto
+      name: "04-vmess-\U0001F1EB\U0001F1F7 FR 50"
+      network: ws
+      port: 45676
+      server: 185.248.33.173
+      servername: imafake.locker
+      skip-cert-verify: false
+      tls: true
+      type: vmess
+      udp: true
+      uuid: 4f3cfda3-a255-40eb-8801-71f9fffb19d6
+    - alterId: 0
+      cipher: auto
+      name: "05-vmess-\U0001F1EB\U0001F1F7 FR 20"
+      network: ws
+      port: 32710
+      server: 185.248.33.173
+      servername: imafake.locker
+      skip-cert-verify: false
+      tls: true
+      type: vmess
+      udp: true
+      uuid: 27104fae-f047-4993-902a-9368d8a3e9bc
+    - alterId: 0
+      cipher: auto
+      name: "06-vmess-\U0001F1EB\U0001F1F7 FR 64"
+      network: ws
+      port: 30512
+      server: 185.248.33.173
+      servername: imafake.locker
+      skip-cert-verify: false
+      tls: true
+      type: vmess
+      udp: true
+      uuid: c09f13ce-2cca-49b6-ad1e-597566cc89c6
+proxy-groups:
+    - interval: 300
+      name: auto
+      proxies:
+        - "01-trojan-\U0001F1EB\U0001F1F7FR-217.69.2.107-0105"
+        - "02-vless-\U0001F534\U0001F1EB\U0001F1F7[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_b31db3ef"
+        - "03-vmess-\U0001F1EB\U0001F1F7 FR 22"
+        - "04-vmess-\U0001F1EB\U0001F1F7 FR 50"
+        - "05-vmess-\U0001F1EB\U0001F1F7 FR 20"
+        - "06-vmess-\U0001F1EB\U0001F1F7 FR 64"
+      type: url-test
+      url: https://www.gstatic.com/generate_204
+    - name: select
+      proxies:
+        - auto
+        - "01-trojan-\U0001F1EB\U0001F1F7FR-217.69.2.107-0105"
+        - "02-vless-\U0001F534\U0001F1EB\U0001F1F7[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_b31db3ef"
+        - "03-vmess-\U0001F1EB\U0001F1F7 FR 22"
+        - "04-vmess-\U0001F1EB\U0001F1F7 FR 50"
+        - "05-vmess-\U0001F1EB\U0001F1F7 FR 20"
+        - "06-vmess-\U0001F1EB\U0001F1F7 FR 64"
+      type: select
+rules:
+    - MATCH,select
