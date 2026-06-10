@@ -1,11 +1,11 @@
 proxies:
-    - name: "01-hysteria2- By EbraSha \U0001F9EC"
-      password: dongtaiwang.com
-      port: 22000
-      server: 62.210.124.146
-      skip-cert-verify: true
-      sni: www.microsoft.com
-      type: hysteria2
+    - cipher: chacha20-ietf-poly1305
+      name: 01-shadowsocks-@v2reya88 | @confinghub2
+      password: 78b6e93e54225803
+      port: 26179
+      server: 51.75.168.50
+      type: ss
+      udp: true
     - name: "02-trojan-\U0001F1EB\U0001F1F7FR-217.69.2.107-0113"
       password: YGWIMlg.W1wRWQkRDcKfjZY7sng09aC=Yh
       port: 443
@@ -14,35 +14,73 @@ proxies:
       sni: www.weavenet.click
       type: trojan
       udp: true
-    - client-fingerprint: chrome
-      flow: xtls-rprx-vision
-      name: "03-vless-\U0001F534\U0001F1EB\U0001F1F7[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_b31db3ef"
+    - name: 03-vless-@v2raybaaz (3)
       network: tcp
-      port: 31413
-      reality-opts:
-        public-key: nMlxwhP34_5wFPscbso_hOfRDmsj9DonMpDSXUrnJR8
-        short-id: ead3d6f82a9d
-      server: 51.44.16.107
-      servername: yahoo.com
+      port: 8443
+      server: 79.127.196.11
+      servername: cdg-1.fromblancwithlove.com
+      skip-cert-verify: false
       tls: true
       type: vless
       udp: true
-      uuid: 5454343b-541b-4c96-8c2a-52e81079d124
+      uuid: 55f7d143-a594-4a91-b030-f227039f85ef
+    - alterId: 0
+      cipher: auto
+      name: "04-vmess-\U0001F1EB\U0001F1F7 FR 134"
+      network: ws
+      port: 53169
+      server: 185.248.33.173
+      servername: imafake.locker
+      skip-cert-verify: false
+      tls: true
+      type: vmess
+      udp: true
+      uuid: 12929592-a7bd-41eb-ab4d-d804f76c4ff9
+    - alterId: 0
+      cipher: auto
+      name: "05-vmess-\U0001F1EB\U0001F1F7 FR 78"
+      network: ws
+      port: 55740
+      server: 185.248.33.173
+      servername: imafake.locker
+      skip-cert-verify: false
+      tls: true
+      type: vmess
+      udp: true
+      uuid: 54a0bf6d-f2b5-4b2a-942c-798fb129527e
+    - alterId: 0
+      cipher: auto
+      name: "06-vmess-\U0001F1EB\U0001F1F7 FR 77"
+      network: ws
+      port: 23734
+      server: 185.248.33.173
+      servername: imafake.locker
+      skip-cert-verify: false
+      tls: true
+      type: vmess
+      udp: true
+      uuid: 35f332d0-0b05-4cc6-91cb-ec0d4465055f
 proxy-groups:
     - interval: 300
       name: auto
       proxies:
-        - "01-hysteria2- By EbraSha \U0001F9EC"
+        - 01-shadowsocks-@v2reya88 | @confinghub2
         - "02-trojan-\U0001F1EB\U0001F1F7FR-217.69.2.107-0113"
-        - "03-vless-\U0001F534\U0001F1EB\U0001F1F7[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_b31db3ef"
+        - 03-vless-@v2raybaaz (3)
+        - "04-vmess-\U0001F1EB\U0001F1F7 FR 134"
+        - "05-vmess-\U0001F1EB\U0001F1F7 FR 78"
+        - "06-vmess-\U0001F1EB\U0001F1F7 FR 77"
       type: url-test
       url: https://www.gstatic.com/generate_204
     - name: select
       proxies:
         - auto
-        - "01-hysteria2- By EbraSha \U0001F9EC"
+        - 01-shadowsocks-@v2reya88 | @confinghub2
         - "02-trojan-\U0001F1EB\U0001F1F7FR-217.69.2.107-0113"
-        - "03-vless-\U0001F534\U0001F1EB\U0001F1F7[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_b31db3ef"
+        - 03-vless-@v2raybaaz (3)
+        - "04-vmess-\U0001F1EB\U0001F1F7 FR 134"
+        - "05-vmess-\U0001F1EB\U0001F1F7 FR 78"
+        - "06-vmess-\U0001F1EB\U0001F1F7 FR 77"
       type: select
 rules:
     - MATCH,select
