@@ -1,21 +1,28 @@
 proxies:
     - cipher: chacha20-ietf-poly1305
-      name: "01-shadowsocks-\U0001F1FA\U0001F1F8 US美国(mibei77.com 米贝节点分享)"
+      name: "01-shadowsocks-\U0001F1FA\U0001F1F8US-38.135.24.131-0211"
       password: hbGrpfvNrJsUmKmPbR3iY2
       port: 443
       server: tinkered-pennies-puppies.freesocks.work
       type: ss
       udp: true
     - cipher: aes-128-cfb
-      name: "02-shadowsocks-\U0001F1F3\U0001F1F1NL-109.201.152.181-0089"
+      name: "02-shadowsocks-\U0001F1F3\U0001F1F1NL-109.201.152.181-0072"
       password: shadowsocks
       port: 443
       server: 109.201.152.181
       type: ss
       udp: true
+    - cipher: chacha20-ietf-poly1305
+      name: 03-shadowsocks-TEL:Father_vpn
+      password: CJmTCCx7Ltud
+      port: 8388
+      server: 108.181.58.239
+      type: ss
+      udp: true
     - client-fingerprint: chrome
       flow: xtls-rprx-vision
-      name: 03-vless->>@oneclickvpnkeys::NL
+      name: 04-vless->>@oneclickvpnkeys::NL
       network: tcp
       port: 23576
       reality-opts:
@@ -27,30 +34,32 @@ proxies:
       type: vless
       udp: true
       uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-    - cipher: aes-256-cfb
-      name: "04-shadowsocks-\U0001F1F3\U0001F1F1NL-51.15.23.63-0141"
-      password: f8f7aCzcPKbsF8p3
-      port: 989
-      server: 51.15.23.63
+    - cipher: chacha20-ietf-poly1305
+      name: 05-shadowsocks-@hex_proxy ⁵
+      password: MPS4QxIySO20yGnFTGEbyYTOwd2HlEmcC0ksqogxZtLyLYRl
+      port: 31348
+      server: 185.18.54.70
       type: ss
       udp: true
 proxy-groups:
     - interval: 300
       name: auto
       proxies:
-        - "01-shadowsocks-\U0001F1FA\U0001F1F8 US美国(mibei77.com 米贝节点分享)"
-        - "02-shadowsocks-\U0001F1F3\U0001F1F1NL-109.201.152.181-0089"
-        - 03-vless->>@oneclickvpnkeys::NL
-        - "04-shadowsocks-\U0001F1F3\U0001F1F1NL-51.15.23.63-0141"
+        - "01-shadowsocks-\U0001F1FA\U0001F1F8US-38.135.24.131-0211"
+        - "02-shadowsocks-\U0001F1F3\U0001F1F1NL-109.201.152.181-0072"
+        - 03-shadowsocks-TEL:Father_vpn
+        - 04-vless->>@oneclickvpnkeys::NL
+        - 05-shadowsocks-@hex_proxy ⁵
       type: url-test
       url: https://www.gstatic.com/generate_204
     - name: select
       proxies:
         - auto
-        - "01-shadowsocks-\U0001F1FA\U0001F1F8 US美国(mibei77.com 米贝节点分享)"
-        - "02-shadowsocks-\U0001F1F3\U0001F1F1NL-109.201.152.181-0089"
-        - 03-vless->>@oneclickvpnkeys::NL
-        - "04-shadowsocks-\U0001F1F3\U0001F1F1NL-51.15.23.63-0141"
+        - "01-shadowsocks-\U0001F1FA\U0001F1F8US-38.135.24.131-0211"
+        - "02-shadowsocks-\U0001F1F3\U0001F1F1NL-109.201.152.181-0072"
+        - 03-shadowsocks-TEL:Father_vpn
+        - 04-vless->>@oneclickvpnkeys::NL
+        - 05-shadowsocks-@hex_proxy ⁵
       type: select
 rules:
     - MATCH,select

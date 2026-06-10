@@ -1,58 +1,96 @@
 proxies:
     - cipher: chacha20-ietf-poly1305
-      name: "01-shadowsocks-\U0001F1EC\U0001F1E761413 | ⚡️Telegram = t.me/SOSkeyNET"
-      password: W74XFALLLuw6m5IA
-      port: 443
-      server: 40.120.60.135
-      type: ss
-      udp: true
-    - cipher: chacha20-ietf-poly1305
-      name: 02-shadowsocks-@v2dogs_n
+      name: 01-shadowsocks-@filembad
       password: 1kVr0KATIJI7mwOF
       port: 443
       server: admin.c1.havij.co
       type: ss
       udp: true
     - cipher: chacha20-ietf-poly1305
-      name: 03-shadowsocks-@V2raySup0 | ❗
-      password: W74XFALLLuw6m5IA
-      port: 443
-      server: series-a1.samanehha.co
-      type: ss
-      udp: true
-    - cipher: chacha20-ietf-poly1305
-      name: "04-shadowsocks-@hi_proxy_iran :\U0001F448کانال تلگرام"
+      name: "02-shadowsocks-برای اتصال دائمی جوین شو\U0001F3F5 TelegramID ⌲Ex"
       password: W74XFALLLuw6m5IA
       port: 443
       server: series-a2.samanehha.co
       type: ss
       udp: true
+    - cipher: chacha20-ietf-poly1305
+      name: "03-shadowsocks-\U0001F1EC\U0001F1E761413 | ⚡️Telegram = t.me/SOSkeyNET"
+      password: W74XFALLLuw6m5IA
+      port: 443
+      server: 40.120.60.135
+      type: ss
+      udp: true
+    - cipher: chacha20-ietf-poly1305
+      name: "04-shadowsocks-\U0001F1EC\U0001F1E7GB-51.105.29.64-0096"
+      password: W74XFALLLuw6m5IA
+      port: 443
+      server: admin.c1.webramz.co
+      type: ss
+      udp: true
+    - cipher: chacha20-ietf-poly1305
+      name: 05-shadowsocks-@bored_vpn
+      password: W74XFALLLuw6m5IA
+      port: 443
+      server: series-a1.samanehha.co
+      type: ss
+      udp: true
+    - cipher: rc4-md5
+      name: "06-shadowsocks-\U0001F1EC\U0001F1E7GB-146.70.61.37-0056"
+      password: 14fFPrbezE3HDZzsMOr6
+      port: 8080
+      server: 146.70.61.37
+      type: ss
+      udp: true
+    - cipher: chacha20-ietf-poly1305
+      name: 07-shadowsocks- By EbraSha ⛓️
+      password: 4a055e9e903128a1
+      port: 19308
+      server: 57.129.129.247
+      type: ss
+      udp: true
     - cipher: aes-256-gcm
-      name: "05-shadowsocks-\U0001F1EC\U0001F1E7 Join Telegram:@main_RedLine \U0001F1EC\U0001F1E7"
+      name: "08-shadowsocks-\U0001F1EC\U0001F1E7 Join Telegram:@main_RedLine \U0001F1EC\U0001F1E7"
       password: RexnBgU7EV5ADxG
       port: 7001
       server: 94.156.250.148
       type: ss
       udp: true
+    - alterId: 0
+      cipher: auto
+      name: "09-vmess-\U0001F1EC\U0001F1E7 GB 5"
+      network: tcp
+      port: 22324
+      server: 66.163.117.58
+      type: vmess
+      udp: true
+      uuid: 04621bae-ab36-11ec-b909-0242ac120002
 proxy-groups:
     - interval: 300
       name: auto
       proxies:
-        - "01-shadowsocks-\U0001F1EC\U0001F1E761413 | ⚡️Telegram = t.me/SOSkeyNET"
-        - 02-shadowsocks-@v2dogs_n
-        - 03-shadowsocks-@V2raySup0 | ❗
-        - "04-shadowsocks-@hi_proxy_iran :\U0001F448کانال تلگرام"
-        - "05-shadowsocks-\U0001F1EC\U0001F1E7 Join Telegram:@main_RedLine \U0001F1EC\U0001F1E7"
+        - 01-shadowsocks-@filembad
+        - "02-shadowsocks-برای اتصال دائمی جوین شو\U0001F3F5 TelegramID ⌲Ex"
+        - "03-shadowsocks-\U0001F1EC\U0001F1E761413 | ⚡️Telegram = t.me/SOSkeyNET"
+        - "04-shadowsocks-\U0001F1EC\U0001F1E7GB-51.105.29.64-0096"
+        - 05-shadowsocks-@bored_vpn
+        - "06-shadowsocks-\U0001F1EC\U0001F1E7GB-146.70.61.37-0056"
+        - 07-shadowsocks- By EbraSha ⛓️
+        - "08-shadowsocks-\U0001F1EC\U0001F1E7 Join Telegram:@main_RedLine \U0001F1EC\U0001F1E7"
+        - "09-vmess-\U0001F1EC\U0001F1E7 GB 5"
       type: url-test
       url: https://www.gstatic.com/generate_204
     - name: select
       proxies:
         - auto
-        - "01-shadowsocks-\U0001F1EC\U0001F1E761413 | ⚡️Telegram = t.me/SOSkeyNET"
-        - 02-shadowsocks-@v2dogs_n
-        - 03-shadowsocks-@V2raySup0 | ❗
-        - "04-shadowsocks-@hi_proxy_iran :\U0001F448کانال تلگرام"
-        - "05-shadowsocks-\U0001F1EC\U0001F1E7 Join Telegram:@main_RedLine \U0001F1EC\U0001F1E7"
+        - 01-shadowsocks-@filembad
+        - "02-shadowsocks-برای اتصال دائمی جوین شو\U0001F3F5 TelegramID ⌲Ex"
+        - "03-shadowsocks-\U0001F1EC\U0001F1E761413 | ⚡️Telegram = t.me/SOSkeyNET"
+        - "04-shadowsocks-\U0001F1EC\U0001F1E7GB-51.105.29.64-0096"
+        - 05-shadowsocks-@bored_vpn
+        - "06-shadowsocks-\U0001F1EC\U0001F1E7GB-146.70.61.37-0056"
+        - 07-shadowsocks- By EbraSha ⛓️
+        - "08-shadowsocks-\U0001F1EC\U0001F1E7 Join Telegram:@main_RedLine \U0001F1EC\U0001F1E7"
+        - "09-vmess-\U0001F1EC\U0001F1E7 GB 5"
       type: select
 rules:
     - MATCH,select
