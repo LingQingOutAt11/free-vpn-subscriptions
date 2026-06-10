@@ -1,6 +1,6 @@
 proxies:
     - cipher: chacha20-ietf-poly1305
-      name: 01-shadowsocks-@v2reya88 | @confinghub2
+      name: '01-shadowsocks-[74993] - Telegram : @V2All'
       password: 78b6e93e54225803
       port: 26179
       server: 51.75.168.50
@@ -14,7 +14,7 @@ proxies:
       sni: www.weavenet.click
       type: trojan
       udp: true
-    - name: 03-vless-@v2raybaaz (3)
+    - name: "03-vless-\U0001F98448@oneclickvpnkeys"
       network: tcp
       port: 8443
       server: 79.127.196.11
@@ -26,33 +26,9 @@ proxies:
       uuid: 55f7d143-a594-4a91-b030-f227039f85ef
     - alterId: 0
       cipher: auto
-      name: "04-vmess-\U0001F1EB\U0001F1F7 FR 134"
+      name: "04-vmess-\U0001F1EB\U0001F1F7 FR 131"
       network: ws
-      port: 53169
-      server: 185.248.33.173
-      servername: imafake.locker
-      skip-cert-verify: false
-      tls: true
-      type: vmess
-      udp: true
-      uuid: 12929592-a7bd-41eb-ab4d-d804f76c4ff9
-    - alterId: 0
-      cipher: auto
-      name: "05-vmess-\U0001F1EB\U0001F1F7 FR 78"
-      network: ws
-      port: 55740
-      server: 185.248.33.173
-      servername: imafake.locker
-      skip-cert-verify: false
-      tls: true
-      type: vmess
-      udp: true
-      uuid: 54a0bf6d-f2b5-4b2a-942c-798fb129527e
-    - alterId: 0
-      cipher: auto
-      name: "06-vmess-\U0001F1EB\U0001F1F7 FR 77"
-      network: ws
-      port: 23734
+      port: 55364
       server: 185.248.33.173
       servername: imafake.locker
       skip-cert-verify: false
@@ -60,27 +36,65 @@ proxies:
       type: vmess
       udp: true
       uuid: 35f332d0-0b05-4cc6-91cb-ec0d4465055f
+    - alterId: 0
+      cipher: auto
+      name: "05-vmess-\U0001F1EB\U0001F1F7 FR 52"
+      network: ws
+      port: 63880
+      server: 185.248.33.173
+      servername: imafake.locker
+      skip-cert-verify: false
+      tls: true
+      type: vmess
+      udp: true
+      uuid: c09f13ce-2cca-49b6-ad1e-597566cc89c6
+    - alterId: 0
+      cipher: auto
+      name: "06-vmess-\U0001F1EB\U0001F1F7 FR 94"
+      network: ws
+      port: 42797
+      server: 185.248.33.173
+      servername: imafake.locker
+      skip-cert-verify: false
+      tls: true
+      type: vmess
+      udp: true
+      uuid: e3cb685e-7840-45cb-9d64-b2028d9b635e
+    - alterId: 0
+      cipher: auto
+      name: "07-vmess-\U0001F1EB\U0001F1F7 FR 97"
+      network: ws
+      port: 45678
+      server: 185.248.33.173
+      servername: imafake.locker
+      skip-cert-verify: false
+      tls: true
+      type: vmess
+      udp: true
+      uuid: 3786e67a-41eb-4b92-b31e-417e89493b93
 proxy-groups:
     - interval: 300
       name: auto
       proxies:
-        - 01-shadowsocks-@v2reya88 | @confinghub2
+        - '01-shadowsocks-[74993] - Telegram : @V2All'
         - "02-trojan-\U0001F1EB\U0001F1F7FR-217.69.2.107-0113"
-        - 03-vless-@v2raybaaz (3)
-        - "04-vmess-\U0001F1EB\U0001F1F7 FR 134"
-        - "05-vmess-\U0001F1EB\U0001F1F7 FR 78"
-        - "06-vmess-\U0001F1EB\U0001F1F7 FR 77"
+        - "03-vless-\U0001F98448@oneclickvpnkeys"
+        - "04-vmess-\U0001F1EB\U0001F1F7 FR 131"
+        - "05-vmess-\U0001F1EB\U0001F1F7 FR 52"
+        - "06-vmess-\U0001F1EB\U0001F1F7 FR 94"
+        - "07-vmess-\U0001F1EB\U0001F1F7 FR 97"
       type: url-test
       url: https://www.gstatic.com/generate_204
     - name: select
       proxies:
         - auto
-        - 01-shadowsocks-@v2reya88 | @confinghub2
+        - '01-shadowsocks-[74993] - Telegram : @V2All'
         - "02-trojan-\U0001F1EB\U0001F1F7FR-217.69.2.107-0113"
-        - 03-vless-@v2raybaaz (3)
-        - "04-vmess-\U0001F1EB\U0001F1F7 FR 134"
-        - "05-vmess-\U0001F1EB\U0001F1F7 FR 78"
-        - "06-vmess-\U0001F1EB\U0001F1F7 FR 77"
+        - "03-vless-\U0001F98448@oneclickvpnkeys"
+        - "04-vmess-\U0001F1EB\U0001F1F7 FR 131"
+        - "05-vmess-\U0001F1EB\U0001F1F7 FR 52"
+        - "06-vmess-\U0001F1EB\U0001F1F7 FR 94"
+        - "07-vmess-\U0001F1EB\U0001F1F7 FR 97"
       type: select
 rules:
     - MATCH,select
