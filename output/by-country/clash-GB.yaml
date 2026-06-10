@@ -1,90 +1,76 @@
 proxies:
     - cipher: chacha20-ietf-poly1305
-      name: 01-shadowsocks-⚡@V2ray_official
+      name: "01-shadowsocks-@v2rayngzendegimamad\U0001F54A️"
+      password: W74XFALLLuw6m5IA
+      port: 443
+      server: series-a2.samanehha.co
+      type: ss
+      udp: true
+    - cipher: chacha20-ietf-poly1305
+      name: 02-shadowsocks-@filembad
       password: 1kVr0KATIJI7mwOF
       port: 443
       server: admin.c1.havij.co
       type: ss
       udp: true
-    - cipher: chacha20-ietf-poly1305
-      name: "02-shadowsocks-https://t.me/v2rayNplus |\U0001F1EC\U0001F1E7"
-      password: W74XFALLLuw6m5IA
-      port: 443
-      server: 40.120.60.135
-      type: ss
-      udp: true
-    - alterId: 0
-      cipher: auto
-      name: "03-vmess-\U0001F1EC\U0001F1E7 GB 5"
-      network: tcp
-      port: 22324
-      server: 66.163.117.58
-      type: vmess
-      udp: true
-      uuid: 04621bae-ab36-11ec-b909-0242ac120002
-    - cipher: aes-128-gcm
-      name: "04-shadowsocks-https://t.me/v2rayNplus |\U0001F1EC\U0001F1E7"
-      password: shadowsocks
-      port: 443
-      server: 141.98.101.182
-      type: ss
-      udp: true
-    - cipher: chacha20-ietf-poly1305
-      name: 05-shadowsocks-@v2dogs_n
-      password: W74XFALLLuw6m5IA
-      port: 443
-      server: series-a1.samanehha.co
-      type: ss
-      udp: true
-    - cipher: aes-256-gcm
-      name: "06-shadowsocks-\U0001F1EC\U0001F1E7GB-94.156.250.148-0101"
-      password: RexnBgU7EV5ADxG
-      port: 7001
-      server: 94.156.250.148
-      type: ss
-      udp: true
     - cipher: rc4-md5
-      name: "07-shadowsocks-\U0001F1EC\U0001F1E7GB-146.70.61.37-0207"
+      name: 03-shadowsocks-⚡ b2n.ir/v2ray-configs | 633
       password: 14fFPrbezE3HDZzsMOr6
       port: 8080
       server: 146.70.61.37
       type: ss
       udp: true
-    - name: 08-vless->>@oneclickvpnkeys::GB
-      network: tcp
-      port: 8443
-      server: 152.233.28.198
-      servername: uk1.fromblancwithlove.com
-      skip-cert-verify: false
-      tls: true
-      type: vless
+    - cipher: chacha20-ietf-poly1305
+      name: "04-shadowsocks-https://t.me/v2rayNplus |\U0001F1EC\U0001F1E7"
+      password: W74XFALLLuw6m5IA
+      port: 443
+      server: 40.120.60.135
+      type: ss
       udp: true
-      uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    - cipher: chacha20-ietf-poly1305
+      name: 05-shadowsocks-@outline_ir
+      password: W74XFALLLuw6m5IA
+      port: 443
+      server: series-a1.samanehha.co
+      type: ss
+      udp: true
+    - cipher: aes-128-gcm
+      name: "06-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.179-0105"
+      password: shadowsocks
+      port: 443
+      server: 141.98.101.179
+      type: ss
+      udp: true
+    - cipher: aes-256-gcm
+      name: "07-shadowsocks-\U0001F1EC\U0001F1E7GB-94.156.250.148-0101"
+      password: RexnBgU7EV5ADxG
+      port: 7001
+      server: 94.156.250.148
+      type: ss
+      udp: true
 proxy-groups:
     - interval: 300
       name: auto
       proxies:
-        - 01-shadowsocks-⚡@V2ray_official
-        - "02-shadowsocks-https://t.me/v2rayNplus |\U0001F1EC\U0001F1E7"
-        - "03-vmess-\U0001F1EC\U0001F1E7 GB 5"
+        - "01-shadowsocks-@v2rayngzendegimamad\U0001F54A️"
+        - 02-shadowsocks-@filembad
+        - 03-shadowsocks-⚡ b2n.ir/v2ray-configs | 633
         - "04-shadowsocks-https://t.me/v2rayNplus |\U0001F1EC\U0001F1E7"
-        - 05-shadowsocks-@v2dogs_n
-        - "06-shadowsocks-\U0001F1EC\U0001F1E7GB-94.156.250.148-0101"
-        - "07-shadowsocks-\U0001F1EC\U0001F1E7GB-146.70.61.37-0207"
-        - 08-vless->>@oneclickvpnkeys::GB
+        - 05-shadowsocks-@outline_ir
+        - "06-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.179-0105"
+        - "07-shadowsocks-\U0001F1EC\U0001F1E7GB-94.156.250.148-0101"
       type: url-test
       url: https://www.gstatic.com/generate_204
     - name: select
       proxies:
         - auto
-        - 01-shadowsocks-⚡@V2ray_official
-        - "02-shadowsocks-https://t.me/v2rayNplus |\U0001F1EC\U0001F1E7"
-        - "03-vmess-\U0001F1EC\U0001F1E7 GB 5"
+        - "01-shadowsocks-@v2rayngzendegimamad\U0001F54A️"
+        - 02-shadowsocks-@filembad
+        - 03-shadowsocks-⚡ b2n.ir/v2ray-configs | 633
         - "04-shadowsocks-https://t.me/v2rayNplus |\U0001F1EC\U0001F1E7"
-        - 05-shadowsocks-@v2dogs_n
-        - "06-shadowsocks-\U0001F1EC\U0001F1E7GB-94.156.250.148-0101"
-        - "07-shadowsocks-\U0001F1EC\U0001F1E7GB-146.70.61.37-0207"
-        - 08-vless->>@oneclickvpnkeys::GB
+        - 05-shadowsocks-@outline_ir
+        - "06-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.179-0105"
+        - "07-shadowsocks-\U0001F1EC\U0001F1E7GB-94.156.250.148-0101"
       type: select
 rules:
     - MATCH,select
