@@ -1,19 +1,12 @@
 proxies:
-    - name: 01-hysteria2->>@oneclickvpnkeys::FR
+    - name: "01-hysteria2- By EbraSha \U0001F576️"
       password: dongtaiwang.com
       port: 22000
       server: 62.210.124.146
       skip-cert-verify: true
       sni: www.microsoft.com
       type: hysteria2
-    - cipher: chacha20-ietf-poly1305
-      name: 02-shadowsocks-@v2reya88 | @confinghub2
-      password: 78b6e93e54225803
-      port: 26179
-      server: 51.75.168.50
-      type: ss
-      udp: true
-    - name: "03-trojan-\U0001F1EB\U0001F1F7FR-217.69.2.107-0109"
+    - name: "02-trojan-\U0001F1EB\U0001F1F7FR-217.69.2.107-0109"
       password: YGWIMlg.W1wRWQkRDcKfjZY7sng09aC=Yh
       port: 443
       server: 217.69.2.107
@@ -23,145 +16,31 @@ proxies:
       udp: true
     - alterId: 0
       cipher: auto
-      name: "04-vmess-\U0001F1EC\U0001F1E7 GB 6"
-      network: tcp
-      port: 2053
-      server: 51.195.235.71
-      servername: node-uk.connectsuite.org
-      skip-cert-verify: false
-      tls: true
-      type: vmess
-      udp: true
-      uuid: 39feb812-0fd9-4e89-928b-9ffc0a47b778
-    - alterId: 0
-      cipher: auto
-      name: "05-vmess-\U0001F1EB\U0001F1F7 FR 125"
+      name: "03-vmess-\U0001F1EB\U0001F1F7 FR 54"
       network: ws
-      port: 62092
+      port: 52044
       server: 185.248.33.173
       servername: imafake.locker
       skip-cert-verify: false
       tls: true
       type: vmess
       udp: true
-      uuid: 27104fae-f047-4993-902a-9368d8a3e9bc
-    - alterId: 0
-      cipher: auto
-      name: "06-vmess-\U0001F1EB\U0001F1F7 FR 89"
-      network: ws
-      port: 64639
-      server: 185.248.33.173
-      servername: imafake.locker
-      skip-cert-verify: false
-      tls: true
-      type: vmess
-      udp: true
-      uuid: c09f13ce-2cca-49b6-ad1e-597566cc89c6
-    - alterId: 0
-      cipher: auto
-      name: "07-vmess-\U0001F1EB\U0001F1F7 FR 66"
-      network: ws
-      port: 15490
-      server: 185.248.33.173
-      servername: imafake.locker
-      skip-cert-verify: false
-      tls: true
-      type: vmess
-      udp: true
-      uuid: 4ec66d81-9565-4d8e-ae58-2bacfde95f48
-    - alterId: 0
-      cipher: auto
-      name: "08-vmess-\U0001F1EB\U0001F1F7 FR 93"
-      network: ws
-      port: 55962
-      server: 185.248.33.173
-      servername: imafake.locker
-      skip-cert-verify: false
-      tls: true
-      type: vmess
-      udp: true
-      uuid: e3cb685e-7840-45cb-9d64-b2028d9b635e
-    - alterId: 0
-      cipher: auto
-      name: "09-vmess-\U0001F1EB\U0001F1F7 FR 83"
-      network: ws
-      port: 26366
-      server: 185.248.33.173
-      servername: imafake.locker
-      skip-cert-verify: false
-      tls: true
-      type: vmess
-      udp: true
-      uuid: 54a0bf6d-f2b5-4b2a-942c-798fb129527e
-    - alterId: 0
-      cipher: auto
-      name: "10-vmess-\U0001F1EB\U0001F1F7 FR 20"
-      network: ws
-      port: 32710
-      server: 185.248.33.173
-      servername: imafake.locker
-      skip-cert-verify: false
-      tls: true
-      type: vmess
-      udp: true
-      uuid: 27104fae-f047-4993-902a-9368d8a3e9bc
-    - alterId: 0
-      cipher: auto
-      name: "11-vmess-\U0001F1EB\U0001F1F7 FR 84"
-      network: ws
-      port: 55516
-      server: 185.248.33.173
-      servername: imafake.locker
-      skip-cert-verify: false
-      tls: true
-      type: vmess
-      udp: true
-      uuid: d0e97ee2-c6de-48f8-bd4a-8e63a9cd9e89
-    - alterId: 0
-      cipher: auto
-      name: "12-vmess-\U0001F1EB\U0001F1F7 FR 107"
-      network: ws
-      port: 33759
-      server: 185.248.33.173
-      servername: imafake.locker
-      skip-cert-verify: false
-      tls: true
-      type: vmess
-      udp: true
-      uuid: e3cb685e-7840-45cb-9d64-b2028d9b635e
+      uuid: f1a513d2-c32a-49dc-8e64-d4f8a2f1e001
 proxy-groups:
     - interval: 300
       name: auto
       proxies:
-        - 01-hysteria2->>@oneclickvpnkeys::FR
-        - 02-shadowsocks-@v2reya88 | @confinghub2
-        - "03-trojan-\U0001F1EB\U0001F1F7FR-217.69.2.107-0109"
-        - "04-vmess-\U0001F1EC\U0001F1E7 GB 6"
-        - "05-vmess-\U0001F1EB\U0001F1F7 FR 125"
-        - "06-vmess-\U0001F1EB\U0001F1F7 FR 89"
-        - "07-vmess-\U0001F1EB\U0001F1F7 FR 66"
-        - "08-vmess-\U0001F1EB\U0001F1F7 FR 93"
-        - "09-vmess-\U0001F1EB\U0001F1F7 FR 83"
-        - "10-vmess-\U0001F1EB\U0001F1F7 FR 20"
-        - "11-vmess-\U0001F1EB\U0001F1F7 FR 84"
-        - "12-vmess-\U0001F1EB\U0001F1F7 FR 107"
+        - "01-hysteria2- By EbraSha \U0001F576️"
+        - "02-trojan-\U0001F1EB\U0001F1F7FR-217.69.2.107-0109"
+        - "03-vmess-\U0001F1EB\U0001F1F7 FR 54"
       type: url-test
       url: https://www.gstatic.com/generate_204
     - name: select
       proxies:
         - auto
-        - 01-hysteria2->>@oneclickvpnkeys::FR
-        - 02-shadowsocks-@v2reya88 | @confinghub2
-        - "03-trojan-\U0001F1EB\U0001F1F7FR-217.69.2.107-0109"
-        - "04-vmess-\U0001F1EC\U0001F1E7 GB 6"
-        - "05-vmess-\U0001F1EB\U0001F1F7 FR 125"
-        - "06-vmess-\U0001F1EB\U0001F1F7 FR 89"
-        - "07-vmess-\U0001F1EB\U0001F1F7 FR 66"
-        - "08-vmess-\U0001F1EB\U0001F1F7 FR 93"
-        - "09-vmess-\U0001F1EB\U0001F1F7 FR 83"
-        - "10-vmess-\U0001F1EB\U0001F1F7 FR 20"
-        - "11-vmess-\U0001F1EB\U0001F1F7 FR 84"
-        - "12-vmess-\U0001F1EB\U0001F1F7 FR 107"
+        - "01-hysteria2- By EbraSha \U0001F576️"
+        - "02-trojan-\U0001F1EB\U0001F1F7FR-217.69.2.107-0109"
+        - "03-vmess-\U0001F1EB\U0001F1F7 FR 54"
       type: select
 rules:
     - MATCH,select
