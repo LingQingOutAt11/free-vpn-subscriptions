@@ -1,67 +1,85 @@
 proxies:
     - cipher: chacha20-ietf-poly1305
-      name: 01-shadowsocks-@hex_proxy ⁷
-      password: W74XFALLLuw6m5IA
-      port: 443
-      server: admin.c1.webramz.co
-      type: ss
-      udp: true
-    - cipher: chacha20-ietf-poly1305
-      name: "02-shadowsocks-\U0001F1EC\U0001F1E7GB-51.105.29.64-0095"
+      name: 01-shadowsocks-@Vpn_jet7(500gig)
       password: 1kVr0KATIJI7mwOF
       port: 443
       server: admin.c1.havij.co
       type: ss
       udp: true
     - cipher: chacha20-ietf-poly1305
-      name: "03-shadowsocks-@v2rayngzendegimamad\U0001F54A️"
+      name: 02-shadowsocks-@hex_proxy ⁶
+      password: W74XFALLLuw6m5IA
+      port: 443
+      server: admin.c1.webramz.co
+      type: ss
+      udp: true
+    - cipher: chacha20-ietf-poly1305
+      name: 03-shadowsocks-@hex_proxy ¹
       password: W74XFALLLuw6m5IA
       port: 443
       server: series-a2.samanehha.co
       type: ss
       udp: true
+    - cipher: aes-256-gcm
+      name: "04-shadowsocks-\U0001F1EC\U0001F1E7GB-94.156.250.148-0094"
+      password: RexnBgU7EV5ADxG
+      port: 7001
+      server: 94.156.250.148
+      type: ss
+      udp: true
     - cipher: chacha20-ietf-poly1305
-      name: "04-shadowsocks-@MoOon_proxy \U0001F3A9"
+      name: 05-shadowsocks-@hex_proxy ⁵
       password: W74XFALLLuw6m5IA
       port: 443
       server: series-a1.samanehha.co
       type: ss
       udp: true
     - cipher: aes-128-gcm
-      name: "05-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.182-0101"
+      name: "06-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.178-0099"
       password: shadowsocks
       port: 443
-      server: 141.98.101.182
+      server: 141.98.101.178
       type: ss
       udp: true
-    - cipher: aes-256-gcm
-      name: "06-shadowsocks-\U0001F1EC\U0001F1E7 Join Telegram:@main_RedLine \U0001F1EC\U0001F1E7"
-      password: RexnBgU7EV5ADxG
-      port: 7001
-      server: 94.156.250.148
+    - cipher: aes-128-gcm
+      name: "07-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.179-0098"
+      password: shadowsocks
+      port: 443
+      server: 141.98.101.179
+      type: ss
+      udp: true
+    - cipher: rc4-md5
+      name: "08-shadowsocks-\U0001F1EC\U0001F1E7GB-146.70.61.37-0056"
+      password: 14fFPrbezE3HDZzsMOr6
+      port: 8080
+      server: 146.70.61.37
       type: ss
       udp: true
 proxy-groups:
     - interval: 300
       name: auto
       proxies:
-        - 01-shadowsocks-@hex_proxy ⁷
-        - "02-shadowsocks-\U0001F1EC\U0001F1E7GB-51.105.29.64-0095"
-        - "03-shadowsocks-@v2rayngzendegimamad\U0001F54A️"
-        - "04-shadowsocks-@MoOon_proxy \U0001F3A9"
-        - "05-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.182-0101"
-        - "06-shadowsocks-\U0001F1EC\U0001F1E7 Join Telegram:@main_RedLine \U0001F1EC\U0001F1E7"
+        - 01-shadowsocks-@Vpn_jet7(500gig)
+        - 02-shadowsocks-@hex_proxy ⁶
+        - 03-shadowsocks-@hex_proxy ¹
+        - "04-shadowsocks-\U0001F1EC\U0001F1E7GB-94.156.250.148-0094"
+        - 05-shadowsocks-@hex_proxy ⁵
+        - "06-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.178-0099"
+        - "07-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.179-0098"
+        - "08-shadowsocks-\U0001F1EC\U0001F1E7GB-146.70.61.37-0056"
       type: url-test
       url: https://www.gstatic.com/generate_204
     - name: select
       proxies:
         - auto
-        - 01-shadowsocks-@hex_proxy ⁷
-        - "02-shadowsocks-\U0001F1EC\U0001F1E7GB-51.105.29.64-0095"
-        - "03-shadowsocks-@v2rayngzendegimamad\U0001F54A️"
-        - "04-shadowsocks-@MoOon_proxy \U0001F3A9"
-        - "05-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.182-0101"
-        - "06-shadowsocks-\U0001F1EC\U0001F1E7 Join Telegram:@main_RedLine \U0001F1EC\U0001F1E7"
+        - 01-shadowsocks-@Vpn_jet7(500gig)
+        - 02-shadowsocks-@hex_proxy ⁶
+        - 03-shadowsocks-@hex_proxy ¹
+        - "04-shadowsocks-\U0001F1EC\U0001F1E7GB-94.156.250.148-0094"
+        - 05-shadowsocks-@hex_proxy ⁵
+        - "06-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.178-0099"
+        - "07-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.179-0098"
+        - "08-shadowsocks-\U0001F1EC\U0001F1E7GB-146.70.61.37-0056"
       type: select
 rules:
     - MATCH,select

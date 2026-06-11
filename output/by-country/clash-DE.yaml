@@ -1,34 +1,7 @@
 proxies:
     - alterId: 0
       cipher: auto
-      name: "01-vmess-\U0001F1E8\U0001F1FF CZ 8"
-      network: tcp
-      port: 180
-      server: 82.198.246.97
-      type: vmess
-      udp: true
-      uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    - alterId: 0
-      cipher: auto
-      name: "02-vmess-\U0001F1E8\U0001F1FF CZ 28"
-      network: tcp
-      port: 180
-      server: 82.198.246.37
-      type: vmess
-      udp: true
-      uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    - alterId: 0
-      cipher: auto
-      name: "03-vmess-\U0001F1EC\U0001F1E7 GB英国(mibei77.com 米贝节点分享)"
-      network: tcp
-      port: 180
-      server: 82.198.246.250
-      type: vmess
-      udp: true
-      uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    - alterId: 0
-      cipher: auto
-      name: "04-vmess-\U0001F1FA\U0001F1F8 US美国(mibei77.com 米贝节点分享)"
+      name: "01-vmess-\U0001F1E8\U0001F1FF CZ 51"
       network: tcp
       port: 180
       server: 82.198.246.214
@@ -37,7 +10,16 @@ proxies:
       uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
     - alterId: 0
       cipher: auto
-      name: "05-vmess-\U0001F1E8\U0001F1FF CZ 76"
+      name: "02-vmess-\U0001F1E8\U0001F1FF CZ 25"
+      network: tcp
+      port: 180
+      server: 82.198.246.97
+      type: vmess
+      udp: true
+      uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    - alterId: 0
+      cipher: auto
+      name: "03-vmess-\U0001F1E8\U0001F1FF CZ 71"
       network: tcp
       port: 180
       server: 82.198.246.233
@@ -46,7 +28,25 @@ proxies:
       uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
     - alterId: 0
       cipher: auto
-      name: "06-vmess-\U0001F1E8\U0001F1FF CZ 102"
+      name: "04-vmess-\U0001F1EC\U0001F1E7 GB英国(mibei77.com 米贝节点分享)"
+      network: tcp
+      port: 180
+      server: 82.198.246.250
+      type: vmess
+      udp: true
+      uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    - alterId: 0
+      cipher: auto
+      name: "05-vmess-\U0001F1E8\U0001F1FF CZ 48"
+      network: tcp
+      port: 180
+      server: 82.198.246.37
+      type: vmess
+      udp: true
+      uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    - alterId: 0
+      cipher: auto
+      name: "06-vmess-\U0001F1E8\U0001F1FF CZ 39"
       network: tcp
       port: 180
       server: 82.198.246.9
@@ -64,24 +64,24 @@ proxy-groups:
     - interval: 300
       name: auto
       proxies:
-        - "01-vmess-\U0001F1E8\U0001F1FF CZ 8"
-        - "02-vmess-\U0001F1E8\U0001F1FF CZ 28"
-        - "03-vmess-\U0001F1EC\U0001F1E7 GB英国(mibei77.com 米贝节点分享)"
-        - "04-vmess-\U0001F1FA\U0001F1F8 US美国(mibei77.com 米贝节点分享)"
-        - "05-vmess-\U0001F1E8\U0001F1FF CZ 76"
-        - "06-vmess-\U0001F1E8\U0001F1FF CZ 102"
+        - "01-vmess-\U0001F1E8\U0001F1FF CZ 51"
+        - "02-vmess-\U0001F1E8\U0001F1FF CZ 25"
+        - "03-vmess-\U0001F1E8\U0001F1FF CZ 71"
+        - "04-vmess-\U0001F1EC\U0001F1E7 GB英国(mibei77.com 米贝节点分享)"
+        - "05-vmess-\U0001F1E8\U0001F1FF CZ 48"
+        - "06-vmess-\U0001F1E8\U0001F1FF CZ 39"
         - "07-shadowsocks-\U0001F1E9\U0001F1EADE-213.202.208.199-0136"
       type: url-test
       url: https://www.gstatic.com/generate_204
     - name: select
       proxies:
         - auto
-        - "01-vmess-\U0001F1E8\U0001F1FF CZ 8"
-        - "02-vmess-\U0001F1E8\U0001F1FF CZ 28"
-        - "03-vmess-\U0001F1EC\U0001F1E7 GB英国(mibei77.com 米贝节点分享)"
-        - "04-vmess-\U0001F1FA\U0001F1F8 US美国(mibei77.com 米贝节点分享)"
-        - "05-vmess-\U0001F1E8\U0001F1FF CZ 76"
-        - "06-vmess-\U0001F1E8\U0001F1FF CZ 102"
+        - "01-vmess-\U0001F1E8\U0001F1FF CZ 51"
+        - "02-vmess-\U0001F1E8\U0001F1FF CZ 25"
+        - "03-vmess-\U0001F1E8\U0001F1FF CZ 71"
+        - "04-vmess-\U0001F1EC\U0001F1E7 GB英国(mibei77.com 米贝节点分享)"
+        - "05-vmess-\U0001F1E8\U0001F1FF CZ 48"
+        - "06-vmess-\U0001F1E8\U0001F1FF CZ 39"
         - "07-shadowsocks-\U0001F1E9\U0001F1EADE-213.202.208.199-0136"
       type: select
 rules:
