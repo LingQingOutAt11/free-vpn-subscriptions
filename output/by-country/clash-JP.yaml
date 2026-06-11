@@ -1,16 +1,16 @@
 proxies:
-    - cipher: aes-128-gcm
-      name: "01-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.241-4048"
-      password: shadowsocks
-      port: 443
-      server: 149.22.87.241
-      type: ss
-      udp: true
     - cipher: aes-256-gcm
-      name: "02-shadowsocks-\U0001F1EF\U0001F1F5JP-47.79.144.115-0159"
+      name: "01-shadowsocks-\U0001F1EF\U0001F1F5JP-47.79.144.115-0159"
       password: GTZI5AbjNAeWQG0oVNptvWJogHNKiiKA
       port: 40003
       server: 47.79.144.115
+      type: ss
+      udp: true
+    - cipher: aes-128-gcm
+      name: "02-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.240-0087"
+      password: shadowsocks
+      port: 443
+      server: 149.22.87.240
       type: ss
       udp: true
     - cipher: aes-128-gcm
@@ -20,22 +20,22 @@ proxies:
       server: 149.22.87.204
       type: ss
       udp: true
-    - cipher: aes-128-gcm
-      name: "04-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.240-4052"
-      password: shadowsocks
-      port: 443
-      server: 149.22.87.240
-      type: ss
-      udp: true
     - alterId: 1
       cipher: auto
-      name: "05-vmess-\U0001F1EF\U0001F1F5 JP 1"
+      name: "04-vmess-\U0001F1EF\U0001F1F5 JP 1"
       network: tcp
       port: 22324
       server: 172.104.80.66
       type: vmess
       udp: true
       uuid: 04621bae-ab36-11ec-b909-0242ac120002
+    - cipher: aes-128-gcm
+      name: "05-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.241-0089"
+      password: shadowsocks
+      port: 443
+      server: 149.22.87.241
+      type: ss
+      udp: true
     - cipher: aes-256-gcm
       name: "06-shadowsocks-\U0001F1EF\U0001F1F5JP-103.106.228.175-0091"
       password: XKFKl2rULjIp74
@@ -45,7 +45,7 @@ proxies:
       udp: true
     - alterId: 0
       cipher: auto
-      name: "07-vmess-\U0001F1EF\U0001F1F5 JP 6"
+      name: "07-vmess-\U0001F1EF\U0001F1F5 JP 4"
       network: ws
       port: 25686
       server: 140.83.51.161
@@ -75,33 +75,43 @@ proxies:
       type: vless
       udp: true
       uuid: a3a8c354-a85c-477b-90f3-dbe08cadf31c
+    - name: "10-trojan-\U0001F1FA\U0001F1F8_US_美国->\U0001F1E8\U0001F1ED_CH_瑞士"
+      password: 4f4d1167-ef14-4304-9bce-0740472503ef
+      port: 45553
+      server: 90081bb25c.node.tro.cac.cab
+      skip-cert-verify: true
+      sni: ch.01.naiun.bilibili.com
+      type: trojan
+      udp: true
 proxy-groups:
     - interval: 300
       name: auto
       proxies:
-        - "01-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.241-4048"
-        - "02-shadowsocks-\U0001F1EF\U0001F1F5JP-47.79.144.115-0159"
+        - "01-shadowsocks-\U0001F1EF\U0001F1F5JP-47.79.144.115-0159"
+        - "02-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.240-0087"
         - "03-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.204-3716"
-        - "04-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.240-4052"
-        - "05-vmess-\U0001F1EF\U0001F1F5 JP 1"
+        - "04-vmess-\U0001F1EF\U0001F1F5 JP 1"
+        - "05-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.241-0089"
         - "06-shadowsocks-\U0001F1EF\U0001F1F5JP-103.106.228.175-0091"
-        - "07-vmess-\U0001F1EF\U0001F1F5 JP 6"
+        - "07-vmess-\U0001F1EF\U0001F1F5 JP 4"
         - "08-vmess-\U0001F1EF\U0001F1F5 JP 5"
         - "09-vless-\U0001F7E2\U0001F1EF\U0001F1F5[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_3511248f"
+        - "10-trojan-\U0001F1FA\U0001F1F8_US_美国->\U0001F1E8\U0001F1ED_CH_瑞士"
       type: url-test
       url: https://www.gstatic.com/generate_204
     - name: select
       proxies:
         - auto
-        - "01-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.241-4048"
-        - "02-shadowsocks-\U0001F1EF\U0001F1F5JP-47.79.144.115-0159"
+        - "01-shadowsocks-\U0001F1EF\U0001F1F5JP-47.79.144.115-0159"
+        - "02-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.240-0087"
         - "03-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.204-3716"
-        - "04-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.240-4052"
-        - "05-vmess-\U0001F1EF\U0001F1F5 JP 1"
+        - "04-vmess-\U0001F1EF\U0001F1F5 JP 1"
+        - "05-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.241-0089"
         - "06-shadowsocks-\U0001F1EF\U0001F1F5JP-103.106.228.175-0091"
-        - "07-vmess-\U0001F1EF\U0001F1F5 JP 6"
+        - "07-vmess-\U0001F1EF\U0001F1F5 JP 4"
         - "08-vmess-\U0001F1EF\U0001F1F5 JP 5"
         - "09-vless-\U0001F7E2\U0001F1EF\U0001F1F5[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_3511248f"
+        - "10-trojan-\U0001F1FA\U0001F1F8_US_美国->\U0001F1E8\U0001F1ED_CH_瑞士"
       type: select
 rules:
     - MATCH,select
