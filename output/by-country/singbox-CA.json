@@ -17,16 +17,12 @@
       "type": "shadowsocks"
     },
     {
-      "password": "lTLVIqIvFqp+es9giS.0o77ztLrCQLaxVh",
-      "server": "172.105.9.126",
+      "method": "aes-256-cfb",
+      "password": "amazonskr05",
+      "server": "52.60.99.199",
       "server_port": 443,
-      "tag": "03-trojan-🇨🇦CA-172.105.9.126-0059",
-      "tls": {
-        "enabled": true,
-        "insecure": false,
-        "server_name": ""
-      },
-      "type": "trojan"
+      "tag": "03-shadowsocks-🇨🇦CA-52.60.99.199-0128",
+      "type": "shadowsocks"
     },
     {
       "method": "rc4-md5",
@@ -37,21 +33,25 @@
       "type": "shadowsocks"
     },
     {
-      "method": "aes-256-cfb",
-      "password": "amazonskr05",
-      "server": "52.60.99.199",
+      "password": "lTLVIqIvFqp+es9giS.0o77ztLrCQLaxVh",
+      "server": "172.105.9.126",
       "server_port": 443,
-      "tag": "05-shadowsocks-🇨🇦CA-52.60.99.199-0128",
-      "type": "shadowsocks"
+      "tag": "05-trojan-🇨🇦CA-172.105.9.126-0059",
+      "tls": {
+        "enabled": true,
+        "insecure": false,
+        "server_name": ""
+      },
+      "type": "trojan"
     },
     {
       "interval": "5m",
       "outbounds": [
         "01-shadowsocks-🇨🇦CA-108.181.118.10-0082",
         "02-shadowsocks-🇨🇦CA-149.22.95.183-0095",
-        "03-trojan-🇨🇦CA-172.105.9.126-0059",
+        "03-shadowsocks-🇨🇦CA-52.60.99.199-0128",
         "04-shadowsocks-🇨🇦CA-137.184.174.93-0183",
-        "05-shadowsocks-🇨🇦CA-52.60.99.199-0128"
+        "05-trojan-🇨🇦CA-172.105.9.126-0059"
       ],
       "tag": "auto",
       "type": "urltest",
@@ -62,9 +62,9 @@
         "auto",
         "01-shadowsocks-🇨🇦CA-108.181.118.10-0082",
         "02-shadowsocks-🇨🇦CA-149.22.95.183-0095",
-        "03-trojan-🇨🇦CA-172.105.9.126-0059",
+        "03-shadowsocks-🇨🇦CA-52.60.99.199-0128",
         "04-shadowsocks-🇨🇦CA-137.184.174.93-0183",
-        "05-shadowsocks-🇨🇦CA-52.60.99.199-0128"
+        "05-trojan-🇨🇦CA-172.105.9.126-0059"
       ],
       "tag": "select",
       "type": "selector"
