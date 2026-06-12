@@ -1,23 +1,23 @@
 proxies:
     - cipher: chacha20-ietf-poly1305
-      name: 01-shadowsocks-@meliproxyy
+      name: 01-shadowsocks-@Ap_Ir6
+      password: 1kVr0KATIJI7mwOF
+      port: 443
+      server: admin.c1.havij.co
+      type: ss
+      udp: true
+    - cipher: chacha20-ietf-poly1305
+      name: 02-shadowsocks-⚡@V2ray_official
       password: W74XFALLLuw6m5IA
       port: 443
       server: series-a1.samanehha.co
       type: ss
       udp: true
     - cipher: chacha20-ietf-poly1305
-      name: 02-shadowsocks-@hex_proxy ³
+      name: 03-shadowsocks-@meliproxyy
       password: W74XFALLLuw6m5IA
       port: 443
-      server: series-a2.samanehha.co
-      type: ss
-      udp: true
-    - cipher: chacha20-ietf-poly1305
-      name: "03-shadowsocks-@vpnbaz \U0001F6F8"
-      password: 1kVr0KATIJI7mwOF
-      port: 443
-      server: admin.c1.havij.co
+      server: admin.c1.webramz.co
       type: ss
       udp: true
     - cipher: chacha20-ietf-poly1305
@@ -28,10 +28,10 @@ proxies:
       type: ss
       udp: true
     - cipher: chacha20-ietf-poly1305
-      name: 05-shadowsocks-@hex_proxy ⁶
+      name: "05-shadowsocks-@Arvand_soul @Arvand_soul❤️\U0001F9D1‍\U0001F4BB کانفیگ مل"
       password: W74XFALLLuw6m5IA
       port: 443
-      server: admin.c1.webramz.co
+      server: series-a2.samanehha.co
       type: ss
       udp: true
     - cipher: chacha20-ietf-poly1305
@@ -49,10 +49,10 @@ proxies:
       type: ss
       udp: true
     - cipher: aes-128-gcm
-      name: "08-shadowsocks-\U0001F1EC\U0001F1E7 GB | SS | @netfreedom0 1"
+      name: "08-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.179-0103"
       password: shadowsocks
       port: 443
-      server: 141.98.101.182
+      server: 141.98.101.179
       type: ss
       udp: true
     - cipher: aes-256-gcm
@@ -63,20 +63,27 @@ proxies:
       type: ss
       udp: true
     - cipher: aes-128-gcm
-      name: 10-shadowsocks-⚡ b2n.ir/v2ray-configs | 313
+      name: "10-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.182-0108"
+      password: shadowsocks
+      port: 443
+      server: 141.98.101.182
+      type: ss
+      udp: true
+    - cipher: aes-128-gcm
+      name: "11-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.178-0104"
       password: shadowsocks
       port: 443
       server: 141.98.101.178
       type: ss
       udp: true
-    - cipher: aes-128-gcm
-      name: "11-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.179-0103"
-      password: shadowsocks
-      port: 443
-      server: 141.98.101.179
+    - cipher: rc4-md5
+      name: "12-shadowsocks-\U0001F1EC\U0001F1E7GB-146.70.61.37-0085"
+      password: 14fFPrbezE3HDZzsMOr6
+      port: 8080
+      server: 146.70.61.37
       type: ss
       udp: true
-    - name: 12-vless->>@oneclickvpnkeys::GB
+    - name: 13-vless->>@oneclickvpnkeys::GB
       network: tcp
       port: 8443
       server: 152.233.28.198
@@ -90,35 +97,37 @@ proxy-groups:
     - interval: 300
       name: auto
       proxies:
-        - 01-shadowsocks-@meliproxyy
-        - 02-shadowsocks-@hex_proxy ³
-        - "03-shadowsocks-@vpnbaz \U0001F6F8"
+        - 01-shadowsocks-@Ap_Ir6
+        - 02-shadowsocks-⚡@V2ray_official
+        - 03-shadowsocks-@meliproxyy
         - "04-shadowsocks-https://t.me/v2rayNplus |\U0001F1EC\U0001F1E7"
-        - 05-shadowsocks-@hex_proxy ⁶
+        - "05-shadowsocks-@Arvand_soul @Arvand_soul❤️\U0001F9D1‍\U0001F4BB کانفیگ مل"
         - "06-shadowsocks-https://t.me/v2rayNplus |\U0001F1EC\U0001F1E7"
         - "07-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.181-0119"
-        - "08-shadowsocks-\U0001F1EC\U0001F1E7 GB | SS | @netfreedom0 1"
+        - "08-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.179-0103"
         - "09-shadowsocks-\U0001F1EC\U0001F1E7 Join Telegram:@main_RedLine \U0001F1EC\U0001F1E7"
-        - 10-shadowsocks-⚡ b2n.ir/v2ray-configs | 313
-        - "11-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.179-0103"
-        - 12-vless->>@oneclickvpnkeys::GB
+        - "10-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.182-0108"
+        - "11-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.178-0104"
+        - "12-shadowsocks-\U0001F1EC\U0001F1E7GB-146.70.61.37-0085"
+        - 13-vless->>@oneclickvpnkeys::GB
       type: url-test
       url: https://www.gstatic.com/generate_204
     - name: select
       proxies:
         - auto
-        - 01-shadowsocks-@meliproxyy
-        - 02-shadowsocks-@hex_proxy ³
-        - "03-shadowsocks-@vpnbaz \U0001F6F8"
+        - 01-shadowsocks-@Ap_Ir6
+        - 02-shadowsocks-⚡@V2ray_official
+        - 03-shadowsocks-@meliproxyy
         - "04-shadowsocks-https://t.me/v2rayNplus |\U0001F1EC\U0001F1E7"
-        - 05-shadowsocks-@hex_proxy ⁶
+        - "05-shadowsocks-@Arvand_soul @Arvand_soul❤️\U0001F9D1‍\U0001F4BB کانفیگ مل"
         - "06-shadowsocks-https://t.me/v2rayNplus |\U0001F1EC\U0001F1E7"
         - "07-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.181-0119"
-        - "08-shadowsocks-\U0001F1EC\U0001F1E7 GB | SS | @netfreedom0 1"
+        - "08-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.179-0103"
         - "09-shadowsocks-\U0001F1EC\U0001F1E7 Join Telegram:@main_RedLine \U0001F1EC\U0001F1E7"
-        - 10-shadowsocks-⚡ b2n.ir/v2ray-configs | 313
-        - "11-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.179-0103"
-        - 12-vless->>@oneclickvpnkeys::GB
+        - "10-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.182-0108"
+        - "11-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.178-0104"
+        - "12-shadowsocks-\U0001F1EC\U0001F1E7GB-146.70.61.37-0085"
+        - 13-vless->>@oneclickvpnkeys::GB
       type: select
 rules:
     - MATCH,select

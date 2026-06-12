@@ -1,16 +1,16 @@
 proxies:
     - cipher: aes-256-cfb
-      name: "01-shadowsocks-\U0001F1F0\U0001F1F7KR-211.178.105.134-0153"
-      password: qwerREWQ@@
-      port: 6123
-      server: 211.178.105.134
-      type: ss
-      udp: true
-    - cipher: aes-256-cfb
-      name: "02-shadowsocks-\U0001F1F0\U0001F1F7KR-211.201.169.70-4492"
+      name: "01-shadowsocks-\U0001F1F0\U0001F1F7KR-211.201.169.70-4492"
       password: qwerREWQ@@
       port: 8314
       server: 211.201.169.70
+      type: ss
+      udp: true
+    - cipher: aes-256-gcm
+      name: "02-shadowsocks-\U0001F1F0\U0001F1F7KR-141.164.45.187-0158"
+      password: RexnBgU7EV5ADxG
+      port: 7001
+      server: 141.164.45.187
       type: ss
       udp: true
     - cipher: aes-256-cfb
@@ -31,8 +31,8 @@ proxy-groups:
     - interval: 300
       name: auto
       proxies:
-        - "01-shadowsocks-\U0001F1F0\U0001F1F7KR-211.178.105.134-0153"
-        - "02-shadowsocks-\U0001F1F0\U0001F1F7KR-211.201.169.70-4492"
+        - "01-shadowsocks-\U0001F1F0\U0001F1F7KR-211.201.169.70-4492"
+        - "02-shadowsocks-\U0001F1F0\U0001F1F7KR-141.164.45.187-0158"
         - "03-shadowsocks-\U0001F1F0\U0001F1F7KR-218.237.185.230-0154"
         - "04-shadowsocks-\U0001F1F0\U0001F1F7KR-221.139.79.57-0157"
       type: url-test
@@ -40,8 +40,8 @@ proxy-groups:
     - name: select
       proxies:
         - auto
-        - "01-shadowsocks-\U0001F1F0\U0001F1F7KR-211.178.105.134-0153"
-        - "02-shadowsocks-\U0001F1F0\U0001F1F7KR-211.201.169.70-4492"
+        - "01-shadowsocks-\U0001F1F0\U0001F1F7KR-211.201.169.70-4492"
+        - "02-shadowsocks-\U0001F1F0\U0001F1F7KR-141.164.45.187-0158"
         - "03-shadowsocks-\U0001F1F0\U0001F1F7KR-218.237.185.230-0154"
         - "04-shadowsocks-\U0001F1F0\U0001F1F7KR-221.139.79.57-0157"
       type: select
