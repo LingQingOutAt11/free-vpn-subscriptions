@@ -3,9 +3,9 @@
     {
       "method": "aes-128-gcm",
       "password": "shadowsocks",
-      "server": "149.22.87.240",
+      "server": "149.22.87.241",
       "server_port": 443,
-      "tag": "01-shadowsocks-🇯🇵 JP | SS | @outlinereleasedkey 1",
+      "tag": "01-shadowsocks-🇯🇵JP-149.22.87.241-0122",
       "type": "shadowsocks"
     },
     {
@@ -19,9 +19,9 @@
     {
       "method": "aes-128-gcm",
       "password": "shadowsocks",
-      "server": "149.22.87.241",
+      "server": "149.22.87.240",
       "server_port": 443,
-      "tag": "03-shadowsocks-🇯🇵JP-149.22.87.241-0122",
+      "tag": "03-shadowsocks-🇯🇵 JP | SS | @outlinereleasedkey 1",
       "type": "shadowsocks"
     },
     {
@@ -41,21 +41,39 @@
       "type": "shadowsocks"
     },
     {
-      "server": "151.101.109.223",
-      "server_port": 80,
-      "tag": "06-vless-日本 东京Fastly节点",
-      "type": "vless",
-      "uuid": "cabbfe13-038b-4dbb-9c45-5079c829abfa"
+      "password": "4f4d1167-ef14-4304-9bce-0740472503ef",
+      "server": "90081bb25c.node.tro.cac.cab",
+      "server_port": 47909,
+      "tag": "06-trojan-🇺🇸_US_美国-\u003e🇮🇸_IS_冰岛",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "is.01.naiun.bilibili.com"
+      },
+      "type": "trojan"
+    },
+    {
+      "password": "4f4d1167-ef14-4304-9bce-0740472503ef",
+      "server": "90081bb25c.node.tro.cac.cab",
+      "server_port": 45553,
+      "tag": "07-trojan-🇺🇸_US_美国-\u003e🇨🇭_CH_瑞士",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "ch.01.naiun.bilibili.com"
+      },
+      "type": "trojan"
     },
     {
       "interval": "5m",
       "outbounds": [
-        "01-shadowsocks-🇯🇵 JP | SS | @outlinereleasedkey 1",
+        "01-shadowsocks-🇯🇵JP-149.22.87.241-0122",
         "02-shadowsocks-🇯🇵JP-149.22.87.204-0121",
-        "03-shadowsocks-🇯🇵JP-149.22.87.241-0122",
+        "03-shadowsocks-🇯🇵 JP | SS | @outlinereleasedkey 1",
         "04-shadowsocks-🇯🇵JP-103.106.228.175-0125",
         "05-shadowsocks-🇯🇵JP-47.79.144.115-0189",
-        "06-vless-日本 东京Fastly节点"
+        "06-trojan-🇺🇸_US_美国-\u003e🇮🇸_IS_冰岛",
+        "07-trojan-🇺🇸_US_美国-\u003e🇨🇭_CH_瑞士"
       ],
       "tag": "auto",
       "type": "urltest",
@@ -64,12 +82,13 @@
     {
       "outbounds": [
         "auto",
-        "01-shadowsocks-🇯🇵 JP | SS | @outlinereleasedkey 1",
+        "01-shadowsocks-🇯🇵JP-149.22.87.241-0122",
         "02-shadowsocks-🇯🇵JP-149.22.87.204-0121",
-        "03-shadowsocks-🇯🇵JP-149.22.87.241-0122",
+        "03-shadowsocks-🇯🇵 JP | SS | @outlinereleasedkey 1",
         "04-shadowsocks-🇯🇵JP-103.106.228.175-0125",
         "05-shadowsocks-🇯🇵JP-47.79.144.115-0189",
-        "06-vless-日本 东京Fastly节点"
+        "06-trojan-🇺🇸_US_美国-\u003e🇮🇸_IS_冰岛",
+        "07-trojan-🇺🇸_US_美国-\u003e🇨🇭_CH_瑞士"
       ],
       "tag": "select",
       "type": "selector"
