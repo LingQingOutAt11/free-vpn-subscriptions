@@ -2,10 +2,19 @@
   "outbounds": [
     {
       "alter_id": 0,
-      "security": "aes-128-gcm",
+      "security": "auto",
+      "server": "82.198.246.214",
+      "server_port": 180,
+      "tag": "01-vmess-🇨🇿 CZ 1",
+      "type": "vmess",
+      "uuid": "d13fc2f5-3e05-4795-81eb-44143a09e552"
+    },
+    {
+      "alter_id": 0,
+      "security": "auto",
       "server": "82.198.246.37",
       "server_port": 180,
-      "tag": "01-vmess-🔴🇺🇸[🎬🤖📺🔍]_github.com/Ruk1ng001_4c938bcf",
+      "tag": "02-vmess-🇨🇿 CZ 3",
       "type": "vmess",
       "uuid": "d13fc2f5-3e05-4795-81eb-44143a09e552"
     },
@@ -14,41 +23,16 @@
       "security": "auto",
       "server": "82.198.246.250",
       "server_port": 180,
-      "tag": "02-vmess-🇺🇸 美国4|@ripaojiedian",
+      "tag": "03-vmess-🇨🇿 CZ 2",
       "type": "vmess",
       "uuid": "d13fc2f5-3e05-4795-81eb-44143a09e552"
-    },
-    {
-      "alter_id": 0,
-      "security": "auto",
-      "server": "82.198.246.214",
-      "server_port": 180,
-      "tag": "03-vmess-🇨🇿 CZ 1",
-      "type": "vmess",
-      "uuid": "d13fc2f5-3e05-4795-81eb-44143a09e552"
-    },
-    {
-      "method": "aes-256-cfb",
-      "password": "amazonskr05",
-      "server": "63.183.200.172",
-      "server_port": 443,
-      "tag": "04-shadowsocks-🇩🇪DE-63.183.200.172-1644",
-      "type": "shadowsocks"
-    },
-    {
-      "method": "aes-256-gcm",
-      "password": "RexnBgU7EV5ADxG",
-      "server": "213.202.208.199",
-      "server_port": 7001,
-      "tag": "05-shadowsocks-🇩🇪DE-213.202.208.199-0195",
-      "type": "shadowsocks"
     },
     {
       "method": "chacha20-ietf-poly1305",
       "password": "PWpjPo3tqhPN4yRZ",
       "server": "8.209.74.72",
       "server_port": 20001,
-      "tag": "06-shadowsocks-🇩🇪DE-8.209.74.72-0130",
+      "tag": "04-shadowsocks-🇩🇪DE-8.209.74.72-0130",
       "type": "shadowsocks"
     },
     {
@@ -56,14 +40,22 @@
       "password": "1hhrqrokj3ag",
       "server": "209.46.102.22",
       "server_port": 8388,
-      "tag": "07-shadowsocks-🇩🇪DE-209.46.102.22-0119",
+      "tag": "05-shadowsocks-🇩🇪DE-209.46.102.22-0119",
+      "type": "shadowsocks"
+    },
+    {
+      "method": "aes-256-cfb",
+      "password": "amazonskr05",
+      "server": "63.183.200.172",
+      "server_port": 443,
+      "tag": "06-shadowsocks-🇩🇪DE-63.183.200.172-1644",
       "type": "shadowsocks"
     },
     {
       "password": "hxn2jK9Uzezogua0oHuq9Y8viN=UCe.2Jd",
       "server": "185.137.157.254",
       "server_port": 443,
-      "tag": "08-trojan-🇩🇪DE-185.137.157.254-0200",
+      "tag": "07-trojan-🇷🇴RO罗马尼亚",
       "tls": {
         "enabled": true,
         "insecure": false,
@@ -72,24 +64,47 @@
       "type": "trojan"
     },
     {
-      "server": "47.91.94.112",
-      "server_port": 10040,
-      "tag": "09-vless-🔴🇩🇪[🎬🤖📺]_github.com/Ruk1ng001_4227b55a",
+      "flow": "xtls-rprx-vision",
+      "server": "3.70.72.166",
+      "server_port": 57942,
+      "tag": "08-vless-🔴🇩🇪[🎬🤖📺🔍]_github.com/Ruk1ng001_476498cb",
+      "tls": {
+        "enabled": true,
+        "insecure": false,
+        "reality": {
+          "enabled": true,
+          "public_key": "Sfq7XvYQcbDod2_WbncXkps0GCc3smquLk8Rtudx_h4",
+          "short_id": "4f4e67ca"
+        },
+        "server_name": "yahoo.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
       "type": "vless",
-      "uuid": "e4e7866d-920b-4a53-a8e2-6ae9b2a42fc2"
+      "uuid": "443be09e-896a-4257-b60e-143c68f713f9"
+    },
+    {
+      "method": "aes-256-gcm",
+      "password": "RexnBgU7EV5ADxG",
+      "server": "213.202.208.199",
+      "server_port": 7001,
+      "tag": "09-shadowsocks-🇩🇪DE-213.202.208.199-0195",
+      "type": "shadowsocks"
     },
     {
       "interval": "5m",
       "outbounds": [
-        "01-vmess-🔴🇺🇸[🎬🤖📺🔍]_github.com/Ruk1ng001_4c938bcf",
-        "02-vmess-🇺🇸 美国4|@ripaojiedian",
-        "03-vmess-🇨🇿 CZ 1",
-        "04-shadowsocks-🇩🇪DE-63.183.200.172-1644",
-        "05-shadowsocks-🇩🇪DE-213.202.208.199-0195",
-        "06-shadowsocks-🇩🇪DE-8.209.74.72-0130",
-        "07-shadowsocks-🇩🇪DE-209.46.102.22-0119",
-        "08-trojan-🇩🇪DE-185.137.157.254-0200",
-        "09-vless-🔴🇩🇪[🎬🤖📺]_github.com/Ruk1ng001_4227b55a"
+        "01-vmess-🇨🇿 CZ 1",
+        "02-vmess-🇨🇿 CZ 3",
+        "03-vmess-🇨🇿 CZ 2",
+        "04-shadowsocks-🇩🇪DE-8.209.74.72-0130",
+        "05-shadowsocks-🇩🇪DE-209.46.102.22-0119",
+        "06-shadowsocks-🇩🇪DE-63.183.200.172-1644",
+        "07-trojan-🇷🇴RO罗马尼亚",
+        "08-vless-🔴🇩🇪[🎬🤖📺🔍]_github.com/Ruk1ng001_476498cb",
+        "09-shadowsocks-🇩🇪DE-213.202.208.199-0195"
       ],
       "tag": "auto",
       "type": "urltest",
@@ -98,15 +113,15 @@
     {
       "outbounds": [
         "auto",
-        "01-vmess-🔴🇺🇸[🎬🤖📺🔍]_github.com/Ruk1ng001_4c938bcf",
-        "02-vmess-🇺🇸 美国4|@ripaojiedian",
-        "03-vmess-🇨🇿 CZ 1",
-        "04-shadowsocks-🇩🇪DE-63.183.200.172-1644",
-        "05-shadowsocks-🇩🇪DE-213.202.208.199-0195",
-        "06-shadowsocks-🇩🇪DE-8.209.74.72-0130",
-        "07-shadowsocks-🇩🇪DE-209.46.102.22-0119",
-        "08-trojan-🇩🇪DE-185.137.157.254-0200",
-        "09-vless-🔴🇩🇪[🎬🤖📺]_github.com/Ruk1ng001_4227b55a"
+        "01-vmess-🇨🇿 CZ 1",
+        "02-vmess-🇨🇿 CZ 3",
+        "03-vmess-🇨🇿 CZ 2",
+        "04-shadowsocks-🇩🇪DE-8.209.74.72-0130",
+        "05-shadowsocks-🇩🇪DE-209.46.102.22-0119",
+        "06-shadowsocks-🇩🇪DE-63.183.200.172-1644",
+        "07-trojan-🇷🇴RO罗马尼亚",
+        "08-vless-🔴🇩🇪[🎬🤖📺🔍]_github.com/Ruk1ng001_476498cb",
+        "09-shadowsocks-🇩🇪DE-213.202.208.199-0195"
       ],
       "tag": "select",
       "type": "selector"

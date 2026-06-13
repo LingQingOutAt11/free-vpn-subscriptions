@@ -1,13 +1,13 @@
 proxies:
     - cipher: chacha20-ietf-poly1305
-      name: "01-shadowsocks-\U0001F1FA\U0001F1F8US-38.135.24.131-0211"
+      name: "01-shadowsocks-\U0001F1FA\U0001F1F8 US美国(mibei77.com 米贝节点分享)"
       password: hbGrpfvNrJsUmKmPbR3iY2
       port: 443
       server: tinkered-pennies-puppies.freesocks.work
       type: ss
       udp: true
     - cipher: aes-128-cfb
-      name: "02-shadowsocks-\U0001F1F3\U0001F1F1NL-109.201.152.181-0101"
+      name: "02-shadowsocks-\U0001F1F3\U0001F1F1NL-109.201.152.181-4178"
       password: shadowsocks
       port: 443
       server: 109.201.152.181
@@ -15,28 +15,35 @@ proxies:
       udp: true
     - cipher: chacha20-ietf-poly1305
       name: "03-shadowsocks-https://t.me/v2rayNplus |\U0001F1F3\U0001F1F1"
-      password: 5DJXRpmi3iyqxQ79PfKv3B
+      password: iUKKpyT21xwQobYoXaCeqc
       port: 14130
       server: 195.93.253.240
       type: ss
       udp: true
     - cipher: chacha20-ietf-poly1305
-      name: "04-shadowsocks-\U0001F1F3\U0001F1F1NL-195.93.253.245-0141"
+      name: "04-shadowsocks-\U0001F1F3\U0001F1F1NL-108.181.126.122-0118"
+      password: CJmTCCx7Ltud
+      port: 8388
+      server: 108.181.126.122
+      type: ss
+      udp: true
+    - cipher: chacha20-ietf-poly1305
+      name: "05-shadowsocks-\U0001F1F3\U0001F1F1NL-195.93.253.245-0141"
       password: FDeCHSu4lt8qflCS5zDOy8
       port: 49137
       server: 195.93.253.245
       type: ss
       udp: true
     - cipher: chacha20-ietf-poly1305
-      name: "05-shadowsocks-\U0001F1F3\U0001F1F1NL-108.181.126.122-0118"
+      name: "06-shadowsocks-\U0001D402\U0001D421\U0001D41A\U0001D427\U0001D427\U0001D41E\U0001D425: @ISVvpn"
       password: CJmTCCx7Ltud
       port: 8388
-      server: 108.181.126.122
+      server: 108.181.58.239
       type: ss
       udp: true
     - client-fingerprint: chrome
       flow: xtls-rprx-vision
-      name: "06-vless-\U0001F1F3\U0001F1F1 426 - NL - VLESS/REALITY/PBK/SID/VISI"
+      name: "07-vless-\U0001F1F3\U0001F1F1 426 - NL - VLESS/REALITY/PBK/SID/VISI"
       network: tcp
       port: 23576
       reality-opts:
@@ -50,7 +57,7 @@ proxies:
       uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
     - client-fingerprint: chrome
       flow: xtls-rprx-vision
-      name: 07-vless->>@oneclickvpnkeys::NL
+      name: "08-vless-\U0001F1F3\U0001F1F1 423 - NL - VLESS/REALITY/PBK/SID/VISI"
       network: tcp
       port: 23576
       reality-opts:
@@ -64,7 +71,7 @@ proxies:
       uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
     - client-fingerprint: chrome
       flow: xtls-rprx-vision
-      name: "08-vless-\U0001F1F3\U0001F1F1 434 - NL - VLESS/REALITY/PBK/SID/VISI"
+      name: "09-vless-\U0001F1F3\U0001F1F1 434 - NL - VLESS/REALITY/PBK/SID/VISI"
       network: tcp
       port: 23576
       reality-opts:
@@ -77,7 +84,7 @@ proxies:
       udp: true
       uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
     - cipher: aes-256-cfb
-      name: "09-shadowsocks-\U0001F1F3\U0001F1F1NL-51.15.23.63-0156"
+      name: "10-shadowsocks-\U0001F1F3\U0001F1F1NL-51.15.23.63-0156"
       password: f8f7aCzcPKbsF8p3
       port: 989
       server: 51.15.23.63
@@ -87,29 +94,31 @@ proxy-groups:
     - interval: 300
       name: auto
       proxies:
-        - "01-shadowsocks-\U0001F1FA\U0001F1F8US-38.135.24.131-0211"
-        - "02-shadowsocks-\U0001F1F3\U0001F1F1NL-109.201.152.181-0101"
+        - "01-shadowsocks-\U0001F1FA\U0001F1F8 US美国(mibei77.com 米贝节点分享)"
+        - "02-shadowsocks-\U0001F1F3\U0001F1F1NL-109.201.152.181-4178"
         - "03-shadowsocks-https://t.me/v2rayNplus |\U0001F1F3\U0001F1F1"
-        - "04-shadowsocks-\U0001F1F3\U0001F1F1NL-195.93.253.245-0141"
-        - "05-shadowsocks-\U0001F1F3\U0001F1F1NL-108.181.126.122-0118"
-        - "06-vless-\U0001F1F3\U0001F1F1 426 - NL - VLESS/REALITY/PBK/SID/VISI"
-        - 07-vless->>@oneclickvpnkeys::NL
-        - "08-vless-\U0001F1F3\U0001F1F1 434 - NL - VLESS/REALITY/PBK/SID/VISI"
-        - "09-shadowsocks-\U0001F1F3\U0001F1F1NL-51.15.23.63-0156"
+        - "04-shadowsocks-\U0001F1F3\U0001F1F1NL-108.181.126.122-0118"
+        - "05-shadowsocks-\U0001F1F3\U0001F1F1NL-195.93.253.245-0141"
+        - "06-shadowsocks-\U0001D402\U0001D421\U0001D41A\U0001D427\U0001D427\U0001D41E\U0001D425: @ISVvpn"
+        - "07-vless-\U0001F1F3\U0001F1F1 426 - NL - VLESS/REALITY/PBK/SID/VISI"
+        - "08-vless-\U0001F1F3\U0001F1F1 423 - NL - VLESS/REALITY/PBK/SID/VISI"
+        - "09-vless-\U0001F1F3\U0001F1F1 434 - NL - VLESS/REALITY/PBK/SID/VISI"
+        - "10-shadowsocks-\U0001F1F3\U0001F1F1NL-51.15.23.63-0156"
       type: url-test
       url: https://www.gstatic.com/generate_204
     - name: select
       proxies:
         - auto
-        - "01-shadowsocks-\U0001F1FA\U0001F1F8US-38.135.24.131-0211"
-        - "02-shadowsocks-\U0001F1F3\U0001F1F1NL-109.201.152.181-0101"
+        - "01-shadowsocks-\U0001F1FA\U0001F1F8 US美国(mibei77.com 米贝节点分享)"
+        - "02-shadowsocks-\U0001F1F3\U0001F1F1NL-109.201.152.181-4178"
         - "03-shadowsocks-https://t.me/v2rayNplus |\U0001F1F3\U0001F1F1"
-        - "04-shadowsocks-\U0001F1F3\U0001F1F1NL-195.93.253.245-0141"
-        - "05-shadowsocks-\U0001F1F3\U0001F1F1NL-108.181.126.122-0118"
-        - "06-vless-\U0001F1F3\U0001F1F1 426 - NL - VLESS/REALITY/PBK/SID/VISI"
-        - 07-vless->>@oneclickvpnkeys::NL
-        - "08-vless-\U0001F1F3\U0001F1F1 434 - NL - VLESS/REALITY/PBK/SID/VISI"
-        - "09-shadowsocks-\U0001F1F3\U0001F1F1NL-51.15.23.63-0156"
+        - "04-shadowsocks-\U0001F1F3\U0001F1F1NL-108.181.126.122-0118"
+        - "05-shadowsocks-\U0001F1F3\U0001F1F1NL-195.93.253.245-0141"
+        - "06-shadowsocks-\U0001D402\U0001D421\U0001D41A\U0001D427\U0001D427\U0001D41E\U0001D425: @ISVvpn"
+        - "07-vless-\U0001F1F3\U0001F1F1 426 - NL - VLESS/REALITY/PBK/SID/VISI"
+        - "08-vless-\U0001F1F3\U0001F1F1 423 - NL - VLESS/REALITY/PBK/SID/VISI"
+        - "09-vless-\U0001F1F3\U0001F1F1 434 - NL - VLESS/REALITY/PBK/SID/VISI"
+        - "10-shadowsocks-\U0001F1F3\U0001F1F1NL-51.15.23.63-0156"
       type: select
 rules:
     - MATCH,select
