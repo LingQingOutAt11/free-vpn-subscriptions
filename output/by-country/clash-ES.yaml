@@ -1,0 +1,49 @@
+proxies:
+    - cipher: aes-256-cfb
+      name: "01-shadowsocks-\U0001F1EA\U0001F1F8ES-5.188.181.201-4426"
+      password: GA9KzeEgvfxNrgmM
+      port: 9019
+      server: 5.188.181.201
+      type: ss
+      udp: true
+    - cipher: aes-256-cfb
+      name: "02-shadowsocks-\U0001F1EA\U0001F1F8ES-5.188.181.201-4427"
+      password: UkXRsXvR6buDMG2Y
+      port: 9001
+      server: 5.188.181.201
+      type: ss
+      udp: true
+    - cipher: aes-256-cfb
+      name: "03-shadowsocks-\U0001F1EA\U0001F1F8ES-5.188.181.201-4428"
+      password: dU3DSNS8wYPXzEKw
+      port: 9029
+      server: 5.188.181.201
+      type: ss
+      udp: true
+    - cipher: aes-256-cfb
+      name: "04-shadowsocks-\U0001F1EA\U0001F1F8ES-5.188.181.201-3941"
+      password: VcFuyXvND2yQWSFY
+      port: 9054
+      server: 5.188.181.201
+      type: ss
+      udp: true
+proxy-groups:
+    - interval: 300
+      name: auto
+      proxies:
+        - "01-shadowsocks-\U0001F1EA\U0001F1F8ES-5.188.181.201-4426"
+        - "02-shadowsocks-\U0001F1EA\U0001F1F8ES-5.188.181.201-4427"
+        - "03-shadowsocks-\U0001F1EA\U0001F1F8ES-5.188.181.201-4428"
+        - "04-shadowsocks-\U0001F1EA\U0001F1F8ES-5.188.181.201-3941"
+      type: url-test
+      url: https://www.gstatic.com/generate_204
+    - name: select
+      proxies:
+        - auto
+        - "01-shadowsocks-\U0001F1EA\U0001F1F8ES-5.188.181.201-4426"
+        - "02-shadowsocks-\U0001F1EA\U0001F1F8ES-5.188.181.201-4427"
+        - "03-shadowsocks-\U0001F1EA\U0001F1F8ES-5.188.181.201-4428"
+        - "04-shadowsocks-\U0001F1EA\U0001F1F8ES-5.188.181.201-3941"
+      type: select
+rules:
+    - MATCH,select
