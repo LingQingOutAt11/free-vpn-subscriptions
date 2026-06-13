@@ -1,68 +1,70 @@
 proxies:
+    - cipher: aes-256-gcm
+      name: "01-shadowsocks-\U0001F1EF\U0001F1F5JP-47.79.144.115-0189"
+      password: GTZI5AbjNAeWQG0oVNptvWJogHNKiiKA
+      port: 40003
+      server: 47.79.144.115
+      type: ss
+      udp: true
     - cipher: aes-128-gcm
-      name: "01-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.204-0216"
+      name: "02-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.204-0121"
       password: shadowsocks
       port: 443
       server: 149.22.87.204
       type: ss
       udp: true
     - cipher: aes-128-gcm
-      name: "02-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.241-4048"
-      password: shadowsocks
-      port: 443
-      server: 149.22.87.241
-      type: ss
-      udp: true
-    - cipher: aes-128-gcm
-      name: "03-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.240-0120"
+      name: "03-shadowsocks-\U0001F1EF\U0001F1F5 JP | SS | @outlinereleasedkey 1"
       password: shadowsocks
       port: 443
       server: 149.22.87.240
       type: ss
       udp: true
+    - cipher: aes-128-gcm
+      name: 04-shadowsocks-⚡ b2n.ir/v2ray-configs | 501
+      password: shadowsocks
+      port: 443
+      server: 149.22.87.241
+      type: ss
+      udp: true
     - cipher: aes-256-gcm
-      name: "04-shadowsocks-\U0001F1EF\U0001F1F5JP-103.106.228.175-0125"
+      name: "05-shadowsocks-\U0001F1EF\U0001F1F5JP-103.106.228.175-0125"
       password: XKFKl2rULjIp74
       port: 8009
       server: 103.106.228.175
       type: ss
       udp: true
-    - cipher: aes-256-gcm
-      name: "05-shadowsocks-\U0001F1EF\U0001F1F5JP-47.79.144.115-0189"
-      password: GTZI5AbjNAeWQG0oVNptvWJogHNKiiKA
-      port: 40003
-      server: 47.79.144.115
-      type: ss
-      udp: true
-    - name: "06-trojan-\U0001F1EF\U0001F1F5 JP 2"
-      password: tsuchiya
+    - name: 06-vless-日本 东京Fastly节点
+      network: ws
       port: 443
-      server: 161.34.39.108
+      server: 151.101.109.223
+      servername: default.ssl.fastly.net
       skip-cert-verify: false
-      sni: aa.ccmusic.jp
-      type: trojan
+      tls: true
+      type: vless
       udp: true
+      uuid: 05dde938-bb2d-41c3-b176-2a9d370489b4
 proxy-groups:
     - interval: 300
       name: auto
       proxies:
-        - "01-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.204-0216"
-        - "02-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.241-4048"
-        - "03-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.240-0120"
-        - "04-shadowsocks-\U0001F1EF\U0001F1F5JP-103.106.228.175-0125"
-        - "05-shadowsocks-\U0001F1EF\U0001F1F5JP-47.79.144.115-0189"
-        - "06-trojan-\U0001F1EF\U0001F1F5 JP 2"
+        - "01-shadowsocks-\U0001F1EF\U0001F1F5JP-47.79.144.115-0189"
+        - "02-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.204-0121"
+        - "03-shadowsocks-\U0001F1EF\U0001F1F5 JP | SS | @outlinereleasedkey 1"
+        - 04-shadowsocks-⚡ b2n.ir/v2ray-configs | 501
+        - "05-shadowsocks-\U0001F1EF\U0001F1F5JP-103.106.228.175-0125"
+        - 06-vless-日本 东京Fastly节点
       type: url-test
       url: https://www.gstatic.com/generate_204
     - name: select
       proxies:
         - auto
-        - "01-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.204-0216"
-        - "02-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.241-4048"
-        - "03-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.240-0120"
-        - "04-shadowsocks-\U0001F1EF\U0001F1F5JP-103.106.228.175-0125"
-        - "05-shadowsocks-\U0001F1EF\U0001F1F5JP-47.79.144.115-0189"
-        - "06-trojan-\U0001F1EF\U0001F1F5 JP 2"
+        - "01-shadowsocks-\U0001F1EF\U0001F1F5JP-47.79.144.115-0189"
+        - "02-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.204-0121"
+        - "03-shadowsocks-\U0001F1EF\U0001F1F5 JP | SS | @outlinereleasedkey 1"
+        - 04-shadowsocks-⚡ b2n.ir/v2ray-configs | 501
+        - "05-shadowsocks-\U0001F1EF\U0001F1F5JP-103.106.228.175-0125"
+        - 06-vless-日本 东京Fastly节点
       type: select
 rules:
     - MATCH,select
