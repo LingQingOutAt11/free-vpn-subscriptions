@@ -1,16 +1,16 @@
 proxies:
     - alterId: 0
       cipher: auto
-      name: "01-vmess-\U0001F1FA\U0001F1F8 美国4|@ripaojiedian"
+      name: "01-vmess-\U0001F1EC\U0001F1E7 英国 starcorenode.com 2"
       network: tcp
       port: 180
-      server: 82.198.246.250
+      server: 82.198.246.214
       type: vmess
       udp: true
       uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
     - alterId: 0
-      cipher: auto
-      name: "02-vmess-\U0001F1E8\U0001F1FF CZ 3"
+      cipher: aes-128-gcm
+      name: "02-vmess-\U0001F534\U0001F1FA\U0001F1F8[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_4c938bcf"
       network: tcp
       port: 180
       server: 82.198.246.37
@@ -19,47 +19,53 @@ proxies:
       uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
     - alterId: 0
       cipher: auto
-      name: "03-vmess-\U0001F1EC\U0001F1E7 英国 starcorenode.com 2"
+      name: "03-vmess-\U0001F1E8\U0001F1FF CZ 2"
       network: tcp
       port: 180
-      server: 82.198.246.214
+      server: 82.198.246.250
       type: vmess
       udp: true
       uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    - name: "04-trojan-\U0001F1F7\U0001F1F4 罗马尼亚 starcorenode.com"
-      password: hxn2jK9Uzezogua0oHuq9Y8viN=UCe.2Jd
-      port: 443
-      server: 185.137.157.254
-      skip-cert-verify: false
-      sni: www.directorypipeline.click
-      type: trojan
-      udp: true
     - cipher: aes-256-gcm
-      name: "05-shadowsocks-\U0001F1E9\U0001F1EADE-213.202.208.199-0195"
+      name: "04-shadowsocks-\U0001F1E9\U0001F1EADE-213.202.208.199-0195"
       password: RexnBgU7EV5ADxG
       port: 7001
       server: 213.202.208.199
       type: ss
       udp: true
+    - client-fingerprint: chrome
+      flow: xtls-rprx-vision
+      name: "05-vless-\U0001F534\U0001F1E9\U0001F1EA[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_476498cb"
+      network: raw
+      port: 57942
+      reality-opts:
+        public-key: Sfq7XvYQcbDod2_WbncXkps0GCc3smquLk8Rtudx_h4
+        short-id: 4f4e67ca
+      server: 3.70.72.166
+      servername: yahoo.com
+      tls: true
+      type: vless
+      udp: true
+      uuid: 443be09e-896a-4257-b60e-143c68f713f9
 proxy-groups:
     - interval: 300
       name: auto
       proxies:
-        - "01-vmess-\U0001F1FA\U0001F1F8 美国4|@ripaojiedian"
-        - "02-vmess-\U0001F1E8\U0001F1FF CZ 3"
-        - "03-vmess-\U0001F1EC\U0001F1E7 英国 starcorenode.com 2"
-        - "04-trojan-\U0001F1F7\U0001F1F4 罗马尼亚 starcorenode.com"
-        - "05-shadowsocks-\U0001F1E9\U0001F1EADE-213.202.208.199-0195"
+        - "01-vmess-\U0001F1EC\U0001F1E7 英国 starcorenode.com 2"
+        - "02-vmess-\U0001F534\U0001F1FA\U0001F1F8[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_4c938bcf"
+        - "03-vmess-\U0001F1E8\U0001F1FF CZ 2"
+        - "04-shadowsocks-\U0001F1E9\U0001F1EADE-213.202.208.199-0195"
+        - "05-vless-\U0001F534\U0001F1E9\U0001F1EA[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_476498cb"
       type: url-test
       url: https://www.gstatic.com/generate_204
     - name: select
       proxies:
         - auto
-        - "01-vmess-\U0001F1FA\U0001F1F8 美国4|@ripaojiedian"
-        - "02-vmess-\U0001F1E8\U0001F1FF CZ 3"
-        - "03-vmess-\U0001F1EC\U0001F1E7 英国 starcorenode.com 2"
-        - "04-trojan-\U0001F1F7\U0001F1F4 罗马尼亚 starcorenode.com"
-        - "05-shadowsocks-\U0001F1E9\U0001F1EADE-213.202.208.199-0195"
+        - "01-vmess-\U0001F1EC\U0001F1E7 英国 starcorenode.com 2"
+        - "02-vmess-\U0001F534\U0001F1FA\U0001F1F8[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_4c938bcf"
+        - "03-vmess-\U0001F1E8\U0001F1FF CZ 2"
+        - "04-shadowsocks-\U0001F1E9\U0001F1EADE-213.202.208.199-0195"
+        - "05-vless-\U0001F534\U0001F1E9\U0001F1EA[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_476498cb"
       type: select
 rules:
     - MATCH,select
