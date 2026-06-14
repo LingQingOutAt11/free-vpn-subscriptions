@@ -7,7 +7,7 @@ proxies:
       type: ss
       udp: true
     - cipher: aes-128-cfb
-      name: "02-shadowsocks-\U0001F1F3\U0001F1F1NL-109.201.152.181-4178"
+      name: "02-shadowsocks-\U0001F1F3\U0001F1F1NL-109.201.152.181-0110"
       password: shadowsocks
       port: 443
       server: 109.201.152.181
@@ -22,42 +22,28 @@ proxies:
       udp: true
     - cipher: chacha20-ietf-poly1305
       name: "04-shadowsocks-https://t.me/v2rayNplus |\U0001F1F3\U0001F1F1"
-      password: iUKKpyT21xwQobYoXaCeqc
+      password: 5DJXRpmi3iyqxQ79PfKv3B
       port: 14130
       server: 195.93.253.240
       type: ss
       udp: true
     - cipher: chacha20-ietf-poly1305
-      name: "05-shadowsocks-\U0001F1F3\U0001F1F1NL-195.93.253.245-0135"
-      password: FDeCHSu4lt8qflCS5zDOy8
-      port: 49137
-      server: 195.93.253.245
-      type: ss
-      udp: true
-    - cipher: chacha20-ietf-poly1305
-      name: "06-shadowsocks-\U0001F1F3\U0001F1F1NL-108.181.126.122-0187"
+      name: "05-shadowsocks-\U0001F1F3\U0001F1F1NL-108.181.126.122-0187"
       password: CJmTCCx7Ltud
       port: 8388
       server: 108.181.126.122
       type: ss
       udp: true
-    - client-fingerprint: chrome
-      flow: xtls-rprx-vision
-      name: "07-vless-\U0001F1F3\U0001F1F1 426 - NL - VLESS/REALITY/PBK/SID/VISI"
-      network: tcp
-      port: 23576
-      reality-opts:
-        public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-        short-id: "01"
-      server: 51.158.206.26
-      servername: fuck.rkn
-      tls: true
-      type: vless
+    - cipher: chacha20-ietf-poly1305
+      name: "06-shadowsocks-\U0001F1F3\U0001F1F1NL-195.93.253.245-0135"
+      password: FDeCHSu4lt8qflCS5zDOy8
+      port: 49137
+      server: 195.93.253.245
+      type: ss
       udp: true
-      uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
     - client-fingerprint: chrome
       flow: xtls-rprx-vision
-      name: 08-vless->>@oneclickvpnkeys::NL
+      name: 07-vless->>@oneclickvpnkeys::NL
       network: tcp
       port: 23576
       reality-opts:
@@ -69,17 +55,21 @@ proxies:
       type: vless
       udp: true
       uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-    - name: 09-vless-荷兰 V2CROSS.COM
+    - client-fingerprint: chrome
+      flow: xtls-rprx-vision
+      name: "08-vless-\U0001F1F3\U0001F1F1 426 - NL - VLESS/REALITY/PBK/SID/VISI"
       network: tcp
-      port: 8443
-      server: 185.229.191.10
-      servername: ams1.fromblancwithlove.com
-      skip-cert-verify: false
+      port: 23576
+      reality-opts:
+        public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+        short-id: "01"
+      server: 51.158.206.26
+      servername: fuck.rkn
       tls: true
       type: vless
       udp: true
-      uuid: 394f6981-a782-4779-9a85-e6cf22935d93
-    - name: 10-vless-Free$ 4 @Outline_Vpn
+      uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    - name: 09-vless-Free$ 4 @Outline_Vpn
       network: tcp
       port: 8443
       server: 46.229.243.132
@@ -89,44 +79,33 @@ proxies:
       type: vless
       udp: true
       uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
-    - cipher: chacha20-ietf-poly1305
-      name: "11-shadowsocks-\U0001F1F3\U0001F1F1NL-193.29.139.162-4067"
-      password: 4a2rfixophdjffa8KVA4Aa
-      port: 8080
-      server: 193.29.139.162
-      type: ss
-      udp: true
 proxy-groups:
     - interval: 300
       name: auto
       proxies:
         - "01-shadowsocks-\U0001F1FA\U0001F1F8US-147.90.234.133-0749"
-        - "02-shadowsocks-\U0001F1F3\U0001F1F1NL-109.201.152.181-4178"
+        - "02-shadowsocks-\U0001F1F3\U0001F1F1NL-109.201.152.181-0110"
         - "03-shadowsocks-\U0001F1F3\U0001F1F1NL-108.181.58.239-0189"
         - "04-shadowsocks-https://t.me/v2rayNplus |\U0001F1F3\U0001F1F1"
-        - "05-shadowsocks-\U0001F1F3\U0001F1F1NL-195.93.253.245-0135"
-        - "06-shadowsocks-\U0001F1F3\U0001F1F1NL-108.181.126.122-0187"
-        - "07-vless-\U0001F1F3\U0001F1F1 426 - NL - VLESS/REALITY/PBK/SID/VISI"
-        - 08-vless->>@oneclickvpnkeys::NL
-        - 09-vless-荷兰 V2CROSS.COM
-        - 10-vless-Free$ 4 @Outline_Vpn
-        - "11-shadowsocks-\U0001F1F3\U0001F1F1NL-193.29.139.162-4067"
+        - "05-shadowsocks-\U0001F1F3\U0001F1F1NL-108.181.126.122-0187"
+        - "06-shadowsocks-\U0001F1F3\U0001F1F1NL-195.93.253.245-0135"
+        - 07-vless->>@oneclickvpnkeys::NL
+        - "08-vless-\U0001F1F3\U0001F1F1 426 - NL - VLESS/REALITY/PBK/SID/VISI"
+        - 09-vless-Free$ 4 @Outline_Vpn
       type: url-test
       url: https://www.gstatic.com/generate_204
     - name: select
       proxies:
         - auto
         - "01-shadowsocks-\U0001F1FA\U0001F1F8US-147.90.234.133-0749"
-        - "02-shadowsocks-\U0001F1F3\U0001F1F1NL-109.201.152.181-4178"
+        - "02-shadowsocks-\U0001F1F3\U0001F1F1NL-109.201.152.181-0110"
         - "03-shadowsocks-\U0001F1F3\U0001F1F1NL-108.181.58.239-0189"
         - "04-shadowsocks-https://t.me/v2rayNplus |\U0001F1F3\U0001F1F1"
-        - "05-shadowsocks-\U0001F1F3\U0001F1F1NL-195.93.253.245-0135"
-        - "06-shadowsocks-\U0001F1F3\U0001F1F1NL-108.181.126.122-0187"
-        - "07-vless-\U0001F1F3\U0001F1F1 426 - NL - VLESS/REALITY/PBK/SID/VISI"
-        - 08-vless->>@oneclickvpnkeys::NL
-        - 09-vless-荷兰 V2CROSS.COM
-        - 10-vless-Free$ 4 @Outline_Vpn
-        - "11-shadowsocks-\U0001F1F3\U0001F1F1NL-193.29.139.162-4067"
+        - "05-shadowsocks-\U0001F1F3\U0001F1F1NL-108.181.126.122-0187"
+        - "06-shadowsocks-\U0001F1F3\U0001F1F1NL-195.93.253.245-0135"
+        - 07-vless->>@oneclickvpnkeys::NL
+        - "08-vless-\U0001F1F3\U0001F1F1 426 - NL - VLESS/REALITY/PBK/SID/VISI"
+        - 09-vless-Free$ 4 @Outline_Vpn
       type: select
 rules:
     - MATCH,select
