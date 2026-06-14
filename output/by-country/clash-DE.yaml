@@ -26,71 +26,70 @@ proxies:
       type: vmess
       udp: true
       uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    - cipher: aes-256-cfb
-      name: "04-shadowsocks-\U0001F1E9\U0001F1EADE-63.183.200.172-0126"
-      password: amazonskr05
-      port: 443
-      server: 63.183.200.172
-      type: ss
-      udp: true
-    - cipher: chacha20-ietf-poly1305
-      name: "05-shadowsocks-\U0001F1E9\U0001F1EADE-8.209.74.72-0131"
-      password: PWpjPo3tqhPN4yRZ
-      port: 20001
-      server: 8.209.74.72
-      type: ss
-      udp: true
-    - cipher: chacha20-ietf-poly1305
-      name: "06-shadowsocks-\U0001F1E9\U0001F1EA Join Telegram:@Farah_VPN \U0001F1E9\U0001F1EA"
-      password: 1hhrqrokj3ag
-      port: 8388
-      server: 209.46.102.22
-      type: ss
-      udp: true
-    - cipher: chacha20-ietf-poly1305
-      name: "07-shadowsocks-@free_conf_iran \U0001F448 کانفیگ جدید"
-      password: uROuEqsL8IUMMVb4wDwnGU
-      port: 10443
-      server: 57.129.121.230
-      type: ss
-      udp: true
-    - name: "08-trojan-\U0001F1E9\U0001F1EA 德国 V2CROSS.COM"
-      password: I1vtf6pjYsAu-nFnraWAMjKTy90AHitdAz
-      port: 443
-      server: 91.233.8.25
-      skip-cert-verify: false
-      sni: fra34.tracker-ws.click
-      type: trojan
-      udp: true
-    - name: "09-trojan-\U0001F1E9\U0001F1EADE-185.137.157.254-0147"
-      password: hxn2jK9Uzezogua0oHuq9Y8viN=UCe.2Jd
-      port: 443
-      server: 185.137.157.254
-      skip-cert-verify: false
-      sni: www.directorypipeline.click
-      type: trojan
-      udp: true
-    - name: "10-trojan-\U0001F1E9\U0001F1EA DE 7"
-      password: LYaEYwjN8LjWTRJdCCTzW7V6gK7atJVu
-      port: 9443
-      server: 94.103.173.70
-      skip-cert-verify: false
-      sni: de-1.hysteria.ltd
-      type: trojan
-      udp: true
-    - name: "11-vless-\U0001F534\U0001F1E9\U0001F1EA[\U0001F3AC\U0001F916\U0001F4FA]_github.com/Ruk1ng001_4227b55a"
+    - name: "04-vless-\U0001F534\U0001F1E9\U0001F1EA[\U0001F3AC\U0001F916\U0001F4FA]_github.com/Ruk1ng001_4227b55a"
       network: tcp
       port: 10040
       server: 47.91.94.112
       type: vless
       udp: true
       uuid: e4e7866d-920b-4a53-a8e2-6ae9b2a42fc2
+    - cipher: aes-256-cfb
+      name: "05-shadowsocks-\U0001F1E9\U0001F1EADE-63.183.200.172-0126"
+      password: amazonskr05
+      port: 443
+      server: 63.183.200.172
+      type: ss
+      udp: true
+    - cipher: chacha20-ietf-poly1305
+      name: "06-shadowsocks-\U0001F1E9\U0001F1EADE-8.209.74.72-0131"
+      password: PWpjPo3tqhPN4yRZ
+      port: 20001
+      server: 8.209.74.72
+      type: ss
+      udp: true
+    - cipher: chacha20-ietf-poly1305
+      name: "07-shadowsocks-\U0001F1E9\U0001F1EADE-209.46.102.22-0112"
+      password: 1hhrqrokj3ag
+      port: 8388
+      server: 209.46.102.22
+      type: ss
+      udp: true
     - cipher: aes-256-gcm
-      name: "12-shadowsocks-\U0001F1E9\U0001F1EADE-213.202.208.199-0146"
+      name: "08-shadowsocks-\U0001F1E9\U0001F1EADE-213.202.208.199-0146"
       password: RexnBgU7EV5ADxG
       port: 7001
       server: 213.202.208.199
       type: ss
+      udp: true
+    - name: 09-trojan-罗马尼亚 V2CROSS.COM
+      password: hxn2jK9Uzezogua0oHuq9Y8viN=UCe.2Jd
+      port: 443
+      server: 185.137.157.254
+      skip-cert-verify: true
+      sni: www.directorypipeline.click
+      type: trojan
+      udp: true
+    - client-fingerprint: chrome
+      flow: xtls-rprx-vision
+      name: "10-vless-\U0001F534\U0001F1E9\U0001F1EA[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_476498cb"
+      network: raw
+      port: 57942
+      reality-opts:
+        public-key: Sfq7XvYQcbDod2_WbncXkps0GCc3smquLk8Rtudx_h4
+        short-id: 4f4e67ca
+      server: 3.70.72.166
+      servername: yahoo.com
+      tls: true
+      type: vless
+      udp: true
+      uuid: 443be09e-896a-4257-b60e-143c68f713f9
+    - name: "11-trojan-\U0001F1E9\U0001F1EA DE 7"
+      password: LYaEYwjN8LjWTRJdCCTzW7V6gK7atJVu
+      port: 9443
+      server: 94.103.173.70
+      skip-cert-verify: false
+      sni: de-1.hysteria.ltd
+      type: trojan
       udp: true
 proxy-groups:
     - interval: 300
@@ -99,15 +98,14 @@ proxy-groups:
         - "01-vmess-\U0001F534\U0001F1FA\U0001F1F8[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_4c938bcf"
         - "02-vmess-\U0001F1FA\U0001F1F8 Join+Telegram:@Farah_VPN \U0001F1FA\U0001F1F8"
         - "03-vmess-\U0001F1E8\U0001F1FF CZ 1"
-        - "04-shadowsocks-\U0001F1E9\U0001F1EADE-63.183.200.172-0126"
-        - "05-shadowsocks-\U0001F1E9\U0001F1EADE-8.209.74.72-0131"
-        - "06-shadowsocks-\U0001F1E9\U0001F1EA Join Telegram:@Farah_VPN \U0001F1E9\U0001F1EA"
-        - "07-shadowsocks-@free_conf_iran \U0001F448 کانفیگ جدید"
-        - "08-trojan-\U0001F1E9\U0001F1EA 德国 V2CROSS.COM"
-        - "09-trojan-\U0001F1E9\U0001F1EADE-185.137.157.254-0147"
-        - "10-trojan-\U0001F1E9\U0001F1EA DE 7"
-        - "11-vless-\U0001F534\U0001F1E9\U0001F1EA[\U0001F3AC\U0001F916\U0001F4FA]_github.com/Ruk1ng001_4227b55a"
-        - "12-shadowsocks-\U0001F1E9\U0001F1EADE-213.202.208.199-0146"
+        - "04-vless-\U0001F534\U0001F1E9\U0001F1EA[\U0001F3AC\U0001F916\U0001F4FA]_github.com/Ruk1ng001_4227b55a"
+        - "05-shadowsocks-\U0001F1E9\U0001F1EADE-63.183.200.172-0126"
+        - "06-shadowsocks-\U0001F1E9\U0001F1EADE-8.209.74.72-0131"
+        - "07-shadowsocks-\U0001F1E9\U0001F1EADE-209.46.102.22-0112"
+        - "08-shadowsocks-\U0001F1E9\U0001F1EADE-213.202.208.199-0146"
+        - 09-trojan-罗马尼亚 V2CROSS.COM
+        - "10-vless-\U0001F534\U0001F1E9\U0001F1EA[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_476498cb"
+        - "11-trojan-\U0001F1E9\U0001F1EA DE 7"
       type: url-test
       url: https://www.gstatic.com/generate_204
     - name: select
@@ -116,15 +114,14 @@ proxy-groups:
         - "01-vmess-\U0001F534\U0001F1FA\U0001F1F8[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_4c938bcf"
         - "02-vmess-\U0001F1FA\U0001F1F8 Join+Telegram:@Farah_VPN \U0001F1FA\U0001F1F8"
         - "03-vmess-\U0001F1E8\U0001F1FF CZ 1"
-        - "04-shadowsocks-\U0001F1E9\U0001F1EADE-63.183.200.172-0126"
-        - "05-shadowsocks-\U0001F1E9\U0001F1EADE-8.209.74.72-0131"
-        - "06-shadowsocks-\U0001F1E9\U0001F1EA Join Telegram:@Farah_VPN \U0001F1E9\U0001F1EA"
-        - "07-shadowsocks-@free_conf_iran \U0001F448 کانفیگ جدید"
-        - "08-trojan-\U0001F1E9\U0001F1EA 德国 V2CROSS.COM"
-        - "09-trojan-\U0001F1E9\U0001F1EADE-185.137.157.254-0147"
-        - "10-trojan-\U0001F1E9\U0001F1EA DE 7"
-        - "11-vless-\U0001F534\U0001F1E9\U0001F1EA[\U0001F3AC\U0001F916\U0001F4FA]_github.com/Ruk1ng001_4227b55a"
-        - "12-shadowsocks-\U0001F1E9\U0001F1EADE-213.202.208.199-0146"
+        - "04-vless-\U0001F534\U0001F1E9\U0001F1EA[\U0001F3AC\U0001F916\U0001F4FA]_github.com/Ruk1ng001_4227b55a"
+        - "05-shadowsocks-\U0001F1E9\U0001F1EADE-63.183.200.172-0126"
+        - "06-shadowsocks-\U0001F1E9\U0001F1EADE-8.209.74.72-0131"
+        - "07-shadowsocks-\U0001F1E9\U0001F1EADE-209.46.102.22-0112"
+        - "08-shadowsocks-\U0001F1E9\U0001F1EADE-213.202.208.199-0146"
+        - 09-trojan-罗马尼亚 V2CROSS.COM
+        - "10-vless-\U0001F534\U0001F1E9\U0001F1EA[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_476498cb"
+        - "11-trojan-\U0001F1E9\U0001F1EA DE 7"
       type: select
 rules:
     - MATCH,select
