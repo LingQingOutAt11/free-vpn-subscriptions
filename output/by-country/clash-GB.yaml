@@ -1,16 +1,16 @@
 proxies:
-    - cipher: rc4-md5
-      name: "01-shadowsocks-\U0001F1EC\U0001F1E7GB-146.70.61.37-0249"
-      password: 14fFPrbezE3HDZzsMOr6
-      port: 8080
-      server: 146.70.61.37
-      type: ss
-      udp: true
     - cipher: aes-128-gcm
-      name: "02-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.182-0127"
+      name: "01-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.182-0127"
       password: shadowsocks
       port: 443
       server: 141.98.101.182
+      type: ss
+      udp: true
+    - cipher: aes-128-gcm
+      name: "02-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.179-0137"
+      password: shadowsocks
+      port: 443
+      server: 141.98.101.179
       type: ss
       udp: true
     - cipher: aes-128-gcm
@@ -20,68 +20,30 @@ proxies:
       server: 141.98.101.178
       type: ss
       udp: true
-    - cipher: aes-256-gcm
-      name: "04-shadowsocks-\U0001F1EC\U0001F1E7GB-94.156.250.148-0139"
-      password: RexnBgU7EV5ADxG
-      port: 7001
-      server: 94.156.250.148
-      type: ss
-      udp: true
     - cipher: aes-128-gcm
-      name: "05-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.181-0128"
+      name: "04-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.181-0128"
       password: shadowsocks
       port: 443
       server: 141.98.101.181
       type: ss
       udp: true
-    - cipher: aes-128-gcm
-      name: "06-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.179-0137"
-      password: shadowsocks
-      port: 443
-      server: 141.98.101.179
+    - cipher: aes-256-gcm
+      name: "05-shadowsocks-\U0001F1EC\U0001F1E7GB-94.156.250.148-0139"
+      password: RexnBgU7EV5ADxG
+      port: 7001
+      server: 94.156.250.148
       type: ss
       udp: true
-    - cipher: chacha20-ietf-poly1305
-      name: 07-shadowsocks-MiX--@V2rayAlpha--1
-      password: oZIoA69Q8yhcQV8ka3Pa3A
+    - cipher: rc4-md5
+      name: "06-shadowsocks-\U0001F1EC\U0001F1E7GB-146.70.61.37-0249"
+      password: 14fFPrbezE3HDZzsMOr6
       port: 8080
-      server: 82.38.31.2
+      server: 146.70.61.37
       type: ss
       udp: true
-    - cipher: chacha20-ietf-poly1305
-      name: "08-shadowsocks-\U0001F1EC\U0001F1E7GB-82.38.31.15-0097"
-      password: oZIoA69Q8yhcQV8ka3Pa3A
-      port: 443
-      server: 82.38.31.15
-      type: ss
-      udp: true
-    - cipher: chacha20-ietf-poly1305
-      name: "09-shadowsocks-@hi_proxy_iran :\U0001F448کانال تلگرام"
-      password: oZIoA69Q8yhcQV8ka3Pa3A
-      port: 8080
-      server: 82.38.31.7
-      type: ss
-      udp: true
-    - cipher: chacha20-ietf-poly1305
-      name: "10-shadowsocks-@HajmVPN_Config \U0001F680"
-      password: k1dBOmOB4oqi7Ump37a1bQ
-      port: 8080
-      server: 82.38.31.217
-      type: ss
-      udp: true
-    - name: 11-vless->>@oneclickvpnkeys::GB
-      network: tcp
-      port: 8443
-      server: 152.233.28.198
-      servername: uk1.fromblancwithlove.com
-      skip-cert-verify: false
-      tls: true
-      type: vless
-      udp: true
-      uuid: 394f6981-a782-4779-9a85-e6cf22935d93
     - client-fingerprint: chrome
       flow: xtls-rprx-vision
-      name: "12-vless-\U0001F1EC\U0001F1E7 GB 3"
+      name: "07-vless-\U0001F1EC\U0001F1E7 GB 3"
       network: tcp
       port: 18633
       reality-opts:
@@ -93,39 +55,41 @@ proxies:
       type: vless
       udp: true
       uuid: 5da5bc00-ea44-462e-bdb7-7687346ad039
+    - name: 08-vless->>@oneclickvpnkeys::GB
+      network: tcp
+      port: 8443
+      server: 152.233.28.198
+      servername: uk1.fromblancwithlove.com
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: 394f6981-a782-4779-9a85-e6cf22935d93
 proxy-groups:
     - interval: 300
       name: auto
       proxies:
-        - "01-shadowsocks-\U0001F1EC\U0001F1E7GB-146.70.61.37-0249"
-        - "02-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.182-0127"
+        - "01-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.182-0127"
+        - "02-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.179-0137"
         - "03-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.178-0130"
-        - "04-shadowsocks-\U0001F1EC\U0001F1E7GB-94.156.250.148-0139"
-        - "05-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.181-0128"
-        - "06-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.179-0137"
-        - 07-shadowsocks-MiX--@V2rayAlpha--1
-        - "08-shadowsocks-\U0001F1EC\U0001F1E7GB-82.38.31.15-0097"
-        - "09-shadowsocks-@hi_proxy_iran :\U0001F448کانال تلگرام"
-        - "10-shadowsocks-@HajmVPN_Config \U0001F680"
-        - 11-vless->>@oneclickvpnkeys::GB
-        - "12-vless-\U0001F1EC\U0001F1E7 GB 3"
+        - "04-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.181-0128"
+        - "05-shadowsocks-\U0001F1EC\U0001F1E7GB-94.156.250.148-0139"
+        - "06-shadowsocks-\U0001F1EC\U0001F1E7GB-146.70.61.37-0249"
+        - "07-vless-\U0001F1EC\U0001F1E7 GB 3"
+        - 08-vless->>@oneclickvpnkeys::GB
       type: url-test
       url: https://www.gstatic.com/generate_204
     - name: select
       proxies:
         - auto
-        - "01-shadowsocks-\U0001F1EC\U0001F1E7GB-146.70.61.37-0249"
-        - "02-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.182-0127"
+        - "01-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.182-0127"
+        - "02-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.179-0137"
         - "03-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.178-0130"
-        - "04-shadowsocks-\U0001F1EC\U0001F1E7GB-94.156.250.148-0139"
-        - "05-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.181-0128"
-        - "06-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.179-0137"
-        - 07-shadowsocks-MiX--@V2rayAlpha--1
-        - "08-shadowsocks-\U0001F1EC\U0001F1E7GB-82.38.31.15-0097"
-        - "09-shadowsocks-@hi_proxy_iran :\U0001F448کانال تلگرام"
-        - "10-shadowsocks-@HajmVPN_Config \U0001F680"
-        - 11-vless->>@oneclickvpnkeys::GB
-        - "12-vless-\U0001F1EC\U0001F1E7 GB 3"
+        - "04-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.181-0128"
+        - "05-shadowsocks-\U0001F1EC\U0001F1E7GB-94.156.250.148-0139"
+        - "06-shadowsocks-\U0001F1EC\U0001F1E7GB-146.70.61.37-0249"
+        - "07-vless-\U0001F1EC\U0001F1E7 GB 3"
+        - 08-vless->>@oneclickvpnkeys::GB
       type: select
 rules:
     - MATCH,select
