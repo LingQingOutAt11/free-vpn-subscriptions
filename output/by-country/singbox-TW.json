@@ -1,0 +1,56 @@
+{
+  "outbounds": [
+    {
+      "method": "chacha20-ietf-poly1305",
+      "password": "7e731ec3-f8e1-43f6-92cf-3978d14705c4",
+      "server": "r3mrcg001269pz2.cybervena.com",
+      "server_port": 50099,
+      "tag": "01-shadowsocks-@freenettir",
+      "type": "shadowsocks"
+    },
+    {
+      "method": "chacha20-ietf-poly1305",
+      "password": "7e731ec3-f8e1-43f6-92cf-3978d14705c4",
+      "server": "36.224.147.24",
+      "server_port": 50099,
+      "tag": "02-shadowsocks-🇹🇼70821 | ⚡️Telegram = t.me/SOSkeyNET",
+      "type": "shadowsocks"
+    },
+    {
+      "method": "aes-256-cfb",
+      "password": "qwerREWQ@@",
+      "server": "185.189.160.105",
+      "server_port": 41632,
+      "tag": "03-shadowsocks-🇹🇼TW-185.189.160.105-0141",
+      "type": "shadowsocks"
+    },
+    {
+      "interval": "5m",
+      "outbounds": [
+        "01-shadowsocks-@freenettir",
+        "02-shadowsocks-🇹🇼70821 | ⚡️Telegram = t.me/SOSkeyNET",
+        "03-shadowsocks-🇹🇼TW-185.189.160.105-0141"
+      ],
+      "tag": "auto",
+      "type": "urltest",
+      "url": "https://www.gstatic.com/generate_204"
+    },
+    {
+      "outbounds": [
+        "auto",
+        "01-shadowsocks-@freenettir",
+        "02-shadowsocks-🇹🇼70821 | ⚡️Telegram = t.me/SOSkeyNET",
+        "03-shadowsocks-🇹🇼TW-185.189.160.105-0141"
+      ],
+      "tag": "select",
+      "type": "selector"
+    },
+    {
+      "tag": "direct",
+      "type": "direct"
+    }
+  ],
+  "route": {
+    "final": "select"
+  }
+}
