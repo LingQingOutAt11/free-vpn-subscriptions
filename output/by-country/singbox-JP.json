@@ -1,11 +1,11 @@
 {
   "outbounds": [
     {
-      "method": "aes-256-gcm",
-      "password": "GTZI5AbjNAeWQG0oVNptvWJogHNKiiKA",
-      "server": "47.79.144.115",
-      "server_port": 40003,
-      "tag": "01-shadowsocks-🇯🇵JP-47.79.144.115-0188",
+      "method": "aes-128-gcm",
+      "password": "shadowsocks",
+      "server": "149.22.87.240",
+      "server_port": 443,
+      "tag": "01-shadowsocks-🇯🇵JP-149.22.87.240-0131",
       "type": "shadowsocks"
     },
     {
@@ -13,15 +13,7 @@
       "password": "shadowsocks",
       "server": "149.22.87.204",
       "server_port": 443,
-      "tag": "02-shadowsocks-🇯🇵JP-149.22.87.204-0216",
-      "type": "shadowsocks"
-    },
-    {
-      "method": "aes-128-gcm",
-      "password": "shadowsocks",
-      "server": "149.22.87.240",
-      "server_port": 443,
-      "tag": "03-shadowsocks-🇯🇵JP-149.22.87.240-4052",
+      "tag": "02-shadowsocks-🇯🇵JP-149.22.87.204-0132",
       "type": "shadowsocks"
     },
     {
@@ -29,7 +21,7 @@
       "password": "shadowsocks",
       "server": "149.22.87.241",
       "server_port": 443,
-      "tag": "04-shadowsocks-🇯🇵JP-149.22.87.241-0133",
+      "tag": "03-shadowsocks-🇯🇵JP-149.22.87.241-0133",
       "type": "shadowsocks"
     },
     {
@@ -37,17 +29,71 @@
       "password": "XKFKl2rULjIp74",
       "server": "103.106.228.175",
       "server_port": 8009,
-      "tag": "05-shadowsocks-🇯🇵JP-103.106.228.175-0136",
+      "tag": "04-shadowsocks-🇯🇵JP-103.106.228.175-0136",
+      "type": "shadowsocks"
+    },
+    {
+      "flow": "xtls-rprx-vision",
+      "server": "57.181.38.2",
+      "server_port": 59826,
+      "tag": "05-vless-法国 国际航空电讯集团公司(SITA)",
+      "tls": {
+        "enabled": true,
+        "insecure": false,
+        "reality": {
+          "enabled": true,
+          "public_key": "H-Ule2FFFI4MFSowspFPAC5SYb_gW9IE0isIZY8Ix3w",
+          "short_id": "2c35f2ac05bf15a0"
+        },
+        "server_name": "www.nvidia.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "type": "vless",
+      "uuid": "aa24026d-9542-4357-8625-3f04653fc4bd"
+    },
+    {
+      "flow": "xtls-rprx-vision",
+      "server": "160.16.220.197",
+      "server_port": 1443,
+      "tag": "06-vless-🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001_08980dad",
+      "tls": {
+        "enabled": true,
+        "insecure": false,
+        "reality": {
+          "enabled": true,
+          "public_key": "0i_xAxYgSNx5NMpK2lOaWGS-CvAiD_LneYPO0MF0owo",
+          "short_id": "1a"
+        },
+        "server_name": "www.amazon.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "type": "vless",
+      "uuid": "b98d4c6e-6770-4a31-8256-a4750cdea0e7"
+    },
+    {
+      "method": "aes-256-gcm",
+      "password": "GTZI5AbjNAeWQG0oVNptvWJogHNKiiKA",
+      "server": "47.79.144.115",
+      "server_port": 40003,
+      "tag": "07-shadowsocks-🇯🇵JP-47.79.144.115-0188",
       "type": "shadowsocks"
     },
     {
       "interval": "5m",
       "outbounds": [
-        "01-shadowsocks-🇯🇵JP-47.79.144.115-0188",
-        "02-shadowsocks-🇯🇵JP-149.22.87.204-0216",
-        "03-shadowsocks-🇯🇵JP-149.22.87.240-4052",
-        "04-shadowsocks-🇯🇵JP-149.22.87.241-0133",
-        "05-shadowsocks-🇯🇵JP-103.106.228.175-0136"
+        "01-shadowsocks-🇯🇵JP-149.22.87.240-0131",
+        "02-shadowsocks-🇯🇵JP-149.22.87.204-0132",
+        "03-shadowsocks-🇯🇵JP-149.22.87.241-0133",
+        "04-shadowsocks-🇯🇵JP-103.106.228.175-0136",
+        "05-vless-法国 国际航空电讯集团公司(SITA)",
+        "06-vless-🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001_08980dad",
+        "07-shadowsocks-🇯🇵JP-47.79.144.115-0188"
       ],
       "tag": "auto",
       "type": "urltest",
@@ -56,11 +102,13 @@
     {
       "outbounds": [
         "auto",
-        "01-shadowsocks-🇯🇵JP-47.79.144.115-0188",
-        "02-shadowsocks-🇯🇵JP-149.22.87.204-0216",
-        "03-shadowsocks-🇯🇵JP-149.22.87.240-4052",
-        "04-shadowsocks-🇯🇵JP-149.22.87.241-0133",
-        "05-shadowsocks-🇯🇵JP-103.106.228.175-0136"
+        "01-shadowsocks-🇯🇵JP-149.22.87.240-0131",
+        "02-shadowsocks-🇯🇵JP-149.22.87.204-0132",
+        "03-shadowsocks-🇯🇵JP-149.22.87.241-0133",
+        "04-shadowsocks-🇯🇵JP-103.106.228.175-0136",
+        "05-vless-法国 国际航空电讯集团公司(SITA)",
+        "06-vless-🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001_08980dad",
+        "07-shadowsocks-🇯🇵JP-47.79.144.115-0188"
       ],
       "tag": "select",
       "type": "selector"
