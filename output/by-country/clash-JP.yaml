@@ -1,23 +1,23 @@
 proxies:
     - cipher: aes-128-gcm
-      name: "01-shadowsocks-\U0001F1EF\U0001F1F5 JP | SS | @outlinereleasedkey 1"
+      name: "01-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.240-4052"
       password: shadowsocks
       port: 443
       server: 149.22.87.240
       type: ss
       udp: true
     - cipher: aes-128-gcm
-      name: "02-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.241-0133"
-      password: shadowsocks
-      port: 443
-      server: 149.22.87.241
-      type: ss
-      udp: true
-    - cipher: aes-128-gcm
-      name: "03-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.204-3716"
+      name: "02-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.204-0132"
       password: shadowsocks
       port: 443
       server: 149.22.87.204
+      type: ss
+      udp: true
+    - cipher: aes-128-gcm
+      name: "03-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.241-0133"
+      password: shadowsocks
+      port: 443
+      server: 149.22.87.241
       type: ss
       udp: true
     - cipher: aes-256-gcm
@@ -27,48 +27,44 @@ proxies:
       server: 103.106.228.175
       type: ss
       udp: true
-    - client-fingerprint: chrome
-      flow: xtls-rprx-vision
-      name: 05-vless-法国 国际航空电讯集团公司(SITA)
-      network: tcp
-      port: 59826
-      reality-opts:
-        public-key: H-Ule2FFFI4MFSowspFPAC5SYb_gW9IE0isIZY8Ix3w
-        short-id: 2c35f2ac05bf15a0
-      server: 57.181.38.2
-      servername: www.nvidia.com
-      tls: true
-      type: vless
-      udp: true
-      uuid: aa24026d-9542-4357-8625-3f04653fc4bd
     - cipher: aes-256-gcm
-      name: "06-shadowsocks-\U0001F1EF\U0001F1F5JP-47.79.144.115-0188"
+      name: "05-shadowsocks-\U0001F1EF\U0001F1F5JP-47.79.144.115-0188"
       password: GTZI5AbjNAeWQG0oVNptvWJogHNKiiKA
       port: 40003
       server: 47.79.144.115
       type: ss
       udp: true
+    - name: 06-vless-日本 东京Fastly节点
+      network: ws
+      port: 443
+      server: 151.101.109.223
+      servername: default.ssl.fastly.net
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: 5daab9b5-c9a0-47a6-a5c6-0977c6631c14
 proxy-groups:
     - interval: 300
       name: auto
       proxies:
-        - "01-shadowsocks-\U0001F1EF\U0001F1F5 JP | SS | @outlinereleasedkey 1"
-        - "02-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.241-0133"
-        - "03-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.204-3716"
+        - "01-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.240-4052"
+        - "02-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.204-0132"
+        - "03-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.241-0133"
         - "04-shadowsocks-\U0001F1EF\U0001F1F5JP-103.106.228.175-0136"
-        - 05-vless-法国 国际航空电讯集团公司(SITA)
-        - "06-shadowsocks-\U0001F1EF\U0001F1F5JP-47.79.144.115-0188"
+        - "05-shadowsocks-\U0001F1EF\U0001F1F5JP-47.79.144.115-0188"
+        - 06-vless-日本 东京Fastly节点
       type: url-test
       url: https://www.gstatic.com/generate_204
     - name: select
       proxies:
         - auto
-        - "01-shadowsocks-\U0001F1EF\U0001F1F5 JP | SS | @outlinereleasedkey 1"
-        - "02-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.241-0133"
-        - "03-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.204-3716"
+        - "01-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.240-4052"
+        - "02-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.204-0132"
+        - "03-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.241-0133"
         - "04-shadowsocks-\U0001F1EF\U0001F1F5JP-103.106.228.175-0136"
-        - 05-vless-法国 国际航空电讯集团公司(SITA)
-        - "06-shadowsocks-\U0001F1EF\U0001F1F5JP-47.79.144.115-0188"
+        - "05-shadowsocks-\U0001F1EF\U0001F1F5JP-47.79.144.115-0188"
+        - 06-vless-日本 东京Fastly节点
       type: select
 rules:
     - MATCH,select
