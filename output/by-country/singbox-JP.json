@@ -11,17 +11,17 @@
     {
       "method": "aes-128-gcm",
       "password": "shadowsocks",
-      "server": "149.22.87.204",
+      "server": "149.22.87.241",
       "server_port": 443,
-      "tag": "02-shadowsocks-🇯🇵JP-149.22.87.204-0132",
+      "tag": "02-shadowsocks-🇯🇵JP-149.22.87.241-4048",
       "type": "shadowsocks"
     },
     {
       "method": "aes-128-gcm",
       "password": "shadowsocks",
-      "server": "149.22.87.241",
+      "server": "149.22.87.204",
       "server_port": 443,
-      "tag": "03-shadowsocks-🇯🇵JP-149.22.87.241-0133",
+      "tag": "03-shadowsocks-🇯🇵JP-149.22.87.204-0132",
       "type": "shadowsocks"
     },
     {
@@ -33,34 +33,34 @@
       "type": "shadowsocks"
     },
     {
-      "method": "aes-256-gcm",
-      "password": "GTZI5AbjNAeWQG0oVNptvWJogHNKiiKA",
-      "server": "47.79.144.115",
-      "server_port": 40003,
-      "tag": "05-shadowsocks-🇯🇵JP-47.79.144.115-0188",
-      "type": "shadowsocks"
-    },
-    {
       "server": "151.101.109.223",
       "server_port": 443,
-      "tag": "06-vless-日本 东京Fastly节点",
+      "tag": "05-vless-日本 东京Fastly节点",
       "tls": {
         "enabled": true,
         "insecure": false,
         "server_name": "default.ssl.fastly.net"
       },
       "type": "vless",
-      "uuid": "5daab9b5-c9a0-47a6-a5c6-0977c6631c14"
+      "uuid": "c8541f02-4efd-401d-beb7-dc017b12ee94"
+    },
+    {
+      "method": "aes-256-gcm",
+      "password": "GTZI5AbjNAeWQG0oVNptvWJogHNKiiKA",
+      "server": "47.79.144.115",
+      "server_port": 40003,
+      "tag": "06-shadowsocks-🇯🇵JP-47.79.144.115-0188",
+      "type": "shadowsocks"
     },
     {
       "interval": "5m",
       "outbounds": [
         "01-shadowsocks-🇯🇵JP-149.22.87.240-4052",
-        "02-shadowsocks-🇯🇵JP-149.22.87.204-0132",
-        "03-shadowsocks-🇯🇵JP-149.22.87.241-0133",
+        "02-shadowsocks-🇯🇵JP-149.22.87.241-4048",
+        "03-shadowsocks-🇯🇵JP-149.22.87.204-0132",
         "04-shadowsocks-🇯🇵JP-103.106.228.175-0136",
-        "05-shadowsocks-🇯🇵JP-47.79.144.115-0188",
-        "06-vless-日本 东京Fastly节点"
+        "05-vless-日本 东京Fastly节点",
+        "06-shadowsocks-🇯🇵JP-47.79.144.115-0188"
       ],
       "tag": "auto",
       "type": "urltest",
@@ -70,11 +70,11 @@
       "outbounds": [
         "auto",
         "01-shadowsocks-🇯🇵JP-149.22.87.240-4052",
-        "02-shadowsocks-🇯🇵JP-149.22.87.204-0132",
-        "03-shadowsocks-🇯🇵JP-149.22.87.241-0133",
+        "02-shadowsocks-🇯🇵JP-149.22.87.241-4048",
+        "03-shadowsocks-🇯🇵JP-149.22.87.204-0132",
         "04-shadowsocks-🇯🇵JP-103.106.228.175-0136",
-        "05-shadowsocks-🇯🇵JP-47.79.144.115-0188",
-        "06-vless-日本 东京Fastly节点"
+        "05-vless-日本 东京Fastly节点",
+        "06-shadowsocks-🇯🇵JP-47.79.144.115-0188"
       ],
       "tag": "select",
       "type": "selector"
