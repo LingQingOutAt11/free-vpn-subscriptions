@@ -1,16 +1,7 @@
 proxies:
     - alterId: 0
       cipher: auto
-      name: "01-vmess-\U0001F1E8\U0001F1FF CZ 4"
-      network: tcp
-      port: 180
-      server: 82.198.246.37
-      type: vmess
-      udp: true
-      uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    - alterId: 0
-      cipher: auto
-      name: "02-vmess-\U0001F1E8\U0001F1FF CZ 1"
+      name: "01-vmess-\U0001F1E8\U0001F1FF CZ 6"
       network: tcp
       port: 180
       server: 82.198.246.250
@@ -19,19 +10,28 @@ proxies:
       uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
     - alterId: 0
       cipher: auto
-      name: "03-vmess-\U0001F1E8\U0001F1FF CZ 3"
+      name: "02-vmess-\U0001F1E8\U0001F1FF CZ 4"
       network: tcp
       port: 180
-      server: 82.198.246.214
+      server: 82.198.246.37
       type: vmess
       udp: true
       uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
     - alterId: 0
       cipher: auto
-      name: "04-vmess-\U0001F1E8\U0001F1FF CZ 2"
+      name: "03-vmess-\U0001F1E8\U0001F1FF CZ 2"
       network: tcp
       port: 180
       server: 82.198.246.97
+      type: vmess
+      udp: true
+      uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    - alterId: 0
+      cipher: auto
+      name: "04-vmess-\U0001F1E8\U0001F1FF CZ 3"
+      network: tcp
+      port: 180
+      server: 82.198.246.214
       type: vmess
       udp: true
       uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
@@ -42,21 +42,43 @@ proxies:
       server: 63.183.200.172
       type: ss
       udp: true
-    - cipher: aes-256-gcm
-      name: "06-shadowsocks-\U0001F1E9\U0001F1EADE-213.202.208.199-0146"
-      password: RexnBgU7EV5ADxG
-      port: 7001
-      server: 213.202.208.199
-      type: ss
-      udp: true
     - cipher: chacha20-ietf-poly1305
-      name: "07-shadowsocks-\U0001F1E9\U0001F1EADE-8.209.74.72-0131"
+      name: "06-shadowsocks-\U0001F1E9\U0001F1EADE-8.209.74.72-0131"
       password: PWpjPo3tqhPN4yRZ
       port: 20001
       server: 8.209.74.72
       type: ss
       udp: true
-    - name: "08-trojan-\U0001F1E9\U0001F1EADE-91.233.8.138-0188"
+    - cipher: chacha20-ietf-poly1305
+      name: "07-shadowsocks-\U0001F1E9\U0001F1EADE-209.46.102.22-0112"
+      password: 1hhrqrokj3ag
+      port: 8388
+      server: 209.46.102.22
+      type: ss
+      udp: true
+    - cipher: aes-256-gcm
+      name: "08-shadowsocks-\U0001F1E9\U0001F1EADE-213.202.208.199-0146"
+      password: RexnBgU7EV5ADxG
+      port: 7001
+      server: 213.202.208.199
+      type: ss
+      udp: true
+    - name: "09-vless-\U0001F534\U0001F1E9\U0001F1EA[\U0001F3AC\U0001F916\U0001F4FA]_github.com/Ruk1ng001_4227b55a"
+      network: tcp
+      port: 10040
+      server: 47.91.94.112
+      type: vless
+      udp: true
+      uuid: e4e7866d-920b-4a53-a8e2-6ae9b2a42fc2
+    - name: "10-trojan-\U0001F1E9\U0001F1EADE-185.137.157.254-0147"
+      password: hxn2jK9Uzezogua0oHuq9Y8viN=UCe.2Jd
+      port: 443
+      server: 185.137.157.254
+      skip-cert-verify: false
+      sni: www.directorypipeline.click
+      type: trojan
+      udp: true
+    - name: "11-trojan-\U0001F1E9\U0001F1EADE-91.233.8.138-0188"
       password: qDVh0NalwefxyZlHh3Ni2JSlhErcuC3Wiq
       port: 443
       server: 91.233.8.138
@@ -64,60 +86,69 @@ proxies:
       sni: www.homelywebs.click
       type: trojan
       udp: true
-    - name: "09-trojan-\U0001F1E9\U0001F1EADE-91.233.8.25-0148"
-      password: I1vtf6pjYsAu-nFnraWAMjKTy90AHitdAz
-      port: 443
-      server: 91.233.8.25
-      skip-cert-verify: false
-      sni: fra34.tracker-ws.click
-      type: trojan
-      udp: true
-    - name: "10-trojan-\U0001F1F7\U0001F1F4 罗马尼亚 V2CROSS.COM"
-      password: hxn2jK9Uzezogua0oHuq9Y8viN=UCe.2Jd
-      port: 443
-      server: 185.137.157.254
-      skip-cert-verify: true
-      sni: www.directorypipeline.click
-      type: trojan
-      udp: true
-    - name: "11-vless-\U0001F534\U0001F1E9\U0001F1EA[\U0001F3AC\U0001F916\U0001F4FA]_github.com/Ruk1ng001_4227b55a"
+    - client-fingerprint: chrome
+      flow: xtls-rprx-vision
+      name: 12-vless-德国 V2CROSS.COM
       network: tcp
-      port: 10040
-      server: 47.91.94.112
+      port: 443
+      reality-opts:
+        public-key: _aKZTKJtNUD3IRWX6W_MIVWTX8sclese0-3HeklMin0
+        short-id: 727ff6c8
+      server: 176.100.36.36
+      servername: www.github.com
+      tls: true
       type: vless
       udp: true
-      uuid: e4e7866d-920b-4a53-a8e2-6ae9b2a42fc2
+      uuid: b99cf749-28b8-4f72-ac8b-ff146ef1238b
+    - client-fingerprint: chrome
+      flow: xtls-rprx-vision
+      name: 13-vless-乌克兰 V2CROSS.COM
+      network: tcp
+      port: 1020
+      reality-opts:
+        public-key: ULEKhRXed87x1kNaVVq4l8ANWDwmcoxetjclnShfhWM
+        short-id: 4374d295a4f9dd83
+      server: 5.181.187.24
+      servername: yahoo.com
+      tls: true
+      type: vless
+      udp: true
+      uuid: 42e0d02c-b75c-4b9d-bc15-773aa3cbe6bc
 proxy-groups:
     - interval: 300
       name: auto
       proxies:
-        - "01-vmess-\U0001F1E8\U0001F1FF CZ 4"
-        - "02-vmess-\U0001F1E8\U0001F1FF CZ 1"
-        - "03-vmess-\U0001F1E8\U0001F1FF CZ 3"
-        - "04-vmess-\U0001F1E8\U0001F1FF CZ 2"
+        - "01-vmess-\U0001F1E8\U0001F1FF CZ 6"
+        - "02-vmess-\U0001F1E8\U0001F1FF CZ 4"
+        - "03-vmess-\U0001F1E8\U0001F1FF CZ 2"
+        - "04-vmess-\U0001F1E8\U0001F1FF CZ 3"
         - "05-shadowsocks-\U0001F1E9\U0001F1EADE-63.183.200.172-0126"
-        - "06-shadowsocks-\U0001F1E9\U0001F1EADE-213.202.208.199-0146"
-        - "07-shadowsocks-\U0001F1E9\U0001F1EADE-8.209.74.72-0131"
-        - "08-trojan-\U0001F1E9\U0001F1EADE-91.233.8.138-0188"
-        - "09-trojan-\U0001F1E9\U0001F1EADE-91.233.8.25-0148"
-        - "10-trojan-\U0001F1F7\U0001F1F4 罗马尼亚 V2CROSS.COM"
-        - "11-vless-\U0001F534\U0001F1E9\U0001F1EA[\U0001F3AC\U0001F916\U0001F4FA]_github.com/Ruk1ng001_4227b55a"
+        - "06-shadowsocks-\U0001F1E9\U0001F1EADE-8.209.74.72-0131"
+        - "07-shadowsocks-\U0001F1E9\U0001F1EADE-209.46.102.22-0112"
+        - "08-shadowsocks-\U0001F1E9\U0001F1EADE-213.202.208.199-0146"
+        - "09-vless-\U0001F534\U0001F1E9\U0001F1EA[\U0001F3AC\U0001F916\U0001F4FA]_github.com/Ruk1ng001_4227b55a"
+        - "10-trojan-\U0001F1E9\U0001F1EADE-185.137.157.254-0147"
+        - "11-trojan-\U0001F1E9\U0001F1EADE-91.233.8.138-0188"
+        - 12-vless-德国 V2CROSS.COM
+        - 13-vless-乌克兰 V2CROSS.COM
       type: url-test
       url: https://www.gstatic.com/generate_204
     - name: select
       proxies:
         - auto
-        - "01-vmess-\U0001F1E8\U0001F1FF CZ 4"
-        - "02-vmess-\U0001F1E8\U0001F1FF CZ 1"
-        - "03-vmess-\U0001F1E8\U0001F1FF CZ 3"
-        - "04-vmess-\U0001F1E8\U0001F1FF CZ 2"
+        - "01-vmess-\U0001F1E8\U0001F1FF CZ 6"
+        - "02-vmess-\U0001F1E8\U0001F1FF CZ 4"
+        - "03-vmess-\U0001F1E8\U0001F1FF CZ 2"
+        - "04-vmess-\U0001F1E8\U0001F1FF CZ 3"
         - "05-shadowsocks-\U0001F1E9\U0001F1EADE-63.183.200.172-0126"
-        - "06-shadowsocks-\U0001F1E9\U0001F1EADE-213.202.208.199-0146"
-        - "07-shadowsocks-\U0001F1E9\U0001F1EADE-8.209.74.72-0131"
-        - "08-trojan-\U0001F1E9\U0001F1EADE-91.233.8.138-0188"
-        - "09-trojan-\U0001F1E9\U0001F1EADE-91.233.8.25-0148"
-        - "10-trojan-\U0001F1F7\U0001F1F4 罗马尼亚 V2CROSS.COM"
-        - "11-vless-\U0001F534\U0001F1E9\U0001F1EA[\U0001F3AC\U0001F916\U0001F4FA]_github.com/Ruk1ng001_4227b55a"
+        - "06-shadowsocks-\U0001F1E9\U0001F1EADE-8.209.74.72-0131"
+        - "07-shadowsocks-\U0001F1E9\U0001F1EADE-209.46.102.22-0112"
+        - "08-shadowsocks-\U0001F1E9\U0001F1EADE-213.202.208.199-0146"
+        - "09-vless-\U0001F534\U0001F1E9\U0001F1EA[\U0001F3AC\U0001F916\U0001F4FA]_github.com/Ruk1ng001_4227b55a"
+        - "10-trojan-\U0001F1E9\U0001F1EADE-185.137.157.254-0147"
+        - "11-trojan-\U0001F1E9\U0001F1EADE-91.233.8.138-0188"
+        - 12-vless-德国 V2CROSS.COM
+        - 13-vless-乌克兰 V2CROSS.COM
       type: select
 rules:
     - MATCH,select
