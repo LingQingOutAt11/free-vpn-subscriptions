@@ -7,61 +7,63 @@ proxies:
       type: ss
       udp: true
     - cipher: aes-256-cfb
-      name: "02-shadowsocks-\U0001F1F0\U0001F1F7KR-218.237.185.230-0150"
-      password: qwerREWQ@@
-      port: 4652
-      server: 218.237.185.230
-      type: ss
-      udp: true
-    - cipher: aes-256-cfb
-      name: "03-shadowsocks-\U0001F1F0\U0001F1F7KR-221.139.79.57-0146"
+      name: "02-shadowsocks-\U0001F1F0\U0001F1F7KR-221.139.79.57-0146"
       password: qwerREWQ@@
       port: 13979
       server: 221.139.79.57
       type: ss
       udp: true
-    - client-fingerprint: chrome
-      flow: xtls-rprx-vision
-      name: 04-vless-日本 V2CROSS.COM
-      network: tcp
-      port: 21796
-      reality-opts:
-        public-key: dHK4t7AbVKnDxl6ondRWcwkkt4FDkrK89ugEzZfDuzw
-        short-id: 804d6574da9180
-      server: 43.203.252.196
-      servername: www.sony.com
-      tls: true
-      type: vless
-      udp: true
-      uuid: cd91af31-0c74-4bce-aac3-bdae367c84fa
     - alterId: 0
       cipher: auto
-      name: "05-vmess-\U0001F1F0\U0001F1F7 KR 3"
+      name: "03-vmess-\U0001F1F0\U0001F1F7 KR 2"
       network: ws
       port: 443
       server: 152.67.218.38
       type: vmess
       udp: true
       uuid: b5e9480a-b7aa-40a4-f9a7-5299b5e363b4
+    - cipher: aes-256-cfb
+      name: "04-shadowsocks-\U0001F1F0\U0001F1F7KR-218.237.185.230-4543"
+      password: qwerREWQ@@
+      port: 4652
+      server: p141.panda001.net
+      type: ss
+      udp: true
+    - cipher: aes-256-gcm
+      name: "05-shadowsocks-\U0001F1F0\U0001F1F7KR-141.164.45.187-0206"
+      password: TEzjfAYq2IjtuoS
+      port: 6679
+      server: 141.164.45.187
+      type: ss
+      udp: true
+    - cipher: aes-256-gcm
+      name: "06-shadowsocks-\U0001F1F0\U0001F1F7KR-141.164.45.187-0171"
+      password: RexnBgU7EV5ADxG
+      port: 7001
+      server: 141.164.45.187
+      type: ss
+      udp: true
 proxy-groups:
     - interval: 300
       name: auto
       proxies:
         - "01-shadowsocks-\U0001F1F0\U0001F1F7KR-211.178.105.134-0148"
-        - "02-shadowsocks-\U0001F1F0\U0001F1F7KR-218.237.185.230-0150"
-        - "03-shadowsocks-\U0001F1F0\U0001F1F7KR-221.139.79.57-0146"
-        - 04-vless-日本 V2CROSS.COM
-        - "05-vmess-\U0001F1F0\U0001F1F7 KR 3"
+        - "02-shadowsocks-\U0001F1F0\U0001F1F7KR-221.139.79.57-0146"
+        - "03-vmess-\U0001F1F0\U0001F1F7 KR 2"
+        - "04-shadowsocks-\U0001F1F0\U0001F1F7KR-218.237.185.230-4543"
+        - "05-shadowsocks-\U0001F1F0\U0001F1F7KR-141.164.45.187-0206"
+        - "06-shadowsocks-\U0001F1F0\U0001F1F7KR-141.164.45.187-0171"
       type: url-test
       url: https://www.gstatic.com/generate_204
     - name: select
       proxies:
         - auto
         - "01-shadowsocks-\U0001F1F0\U0001F1F7KR-211.178.105.134-0148"
-        - "02-shadowsocks-\U0001F1F0\U0001F1F7KR-218.237.185.230-0150"
-        - "03-shadowsocks-\U0001F1F0\U0001F1F7KR-221.139.79.57-0146"
-        - 04-vless-日本 V2CROSS.COM
-        - "05-vmess-\U0001F1F0\U0001F1F7 KR 3"
+        - "02-shadowsocks-\U0001F1F0\U0001F1F7KR-221.139.79.57-0146"
+        - "03-vmess-\U0001F1F0\U0001F1F7 KR 2"
+        - "04-shadowsocks-\U0001F1F0\U0001F1F7KR-218.237.185.230-4543"
+        - "05-shadowsocks-\U0001F1F0\U0001F1F7KR-141.164.45.187-0206"
+        - "06-shadowsocks-\U0001F1F0\U0001F1F7KR-141.164.45.187-0171"
       type: select
 rules:
     - MATCH,select
