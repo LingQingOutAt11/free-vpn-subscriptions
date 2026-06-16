@@ -1,37 +1,37 @@
 proxies:
-    - cipher: aes-128-gcm
-      name: "01-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.178-0281"
-      password: shadowsocks
-      port: 443
-      server: 141.98.101.178
-      type: ss
-      udp: true
     - cipher: chacha20-ietf-poly1305
-      name: "02-shadowsocks-@@FREE_VPN02 \U0001F36C"
-      password: 1kVr0KATIJI7mwOF
-      port: 443
-      server: admin.c1.havij.co
-      type: ss
-      udp: true
-    - cipher: chacha20-ietf-poly1305
-      name: 03-shadowsocks-@meliproxyy
-      password: W74XFALLLuw6m5IA
-      port: 443
-      server: admin.c1.webramz.co
-      type: ss
-      udp: true
-    - cipher: chacha20-ietf-poly1305
-      name: 04-shadowsocks-@filembad
+      name: "01-shadowsocks-\U0001F1EC\U0001F1E7GB-51.145.91.55-0148"
       password: W74XFALLLuw6m5IA
       port: 443
       server: series-a2.samanehha.co
       type: ss
       udp: true
     - cipher: chacha20-ietf-poly1305
-      name: 05-shadowsocks-@meliproxyy
+      name: 02-shadowsocks-@Leecher56
+      password: 1kVr0KATIJI7mwOF
+      port: 443
+      server: admin.c1.havij.co
+      type: ss
+      udp: true
+    - cipher: chacha20-ietf-poly1305
+      name: "03-shadowsocks-\U0001F1EC\U0001F1E7GB-51.145.91.55-0149"
       password: W74XFALLLuw6m5IA
       port: 443
       server: series-a1.samanehha.co
+      type: ss
+      udp: true
+    - cipher: chacha20-ietf-poly1305
+      name: "04-shadowsocks-\U0001F7E1 Irancell · [ 4 ] @NewsDarya"
+      password: W74XFALLLuw6m5IA
+      port: 443
+      server: admin.c1.webramz.co
+      type: ss
+      udp: true
+    - cipher: aes-128-gcm
+      name: "05-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.179-0156"
+      password: shadowsocks
+      port: 443
+      server: 141.98.101.179
       type: ss
       udp: true
     - cipher: aes-256-gcm
@@ -42,24 +42,24 @@ proxies:
       type: ss
       udp: true
     - cipher: aes-128-gcm
-      name: "07-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.179-0156"
+      name: "07-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.178-0154"
       password: shadowsocks
       port: 443
-      server: 141.98.101.179
+      server: 141.98.101.178
+      type: ss
+      udp: true
+    - cipher: rc4-md5
+      name: "08-shadowsocks-\U0001F1EC\U0001F1E7 GB 2"
+      password: 14fFPrbezE3HDZzsMOr6
+      port: 8080
+      server: 146.70.61.37
       type: ss
       udp: true
     - cipher: aes-128-gcm
-      name: "08-shadowsocks-https://t.me/v2rayNplus |\U0001F1EC\U0001F1E7"
+      name: "09-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.182-0157"
       password: shadowsocks
       port: 443
       server: 141.98.101.182
-      type: ss
-      udp: true
-    - cipher: aes-128-gcm
-      name: "09-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.181-0155"
-      password: shadowsocks
-      port: 443
-      server: 141.98.101.181
       type: ss
       udp: true
     - cipher: chacha20-ietf-poly1305
@@ -69,14 +69,7 @@ proxies:
       server: 57.129.129.247
       type: ss
       udp: true
-    - cipher: rc4-md5
-      name: "11-shadowsocks-\U0001F1EC\U0001F1E7 GB 2"
-      password: 14fFPrbezE3HDZzsMOr6
-      port: 8080
-      server: 146.70.61.37
-      type: ss
-      udp: true
-    - name: 12-vless->>@oneclickvpnkeys::GB
+    - name: 11-vless->>@oneclickvpnkeys::GB
       network: tcp
       port: 8443
       server: 152.233.28.198
@@ -90,35 +83,33 @@ proxy-groups:
     - interval: 300
       name: auto
       proxies:
-        - "01-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.178-0281"
-        - "02-shadowsocks-@@FREE_VPN02 \U0001F36C"
-        - 03-shadowsocks-@meliproxyy
-        - 04-shadowsocks-@filembad
-        - 05-shadowsocks-@meliproxyy
+        - "01-shadowsocks-\U0001F1EC\U0001F1E7GB-51.145.91.55-0148"
+        - 02-shadowsocks-@Leecher56
+        - "03-shadowsocks-\U0001F1EC\U0001F1E7GB-51.145.91.55-0149"
+        - "04-shadowsocks-\U0001F7E1 Irancell · [ 4 ] @NewsDarya"
+        - "05-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.179-0156"
         - "06-shadowsocks-\U0001F1EC\U0001F1E7GB-94.156.250.148-0153"
-        - "07-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.179-0156"
-        - "08-shadowsocks-https://t.me/v2rayNplus |\U0001F1EC\U0001F1E7"
-        - "09-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.181-0155"
+        - "07-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.178-0154"
+        - "08-shadowsocks-\U0001F1EC\U0001F1E7 GB 2"
+        - "09-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.182-0157"
         - 10-shadowsocks-@Ap_Ir6
-        - "11-shadowsocks-\U0001F1EC\U0001F1E7 GB 2"
-        - 12-vless->>@oneclickvpnkeys::GB
+        - 11-vless->>@oneclickvpnkeys::GB
       type: url-test
       url: https://www.gstatic.com/generate_204
     - name: select
       proxies:
         - auto
-        - "01-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.178-0281"
-        - "02-shadowsocks-@@FREE_VPN02 \U0001F36C"
-        - 03-shadowsocks-@meliproxyy
-        - 04-shadowsocks-@filembad
-        - 05-shadowsocks-@meliproxyy
+        - "01-shadowsocks-\U0001F1EC\U0001F1E7GB-51.145.91.55-0148"
+        - 02-shadowsocks-@Leecher56
+        - "03-shadowsocks-\U0001F1EC\U0001F1E7GB-51.145.91.55-0149"
+        - "04-shadowsocks-\U0001F7E1 Irancell · [ 4 ] @NewsDarya"
+        - "05-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.179-0156"
         - "06-shadowsocks-\U0001F1EC\U0001F1E7GB-94.156.250.148-0153"
-        - "07-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.179-0156"
-        - "08-shadowsocks-https://t.me/v2rayNplus |\U0001F1EC\U0001F1E7"
-        - "09-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.181-0155"
+        - "07-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.178-0154"
+        - "08-shadowsocks-\U0001F1EC\U0001F1E7 GB 2"
+        - "09-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.182-0157"
         - 10-shadowsocks-@Ap_Ir6
-        - "11-shadowsocks-\U0001F1EC\U0001F1E7 GB 2"
-        - 12-vless->>@oneclickvpnkeys::GB
+        - 11-vless->>@oneclickvpnkeys::GB
       type: select
 rules:
     - MATCH,select

@@ -1,27 +1,27 @@
 proxies:
+    - cipher: chacha20-ietf-poly1305
+      name: 01-shadowsocks-⚡ b2n.ir/v2ray-configs | 372
+      password: hbGrpfvNrJsUmKmPbR3iY2
+      port: 443
+      server: tinkered-pennies-puppies.freesocks.work
+      type: ss
+      udp: true
     - cipher: aes-128-cfb
-      name: "01-shadowsocks-\U0001F1F3\U0001F1F1NL-109.201.152.181-0138"
+      name: "02-shadowsocks-\U0001F1F3\U0001F1F1NL-109.201.152.181-0138"
       password: shadowsocks
       port: 443
       server: 109.201.152.181
       type: ss
       udp: true
     - cipher: chacha20-ietf-poly1305
-      name: "02-shadowsocks-\U0001F1F3\U0001F1F1NL-108.181.58.239-0139"
+      name: 03-shadowsocks-@hex_proxy ¹
       password: CJmTCCx7Ltud
       port: 8388
       server: 108.181.58.239
       type: ss
       udp: true
     - cipher: chacha20-ietf-poly1305
-      name: "03-shadowsocks-\U0001F1F3\U0001F1F1NL-108.181.126.122-0184"
-      password: CJmTCCx7Ltud
-      port: 8388
-      server: 108.181.126.122
-      type: ss
-      udp: true
-    - cipher: chacha20-ietf-poly1305
-      name: 04-shadowsocks-@Ap_Ir6
+      name: "04-shadowsocks-\U0001F1F3\U0001F1F1NL-195.93.253.245-0165"
       password: FDeCHSu4lt8qflCS5zDOy8
       port: 49137
       server: 195.93.253.245
@@ -43,13 +43,13 @@ proxies:
       uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
     - client-fingerprint: chrome
       flow: xtls-rprx-vision
-      name: "06-vless-\U0001F1F3\U0001F1F1 434 - NL - VLESS/REALITY/PBK/SID/VISI"
+      name: 06-vless->>@oneclickvpnkeys::NL
       network: tcp
       port: 23576
       reality-opts:
         public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
         short-id: "01"
-      server: 51.158.206.96
+      server: 51.158.206.19
       servername: fuck.rkn
       tls: true
       type: vless
@@ -57,13 +57,13 @@ proxies:
       uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
     - client-fingerprint: chrome
       flow: xtls-rprx-vision
-      name: "07-vless-\U0001F1F3\U0001F1F1 423 - NL - VLESS/REALITY/PBK/SID/VISI"
+      name: "07-vless-\U0001F1F3\U0001F1F1 434 - NL - VLESS/REALITY/PBK/SID/VISI"
       network: tcp
       port: 23576
       reality-opts:
         public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
         short-id: "01"
-      server: 51.158.206.19
+      server: 51.158.206.96
       servername: fuck.rkn
       tls: true
       type: vless
@@ -76,27 +76,37 @@ proxies:
       server: 51.15.23.63
       type: ss
       udp: true
-    - name: "09-vless-\U0001F1F3\U0001F1F1 NL 22"
+    - name: "09-vless-\U0001F1F3\U0001F1F1 NL 21"
       network: tcp
       port: 8443
-      server: 46.229.243.152
+      server: 46.229.243.145
       servername: cdn9-33.vk-cdnvideo.com
       skip-cert-verify: false
       tls: true
       type: vless
       udp: true
       uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
-    - name: 10-vless-Free$ 4 @Outline_Vpn
+    - name: "10-vless-\U0001F1F3\U0001F1F1 NL 20"
       network: tcp
       port: 8443
-      server: 46.229.243.132
-      servername: cdn7-39.vk-cdnvideo.com
+      server: 46.229.243.156
+      servername: cdn9-33.vk-cdnvideo.com
       skip-cert-verify: false
       tls: true
       type: vless
       udp: true
       uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
-    - name: "11-vless-\U0001F534\U0001F1F3\U0001F1F1[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_de1f08d2"
+    - name: "11-vless-\U0001F1F3\U0001F1F1 NL 13"
+      network: tcp
+      port: 8443
+      server: 46.229.243.117
+      servername: cdn9-33.vk-cdnvideo.com
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
+    - name: 12-vless-荷兰 V2CROSS.COM
       network: tcp
       port: 8443
       server: 185.229.191.10
@@ -110,33 +120,35 @@ proxy-groups:
     - interval: 300
       name: auto
       proxies:
-        - "01-shadowsocks-\U0001F1F3\U0001F1F1NL-109.201.152.181-0138"
-        - "02-shadowsocks-\U0001F1F3\U0001F1F1NL-108.181.58.239-0139"
-        - "03-shadowsocks-\U0001F1F3\U0001F1F1NL-108.181.126.122-0184"
-        - 04-shadowsocks-@Ap_Ir6
+        - 01-shadowsocks-⚡ b2n.ir/v2ray-configs | 372
+        - "02-shadowsocks-\U0001F1F3\U0001F1F1NL-109.201.152.181-0138"
+        - 03-shadowsocks-@hex_proxy ¹
+        - "04-shadowsocks-\U0001F1F3\U0001F1F1NL-195.93.253.245-0165"
         - "05-vless-\U0001F1F3\U0001F1F1 426 - NL - VLESS/REALITY/PBK/SID/VISI"
-        - "06-vless-\U0001F1F3\U0001F1F1 434 - NL - VLESS/REALITY/PBK/SID/VISI"
-        - "07-vless-\U0001F1F3\U0001F1F1 423 - NL - VLESS/REALITY/PBK/SID/VISI"
+        - 06-vless->>@oneclickvpnkeys::NL
+        - "07-vless-\U0001F1F3\U0001F1F1 434 - NL - VLESS/REALITY/PBK/SID/VISI"
         - "08-shadowsocks-\U0001F1F3\U0001F1F1NL-51.15.23.63-0174"
-        - "09-vless-\U0001F1F3\U0001F1F1 NL 22"
-        - 10-vless-Free$ 4 @Outline_Vpn
-        - "11-vless-\U0001F534\U0001F1F3\U0001F1F1[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_de1f08d2"
+        - "09-vless-\U0001F1F3\U0001F1F1 NL 21"
+        - "10-vless-\U0001F1F3\U0001F1F1 NL 20"
+        - "11-vless-\U0001F1F3\U0001F1F1 NL 13"
+        - 12-vless-荷兰 V2CROSS.COM
       type: url-test
       url: https://www.gstatic.com/generate_204
     - name: select
       proxies:
         - auto
-        - "01-shadowsocks-\U0001F1F3\U0001F1F1NL-109.201.152.181-0138"
-        - "02-shadowsocks-\U0001F1F3\U0001F1F1NL-108.181.58.239-0139"
-        - "03-shadowsocks-\U0001F1F3\U0001F1F1NL-108.181.126.122-0184"
-        - 04-shadowsocks-@Ap_Ir6
+        - 01-shadowsocks-⚡ b2n.ir/v2ray-configs | 372
+        - "02-shadowsocks-\U0001F1F3\U0001F1F1NL-109.201.152.181-0138"
+        - 03-shadowsocks-@hex_proxy ¹
+        - "04-shadowsocks-\U0001F1F3\U0001F1F1NL-195.93.253.245-0165"
         - "05-vless-\U0001F1F3\U0001F1F1 426 - NL - VLESS/REALITY/PBK/SID/VISI"
-        - "06-vless-\U0001F1F3\U0001F1F1 434 - NL - VLESS/REALITY/PBK/SID/VISI"
-        - "07-vless-\U0001F1F3\U0001F1F1 423 - NL - VLESS/REALITY/PBK/SID/VISI"
+        - 06-vless->>@oneclickvpnkeys::NL
+        - "07-vless-\U0001F1F3\U0001F1F1 434 - NL - VLESS/REALITY/PBK/SID/VISI"
         - "08-shadowsocks-\U0001F1F3\U0001F1F1NL-51.15.23.63-0174"
-        - "09-vless-\U0001F1F3\U0001F1F1 NL 22"
-        - 10-vless-Free$ 4 @Outline_Vpn
-        - "11-vless-\U0001F534\U0001F1F3\U0001F1F1[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_de1f08d2"
+        - "09-vless-\U0001F1F3\U0001F1F1 NL 21"
+        - "10-vless-\U0001F1F3\U0001F1F1 NL 20"
+        - "11-vless-\U0001F1F3\U0001F1F1 NL 13"
+        - 12-vless-荷兰 V2CROSS.COM
       type: select
 rules:
     - MATCH,select
