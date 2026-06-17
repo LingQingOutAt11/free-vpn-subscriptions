@@ -1,35 +1,49 @@
 proxies:
     - cipher: chacha20-ietf-poly1305
-      name: "01-shadowsocks-\U0001F1FA\U0001F1F8US-108.181.0.177-0096"
+      name: "01-shadowsocks-\U0001F1FA\U0001F1F8US-216.105.168.18-0150"
+      password: hCCWOcIsK5wrFz4OX70rWf
+      port: 443
+      server: 216.105.168.18
+      type: ss
+      udp: true
+    - cipher: chacha20-ietf-poly1305
+      name: "02-shadowsocks-\U0001F1FA\U0001F1F8US-108.181.0.177-0096"
       password: G5p6ww4o67HB
       port: 8388
       server: 108.181.0.177
       type: ss
       udp: true
     - cipher: aes-128-gcm
-      name: "02-shadowsocks-\U0001F1FA\U0001F1F8US-173.244.56.9-0102"
-      password: shadowsocks
-      port: 443
-      server: 173.244.56.9
-      type: ss
-      udp: true
-    - cipher: aes-128-gcm
-      name: "03-shadowsocks-\U0001F1FA\U0001F1F8US-156.146.38.170-0073"
-      password: shadowsocks
-      port: 443
-      server: 156.146.38.170
-      type: ss
-      udp: true
-    - cipher: aes-128-gcm
-      name: "04-shadowsocks-\U0001F1FA\U0001F1F8US-173.244.56.6-3876"
+      name: "03-shadowsocks-\U0001F1FA\U0001F1F8US-173.244.56.6-3876"
       password: shadowsocks
       port: 443
       server: 173.244.56.6
       type: ss
       udp: true
+    - cipher: aes-128-gcm
+      name: "04-shadowsocks-\U0001F1FA\U0001F1F8 US 10"
+      password: shadowsocks
+      port: 443
+      server: 173.244.56.9
+      type: ss
+      udp: true
+    - name: "05-hysteria2- By EbraSha \U0001F579️"
+      password: 10550754-cf62-3d3b-ba6a-50be27a275d7
+      port: 443
+      server: 185.106.96.231
+      skip-cert-verify: false
+      sni: s559.ccgfw.top
+      type: hysteria2
+    - cipher: aes-128-gcm
+      name: "06-shadowsocks-\U0001F1FA\U0001F1F8 US 6"
+      password: shadowsocks
+      port: 443
+      server: 156.146.38.168
+      type: ss
+      udp: true
     - alterId: 0
       cipher: auto
-      name: 05-vmess-@chillguy_vpn
+      name: 07-vmess->>@v2ray_configs_pool::US::US::US::US::U
       network: tcp
       port: 443
       server: 165.140.216.141
@@ -37,43 +51,45 @@ proxies:
       udp: true
       uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
     - cipher: aes-128-gcm
-      name: "06-shadowsocks-\U0001F1FA\U0001F1F8US-156.146.38.168-0074"
-      password: shadowsocks
-      port: 443
-      server: 156.146.38.168
-      type: ss
-      udp: true
-    - cipher: aes-128-gcm
-      name: "07-shadowsocks-\U0001F1FA\U0001F1F8US-156.146.38.169-0075"
+      name: "08-shadowsocks-\U0001F1FA\U0001F1F874774 | ⚡️Telegram = t.me/SOSkeyNET"
       password: shadowsocks
       port: 443
       server: 156.146.38.169
       type: ss
       udp: true
     - cipher: aes-128-gcm
-      name: "08-shadowsocks-\U0001F1FA\U0001F1F8US-156.146.38.167-3995"
+      name: "09-shadowsocks-\U0001F1FA\U0001F1F8US-156.146.38.170-0206"
+      password: shadowsocks
+      port: 443
+      server: 156.146.38.170
+      type: ss
+      udp: true
+    - cipher: aes-128-gcm
+      name: "10-shadowsocks-\U0001F1FA\U0001F1F8US-156.146.38.167-3995"
       password: shadowsocks
       port: 443
       server: 156.146.38.167
       type: ss
       udp: true
     - cipher: chacha20-ietf-poly1305
-      name: "09-shadowsocks-\U0001F1FA\U0001F1F8US-149.28.255.6-0101"
+      name: "11-shadowsocks-\U0001F1FA\U0001F1F8US-149.28.255.6-0101"
       password: GyZ5Xo0ht41vYmW3H4
       port: 816
       server: 149.28.255.6
       type: ss
       udp: true
-    - name: "10-hysteria2- By EbraSha \U0001F510"
-      password: 28beee5e-40ab-3c36-b797-1e4ecf27d0a0
-      port: 443
-      server: 104.168.76.175
-      skip-cert-verify: false
-      sni: u729792us175.ayxj.top
-      type: hysteria2
+    - alterId: 0
+      cipher: auto
+      name: "12-vmess-\U0001F1FA\U0001F1F8 US 14"
+      network: tcp
+      port: 22324
+      server: 216.106.185.141
+      type: vmess
+      udp: true
+      uuid: 04621bae-ab36-11ec-b909-0242ac120002
     - client-fingerprint: chrome
       flow: xtls-rprx-vision
-      name: "11-vless-\U0001F1FA\U0001F1F8 418 - US - VLESS/REALITY/PBK/SID/VISI"
+      name: "13-vless-\U0001F1FA\U0001F1F8 418 - US - VLESS/REALITY/PBK/SID/VISI"
       network: tcp
       port: 23576
       reality-opts:
@@ -85,57 +101,41 @@ proxies:
       type: vless
       udp: true
       uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-    - cipher: aes-128-gcm
-      name: "12-shadowsocks-\U0001F1FA\U0001F1F8 US 2"
-      password: shadowsocks
-      port: 443
-      server: 37.19.198.244
-      type: ss
-      udp: true
-    - cipher: aes-128-gcm
-      name: "13-shadowsocks-\U0001F1FA\U0001F1F8 US 3"
-      password: shadowsocks
-      port: 443
-      server: 37.19.198.236
-      type: ss
-      udp: true
-    - cipher: aes-128-gcm
-      name: 14-shadowsocks-@meliproxyy
-      password: shadowsocks
-      port: 443
-      server: 37.19.198.243
-      type: ss
-      udp: true
     - cipher: chacha20-ietf-poly1305
-      name: 15-shadowsocks-@meliproxyy
+      name: "14-shadowsocks-\U0001F1FA\U0001F1F8US-107.172.250.161-0111"
       password: QTmLViU4VEmuwbOxUw4IXd
       port: 59556
       server: 107.172.250.161
       type: ss
       udp: true
     - cipher: aes-128-gcm
-      name: "16-shadowsocks-\U0001F1FA\U0001F1F8US-37.19.198.160-0070"
+      name: "15-shadowsocks-\U0001F1FA\U0001F1F8 US 4"
       password: shadowsocks
       port: 443
       server: 37.19.198.160
       type: ss
       udp: true
-    - alterId: 0
-      cipher: auto
-      name: "17-vmess-\U0001F1FA\U0001F1F8 US 12"
-      network: tcp
-      port: 22324
-      server: 216.106.183.35
-      type: vmess
-      udp: true
-      uuid: 04621bae-ab36-11ec-b909-0242ac120002
-    - name: "18-hysteria2- By EbraSha \U0001F39B️"
-      password: 28beee5e-40ab-3c36-b797-1e4ecf27d0a0
+    - cipher: aes-128-gcm
+      name: 16-shadowsocks-@meliproxyy
+      password: shadowsocks
       port: 443
-      server: s544.ccgfw.online
-      skip-cert-verify: false
-      sni: u729792us544.ccgfw.online
-      type: hysteria2
+      server: 37.19.198.243
+      type: ss
+      udp: true
+    - cipher: aes-128-gcm
+      name: "17-shadowsocks-\U0001F1FA\U0001F1F8US-37.19.198.236-4101"
+      password: shadowsocks
+      port: 443
+      server: 37.19.198.236
+      type: ss
+      udp: true
+    - cipher: aes-128-gcm
+      name: "18-shadowsocks-\U0001F1FA\U0001F1F8US-37.19.198.244-0069"
+      password: shadowsocks
+      port: 443
+      server: 37.19.198.244
+      type: ss
+      udp: true
     - alterId: 0
       cipher: auto
       name: "19-vmess-\U0001F1FA\U0001F1F8 US 9"
@@ -159,16 +159,9 @@ proxies:
       type: vless
       udp: true
       uuid: free-fff-aaa
-    - cipher: chacha20-ietf-poly1305
-      name: "21-shadowsocks-\U0001F1FA\U0001F1F8US-62.146.231.112-0123"
-      password: 4e287631dc4fc8fc
-      port: 12012
-      server: 62.146.231.112
-      type: ss
-      udp: true
     - client-fingerprint: chrome
       flow: xtls-rprx-vision
-      name: "22-vless-\U0001F1FA\U0001F1F8 140 - US - VLESS/REALITY/PBK/VISION/U"
+      name: "21-vless-\U0001F1FA\U0001F1F8 140 - US - VLESS/REALITY/PBK/VISION/U"
       network: tcp
       port: 28190
       reality-opts:
@@ -180,19 +173,29 @@ proxies:
       type: vless
       udp: true
       uuid: 14c80e0e-f7ce-4991-94fc-99a1db4a9b1e
-    - cipher: chacha20-ietf-poly1305
-      name: "23-shadowsocks-\U0001F1FA\U0001F1F8US-216.105.168.18-0150"
-      password: hCCWOcIsK5wrFz4OX70rWf
-      port: 443
-      server: 216.105.168.18
-      type: ss
+    - alterId: 0
+      cipher: auto
+      name: "22-vmess-\U0001F1FA\U0001F1F8 US 12"
+      network: tcp
+      port: 22324
+      server: 216.106.183.35
+      type: vmess
       udp: true
-    - name: "24-trojan-\U0001F1FA\U0001F1F8 US 75"
+      uuid: 04621bae-ab36-11ec-b909-0242ac120002
+    - name: "23-trojan-\U0001F1FA\U0001F1F8 US 75"
       password: GTCCjtvCtuy03-aV1mwF0OkG2q6yL+Fc5K
       port: 443
       server: 207.126.167.241
       skip-cert-verify: false
       sni: 207.126.167.241
+      type: trojan
+      udp: true
+    - name: "24-trojan-\U0001F1E9\U0001F1EADE-2.26.54.174-0142"
+      password: TrojanPass2026!
+      port: 8448
+      server: 2.26.54.174
+      skip-cert-verify: false
+      sni: foolsland.ru
       type: trojan
       udp: true
     - name: "25-trojan-\U0001F1F3\U0001F1F1 NL 1"
@@ -204,770 +207,107 @@ proxies:
       type: trojan
       udp: true
     - cipher: aes-256-gcm
-      name: "26-shadowsocks-Channel id: @internet_azad_2026 \U0001F1FA\U0001F1F8"
+      name: "26-shadowsocks-Channel id: @ShadowProxy66 \U0001F1FA\U0001F1F8"
       password: 8JCsPssfgS8tiRwiMlhARg==
       port: 12000
       server: 15.204.254.187
       type: ss
       udp: true
-    - alterId: 0
-      cipher: auto
-      name: "27-vmess-\U0001F1FA\U0001F1F8 US 57"
-      network: ws
-      port: 42203
-      server: 96.47.230.5
-      servername: imafake.locker
-      skip-cert-verify: false
-      tls: true
-      type: vmess
-      udp: true
-      uuid: e3cb685e-7840-45cb-9d64-b2028d9b635e
-    - alterId: 0
-      cipher: auto
-      name: "28-vmess-\U0001F1FA\U0001F1F8 US 48"
-      network: ws
-      port: 53879
-      server: 96.47.230.5
-      servername: imafake.locker
-      skip-cert-verify: false
-      tls: true
-      type: vmess
-      udp: true
-      uuid: fa8f8911-2e9b-494e-9a8d-f80239ee2214
-    - alterId: 0
-      cipher: auto
-      name: "29-vmess-\U0001F1FA\U0001F1F8 US 72"
-      network: ws
-      port: 36367
-      server: 96.47.230.5
-      servername: imafake.locker
-      skip-cert-verify: false
-      tls: true
-      type: vmess
-      udp: true
-      uuid: f1a513d2-c32a-49dc-8e64-d4f8a2f1e001
-    - alterId: 0
-      cipher: auto
-      name: "30-vmess-\U0001F1FA\U0001F1F8 US 70"
-      network: ws
-      port: 25685
-      server: 96.47.230.5
-      servername: imafake.locker
-      skip-cert-verify: false
-      tls: true
-      type: vmess
-      udp: true
-      uuid: f1a513d2-c32a-49dc-8e64-d4f8a2f1e001
-    - alterId: 0
-      cipher: auto
-      name: "31-vmess-\U0001F1FA\U0001F1F8 US 16"
-      network: ws
-      port: 12022
-      server: 96.47.230.5
-      servername: imafake.locker
-      skip-cert-verify: false
-      tls: true
-      type: vmess
-      udp: true
-      uuid: d0e97ee2-c6de-48f8-bd4a-8e63a9cd9e89
-    - alterId: 0
-      cipher: auto
-      name: "32-vmess-\U0001F1FA\U0001F1F8 US 71"
-      network: ws
-      port: 24413
-      server: 96.47.230.5
-      servername: imafake.locker
-      skip-cert-verify: false
-      tls: true
-      type: vmess
-      udp: true
-      uuid: f1a513d2-c32a-49dc-8e64-d4f8a2f1e001
-    - alterId: 0
-      cipher: auto
-      name: "33-vmess-\U0001F1FA\U0001F1F8 US 15"
-      network: ws
-      port: 50124
-      server: 96.47.230.5
-      servername: imafake.locker
-      skip-cert-verify: false
-      tls: true
-      type: vmess
-      udp: true
-      uuid: 3b475934-cb2a-4d96-b260-5e50cca5d430
-    - alterId: 0
-      cipher: auto
-      name: "34-vmess-\U0001F1FA\U0001F1F8 US 17"
-      network: ws
-      port: 34259
-      server: 96.47.230.5
-      servername: imafake.locker
-      skip-cert-verify: false
-      tls: true
-      type: vmess
-      udp: true
-      uuid: e3cb685e-7840-45cb-9d64-b2028d9b635e
-    - alterId: 0
-      cipher: auto
-      name: "35-vmess-\U0001F1FA\U0001F1F8 US 50"
-      network: ws
-      port: 57054
-      server: 96.47.230.5
-      servername: imafake.locker
-      skip-cert-verify: false
-      tls: true
-      type: vmess
-      udp: true
-      uuid: f1a513d2-c32a-49dc-8e64-d4f8a2f1e001
-    - alterId: 0
-      cipher: auto
-      name: "36-vmess-\U0001F1FA\U0001F1F8 US 41"
-      network: ws
-      port: 63057
-      server: 96.47.230.5
-      servername: imafake.locker
-      skip-cert-verify: false
-      tls: true
-      type: vmess
-      udp: true
-      uuid: f1a513d2-c32a-49dc-8e64-d4f8a2f1e001
-    - alterId: 0
-      cipher: auto
-      name: "37-vmess-\U0001F1FA\U0001F1F8 US 14"
+    - flow: xtls-rprx-vision
+      name: "27-vless-\U0001F7E2\U0001F1F0\U0001F1F7[\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_6e661724"
       network: tcp
-      port: 22324
-      server: 216.106.185.141
-      type: vmess
-      udp: true
-      uuid: 04621bae-ab36-11ec-b909-0242ac120002
-    - alterId: 0
-      cipher: auto
-      name: "38-vmess-\U0001F1FA\U0001F1F8 US 49"
-      network: ws
-      port: 45348
-      server: 96.47.230.5
-      servername: imafake.locker
+      port: 443
+      server: 130.94.30.4
+      servername: u729792us2746.wagahaha.xyz
       skip-cert-verify: false
       tls: true
-      type: vmess
+      type: vless
       udp: true
-      uuid: fa8f8911-2e9b-494e-9a8d-f80239ee2214
+      uuid: 28beee5e-40ab-3c36-b797-1e4ecf27d0a0
+    - name: 28-trojan-美国 V2CROSS.COM
+      password: humanity
+      port: 443
+      server: 199.181.197.143
+      skip-cert-verify: false
+      sni: www.calmloud.com
+      type: trojan
+      udp: true
     - alterId: 0
       cipher: auto
-      name: "39-vmess-\U0001F1FA\U0001F1F8 US 18"
-      network: ws
-      port: 32358
-      server: 96.47.230.5
-      servername: imafake.locker
-      skip-cert-verify: false
-      tls: true
+      name: 29-vmess-V2 - 17
+      network: tcp
+      port: 10086
+      server: 57.151.100.27
       type: vmess
       udp: true
-      uuid: e3cb685e-7840-45cb-9d64-b2028d9b635e
-    - alterId: 0
-      cipher: auto
-      name: "40-vmess-\U0001F1FA\U0001F1F8 US 68"
-      network: ws
-      port: 15500
-      server: 96.47.230.5
-      servername: imafake.locker
-      skip-cert-verify: false
-      tls: true
-      type: vmess
-      udp: true
-      uuid: fa8f8911-2e9b-494e-9a8d-f80239ee2214
-    - alterId: 0
-      cipher: auto
-      name: "41-vmess-\U0001F1FA\U0001F1F8 US 44"
-      network: ws
-      port: 40606
-      server: 96.47.230.5
-      servername: imafake.locker
-      skip-cert-verify: false
-      tls: true
-      type: vmess
-      udp: true
-      uuid: fa8f8911-2e9b-494e-9a8d-f80239ee2214
-    - alterId: 0
-      cipher: auto
-      name: "42-vmess-\U0001F1FA\U0001F1F8 US 52"
-      network: ws
-      port: 27953
-      server: 96.47.230.5
-      servername: imafake.locker
-      skip-cert-verify: false
-      tls: true
-      type: vmess
-      udp: true
-      uuid: f1a513d2-c32a-49dc-8e64-d4f8a2f1e001
-    - alterId: 0
-      cipher: auto
-      name: "43-vmess-\U0001F1FA\U0001F1F8 US 51"
-      network: ws
-      port: 38944
-      server: 96.47.230.5
-      servername: imafake.locker
-      skip-cert-verify: false
-      tls: true
-      type: vmess
-      udp: true
-      uuid: f1a513d2-c32a-49dc-8e64-d4f8a2f1e001
-    - alterId: 0
-      cipher: auto
-      name: "44-vmess-\U0001F1FA\U0001F1F8 US 47"
-      network: ws
-      port: 63311
-      server: 96.47.230.5
-      servername: imafake.locker
-      skip-cert-verify: false
-      tls: true
-      type: vmess
-      udp: true
-      uuid: fa8f8911-2e9b-494e-9a8d-f80239ee2214
-    - alterId: 0
-      cipher: auto
-      name: "45-vmess-\U0001F1FA\U0001F1F8 US 45"
-      network: ws
-      port: 59742
-      server: 96.47.230.5
-      servername: imafake.locker
-      skip-cert-verify: false
-      tls: true
-      type: vmess
-      udp: true
-      uuid: fa8f8911-2e9b-494e-9a8d-f80239ee2214
-    - alterId: 0
-      cipher: auto
-      name: "46-vmess-\U0001F1FA\U0001F1F8 US 46"
-      network: ws
-      port: 55503
-      server: 96.47.230.5
-      servername: imafake.locker
-      skip-cert-verify: false
-      tls: true
-      type: vmess
-      udp: true
-      uuid: f1a513d2-c32a-49dc-8e64-d4f8a2f1e001
-    - alterId: 0
-      cipher: auto
-      name: "47-vmess-\U0001F1FA\U0001F1F8 US 69"
-      network: ws
-      port: 35583
-      server: 96.47.230.5
-      servername: imafake.locker
-      skip-cert-verify: false
-      tls: true
-      type: vmess
-      udp: true
-      uuid: f1a513d2-c32a-49dc-8e64-d4f8a2f1e001
-    - alterId: 0
-      cipher: auto
-      name: "48-vmess-\U0001F1FA\U0001F1F8 US 53"
-      network: ws
-      port: 60966
-      server: 96.47.230.5
-      servername: imafake.locker
-      skip-cert-verify: false
-      tls: true
-      type: vmess
-      udp: true
-      uuid: fa8f8911-2e9b-494e-9a8d-f80239ee2214
-    - alterId: 0
-      cipher: auto
-      name: "49-vmess-\U0001F1FA\U0001F1F8 US 42"
-      network: ws
-      port: 49580
-      server: 96.47.230.5
-      servername: imafake.locker
-      skip-cert-verify: false
-      tls: true
-      type: vmess
-      udp: true
-      uuid: fa8f8911-2e9b-494e-9a8d-f80239ee2214
-    - alterId: 0
-      cipher: auto
-      name: "50-vmess-\U0001F1FA\U0001F1F8 US 28"
-      network: ws
-      port: 23722
-      server: 96.47.230.5
-      servername: imafake.locker
-      skip-cert-verify: false
-      tls: true
-      type: vmess
-      udp: true
-      uuid: fa8f8911-2e9b-494e-9a8d-f80239ee2214
-    - alterId: 0
-      cipher: auto
-      name: "51-vmess-\U0001F1FA\U0001F1F8 US 32"
-      network: ws
-      port: 64976
-      server: 96.47.230.5
-      servername: imafake.locker
-      skip-cert-verify: false
-      tls: true
-      type: vmess
-      udp: true
-      uuid: f1a513d2-c32a-49dc-8e64-d4f8a2f1e001
-    - alterId: 0
-      cipher: auto
-      name: "52-vmess-\U0001F1FA\U0001F1F8 US 22"
-      network: ws
-      port: 55980
-      server: 96.47.230.5
-      servername: imafake.locker
-      skip-cert-verify: false
-      tls: true
-      type: vmess
-      udp: true
-      uuid: f1a513d2-c32a-49dc-8e64-d4f8a2f1e001
-    - alterId: 0
-      cipher: auto
-      name: "53-vmess-\U0001F1FA\U0001F1F8 US 26"
-      network: ws
-      port: 61335
-      server: 96.47.230.5
-      servername: imafake.locker
-      skip-cert-verify: false
-      tls: true
-      type: vmess
-      udp: true
-      uuid: fa8f8911-2e9b-494e-9a8d-f80239ee2214
-    - alterId: 0
-      cipher: auto
-      name: "54-vmess-\U0001F1FA\U0001F1F8 US 29"
-      network: ws
-      port: 12203
-      server: 96.47.230.5
-      servername: imafake.locker
-      skip-cert-verify: false
-      tls: true
-      type: vmess
-      udp: true
-      uuid: fa8f8911-2e9b-494e-9a8d-f80239ee2214
-    - alterId: 0
-      cipher: auto
-      name: "55-vmess-\U0001F1FA\U0001F1F8 US 39"
-      network: ws
-      port: 60655
-      server: 96.47.230.5
-      servername: imafake.locker
-      skip-cert-verify: false
-      tls: true
-      type: vmess
-      udp: true
-      uuid: f1a513d2-c32a-49dc-8e64-d4f8a2f1e001
-    - alterId: 0
-      cipher: auto
-      name: "56-vmess-\U0001F1FA\U0001F1F8 US 24"
-      network: ws
-      port: 30103
-      server: 96.47.230.5
-      servername: imafake.locker
-      skip-cert-verify: false
-      tls: true
-      type: vmess
-      udp: true
-      uuid: fa8f8911-2e9b-494e-9a8d-f80239ee2214
-    - alterId: 0
-      cipher: auto
-      name: "57-vmess-\U0001F1FA\U0001F1F8 US 21"
-      network: ws
-      port: 42321
-      server: 96.47.230.5
-      servername: imafake.locker
-      skip-cert-verify: false
-      tls: true
-      type: vmess
-      udp: true
-      uuid: f1a513d2-c32a-49dc-8e64-d4f8a2f1e001
-    - alterId: 0
-      cipher: auto
-      name: "58-vmess-\U0001F1FA\U0001F1F8 US 30"
-      network: ws
-      port: 45303
-      server: 96.47.230.5
-      servername: imafake.locker
-      skip-cert-verify: false
-      tls: true
-      type: vmess
-      udp: true
-      uuid: fa8f8911-2e9b-494e-9a8d-f80239ee2214
-    - alterId: 0
-      cipher: auto
-      name: "59-vmess-\U0001F1FA\U0001F1F8 US 31"
-      network: ws
-      port: 18070
-      server: 96.47.230.5
-      servername: imafake.locker
-      skip-cert-verify: false
-      tls: true
-      type: vmess
-      udp: true
-      uuid: fa8f8911-2e9b-494e-9a8d-f80239ee2214
-    - alterId: 0
-      cipher: auto
-      name: "60-vmess-\U0001F1FA\U0001F1F8 US 20"
-      network: ws
-      port: 56197
-      server: 96.47.230.5
-      servername: imafake.locker
-      skip-cert-verify: false
-      tls: true
-      type: vmess
-      udp: true
-      uuid: f1a513d2-c32a-49dc-8e64-d4f8a2f1e001
-    - alterId: 0
-      cipher: auto
-      name: "61-vmess-\U0001F1FA\U0001F1F8 US 33"
-      network: ws
-      port: 44756
-      server: 96.47.230.5
-      servername: imafake.locker
-      skip-cert-verify: false
-      tls: true
-      type: vmess
-      udp: true
-      uuid: fa8f8911-2e9b-494e-9a8d-f80239ee2214
-    - alterId: 0
-      cipher: auto
-      name: "62-vmess-\U0001F1FA\U0001F1F8 US 19"
-      network: ws
-      port: 27833
-      server: 96.47.230.5
-      servername: imafake.locker
-      skip-cert-verify: false
-      tls: true
-      type: vmess
-      udp: true
-      uuid: f1a513d2-c32a-49dc-8e64-d4f8a2f1e001
-    - alterId: 0
-      cipher: auto
-      name: "63-vmess-\U0001F1FA\U0001F1F8 US 23"
-      network: ws
-      port: 58442
-      server: 96.47.230.5
-      servername: imafake.locker
-      skip-cert-verify: false
-      tls: true
-      type: vmess
-      udp: true
-      uuid: fa8f8911-2e9b-494e-9a8d-f80239ee2214
-    - alterId: 0
-      cipher: auto
-      name: "64-vmess-\U0001F1FA\U0001F1F8 US 25"
-      network: ws
-      port: 56670
-      server: 96.47.230.5
-      servername: imafake.locker
-      skip-cert-verify: false
-      tls: true
-      type: vmess
-      udp: true
-      uuid: f1a513d2-c32a-49dc-8e64-d4f8a2f1e001
-    - alterId: 0
-      cipher: auto
-      name: "65-vmess-\U0001F1FA\U0001F1F8 US 27"
-      network: ws
-      port: 51893
-      server: 96.47.230.5
-      servername: imafake.locker
-      skip-cert-verify: false
-      tls: true
-      type: vmess
-      udp: true
-      uuid: e3cb685e-7840-45cb-9d64-b2028d9b635e
-    - alterId: 0
-      cipher: auto
-      name: "66-vmess-\U0001F1FA\U0001F1F8 US 74"
-      network: ws
-      port: 13721
-      server: 96.47.230.5
-      servername: imafake.locker
-      skip-cert-verify: false
-      tls: true
-      type: vmess
-      udp: true
-      uuid: f1a513d2-c32a-49dc-8e64-d4f8a2f1e001
-    - alterId: 0
-      cipher: auto
-      name: "67-vmess-\U0001F1FA\U0001F1F8 US 56"
-      network: ws
-      port: 57632
-      server: 96.47.230.5
-      servername: imafake.locker
-      skip-cert-verify: false
-      tls: true
-      type: vmess
-      udp: true
-      uuid: f1a513d2-c32a-49dc-8e64-d4f8a2f1e001
-    - alterId: 0
-      cipher: auto
-      name: "68-vmess-\U0001F1FA\U0001F1F8 US 65"
-      network: ws
-      port: 42909
-      server: 96.47.230.5
-      servername: imafake.locker
-      skip-cert-verify: false
-      tls: true
-      type: vmess
-      udp: true
-      uuid: f1a513d2-c32a-49dc-8e64-d4f8a2f1e001
-    - alterId: 0
-      cipher: auto
-      name: "69-vmess-\U0001F1FA\U0001F1F8 US 55"
-      network: ws
-      port: 28877
-      server: 96.47.230.5
-      servername: imafake.locker
-      skip-cert-verify: false
-      tls: true
-      type: vmess
-      udp: true
-      uuid: e3cb685e-7840-45cb-9d64-b2028d9b635e
-    - alterId: 0
-      cipher: auto
-      name: "70-vmess-\U0001F1FA\U0001F1F8 US 64"
-      network: ws
-      port: 47785
-      server: 96.47.230.5
-      servername: imafake.locker
-      skip-cert-verify: false
-      tls: true
-      type: vmess
-      udp: true
-      uuid: fa8f8911-2e9b-494e-9a8d-f80239ee2214
-    - alterId: 0
-      cipher: auto
-      name: "71-vmess-\U0001F1FA\U0001F1F8 US 54"
-      network: ws
-      port: 46294
-      server: 96.47.230.5
-      servername: imafake.locker
-      skip-cert-verify: false
-      tls: true
-      type: vmess
-      udp: true
-      uuid: fa8f8911-2e9b-494e-9a8d-f80239ee2214
-    - alterId: 0
-      cipher: auto
-      name: "72-vmess-\U0001F1FA\U0001F1F8 US 73"
-      network: ws
-      port: 43875
-      server: 96.47.230.5
-      servername: imafake.locker
-      skip-cert-verify: false
-      tls: true
-      type: vmess
-      udp: true
-      uuid: e3cb685e-7840-45cb-9d64-b2028d9b635e
-    - alterId: 0
-      cipher: auto
-      name: "73-vmess-\U0001F1FA\U0001F1F8 US 61"
-      network: ws
-      port: 22705
-      server: 96.47.230.5
-      servername: imafake.locker
-      skip-cert-verify: false
-      tls: true
-      type: vmess
-      udp: true
-      uuid: fa8f8911-2e9b-494e-9a8d-f80239ee2214
-    - alterId: 0
-      cipher: auto
-      name: "74-vmess-\U0001F1FA\U0001F1F8 US 43"
-      network: ws
-      port: 40248
-      server: 96.47.230.5
-      servername: imafake.locker
-      skip-cert-verify: false
-      tls: true
-      type: vmess
-      udp: true
-      uuid: f1a513d2-c32a-49dc-8e64-d4f8a2f1e001
-    - alterId: 0
-      cipher: auto
-      name: "75-vmess-\U0001F1FA\U0001F1F8 US 35"
-      network: ws
-      port: 35296
-      server: 96.47.230.5
-      servername: imafake.locker
-      skip-cert-verify: false
-      tls: true
-      type: vmess
-      udp: true
-      uuid: e3cb685e-7840-45cb-9d64-b2028d9b635e
-    - alterId: 0
-      cipher: auto
-      name: "76-vmess-\U0001F1FA\U0001F1F8 US 38"
-      network: ws
-      port: 31709
-      server: 96.47.230.5
-      servername: imafake.locker
-      skip-cert-verify: false
-      tls: true
-      type: vmess
-      udp: true
-      uuid: fa8f8911-2e9b-494e-9a8d-f80239ee2214
+      uuid: 550e8400-e29b-41d4-a716-446655440000
 proxy-groups:
     - interval: 300
       name: auto
       proxies:
-        - "01-shadowsocks-\U0001F1FA\U0001F1F8US-108.181.0.177-0096"
-        - "02-shadowsocks-\U0001F1FA\U0001F1F8US-173.244.56.9-0102"
-        - "03-shadowsocks-\U0001F1FA\U0001F1F8US-156.146.38.170-0073"
-        - "04-shadowsocks-\U0001F1FA\U0001F1F8US-173.244.56.6-3876"
-        - 05-vmess-@chillguy_vpn
-        - "06-shadowsocks-\U0001F1FA\U0001F1F8US-156.146.38.168-0074"
-        - "07-shadowsocks-\U0001F1FA\U0001F1F8US-156.146.38.169-0075"
-        - "08-shadowsocks-\U0001F1FA\U0001F1F8US-156.146.38.167-3995"
-        - "09-shadowsocks-\U0001F1FA\U0001F1F8US-149.28.255.6-0101"
-        - "10-hysteria2- By EbraSha \U0001F510"
-        - "11-vless-\U0001F1FA\U0001F1F8 418 - US - VLESS/REALITY/PBK/SID/VISI"
-        - "12-shadowsocks-\U0001F1FA\U0001F1F8 US 2"
-        - "13-shadowsocks-\U0001F1FA\U0001F1F8 US 3"
-        - 14-shadowsocks-@meliproxyy
-        - 15-shadowsocks-@meliproxyy
-        - "16-shadowsocks-\U0001F1FA\U0001F1F8US-37.19.198.160-0070"
-        - "17-vmess-\U0001F1FA\U0001F1F8 US 12"
-        - "18-hysteria2- By EbraSha \U0001F39B️"
+        - "01-shadowsocks-\U0001F1FA\U0001F1F8US-216.105.168.18-0150"
+        - "02-shadowsocks-\U0001F1FA\U0001F1F8US-108.181.0.177-0096"
+        - "03-shadowsocks-\U0001F1FA\U0001F1F8US-173.244.56.6-3876"
+        - "04-shadowsocks-\U0001F1FA\U0001F1F8 US 10"
+        - "05-hysteria2- By EbraSha \U0001F579️"
+        - "06-shadowsocks-\U0001F1FA\U0001F1F8 US 6"
+        - 07-vmess->>@v2ray_configs_pool::US::US::US::US::U
+        - "08-shadowsocks-\U0001F1FA\U0001F1F874774 | ⚡️Telegram = t.me/SOSkeyNET"
+        - "09-shadowsocks-\U0001F1FA\U0001F1F8US-156.146.38.170-0206"
+        - "10-shadowsocks-\U0001F1FA\U0001F1F8US-156.146.38.167-3995"
+        - "11-shadowsocks-\U0001F1FA\U0001F1F8US-149.28.255.6-0101"
+        - "12-vmess-\U0001F1FA\U0001F1F8 US 14"
+        - "13-vless-\U0001F1FA\U0001F1F8 418 - US - VLESS/REALITY/PBK/SID/VISI"
+        - "14-shadowsocks-\U0001F1FA\U0001F1F8US-107.172.250.161-0111"
+        - "15-shadowsocks-\U0001F1FA\U0001F1F8 US 4"
+        - 16-shadowsocks-@meliproxyy
+        - "17-shadowsocks-\U0001F1FA\U0001F1F8US-37.19.198.236-4101"
+        - "18-shadowsocks-\U0001F1FA\U0001F1F8US-37.19.198.244-0069"
         - "19-vmess-\U0001F1FA\U0001F1F8 US 9"
         - "20-vless-\U0001F1FA\U0001F1F8 US 13"
-        - "21-shadowsocks-\U0001F1FA\U0001F1F8US-62.146.231.112-0123"
-        - "22-vless-\U0001F1FA\U0001F1F8 140 - US - VLESS/REALITY/PBK/VISION/U"
-        - "23-shadowsocks-\U0001F1FA\U0001F1F8US-216.105.168.18-0150"
-        - "24-trojan-\U0001F1FA\U0001F1F8 US 75"
+        - "21-vless-\U0001F1FA\U0001F1F8 140 - US - VLESS/REALITY/PBK/VISION/U"
+        - "22-vmess-\U0001F1FA\U0001F1F8 US 12"
+        - "23-trojan-\U0001F1FA\U0001F1F8 US 75"
+        - "24-trojan-\U0001F1E9\U0001F1EADE-2.26.54.174-0142"
         - "25-trojan-\U0001F1F3\U0001F1F1 NL 1"
-        - "26-shadowsocks-Channel id: @internet_azad_2026 \U0001F1FA\U0001F1F8"
-        - "27-vmess-\U0001F1FA\U0001F1F8 US 57"
-        - "28-vmess-\U0001F1FA\U0001F1F8 US 48"
-        - "29-vmess-\U0001F1FA\U0001F1F8 US 72"
-        - "30-vmess-\U0001F1FA\U0001F1F8 US 70"
-        - "31-vmess-\U0001F1FA\U0001F1F8 US 16"
-        - "32-vmess-\U0001F1FA\U0001F1F8 US 71"
-        - "33-vmess-\U0001F1FA\U0001F1F8 US 15"
-        - "34-vmess-\U0001F1FA\U0001F1F8 US 17"
-        - "35-vmess-\U0001F1FA\U0001F1F8 US 50"
-        - "36-vmess-\U0001F1FA\U0001F1F8 US 41"
-        - "37-vmess-\U0001F1FA\U0001F1F8 US 14"
-        - "38-vmess-\U0001F1FA\U0001F1F8 US 49"
-        - "39-vmess-\U0001F1FA\U0001F1F8 US 18"
-        - "40-vmess-\U0001F1FA\U0001F1F8 US 68"
-        - "41-vmess-\U0001F1FA\U0001F1F8 US 44"
-        - "42-vmess-\U0001F1FA\U0001F1F8 US 52"
-        - "43-vmess-\U0001F1FA\U0001F1F8 US 51"
-        - "44-vmess-\U0001F1FA\U0001F1F8 US 47"
-        - "45-vmess-\U0001F1FA\U0001F1F8 US 45"
-        - "46-vmess-\U0001F1FA\U0001F1F8 US 46"
-        - "47-vmess-\U0001F1FA\U0001F1F8 US 69"
-        - "48-vmess-\U0001F1FA\U0001F1F8 US 53"
-        - "49-vmess-\U0001F1FA\U0001F1F8 US 42"
-        - "50-vmess-\U0001F1FA\U0001F1F8 US 28"
-        - "51-vmess-\U0001F1FA\U0001F1F8 US 32"
-        - "52-vmess-\U0001F1FA\U0001F1F8 US 22"
-        - "53-vmess-\U0001F1FA\U0001F1F8 US 26"
-        - "54-vmess-\U0001F1FA\U0001F1F8 US 29"
-        - "55-vmess-\U0001F1FA\U0001F1F8 US 39"
-        - "56-vmess-\U0001F1FA\U0001F1F8 US 24"
-        - "57-vmess-\U0001F1FA\U0001F1F8 US 21"
-        - "58-vmess-\U0001F1FA\U0001F1F8 US 30"
-        - "59-vmess-\U0001F1FA\U0001F1F8 US 31"
-        - "60-vmess-\U0001F1FA\U0001F1F8 US 20"
-        - "61-vmess-\U0001F1FA\U0001F1F8 US 33"
-        - "62-vmess-\U0001F1FA\U0001F1F8 US 19"
-        - "63-vmess-\U0001F1FA\U0001F1F8 US 23"
-        - "64-vmess-\U0001F1FA\U0001F1F8 US 25"
-        - "65-vmess-\U0001F1FA\U0001F1F8 US 27"
-        - "66-vmess-\U0001F1FA\U0001F1F8 US 74"
-        - "67-vmess-\U0001F1FA\U0001F1F8 US 56"
-        - "68-vmess-\U0001F1FA\U0001F1F8 US 65"
-        - "69-vmess-\U0001F1FA\U0001F1F8 US 55"
-        - "70-vmess-\U0001F1FA\U0001F1F8 US 64"
-        - "71-vmess-\U0001F1FA\U0001F1F8 US 54"
-        - "72-vmess-\U0001F1FA\U0001F1F8 US 73"
-        - "73-vmess-\U0001F1FA\U0001F1F8 US 61"
-        - "74-vmess-\U0001F1FA\U0001F1F8 US 43"
-        - "75-vmess-\U0001F1FA\U0001F1F8 US 35"
-        - "76-vmess-\U0001F1FA\U0001F1F8 US 38"
+        - "26-shadowsocks-Channel id: @ShadowProxy66 \U0001F1FA\U0001F1F8"
+        - "27-vless-\U0001F7E2\U0001F1F0\U0001F1F7[\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_6e661724"
+        - 28-trojan-美国 V2CROSS.COM
+        - 29-vmess-V2 - 17
       type: url-test
       url: https://www.gstatic.com/generate_204
     - name: select
       proxies:
         - auto
-        - "01-shadowsocks-\U0001F1FA\U0001F1F8US-108.181.0.177-0096"
-        - "02-shadowsocks-\U0001F1FA\U0001F1F8US-173.244.56.9-0102"
-        - "03-shadowsocks-\U0001F1FA\U0001F1F8US-156.146.38.170-0073"
-        - "04-shadowsocks-\U0001F1FA\U0001F1F8US-173.244.56.6-3876"
-        - 05-vmess-@chillguy_vpn
-        - "06-shadowsocks-\U0001F1FA\U0001F1F8US-156.146.38.168-0074"
-        - "07-shadowsocks-\U0001F1FA\U0001F1F8US-156.146.38.169-0075"
-        - "08-shadowsocks-\U0001F1FA\U0001F1F8US-156.146.38.167-3995"
-        - "09-shadowsocks-\U0001F1FA\U0001F1F8US-149.28.255.6-0101"
-        - "10-hysteria2- By EbraSha \U0001F510"
-        - "11-vless-\U0001F1FA\U0001F1F8 418 - US - VLESS/REALITY/PBK/SID/VISI"
-        - "12-shadowsocks-\U0001F1FA\U0001F1F8 US 2"
-        - "13-shadowsocks-\U0001F1FA\U0001F1F8 US 3"
-        - 14-shadowsocks-@meliproxyy
-        - 15-shadowsocks-@meliproxyy
-        - "16-shadowsocks-\U0001F1FA\U0001F1F8US-37.19.198.160-0070"
-        - "17-vmess-\U0001F1FA\U0001F1F8 US 12"
-        - "18-hysteria2- By EbraSha \U0001F39B️"
+        - "01-shadowsocks-\U0001F1FA\U0001F1F8US-216.105.168.18-0150"
+        - "02-shadowsocks-\U0001F1FA\U0001F1F8US-108.181.0.177-0096"
+        - "03-shadowsocks-\U0001F1FA\U0001F1F8US-173.244.56.6-3876"
+        - "04-shadowsocks-\U0001F1FA\U0001F1F8 US 10"
+        - "05-hysteria2- By EbraSha \U0001F579️"
+        - "06-shadowsocks-\U0001F1FA\U0001F1F8 US 6"
+        - 07-vmess->>@v2ray_configs_pool::US::US::US::US::U
+        - "08-shadowsocks-\U0001F1FA\U0001F1F874774 | ⚡️Telegram = t.me/SOSkeyNET"
+        - "09-shadowsocks-\U0001F1FA\U0001F1F8US-156.146.38.170-0206"
+        - "10-shadowsocks-\U0001F1FA\U0001F1F8US-156.146.38.167-3995"
+        - "11-shadowsocks-\U0001F1FA\U0001F1F8US-149.28.255.6-0101"
+        - "12-vmess-\U0001F1FA\U0001F1F8 US 14"
+        - "13-vless-\U0001F1FA\U0001F1F8 418 - US - VLESS/REALITY/PBK/SID/VISI"
+        - "14-shadowsocks-\U0001F1FA\U0001F1F8US-107.172.250.161-0111"
+        - "15-shadowsocks-\U0001F1FA\U0001F1F8 US 4"
+        - 16-shadowsocks-@meliproxyy
+        - "17-shadowsocks-\U0001F1FA\U0001F1F8US-37.19.198.236-4101"
+        - "18-shadowsocks-\U0001F1FA\U0001F1F8US-37.19.198.244-0069"
         - "19-vmess-\U0001F1FA\U0001F1F8 US 9"
         - "20-vless-\U0001F1FA\U0001F1F8 US 13"
-        - "21-shadowsocks-\U0001F1FA\U0001F1F8US-62.146.231.112-0123"
-        - "22-vless-\U0001F1FA\U0001F1F8 140 - US - VLESS/REALITY/PBK/VISION/U"
-        - "23-shadowsocks-\U0001F1FA\U0001F1F8US-216.105.168.18-0150"
-        - "24-trojan-\U0001F1FA\U0001F1F8 US 75"
+        - "21-vless-\U0001F1FA\U0001F1F8 140 - US - VLESS/REALITY/PBK/VISION/U"
+        - "22-vmess-\U0001F1FA\U0001F1F8 US 12"
+        - "23-trojan-\U0001F1FA\U0001F1F8 US 75"
+        - "24-trojan-\U0001F1E9\U0001F1EADE-2.26.54.174-0142"
         - "25-trojan-\U0001F1F3\U0001F1F1 NL 1"
-        - "26-shadowsocks-Channel id: @internet_azad_2026 \U0001F1FA\U0001F1F8"
-        - "27-vmess-\U0001F1FA\U0001F1F8 US 57"
-        - "28-vmess-\U0001F1FA\U0001F1F8 US 48"
-        - "29-vmess-\U0001F1FA\U0001F1F8 US 72"
-        - "30-vmess-\U0001F1FA\U0001F1F8 US 70"
-        - "31-vmess-\U0001F1FA\U0001F1F8 US 16"
-        - "32-vmess-\U0001F1FA\U0001F1F8 US 71"
-        - "33-vmess-\U0001F1FA\U0001F1F8 US 15"
-        - "34-vmess-\U0001F1FA\U0001F1F8 US 17"
-        - "35-vmess-\U0001F1FA\U0001F1F8 US 50"
-        - "36-vmess-\U0001F1FA\U0001F1F8 US 41"
-        - "37-vmess-\U0001F1FA\U0001F1F8 US 14"
-        - "38-vmess-\U0001F1FA\U0001F1F8 US 49"
-        - "39-vmess-\U0001F1FA\U0001F1F8 US 18"
-        - "40-vmess-\U0001F1FA\U0001F1F8 US 68"
-        - "41-vmess-\U0001F1FA\U0001F1F8 US 44"
-        - "42-vmess-\U0001F1FA\U0001F1F8 US 52"
-        - "43-vmess-\U0001F1FA\U0001F1F8 US 51"
-        - "44-vmess-\U0001F1FA\U0001F1F8 US 47"
-        - "45-vmess-\U0001F1FA\U0001F1F8 US 45"
-        - "46-vmess-\U0001F1FA\U0001F1F8 US 46"
-        - "47-vmess-\U0001F1FA\U0001F1F8 US 69"
-        - "48-vmess-\U0001F1FA\U0001F1F8 US 53"
-        - "49-vmess-\U0001F1FA\U0001F1F8 US 42"
-        - "50-vmess-\U0001F1FA\U0001F1F8 US 28"
-        - "51-vmess-\U0001F1FA\U0001F1F8 US 32"
-        - "52-vmess-\U0001F1FA\U0001F1F8 US 22"
-        - "53-vmess-\U0001F1FA\U0001F1F8 US 26"
-        - "54-vmess-\U0001F1FA\U0001F1F8 US 29"
-        - "55-vmess-\U0001F1FA\U0001F1F8 US 39"
-        - "56-vmess-\U0001F1FA\U0001F1F8 US 24"
-        - "57-vmess-\U0001F1FA\U0001F1F8 US 21"
-        - "58-vmess-\U0001F1FA\U0001F1F8 US 30"
-        - "59-vmess-\U0001F1FA\U0001F1F8 US 31"
-        - "60-vmess-\U0001F1FA\U0001F1F8 US 20"
-        - "61-vmess-\U0001F1FA\U0001F1F8 US 33"
-        - "62-vmess-\U0001F1FA\U0001F1F8 US 19"
-        - "63-vmess-\U0001F1FA\U0001F1F8 US 23"
-        - "64-vmess-\U0001F1FA\U0001F1F8 US 25"
-        - "65-vmess-\U0001F1FA\U0001F1F8 US 27"
-        - "66-vmess-\U0001F1FA\U0001F1F8 US 74"
-        - "67-vmess-\U0001F1FA\U0001F1F8 US 56"
-        - "68-vmess-\U0001F1FA\U0001F1F8 US 65"
-        - "69-vmess-\U0001F1FA\U0001F1F8 US 55"
-        - "70-vmess-\U0001F1FA\U0001F1F8 US 64"
-        - "71-vmess-\U0001F1FA\U0001F1F8 US 54"
-        - "72-vmess-\U0001F1FA\U0001F1F8 US 73"
-        - "73-vmess-\U0001F1FA\U0001F1F8 US 61"
-        - "74-vmess-\U0001F1FA\U0001F1F8 US 43"
-        - "75-vmess-\U0001F1FA\U0001F1F8 US 35"
-        - "76-vmess-\U0001F1FA\U0001F1F8 US 38"
+        - "26-shadowsocks-Channel id: @ShadowProxy66 \U0001F1FA\U0001F1F8"
+        - "27-vless-\U0001F7E2\U0001F1F0\U0001F1F7[\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_6e661724"
+        - 28-trojan-美国 V2CROSS.COM
+        - 29-vmess-V2 - 17
       type: select
 rules:
     - MATCH,select
