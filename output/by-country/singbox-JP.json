@@ -5,7 +5,7 @@
       "password": "shadowsocks",
       "server": "149.22.87.240",
       "server_port": 443,
-      "tag": "01-shadowsocks-🇯🇵JP-149.22.87.240-0119",
+      "tag": "01-shadowsocks-🇯🇵 JP 2",
       "type": "shadowsocks"
     },
     {
@@ -13,7 +13,7 @@
       "password": "shadowsocks",
       "server": "149.22.87.204",
       "server_port": 443,
-      "tag": "02-shadowsocks-🇯🇵 JP 1",
+      "tag": "02-shadowsocks-🇯🇵JP-149.22.87.204-0121",
       "type": "shadowsocks"
     },
     {
@@ -21,7 +21,7 @@
       "password": "shadowsocks",
       "server": "149.22.87.241",
       "server_port": 443,
-      "tag": "03-shadowsocks-🇯🇵JP-149.22.87.241-4048",
+      "tag": "03-shadowsocks-🇯🇵JP-149.22.87.241-0120",
       "type": "shadowsocks"
     },
     {
@@ -44,7 +44,19 @@
       "password": "s75Gtmy56sptTA39hmBH965YYx4ZgfQR_I",
       "server": "103.125.219.70",
       "server_port": 443,
-      "tag": "06-trojan-🇯🇵 JP 8",
+      "tag": "06-trojan-🇯🇵 JP 12",
+      "tls": {
+        "enabled": true,
+        "insecure": false,
+        "server_name": "103.125.219.70"
+      },
+      "type": "trojan"
+    },
+    {
+      "password": "s75Gtmy56sptTA39hmBH965YYx4ZgfQR_I",
+      "server": "103.125.216.169",
+      "server_port": 443,
+      "tag": "07-trojan-🇯🇵 JP 11",
       "tls": {
         "enabled": true,
         "insecure": false,
@@ -53,27 +65,15 @@
       "type": "trojan"
     },
     {
-      "password": "s75Gtmy56sptTA39hmBH965YYx4ZgfQR_I",
-      "server": "103.125.216.169",
-      "server_port": 443,
-      "tag": "07-trojan-🇯🇵 JP 7",
-      "tls": {
-        "enabled": true,
-        "insecure": false,
-        "server_name": "103.125.216.169"
-      },
-      "type": "trojan"
-    },
-    {
       "interval": "5m",
       "outbounds": [
-        "01-shadowsocks-🇯🇵JP-149.22.87.240-0119",
-        "02-shadowsocks-🇯🇵 JP 1",
-        "03-shadowsocks-🇯🇵JP-149.22.87.241-4048",
+        "01-shadowsocks-🇯🇵 JP 2",
+        "02-shadowsocks-🇯🇵JP-149.22.87.204-0121",
+        "03-shadowsocks-🇯🇵JP-149.22.87.241-0120",
         "04-shadowsocks-🇯🇵JP-47.79.144.115-0172",
         "05-shadowsocks-🇯🇵JP-103.106.228.175-0125",
-        "06-trojan-🇯🇵 JP 8",
-        "07-trojan-🇯🇵 JP 7"
+        "06-trojan-🇯🇵 JP 12",
+        "07-trojan-🇯🇵 JP 11"
       ],
       "tag": "auto",
       "type": "urltest",
@@ -82,13 +82,13 @@
     {
       "outbounds": [
         "auto",
-        "01-shadowsocks-🇯🇵JP-149.22.87.240-0119",
-        "02-shadowsocks-🇯🇵 JP 1",
-        "03-shadowsocks-🇯🇵JP-149.22.87.241-4048",
+        "01-shadowsocks-🇯🇵 JP 2",
+        "02-shadowsocks-🇯🇵JP-149.22.87.204-0121",
+        "03-shadowsocks-🇯🇵JP-149.22.87.241-0120",
         "04-shadowsocks-🇯🇵JP-47.79.144.115-0172",
         "05-shadowsocks-🇯🇵JP-103.106.228.175-0125",
-        "06-trojan-🇯🇵 JP 8",
-        "07-trojan-🇯🇵 JP 7"
+        "06-trojan-🇯🇵 JP 12",
+        "07-trojan-🇯🇵 JP 11"
       ],
       "tag": "select",
       "type": "selector"
