@@ -6,25 +6,25 @@ proxies:
       server: 146.70.61.37
       type: ss
       udp: true
-    - cipher: aes-128-gcm
-      name: "02-shadowsocks-https://t.me/v2rayNplus |\U0001F1EC\U0001F1E7"
-      password: shadowsocks
-      port: 443
-      server: 141.98.101.182
-      type: ss
-      udp: true
     - cipher: aes-256-gcm
-      name: "03-shadowsocks-\U0001F1EC\U0001F1E7 Join Telegram:@Farah_VPN \U0001F1EC\U0001F1E7"
+      name: "02-shadowsocks-\U0001F1EC\U0001F1E7GB-94.156.250.148-0101"
       password: RexnBgU7EV5ADxG
       port: 7001
       server: 94.156.250.148
       type: ss
       udp: true
     - cipher: aes-128-gcm
-      name: "04-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.179-0111"
+      name: "03-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.178-0108"
       password: shadowsocks
       port: 443
-      server: 141.98.101.179
+      server: 141.98.101.178
+      type: ss
+      udp: true
+    - cipher: aes-128-gcm
+      name: "04-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.181-0110"
+      password: shadowsocks
+      port: 443
+      server: 141.98.101.181
       type: ss
       udp: true
     - name: 05-vless->>@oneclickvpnkeys::GB
@@ -42,9 +42,9 @@ proxy-groups:
       name: auto
       proxies:
         - "01-shadowsocks-\U0001F1EC\U0001F1E7GB-146.70.61.37-0090"
-        - "02-shadowsocks-https://t.me/v2rayNplus |\U0001F1EC\U0001F1E7"
-        - "03-shadowsocks-\U0001F1EC\U0001F1E7 Join Telegram:@Farah_VPN \U0001F1EC\U0001F1E7"
-        - "04-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.179-0111"
+        - "02-shadowsocks-\U0001F1EC\U0001F1E7GB-94.156.250.148-0101"
+        - "03-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.178-0108"
+        - "04-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.181-0110"
         - 05-vless->>@oneclickvpnkeys::GB
       type: url-test
       url: https://www.gstatic.com/generate_204
@@ -52,9 +52,9 @@ proxy-groups:
       proxies:
         - auto
         - "01-shadowsocks-\U0001F1EC\U0001F1E7GB-146.70.61.37-0090"
-        - "02-shadowsocks-https://t.me/v2rayNplus |\U0001F1EC\U0001F1E7"
-        - "03-shadowsocks-\U0001F1EC\U0001F1E7 Join Telegram:@Farah_VPN \U0001F1EC\U0001F1E7"
-        - "04-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.179-0111"
+        - "02-shadowsocks-\U0001F1EC\U0001F1E7GB-94.156.250.148-0101"
+        - "03-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.178-0108"
+        - "04-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.181-0110"
         - 05-vless->>@oneclickvpnkeys::GB
       type: select
 rules:
