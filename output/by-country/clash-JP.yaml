@@ -1,23 +1,23 @@
 proxies:
     - cipher: aes-128-gcm
-      name: "01-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.240-0118"
+      name: 01-shadowsocks-@meliproxyy
       password: shadowsocks
       port: 443
-      server: 149.22.87.240
+      server: 149.22.87.241
       type: ss
       udp: true
     - cipher: aes-128-gcm
-      name: 02-shadowsocks-@meliproxyy
+      name: "02-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.204-0116"
       password: shadowsocks
       port: 443
       server: 149.22.87.204
       type: ss
       udp: true
     - cipher: aes-128-gcm
-      name: 03-shadowsocks-Mix--@V2rayAlpha--45
+      name: 03-shadowsocks-Mix--@V2rayAlpha--47
       password: shadowsocks
       port: 443
-      server: 149.22.87.241
+      server: 149.22.87.240
       type: ss
       udp: true
     - alterId: 0
@@ -29,16 +29,9 @@ proxies:
       type: vmess
       udp: true
       uuid: a8eec18d-8aab-491f-9743-b588c1cd5e8b
-    - cipher: aes-256-gcm
-      name: 05-shadowsocks-Mix--@V2rayAlpha--42
-      password: GTZI5AbjNAeWQG0oVNptvWJogHNKiiKA
-      port: 40003
-      server: 47.79.144.115
-      type: ss
-      udp: true
     - alterId: 0
       cipher: auto
-      name: "06-vmess-⚪\U0001F3F3️[\U0001F916]_github.com/Ruk1ng001_c210f2fa"
+      name: "05-vmess-⚪\U0001F3F3️[\U0001F916]_github.com/Ruk1ng001_c210f2fa"
       network: tcp
       port: 34017
       server: 43.167.162.191
@@ -46,10 +39,17 @@ proxies:
       udp: true
       uuid: dbe306b3-f28c-4176-83d7-b75506c38488
     - cipher: aes-256-gcm
-      name: "07-shadowsocks-\U0001F1EF\U0001F1F5JP-103.106.228.175-0120"
+      name: "06-shadowsocks-\U0001F1EF\U0001F1F5JP-103.106.228.175-0120"
       password: XKFKl2rULjIp74
       port: 8009
       server: 103.106.228.175
+      type: ss
+      udp: true
+    - cipher: aes-256-gcm
+      name: 07-shadowsocks-Mix--@V2rayAlpha--42
+      password: GTZI5AbjNAeWQG0oVNptvWJogHNKiiKA
+      port: 40003
+      server: 47.79.144.115
       type: ss
       udp: true
     - name: "08-trojan-\U0001F1EF\U0001F1F5JP-103.125.219.70-0158"
@@ -72,13 +72,13 @@ proxy-groups:
     - interval: 300
       name: auto
       proxies:
-        - "01-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.240-0118"
-        - 02-shadowsocks-@meliproxyy
-        - 03-shadowsocks-Mix--@V2rayAlpha--45
+        - 01-shadowsocks-@meliproxyy
+        - "02-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.204-0116"
+        - 03-shadowsocks-Mix--@V2rayAlpha--47
         - "04-vmess-\U0001F534\U0001F1EF\U0001F1F5[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_477e248d"
-        - 05-shadowsocks-Mix--@V2rayAlpha--42
-        - "06-vmess-⚪\U0001F3F3️[\U0001F916]_github.com/Ruk1ng001_c210f2fa"
-        - "07-shadowsocks-\U0001F1EF\U0001F1F5JP-103.106.228.175-0120"
+        - "05-vmess-⚪\U0001F3F3️[\U0001F916]_github.com/Ruk1ng001_c210f2fa"
+        - "06-shadowsocks-\U0001F1EF\U0001F1F5JP-103.106.228.175-0120"
+        - 07-shadowsocks-Mix--@V2rayAlpha--42
         - "08-trojan-\U0001F1EF\U0001F1F5JP-103.125.219.70-0158"
         - "09-trojan-\U0001F1ED\U0001F1F0HK香港3"
       type: url-test
@@ -86,13 +86,13 @@ proxy-groups:
     - name: select
       proxies:
         - auto
-        - "01-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.240-0118"
-        - 02-shadowsocks-@meliproxyy
-        - 03-shadowsocks-Mix--@V2rayAlpha--45
+        - 01-shadowsocks-@meliproxyy
+        - "02-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.204-0116"
+        - 03-shadowsocks-Mix--@V2rayAlpha--47
         - "04-vmess-\U0001F534\U0001F1EF\U0001F1F5[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_477e248d"
-        - 05-shadowsocks-Mix--@V2rayAlpha--42
-        - "06-vmess-⚪\U0001F3F3️[\U0001F916]_github.com/Ruk1ng001_c210f2fa"
-        - "07-shadowsocks-\U0001F1EF\U0001F1F5JP-103.106.228.175-0120"
+        - "05-vmess-⚪\U0001F3F3️[\U0001F916]_github.com/Ruk1ng001_c210f2fa"
+        - "06-shadowsocks-\U0001F1EF\U0001F1F5JP-103.106.228.175-0120"
+        - 07-shadowsocks-Mix--@V2rayAlpha--42
         - "08-trojan-\U0001F1EF\U0001F1F5JP-103.125.219.70-0158"
         - "09-trojan-\U0001F1ED\U0001F1F0HK香港3"
       type: select
