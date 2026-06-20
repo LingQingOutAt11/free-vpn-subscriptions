@@ -1,11 +1,19 @@
 {
   "outbounds": [
     {
+      "method": "aes-256-gcm",
+      "password": "GTZI5AbjNAeWQG0oVNptvWJogHNKiiKA",
+      "server": "47.79.144.115",
+      "server_port": 40003,
+      "tag": "01-shadowsocks-🇯🇵JP-47.79.144.115-0173",
+      "type": "shadowsocks"
+    },
+    {
       "method": "aes-128-gcm",
       "password": "shadowsocks",
-      "server": "149.22.87.204",
+      "server": "149.22.87.241",
       "server_port": 443,
-      "tag": "01-shadowsocks-🇯🇵JP-149.22.87.204-0118",
+      "tag": "02-shadowsocks-Mix--@V2rayAlpha--45",
       "type": "shadowsocks"
     },
     {
@@ -13,24 +21,15 @@
       "password": "shadowsocks",
       "server": "149.22.87.240",
       "server_port": 443,
-      "tag": "02-shadowsocks-🇯🇵JP-149.22.87.240-4052",
+      "tag": "03-shadowsocks-🇯🇵 JP 4",
       "type": "shadowsocks"
-    },
-    {
-      "alter_id": 1,
-      "security": "auto",
-      "server": "172.104.80.66",
-      "server_port": 22324,
-      "tag": "03-vmess-🇯🇵 JP 6",
-      "type": "vmess",
-      "uuid": "04621bae-ab36-11ec-b909-0242ac120002"
     },
     {
       "method": "aes-128-gcm",
       "password": "shadowsocks",
-      "server": "149.22.87.241",
+      "server": "149.22.87.204",
       "server_port": 443,
-      "tag": "04-shadowsocks-🇯🇵JP-149.22.87.241-0119",
+      "tag": "04-shadowsocks-@meliproxyy",
       "type": "shadowsocks"
     },
     {
@@ -51,49 +50,27 @@
       "type": "shadowsocks"
     },
     {
-      "password": "MiTiVPN",
-      "server": "151.101.110.219",
+      "password": "s75Gtmy56sptTA39hmBH965YYx4ZgfQR_I",
+      "server": "103.125.219.70",
       "server_port": 443,
-      "tag": "07-trojan-日本 东京Fastly节点",
+      "tag": "07-trojan-🇯🇵JP-103.125.219.70-0166",
       "tls": {
         "enabled": true,
         "insecure": false,
-        "server_name": "global.fastly.com"
+        "server_name": "103.125.219.70"
       },
       "type": "trojan"
     },
     {
-      "method": "aes-256-gcm",
-      "password": "GTZI5AbjNAeWQG0oVNptvWJogHNKiiKA",
-      "server": "47.79.144.115",
-      "server_port": 40003,
-      "tag": "08-shadowsocks-Mix--@V2rayAlpha--42",
-      "type": "shadowsocks"
-    },
-    {
-      "server": "207.148.108.85",
-      "server_port": 443,
-      "tag": "09-vless-日本 东京Vultr数据中心",
-      "tls": {
-        "enabled": true,
-        "insecure": false,
-        "server_name": "t1s1.rittbo.kdns.fr"
-      },
-      "type": "vless",
-      "uuid": "eeb6823c-b926-4ea2-866a-5542edd26e59"
-    },
-    {
       "interval": "5m",
       "outbounds": [
-        "01-shadowsocks-🇯🇵JP-149.22.87.204-0118",
-        "02-shadowsocks-🇯🇵JP-149.22.87.240-4052",
-        "03-vmess-🇯🇵 JP 6",
-        "04-shadowsocks-🇯🇵JP-149.22.87.241-0119",
+        "01-shadowsocks-🇯🇵JP-47.79.144.115-0173",
+        "02-shadowsocks-Mix--@V2rayAlpha--45",
+        "03-shadowsocks-🇯🇵 JP 4",
+        "04-shadowsocks-@meliproxyy",
         "05-vmess-Global 🌐 | @Raydikalx | 2437",
         "06-shadowsocks-🇯🇵JP-103.106.228.175-0123",
-        "07-trojan-日本 东京Fastly节点",
-        "08-shadowsocks-Mix--@V2rayAlpha--42",
-        "09-vless-日本 东京Vultr数据中心"
+        "07-trojan-🇯🇵JP-103.125.219.70-0166"
       ],
       "tag": "auto",
       "type": "urltest",
@@ -102,15 +79,13 @@
     {
       "outbounds": [
         "auto",
-        "01-shadowsocks-🇯🇵JP-149.22.87.204-0118",
-        "02-shadowsocks-🇯🇵JP-149.22.87.240-4052",
-        "03-vmess-🇯🇵 JP 6",
-        "04-shadowsocks-🇯🇵JP-149.22.87.241-0119",
+        "01-shadowsocks-🇯🇵JP-47.79.144.115-0173",
+        "02-shadowsocks-Mix--@V2rayAlpha--45",
+        "03-shadowsocks-🇯🇵 JP 4",
+        "04-shadowsocks-@meliproxyy",
         "05-vmess-Global 🌐 | @Raydikalx | 2437",
         "06-shadowsocks-🇯🇵JP-103.106.228.175-0123",
-        "07-trojan-日本 东京Fastly节点",
-        "08-shadowsocks-Mix--@V2rayAlpha--42",
-        "09-vless-日本 东京Vultr数据中心"
+        "07-trojan-🇯🇵JP-103.125.219.70-0166"
       ],
       "tag": "select",
       "type": "selector"
