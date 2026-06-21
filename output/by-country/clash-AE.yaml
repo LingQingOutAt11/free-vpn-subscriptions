@@ -1,15 +1,15 @@
 proxies:
-    - name: "01-vless-\U0001F1FA\U0001F1F8 WS"
-      network: ws
-      port: 37368
-      server: 185.173.144.209
-      type: vless
-      udp: true
-      uuid: 0f06e572-eb9a-4831-be66-0646a03b849b
-    - name: "02-vless-\U0001F1FA\U0001F1F8 WS 2"
+    - name: "01-vless-\U0001F1FA\U0001F1F8 WS 2"
       network: ws
       port: 19430
       server: 185.173.144.212
+      type: vless
+      udp: true
+      uuid: 0f06e572-eb9a-4831-be66-0646a03b849b
+    - name: "02-vless-\U0001F1FA\U0001F1F8 WS"
+      network: ws
+      port: 37368
+      server: 185.173.144.209
       type: vless
       udp: true
       uuid: 0f06e572-eb9a-4831-be66-0646a03b849b
@@ -43,8 +43,8 @@ proxy-groups:
     - interval: 300
       name: auto
       proxies:
-        - "01-vless-\U0001F1FA\U0001F1F8 WS"
-        - "02-vless-\U0001F1FA\U0001F1F8 WS 2"
+        - "01-vless-\U0001F1FA\U0001F1F8 WS 2"
+        - "02-vless-\U0001F1FA\U0001F1F8 WS"
         - "03-vless-\U0001F1FA\U0001F1F8 Reality 2"
         - "04-vless-\U0001F1FA\U0001F1F8 Reality"
       type: url-test
@@ -52,8 +52,8 @@ proxy-groups:
     - name: select
       proxies:
         - auto
-        - "01-vless-\U0001F1FA\U0001F1F8 WS"
-        - "02-vless-\U0001F1FA\U0001F1F8 WS 2"
+        - "01-vless-\U0001F1FA\U0001F1F8 WS 2"
+        - "02-vless-\U0001F1FA\U0001F1F8 WS"
         - "03-vless-\U0001F1FA\U0001F1F8 Reality 2"
         - "04-vless-\U0001F1FA\U0001F1F8 Reality"
       type: select
