@@ -1,16 +1,16 @@
 proxies:
-    - cipher: aes-128-gcm
-      name: "01-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.178-0281"
-      password: shadowsocks
-      port: 443
-      server: 141.98.101.178
-      type: ss
-      udp: true
     - cipher: aes-256-gcm
-      name: '02-shadowsocks-☑➜چنلمون: Express_freevpn@'
+      name: '01-shadowsocks-☑➜چنلمون: Express_freevpn@'
       password: RexnBgU7EV5ADxG
       port: 7001
       server: 94.156.250.148
+      type: ss
+      udp: true
+    - cipher: aes-128-gcm
+      name: 02-shadowsocks-t.me/ConfigFori  -  Config 79369
+      password: shadowsocks
+      port: 443
+      server: 141.98.101.178
       type: ss
       udp: true
     - cipher: aes-128-gcm
@@ -21,14 +21,14 @@ proxies:
       type: ss
       udp: true
     - cipher: aes-128-gcm
-      name: 04-shadowsocks-t.me/ConfigFori  -  Config 79362
+      name: "04-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.181-0137"
       password: shadowsocks
       port: 443
       server: 141.98.101.181
       type: ss
       udp: true
     - cipher: aes-128-gcm
-      name: "05-shadowsocks-\U0001F1EC\U0001F1E7 GB | SS | @netfreedom0 1"
+      name: "05-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.182-0134"
       password: shadowsocks
       port: 443
       server: 141.98.101.182
@@ -51,7 +51,7 @@ proxies:
       type: vless
       udp: true
       uuid: 394f6981-a782-4779-9a85-e6cf22935d93
-    - name: 08-vless-巴西 V2CROSS.COM
+    - name: "08-vless-\U0001F1EC\U0001F1E7 英国 | GBR 2"
       network: tcp
       port: 8443
       server: 152.233.28.201
@@ -61,43 +61,31 @@ proxies:
       type: vless
       udp: true
       uuid: 394f6981-a782-4779-9a85-e6cf22935d93
-    - name: 09-vless->>@oneclickvpnkeys::GB
-      network: tcp
-      port: 8443
-      server: 152.233.28.198
-      servername: uk1.fromblancwithlove.com
-      skip-cert-verify: false
-      tls: true
-      type: vless
-      udp: true
-      uuid: 394f6981-a782-4779-9a85-e6cf22935d93
 proxy-groups:
     - interval: 300
       name: auto
       proxies:
-        - "01-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.178-0281"
-        - '02-shadowsocks-☑➜چنلمون: Express_freevpn@'
+        - '01-shadowsocks-☑➜چنلمون: Express_freevpn@'
+        - 02-shadowsocks-t.me/ConfigFori  -  Config 79369
         - "03-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.179-0140"
-        - 04-shadowsocks-t.me/ConfigFori  -  Config 79362
-        - "05-shadowsocks-\U0001F1EC\U0001F1E7 GB | SS | @netfreedom0 1"
+        - "04-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.181-0137"
+        - "05-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.182-0134"
         - "06-shadowsocks-\U0001F1EC\U0001F1E7GB-146.70.61.37-0099"
         - "07-vless-\U0001F1EC\U0001F1E7 英国 | GBR"
-        - 08-vless-巴西 V2CROSS.COM
-        - 09-vless->>@oneclickvpnkeys::GB
+        - "08-vless-\U0001F1EC\U0001F1E7 英国 | GBR 2"
       type: url-test
       url: https://www.gstatic.com/generate_204
     - name: select
       proxies:
         - auto
-        - "01-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.178-0281"
-        - '02-shadowsocks-☑➜چنلمون: Express_freevpn@'
+        - '01-shadowsocks-☑➜چنلمون: Express_freevpn@'
+        - 02-shadowsocks-t.me/ConfigFori  -  Config 79369
         - "03-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.179-0140"
-        - 04-shadowsocks-t.me/ConfigFori  -  Config 79362
-        - "05-shadowsocks-\U0001F1EC\U0001F1E7 GB | SS | @netfreedom0 1"
+        - "04-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.181-0137"
+        - "05-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.182-0134"
         - "06-shadowsocks-\U0001F1EC\U0001F1E7GB-146.70.61.37-0099"
         - "07-vless-\U0001F1EC\U0001F1E7 英国 | GBR"
-        - 08-vless-巴西 V2CROSS.COM
-        - 09-vless->>@oneclickvpnkeys::GB
+        - "08-vless-\U0001F1EC\U0001F1E7 英国 | GBR 2"
       type: select
 rules:
     - MATCH,select
