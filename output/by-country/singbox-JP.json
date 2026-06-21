@@ -11,17 +11,9 @@
     {
       "method": "aes-128-gcm",
       "password": "shadowsocks",
-      "server": "149.22.87.240",
-      "server_port": 443,
-      "tag": "02-shadowsocks-🇯🇵JP-149.22.87.240-4052",
-      "type": "shadowsocks"
-    },
-    {
-      "method": "aes-128-gcm",
-      "password": "shadowsocks",
       "server": "149.22.87.204",
       "server_port": 443,
-      "tag": "03-shadowsocks-🇯🇵JP-149.22.87.204-0120",
+      "tag": "02-shadowsocks-🇯🇵JP-149.22.87.204-0120",
       "type": "shadowsocks"
     },
     {
@@ -29,7 +21,15 @@
       "password": "shadowsocks",
       "server": "149.22.87.241",
       "server_port": 443,
-      "tag": "04-shadowsocks-Mix--@V2rayAlpha--45",
+      "tag": "03-shadowsocks-Mix--@V2rayAlpha--45",
+      "type": "shadowsocks"
+    },
+    {
+      "method": "aes-128-gcm",
+      "password": "shadowsocks",
+      "server": "149.22.87.240",
+      "server_port": 443,
+      "tag": "04-shadowsocks-🇯🇵JP-149.22.87.240-0119",
       "type": "shadowsocks"
     },
     {
@@ -50,31 +50,9 @@
       "type": "shadowsocks"
     },
     {
-      "flow": "xtls-rprx-vision",
-      "server": "138.2.50.155",
-      "server_port": 44073,
-      "tag": "07-vless-🔴🇯🇵[🤖🔍]_github.com/Ruk1ng001_59b3c7d8",
-      "tls": {
-        "enabled": true,
-        "insecure": false,
-        "reality": {
-          "enabled": true,
-          "public_key": "Z3ZGnAOdKkzJ07gR_7_0k9_iTTFP6paDOrqx1rN2LU4",
-          "short_id": ""
-        },
-        "server_name": "www.icloud.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "type": "vless",
-      "uuid": "11d29ec6-be66-4f59-97c6-7cff836ea318"
-    },
-    {
       "server": "108.160.132.178",
       "server_port": 443,
-      "tag": "08-vless-🆔configfa 🔒 VL-WS-N/A ❔ XX 175ms",
+      "tag": "07-vless-🆔configfa 🔒 VL-WS-N/A ❔ XX 175ms",
       "tls": {
         "enabled": true,
         "insecure": false,
@@ -85,13 +63,25 @@
     },
     {
       "password": "s75Gtmy56sptTA39hmBH965YYx4ZgfQR_I",
-      "server": "103.125.219.70",
+      "server": "103.125.216.169",
       "server_port": 443,
-      "tag": "09-trojan-🇯🇵JP-103.125.219.70-0760",
+      "tag": "08-trojan-🇯🇵JP-103.125.216.169-30",
       "tls": {
         "enabled": true,
-        "insecure": false,
-        "server_name": "103.125.219.70"
+        "insecure": true,
+        "server_name": "103.125.216.169"
+      },
+      "type": "trojan"
+    },
+    {
+      "password": "e0195c73018d597b1c2f0ea89d8676ae",
+      "server": "35.77.34.38",
+      "server_port": 29642,
+      "tag": "09-trojan-🇯🇵JP-35.77.34.38-41",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "www.nintendogames.net"
       },
       "type": "trojan"
     },
@@ -108,18 +98,31 @@
       "type": "trojan"
     },
     {
+      "password": "s75Gtmy56sptTA39hmBH965YYx4ZgfQR_I",
+      "server": "103.125.219.70",
+      "server_port": 443,
+      "tag": "11-trojan-🇯🇵JP-103.125.219.70-0760",
+      "tls": {
+        "enabled": true,
+        "insecure": false,
+        "server_name": "103.125.219.70"
+      },
+      "type": "trojan"
+    },
+    {
       "interval": "5m",
       "outbounds": [
         "01-shadowsocks-🇯🇵JP-47.79.144.115-0170",
-        "02-shadowsocks-🇯🇵JP-149.22.87.240-4052",
-        "03-shadowsocks-🇯🇵JP-149.22.87.204-0120",
-        "04-shadowsocks-Mix--@V2rayAlpha--45",
+        "02-shadowsocks-🇯🇵JP-149.22.87.204-0120",
+        "03-shadowsocks-Mix--@V2rayAlpha--45",
+        "04-shadowsocks-🇯🇵JP-149.22.87.240-0119",
         "05-vmess-Global 🌐 | @Raydikalx | 2496",
         "06-shadowsocks-🇯🇵JP-103.106.228.175-0122",
-        "07-vless-🔴🇯🇵[🤖🔍]_github.com/Ruk1ng001_59b3c7d8",
-        "08-vless-🆔configfa 🔒 VL-WS-N/A ❔ XX 175ms",
-        "09-trojan-🇯🇵JP-103.125.219.70-0760",
-        "10-trojan-🇯🇵JP-35.77.34.38-44"
+        "07-vless-🆔configfa 🔒 VL-WS-N/A ❔ XX 175ms",
+        "08-trojan-🇯🇵JP-103.125.216.169-30",
+        "09-trojan-🇯🇵JP-35.77.34.38-41",
+        "10-trojan-🇯🇵JP-35.77.34.38-44",
+        "11-trojan-🇯🇵JP-103.125.219.70-0760"
       ],
       "tag": "auto",
       "type": "urltest",
@@ -129,15 +132,16 @@
       "outbounds": [
         "auto",
         "01-shadowsocks-🇯🇵JP-47.79.144.115-0170",
-        "02-shadowsocks-🇯🇵JP-149.22.87.240-4052",
-        "03-shadowsocks-🇯🇵JP-149.22.87.204-0120",
-        "04-shadowsocks-Mix--@V2rayAlpha--45",
+        "02-shadowsocks-🇯🇵JP-149.22.87.204-0120",
+        "03-shadowsocks-Mix--@V2rayAlpha--45",
+        "04-shadowsocks-🇯🇵JP-149.22.87.240-0119",
         "05-vmess-Global 🌐 | @Raydikalx | 2496",
         "06-shadowsocks-🇯🇵JP-103.106.228.175-0122",
-        "07-vless-🔴🇯🇵[🤖🔍]_github.com/Ruk1ng001_59b3c7d8",
-        "08-vless-🆔configfa 🔒 VL-WS-N/A ❔ XX 175ms",
-        "09-trojan-🇯🇵JP-103.125.219.70-0760",
-        "10-trojan-🇯🇵JP-35.77.34.38-44"
+        "07-vless-🆔configfa 🔒 VL-WS-N/A ❔ XX 175ms",
+        "08-trojan-🇯🇵JP-103.125.216.169-30",
+        "09-trojan-🇯🇵JP-35.77.34.38-41",
+        "10-trojan-🇯🇵JP-35.77.34.38-44",
+        "11-trojan-🇯🇵JP-103.125.219.70-0760"
       ],
       "tag": "select",
       "type": "selector"
