@@ -23,7 +23,7 @@ proxies:
       udp: true
       uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
     - cipher: rc4-md5
-      name: "04-shadowsocks-\U0001F1E8\U0001F1E6 CA 3"
+      name: "04-shadowsocks-\U0001F1E8\U0001F1E6CA-137.184.174.93-0105"
       password: 14fFPrbezE3HDZzsMOr6
       port: 8080
       server: 137.184.174.93
@@ -43,6 +43,20 @@ proxies:
       type: vless
       udp: true
       uuid: 57d94cf7-ca36-4c2a-bec5-90cf38588cda
+    - client-fingerprint: firefox
+      flow: xtls-rprx-vision
+      name: 06-vless-0040-NetFreedom0
+      network: tcp
+      port: 443
+      reality-opts:
+        public-key: 8vqOvJ5eoG_9oHla4B3Vh1E-o39RrCXW6Wr7OcXZGmI
+        short-id: dd
+      server: 209.127.228.114
+      servername: cars.morro-settings.ru
+      tls: true
+      type: vless
+      udp: true
+      uuid: d205ae68-0819-473c-b425-6c5947ac2f8d
 proxy-groups:
     - interval: 300
       name: auto
@@ -50,8 +64,9 @@ proxy-groups:
         - 01-shadowsocks-Mix--@V2rayAlpha--34
         - "02-shadowsocks-\U0001F1E8\U0001F1E6 CA 1"
         - "03-vmess-\U0001F1E8\U0001F1E6 CA 2"
-        - "04-shadowsocks-\U0001F1E8\U0001F1E6 CA 3"
+        - "04-shadowsocks-\U0001F1E8\U0001F1E6CA-137.184.174.93-0105"
         - "05-vless-\U0001F534\U0001F1E8\U0001F1E6[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_182ef329"
+        - 06-vless-0040-NetFreedom0
       type: url-test
       url: https://www.gstatic.com/generate_204
     - name: select
@@ -60,8 +75,9 @@ proxy-groups:
         - 01-shadowsocks-Mix--@V2rayAlpha--34
         - "02-shadowsocks-\U0001F1E8\U0001F1E6 CA 1"
         - "03-vmess-\U0001F1E8\U0001F1E6 CA 2"
-        - "04-shadowsocks-\U0001F1E8\U0001F1E6 CA 3"
+        - "04-shadowsocks-\U0001F1E8\U0001F1E6CA-137.184.174.93-0105"
         - "05-vless-\U0001F534\U0001F1E8\U0001F1E6[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_182ef329"
+        - 06-vless-0040-NetFreedom0
       type: select
 rules:
     - MATCH,select
