@@ -11,17 +11,25 @@
     {
       "method": "aes-128-gcm",
       "password": "shadowsocks",
-      "server": "149.22.87.241",
+      "server": "149.22.87.204",
       "server_port": 443,
-      "tag": "02-shadowsocks-🇯🇵JP-149.22.87.241-0149",
+      "tag": "02-shadowsocks-🇯🇵JP-149.22.87.204-0146",
       "type": "shadowsocks"
     },
     {
       "method": "aes-128-gcm",
       "password": "shadowsocks",
-      "server": "149.22.87.204",
+      "server": "149.22.87.241",
       "server_port": 443,
-      "tag": "03-shadowsocks-🇯🇵JP-149.22.87.204-0216",
+      "tag": "03-shadowsocks-🇯🇵JP-149.22.87.241-0149",
+      "type": "shadowsocks"
+    },
+    {
+      "method": "aes-256-gcm",
+      "password": "GTZI5AbjNAeWQG0oVNptvWJogHNKiiKA",
+      "server": "47.79.144.115",
+      "server_port": 40003,
+      "tag": "04-shadowsocks-🇯🇵 JP 3",
       "type": "shadowsocks"
     },
     {
@@ -29,14 +37,48 @@
       "password": "XKFKl2rULjIp74",
       "server": "103.106.228.175",
       "server_port": 8009,
-      "tag": "04-shadowsocks-🇯🇵JP-103.106.228.175-0150",
+      "tag": "05-shadowsocks-🇯🇵JP-103.106.228.175-0150",
       "type": "shadowsocks"
+    },
+    {
+      "password": "tsuchiya",
+      "server": "161.34.39.108",
+      "server_port": 443,
+      "tag": "06-trojan-🇯🇵 JP 4",
+      "tls": {
+        "enabled": true,
+        "insecure": false,
+        "server_name": "aa.ccmusic.jp"
+      },
+      "type": "trojan"
+    },
+    {
+      "flow": "xtls-rprx-vision",
+      "server": "160.16.220.197",
+      "server_port": 1443,
+      "tag": "07-vless-🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001_08980dad",
+      "tls": {
+        "enabled": true,
+        "insecure": false,
+        "reality": {
+          "enabled": true,
+          "public_key": "0i_xAxYgSNx5NMpK2lOaWGS-CvAiD_LneYPO0MF0owo",
+          "short_id": "1a"
+        },
+        "server_name": "www.amazon.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "type": "vless",
+      "uuid": "b98d4c6e-6770-4a31-8256-a4750cdea0e7"
     },
     {
       "flow": "xtls-rprx-vision",
       "server": "138.2.50.155",
       "server_port": 44073,
-      "tag": "05-vless-🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001_59b3c7d8",
+      "tag": "08-vless-🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001_59b3c7d8",
       "tls": {
         "enabled": true,
         "insecure": false,
@@ -55,22 +97,16 @@
       "uuid": "11d29ec6-be66-4f59-97c6-7cff836ea318"
     },
     {
-      "method": "aes-256-gcm",
-      "password": "GTZI5AbjNAeWQG0oVNptvWJogHNKiiKA",
-      "server": "47.79.144.115",
-      "server_port": 40003,
-      "tag": "06-shadowsocks-🇯🇵 JP 3",
-      "type": "shadowsocks"
-    },
-    {
       "interval": "5m",
       "outbounds": [
         "01-shadowsocks-🇯🇵 JP 1",
-        "02-shadowsocks-🇯🇵JP-149.22.87.241-0149",
-        "03-shadowsocks-🇯🇵JP-149.22.87.204-0216",
-        "04-shadowsocks-🇯🇵JP-103.106.228.175-0150",
-        "05-vless-🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001_59b3c7d8",
-        "06-shadowsocks-🇯🇵 JP 3"
+        "02-shadowsocks-🇯🇵JP-149.22.87.204-0146",
+        "03-shadowsocks-🇯🇵JP-149.22.87.241-0149",
+        "04-shadowsocks-🇯🇵 JP 3",
+        "05-shadowsocks-🇯🇵JP-103.106.228.175-0150",
+        "06-trojan-🇯🇵 JP 4",
+        "07-vless-🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001_08980dad",
+        "08-vless-🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001_59b3c7d8"
       ],
       "tag": "auto",
       "type": "urltest",
@@ -80,11 +116,13 @@
       "outbounds": [
         "auto",
         "01-shadowsocks-🇯🇵 JP 1",
-        "02-shadowsocks-🇯🇵JP-149.22.87.241-0149",
-        "03-shadowsocks-🇯🇵JP-149.22.87.204-0216",
-        "04-shadowsocks-🇯🇵JP-103.106.228.175-0150",
-        "05-vless-🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001_59b3c7d8",
-        "06-shadowsocks-🇯🇵 JP 3"
+        "02-shadowsocks-🇯🇵JP-149.22.87.204-0146",
+        "03-shadowsocks-🇯🇵JP-149.22.87.241-0149",
+        "04-shadowsocks-🇯🇵 JP 3",
+        "05-shadowsocks-🇯🇵JP-103.106.228.175-0150",
+        "06-trojan-🇯🇵 JP 4",
+        "07-vless-🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001_08980dad",
+        "08-vless-🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001_59b3c7d8"
       ],
       "tag": "select",
       "type": "selector"
