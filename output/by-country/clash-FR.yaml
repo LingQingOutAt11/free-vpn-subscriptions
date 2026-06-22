@@ -1,5 +1,5 @@
 proxies:
-    - name: 01-hysteria2->>@oneclickvpnkeys::FR
+    - name: "01-hysteria2- By EbraSha \U0001F6F8"
       password: dongtaiwang.com
       port: 22000
       server: 62.210.124.146
@@ -7,20 +7,13 @@ proxies:
       sni: www.microsoft.com
       type: hysteria2
     - cipher: chacha20-ietf-poly1305
-      name: 02-shadowsocks-@icv2ray
+      name: 02-shadowsocks-@Soul737
       password: bjnrInsnyNlbYotSv9ykgy
       port: 8388
       server: 51.254.142.162
       type: ss
       udp: true
-    - cipher: aes-256-gcm
-      name: 03-shadowsocks-@icv2ray
-      password: FjG3IPbny+0ZYU4/p1vULP84GcKpGoZpWKAay16VhIw=
-      port: 2083
-      server: 51.254.128.106
-      type: ss
-      udp: true
-    - name: 04-vless-@W570W
+    - name: 03-vless-@W570W
       network: tcp
       port: 8888
       server: 45.13.119.219
@@ -29,7 +22,7 @@ proxies:
       uuid: eb77be10-9d9e-527b-a78d-8caaf58992d6
     - client-fingerprint: chrome
       flow: xtls-rprx-vision
-      name: "05-vless-105.\U0001F1EB\U0001F1F7Франция | @LimeVPNFREE"
+      name: "04-vless-105.\U0001F1EB\U0001F1F7Франция | @LimeVPNFREE"
       network: tcp
       port: 443
       reality-opts:
@@ -43,7 +36,7 @@ proxies:
       uuid: 52b71b75-4b77-4cec-990b-046ec1938e1f
     - client-fingerprint: chrome
       flow: xtls-rprx-vision
-      name: "06-vless-115.\U0001F1EB\U0001F1F7Франция | @LimeVPNFREE"
+      name: "05-vless-115.\U0001F1EB\U0001F1F7Франция | @LimeVPNFREE"
       network: tcp
       port: 443
       reality-opts:
@@ -56,21 +49,7 @@ proxies:
       udp: true
       uuid: f00297b0-a501-4982-9a8e-2cf2df5b4f84
     - client-fingerprint: chrome
-      flow: xtls-rprx-vision
-      name: "07-vless-\U0001F1EB\U0001F1F7```"
-      network: tcp
-      port: 443
-      reality-opts:
-        public-key: ZnlCl_Jc2dV5-KK_ymmMcEDoe5lPyZ-5z_LGMRoiNTU
-        short-id: b87063a35aaa942e
-      server: 51.255.71.16
-      servername: www.booking.com
-      tls: true
-      type: vless
-      udp: true
-      uuid: 43488128-319e-f480-64ea-0acdc712e2a8
-    - client-fingerprint: chrome
-      name: '08-vless-Channel : @Daily_Configs'
+      name: '06-vless-Channel : @Daily_Configs'
       network: tcp
       port: 448
       reality-opts:
@@ -84,7 +63,7 @@ proxies:
       uuid: d61b4e1b-4745-484f-8362-18537825a7af
     - client-fingerprint: chrome
       flow: xtls-rprx-vision
-      name: "09-vless-\U0001F534\U0001F1EB\U0001F1F7[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_2bcbb29e"
+      name: "07-vless-\U0001F534\U0001F1EB\U0001F1F7[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_2bcbb29e"
       network: raw
       port: 44520
       reality-opts:
@@ -100,29 +79,25 @@ proxy-groups:
     - interval: 300
       name: auto
       proxies:
-        - 01-hysteria2->>@oneclickvpnkeys::FR
-        - 02-shadowsocks-@icv2ray
-        - 03-shadowsocks-@icv2ray
-        - 04-vless-@W570W
-        - "05-vless-105.\U0001F1EB\U0001F1F7Франция | @LimeVPNFREE"
-        - "06-vless-115.\U0001F1EB\U0001F1F7Франция | @LimeVPNFREE"
-        - "07-vless-\U0001F1EB\U0001F1F7```"
-        - '08-vless-Channel : @Daily_Configs'
-        - "09-vless-\U0001F534\U0001F1EB\U0001F1F7[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_2bcbb29e"
+        - "01-hysteria2- By EbraSha \U0001F6F8"
+        - 02-shadowsocks-@Soul737
+        - 03-vless-@W570W
+        - "04-vless-105.\U0001F1EB\U0001F1F7Франция | @LimeVPNFREE"
+        - "05-vless-115.\U0001F1EB\U0001F1F7Франция | @LimeVPNFREE"
+        - '06-vless-Channel : @Daily_Configs'
+        - "07-vless-\U0001F534\U0001F1EB\U0001F1F7[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_2bcbb29e"
       type: url-test
       url: https://www.gstatic.com/generate_204
     - name: select
       proxies:
         - auto
-        - 01-hysteria2->>@oneclickvpnkeys::FR
-        - 02-shadowsocks-@icv2ray
-        - 03-shadowsocks-@icv2ray
-        - 04-vless-@W570W
-        - "05-vless-105.\U0001F1EB\U0001F1F7Франция | @LimeVPNFREE"
-        - "06-vless-115.\U0001F1EB\U0001F1F7Франция | @LimeVPNFREE"
-        - "07-vless-\U0001F1EB\U0001F1F7```"
-        - '08-vless-Channel : @Daily_Configs'
-        - "09-vless-\U0001F534\U0001F1EB\U0001F1F7[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_2bcbb29e"
+        - "01-hysteria2- By EbraSha \U0001F6F8"
+        - 02-shadowsocks-@Soul737
+        - 03-vless-@W570W
+        - "04-vless-105.\U0001F1EB\U0001F1F7Франция | @LimeVPNFREE"
+        - "05-vless-115.\U0001F1EB\U0001F1F7Франция | @LimeVPNFREE"
+        - '06-vless-Channel : @Daily_Configs'
+        - "07-vless-\U0001F534\U0001F1EB\U0001F1F7[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_2bcbb29e"
       type: select
 rules:
     - MATCH,select
