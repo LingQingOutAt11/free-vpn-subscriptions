@@ -1,11 +1,27 @@
 {
   "outbounds": [
     {
+      "method": "aes-256-gcm",
+      "password": "GTZI5AbjNAeWQG0oVNptvWJogHNKiiKA",
+      "server": "47.79.144.115",
+      "server_port": 40003,
+      "tag": "01-shadowsocks-🇯🇵JP-47.79.144.115-0195",
+      "type": "shadowsocks"
+    },
+    {
+      "method": "aes-128-gcm",
+      "password": "shadowsocks",
+      "server": "149.22.87.241",
+      "server_port": 443,
+      "tag": "02-shadowsocks-🇯🇵JP-149.22.87.241-0128",
+      "type": "shadowsocks"
+    },
+    {
       "method": "aes-128-gcm",
       "password": "shadowsocks",
       "server": "149.22.87.240",
       "server_port": 443,
-      "tag": "01-shadowsocks-🇯🇵 JP | SS | @outlinereleasedkey 1",
+      "tag": "03-shadowsocks-🇯🇵JP-149.22.87.240-0130",
       "type": "shadowsocks"
     },
     {
@@ -13,7 +29,7 @@
       "password": "shadowsocks",
       "server": "149.22.87.204",
       "server_port": 443,
-      "tag": "02-shadowsocks-🇯🇵JP-149.22.87.204-0216",
+      "tag": "04-shadowsocks-🇯🇵JP-149.22.87.204-0129",
       "type": "shadowsocks"
     },
     {
@@ -21,25 +37,9 @@
       "security": "auto",
       "server": "153.121.73.175",
       "server_port": 49803,
-      "tag": "03-vmess-Global 🌐 | @Raydikalx | 2430",
+      "tag": "05-vmess-Global 🌐 | @Raydikalx | 2430",
       "type": "vmess",
       "uuid": "cd3dacbc-2b7b-4718-83ad-ab870f87e12e"
-    },
-    {
-      "method": "aes-128-gcm",
-      "password": "shadowsocks",
-      "server": "149.22.87.241",
-      "server_port": 443,
-      "tag": "04-shadowsocks-🇯🇵JP-149.22.87.241-0128",
-      "type": "shadowsocks"
-    },
-    {
-      "method": "aes-256-gcm",
-      "password": "GTZI5AbjNAeWQG0oVNptvWJogHNKiiKA",
-      "server": "47.79.144.115",
-      "server_port": 40003,
-      "tag": "05-shadowsocks-🇯🇵JP-47.79.144.115-0195",
-      "type": "shadowsocks"
     },
     {
       "method": "aes-256-gcm",
@@ -93,17 +93,30 @@
       "uuid": "11d29ec6-be66-4f59-97c6-7cff836ea318"
     },
     {
+      "server": "108.160.132.178",
+      "server_port": 443,
+      "tag": "10-vless-🆔configfa 🔒 VL-WS-N/A ❔ XX 168ms",
+      "tls": {
+        "enabled": true,
+        "insecure": false,
+        "server_name": "t1s1.rittbo.kdns.fr"
+      },
+      "type": "vless",
+      "uuid": "eeb6823c-b926-4ea2-866a-5542edd26e59"
+    },
+    {
       "interval": "5m",
       "outbounds": [
-        "01-shadowsocks-🇯🇵 JP | SS | @outlinereleasedkey 1",
-        "02-shadowsocks-🇯🇵JP-149.22.87.204-0216",
-        "03-vmess-Global 🌐 | @Raydikalx | 2430",
-        "04-shadowsocks-🇯🇵JP-149.22.87.241-0128",
-        "05-shadowsocks-🇯🇵JP-47.79.144.115-0195",
+        "01-shadowsocks-🇯🇵JP-47.79.144.115-0195",
+        "02-shadowsocks-🇯🇵JP-149.22.87.241-0128",
+        "03-shadowsocks-🇯🇵JP-149.22.87.240-0130",
+        "04-shadowsocks-🇯🇵JP-149.22.87.204-0129",
+        "05-vmess-Global 🌐 | @Raydikalx | 2430",
         "06-shadowsocks-🇯🇵JP-103.106.228.175-0131",
         "07-vless-🇯🇵 JP 1",
         "08-vmess-JP 🇯🇵 | @Raydikalx | 2428",
-        "09-vless-🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001_59b3c7d8"
+        "09-vless-🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001_59b3c7d8",
+        "10-vless-🆔configfa 🔒 VL-WS-N/A ❔ XX 168ms"
       ],
       "tag": "auto",
       "type": "urltest",
@@ -112,15 +125,16 @@
     {
       "outbounds": [
         "auto",
-        "01-shadowsocks-🇯🇵 JP | SS | @outlinereleasedkey 1",
-        "02-shadowsocks-🇯🇵JP-149.22.87.204-0216",
-        "03-vmess-Global 🌐 | @Raydikalx | 2430",
-        "04-shadowsocks-🇯🇵JP-149.22.87.241-0128",
-        "05-shadowsocks-🇯🇵JP-47.79.144.115-0195",
+        "01-shadowsocks-🇯🇵JP-47.79.144.115-0195",
+        "02-shadowsocks-🇯🇵JP-149.22.87.241-0128",
+        "03-shadowsocks-🇯🇵JP-149.22.87.240-0130",
+        "04-shadowsocks-🇯🇵JP-149.22.87.204-0129",
+        "05-vmess-Global 🌐 | @Raydikalx | 2430",
         "06-shadowsocks-🇯🇵JP-103.106.228.175-0131",
         "07-vless-🇯🇵 JP 1",
         "08-vmess-JP 🇯🇵 | @Raydikalx | 2428",
-        "09-vless-🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001_59b3c7d8"
+        "09-vless-🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001_59b3c7d8",
+        "10-vless-🆔configfa 🔒 VL-WS-N/A ❔ XX 168ms"
       ],
       "tag": "select",
       "type": "selector"
