@@ -1,19 +1,19 @@
 {
   "outbounds": [
     {
+      "method": "aes-128-gcm",
+      "password": "shadowsocks",
+      "server": "158.173.24.73",
+      "server_port": 443,
+      "tag": "01-shadowsocks-⛵8@oneclickvpnkeys",
+      "type": "shadowsocks"
+    },
+    {
       "method": "rc4-md5",
       "password": "14fFPrbezE3HDZzsMOr6",
       "server": "146.70.61.37",
       "server_port": 8080,
-      "tag": "01-shadowsocks-🇬🇧 GB 6",
-      "type": "shadowsocks"
-    },
-    {
-      "method": "aes-256-gcm",
-      "password": "RexnBgU7EV5ADxG",
-      "server": "94.156.250.148",
-      "server_port": 7001,
-      "tag": "02-shadowsocks-☑➜چنلمون: Express_freevpn@",
+      "tag": "02-shadowsocks-🇬🇧 GB 6",
       "type": "shadowsocks"
     },
     {
@@ -25,19 +25,19 @@
       "type": "shadowsocks"
     },
     {
-      "method": "aes-128-gcm",
-      "password": "shadowsocks",
-      "server": "141.98.101.178",
-      "server_port": 443,
-      "tag": "04-shadowsocks-🇬🇧GB-141.98.101.178-0281",
+      "method": "aes-256-gcm",
+      "password": "RexnBgU7EV5ADxG",
+      "server": "94.156.250.148",
+      "server_port": 7001,
+      "tag": "04-shadowsocks-☑➜چنلمون: Express_freevpn@",
       "type": "shadowsocks"
     },
     {
       "method": "aes-128-gcm",
       "password": "shadowsocks",
-      "server": "141.98.101.179",
+      "server": "141.98.101.178",
       "server_port": 443,
-      "tag": "05-shadowsocks-🇬🇧GB-141.98.101.179-0168",
+      "tag": "05-shadowsocks-🇬🇧 GB 4",
       "type": "shadowsocks"
     },
     {
@@ -45,18 +45,41 @@
       "password": "shadowsocks",
       "server": "141.98.101.181",
       "server_port": 443,
-      "tag": "06-shadowsocks-🇬🇧 GB 3",
+      "tag": "06-shadowsocks-🇬🇧GB-141.98.101.181-0151",
       "type": "shadowsocks"
+    },
+    {
+      "flow": "xtls-rprx-vision",
+      "server": "45.43.75.199",
+      "server_port": 7443,
+      "tag": "07-vless-97.🌐Неизвестно | @LimeVPNFREE",
+      "tls": {
+        "enabled": true,
+        "insecure": false,
+        "reality": {
+          "enabled": true,
+          "public_key": "5QAO98ot2U7TcGs_f6EEaQjCzNOJLNHqPf6smYsdFVI",
+          "short_id": "be0ce047"
+        },
+        "server_name": "chat.deepseek.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "type": "vless",
+      "uuid": "caa3af29-3b04-4099-9772-c64a1b7cca34"
     },
     {
       "interval": "5m",
       "outbounds": [
-        "01-shadowsocks-🇬🇧 GB 6",
-        "02-shadowsocks-☑➜چنلمون: Express_freevpn@",
+        "01-shadowsocks-⛵8@oneclickvpnkeys",
+        "02-shadowsocks-🇬🇧 GB 6",
         "03-shadowsocks-🇬🇧GB-141.98.101.182-0154",
-        "04-shadowsocks-🇬🇧GB-141.98.101.178-0281",
-        "05-shadowsocks-🇬🇧GB-141.98.101.179-0168",
-        "06-shadowsocks-🇬🇧 GB 3"
+        "04-shadowsocks-☑➜چنلمون: Express_freevpn@",
+        "05-shadowsocks-🇬🇧 GB 4",
+        "06-shadowsocks-🇬🇧GB-141.98.101.181-0151",
+        "07-vless-97.🌐Неизвестно | @LimeVPNFREE"
       ],
       "tag": "auto",
       "type": "urltest",
@@ -65,12 +88,13 @@
     {
       "outbounds": [
         "auto",
-        "01-shadowsocks-🇬🇧 GB 6",
-        "02-shadowsocks-☑➜چنلمون: Express_freevpn@",
+        "01-shadowsocks-⛵8@oneclickvpnkeys",
+        "02-shadowsocks-🇬🇧 GB 6",
         "03-shadowsocks-🇬🇧GB-141.98.101.182-0154",
-        "04-shadowsocks-🇬🇧GB-141.98.101.178-0281",
-        "05-shadowsocks-🇬🇧GB-141.98.101.179-0168",
-        "06-shadowsocks-🇬🇧 GB 3"
+        "04-shadowsocks-☑➜چنلمون: Express_freevpn@",
+        "05-shadowsocks-🇬🇧 GB 4",
+        "06-shadowsocks-🇬🇧GB-141.98.101.181-0151",
+        "07-vless-97.🌐Неизвестно | @LimeVPNFREE"
       ],
       "tag": "select",
       "type": "selector"
