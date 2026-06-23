@@ -7,77 +7,93 @@ proxies:
       type: ss
       udp: true
     - cipher: aes-128-gcm
-      name: "02-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.178-0281"
+      name: 02-shadowsocks-t.me/ConfigFori  -  Config 79369
       password: shadowsocks
       port: 443
       server: 141.98.101.178
       type: ss
       udp: true
     - cipher: aes-128-gcm
-      name: "03-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.181-0137"
-      password: shadowsocks
-      port: 443
-      server: 141.98.101.181
-      type: ss
-      udp: true
-    - cipher: aes-128-gcm
-      name: "04-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.182-0141"
-      password: shadowsocks
-      port: 443
-      server: 141.98.101.182
-      type: ss
-      udp: true
-    - cipher: aes-128-gcm
-      name: "05-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.179-0139"
+      name: "03-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.179-0139"
       password: shadowsocks
       port: 443
       server: 141.98.101.179
       type: ss
       udp: true
     - cipher: aes-256-gcm
-      name: "06-shadowsocks-\U0001F1EC\U0001F1E7GB-94.156.250.148-0136"
+      name: "04-shadowsocks-\U0001F1EC\U0001F1E7GB-94.156.250.148-0136"
       password: RexnBgU7EV5ADxG
       port: 7001
       server: 94.156.250.148
       type: ss
       udp: true
-    - client-fingerprint: chrome
+    - cipher: aes-128-gcm
+      name: "05-shadowsocks-\U0001F1EC\U0001F1E7 GB | SS | @netfreedom0 1"
+      password: shadowsocks
+      port: 443
+      server: 141.98.101.182
+      type: ss
+      udp: true
+    - cipher: aes-128-gcm
+      name: "06-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.181-0137"
+      password: shadowsocks
+      port: 443
+      server: 141.98.101.181
+      type: ss
+      udp: true
+    - client-fingerprint: firefox
       flow: xtls-rprx-vision
-      name: "07-vless-113.\U0001F310Неизвестно | @LimeVPNFREE"
+      name: "07-vless-\U0001F1EC\U0001F1E7 GB 1"
       network: tcp
       port: 443
       reality-opts:
-        public-key: Fp0-VrMBeaQe9xOrehDYHt0mqTZL-5CdfuMEzoXkOE8
-        short-id: ""
-      server: 195.184.247.178
-      servername: google.com
+        public-key: U_E3xSI6QY_Mj-3zjkB4esvMj0aVvYH6W6oHOR50XBs
+        short-id: 10debbdf94767541
+      server: 95.133.242.210
+      servername: filesconvert.org
       tls: true
       type: vless
       udp: true
-      uuid: ea0a2f27-7e22-4337-820b-6703eca2d7b4
+      uuid: 5982d32f-f2e4-4267-a8ad-48492e65344c
+    - client-fingerprint: chrome
+      flow: xtls-rprx-vision
+      name: "08-vless-97.\U0001F310Неизвестно | @LimeVPNFREE"
+      network: tcp
+      port: 7443
+      reality-opts:
+        public-key: 5QAO98ot2U7TcGs_f6EEaQjCzNOJLNHqPf6smYsdFVI
+        short-id: be0ce047
+      server: 45.43.75.199
+      servername: chat.deepseek.com
+      tls: true
+      type: vless
+      udp: true
+      uuid: caa3af29-3b04-4099-9772-c64a1b7cca34
 proxy-groups:
     - interval: 300
       name: auto
       proxies:
         - "01-shadowsocks-\U0001F1EC\U0001F1E7GB-146.70.61.37-0116"
-        - "02-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.178-0281"
-        - "03-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.181-0137"
-        - "04-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.182-0141"
-        - "05-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.179-0139"
-        - "06-shadowsocks-\U0001F1EC\U0001F1E7GB-94.156.250.148-0136"
-        - "07-vless-113.\U0001F310Неизвестно | @LimeVPNFREE"
+        - 02-shadowsocks-t.me/ConfigFori  -  Config 79369
+        - "03-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.179-0139"
+        - "04-shadowsocks-\U0001F1EC\U0001F1E7GB-94.156.250.148-0136"
+        - "05-shadowsocks-\U0001F1EC\U0001F1E7 GB | SS | @netfreedom0 1"
+        - "06-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.181-0137"
+        - "07-vless-\U0001F1EC\U0001F1E7 GB 1"
+        - "08-vless-97.\U0001F310Неизвестно | @LimeVPNFREE"
       type: url-test
       url: https://www.gstatic.com/generate_204
     - name: select
       proxies:
         - auto
         - "01-shadowsocks-\U0001F1EC\U0001F1E7GB-146.70.61.37-0116"
-        - "02-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.178-0281"
-        - "03-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.181-0137"
-        - "04-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.182-0141"
-        - "05-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.179-0139"
-        - "06-shadowsocks-\U0001F1EC\U0001F1E7GB-94.156.250.148-0136"
-        - "07-vless-113.\U0001F310Неизвестно | @LimeVPNFREE"
+        - 02-shadowsocks-t.me/ConfigFori  -  Config 79369
+        - "03-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.179-0139"
+        - "04-shadowsocks-\U0001F1EC\U0001F1E7GB-94.156.250.148-0136"
+        - "05-shadowsocks-\U0001F1EC\U0001F1E7 GB | SS | @netfreedom0 1"
+        - "06-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.181-0137"
+        - "07-vless-\U0001F1EC\U0001F1E7 GB 1"
+        - "08-vless-97.\U0001F310Неизвестно | @LimeVPNFREE"
       type: select
 rules:
     - MATCH,select
