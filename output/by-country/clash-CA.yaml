@@ -13,8 +13,26 @@ proxies:
       server: 149.22.95.183
       type: ss
       udp: true
+    - alterId: 0
+      cipher: auto
+      name: "03-vmess-CA \U0001F1E8\U0001F1E6 | @Raydikalx | 3150"
+      network: tcp
+      port: 18000
+      server: 134.195.196.211
+      type: vmess
+      udp: true
+      uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+    - alterId: 0
+      cipher: auto
+      name: "04-vmess-CA \U0001F1E8\U0001F1E6 | @Raydikalx | 3160"
+      network: tcp
+      port: 18000
+      server: 23.162.200.198
+      type: vmess
+      udp: true
+      uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
     - cipher: rc4-md5
-      name: "03-shadowsocks-\U0001F1E8\U0001F1E6CA-137.184.174.93-0110"
+      name: "05-shadowsocks-\U0001F1E8\U0001F1E6CA-137.184.174.93-0110"
       password: 14fFPrbezE3HDZzsMOr6
       port: 8080
       server: 137.184.174.93
@@ -22,21 +40,7 @@ proxies:
       udp: true
     - client-fingerprint: chrome
       flow: xtls-rprx-vision
-      name: "04-vless-\U0001F534\U0001F1E8\U0001F1E6[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_182ef329"
-      network: raw
-      port: 41087
-      reality-opts:
-        public-key: aoGL5vNnsEuKoBXQFXyHTxjvcdAn3SxT4qUgV6aJxnw
-        short-id: 190d259bbd40d4c3
-      server: 15.223.121.250
-      servername: www.tesla.com
-      tls: true
-      type: vless
-      udp: true
-      uuid: 57d94cf7-ca36-4c2a-bec5-90cf38588cda
-    - client-fingerprint: firefox
-      flow: xtls-rprx-vision
-      name: '05-vless-Channel : @ Daily_Configs'
+      name: 06-vless-@FarazV2ray
       network: tcp
       port: 443
       reality-opts:
@@ -54,9 +58,10 @@ proxy-groups:
       proxies:
         - "01-shadowsocks-\U0001F1E8\U0001F1E6CA-108.181.118.10-0128"
         - "02-shadowsocks-\U0001F1E8\U0001F1E6CA-149.22.95.183-4005"
-        - "03-shadowsocks-\U0001F1E8\U0001F1E6CA-137.184.174.93-0110"
-        - "04-vless-\U0001F534\U0001F1E8\U0001F1E6[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_182ef329"
-        - '05-vless-Channel : @ Daily_Configs'
+        - "03-vmess-CA \U0001F1E8\U0001F1E6 | @Raydikalx | 3150"
+        - "04-vmess-CA \U0001F1E8\U0001F1E6 | @Raydikalx | 3160"
+        - "05-shadowsocks-\U0001F1E8\U0001F1E6CA-137.184.174.93-0110"
+        - 06-vless-@FarazV2ray
       type: url-test
       url: https://www.gstatic.com/generate_204
     - name: select
@@ -64,9 +69,10 @@ proxy-groups:
         - auto
         - "01-shadowsocks-\U0001F1E8\U0001F1E6CA-108.181.118.10-0128"
         - "02-shadowsocks-\U0001F1E8\U0001F1E6CA-149.22.95.183-4005"
-        - "03-shadowsocks-\U0001F1E8\U0001F1E6CA-137.184.174.93-0110"
-        - "04-vless-\U0001F534\U0001F1E8\U0001F1E6[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_182ef329"
-        - '05-vless-Channel : @ Daily_Configs'
+        - "03-vmess-CA \U0001F1E8\U0001F1E6 | @Raydikalx | 3150"
+        - "04-vmess-CA \U0001F1E8\U0001F1E6 | @Raydikalx | 3160"
+        - "05-shadowsocks-\U0001F1E8\U0001F1E6CA-137.184.174.93-0110"
+        - 06-vless-@FarazV2ray
       type: select
 rules:
     - MATCH,select
