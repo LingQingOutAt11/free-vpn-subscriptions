@@ -1,28 +1,70 @@
 proxies:
     - cipher: chacha20-ietf-poly1305
       name: 01-shadowsocks-node
-      password: ebEfGowZtV1BEFXZOtgAXi
-      port: 443
-      server: tinkered-pennies-puppies.freesocks.work
-      type: ss
-      udp: true
-    - cipher: chacha20-ietf-poly1305
-      name: 02-shadowsocks-node
       password: 01iK5R1qq8MGGUyN9P20au
       port: 443
       server: 147.90.234.133
       type: ss
       udp: true
-    - cipher: aes-128-cfb
-      name: "03-shadowsocks-\U0001F30A76@oneclickvpnkeys"
-      password: shadowsocks
+    - cipher: chacha20-ietf-poly1305
+      name: "02-shadowsocks-\U0001F1FA\U0001F1F8US-\U0001F680@VPNine1"
+      password: gaM3vd5zfR1ay1v7hfn4X6
       port: 443
-      server: 109.201.152.181
+      server: tinkered-pennies-puppies.freesocks.work
+      type: ss
+      udp: true
+    - cipher: chacha20-ietf-poly1305
+      name: "03-shadowsocks-[\U0001F1F3\U0001F1F1]t.me/Raiv2mmr"
+      password: CJmTCCx7Ltud
+      port: 8388
+      server: 108.181.58.239
       type: ss
       udp: true
     - client-fingerprint: chrome
       flow: xtls-rprx-vision
-      name: "04-vless-10.\U0001F1F3\U0001F1F1Нидерланды | @LimeVPNFREE"
+      name: "04-vless-32.\U0001F1F3\U0001F1F1Нидерланды | @LimeVPNFREE"
+      network: tcp
+      port: 23576
+      reality-opts:
+        public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+        short-id: "01"
+      server: 51.158.206.98
+      servername: fuck.rkn
+      tls: true
+      type: vless
+      udp: true
+      uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    - client-fingerprint: chrome
+      flow: xtls-rprx-vision
+      name: "05-vless-16.\U0001F310Неизвестно | @LimeVPNFREE"
+      network: tcp
+      port: 23576
+      reality-opts:
+        public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+        short-id: "01"
+      server: 51.158.206.20
+      servername: fuck.rkn
+      tls: true
+      type: vless
+      udp: true
+      uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    - client-fingerprint: chrome
+      flow: xtls-rprx-vision
+      name: 06-vless->>@oneclickvpnkeys::NL
+      network: tcp
+      port: 23576
+      reality-opts:
+        public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+        short-id: "01"
+      server: 51.158.206.19
+      servername: fuck.rkn
+      tls: true
+      type: vless
+      udp: true
+      uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    - client-fingerprint: chrome
+      flow: xtls-rprx-vision
+      name: "07-vless-10.\U0001F1F3\U0001F1F1Нидерланды | @LimeVPNFREE"
       network: tcp
       port: 23576
       reality-opts:
@@ -34,23 +76,44 @@ proxies:
       type: vless
       udp: true
       uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    - client-fingerprint: chrome
+      name: "08-vless-83.\U0001F1F3\U0001F1F1Нидерланды | @LimeVPNFREE"
+      network: tcp
+      port: 443
+      reality-opts:
+        public-key: GzOdZG9TCQSrZV7ivcmOq9tKWUf37QnoTxSHf32OfAs
+        short-id: "1680"
+      server: 89.23.107.137
+      servername: www.samsung.com
+      tls: true
+      type: vless
+      udp: true
+      uuid: 612c872d-1370-4109-8644-f0755f97e33f
 proxy-groups:
     - interval: 300
       name: auto
       proxies:
         - 01-shadowsocks-node
-        - 02-shadowsocks-node
-        - "03-shadowsocks-\U0001F30A76@oneclickvpnkeys"
-        - "04-vless-10.\U0001F1F3\U0001F1F1Нидерланды | @LimeVPNFREE"
+        - "02-shadowsocks-\U0001F1FA\U0001F1F8US-\U0001F680@VPNine1"
+        - "03-shadowsocks-[\U0001F1F3\U0001F1F1]t.me/Raiv2mmr"
+        - "04-vless-32.\U0001F1F3\U0001F1F1Нидерланды | @LimeVPNFREE"
+        - "05-vless-16.\U0001F310Неизвестно | @LimeVPNFREE"
+        - 06-vless->>@oneclickvpnkeys::NL
+        - "07-vless-10.\U0001F1F3\U0001F1F1Нидерланды | @LimeVPNFREE"
+        - "08-vless-83.\U0001F1F3\U0001F1F1Нидерланды | @LimeVPNFREE"
       type: url-test
       url: https://www.gstatic.com/generate_204
     - name: select
       proxies:
         - auto
         - 01-shadowsocks-node
-        - 02-shadowsocks-node
-        - "03-shadowsocks-\U0001F30A76@oneclickvpnkeys"
-        - "04-vless-10.\U0001F1F3\U0001F1F1Нидерланды | @LimeVPNFREE"
+        - "02-shadowsocks-\U0001F1FA\U0001F1F8US-\U0001F680@VPNine1"
+        - "03-shadowsocks-[\U0001F1F3\U0001F1F1]t.me/Raiv2mmr"
+        - "04-vless-32.\U0001F1F3\U0001F1F1Нидерланды | @LimeVPNFREE"
+        - "05-vless-16.\U0001F310Неизвестно | @LimeVPNFREE"
+        - 06-vless->>@oneclickvpnkeys::NL
+        - "07-vless-10.\U0001F1F3\U0001F1F1Нидерланды | @LimeVPNFREE"
+        - "08-vless-83.\U0001F1F3\U0001F1F1Нидерланды | @LimeVPNFREE"
       type: select
 rules:
     - MATCH,select
