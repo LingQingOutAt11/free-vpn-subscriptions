@@ -33,13 +33,6 @@ proxies:
       server: 213.202.208.199
       type: ss
       udp: true
-    - cipher: chacha20-ietf-poly1305
-      name: "05-shadowsocks-@v2FreeHub \U0001F1E9\U0001F1EA"
-      password: cAqbBYBB0f9CAmpU_mc_7FyvvLCcwzt0
-      port: 8388
-      server: 31.172.87.124
-      type: ss
-      udp: true
 proxy-groups:
     - interval: 300
       name: auto
@@ -48,7 +41,6 @@ proxy-groups:
         - "02-vmess-\U0001F1FA\U0001F1F8 Join+Telegram:@Farah_VPN \U0001F1FA\U0001F1F8"
         - "03-vmess-\U0001F1E8\U0001F1FF CZ 1"
         - "04-shadowsocks-\U0001F1E9\U0001F1EADE-213.202.208.199-0200"
-        - "05-shadowsocks-@v2FreeHub \U0001F1E9\U0001F1EA"
       type: url-test
       url: https://www.gstatic.com/generate_204
     - name: select
@@ -58,7 +50,6 @@ proxy-groups:
         - "02-vmess-\U0001F1FA\U0001F1F8 Join+Telegram:@Farah_VPN \U0001F1FA\U0001F1F8"
         - "03-vmess-\U0001F1E8\U0001F1FF CZ 1"
         - "04-shadowsocks-\U0001F1E9\U0001F1EADE-213.202.208.199-0200"
-        - "05-shadowsocks-@v2FreeHub \U0001F1E9\U0001F1EA"
       type: select
 rules:
     - MATCH,select
