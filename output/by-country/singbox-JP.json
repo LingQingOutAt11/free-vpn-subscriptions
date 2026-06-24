@@ -11,9 +11,17 @@
     {
       "method": "aes-128-gcm",
       "password": "shadowsocks",
+      "server": "149.22.87.240",
+      "server_port": 443,
+      "tag": "02-shadowsocks-🇯🇵JP-149.22.87.240-0093",
+      "type": "shadowsocks"
+    },
+    {
+      "method": "aes-128-gcm",
+      "password": "shadowsocks",
       "server": "149.22.87.241",
       "server_port": 443,
-      "tag": "02-shadowsocks-🇯🇵JP-149.22.87.241-0091",
+      "tag": "03-shadowsocks-🇯🇵JP-149.22.87.241-4048",
       "type": "shadowsocks"
     },
     {
@@ -21,15 +29,7 @@
       "password": "shadowsocks",
       "server": "149.22.87.204",
       "server_port": 443,
-      "tag": "03-shadowsocks-🇯🇵JP-149.22.87.204-3716",
-      "type": "shadowsocks"
-    },
-    {
-      "method": "aes-128-gcm",
-      "password": "shadowsocks",
-      "server": "149.22.87.240",
-      "server_port": 443,
-      "tag": "04-shadowsocks-🇯🇵 JP | SS | @outlinereleasedkey 1",
+      "tag": "04-shadowsocks-🇯🇵JP-149.22.87.204-0216",
       "type": "shadowsocks"
     },
     {
@@ -37,7 +37,7 @@
       "password": "XKFKl2rULjIp74",
       "server": "103.106.228.175",
       "server_port": 8009,
-      "tag": "05-shadowsocks-🇯🇵JP-103.106.228.175-0094",
+      "tag": "05-shadowsocks-🇯🇵 JP 1",
       "type": "shadowsocks"
     },
     {
@@ -63,27 +63,37 @@
       "uuid": "c6508e59-dd68-4dc0-b14f-3192e84ef843"
     },
     {
-      "password": "MiTiVPN",
-      "server": "151.101.110.219",
-      "server_port": 443,
-      "tag": "07-trojan-日本 东京Fastly节点",
+      "flow": "xtls-rprx-vision",
+      "server": "160.16.220.197",
+      "server_port": 1443,
+      "tag": "07-vless-🔴🇯🇵_github.com/Ruk1ng001_08980dad",
       "tls": {
         "enabled": true,
         "insecure": false,
-        "server_name": "ssl.fastly.com"
+        "reality": {
+          "enabled": true,
+          "public_key": "0i_xAxYgSNx5NMpK2lOaWGS-CvAiD_LneYPO0MF0owo",
+          "short_id": "1a"
+        },
+        "server_name": "www.amazon.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       },
-      "type": "trojan"
+      "type": "vless",
+      "uuid": "b98d4c6e-6770-4a31-8256-a4750cdea0e7"
     },
     {
       "interval": "5m",
       "outbounds": [
         "01-shadowsocks-🇯🇵JP-47.79.144.115-0196",
-        "02-shadowsocks-🇯🇵JP-149.22.87.241-0091",
-        "03-shadowsocks-🇯🇵JP-149.22.87.204-3716",
-        "04-shadowsocks-🇯🇵 JP | SS | @outlinereleasedkey 1",
-        "05-shadowsocks-🇯🇵JP-103.106.228.175-0094",
+        "02-shadowsocks-🇯🇵JP-149.22.87.240-0093",
+        "03-shadowsocks-🇯🇵JP-149.22.87.241-4048",
+        "04-shadowsocks-🇯🇵JP-149.22.87.204-0216",
+        "05-shadowsocks-🇯🇵 JP 1",
         "06-vless-🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001_67a49755",
-        "07-trojan-日本 东京Fastly节点"
+        "07-vless-🔴🇯🇵_github.com/Ruk1ng001_08980dad"
       ],
       "tag": "auto",
       "type": "urltest",
@@ -93,12 +103,12 @@
       "outbounds": [
         "auto",
         "01-shadowsocks-🇯🇵JP-47.79.144.115-0196",
-        "02-shadowsocks-🇯🇵JP-149.22.87.241-0091",
-        "03-shadowsocks-🇯🇵JP-149.22.87.204-3716",
-        "04-shadowsocks-🇯🇵 JP | SS | @outlinereleasedkey 1",
-        "05-shadowsocks-🇯🇵JP-103.106.228.175-0094",
+        "02-shadowsocks-🇯🇵JP-149.22.87.240-0093",
+        "03-shadowsocks-🇯🇵JP-149.22.87.241-4048",
+        "04-shadowsocks-🇯🇵JP-149.22.87.204-0216",
+        "05-shadowsocks-🇯🇵 JP 1",
         "06-vless-🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001_67a49755",
-        "07-trojan-日本 东京Fastly节点"
+        "07-vless-🔴🇯🇵_github.com/Ruk1ng001_08980dad"
       ],
       "tag": "select",
       "type": "selector"

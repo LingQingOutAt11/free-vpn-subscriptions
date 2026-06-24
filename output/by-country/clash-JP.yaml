@@ -7,28 +7,28 @@ proxies:
       type: ss
       udp: true
     - cipher: aes-128-gcm
-      name: "02-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.241-0091"
+      name: "02-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.240-0093"
+      password: shadowsocks
+      port: 443
+      server: 149.22.87.240
+      type: ss
+      udp: true
+    - cipher: aes-128-gcm
+      name: "03-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.241-4048"
       password: shadowsocks
       port: 443
       server: 149.22.87.241
       type: ss
       udp: true
     - cipher: aes-128-gcm
-      name: "03-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.204-3716"
+      name: "04-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.204-0216"
       password: shadowsocks
       port: 443
       server: 149.22.87.204
       type: ss
       udp: true
-    - cipher: aes-128-gcm
-      name: "04-shadowsocks-\U0001F1EF\U0001F1F5 JP | SS | @outlinereleasedkey 1"
-      password: shadowsocks
-      port: 443
-      server: 149.22.87.240
-      type: ss
-      udp: true
     - cipher: aes-256-gcm
-      name: "05-shadowsocks-\U0001F1EF\U0001F1F5JP-103.106.228.175-0094"
+      name: "05-shadowsocks-\U0001F1EF\U0001F1F5 JP 1"
       password: XKFKl2rULjIp74
       port: 8009
       server: 103.106.228.175
@@ -48,37 +48,43 @@ proxies:
       type: vless
       udp: true
       uuid: c6508e59-dd68-4dc0-b14f-3192e84ef843
-    - name: 07-trojan-日本 东京Fastly节点
-      password: MiTiVPN
-      port: 443
-      server: 151.101.110.219
-      skip-cert-verify: false
-      sni: ssl.fastly.com
-      type: trojan
+    - client-fingerprint: chrome
+      flow: xtls-rprx-vision
+      name: "07-vless-\U0001F534\U0001F1EF\U0001F1F5_github.com/Ruk1ng001_08980dad"
+      network: tcp
+      port: 1443
+      reality-opts:
+        public-key: 0i_xAxYgSNx5NMpK2lOaWGS-CvAiD_LneYPO0MF0owo
+        short-id: 1a
+      server: 160.16.220.197
+      servername: www.amazon.com
+      tls: true
+      type: vless
       udp: true
+      uuid: b98d4c6e-6770-4a31-8256-a4750cdea0e7
 proxy-groups:
     - interval: 300
       name: auto
       proxies:
         - "01-shadowsocks-\U0001F1EF\U0001F1F5JP-47.79.144.115-0196"
-        - "02-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.241-0091"
-        - "03-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.204-3716"
-        - "04-shadowsocks-\U0001F1EF\U0001F1F5 JP | SS | @outlinereleasedkey 1"
-        - "05-shadowsocks-\U0001F1EF\U0001F1F5JP-103.106.228.175-0094"
+        - "02-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.240-0093"
+        - "03-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.241-4048"
+        - "04-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.204-0216"
+        - "05-shadowsocks-\U0001F1EF\U0001F1F5 JP 1"
         - "06-vless-\U0001F534\U0001F1EF\U0001F1F5[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_67a49755"
-        - 07-trojan-日本 东京Fastly节点
+        - "07-vless-\U0001F534\U0001F1EF\U0001F1F5_github.com/Ruk1ng001_08980dad"
       type: url-test
       url: https://www.gstatic.com/generate_204
     - name: select
       proxies:
         - auto
         - "01-shadowsocks-\U0001F1EF\U0001F1F5JP-47.79.144.115-0196"
-        - "02-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.241-0091"
-        - "03-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.204-3716"
-        - "04-shadowsocks-\U0001F1EF\U0001F1F5 JP | SS | @outlinereleasedkey 1"
-        - "05-shadowsocks-\U0001F1EF\U0001F1F5JP-103.106.228.175-0094"
+        - "02-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.240-0093"
+        - "03-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.241-4048"
+        - "04-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.204-0216"
+        - "05-shadowsocks-\U0001F1EF\U0001F1F5 JP 1"
         - "06-vless-\U0001F534\U0001F1EF\U0001F1F5[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_67a49755"
-        - 07-trojan-日本 东京Fastly节点
+        - "07-vless-\U0001F534\U0001F1EF\U0001F1F5_github.com/Ruk1ng001_08980dad"
       type: select
 rules:
     - MATCH,select
