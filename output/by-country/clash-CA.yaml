@@ -7,7 +7,7 @@ proxies:
       type: ss
       udp: true
     - cipher: aes-128-gcm
-      name: "02-shadowsocks-\U0001F1E8\U0001F1E6CA-149.22.95.183-0065"
+      name: "02-shadowsocks-\U0001F1E8\U0001F1E6CA-149.22.95.183-4005"
       password: shadowsocks
       port: 443
       server: 149.22.95.183
@@ -15,7 +15,7 @@ proxies:
       udp: true
     - alterId: 0
       cipher: auto
-      name: "03-vmess-Global \U0001F310 | @Raydikalx | 2689"
+      name: "03-vmess-Global \U0001F310 | @Raydikalx | 2693"
       network: tcp
       port: 18000
       server: 134.195.196.211
@@ -23,15 +23,15 @@ proxies:
       udp: true
       uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
     - cipher: rc4-md5
-      name: "04-shadowsocks-\U0001F1E8\U0001F1E6CA-137.184.174.93-0078"
+      name: "04-shadowsocks-\U0001F1E8\U0001F1E6 CA 1"
       password: 14fFPrbezE3HDZzsMOr6
       port: 8080
       server: 137.184.174.93
       type: ss
       udp: true
-    - client-fingerprint: chrome
+    - client-fingerprint: firefox
       flow: xtls-rprx-vision
-      name: 05-vless-@FarazV2ray
+      name: '05-vless-Channel : @ Daily_Configs'
       network: tcp
       port: 443
       reality-opts:
@@ -48,20 +48,20 @@ proxy-groups:
       name: auto
       proxies:
         - "01-shadowsocks-\U0001F1E8\U0001F1E6CA-108.181.118.10-0059"
-        - "02-shadowsocks-\U0001F1E8\U0001F1E6CA-149.22.95.183-0065"
-        - "03-vmess-Global \U0001F310 | @Raydikalx | 2689"
-        - "04-shadowsocks-\U0001F1E8\U0001F1E6CA-137.184.174.93-0078"
-        - 05-vless-@FarazV2ray
+        - "02-shadowsocks-\U0001F1E8\U0001F1E6CA-149.22.95.183-4005"
+        - "03-vmess-Global \U0001F310 | @Raydikalx | 2693"
+        - "04-shadowsocks-\U0001F1E8\U0001F1E6 CA 1"
+        - '05-vless-Channel : @ Daily_Configs'
       type: url-test
       url: https://www.gstatic.com/generate_204
     - name: select
       proxies:
         - auto
         - "01-shadowsocks-\U0001F1E8\U0001F1E6CA-108.181.118.10-0059"
-        - "02-shadowsocks-\U0001F1E8\U0001F1E6CA-149.22.95.183-0065"
-        - "03-vmess-Global \U0001F310 | @Raydikalx | 2689"
-        - "04-shadowsocks-\U0001F1E8\U0001F1E6CA-137.184.174.93-0078"
-        - 05-vless-@FarazV2ray
+        - "02-shadowsocks-\U0001F1E8\U0001F1E6CA-149.22.95.183-4005"
+        - "03-vmess-Global \U0001F310 | @Raydikalx | 2693"
+        - "04-shadowsocks-\U0001F1E8\U0001F1E6 CA 1"
+        - '05-vless-Channel : @ Daily_Configs'
       type: select
 rules:
     - MATCH,select
