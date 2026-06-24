@@ -25,11 +25,34 @@
       "type": "shadowsocks"
     },
     {
+      "flow": "xtls-rprx-vision",
+      "server": "95.133.242.210",
+      "server_port": 443,
+      "tag": "04-vless-🇬🇧 GB 1",
+      "tls": {
+        "enabled": true,
+        "insecure": false,
+        "reality": {
+          "enabled": true,
+          "public_key": "U_E3xSI6QY_Mj-3zjkB4esvMj0aVvYH6W6oHOR50XBs",
+          "short_id": "10debbdf94767541"
+        },
+        "server_name": "filesconvert.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "type": "vless",
+      "uuid": "5982d32f-f2e4-4267-a8ad-48492e65344c"
+    },
+    {
       "interval": "5m",
       "outbounds": [
         "01-shadowsocks-💟3@oneclickvpnkeys",
         "02-shadowsocks-🇬🇧GB-146.70.61.37-0164",
-        "03-shadowsocks-🇬🇧GB-94.156.250.148-0097"
+        "03-shadowsocks-🇬🇧GB-94.156.250.148-0097",
+        "04-vless-🇬🇧 GB 1"
       ],
       "tag": "auto",
       "type": "urltest",
@@ -40,7 +63,8 @@
         "auto",
         "01-shadowsocks-💟3@oneclickvpnkeys",
         "02-shadowsocks-🇬🇧GB-146.70.61.37-0164",
-        "03-shadowsocks-🇬🇧GB-94.156.250.148-0097"
+        "03-shadowsocks-🇬🇧GB-94.156.250.148-0097",
+        "04-vless-🇬🇧 GB 1"
       ],
       "tag": "select",
       "type": "selector"

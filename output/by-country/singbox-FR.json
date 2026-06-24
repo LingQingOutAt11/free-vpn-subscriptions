@@ -1,0 +1,73 @@
+{
+  "outbounds": [
+    {
+      "server": "45.13.119.219",
+      "server_port": 8888,
+      "tag": "01-vless-@W570W",
+      "type": "vless",
+      "uuid": "eb77be10-9d9e-527b-a78d-8caaf58992d6"
+    },
+    {
+      "password": "dongtaiwang.com",
+      "server": "62.210.124.146",
+      "server_port": 22000,
+      "tag": "02-hysteria2- By EbraSha ♦️",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "www.microsoft.com"
+      },
+      "type": "hysteria2"
+    },
+    {
+      "flow": "xtls-rprx-vision",
+      "server": "51.44.25.250",
+      "server_port": 44520,
+      "tag": "03-vless-🔴🇫🇷[🎬🤖📺🔍]_github.com/Ruk1ng001_2bcbb29e",
+      "tls": {
+        "enabled": true,
+        "insecure": false,
+        "reality": {
+          "enabled": true,
+          "public_key": "MrLRcU_2S2CpUc7VT3ajIavX5NYUiQdP6J5QTDFNGFU",
+          "short_id": "8897c56a495b26cc"
+        },
+        "server_name": "yahoo.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "type": "vless",
+      "uuid": "acd726d3-0128-44d8-a575-21013ff7740a"
+    },
+    {
+      "interval": "5m",
+      "outbounds": [
+        "01-vless-@W570W",
+        "02-hysteria2- By EbraSha ♦️",
+        "03-vless-🔴🇫🇷[🎬🤖📺🔍]_github.com/Ruk1ng001_2bcbb29e"
+      ],
+      "tag": "auto",
+      "type": "urltest",
+      "url": "https://www.gstatic.com/generate_204"
+    },
+    {
+      "outbounds": [
+        "auto",
+        "01-vless-@W570W",
+        "02-hysteria2- By EbraSha ♦️",
+        "03-vless-🔴🇫🇷[🎬🤖📺🔍]_github.com/Ruk1ng001_2bcbb29e"
+      ],
+      "tag": "select",
+      "type": "selector"
+    },
+    {
+      "tag": "direct",
+      "type": "direct"
+    }
+  ],
+  "route": {
+    "final": "select"
+  }
+}

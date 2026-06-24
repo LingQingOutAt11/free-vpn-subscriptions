@@ -20,6 +20,20 @@ proxies:
       server: 94.156.250.148
       type: ss
       udp: true
+    - client-fingerprint: firefox
+      flow: xtls-rprx-vision
+      name: "04-vless-\U0001F1EC\U0001F1E7 GB 1"
+      network: tcp
+      port: 443
+      reality-opts:
+        public-key: U_E3xSI6QY_Mj-3zjkB4esvMj0aVvYH6W6oHOR50XBs
+        short-id: 10debbdf94767541
+      server: 95.133.242.210
+      servername: filesconvert.org
+      tls: true
+      type: vless
+      udp: true
+      uuid: 5982d32f-f2e4-4267-a8ad-48492e65344c
 proxy-groups:
     - interval: 300
       name: auto
@@ -27,6 +41,7 @@ proxy-groups:
         - "01-shadowsocks-\U0001F49F3@oneclickvpnkeys"
         - "02-shadowsocks-\U0001F1EC\U0001F1E7GB-146.70.61.37-0164"
         - "03-shadowsocks-\U0001F1EC\U0001F1E7GB-94.156.250.148-0097"
+        - "04-vless-\U0001F1EC\U0001F1E7 GB 1"
       type: url-test
       url: https://www.gstatic.com/generate_204
     - name: select
@@ -35,6 +50,7 @@ proxy-groups:
         - "01-shadowsocks-\U0001F49F3@oneclickvpnkeys"
         - "02-shadowsocks-\U0001F1EC\U0001F1E7GB-146.70.61.37-0164"
         - "03-shadowsocks-\U0001F1EC\U0001F1E7GB-94.156.250.148-0097"
+        - "04-vless-\U0001F1EC\U0001F1E7 GB 1"
       type: select
 rules:
     - MATCH,select
