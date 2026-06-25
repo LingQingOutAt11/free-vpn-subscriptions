@@ -1,42 +1,55 @@
 proxies:
-    - name: "01-trojan-\U0001F1F8\U0001F1EC Join Telegram:@Farah_VPN \U0001F1F8\U0001F1EC"
-      password: 6c862415-30d2-4813-8e49-42e99a0bd415
-      port: 443
-      server: 188.164.248.122
-      skip-cert-verify: false
-      sni: space.byu.id.yxls.eu.cc
-      type: trojan
-      udp: true
     - cipher: chacha20-ietf-poly1305
-      name: "02-shadowsocks-\U0001F1FA\U0001F1F8US-38.135.24.131-0211"
+      name: "01-shadowsocks-\U0001F1FA\U0001F1F8US-147.90.234.133-0154"
       password: hbGrpfvNrJsUmKmPbR3iY2
       port: 443
       server: tinkered-pennies-puppies.freesocks.work
       type: ss
       udp: true
     - cipher: aes-128-cfb
-      name: "03-shadowsocks-\U0001F1F3\U0001F1F1NL-109.201.152.181-0092"
+      name: "02-shadowsocks-\U0001F1F3\U0001F1F1NL-109.201.152.181-4178"
       password: shadowsocks
       port: 443
       server: 109.201.152.181
       type: ss
       udp: true
-    - cipher: chacha20-ietf-poly1305
-      name: 04-shadowsocks-@ReleaseNet
-      password: CJmTCCx7Ltud
-      port: 8388
-      server: 108.181.58.239
-      type: ss
-      udp: true
     - client-fingerprint: chrome
       flow: xtls-rprx-vision
-      name: "05-vless-\U0001F1F3\U0001F1F1 426 - NL - VLESS/REALITY/PBK/SID/VISI"
+      name: "03-vless-\U0001F1F3\U0001F1F1 426 - NL - VLESS/REALITY/PBK/SID/VISI"
       network: tcp
       port: 23576
       reality-opts:
         public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
         short-id: "01"
       server: 51.158.206.26
+      servername: fuck.rkn
+      tls: true
+      type: vless
+      udp: true
+      uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    - client-fingerprint: chrome
+      flow: xtls-rprx-vision
+      name: "04-vless-10.\U0001F1F3\U0001F1F1Нидерланды | @LimeVPNFREE"
+      network: tcp
+      port: 23576
+      reality-opts:
+        public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+        short-id: "01"
+      server: 51.158.206.96
+      servername: fuck.rkn
+      tls: true
+      type: vless
+      udp: true
+      uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    - client-fingerprint: chrome
+      flow: xtls-rprx-vision
+      name: "05-vless-32.\U0001F1F3\U0001F1F1Нидерланды | @LimeVPNFREE"
+      network: tcp
+      port: 23576
+      reality-opts:
+        public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+        short-id: "01"
+      server: 51.158.206.98
       servername: fuck.rkn
       tls: true
       type: vless
@@ -70,45 +83,29 @@ proxies:
       type: vless
       udp: true
       uuid: e2e1ddaa-1acf-4c4c-a211-92284f6440ed
-    - client-fingerprint: chrome
-      flow: xtls-rprx-vision
-      name: "08-vless-95.\U0001F310Неизвестно | @LimeVPNFREE"
-      network: tcp
-      port: 2443
-      reality-opts:
-        public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-        short-id: 6ba85179e30d4fc2
-      server: 144.31.30.69
-      servername: google.com
-      tls: true
-      type: vless
-      udp: true
-      uuid: f90cc83a-97ce-446d-8f80-30d3eef3351c
 proxy-groups:
     - interval: 300
       name: auto
       proxies:
-        - "01-trojan-\U0001F1F8\U0001F1EC Join Telegram:@Farah_VPN \U0001F1F8\U0001F1EC"
-        - "02-shadowsocks-\U0001F1FA\U0001F1F8US-38.135.24.131-0211"
-        - "03-shadowsocks-\U0001F1F3\U0001F1F1NL-109.201.152.181-0092"
-        - 04-shadowsocks-@ReleaseNet
-        - "05-vless-\U0001F1F3\U0001F1F1 426 - NL - VLESS/REALITY/PBK/SID/VISI"
+        - "01-shadowsocks-\U0001F1FA\U0001F1F8US-147.90.234.133-0154"
+        - "02-shadowsocks-\U0001F1F3\U0001F1F1NL-109.201.152.181-4178"
+        - "03-vless-\U0001F1F3\U0001F1F1 426 - NL - VLESS/REALITY/PBK/SID/VISI"
+        - "04-vless-10.\U0001F1F3\U0001F1F1Нидерланды | @LimeVPNFREE"
+        - "05-vless-32.\U0001F1F3\U0001F1F1Нидерланды | @LimeVPNFREE"
         - "06-vless-11.\U0001F1F3\U0001F1F1Нидерланды | @LimeVPNFREE"
         - "07-vless-35.\U0001F1F3\U0001F1F1Нидерланды | @LimeVPNFREE"
-        - "08-vless-95.\U0001F310Неизвестно | @LimeVPNFREE"
       type: url-test
       url: https://www.gstatic.com/generate_204
     - name: select
       proxies:
         - auto
-        - "01-trojan-\U0001F1F8\U0001F1EC Join Telegram:@Farah_VPN \U0001F1F8\U0001F1EC"
-        - "02-shadowsocks-\U0001F1FA\U0001F1F8US-38.135.24.131-0211"
-        - "03-shadowsocks-\U0001F1F3\U0001F1F1NL-109.201.152.181-0092"
-        - 04-shadowsocks-@ReleaseNet
-        - "05-vless-\U0001F1F3\U0001F1F1 426 - NL - VLESS/REALITY/PBK/SID/VISI"
+        - "01-shadowsocks-\U0001F1FA\U0001F1F8US-147.90.234.133-0154"
+        - "02-shadowsocks-\U0001F1F3\U0001F1F1NL-109.201.152.181-4178"
+        - "03-vless-\U0001F1F3\U0001F1F1 426 - NL - VLESS/REALITY/PBK/SID/VISI"
+        - "04-vless-10.\U0001F1F3\U0001F1F1Нидерланды | @LimeVPNFREE"
+        - "05-vless-32.\U0001F1F3\U0001F1F1Нидерланды | @LimeVPNFREE"
         - "06-vless-11.\U0001F1F3\U0001F1F1Нидерланды | @LimeVPNFREE"
         - "07-vless-35.\U0001F1F3\U0001F1F1Нидерланды | @LimeVPNFREE"
-        - "08-vless-95.\U0001F310Неизвестно | @LimeVPNFREE"
       type: select
 rules:
     - MATCH,select
