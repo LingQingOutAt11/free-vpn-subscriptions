@@ -1,35 +1,69 @@
 proxies:
     - cipher: aes-128-gcm
-      name: "01-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.240-0093"
+      name: "01-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.240-4052"
       password: shadowsocks
       port: 443
       server: 149.22.87.240
       type: ss
       udp: true
     - cipher: aes-128-gcm
-      name: "02-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.241-0091"
-      password: shadowsocks
-      port: 443
-      server: 149.22.87.241
-      type: ss
-      udp: true
-    - cipher: aes-128-gcm
-      name: "03-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.204-0090"
+      name: "02-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.204-0104"
       password: shadowsocks
       port: 443
       server: 149.22.87.204
       type: ss
       udp: true
+    - alterId: 1
+      cipher: auto
+      name: "03-vmess-JP \U0001F1EF\U0001F1F5 | @Raydikalx | 2668"
+      network: tcp
+      port: 22324
+      server: 172.104.80.66
+      type: vmess
+      udp: true
+      uuid: 04621bae-ab36-11ec-b909-0242ac120002
+    - cipher: aes-128-gcm
+      name: "04-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.241-4048"
+      password: shadowsocks
+      port: 443
+      server: 149.22.87.241
+      type: ss
+      udp: true
+    - alterId: 0
+      cipher: auto
+      name: "05-vmess-JP \U0001F1EF\U0001F1F5 | @Raydikalx | 2666"
+      network: tcp
+      port: 49803
+      server: 153.121.73.175
+      type: vmess
+      udp: true
+      uuid: cd3dacbc-2b7b-4718-83ad-ab870f87e12e
     - cipher: aes-256-gcm
-      name: "04-shadowsocks-\U0001F1EF\U0001F1F5JP-103.106.228.175-0094"
+      name: "06-shadowsocks-\U0001F1EF\U0001F1F5JP-47.79.144.115-0166"
+      password: GTZI5AbjNAeWQG0oVNptvWJogHNKiiKA
+      port: 40003
+      server: 47.79.144.115
+      type: ss
+      udp: true
+    - cipher: aes-256-gcm
+      name: "07-shadowsocks-\U0001F49F34@oneclickvpnkeys"
       password: XKFKl2rULjIp74
       port: 8009
       server: 103.106.228.175
       type: ss
       udp: true
+    - alterId: 0
+      cipher: auto
+      name: "08-vmess-\U0001F1EF\U0001F1F5JP-172.111.146.64-5995"
+      network: ws
+      port: 80
+      server: 172.111.146.64
+      type: vmess
+      udp: true
+      uuid: 05b8c783-7f59-47f9-9923-06a465679f6a
     - client-fingerprint: firefox
       flow: xtls-rprx-vision
-      name: "05-vless-\U0001F534\U0001F1EF\U0001F1F5[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_67a49755"
+      name: "09-vless-\U0001F534\U0001F1EF\U0001F1F5[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_67a49755"
       network: tcp
       port: 47381
       reality-opts:
@@ -43,34 +77,42 @@ proxies:
       uuid: c6508e59-dd68-4dc0-b14f-3192e84ef843
     - alterId: 0
       cipher: auto
-      name: "06-vmess-\U0001F1EF\U0001F1F5JP-172.111.146.64-4772"
+      name: "10-vmess-\U0001F1EF\U0001F1F5JP-140.83.51.161-1197"
       network: ws
-      port: 80
-      server: 172.111.146.64
+      port: 25686
+      server: 140.83.51.161
       type: vmess
       udp: true
-      uuid: 05b8c783-7f59-47f9-9923-06a465679f6a
+      uuid: 6733c357-ba11-4e9f-f00f-7d87f2776ff9
 proxy-groups:
     - interval: 300
       name: auto
       proxies:
-        - "01-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.240-0093"
-        - "02-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.241-0091"
-        - "03-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.204-0090"
-        - "04-shadowsocks-\U0001F1EF\U0001F1F5JP-103.106.228.175-0094"
-        - "05-vless-\U0001F534\U0001F1EF\U0001F1F5[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_67a49755"
-        - "06-vmess-\U0001F1EF\U0001F1F5JP-172.111.146.64-4772"
+        - "01-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.240-4052"
+        - "02-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.204-0104"
+        - "03-vmess-JP \U0001F1EF\U0001F1F5 | @Raydikalx | 2668"
+        - "04-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.241-4048"
+        - "05-vmess-JP \U0001F1EF\U0001F1F5 | @Raydikalx | 2666"
+        - "06-shadowsocks-\U0001F1EF\U0001F1F5JP-47.79.144.115-0166"
+        - "07-shadowsocks-\U0001F49F34@oneclickvpnkeys"
+        - "08-vmess-\U0001F1EF\U0001F1F5JP-172.111.146.64-5995"
+        - "09-vless-\U0001F534\U0001F1EF\U0001F1F5[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_67a49755"
+        - "10-vmess-\U0001F1EF\U0001F1F5JP-140.83.51.161-1197"
       type: url-test
       url: https://www.gstatic.com/generate_204
     - name: select
       proxies:
         - auto
-        - "01-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.240-0093"
-        - "02-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.241-0091"
-        - "03-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.204-0090"
-        - "04-shadowsocks-\U0001F1EF\U0001F1F5JP-103.106.228.175-0094"
-        - "05-vless-\U0001F534\U0001F1EF\U0001F1F5[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_67a49755"
-        - "06-vmess-\U0001F1EF\U0001F1F5JP-172.111.146.64-4772"
+        - "01-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.240-4052"
+        - "02-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.204-0104"
+        - "03-vmess-JP \U0001F1EF\U0001F1F5 | @Raydikalx | 2668"
+        - "04-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.241-4048"
+        - "05-vmess-JP \U0001F1EF\U0001F1F5 | @Raydikalx | 2666"
+        - "06-shadowsocks-\U0001F1EF\U0001F1F5JP-47.79.144.115-0166"
+        - "07-shadowsocks-\U0001F49F34@oneclickvpnkeys"
+        - "08-vmess-\U0001F1EF\U0001F1F5JP-172.111.146.64-5995"
+        - "09-vless-\U0001F534\U0001F1EF\U0001F1F5[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_67a49755"
+        - "10-vmess-\U0001F1EF\U0001F1F5JP-140.83.51.161-1197"
       type: select
 rules:
     - MATCH,select
