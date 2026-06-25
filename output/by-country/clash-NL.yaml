@@ -1,0 +1,40 @@
+proxies:
+    - cipher: chacha20-ietf-poly1305
+      name: "01-shadowsocks-\U0001F1FA\U0001F1F8 US 29"
+      password: 01iK5R1qq8MGGUyN9P20au
+      port: 443
+      server: 147.90.234.133
+      type: ss
+      udp: true
+    - cipher: chacha20-ietf-poly1305
+      name: "02-shadowsocks-\U0001F1FA\U0001F1F8US-147.90.234.133-0992"
+      password: hbGrpfvNrJsUmKmPbR3iY2
+      port: 443
+      server: tinkered-pennies-puppies.freesocks.work
+      type: ss
+      udp: true
+    - name: 03-vless-荷兰 阿姆斯特丹Fastly节点
+      network: ws
+      port: 80
+      server: 151.101.38.151
+      type: vless
+      udp: true
+      uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+proxy-groups:
+    - interval: 300
+      name: auto
+      proxies:
+        - "01-shadowsocks-\U0001F1FA\U0001F1F8 US 29"
+        - "02-shadowsocks-\U0001F1FA\U0001F1F8US-147.90.234.133-0992"
+        - 03-vless-荷兰 阿姆斯特丹Fastly节点
+      type: url-test
+      url: https://www.gstatic.com/generate_204
+    - name: select
+      proxies:
+        - auto
+        - "01-shadowsocks-\U0001F1FA\U0001F1F8 US 29"
+        - "02-shadowsocks-\U0001F1FA\U0001F1F8US-147.90.234.133-0992"
+        - 03-vless-荷兰 阿姆斯特丹Fastly节点
+      type: select
+rules:
+    - MATCH,select
