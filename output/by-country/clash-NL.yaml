@@ -8,7 +8,7 @@ proxies:
       type: trojan
       udp: true
     - cipher: chacha20-ietf-poly1305
-      name: "02-shadowsocks-\U0001F1FA\U0001F1F8 US美国(mibei77.com 米贝节点分享)"
+      name: "02-shadowsocks-\U0001F1FA\U0001F1F8US-38.135.24.131-0211"
       password: hbGrpfvNrJsUmKmPbR3iY2
       port: 443
       server: tinkered-pennies-puppies.freesocks.work
@@ -21,15 +21,22 @@ proxies:
       server: 109.201.152.181
       type: ss
       udp: true
+    - cipher: chacha20-ietf-poly1305
+      name: 04-shadowsocks-@ReleaseNet
+      password: CJmTCCx7Ltud
+      port: 8388
+      server: 108.181.58.239
+      type: ss
+      udp: true
     - client-fingerprint: chrome
       flow: xtls-rprx-vision
-      name: "04-vless-\U0001F1F3\U0001F1F1 423 - NL - VLESS/REALITY/PBK/SID/VISI"
+      name: "05-vless-\U0001F1F3\U0001F1F1 426 - NL - VLESS/REALITY/PBK/SID/VISI"
       network: tcp
       port: 23576
       reality-opts:
         public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
         short-id: "01"
-      server: 51.158.206.19
+      server: 51.158.206.26
       servername: fuck.rkn
       tls: true
       type: vless
@@ -37,35 +44,7 @@ proxies:
       uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
     - client-fingerprint: chrome
       flow: xtls-rprx-vision
-      name: "05-vless-35.\U0001F1F3\U0001F1F1Нидерланды | @LimeVPNFREE"
-      network: tcp
-      port: 443
-      reality-opts:
-        public-key: AYQOZFxjvHN-RIzKYEibwFiFsp03cdlWGdCmyFfuNVc
-        short-id: 4fa44664f6a566d3
-      server: 5.255.110.147
-      servername: nll.scroogethebest.com
-      tls: true
-      type: vless
-      udp: true
-      uuid: e2e1ddaa-1acf-4c4c-a211-92284f6440ed
-    - client-fingerprint: chrome
-      flow: xtls-rprx-vision
-      name: "06-vless-16.\U0001F310Неизвестно | @LimeVPNFREE"
-      network: tcp
-      port: 23576
-      reality-opts:
-        public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-        short-id: "01"
-      server: 51.158.206.20
-      servername: fuck.rkn
-      tls: true
-      type: vless
-      udp: true
-      uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-    - client-fingerprint: chrome
-      flow: xtls-rprx-vision
-      name: "07-vless-11.\U0001F1F3\U0001F1F1Нидерланды | @LimeVPNFREE"
+      name: "06-vless-11.\U0001F1F3\U0001F1F1Нидерланды | @LimeVPNFREE"
       network: tcp
       port: 23576
       reality-opts:
@@ -79,58 +58,57 @@ proxies:
       uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
     - client-fingerprint: chrome
       flow: xtls-rprx-vision
-      name: "08-vless-15.\U0001F310Неизвестно | @LimeVPNFREE"
-      network: tcp
-      port: 23576
-      reality-opts:
-        public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-        short-id: "01"
-      server: 51.158.206.86
-      servername: fuck.rkn
-      tls: true
-      type: vless
-      udp: true
-      uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-    - client-fingerprint: chrome
-      name: 09-vless-⚡ b2n.ir/v2ray-configs | 651
+      name: "07-vless-35.\U0001F1F3\U0001F1F1Нидерланды | @LimeVPNFREE"
       network: tcp
       port: 443
       reality-opts:
-        public-key: tWRR3W8jBAQKBUujLzL7Xri3WXy3F08OxHYrkSOnlAc
-        short-id: 52a6
-      server: 147.45.145.127
-      servername: yahoo.com
+        public-key: AYQOZFxjvHN-RIzKYEibwFiFsp03cdlWGdCmyFfuNVc
+        short-id: 4fa44664f6a566d3
+      server: 5.255.110.147
+      servername: nll.scroogethebest.com
       tls: true
       type: vless
       udp: true
-      uuid: 534cbbe2-cc36-4f2d-8fb0-90410e7148c9
+      uuid: e2e1ddaa-1acf-4c4c-a211-92284f6440ed
+    - client-fingerprint: chrome
+      flow: xtls-rprx-vision
+      name: "08-vless-95.\U0001F310Неизвестно | @LimeVPNFREE"
+      network: tcp
+      port: 2443
+      reality-opts:
+        public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+        short-id: 6ba85179e30d4fc2
+      server: 144.31.30.69
+      servername: google.com
+      tls: true
+      type: vless
+      udp: true
+      uuid: f90cc83a-97ce-446d-8f80-30d3eef3351c
 proxy-groups:
     - interval: 300
       name: auto
       proxies:
         - "01-trojan-\U0001F1F8\U0001F1EC Join Telegram:@Farah_VPN \U0001F1F8\U0001F1EC"
-        - "02-shadowsocks-\U0001F1FA\U0001F1F8 US美国(mibei77.com 米贝节点分享)"
+        - "02-shadowsocks-\U0001F1FA\U0001F1F8US-38.135.24.131-0211"
         - "03-shadowsocks-\U0001F1F3\U0001F1F1NL-109.201.152.181-0092"
-        - "04-vless-\U0001F1F3\U0001F1F1 423 - NL - VLESS/REALITY/PBK/SID/VISI"
-        - "05-vless-35.\U0001F1F3\U0001F1F1Нидерланды | @LimeVPNFREE"
-        - "06-vless-16.\U0001F310Неизвестно | @LimeVPNFREE"
-        - "07-vless-11.\U0001F1F3\U0001F1F1Нидерланды | @LimeVPNFREE"
-        - "08-vless-15.\U0001F310Неизвестно | @LimeVPNFREE"
-        - 09-vless-⚡ b2n.ir/v2ray-configs | 651
+        - 04-shadowsocks-@ReleaseNet
+        - "05-vless-\U0001F1F3\U0001F1F1 426 - NL - VLESS/REALITY/PBK/SID/VISI"
+        - "06-vless-11.\U0001F1F3\U0001F1F1Нидерланды | @LimeVPNFREE"
+        - "07-vless-35.\U0001F1F3\U0001F1F1Нидерланды | @LimeVPNFREE"
+        - "08-vless-95.\U0001F310Неизвестно | @LimeVPNFREE"
       type: url-test
       url: https://www.gstatic.com/generate_204
     - name: select
       proxies:
         - auto
         - "01-trojan-\U0001F1F8\U0001F1EC Join Telegram:@Farah_VPN \U0001F1F8\U0001F1EC"
-        - "02-shadowsocks-\U0001F1FA\U0001F1F8 US美国(mibei77.com 米贝节点分享)"
+        - "02-shadowsocks-\U0001F1FA\U0001F1F8US-38.135.24.131-0211"
         - "03-shadowsocks-\U0001F1F3\U0001F1F1NL-109.201.152.181-0092"
-        - "04-vless-\U0001F1F3\U0001F1F1 423 - NL - VLESS/REALITY/PBK/SID/VISI"
-        - "05-vless-35.\U0001F1F3\U0001F1F1Нидерланды | @LimeVPNFREE"
-        - "06-vless-16.\U0001F310Неизвестно | @LimeVPNFREE"
-        - "07-vless-11.\U0001F1F3\U0001F1F1Нидерланды | @LimeVPNFREE"
-        - "08-vless-15.\U0001F310Неизвестно | @LimeVPNFREE"
-        - 09-vless-⚡ b2n.ir/v2ray-configs | 651
+        - 04-shadowsocks-@ReleaseNet
+        - "05-vless-\U0001F1F3\U0001F1F1 426 - NL - VLESS/REALITY/PBK/SID/VISI"
+        - "06-vless-11.\U0001F1F3\U0001F1F1Нидерланды | @LimeVPNFREE"
+        - "07-vless-35.\U0001F1F3\U0001F1F1Нидерланды | @LimeVPNFREE"
+        - "08-vless-95.\U0001F310Неизвестно | @LimeVPNFREE"
       type: select
 rules:
     - MATCH,select
