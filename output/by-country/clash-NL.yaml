@@ -1,0 +1,72 @@
+proxies:
+    - cipher: chacha20-ietf-poly1305
+      name: "01-shadowsocks-\U0001F1FA\U0001F1F8US-147.90.234.133-2219"
+      password: hbGrpfvNrJsUmKmPbR3iY2
+      port: 443
+      server: tinkered-pennies-puppies.freesocks.work
+      type: ss
+      udp: true
+    - cipher: chacha20-ietf-poly1305
+      name: "02-shadowsocks-\U0001F1FA\U0001F1F8 US 27"
+      password: hbGrpfvNrJsUmKmPbR3iY2
+      port: 443
+      server: 147.90.234.133
+      type: ss
+      udp: true
+    - cipher: chacha20-ietf-poly1305
+      name: "03-shadowsocks-\U0001D402\U0001D421\U0001D41A\U0001D427\U0001D427\U0001D41E\U0001D425: @ISVvpn"
+      password: CJmTCCx7Ltud
+      port: 8388
+      server: 108.181.58.239
+      type: ss
+      udp: true
+    - client-fingerprint: chrome
+      flow: xtls-rprx-vision
+      name: "04-vless-16.\U0001F310Неизвестно | @LimeVPNFREE"
+      network: tcp
+      port: 23576
+      reality-opts:
+        public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+        short-id: "01"
+      server: 51.158.206.20
+      servername: fuck.rkn
+      tls: true
+      type: vless
+      udp: true
+      uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    - client-fingerprint: chrome
+      flow: xtls-rprx-vision
+      name: "05-vless-12.\U0001F1F3\U0001F1F1Нидерланды | @LimeVPNFREE"
+      network: tcp
+      port: 23576
+      reality-opts:
+        public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+        short-id: "01"
+      server: 51.158.206.80
+      servername: fuck.rkn
+      tls: true
+      type: vless
+      udp: true
+      uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+proxy-groups:
+    - interval: 300
+      name: auto
+      proxies:
+        - "01-shadowsocks-\U0001F1FA\U0001F1F8US-147.90.234.133-2219"
+        - "02-shadowsocks-\U0001F1FA\U0001F1F8 US 27"
+        - "03-shadowsocks-\U0001D402\U0001D421\U0001D41A\U0001D427\U0001D427\U0001D41E\U0001D425: @ISVvpn"
+        - "04-vless-16.\U0001F310Неизвестно | @LimeVPNFREE"
+        - "05-vless-12.\U0001F1F3\U0001F1F1Нидерланды | @LimeVPNFREE"
+      type: url-test
+      url: https://www.gstatic.com/generate_204
+    - name: select
+      proxies:
+        - auto
+        - "01-shadowsocks-\U0001F1FA\U0001F1F8US-147.90.234.133-2219"
+        - "02-shadowsocks-\U0001F1FA\U0001F1F8 US 27"
+        - "03-shadowsocks-\U0001D402\U0001D421\U0001D41A\U0001D427\U0001D427\U0001D41E\U0001D425: @ISVvpn"
+        - "04-vless-16.\U0001F310Неизвестно | @LimeVPNFREE"
+        - "05-vless-12.\U0001F1F3\U0001F1F1Нидерланды | @LimeVPNFREE"
+      type: select
+rules:
+    - MATCH,select
