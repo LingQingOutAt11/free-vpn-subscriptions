@@ -1,34 +1,42 @@
 proxies:
+    - name: 01-trojan-日本 东京Fastly节点
+      password: Mitivpn
+      port: 443
+      server: 151.101.110.219
+      skip-cert-verify: false
+      sni: ssl.fastly.com
+      type: trojan
+      udp: true
     - cipher: aes-128-gcm
-      name: "01-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.240-0090"
+      name: "02-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.241-0088"
+      password: shadowsocks
+      port: 443
+      server: 149.22.87.241
+      type: ss
+      udp: true
+    - cipher: aes-128-gcm
+      name: "03-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.240-4052"
       password: shadowsocks
       port: 443
       server: 149.22.87.240
       type: ss
       udp: true
     - cipher: aes-128-gcm
-      name: "02-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.204-0086"
+      name: "04-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.204-0086"
       password: shadowsocks
       port: 443
       server: 149.22.87.204
       type: ss
       udp: true
-    - cipher: aes-128-gcm
-      name: "03-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.241-0088"
-      password: shadowsocks
-      port: 443
-      server: 149.22.87.241
-      type: ss
-      udp: true
     - cipher: aes-256-gcm
-      name: "04-shadowsocks-\U0001F1EF\U0001F1F5JP-47.79.144.115-0145"
+      name: "05-shadowsocks-\U0001F1EF\U0001F1F5JP-47.79.144.115-0145"
       password: GTZI5AbjNAeWQG0oVNptvWJogHNKiiKA
       port: 40003
       server: 47.79.144.115
       type: ss
       udp: true
     - cipher: aes-256-gcm
-      name: "05-shadowsocks-\U0001F1EF\U0001F1F5JP-103.106.228.175-0091"
+      name: "06-shadowsocks-\U0001F1EF\U0001F1F5JP-103.106.228.175-0091"
       password: XKFKl2rULjIp74
       port: 8009
       server: 103.106.228.175
@@ -36,34 +44,56 @@ proxies:
       udp: true
     - alterId: 0
       cipher: auto
-      name: "06-vmess-\U0001F1EF\U0001F1F5JP-140.83.51.161-1238"
+      name: "07-vmess-\U0001F1EF\U0001F1F5JP-140.83.51.161-1238"
       network: ws
       port: 25686
       server: 140.83.51.161
       type: vmess
       udp: true
       uuid: 6733c357-ba11-4e9f-f00f-7d87f2776ff9
+    - name: "08-trojan-\U0001F1EF\U0001F1F5 JP 3"
+      password: T9qoEuuxUEa9Dk3KxnTWrs6J8ilng9sCIf
+      port: 443
+      server: 103.125.216.18
+      skip-cert-verify: false
+      sni: ""
+      type: trojan
+      udp: true
+    - name: "09-trojan-\U0001F1EF\U0001F1F5 JP 6"
+      password: T9qoEuuxUEa9Dk3KxnTWrs6J8ilng9sCIf
+      port: 443
+      server: 103.125.216.11
+      skip-cert-verify: false
+      sni: ""
+      type: trojan
+      udp: true
 proxy-groups:
     - interval: 300
       name: auto
       proxies:
-        - "01-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.240-0090"
-        - "02-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.204-0086"
-        - "03-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.241-0088"
-        - "04-shadowsocks-\U0001F1EF\U0001F1F5JP-47.79.144.115-0145"
-        - "05-shadowsocks-\U0001F1EF\U0001F1F5JP-103.106.228.175-0091"
-        - "06-vmess-\U0001F1EF\U0001F1F5JP-140.83.51.161-1238"
+        - 01-trojan-日本 东京Fastly节点
+        - "02-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.241-0088"
+        - "03-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.240-4052"
+        - "04-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.204-0086"
+        - "05-shadowsocks-\U0001F1EF\U0001F1F5JP-47.79.144.115-0145"
+        - "06-shadowsocks-\U0001F1EF\U0001F1F5JP-103.106.228.175-0091"
+        - "07-vmess-\U0001F1EF\U0001F1F5JP-140.83.51.161-1238"
+        - "08-trojan-\U0001F1EF\U0001F1F5 JP 3"
+        - "09-trojan-\U0001F1EF\U0001F1F5 JP 6"
       type: url-test
       url: https://www.gstatic.com/generate_204
     - name: select
       proxies:
         - auto
-        - "01-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.240-0090"
-        - "02-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.204-0086"
-        - "03-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.241-0088"
-        - "04-shadowsocks-\U0001F1EF\U0001F1F5JP-47.79.144.115-0145"
-        - "05-shadowsocks-\U0001F1EF\U0001F1F5JP-103.106.228.175-0091"
-        - "06-vmess-\U0001F1EF\U0001F1F5JP-140.83.51.161-1238"
+        - 01-trojan-日本 东京Fastly节点
+        - "02-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.241-0088"
+        - "03-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.240-4052"
+        - "04-shadowsocks-\U0001F1EF\U0001F1F5JP-149.22.87.204-0086"
+        - "05-shadowsocks-\U0001F1EF\U0001F1F5JP-47.79.144.115-0145"
+        - "06-shadowsocks-\U0001F1EF\U0001F1F5JP-103.106.228.175-0091"
+        - "07-vmess-\U0001F1EF\U0001F1F5JP-140.83.51.161-1238"
+        - "08-trojan-\U0001F1EF\U0001F1F5 JP 3"
+        - "09-trojan-\U0001F1EF\U0001F1F5 JP 6"
       type: select
 rules:
     - MATCH,select
