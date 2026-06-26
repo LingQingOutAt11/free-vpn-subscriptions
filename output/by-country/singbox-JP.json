@@ -3,9 +3,9 @@
     {
       "method": "aes-128-gcm",
       "password": "shadowsocks",
-      "server": "149.22.87.240",
+      "server": "149.22.87.204",
       "server_port": 443,
-      "tag": "01-shadowsocks-🇯🇵JP-149.22.87.240-0090",
+      "tag": "01-shadowsocks-🇯🇵JP-149.22.87.204-0216",
       "type": "shadowsocks"
     },
     {
@@ -19,17 +19,9 @@
     {
       "method": "aes-128-gcm",
       "password": "shadowsocks",
-      "server": "149.22.87.204",
+      "server": "149.22.87.240",
       "server_port": 443,
-      "tag": "03-shadowsocks-🇯🇵JP-149.22.87.204-0216",
-      "type": "shadowsocks"
-    },
-    {
-      "method": "aes-256-gcm",
-      "password": "GTZI5AbjNAeWQG0oVNptvWJogHNKiiKA",
-      "server": "47.79.144.115",
-      "server_port": 40003,
-      "tag": "04-shadowsocks-🇯🇵JP-47.79.144.115-0145",
+      "tag": "03-shadowsocks-🇯🇵 JP | SS | @outlinereleasedkey 1",
       "type": "shadowsocks"
     },
     {
@@ -37,7 +29,7 @@
       "password": "XKFKl2rULjIp74",
       "server": "103.106.228.175",
       "server_port": 8009,
-      "tag": "05-shadowsocks-🇯🇵JP-103.106.228.175-0091",
+      "tag": "04-shadowsocks-🇯🇵JP-103.106.228.175-0091",
       "type": "shadowsocks"
     },
     {
@@ -45,15 +37,15 @@
       "security": "auto",
       "server": "140.83.51.161",
       "server_port": 25686,
-      "tag": "06-vmess-🇯🇵JP-140.83.51.161-1200",
+      "tag": "05-vmess-🇯🇵JP-140.83.51.161-1200",
       "type": "vmess",
       "uuid": "6733c357-ba11-4e9f-f00f-7d87f2776ff9"
     },
     {
       "password": "T9qoEuuxUEa9Dk3KxnTWrs6J8ilng9sCIf",
-      "server": "103.125.216.68",
+      "server": "103.125.216.18",
       "server_port": 443,
-      "tag": "07-trojan-🇯🇵 JP 1",
+      "tag": "06-trojan-🇯🇵 JP 3",
       "tls": {
         "enabled": true,
         "insecure": false,
@@ -62,15 +54,49 @@
       "type": "trojan"
     },
     {
+      "password": "T9qoEuuxUEa9Dk3KxnTWrs6J8ilng9sCIf",
+      "server": "103.125.216.11",
+      "server_port": 443,
+      "tag": "07-trojan-🇯🇵 JP 5",
+      "tls": {
+        "enabled": true,
+        "insecure": false,
+        "server_name": "103.125.216.11"
+      },
+      "type": "trojan"
+    },
+    {
+      "password": "T9qoEuuxUEa9Dk3KxnTWrs6J8ilng9sCIf",
+      "server": "103.125.216.68",
+      "server_port": 443,
+      "tag": "08-trojan-🇯🇵 JP 1",
+      "tls": {
+        "enabled": true,
+        "insecure": false,
+        "server_name": ""
+      },
+      "type": "trojan"
+    },
+    {
+      "method": "aes-256-gcm",
+      "password": "GTZI5AbjNAeWQG0oVNptvWJogHNKiiKA",
+      "server": "47.79.144.115",
+      "server_port": 40003,
+      "tag": "09-shadowsocks-🇯🇵JP-47.79.144.115-0145",
+      "type": "shadowsocks"
+    },
+    {
       "interval": "5m",
       "outbounds": [
-        "01-shadowsocks-🇯🇵JP-149.22.87.240-0090",
+        "01-shadowsocks-🇯🇵JP-149.22.87.204-0216",
         "02-shadowsocks-🇯🇵JP-149.22.87.241-0088",
-        "03-shadowsocks-🇯🇵JP-149.22.87.204-0216",
-        "04-shadowsocks-🇯🇵JP-47.79.144.115-0145",
-        "05-shadowsocks-🇯🇵JP-103.106.228.175-0091",
-        "06-vmess-🇯🇵JP-140.83.51.161-1200",
-        "07-trojan-🇯🇵 JP 1"
+        "03-shadowsocks-🇯🇵 JP | SS | @outlinereleasedkey 1",
+        "04-shadowsocks-🇯🇵JP-103.106.228.175-0091",
+        "05-vmess-🇯🇵JP-140.83.51.161-1200",
+        "06-trojan-🇯🇵 JP 3",
+        "07-trojan-🇯🇵 JP 5",
+        "08-trojan-🇯🇵 JP 1",
+        "09-shadowsocks-🇯🇵JP-47.79.144.115-0145"
       ],
       "tag": "auto",
       "type": "urltest",
@@ -79,13 +105,15 @@
     {
       "outbounds": [
         "auto",
-        "01-shadowsocks-🇯🇵JP-149.22.87.240-0090",
+        "01-shadowsocks-🇯🇵JP-149.22.87.204-0216",
         "02-shadowsocks-🇯🇵JP-149.22.87.241-0088",
-        "03-shadowsocks-🇯🇵JP-149.22.87.204-0216",
-        "04-shadowsocks-🇯🇵JP-47.79.144.115-0145",
-        "05-shadowsocks-🇯🇵JP-103.106.228.175-0091",
-        "06-vmess-🇯🇵JP-140.83.51.161-1200",
-        "07-trojan-🇯🇵 JP 1"
+        "03-shadowsocks-🇯🇵 JP | SS | @outlinereleasedkey 1",
+        "04-shadowsocks-🇯🇵JP-103.106.228.175-0091",
+        "05-vmess-🇯🇵JP-140.83.51.161-1200",
+        "06-trojan-🇯🇵 JP 3",
+        "07-trojan-🇯🇵 JP 5",
+        "08-trojan-🇯🇵 JP 1",
+        "09-shadowsocks-🇯🇵JP-47.79.144.115-0145"
       ],
       "tag": "select",
       "type": "selector"
