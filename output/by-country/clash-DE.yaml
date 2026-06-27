@@ -1,25 +1,7 @@
 proxies:
     - alterId: 0
       cipher: auto
-      name: "01-vmess-\U0001F1E8\U0001F1FF CZ 90"
-      network: tcp
-      port: 180
-      server: 82.198.246.233
-      type: vmess
-      udp: true
-      uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    - alterId: 0
-      cipher: auto
-      name: "02-vmess-\U0001F1E8\U0001F1FF CZ 65"
-      network: tcp
-      port: 180
-      server: 82.198.246.250
-      type: vmess
-      udp: true
-      uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    - alterId: 0
-      cipher: auto
-      name: "03-vmess-\U0001F1E8\U0001F1FF CZ 66"
+      name: "01-vmess-\U0001F1E8\U0001F1FF CZ 83"
       network: tcp
       port: 180
       server: 82.198.246.9
@@ -28,7 +10,7 @@ proxies:
       uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
     - alterId: 0
       cipher: auto
-      name: "04-vmess-\U0001F1E8\U0001F1FF CZ 27"
+      name: "02-vmess-\U0001F1E8\U0001F1FF CZ 7"
       network: tcp
       port: 180
       server: 82.198.246.97
@@ -37,50 +19,50 @@ proxies:
       uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
     - alterId: 0
       cipher: auto
-      name: "05-vmess-\U0001F1E8\U0001F1FF CZ 75"
+      name: "03-vmess-\U0001F1E8\U0001F1FF CZ 12"
+      network: tcp
+      port: 180
+      server: 82.198.246.233
+      type: vmess
+      udp: true
+      uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    - alterId: 0
+      cipher: auto
+      name: "04-vmess-\U0001F1E8\U0001F1FF CZ 55"
       network: tcp
       port: 180
       server: 82.198.246.37
       type: vmess
       udp: true
       uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    - name: "06-vless-\U0001F939‍♀️"
+    - alterId: 0
+      cipher: auto
+      name: "05-vmess-\U0001F1E8\U0001F1FF CZ 92"
       network: tcp
-      port: 443
-      server: 18.153.81.34
-      type: vless
+      port: 180
+      server: 82.198.246.250
+      type: vmess
       udp: true
-      uuid: ad73ff14-a0e3-46d1-adc0-02ca29a32485
-    - cipher: aes-256-gcm
-      name: "07-shadowsocks-\U0001F1E9\U0001F1EADE-213.202.208.199-0151"
-      password: RexnBgU7EV5ADxG
-      port: 7001
-      server: 213.202.208.199
-      type: ss
-      udp: true
+      uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
 proxy-groups:
     - interval: 300
       name: auto
       proxies:
-        - "01-vmess-\U0001F1E8\U0001F1FF CZ 90"
-        - "02-vmess-\U0001F1E8\U0001F1FF CZ 65"
-        - "03-vmess-\U0001F1E8\U0001F1FF CZ 66"
-        - "04-vmess-\U0001F1E8\U0001F1FF CZ 27"
-        - "05-vmess-\U0001F1E8\U0001F1FF CZ 75"
-        - "06-vless-\U0001F939‍♀️"
-        - "07-shadowsocks-\U0001F1E9\U0001F1EADE-213.202.208.199-0151"
+        - "01-vmess-\U0001F1E8\U0001F1FF CZ 83"
+        - "02-vmess-\U0001F1E8\U0001F1FF CZ 7"
+        - "03-vmess-\U0001F1E8\U0001F1FF CZ 12"
+        - "04-vmess-\U0001F1E8\U0001F1FF CZ 55"
+        - "05-vmess-\U0001F1E8\U0001F1FF CZ 92"
       type: url-test
       url: https://www.gstatic.com/generate_204
     - name: select
       proxies:
         - auto
-        - "01-vmess-\U0001F1E8\U0001F1FF CZ 90"
-        - "02-vmess-\U0001F1E8\U0001F1FF CZ 65"
-        - "03-vmess-\U0001F1E8\U0001F1FF CZ 66"
-        - "04-vmess-\U0001F1E8\U0001F1FF CZ 27"
-        - "05-vmess-\U0001F1E8\U0001F1FF CZ 75"
-        - "06-vless-\U0001F939‍♀️"
-        - "07-shadowsocks-\U0001F1E9\U0001F1EADE-213.202.208.199-0151"
+        - "01-vmess-\U0001F1E8\U0001F1FF CZ 83"
+        - "02-vmess-\U0001F1E8\U0001F1FF CZ 7"
+        - "03-vmess-\U0001F1E8\U0001F1FF CZ 12"
+        - "04-vmess-\U0001F1E8\U0001F1FF CZ 55"
+        - "05-vmess-\U0001F1E8\U0001F1FF CZ 92"
       type: select
 rules:
     - MATCH,select
