@@ -9,19 +9,18 @@ proxies:
       type: vless
       udp: true
       uuid: 0ac0a6f0-d3f0-47f1-8de4-ce785e515a5c
-    - name: "02-trojan-\U0001F1EC\U0001F1E7 @rayhub_ir 0627-6"
-      password: MITIVPN
-      port: 443
-      server: 164.38.155.135
-      skip-cert-verify: false
-      sni: 95r.ir
-      type: trojan
+    - cipher: chacha20-ietf-poly1305
+      name: 02-shadowsocks-伊拉克 V2CROSS.COM
+      password: IIMxFMyq3FwyPd21UGWgmNJCAiYN9m2vOo
+      port: 18982
+      server: 91.108.254.252
+      type: ss
       udp: true
-    - cipher: aes-128-gcm
-      name: 03-shadowsocks-t.me/ConfigFori  -  Config 79362
-      password: shadowsocks
-      port: 443
-      server: 141.98.101.181
+    - cipher: aes-256-gcm
+      name: "03-shadowsocks-\U0001F1EC\U0001F1E7GB-94.156.250.148-0066"
+      password: RexnBgU7EV5ADxG
+      port: 7001
+      server: 94.156.250.148
       type: ss
       udp: true
     - cipher: aes-128-gcm
@@ -31,32 +30,52 @@ proxies:
       server: 141.98.101.178
       type: ss
       udp: true
-    - cipher: aes-128-gcm
-      name: "05-shadowsocks-\U0001F1EC\U0001F1E7 GB | SS | @netfreedom0 1"
-      password: shadowsocks
-      port: 443
-      server: 141.98.101.182
+    - cipher: chacha20-ietf-poly1305
+      name: 05-shadowsocks-伊拉克 V2CROSS.COM
+      password: gWBgmKb8AL1uRK0jZ44AoOPaC5lVTOHZmi
+      port: 13683
+      server: 91.108.254.104
       type: ss
+      udp: true
+    - name: "06-trojan-\U0001F1EC\U0001F1E7GB-45.77.227.183-0591"
+      password: kflYwtj8VD7Pd4V9ixedIxEDsac4QQXvbP
+      port: 443
+      server: 45.77.227.183
+      skip-cert-verify: false
+      sni: ""
+      type: trojan
+      udp: true
+    - name: "07-trojan-\U0001F1EC\U0001F1E7 @rayhub_ir 0627-6"
+      password: MITIVPN
+      port: 443
+      server: 164.38.155.135
+      skip-cert-verify: false
+      sni: 95r.ir
+      type: trojan
       udp: true
 proxy-groups:
     - interval: 300
       name: auto
       proxies:
         - "01-vless-\U0001F194vpnbaz \U0001F512 VL-WS-N/A ❔ XX 3ms"
-        - "02-trojan-\U0001F1EC\U0001F1E7 @rayhub_ir 0627-6"
-        - 03-shadowsocks-t.me/ConfigFori  -  Config 79362
+        - 02-shadowsocks-伊拉克 V2CROSS.COM
+        - "03-shadowsocks-\U0001F1EC\U0001F1E7GB-94.156.250.148-0066"
         - "04-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.178-0073"
-        - "05-shadowsocks-\U0001F1EC\U0001F1E7 GB | SS | @netfreedom0 1"
+        - 05-shadowsocks-伊拉克 V2CROSS.COM
+        - "06-trojan-\U0001F1EC\U0001F1E7GB-45.77.227.183-0591"
+        - "07-trojan-\U0001F1EC\U0001F1E7 @rayhub_ir 0627-6"
       type: url-test
       url: https://www.gstatic.com/generate_204
     - name: select
       proxies:
         - auto
         - "01-vless-\U0001F194vpnbaz \U0001F512 VL-WS-N/A ❔ XX 3ms"
-        - "02-trojan-\U0001F1EC\U0001F1E7 @rayhub_ir 0627-6"
-        - 03-shadowsocks-t.me/ConfigFori  -  Config 79362
+        - 02-shadowsocks-伊拉克 V2CROSS.COM
+        - "03-shadowsocks-\U0001F1EC\U0001F1E7GB-94.156.250.148-0066"
         - "04-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.178-0073"
-        - "05-shadowsocks-\U0001F1EC\U0001F1E7 GB | SS | @netfreedom0 1"
+        - 05-shadowsocks-伊拉克 V2CROSS.COM
+        - "06-trojan-\U0001F1EC\U0001F1E7GB-45.77.227.183-0591"
+        - "07-trojan-\U0001F1EC\U0001F1E7 @rayhub_ir 0627-6"
       type: select
 rules:
     - MATCH,select
