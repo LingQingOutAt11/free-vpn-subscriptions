@@ -9,33 +9,32 @@ proxies:
       type: vless
       udp: true
       uuid: 0ac0a6f0-d3f0-47f1-8de4-ce785e515a5c
-    - name: 02-trojan-@Daily_Configs
-      password: MITIVPN
-      port: 443
-      server: 164.38.155.135
-      skip-cert-verify: false
-      sni: 95r.ir
-      type: trojan
+    - cipher: chacha20-ietf-poly1305
+      name: 02-shadowsocks-@v2reya88 | @confinghub2
+      password: IIMxFMyq3FwyPd21UGWgmNJCAiYN9m2vOo
+      port: 18982
+      server: 91.108.254.252
+      type: ss
       udp: true
     - cipher: chacha20-ietf-poly1305
-      name: "03-shadowsocks-\U0001F4193@oneclickvpnkeys"
+      name: 03-shadowsocks-伊拉克 V2CROSS.COM
       password: gWBgmKb8AL1uRK0jZ44AoOPaC5lVTOHZmi
       port: 13683
       server: 91.108.254.104
       type: ss
       udp: true
     - cipher: aes-128-gcm
-      name: "04-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.182-0083"
-      password: shadowsocks
-      port: 443
-      server: 141.98.101.182
-      type: ss
-      udp: true
-    - cipher: aes-128-gcm
-      name: 05-shadowsocks-t.me/ConfigFori  -  Config 79369
+      name: "04-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.178-0281"
       password: shadowsocks
       port: 443
       server: 141.98.101.178
+      type: ss
+      udp: true
+    - cipher: aes-128-gcm
+      name: "05-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.181-0071"
+      password: shadowsocks
+      port: 443
+      server: 141.98.101.181
       type: ss
       udp: true
     - cipher: aes-128-gcm
@@ -46,10 +45,10 @@ proxies:
       type: ss
       udp: true
     - cipher: aes-128-gcm
-      name: "07-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.181-0071"
+      name: "07-shadowsocks-\U0001F1EC\U0001F1E7 GB | SS | @netfreedom0 1"
       password: shadowsocks
       port: 443
-      server: 141.98.101.181
+      server: 141.98.101.182
       type: ss
       udp: true
     - cipher: aes-256-gcm
@@ -59,7 +58,22 @@ proxies:
       server: 94.156.250.148
       type: ss
       udp: true
-    - name: "09-trojan-\U0001F1EC\U0001F1E7GB-45.77.227.183-0591"
+    - cipher: rc4-md5
+      name: 09-shadowsocks-⚡ b2n.ir/v2ray-configs | 195
+      password: 14fFPrbezE3HDZzsMOr6
+      port: 8080
+      server: 146.70.61.37
+      type: ss
+      udp: true
+    - name: 10-trojan-@meliproxyy
+      password: MITIVPN
+      port: 443
+      server: 164.38.155.135
+      skip-cert-verify: false
+      sni: 95r.ir
+      type: trojan
+      udp: true
+    - name: "11-trojan-\U0001F1EC\U0001F1E7GB-45.77.227.183-0591"
       password: kflYwtj8VD7Pd4V9ixedIxEDsac4QQXvbP
       port: 443
       server: 45.77.227.183
@@ -67,33 +81,53 @@ proxies:
       sni: ""
       type: trojan
       udp: true
+    - client-fingerprint: chrome
+      flow: xtls-rprx-vision
+      name: "12-vless-97.\U0001F310Неизвестно | @LimeVPNFREE"
+      network: tcp
+      port: 7443
+      reality-opts:
+        public-key: 5QAO98ot2U7TcGs_f6EEaQjCzNOJLNHqPf6smYsdFVI
+        short-id: be0ce047
+      server: 45.43.75.199
+      servername: chat.deepseek.com
+      tls: true
+      type: vless
+      udp: true
+      uuid: caa3af29-3b04-4099-9772-c64a1b7cca34
 proxy-groups:
     - interval: 300
       name: auto
       proxies:
         - "01-vless-\U0001F194vpnbaz \U0001F512 VL-WS-N/A ❔ XX 3ms"
-        - 02-trojan-@Daily_Configs
-        - "03-shadowsocks-\U0001F4193@oneclickvpnkeys"
-        - "04-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.182-0083"
-        - 05-shadowsocks-t.me/ConfigFori  -  Config 79369
+        - 02-shadowsocks-@v2reya88 | @confinghub2
+        - 03-shadowsocks-伊拉克 V2CROSS.COM
+        - "04-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.178-0281"
+        - "05-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.181-0071"
         - "06-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.179-0069"
-        - "07-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.181-0071"
+        - "07-shadowsocks-\U0001F1EC\U0001F1E7 GB | SS | @netfreedom0 1"
         - "08-shadowsocks-\U0001F1EC\U0001F1E7GB-94.156.250.148-0066"
-        - "09-trojan-\U0001F1EC\U0001F1E7GB-45.77.227.183-0591"
+        - 09-shadowsocks-⚡ b2n.ir/v2ray-configs | 195
+        - 10-trojan-@meliproxyy
+        - "11-trojan-\U0001F1EC\U0001F1E7GB-45.77.227.183-0591"
+        - "12-vless-97.\U0001F310Неизвестно | @LimeVPNFREE"
       type: url-test
       url: https://www.gstatic.com/generate_204
     - name: select
       proxies:
         - auto
         - "01-vless-\U0001F194vpnbaz \U0001F512 VL-WS-N/A ❔ XX 3ms"
-        - 02-trojan-@Daily_Configs
-        - "03-shadowsocks-\U0001F4193@oneclickvpnkeys"
-        - "04-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.182-0083"
-        - 05-shadowsocks-t.me/ConfigFori  -  Config 79369
+        - 02-shadowsocks-@v2reya88 | @confinghub2
+        - 03-shadowsocks-伊拉克 V2CROSS.COM
+        - "04-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.178-0281"
+        - "05-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.181-0071"
         - "06-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.179-0069"
-        - "07-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.181-0071"
+        - "07-shadowsocks-\U0001F1EC\U0001F1E7 GB | SS | @netfreedom0 1"
         - "08-shadowsocks-\U0001F1EC\U0001F1E7GB-94.156.250.148-0066"
-        - "09-trojan-\U0001F1EC\U0001F1E7GB-45.77.227.183-0591"
+        - 09-shadowsocks-⚡ b2n.ir/v2ray-configs | 195
+        - 10-trojan-@meliproxyy
+        - "11-trojan-\U0001F1EC\U0001F1E7GB-45.77.227.183-0591"
+        - "12-vless-97.\U0001F310Неизвестно | @LimeVPNFREE"
       type: select
 rules:
     - MATCH,select
