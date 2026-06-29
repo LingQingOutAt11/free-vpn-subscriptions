@@ -37,16 +37,16 @@ proxies:
       type: vless
       udp: true
       uuid: 14b59caf-a196-4ec2-8c70-c7b388062f5b
-    - name: "05-vless-\U0001F194vpnbaz \U0001F512 VL-WS-N/A ❔ XX 6ms"
+    - name: 05-vless-@Daily_Configs
       network: ws
-      port: 8443
-      server: 45.130.125.114
-      servername: srv75.perfectbulk.info
+      port: 2053
+      server: 45.130.125.158
+      servername: po.fastbrokencompony.com
       skip-cert-verify: false
       tls: true
       type: vless
       udp: true
-      uuid: f3b8c2a1-9d4e-4b7f-a6c5-2e8d1f0b4a93
+      uuid: e7961655-9674-4cbd-a36f-ec0d5d7d660c
     - name: "06-vless-『\U0001F680』\U00016910"
       network: ws
       port: 8443
@@ -57,16 +57,16 @@ proxies:
       type: vless
       udp: true
       uuid: f3b8c2a1-9d4e-4b7f-a6c5-2e8d1f0b4a93
-    - name: 07-vless-@Daily_Configs
+    - name: "07-vless-\U0001F194capoit \U0001F512 VL-WS-N/A ❔ XX 2ms"
       network: ws
-      port: 2053
-      server: 45.130.125.158
-      servername: po.fastbrokencompony.com
+      port: 8443
+      server: 45.130.125.114
+      servername: srv75.perfectbulk.info
       skip-cert-verify: false
       tls: true
       type: vless
       udp: true
-      uuid: e7961655-9674-4cbd-a36f-ec0d5d7d660c
+      uuid: f3b8c2a1-9d4e-4b7f-a6c5-2e8d1f0b4a93
 proxy-groups:
     - interval: 300
       name: auto
@@ -75,9 +75,9 @@ proxy-groups:
         - 02-vless-@W570W
         - "03-vless-\U0001F194soskeynet \U0001F512 VL-WS-N/A \U0001F1F8\U0001F1E8 SC 2ms"
         - "04-vless-\U0001F1E9\U0001F1EA"
-        - "05-vless-\U0001F194vpnbaz \U0001F512 VL-WS-N/A ❔ XX 6ms"
+        - 05-vless-@Daily_Configs
         - "06-vless-『\U0001F680』\U00016910"
-        - 07-vless-@Daily_Configs
+        - "07-vless-\U0001F194capoit \U0001F512 VL-WS-N/A ❔ XX 2ms"
       type: url-test
       url: https://www.gstatic.com/generate_204
     - name: select
@@ -87,9 +87,9 @@ proxy-groups:
         - 02-vless-@W570W
         - "03-vless-\U0001F194soskeynet \U0001F512 VL-WS-N/A \U0001F1F8\U0001F1E8 SC 2ms"
         - "04-vless-\U0001F1E9\U0001F1EA"
-        - "05-vless-\U0001F194vpnbaz \U0001F512 VL-WS-N/A ❔ XX 6ms"
+        - 05-vless-@Daily_Configs
         - "06-vless-『\U0001F680』\U00016910"
-        - 07-vless-@Daily_Configs
+        - "07-vless-\U0001F194capoit \U0001F512 VL-WS-N/A ❔ XX 2ms"
       type: select
 rules:
     - MATCH,select
