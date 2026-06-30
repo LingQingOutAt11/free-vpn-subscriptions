@@ -1,0 +1,70 @@
+{
+  "outbounds": [
+    {
+      "method": "aes-256-cfb",
+      "password": "qwerREWQ@@",
+      "server": "218.237.185.230",
+      "server_port": 4652,
+      "tag": "01-shadowsocks-🇰🇷KR-218.237.185.230-0193",
+      "type": "shadowsocks"
+    },
+    {
+      "method": "aes-256-cfb",
+      "password": "qwerREWQ@@",
+      "server": "221.139.79.57",
+      "server_port": 13979,
+      "tag": "02-shadowsocks-🇰🇷KR-221.139.79.57-0196",
+      "type": "shadowsocks"
+    },
+    {
+      "method": "aes-256-cfb",
+      "password": "qwerREWQ@@",
+      "server": "211.178.105.134",
+      "server_port": 6123,
+      "tag": "03-shadowsocks-🇰🇷KR-211.178.105.134-0199",
+      "type": "shadowsocks"
+    },
+    {
+      "password": "eeb6823c-b926-4ea2-866a-5542edd26e59",
+      "server": "211.49.57.178",
+      "server_port": 443,
+      "tag": "04-trojan-韩国 V2CROSS.COM",
+      "tls": {
+        "enabled": true,
+        "insecure": false,
+        "server_name": "hhcm.hhxaf.cc.cd"
+      },
+      "type": "trojan"
+    },
+    {
+      "interval": "5m",
+      "outbounds": [
+        "01-shadowsocks-🇰🇷KR-218.237.185.230-0193",
+        "02-shadowsocks-🇰🇷KR-221.139.79.57-0196",
+        "03-shadowsocks-🇰🇷KR-211.178.105.134-0199",
+        "04-trojan-韩国 V2CROSS.COM"
+      ],
+      "tag": "auto",
+      "type": "urltest",
+      "url": "https://www.gstatic.com/generate_204"
+    },
+    {
+      "outbounds": [
+        "auto",
+        "01-shadowsocks-🇰🇷KR-218.237.185.230-0193",
+        "02-shadowsocks-🇰🇷KR-221.139.79.57-0196",
+        "03-shadowsocks-🇰🇷KR-211.178.105.134-0199",
+        "04-trojan-韩国 V2CROSS.COM"
+      ],
+      "tag": "select",
+      "type": "selector"
+    },
+    {
+      "tag": "direct",
+      "type": "direct"
+    }
+  ],
+  "route": {
+    "final": "select"
+  }
+}
