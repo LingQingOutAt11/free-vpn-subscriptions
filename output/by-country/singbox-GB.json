@@ -3,9 +3,17 @@
     {
       "method": "aes-128-gcm",
       "password": "shadowsocks",
-      "server": "158.173.24.73",
+      "server": "141.98.101.182",
       "server_port": 443,
-      "tag": "01-shadowsocks-🇬🇧 GB 1",
+      "tag": "01-shadowsocks-🇬🇧 GB 3",
+      "type": "shadowsocks"
+    },
+    {
+      "method": "rc4-md5",
+      "password": "14fFPrbezE3HDZzsMOr6",
+      "server": "146.70.61.37",
+      "server_port": 8080,
+      "tag": "02-shadowsocks-🇬🇧 GB 4",
       "type": "shadowsocks"
     },
     {
@@ -13,31 +21,7 @@
       "password": "RexnBgU7EV5ADxG",
       "server": "94.156.250.148",
       "server_port": 7001,
-      "tag": "02-shadowsocks-🇬🇧GB-94.156.250.148-0124",
-      "type": "shadowsocks"
-    },
-    {
-      "method": "aes-128-gcm",
-      "password": "shadowsocks",
-      "server": "141.98.101.179",
-      "server_port": 443,
-      "tag": "03-shadowsocks-🇬🇧 GB 4",
-      "type": "shadowsocks"
-    },
-    {
-      "method": "aes-128-gcm",
-      "password": "shadowsocks",
-      "server": "141.98.101.181",
-      "server_port": 443,
-      "tag": "04-shadowsocks-🇬🇧 GB 6",
-      "type": "shadowsocks"
-    },
-    {
-      "method": "aes-128-gcm",
-      "password": "shadowsocks",
-      "server": "141.98.101.182",
-      "server_port": 443,
-      "tag": "05-shadowsocks-🇬🇧GB-141.98.101.182-0128",
+      "tag": "03-shadowsocks-🇬🇧GB-94.156.250.148-0124",
       "type": "shadowsocks"
     },
     {
@@ -45,7 +29,23 @@
       "password": "shadowsocks",
       "server": "141.98.101.178",
       "server_port": 443,
-      "tag": "06-shadowsocks-🇬🇧GB-141.98.101.178-0120",
+      "tag": "04-shadowsocks-🇬🇧GB-141.98.101.178-0281",
+      "type": "shadowsocks"
+    },
+    {
+      "method": "aes-128-gcm",
+      "password": "shadowsocks",
+      "server": "141.98.101.181",
+      "server_port": 443,
+      "tag": "05-shadowsocks-🇬🇧GB-141.98.101.181-0109",
+      "type": "shadowsocks"
+    },
+    {
+      "method": "aes-128-gcm",
+      "password": "shadowsocks",
+      "server": "141.98.101.179",
+      "server_port": 443,
+      "tag": "06-shadowsocks-🇬🇧GB-141.98.101.179-0129",
       "type": "shadowsocks"
     },
     {
@@ -61,24 +61,15 @@
       "type": "trojan"
     },
     {
-      "method": "rc4-md5",
-      "password": "14fFPrbezE3HDZzsMOr6",
-      "server": "146.70.61.37",
-      "server_port": 8080,
-      "tag": "08-shadowsocks-🇬🇧 GB 7",
-      "type": "shadowsocks"
-    },
-    {
       "interval": "5m",
       "outbounds": [
-        "01-shadowsocks-🇬🇧 GB 1",
-        "02-shadowsocks-🇬🇧GB-94.156.250.148-0124",
-        "03-shadowsocks-🇬🇧 GB 4",
-        "04-shadowsocks-🇬🇧 GB 6",
-        "05-shadowsocks-🇬🇧GB-141.98.101.182-0128",
-        "06-shadowsocks-🇬🇧GB-141.98.101.178-0120",
-        "07-trojan-EPODONIOS",
-        "08-shadowsocks-🇬🇧 GB 7"
+        "01-shadowsocks-🇬🇧 GB 3",
+        "02-shadowsocks-🇬🇧 GB 4",
+        "03-shadowsocks-🇬🇧GB-94.156.250.148-0124",
+        "04-shadowsocks-🇬🇧GB-141.98.101.178-0281",
+        "05-shadowsocks-🇬🇧GB-141.98.101.181-0109",
+        "06-shadowsocks-🇬🇧GB-141.98.101.179-0129",
+        "07-trojan-EPODONIOS"
       ],
       "tag": "auto",
       "type": "urltest",
@@ -87,14 +78,13 @@
     {
       "outbounds": [
         "auto",
-        "01-shadowsocks-🇬🇧 GB 1",
-        "02-shadowsocks-🇬🇧GB-94.156.250.148-0124",
-        "03-shadowsocks-🇬🇧 GB 4",
-        "04-shadowsocks-🇬🇧 GB 6",
-        "05-shadowsocks-🇬🇧GB-141.98.101.182-0128",
-        "06-shadowsocks-🇬🇧GB-141.98.101.178-0120",
-        "07-trojan-EPODONIOS",
-        "08-shadowsocks-🇬🇧 GB 7"
+        "01-shadowsocks-🇬🇧 GB 3",
+        "02-shadowsocks-🇬🇧 GB 4",
+        "03-shadowsocks-🇬🇧GB-94.156.250.148-0124",
+        "04-shadowsocks-🇬🇧GB-141.98.101.178-0281",
+        "05-shadowsocks-🇬🇧GB-141.98.101.181-0109",
+        "06-shadowsocks-🇬🇧GB-141.98.101.179-0129",
+        "07-trojan-EPODONIOS"
       ],
       "tag": "select",
       "type": "selector"

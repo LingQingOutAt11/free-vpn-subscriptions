@@ -1,0 +1,49 @@
+proxies:
+    - name: 01-trojan-EPODONIOS
+      password: 86957ec0-b213-433b-a43b-51f2175e0ec3
+      port: 443
+      server: 45.130.125.126
+      skip-cert-verify: false
+      sni: space.byu.id.yxls.eu.cc
+      type: trojan
+      udp: true
+    - client-fingerprint: firefox
+      flow: xtls-rprx-vision
+      name: "02-vless-\U0001F1F3\U0001F1F1 NL 14"
+      network: tcp
+      port: 8443
+      reality-opts:
+        public-key: LT_0j3zQkaqgtJHvyaG24xz0IfmXUswVCTeC75Qsgjo
+        short-id: 6f15101ff2cc4887
+      server: 154.83.159.9
+      servername: storage.yandex.net
+      tls: true
+      type: vless
+      udp: true
+      uuid: 0047a8bc-0025-4d45-899b-c75c669f3ede
+    - name: 03-trojan-@vmesskhodam
+      password: HHyBuQthOg
+      port: 443
+      server: 45.130.125.2
+      skip-cert-verify: false
+      sni: sj.farxmode.ir
+      type: trojan
+      udp: true
+proxy-groups:
+    - interval: 300
+      name: auto
+      proxies:
+        - 01-trojan-EPODONIOS
+        - "02-vless-\U0001F1F3\U0001F1F1 NL 14"
+        - 03-trojan-@vmesskhodam
+      type: url-test
+      url: https://www.gstatic.com/generate_204
+    - name: select
+      proxies:
+        - auto
+        - 01-trojan-EPODONIOS
+        - "02-vless-\U0001F1F3\U0001F1F1 NL 14"
+        - 03-trojan-@vmesskhodam
+      type: select
+rules:
+    - MATCH,select
