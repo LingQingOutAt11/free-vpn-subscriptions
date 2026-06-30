@@ -1,61 +1,61 @@
 proxies:
-    - cipher: chacha20-ietf-poly1305
-      name: "01-shadowsocks-\U0001F1EC\U0001F1E7 Join Telegram:@Farah_VPN \U0001F1EC\U0001F1E7"
-      password: gWBgmKb8AL1uRK0jZ44AoOPaC5lVTOHZmi
-      port: 13683
-      server: 91.108.254.104
-      type: ss
-      udp: true
     - cipher: aes-128-gcm
-      name: "02-shadowsocks-\U0001F1EC\U0001F1E7 GB 1"
+      name: "01-shadowsocks-\U0001F1EC\U0001F1E7 GB 1"
       password: shadowsocks
       port: 443
       server: 158.173.24.73
       type: ss
       udp: true
+    - cipher: aes-256-gcm
+      name: "02-shadowsocks-\U0001F1EC\U0001F1E7GB-94.156.250.148-0124"
+      password: RexnBgU7EV5ADxG
+      port: 7001
+      server: 94.156.250.148
+      type: ss
+      udp: true
     - cipher: rc4-md5
-      name: "03-shadowsocks-\U0001F1EC\U0001F1E7GB-146.70.61.37-0093"
+      name: "03-shadowsocks-\U0001F1EC\U0001F1E7 GB 7"
       password: 14fFPrbezE3HDZzsMOr6
       port: 8080
       server: 146.70.61.37
       type: ss
       udp: true
     - cipher: aes-128-gcm
-      name: "04-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.181-0109"
-      password: shadowsocks
-      port: 443
-      server: 141.98.101.181
-      type: ss
-      udp: true
-    - cipher: aes-128-gcm
-      name: "05-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.178-0281"
+      name: "04-shadowsocks-\U0001F1EC\U0001F1E7 GB 5"
       password: shadowsocks
       port: 443
       server: 141.98.101.178
       type: ss
       udp: true
     - cipher: aes-128-gcm
-      name: "06-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.182-0128"
+      name: "05-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.181-0109"
+      password: shadowsocks
+      port: 443
+      server: 141.98.101.181
+      type: ss
+      udp: true
+    - cipher: aes-128-gcm
+      name: "06-shadowsocks-\U0001F1EC\U0001F1E7 GB | SS | @netfreedom0 1"
       password: shadowsocks
       port: 443
       server: 141.98.101.182
       type: ss
       udp: true
-    - cipher: aes-256-gcm
-      name: "07-shadowsocks-\U0001F1EC\U0001F1E7GB-94.156.250.148-0124"
-      password: RexnBgU7EV5ADxG
-      port: 7001
-      server: 94.156.250.148
-      type: ss
-      udp: true
     - cipher: aes-128-gcm
-      name: "08-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.179-0129"
+      name: "07-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.179-0129"
       password: shadowsocks
       port: 443
       server: 141.98.101.179
       type: ss
       udp: true
-    - name: 09-trojan-☀️29@NetFlowTools
+    - cipher: chacha20-ietf-poly1305
+      name: 08-shadowsocks-TEL;Father_vpn
+      password: k1dBOmOB4oqi7Ump37a1bQ
+      port: 8080
+      server: 82.38.31.176
+      type: ss
+      udp: true
+    - name: "09-trojan-@V2ray_Alpha\U0001F37E 4"
       password: MITIVPN
       port: 443
       server: 164.38.155.135
@@ -67,29 +67,29 @@ proxy-groups:
     - interval: 300
       name: auto
       proxies:
-        - "01-shadowsocks-\U0001F1EC\U0001F1E7 Join Telegram:@Farah_VPN \U0001F1EC\U0001F1E7"
-        - "02-shadowsocks-\U0001F1EC\U0001F1E7 GB 1"
-        - "03-shadowsocks-\U0001F1EC\U0001F1E7GB-146.70.61.37-0093"
-        - "04-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.181-0109"
-        - "05-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.178-0281"
-        - "06-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.182-0128"
-        - "07-shadowsocks-\U0001F1EC\U0001F1E7GB-94.156.250.148-0124"
-        - "08-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.179-0129"
-        - 09-trojan-☀️29@NetFlowTools
+        - "01-shadowsocks-\U0001F1EC\U0001F1E7 GB 1"
+        - "02-shadowsocks-\U0001F1EC\U0001F1E7GB-94.156.250.148-0124"
+        - "03-shadowsocks-\U0001F1EC\U0001F1E7 GB 7"
+        - "04-shadowsocks-\U0001F1EC\U0001F1E7 GB 5"
+        - "05-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.181-0109"
+        - "06-shadowsocks-\U0001F1EC\U0001F1E7 GB | SS | @netfreedom0 1"
+        - "07-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.179-0129"
+        - 08-shadowsocks-TEL;Father_vpn
+        - "09-trojan-@V2ray_Alpha\U0001F37E 4"
       type: url-test
       url: https://www.gstatic.com/generate_204
     - name: select
       proxies:
         - auto
-        - "01-shadowsocks-\U0001F1EC\U0001F1E7 Join Telegram:@Farah_VPN \U0001F1EC\U0001F1E7"
-        - "02-shadowsocks-\U0001F1EC\U0001F1E7 GB 1"
-        - "03-shadowsocks-\U0001F1EC\U0001F1E7GB-146.70.61.37-0093"
-        - "04-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.181-0109"
-        - "05-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.178-0281"
-        - "06-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.182-0128"
-        - "07-shadowsocks-\U0001F1EC\U0001F1E7GB-94.156.250.148-0124"
-        - "08-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.179-0129"
-        - 09-trojan-☀️29@NetFlowTools
+        - "01-shadowsocks-\U0001F1EC\U0001F1E7 GB 1"
+        - "02-shadowsocks-\U0001F1EC\U0001F1E7GB-94.156.250.148-0124"
+        - "03-shadowsocks-\U0001F1EC\U0001F1E7 GB 7"
+        - "04-shadowsocks-\U0001F1EC\U0001F1E7 GB 5"
+        - "05-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.181-0109"
+        - "06-shadowsocks-\U0001F1EC\U0001F1E7 GB | SS | @netfreedom0 1"
+        - "07-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.179-0129"
+        - 08-shadowsocks-TEL;Father_vpn
+        - "09-trojan-@V2ray_Alpha\U0001F37E 4"
       type: select
 rules:
     - MATCH,select

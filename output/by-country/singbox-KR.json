@@ -1,10 +1,18 @@
 {
   "outbounds": [
     {
+      "method": "aes-256-cfb",
+      "password": "qwerREWQ@@",
+      "server": "218.237.185.230",
+      "server_port": 4652,
+      "tag": "01-shadowsocks-🇰🇷KR-218.237.185.230-0174",
+      "type": "shadowsocks"
+    },
+    {
       "password": "t5FsyeQXkNCY6eVGiqBXmPu4..jBEpNbak",
       "server": "38.60.220.65",
       "server_port": 443,
-      "tag": "01-trojan-🇰🇷 KR 7",
+      "tag": "02-trojan-🇰🇷 KR 2",
       "tls": {
         "enabled": true,
         "insecure": false,
@@ -17,24 +25,16 @@
       "security": "auto",
       "server": "152.67.218.38",
       "server_port": 443,
-      "tag": "02-vmess-🇰🇷KR-152.67.218.38-0152",
+      "tag": "03-vmess-🇰🇷 KR 11",
       "type": "vmess",
       "uuid": "b5e9480a-b7aa-40a4-f9a7-5299b5e363b4"
     },
     {
-      "method": "aes-256-cfb",
-      "password": "qwerREWQ@@",
-      "server": "211.178.105.134",
-      "server_port": 6123,
-      "tag": "03-shadowsocks-🇰🇷KR-211.178.105.134-0171",
-      "type": "shadowsocks"
-    },
-    {
       "interval": "5m",
       "outbounds": [
-        "01-trojan-🇰🇷 KR 7",
-        "02-vmess-🇰🇷KR-152.67.218.38-0152",
-        "03-shadowsocks-🇰🇷KR-211.178.105.134-0171"
+        "01-shadowsocks-🇰🇷KR-218.237.185.230-0174",
+        "02-trojan-🇰🇷 KR 2",
+        "03-vmess-🇰🇷 KR 11"
       ],
       "tag": "auto",
       "type": "urltest",
@@ -43,9 +43,9 @@
     {
       "outbounds": [
         "auto",
-        "01-trojan-🇰🇷 KR 7",
-        "02-vmess-🇰🇷KR-152.67.218.38-0152",
-        "03-shadowsocks-🇰🇷KR-211.178.105.134-0171"
+        "01-shadowsocks-🇰🇷KR-218.237.185.230-0174",
+        "02-trojan-🇰🇷 KR 2",
+        "03-vmess-🇰🇷 KR 11"
       ],
       "tag": "select",
       "type": "selector"

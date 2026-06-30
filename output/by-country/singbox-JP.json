@@ -3,9 +3,9 @@
     {
       "method": "aes-128-gcm",
       "password": "shadowsocks",
-      "server": "149.22.87.240",
+      "server": "149.22.87.204",
       "server_port": 443,
-      "tag": "01-shadowsocks-🇯🇵JP-149.22.87.240-0113",
+      "tag": "01-shadowsocks-🇯🇵JP-149.22.87.204-0111",
       "type": "shadowsocks"
     },
     {
@@ -13,15 +13,15 @@
       "password": "shadowsocks",
       "server": "149.22.87.241",
       "server_port": 443,
-      "tag": "02-shadowsocks-🇯🇵JP-149.22.87.241-4048",
+      "tag": "02-shadowsocks-🇯🇵JP-149.22.87.241-0110",
       "type": "shadowsocks"
     },
     {
       "method": "aes-128-gcm",
       "password": "shadowsocks",
-      "server": "149.22.87.204",
+      "server": "149.22.87.240",
       "server_port": 443,
-      "tag": "03-shadowsocks-🇯🇵JP-149.22.87.204-0216",
+      "tag": "03-shadowsocks-🇯🇵JP-149.22.87.240-0113",
       "type": "shadowsocks"
     },
     {
@@ -34,10 +34,22 @@
       "uuid": "6733c357-ba11-4e9f-f00f-7d87f2776ff9"
     },
     {
+      "password": "MITIVPN",
+      "server": "151.101.110.219",
+      "server_port": 443,
+      "tag": "05-trojan-[84065] - Telegram : @V2All",
+      "tls": {
+        "enabled": true,
+        "insecure": false,
+        "server_name": "global.fastly.com"
+      },
+      "type": "trojan"
+    },
+    {
       "password": "T9qoEuuxUEa9Dk3KxnTWrs6J8ilng9sCIf",
       "server": "103.125.216.18",
       "server_port": 443,
-      "tag": "05-trojan-🇯🇵JP-103.125.216.18-0158",
+      "tag": "06-trojan-🇯🇵JP-103.125.216.18-0158",
       "tls": {
         "enabled": true,
         "insecure": false,
@@ -49,7 +61,7 @@
       "password": "T9qoEuuxUEa9Dk3KxnTWrs6J8ilng9sCIf",
       "server": "103.125.216.68",
       "server_port": 443,
-      "tag": "06-trojan-🇯🇵JP-103.125.216.68-0126",
+      "tag": "07-trojan-🇯🇵JP-103.125.216.68-0126",
       "tls": {
         "enabled": true,
         "insecure": false,
@@ -62,19 +74,20 @@
       "password": "GTZI5AbjNAeWQG0oVNptvWJogHNKiiKA",
       "server": "47.79.144.115",
       "server_port": 40003,
-      "tag": "07-shadowsocks-🇯🇵 JP 7",
+      "tag": "08-shadowsocks-🇯🇵JP-47.79.144.115-0181",
       "type": "shadowsocks"
     },
     {
       "interval": "5m",
       "outbounds": [
-        "01-shadowsocks-🇯🇵JP-149.22.87.240-0113",
-        "02-shadowsocks-🇯🇵JP-149.22.87.241-4048",
-        "03-shadowsocks-🇯🇵JP-149.22.87.204-0216",
+        "01-shadowsocks-🇯🇵JP-149.22.87.204-0111",
+        "02-shadowsocks-🇯🇵JP-149.22.87.241-0110",
+        "03-shadowsocks-🇯🇵JP-149.22.87.240-0113",
         "04-vmess-🇯🇵JP-140.83.51.161-1328",
-        "05-trojan-🇯🇵JP-103.125.216.18-0158",
-        "06-trojan-🇯🇵JP-103.125.216.68-0126",
-        "07-shadowsocks-🇯🇵 JP 7"
+        "05-trojan-[84065] - Telegram : @V2All",
+        "06-trojan-🇯🇵JP-103.125.216.18-0158",
+        "07-trojan-🇯🇵JP-103.125.216.68-0126",
+        "08-shadowsocks-🇯🇵JP-47.79.144.115-0181"
       ],
       "tag": "auto",
       "type": "urltest",
@@ -83,13 +96,14 @@
     {
       "outbounds": [
         "auto",
-        "01-shadowsocks-🇯🇵JP-149.22.87.240-0113",
-        "02-shadowsocks-🇯🇵JP-149.22.87.241-4048",
-        "03-shadowsocks-🇯🇵JP-149.22.87.204-0216",
+        "01-shadowsocks-🇯🇵JP-149.22.87.204-0111",
+        "02-shadowsocks-🇯🇵JP-149.22.87.241-0110",
+        "03-shadowsocks-🇯🇵JP-149.22.87.240-0113",
         "04-vmess-🇯🇵JP-140.83.51.161-1328",
-        "05-trojan-🇯🇵JP-103.125.216.18-0158",
-        "06-trojan-🇯🇵JP-103.125.216.68-0126",
-        "07-shadowsocks-🇯🇵 JP 7"
+        "05-trojan-[84065] - Telegram : @V2All",
+        "06-trojan-🇯🇵JP-103.125.216.18-0158",
+        "07-trojan-🇯🇵JP-103.125.216.68-0126",
+        "08-shadowsocks-🇯🇵JP-47.79.144.115-0181"
       ],
       "tag": "select",
       "type": "selector"
