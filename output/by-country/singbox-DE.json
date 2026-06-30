@@ -3,18 +3,18 @@
     {
       "alter_id": 0,
       "security": "auto",
-      "server": "82.198.246.250",
+      "server": "82.198.246.97",
       "server_port": 180,
-      "tag": "01-vmess-🇺🇸 Join+Telegram:@Farah_VPN 🇺🇸",
+      "tag": "01-vmess-🇨🇿 CZ 1",
       "type": "vmess",
       "uuid": "d13fc2f5-3e05-4795-81eb-44143a09e552"
     },
     {
       "alter_id": 0,
       "security": "auto",
-      "server": "82.198.246.97",
+      "server": "82.198.246.250",
       "server_port": 180,
-      "tag": "02-vmess-🇨🇿 CZ 1",
+      "tag": "02-vmess-🇺🇸 Join+Telegram:@Farah_VPN 🇺🇸",
       "type": "vmess",
       "uuid": "d13fc2f5-3e05-4795-81eb-44143a09e552"
     },
@@ -27,37 +27,20 @@
       "type": "shadowsocks"
     },
     {
-      "password": "dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q",
-      "server": "185.137.157.128",
+      "method": "chacha20-ietf-poly1305",
+      "password": "453u6Gcei04NyXbrWLKa0M",
+      "server": "5.230.184.16",
       "server_port": 443,
-      "tag": "04-trojan-🇩🇪 DE 3",
-      "tls": {
-        "enabled": true,
-        "insecure": false,
-        "server_name": ""
-      },
-      "type": "trojan"
-    },
-    {
-      "password": "urhj8z8R8nBovrNsYzXhL35jLGC5ruguRh",
-      "server": "92.119.35.85",
-      "server_port": 443,
-      "tag": "05-trojan-希腊 V2CROSS.COM",
-      "tls": {
-        "enabled": true,
-        "insecure": false,
-        "server_name": ""
-      },
-      "type": "trojan"
+      "tag": "04-shadowsocks-🇩🇪DE-5.230.184.16-0096",
+      "type": "shadowsocks"
     },
     {
       "interval": "5m",
       "outbounds": [
-        "01-vmess-🇺🇸 Join+Telegram:@Farah_VPN 🇺🇸",
-        "02-vmess-🇨🇿 CZ 1",
+        "01-vmess-🇨🇿 CZ 1",
+        "02-vmess-🇺🇸 Join+Telegram:@Farah_VPN 🇺🇸",
         "03-shadowsocks-🇩🇪DE-213.202.208.199-0172",
-        "04-trojan-🇩🇪 DE 3",
-        "05-trojan-希腊 V2CROSS.COM"
+        "04-shadowsocks-🇩🇪DE-5.230.184.16-0096"
       ],
       "tag": "auto",
       "type": "urltest",
@@ -66,11 +49,10 @@
     {
       "outbounds": [
         "auto",
-        "01-vmess-🇺🇸 Join+Telegram:@Farah_VPN 🇺🇸",
-        "02-vmess-🇨🇿 CZ 1",
+        "01-vmess-🇨🇿 CZ 1",
+        "02-vmess-🇺🇸 Join+Telegram:@Farah_VPN 🇺🇸",
         "03-shadowsocks-🇩🇪DE-213.202.208.199-0172",
-        "04-trojan-🇩🇪 DE 3",
-        "05-trojan-希腊 V2CROSS.COM"
+        "04-shadowsocks-🇩🇪DE-5.230.184.16-0096"
       ],
       "tag": "select",
       "type": "selector"
