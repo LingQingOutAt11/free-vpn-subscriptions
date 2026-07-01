@@ -90,7 +90,10 @@ func validOutbound(bin string, n *node.Node) bool {
 	cfg := map[string]any{
 		"log": map[string]any{"disabled": true},
 		"inbounds": []map[string]any{
-			{"type": "mixed", "tag": "in-0", "listen": "127.0.0.1", "listen_port": 0},
+			// `sing-box check` validates listen_port even though the config
+			// is never started. Use a fixed high port instead of 0 so the
+			// schema check doesn't reject every candidate preflight.
+			{"type": "mixed", "tag": "in-0", "listen": "127.0.0.1", "listen_port": 2080},
 		},
 		"outbounds": []map[string]any{
 			ob,
