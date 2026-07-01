@@ -1,0 +1,45 @@
+name: discover-sources
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "43 3 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-go@v5
+        with:
+          go-version-file: go.mod
+
+      - name: Discover candidates
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: go run ./cmd/fnctl discover-sources -c config.yaml
+
+      - name: Upload reports
+        uses: actions/upload-artifact@v4
+        with:
+          name: discovered-sources
+          path: |
+            output/discovered-sources.yaml
+            output/discovered-sources.md
+
+      - name: Commit reports
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@users.noreply.github.com
+          git add output/discovered-sources.yaml output/discovered-sources.md
+          if git diff --cached --quiet; then
+            echo "No discovery changes"
+            exit 0
+          fi
+          git commit -m "chore: refresh discovered sources"
+          git push

@@ -89,6 +89,33 @@ sources:
     format: uri-list
     enabled: true
 
+  # Added for fork refresh: additional public GitHub sources discovered alive
+  # on 2026-07-01 and parser-compatible with the existing pipeline.
+  - name: tg-v2ray-configs-every2h
+    url: https://raw.githubusercontent.com/r3zarahimi/tg-v2ray-configs-every2h/main/Config_jo.txt
+    format: uri-list
+    enabled: true
+
+  - name: radikal-clash
+    url: https://raw.githubusercontent.com/0xRadikal/Free-v2ray-Configs/main/all/clash.yaml
+    format: clash
+    enabled: true
+
+  - name: solispirit-v2ray
+    url: https://raw.githubusercontent.com/SoliSpirit/v2ray-configs/main/all_configs.txt
+    format: uri-list
+    enabled: true
+
+  - name: roosterkid-openproxylist
+    url: https://raw.githubusercontent.com/roosterkid/openproxylist/main/V2RAY_RAW.txt
+    format: uri-list
+    enabled: true
+
+  - name: go4sharing-clash
+    url: https://raw.githubusercontent.com/go4sharing/sub/main/sub.yaml
+    format: clash
+    enabled: true
+
 probe:
   timeout_ms: 3000
   concurrency: 100
@@ -127,7 +154,7 @@ output:
   pages:
     enabled: true
     dir: docs
-    site_url: https://au1rxx.github.io/free-vpn-subscriptions
+    site_url: https://lingqingoutat11.github.io/free-vpn-subscriptions
 
 geoip:
   enabled: true
@@ -137,4 +164,4 @@ geoip:
 
 readme:
   title: "Free VPN Subscriptions"
-  repo_url: "https://github.com/Au1rxx/free-vpn-subscriptions"
+  repo_url: "https://github.com/LingQingOutAt11/free-vpn-subscriptions"

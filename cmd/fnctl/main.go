@@ -23,14 +23,15 @@ import (
 
 	"github.com/Au1rxx/free-vpn-subscriptions/internal/aggregate"
 	"github.com/Au1rxx/free-vpn-subscriptions/internal/config"
+	"github.com/Au1rxx/free-vpn-subscriptions/internal/discover"
 	"github.com/Au1rxx/free-vpn-subscriptions/internal/geoip"
-	"github.com/Au1rxx/free-vpn-subscriptions/pkg/node"
 	"github.com/Au1rxx/free-vpn-subscriptions/internal/pages"
-	"github.com/Au1rxx/free-vpn-subscriptions/pkg/probe"
 	"github.com/Au1rxx/free-vpn-subscriptions/internal/readme"
 	"github.com/Au1rxx/free-vpn-subscriptions/internal/sources"
 	"github.com/Au1rxx/free-vpn-subscriptions/internal/verify"
 	"github.com/Au1rxx/free-vpn-subscriptions/pkg/emit"
+	"github.com/Au1rxx/free-vpn-subscriptions/pkg/node"
+	"github.com/Au1rxx/free-vpn-subscriptions/pkg/probe"
 )
 
 // runDeadline caps a single aggregate run. The hourly cron has a hard 6h
@@ -48,6 +49,7 @@ func main() {
 	}
 	root.PersistentFlags().StringVarP(&cfgPath, "config", "c", "config.yaml", "path to configuration file")
 	root.AddCommand(newAggregateCmd())
+	root.AddCommand(newDiscoverSourcesCmd())
 	if err := root.Execute(); err != nil {
 		os.Exit(1)
 	}
@@ -125,6 +127,52 @@ func newAggregateCmd() *cobra.Command {
 			fmt.Println("outputs written to", cfg.Output.Dir)
 		},
 	}
+}
+
+func newDiscoverSourcesCmd() *cobra.Command {
+	var (
+		outYAML  string
+		outMD    string
+		perQuery int
+	)
+	cmd := &cobra.Command{
+		Use:   "discover-sources",
+		Short: "Search GitHub for new public source candidates and write a report",
+		Run: func(cmd *cobra.Command, args []string) {
+			cfg, err := config.Load(cfgPath)
+			if err != nil {
+				die(err)
+			}
+			ctx, cancel := context.WithTimeout(context.Background(), 5*time.Minute)
+			defer cancel()
+
+			report, err := discover.Run(ctx, cfg, discover.Options{
+				Token:         os.Getenv("GITHUB_TOKEN"),
+				PerQuery:      perQuery,
+				ExistingURLs:  discover.ExistingURLs(cfg),
+				ExistingNames: discover.ExistingNames(cfg),
+			})
+			if err != nil {
+				die(err)
+			}
+
+			if err := os.MkdirAll(filepath.Dir(outYAML), 0o755); err != nil {
+				die(err)
+			}
+			if err := discover.WriteYAML(outYAML, report); err != nil {
+				die(err)
+			}
+			if err := discover.WriteMarkdown(outMD, report); err != nil {
+				die(err)
+			}
+			fmt.Printf("discovered %d candidates across %d repos\n", len(report.Candidates), report.SearchedRepos)
+			fmt.Println("reports written to", outYAML, "and", outMD)
+		},
+	}
+	cmd.Flags().StringVar(&outYAML, "output", "output/discovered-sources.yaml", "path to YAML discovery report")
+	cmd.Flags().StringVar(&outMD, "markdown", "output/discovered-sources.md", "path to Markdown discovery report")
+	cmd.Flags().IntVar(&perQuery, "per-query", 15, "GitHub repositories to inspect per search query")
+	return cmd
 }
 
 // fetchAll fans out one goroutine per enabled source. Each fetch honors the
