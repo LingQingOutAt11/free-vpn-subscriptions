@@ -126,7 +126,9 @@ func validOutbound(bin string, n *node.Node) bool {
 		return true
 	}
 	logCheckFailure.Do(func() {
-		fmt.Fprintf(os.Stderr, "  [verify] sing-box check sample failure: %s\n", truncate(string(out), 500))
+		fmt.Fprintf(os.Stderr, "  [verify] sing-box check sample node: protocol=%s server=%s port=%d\n", n.Protocol, n.Server, n.Port)
+		fmt.Fprintf(os.Stderr, "  [verify] sing-box check sample config: %s\n", truncate(string(raw), 1200))
+		fmt.Fprintf(os.Stderr, "  [verify] sing-box check sample failure: %v %s\n", err, truncate(string(out), 500))
 	})
 	return false
 }
