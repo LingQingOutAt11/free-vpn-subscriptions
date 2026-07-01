@@ -1,0 +1,41 @@
+proxies:
+    - name: "01-hysteria2- By EbraSha \U0001F311"
+      password: dongtaiwang.com
+      port: 22000
+      server: 62.210.124.146
+      skip-cert-verify: true
+      sni: www.microsoft.com
+      type: hysteria2
+    - cipher: chacha20-ietf-poly1305
+      name: "02-shadowsocks-\U0001F49910@NetFlowTools"
+      password: diOMBU5IDvJcFqyNPbRjYR
+      port: 10443
+      server: 137.74.119.18
+      type: ss
+      udp: true
+    - name: "03-trojan-\U0001F1EB\U0001F1F7FR-38.60.136.156-28"
+      password: hCunaKqdEJDBO+3jCrJUSMevXOw9Q_r4Ey
+      port: 443
+      server: 38.60.136.156
+      skip-cert-verify: true
+      sni: ""
+      type: trojan
+      udp: true
+proxy-groups:
+    - interval: 300
+      name: auto
+      proxies:
+        - "01-hysteria2- By EbraSha \U0001F311"
+        - "02-shadowsocks-\U0001F49910@NetFlowTools"
+        - "03-trojan-\U0001F1EB\U0001F1F7FR-38.60.136.156-28"
+      type: url-test
+      url: https://www.gstatic.com/generate_204
+    - name: select
+      proxies:
+        - auto
+        - "01-hysteria2- By EbraSha \U0001F311"
+        - "02-shadowsocks-\U0001F49910@NetFlowTools"
+        - "03-trojan-\U0001F1EB\U0001F1F7FR-38.60.136.156-28"
+      type: select
+rules:
+    - MATCH,select
