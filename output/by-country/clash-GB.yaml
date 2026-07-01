@@ -16,11 +16,11 @@ proxies:
       server: 91.108.254.104
       type: ss
       udp: true
-    - cipher: rc4-md5
-      name: "03-shadowsocks-\U0001F1EC\U0001F1E7GB-146.70.61.37-0128"
-      password: 14fFPrbezE3HDZzsMOr6
-      port: 8080
-      server: 146.70.61.37
+    - cipher: aes-128-gcm
+      name: "03-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.178-0184"
+      password: shadowsocks
+      port: 443
+      server: 141.98.101.178
       type: ss
       udp: true
     - cipher: aes-128-gcm
@@ -31,31 +31,31 @@ proxies:
       type: ss
       udp: true
     - cipher: aes-128-gcm
-      name: "05-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.181-0188"
-      password: shadowsocks
-      port: 443
-      server: 141.98.101.181
-      type: ss
-      udp: true
-    - cipher: aes-128-gcm
-      name: "06-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.182-0185"
+      name: "05-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.182-0185"
       password: shadowsocks
       port: 443
       server: 141.98.101.182
       type: ss
       udp: true
     - cipher: aes-128-gcm
-      name: "07-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.178-0184"
+      name: "06-shadowsocks-\U0001F1EC\U0001F1E7 GB 2"
       password: shadowsocks
       port: 443
-      server: 141.98.101.178
+      server: 141.98.101.181
       type: ss
       udp: true
     - cipher: aes-256-gcm
-      name: 08-shadowsocks-EPODONIOS
+      name: "07-shadowsocks-\U0001F1EC\U0001F1E7 GB 1"
       password: RexnBgU7EV5ADxG
       port: 7001
       server: 94.156.250.148
+      type: ss
+      udp: true
+    - cipher: rc4-md5
+      name: "08-shadowsocks-\U0001F1EC\U0001F1E7 GB 4"
+      password: 14fFPrbezE3HDZzsMOr6
+      port: 8080
+      server: 146.70.61.37
       type: ss
       udp: true
 proxy-groups:
@@ -64,12 +64,12 @@ proxy-groups:
       proxies:
         - 01-vless-⚡ b2n.ir/v2ray-configs | 303
         - '02-shadowsocks-✨ @NamiraConfigs | ❤️ وصل شدی جوین شو | '
-        - "03-shadowsocks-\U0001F1EC\U0001F1E7GB-146.70.61.37-0128"
+        - "03-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.178-0184"
         - "04-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.179-0186"
-        - "05-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.181-0188"
-        - "06-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.182-0185"
-        - "07-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.178-0184"
-        - 08-shadowsocks-EPODONIOS
+        - "05-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.182-0185"
+        - "06-shadowsocks-\U0001F1EC\U0001F1E7 GB 2"
+        - "07-shadowsocks-\U0001F1EC\U0001F1E7 GB 1"
+        - "08-shadowsocks-\U0001F1EC\U0001F1E7 GB 4"
       type: url-test
       url: https://www.gstatic.com/generate_204
     - name: select
@@ -77,12 +77,12 @@ proxy-groups:
         - auto
         - 01-vless-⚡ b2n.ir/v2ray-configs | 303
         - '02-shadowsocks-✨ @NamiraConfigs | ❤️ وصل شدی جوین شو | '
-        - "03-shadowsocks-\U0001F1EC\U0001F1E7GB-146.70.61.37-0128"
+        - "03-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.178-0184"
         - "04-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.179-0186"
-        - "05-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.181-0188"
-        - "06-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.182-0185"
-        - "07-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.178-0184"
-        - 08-shadowsocks-EPODONIOS
+        - "05-shadowsocks-\U0001F1EC\U0001F1E7GB-141.98.101.182-0185"
+        - "06-shadowsocks-\U0001F1EC\U0001F1E7 GB 2"
+        - "07-shadowsocks-\U0001F1EC\U0001F1E7 GB 1"
+        - "08-shadowsocks-\U0001F1EC\U0001F1E7 GB 4"
       type: select
 rules:
     - MATCH,select

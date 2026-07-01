@@ -10,30 +10,22 @@
       "uuid": "d13fc2f5-3e05-4795-81eb-44143a09e552"
     },
     {
-      "method": "aes-256-gcm",
-      "password": "RexnBgU7EV5ADxG",
-      "server": "213.202.208.199",
-      "server_port": 7001,
-      "tag": "02-shadowsocks-🇩🇪DE-213.202.208.199-0175",
-      "type": "shadowsocks"
-    },
-    {
       "password": "urhj8z8R8nBovrNsYzXhL35jLGC5ruguRh",
-      "server": "92.119.35.131",
+      "server": "92.119.35.93",
       "server_port": 443,
-      "tag": "03-trojan-🇩🇪DE-92.119.35.131-0224",
+      "tag": "02-trojan-🇩🇪DE-92.119.35.93-0225",
       "tls": {
         "enabled": true,
         "insecure": false,
-        "server_name": ""
+        "server_name": "92.119.35.93"
       },
       "type": "trojan"
     },
     {
       "password": "dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q",
-      "server": "185.137.157.128",
+      "server": "185.137.157.138",
       "server_port": 443,
-      "tag": "04-trojan-🇩🇪 DE 13",
+      "tag": "03-trojan-🇩🇪 DE 34",
       "tls": {
         "enabled": true,
         "insecure": false,
@@ -43,9 +35,21 @@
     },
     {
       "password": "aR9EJWEB2Jp3m6xKJK=Ct7kLyqFSU-iDBR",
-      "server": "92.119.35.123",
+      "server": "92.119.35.127",
       "server_port": 443,
-      "tag": "05-trojan-🇩🇪DE-92.119.35.123-0141",
+      "tag": "04-trojan-🇩🇪DE-92.119.35.127-030",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": ""
+      },
+      "type": "trojan"
+    },
+    {
+      "password": "urhj8z8R8nBovrNsYzXhL35jLGC5ruguRh",
+      "server": "92.119.35.97",
+      "server_port": 443,
+      "tag": "05-trojan-🇩🇪DE-92.119.35.97-0219",
       "tls": {
         "enabled": true,
         "insecure": false,
@@ -54,13 +58,22 @@
       "type": "trojan"
     },
     {
+      "method": "aes-256-gcm",
+      "password": "RexnBgU7EV5ADxG",
+      "server": "213.202.208.199",
+      "server_port": 7001,
+      "tag": "06-shadowsocks-🇩🇪 DE 33",
+      "type": "shadowsocks"
+    },
+    {
       "interval": "5m",
       "outbounds": [
         "01-vmess-🇺🇸 Join+Telegram:@Farah_VPN 🇺🇸",
-        "02-shadowsocks-🇩🇪DE-213.202.208.199-0175",
-        "03-trojan-🇩🇪DE-92.119.35.131-0224",
-        "04-trojan-🇩🇪 DE 13",
-        "05-trojan-🇩🇪DE-92.119.35.123-0141"
+        "02-trojan-🇩🇪DE-92.119.35.93-0225",
+        "03-trojan-🇩🇪 DE 34",
+        "04-trojan-🇩🇪DE-92.119.35.127-030",
+        "05-trojan-🇩🇪DE-92.119.35.97-0219",
+        "06-shadowsocks-🇩🇪 DE 33"
       ],
       "tag": "auto",
       "type": "urltest",
@@ -70,10 +83,11 @@
       "outbounds": [
         "auto",
         "01-vmess-🇺🇸 Join+Telegram:@Farah_VPN 🇺🇸",
-        "02-shadowsocks-🇩🇪DE-213.202.208.199-0175",
-        "03-trojan-🇩🇪DE-92.119.35.131-0224",
-        "04-trojan-🇩🇪 DE 13",
-        "05-trojan-🇩🇪DE-92.119.35.123-0141"
+        "02-trojan-🇩🇪DE-92.119.35.93-0225",
+        "03-trojan-🇩🇪 DE 34",
+        "04-trojan-🇩🇪DE-92.119.35.127-030",
+        "05-trojan-🇩🇪DE-92.119.35.97-0219",
+        "06-shadowsocks-🇩🇪 DE 33"
       ],
       "tag": "select",
       "type": "selector"
