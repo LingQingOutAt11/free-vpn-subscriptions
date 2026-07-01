@@ -4,7 +4,7 @@
 
 <p align="center"><img src="https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/assets/hero.png" alt="Free VPN Subscriptions — hourly-refreshed free VPN subscriptions for Clash, sing-box, v2ray" width="780"></p>
 
-![nodes](https://img.shields.io/badge/nodes-0-brightgreen) ![alive](https://img.shields.io/badge/alive-3392-blue) ![median--rtt](https://img.shields.io/badge/median--rtt-0ms-orange) ![updated](https://img.shields.io/badge/updated-2026-07-01_15:52_UTC-informational)
+![nodes](https://img.shields.io/badge/nodes-0-brightgreen) ![alive](https://img.shields.io/badge/alive-3358-blue) ![median--rtt](https://img.shields.io/badge/median--rtt-0ms-orange) ![updated](https://img.shields.io/badge/updated-2026-07-01_15:56_UTC-informational)
 
 > **The easiest way to get a working free VPN — copy a subscription link, paste it into your client, connect.**  
 > No signup. No payment. No installation of binaries. Refreshed hourly from public sources — every published node has demonstrably forwarded real HTTP traffic through sing-box minutes ago.
@@ -91,10 +91,10 @@ New to VPN clients? Pick your platform and follow the tutorial:
 ## 📊 Live Stats
 
 - **Nodes selected**: 0
-- **Alive across all sources**: 3392
+- **Alive across all sources**: 3358
 - **Fastest node RTT**: 0 ms
 - **Median RTT**: 0 ms
-- **Last updated (UTC)**: 2026-07-01 15:52 UTC
+- **Last updated (UTC)**: 2026-07-01 15:56 UTC
 
 ## ❓ FAQ
 

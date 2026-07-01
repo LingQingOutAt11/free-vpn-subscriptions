@@ -4,7 +4,7 @@
 
 <p align="center"><img src="https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/assets/hero.png" alt="Free VPN Subscriptions — hourly-refreshed free VPN subscriptions for Clash, sing-box, v2ray" width="780"></p>
 
-![nós](https://img.shields.io/badge/nós-0-brightgreen) ![ativos](https://img.shields.io/badge/ativos-3392-blue) ![rtt--mediano](https://img.shields.io/badge/rtt--mediano-0ms-orange) ![atualizado](https://img.shields.io/badge/atualizado-2026-07-01_15:52_UTC-informational)
+![nós](https://img.shields.io/badge/nós-0-brightgreen) ![ativos](https://img.shields.io/badge/ativos-3358-blue) ![rtt--mediano](https://img.shields.io/badge/rtt--mediano-0ms-orange) ![atualizado](https://img.shields.io/badge/atualizado-2026-07-01_15:56_UTC-informational)
 
 > **A forma mais fácil de obter uma VPN gratuita funcional — copie um link de assinatura, cole no seu cliente, conecte.**  
 > Sem cadastro. Sem pagamento. Sem instalar nenhum binário. Atualizado a cada hora a partir de fontes públicas — cada nó publicado encaminhou tráfego HTTP real através do sing-box minutos atrás.
@@ -91,10 +91,10 @@ Novo nos clientes VPN? Escolha sua plataforma e siga o tutorial:
 ## 📊 Estatísticas ao vivo
 
 - **Nós selecionados**: 0
-- **Ativos em todas as fontes**: 3392
+- **Ativos em todas as fontes**: 3358
 - **RTT do nó mais rápido**: 0 ms
 - **RTT mediano**: 0 ms
-- **Última atualização (UTC)**: 2026-07-01 15:52 UTC
+- **Última atualização (UTC)**: 2026-07-01 15:56 UTC
 
 ## ❓ Perguntas frequentes
 
