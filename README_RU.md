@@ -4,7 +4,7 @@
 
 <p align="center"><img src="https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/assets/hero.png" alt="Free VPN Subscriptions — hourly-refreshed free VPN subscriptions for Clash, sing-box, v2ray" width="780"></p>
 
-![узлы](https://img.shields.io/badge/узлы-0-brightgreen) ![живые](https://img.shields.io/badge/живые-3396-blue) ![медиана--rtt](https://img.shields.io/badge/медиана--rtt-0ms-orange) ![обновлено](https://img.shields.io/badge/обновлено-2026-07-01_15:48_UTC-informational)
+![узлы](https://img.shields.io/badge/узлы-0-brightgreen) ![живые](https://img.shields.io/badge/живые-3392-blue) ![медиана--rtt](https://img.shields.io/badge/медиана--rtt-0ms-orange) ![обновлено](https://img.shields.io/badge/обновлено-2026-07-01_15:52_UTC-informational)
 
 > **Самый простой способ получить рабочий бесплатный VPN — скопируйте ссылку подписки, вставьте в клиент, подключитесь.**  
 > Без регистрации. Без оплаты. Без установки каких-либо бинарников. Обновляется каждый час из публичных источников — каждый публикуемый узел несколько минут назад реально пропустил HTTP-трафик через sing-box.
@@ -91,10 +91,10 @@ proxy-groups:
 ## 📊 Статистика в реальном времени
 
 - **Выбрано узлов**: 0
-- **Живых во всех источниках**: 3396
+- **Живых во всех источниках**: 3392
 - **RTT самого быстрого узла**: 0 ms
 - **Медиана RTT**: 0 ms
-- **Последнее обновление (UTC)**: 2026-07-01 15:48 UTC
+- **Последнее обновление (UTC)**: 2026-07-01 15:52 UTC
 
 ## ❓ Часто задаваемые вопросы
 
