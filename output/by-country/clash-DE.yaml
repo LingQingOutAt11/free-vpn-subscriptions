@@ -8,17 +8,18 @@ proxies:
       type: vmess
       udp: true
       uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    - cipher: chacha20-ietf-poly1305
-      name: "02-shadowsocks-\U0001F1E9\U0001F1EA DE 26"
-      password: h2GNP6xzss0xQ5kf7BNcJI
-      port: 47199
-      server: 46.224.2.35
-      type: ss
-      udp: true
-    - name: "03-trojan-\U0001F1E9\U0001F1EA DE 10"
+    - name: "02-trojan-\U0001F1E9\U0001F1EA DE 5"
       password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
       port: 443
-      server: 185.137.157.145
+      server: 185.137.157.151
+      skip-cert-verify: false
+      sni: ""
+      type: trojan
+      udp: true
+    - name: "03-trojan-\U0001F1E9\U0001F1EA DE 3"
+      password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
+      port: 443
+      server: 185.137.157.138
       skip-cert-verify: false
       sni: ""
       type: trojan
@@ -31,70 +32,31 @@ proxies:
       sni: ""
       type: trojan
       udp: true
-    - name: "05-trojan-\U0001F1E9\U0001F1EA DE 12"
+    - name: "05-trojan-\U0001F1E9\U0001F1EADE-185.137.157.140-0112"
       password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
       port: 443
-      server: 185.137.157.135
+      server: 185.137.157.140
       skip-cert-verify: false
       sni: ""
       type: trojan
       udp: true
-    - name: "06-trojan-\U0001F1E9\U0001F1EA DE 3"
+    - name: "06-trojan-\U0001F1E9\U0001F1EA DE 22"
       password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
       port: 443
-      server: 185.137.157.138
+      server: 185.137.157.145
       skip-cert-verify: false
       sni: ""
       type: trojan
       udp: true
-    - name: "07-trojan-\U0001F1E9\U0001F1EADE-92.119.35.87-0182"
+    - name: "07-trojan-\U0001F1E9\U0001F1EADE-92.119.35.87-35"
       password: urhj8z8R8nBovrNsYzXhL35jLGC5ruguRh
       port: 443
       server: 92.119.35.87
-      skip-cert-verify: false
+      skip-cert-verify: true
       sni: ""
       type: trojan
       udp: true
-    - name: "08-trojan-\U0001F1E9\U0001F1EADE-92.119.35.85-0111"
-      password: urhj8z8R8nBovrNsYzXhL35jLGC5ruguRh
-      port: 443
-      server: 92.119.35.85
-      skip-cert-verify: false
-      sni: ""
-      type: trojan
-      udp: true
-    - name: "09-trojan-\U0001F1E9\U0001F1EADE-185.137.157.142-0166"
-      password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
-      port: 443
-      server: 185.137.157.142
-      skip-cert-verify: false
-      sni: ""
-      type: trojan
-      udp: true
-    - name: "10-trojan-\U0001F1E9\U0001F1EADE-92.119.35.71-0190"
-      password: urhj8z8R8nBovrNsYzXhL35jLGC5ruguRh
-      port: 443
-      server: 92.119.35.71
-      skip-cert-verify: false
-      sni: ""
-      type: trojan
-      udp: true
-    - cipher: aes-256-gcm
-      name: "11-shadowsocks-\U0001F1E9\U0001F1EADE-213.202.208.199-0163"
-      password: RexnBgU7EV5ADxG
-      port: 7001
-      server: 213.202.208.199
-      type: ss
-      udp: true
-    - name: "12-trojan-\U0001F1E9\U0001F1EADE-92.119.35.127-0199"
-      password: aR9EJWEB2Jp3m6xKJK=Ct7kLyqFSU-iDBR
-      port: 443
-      server: 92.119.35.127
-      skip-cert-verify: false
-      sni: ""
-      type: trojan
-      udp: true
-    - name: 13-trojan-希腊 V2CROSS.COM
+    - name: "08-trojan-\U0001F1E9\U0001F1EADE-92.119.35.119-0165"
       password: urhj8z8R8nBovrNsYzXhL35jLGC5ruguRh
       port: 443
       server: 92.119.35.119
@@ -102,51 +64,50 @@ proxies:
       sni: 92.119.35.119
       type: trojan
       udp: true
-    - name: "14-trojan-\U0001F1E9\U0001F1EADE-92.119.35.131-0188"
-      password: urhj8z8R8nBovrNsYzXhL35jLGC5ruguRh
+    - name: "09-trojan-\U0001F1E9\U0001F1EA DE 12"
+      password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
       port: 443
-      server: 92.119.35.131
+      server: 185.137.157.135
       skip-cert-verify: false
       sni: ""
       type: trojan
+      udp: true
+    - cipher: aes-256-gcm
+      name: "10-shadowsocks-\U0001F1E9\U0001F1EADE-213.202.208.199-0163"
+      password: RexnBgU7EV5ADxG
+      port: 7001
+      server: 213.202.208.199
+      type: ss
       udp: true
 proxy-groups:
     - interval: 300
       name: auto
       proxies:
         - "01-vmess-\U0001F1FA\U0001F1F8 Join+Telegram:@Farah_VPN \U0001F1FA\U0001F1F8"
-        - "02-shadowsocks-\U0001F1E9\U0001F1EA DE 26"
-        - "03-trojan-\U0001F1E9\U0001F1EA DE 10"
+        - "02-trojan-\U0001F1E9\U0001F1EA DE 5"
+        - "03-trojan-\U0001F1E9\U0001F1EA DE 3"
         - "04-trojan-\U0001F1E9\U0001F1EA DE 6"
-        - "05-trojan-\U0001F1E9\U0001F1EA DE 12"
-        - "06-trojan-\U0001F1E9\U0001F1EA DE 3"
-        - "07-trojan-\U0001F1E9\U0001F1EADE-92.119.35.87-0182"
-        - "08-trojan-\U0001F1E9\U0001F1EADE-92.119.35.85-0111"
-        - "09-trojan-\U0001F1E9\U0001F1EADE-185.137.157.142-0166"
-        - "10-trojan-\U0001F1E9\U0001F1EADE-92.119.35.71-0190"
-        - "11-shadowsocks-\U0001F1E9\U0001F1EADE-213.202.208.199-0163"
-        - "12-trojan-\U0001F1E9\U0001F1EADE-92.119.35.127-0199"
-        - 13-trojan-希腊 V2CROSS.COM
-        - "14-trojan-\U0001F1E9\U0001F1EADE-92.119.35.131-0188"
+        - "05-trojan-\U0001F1E9\U0001F1EADE-185.137.157.140-0112"
+        - "06-trojan-\U0001F1E9\U0001F1EA DE 22"
+        - "07-trojan-\U0001F1E9\U0001F1EADE-92.119.35.87-35"
+        - "08-trojan-\U0001F1E9\U0001F1EADE-92.119.35.119-0165"
+        - "09-trojan-\U0001F1E9\U0001F1EA DE 12"
+        - "10-shadowsocks-\U0001F1E9\U0001F1EADE-213.202.208.199-0163"
       type: url-test
       url: https://www.gstatic.com/generate_204
     - name: select
       proxies:
         - auto
         - "01-vmess-\U0001F1FA\U0001F1F8 Join+Telegram:@Farah_VPN \U0001F1FA\U0001F1F8"
-        - "02-shadowsocks-\U0001F1E9\U0001F1EA DE 26"
-        - "03-trojan-\U0001F1E9\U0001F1EA DE 10"
+        - "02-trojan-\U0001F1E9\U0001F1EA DE 5"
+        - "03-trojan-\U0001F1E9\U0001F1EA DE 3"
         - "04-trojan-\U0001F1E9\U0001F1EA DE 6"
-        - "05-trojan-\U0001F1E9\U0001F1EA DE 12"
-        - "06-trojan-\U0001F1E9\U0001F1EA DE 3"
-        - "07-trojan-\U0001F1E9\U0001F1EADE-92.119.35.87-0182"
-        - "08-trojan-\U0001F1E9\U0001F1EADE-92.119.35.85-0111"
-        - "09-trojan-\U0001F1E9\U0001F1EADE-185.137.157.142-0166"
-        - "10-trojan-\U0001F1E9\U0001F1EADE-92.119.35.71-0190"
-        - "11-shadowsocks-\U0001F1E9\U0001F1EADE-213.202.208.199-0163"
-        - "12-trojan-\U0001F1E9\U0001F1EADE-92.119.35.127-0199"
-        - 13-trojan-希腊 V2CROSS.COM
-        - "14-trojan-\U0001F1E9\U0001F1EADE-92.119.35.131-0188"
+        - "05-trojan-\U0001F1E9\U0001F1EADE-185.137.157.140-0112"
+        - "06-trojan-\U0001F1E9\U0001F1EA DE 22"
+        - "07-trojan-\U0001F1E9\U0001F1EADE-92.119.35.87-35"
+        - "08-trojan-\U0001F1E9\U0001F1EADE-92.119.35.119-0165"
+        - "09-trojan-\U0001F1E9\U0001F1EA DE 12"
+        - "10-shadowsocks-\U0001F1E9\U0001F1EADE-213.202.208.199-0163"
       type: select
 rules:
     - MATCH,select
