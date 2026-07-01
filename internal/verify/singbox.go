@@ -8,6 +8,7 @@ import (
 	"os"
 	"os/exec"
 	"strconv"
+	"sync"
 	"syscall"
 	"time"
 
@@ -19,6 +20,8 @@ type batchConfig struct {
 	basePort  int
 	batchSize int
 }
+
+var logCheckFailure sync.Once
 
 // buildBatchConfig writes a sing-box config where each node gets its own
 // mixed (SOCKS + HTTP) inbound routed to its own outbound. Returns the temp
@@ -118,7 +121,14 @@ func validOutbound(bin string, n *node.Node) bool {
 		return false
 	}
 	_ = f.Close()
-	return exec.Command(bin, "check", "-c", f.Name()).Run() == nil
+	out, err := exec.Command(bin, "check", "-c", f.Name()).CombinedOutput()
+	if err == nil {
+		return true
+	}
+	logCheckFailure.Do(func() {
+		fmt.Fprintf(os.Stderr, "  [verify] sing-box check sample failure: %s\n", truncate(string(out), 500))
+	})
+	return false
 }
 
 type singboxProc struct {
