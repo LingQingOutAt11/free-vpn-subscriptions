@@ -24,6 +24,8 @@ jobs:
           version=1.13.8
           curl -fsSLo sing-box.deb "https://github.com/SagerNet/sing-box/releases/download/v${version}/sing-box_${version}_linux_amd64.deb"
           sudo dpkg -i sing-box.deb
+          sudo mkdir -p /usr/local/bin
+          sudo ln -sf /usr/bin/sing-box /usr/local/bin/sing-box
           which sing-box
           sing-box version
 
