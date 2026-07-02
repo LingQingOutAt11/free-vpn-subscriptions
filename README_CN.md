@@ -4,7 +4,7 @@
 
 <p align="center"><img src="https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/assets/hero.png" alt="Free VPN Subscriptions — hourly-refreshed free VPN subscriptions for Clash, sing-box, v2ray" width="780"></p>
 
-![节点](https://img.shields.io/badge/节点-101-brightgreen) ![存活](https://img.shields.io/badge/存活-3130-blue) ![中位延迟](https://img.shields.io/badge/中位延迟-252ms-orange) ![更新](https://img.shields.io/badge/更新-2026-07-02_04:29_UTC-informational)
+![节点](https://img.shields.io/badge/节点-89-brightgreen) ![存活](https://img.shields.io/badge/存活-3136-blue) ![中位延迟](https://img.shields.io/badge/中位延迟-314ms-orange) ![更新](https://img.shields.io/badge/更新-2026-07-02_09:40_UTC-informational)
 
 > **获取可用免费 VPN 的最简单方式 —— 复制订阅链接,粘贴到客户端,连上。**  
 > 无需注册。无需付费。无需安装任何二进制。每小时从公共源自动抓取 —— 每个发布的节点都在几分钟前通过 sing-box 真实转发过 HTTP 流量。
@@ -77,8 +77,8 @@ proxy-groups:
 
 | 国家/地区 | 节点数 | Clash | sing-box | v2ray |
 |---|---|---|---|---|
-| 🇺🇸 United States (`US`) | 18 | [clash-US.yaml](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/clash-US.yaml) | [singbox-US.json](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/singbox-US.json) | [v2ray-base64-US.txt](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/v2ray-base64-US.txt) |
-| 🇸🇨 SC (`SC`) | 6 | [clash-SC.yaml](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/clash-SC.yaml) | [singbox-SC.json](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/singbox-SC.json) | [v2ray-base64-SC.txt](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/v2ray-base64-SC.txt) |
+| 🇺🇸 United States (`US`) | 19 | [clash-US.yaml](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/clash-US.yaml) | [singbox-US.json](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/singbox-US.json) | [v2ray-base64-US.txt](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/v2ray-base64-US.txt) |
+| 🇸🇨 SC (`SC`) | 5 | [clash-SC.yaml](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/clash-SC.yaml) | [singbox-SC.json](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/singbox-SC.json) | [v2ray-base64-SC.txt](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/v2ray-base64-SC.txt) |
 
 ## 📖 客户端图文教程
 
@@ -99,15 +99,15 @@ proxy-groups:
 
 ## 📊 实时统计
 
-- **精选节点数**: 101
-- **全源存活总数**: 3130
-- **最快延迟**: 20 ms
-- **中位延迟**: 252 ms
-- **最后更新 (UTC)**: 2026-07-02 04:29 UTC
+- **精选节点数**: 89
+- **全源存活总数**: 3136
+- **最快延迟**: 11 ms
+- **中位延迟**: 314 ms
+- **最后更新 (UTC)**: 2026-07-02 09:40 UTC
 
-**协议分布:** shadowsocks × 3 · trojan × 38 · vless × 56 · vmess × 4
+**协议分布:** shadowsocks × 6 · trojan × 31 · vless × 49 · vmess × 3
 
-**本次使用的源:** `barry-far-v2ray` × 1 · `epodonios` × 7 · `mahdi0024` × 1 · `mahdibland-aggregator` × 2 · `mahdibland-shadowsocks` × 1 · `matin-v2ray` × 5 · `ninjastrikers` × 14 · `pawdroid` × 4 · `radikal-clash` × 2 · `roosterkid-openproxylist` × 10 · `solispirit-v2ray` × 37 · `surfboard-eternity` × 1 · `tg-v2ray-configs-every2h` × 16
+**本次使用的源:** `epodonios` × 6 · `lagzian-mix` × 1 · `mahdi0024` × 2 · `mahdibland-shadowsocks` × 4 · `matin-v2ray` × 2 · `ninjastrikers` × 8 · `pawdroid` × 5 · `radikal-clash` × 2 · `roosterkid-openproxylist` × 15 · `solispirit-v2ray` × 28 · `surfboard-eternity` × 1 · `tg-v2ray-configs-every2h` × 15
 
 ## ❓ 常见问题
 
