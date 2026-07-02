@@ -26,13 +26,8 @@ jobs:
 
       - name: Install sing-box
         run: |
-          version=1.13.8
-          rm -rf sing-box-install
-          mkdir -p sing-box-install
-          curl -fsSLo sing-box.tar.gz "https://github.com/SagerNet/sing-box/releases/download/v${version}/sing-box-${version}-linux-amd64.tar.gz"
-          tar -xzf sing-box.tar.gz -C sing-box-install
-          sudo install -m 0755 sing-box-install/sing-box-${version}-linux-amd64/sing-box /usr/local/bin/sing-box
-          sudo mkdir -p /usr/local/bin
+          test -x /usr/local/bin/sing-box
+          /usr/local/bin/sing-box version
           which sing-box
           sing-box version
 
