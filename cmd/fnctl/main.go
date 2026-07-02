@@ -15,6 +15,7 @@ import (
 	"os/signal"
 	"path/filepath"
 	"sort"
+	"strconv"
 	"sync"
 	"syscall"
 	"time"
@@ -274,6 +275,9 @@ func writeOutputs(cfg *config.Config, selected []*node.Node, summary aggregate.S
 	if err := emitSet(cfg, outDir, "", selected); err != nil {
 		return err
 	}
+	if err := writeIPExports(outDir, selected, summary.GeneratedAtUnix); err != nil {
+		return err
+	}
 
 	// Per-country outputs: one set per country with ≥ MinPerCountry nodes.
 	if cfg.GeoIP.Enabled && cfg.GeoIP.MinPerCountry > 0 {
@@ -331,6 +335,177 @@ func writeOutputs(cfg *config.Config, selected []*node.Node, summary aggregate.S
 	}
 
 	return nil
+}
+
+type ipExport struct {
+	GeneratedAtUnix int64         `json:"generated_at_unix"`
+	TotalSelected   int           `json:"total_selected"`
+	UniqueIPs       int           `json:"unique_ips"`
+	IPs             []ipExportRow `json:"ips"`
+}
+
+type ipExportRow struct {
+	IP        string            `json:"ip"`
+	Countries []string          `json:"countries,omitempty"`
+	Ports     []int             `json:"ports"`
+	Nodes     []ipExportNodeRef `json:"nodes"`
+}
+
+type ipExportNodeRef struct {
+	Name       string `json:"name"`
+	Protocol   string `json:"protocol"`
+	Port       int    `json:"port"`
+	Country    string `json:"country,omitempty"`
+	SourceName string `json:"source_name,omitempty"`
+	LatencyMS  int    `json:"latency_ms,omitempty"`
+}
+
+func writeIPExports(dir string, nodes []*node.Node, generatedAtUnix int64) error {
+	byIP := map[string][]*node.Node{}
+	for _, n := range nodes {
+		if n.Server == "" {
+			continue
+		}
+		byIP[n.Server] = append(byIP[n.Server], n)
+	}
+
+	ips := make([]string, 0, len(byIP))
+	for ip := range byIP {
+		ips = append(ips, ip)
+	}
+	sort.Slice(ips, func(i, j int) bool {
+		return compareIPStrings(ips[i], ips[j]) < 0
+	})
+
+	lines := make([]string, 0, len(ips))
+	payload := ipExport{
+		GeneratedAtUnix: generatedAtUnix,
+		TotalSelected:   len(nodes),
+		UniqueIPs:       len(ips),
+		IPs:             make([]ipExportRow, 0, len(ips)),
+	}
+	for _, ip := range ips {
+		lines = append(lines, ip)
+		group := byIP[ip]
+		sort.Slice(group, func(i, j int) bool {
+			if group[i].LatencyMS == group[j].LatencyMS {
+				if group[i].Port == group[j].Port {
+					return group[i].Name < group[j].Name
+				}
+				return group[i].Port < group[j].Port
+			}
+			return group[i].LatencyMS < group[j].LatencyMS
+		})
+
+		countries := make([]string, 0, len(group))
+		ports := make([]int, 0, len(group))
+		seenCountry := map[string]bool{}
+		seenPort := map[int]bool{}
+		row := ipExportRow{
+			IP:    ip,
+			Nodes: make([]ipExportNodeRef, 0, len(group)),
+		}
+		for _, n := range group {
+			if n.Country != "" && !seenCountry[n.Country] {
+				seenCountry[n.Country] = true
+				countries = append(countries, n.Country)
+			}
+			if !seenPort[n.Port] {
+				seenPort[n.Port] = true
+				ports = append(ports, n.Port)
+			}
+			row.Nodes = append(row.Nodes, ipExportNodeRef{
+				Name:       n.Name,
+				Protocol:   n.Protocol,
+				Port:       n.Port,
+				Country:    n.Country,
+				SourceName: n.SourceName,
+				LatencyMS:  n.LatencyMS,
+			})
+		}
+		sort.Strings(countries)
+		sort.Ints(ports)
+		row.Countries = countries
+		row.Ports = ports
+		payload.IPs = append(payload.IPs, row)
+	}
+
+	if err := write(filepath.Join(dir, "ips.txt"), joinLines(lines)); err != nil {
+		return err
+	}
+	raw, err := json.MarshalIndent(payload, "", "  ")
+	if err != nil {
+		return fmt.Errorf("ips marshal: %w", err)
+	}
+	return write(filepath.Join(dir, "ips.json"), string(raw))
+}
+
+func joinLines(lines []string) string {
+	if len(lines) == 0 {
+		return ""
+	}
+	out := lines[0]
+	for _, line := range lines[1:] {
+		out += "\n" + line
+	}
+	return out + "\n"
+}
+
+func compareIPStrings(a, b string) int {
+	aa, oka := splitIPv4(a)
+	bb, okb := splitIPv4(b)
+	if oka && okb {
+		for i := range aa {
+			if aa[i] < bb[i] {
+				return -1
+			}
+			if aa[i] > bb[i] {
+				return 1
+			}
+		}
+		return 0
+	}
+	if a < b {
+		return -1
+	}
+	if a > b {
+		return 1
+	}
+	return 0
+}
+
+func splitIPv4(s string) ([4]int, bool) {
+	var out [4]int
+	part := ""
+	idx := 0
+	for i := 0; i < len(s); i++ {
+		if s[i] == '.' {
+			if idx > 3 || part == "" {
+				return out, false
+			}
+			n, err := strconv.Atoi(part)
+			if err != nil || n < 0 || n > 255 {
+				return out, false
+			}
+			out[idx] = n
+			idx++
+			part = ""
+			continue
+		}
+		if s[i] < '0' || s[i] > '9' {
+			return out, false
+		}
+		part += string(s[i])
+	}
+	if idx != 3 || part == "" {
+		return out, false
+	}
+	n, err := strconv.Atoi(part)
+	if err != nil || n < 0 || n > 255 {
+		return out, false
+	}
+	out[3] = n
+	return out, true
 }
 
 // emitSet writes clash / singbox / v2ray-base64 files for the given node list.
