@@ -4,7 +4,7 @@
 
 <p align="center"><img src="https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/assets/hero.png" alt="Free VPN Subscriptions — hourly-refreshed free VPN subscriptions for Clash, sing-box, v2ray" width="780"></p>
 
-![ノード](https://img.shields.io/badge/ノード-67-brightgreen) ![生存](https://img.shields.io/badge/生存-3073-blue) ![中央値--rtt](https://img.shields.io/badge/中央値--rtt-325ms-orange) ![更新](https://img.shields.io/badge/更新-2026-07-04_08:58_UTC-informational)
+![ノード](https://img.shields.io/badge/ノード-99-brightgreen) ![生存](https://img.shields.io/badge/生存-2965-blue) ![中央値--rtt](https://img.shields.io/badge/中央値--rtt-322ms-orange) ![更新](https://img.shields.io/badge/更新-2026-07-04_14:06_UTC-informational)
 
 > **動作する無料 VPN を手に入れる一番かんたんな方法 —— 購読リンクをコピーしてクライアントに貼るだけ。**  
 > 登録不要。支払い不要。バイナリのインストール不要。公開ソースから毎時自動更新 —— 公開される全ノードは、数分前に sing-box 経由で実 HTTP トラフィックを転送した実績があります。
@@ -77,9 +77,8 @@ proxy-groups:
 
 | 国 | ノード数 | Clash | sing-box | v2ray |
 |---|---|---|---|---|
-| 🇺🇸 United States (`US`) | 8 | [clash-US.yaml](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/clash-US.yaml) | [singbox-US.json](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/singbox-US.json) | [v2ray-base64-US.txt](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/v2ray-base64-US.txt) |
-| 🇩🇪 Germany (`DE`) | 5 | [clash-DE.yaml](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/clash-DE.yaml) | [singbox-DE.json](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/singbox-DE.json) | [v2ray-base64-DE.txt](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/v2ray-base64-DE.txt) |
-| 🇸🇨 SC (`SC`) | 5 | [clash-SC.yaml](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/clash-SC.yaml) | [singbox-SC.json](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/singbox-SC.json) | [v2ray-base64-SC.txt](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/v2ray-base64-SC.txt) |
+| 🇺🇸 United States (`US`) | 25 | [clash-US.yaml](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/clash-US.yaml) | [singbox-US.json](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/singbox-US.json) | [v2ray-base64-US.txt](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/v2ray-base64-US.txt) |
+| 🇸🇨 SC (`SC`) | 4 | [clash-SC.yaml](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/clash-SC.yaml) | [singbox-SC.json](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/singbox-SC.json) | [v2ray-base64-SC.txt](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/v2ray-base64-SC.txt) |
 
 ## 📖 クライアント設定ガイド
 
@@ -100,15 +99,15 @@ proxy-groups:
 
 ## 📊 リアルタイム統計
 
-- **選定ノード**: 67
-- **全ソース生存数**: 3073
-- **最速 RTT**: 49 ms
-- **中央値 RTT**: 325 ms
-- **最終更新 (UTC)**: 2026-07-04 08:58 UTC
+- **選定ノード**: 99
+- **全ソース生存数**: 2965
+- **最速 RTT**: 23 ms
+- **中央値 RTT**: 322 ms
+- **最終更新 (UTC)**: 2026-07-04 14:06 UTC
 
-**プロトコル構成:** shadowsocks × 3 · trojan × 21 · vless × 34 · vmess × 9
+**プロトコル構成:** shadowsocks × 15 · trojan × 28 · vless × 46 · vmess × 10
 
-**今回使用したソース:** `barry-far-v2ray` × 5 · `epodonios` × 1 · `mahdi0024` × 5 · `mahdibland-aggregator` × 4 · `mahdibland-shadowsocks` × 2 · `matin-v2ray` × 3 · `ninjastrikers` × 8 · `pawdroid` × 2 · `radikal-clash` × 2 · `roosterkid-openproxylist` × 6 · `solispirit-v2ray` × 18 · `tg-v2ray-configs-every2h` × 11
+**今回使用したソース:** `barry-far-v2ray` × 1 · `epodonios` × 2 · `go4sharing-clash` × 1 · `mahdi0024` × 8 · `mahdibland-aggregator` × 6 · `mahdibland-shadowsocks` × 4 · `matin-v2ray` × 4 · `ninjastrikers` × 7 · `pawdroid` × 3 · `radikal-clash` × 2 · `roosterkid-openproxylist` × 8 · `solispirit-v2ray` × 40 · `surfboard-eternity` × 2 · `tg-v2ray-configs-every2h` × 11
 
 ## ❓ よくある質問
 
