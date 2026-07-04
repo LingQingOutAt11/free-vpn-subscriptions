@@ -1,0 +1,78 @@
+{
+  "outbounds": [
+    {
+      "server": "45.8.211.14",
+      "server_port": 443,
+      "tag": "01-vless-🔥Join Telegram:@Farah_VPN🟣",
+      "tls": {
+        "enabled": true,
+        "insecure": false,
+        "server_name": "vpn47.cc.cd"
+      },
+      "type": "vless",
+      "uuid": "0970324b-8c61-4ae7-8c3f-385a6f1e17e4"
+    },
+    {
+      "server": "45.8.211.217",
+      "server_port": 443,
+      "tag": "02-vless-🏳️ 💥Config_jo-182",
+      "tls": {
+        "enabled": true,
+        "insecure": false,
+        "server_name": "vangoghhh.info"
+      },
+      "type": "vless",
+      "uuid": "14b59caf-a196-4ec2-8c70-c7b388062f5b"
+    },
+    {
+      "flow": "xtls-rprx-vision",
+      "server": "178.248.232.186",
+      "server_port": 8443,
+      "tag": "03-vless-RU 🇷🇺 | @Raydikalx | 1",
+      "tls": {
+        "enabled": true,
+        "insecure": false,
+        "reality": {
+          "enabled": true,
+          "public_key": "LT_0j3zQkaqgtJHvyaG24xz0IfmXUswVCTeC75Qsgjo",
+          "short_id": "ab4cc4f5aa354fa4"
+        },
+        "server_name": "storage.yandex.net",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "type": "vless",
+      "uuid": "0047a8bc-0025-4d45-899b-c75c669f3ede"
+    },
+    {
+      "interval": "5m",
+      "outbounds": [
+        "01-vless-🔥Join Telegram:@Farah_VPN🟣",
+        "02-vless-🏳️ 💥Config_jo-182",
+        "03-vless-RU 🇷🇺 | @Raydikalx | 1"
+      ],
+      "tag": "auto",
+      "type": "urltest",
+      "url": "https://www.gstatic.com/generate_204"
+    },
+    {
+      "outbounds": [
+        "auto",
+        "01-vless-🔥Join Telegram:@Farah_VPN🟣",
+        "02-vless-🏳️ 💥Config_jo-182",
+        "03-vless-RU 🇷🇺 | @Raydikalx | 1"
+      ],
+      "tag": "select",
+      "type": "selector"
+    },
+    {
+      "tag": "direct",
+      "type": "direct"
+    }
+  ],
+  "route": {
+    "final": "select"
+  }
+}

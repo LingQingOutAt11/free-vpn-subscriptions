@@ -1,0 +1,109 @@
+{
+  "outbounds": [
+    {
+      "alter_id": 0,
+      "security": "auto",
+      "server": "82.198.246.37",
+      "server_port": 180,
+      "tag": "01-vmess-🇨🇿 CZ 8",
+      "type": "vmess",
+      "uuid": "d13fc2f5-3e05-4795-81eb-44143a09e552"
+    },
+    {
+      "alter_id": 0,
+      "security": "auto",
+      "server": "82.198.246.97",
+      "server_port": 180,
+      "tag": "02-vmess-🇨🇿 CZ 36",
+      "type": "vmess",
+      "uuid": "d13fc2f5-3e05-4795-81eb-44143a09e552"
+    },
+    {
+      "alter_id": 0,
+      "security": "auto",
+      "server": "82.198.246.250",
+      "server_port": 180,
+      "tag": "03-vmess-🇨🇿 CZ 100",
+      "type": "vmess",
+      "uuid": "d13fc2f5-3e05-4795-81eb-44143a09e552"
+    },
+    {
+      "alter_id": 0,
+      "security": "auto",
+      "server": "82.198.246.233",
+      "server_port": 180,
+      "tag": "04-vmess-🇨🇿 CZ 77",
+      "type": "vmess",
+      "uuid": "d13fc2f5-3e05-4795-81eb-44143a09e552"
+    },
+    {
+      "alter_id": 0,
+      "security": "auto",
+      "server": "82.198.246.9",
+      "server_port": 180,
+      "tag": "05-vmess-🇨🇿 CZ 17",
+      "type": "vmess",
+      "uuid": "d13fc2f5-3e05-4795-81eb-44143a09e552"
+    },
+    {
+      "server": "45.80.111.60",
+      "server_port": 443,
+      "tag": "06-vless-🔥Join Telegram:@Farah_VPN🟣",
+      "tls": {
+        "enabled": true,
+        "insecure": false,
+        "server_name": "vpn47.cc.cd"
+      },
+      "type": "vless",
+      "uuid": "0970324b-8c61-4ae7-8c3f-385a6f1e17e4"
+    },
+    {
+      "server": "5.10.214.151",
+      "server_port": 443,
+      "tag": "07-vless-🔥Join Telegram:@Farah_VPN🟣",
+      "tls": {
+        "enabled": true,
+        "insecure": false,
+        "server_name": "octopusss5.info"
+      },
+      "type": "vless",
+      "uuid": "c35050ce-01ab-45a9-91b8-54cec637d0a8"
+    },
+    {
+      "interval": "5m",
+      "outbounds": [
+        "01-vmess-🇨🇿 CZ 8",
+        "02-vmess-🇨🇿 CZ 36",
+        "03-vmess-🇨🇿 CZ 100",
+        "04-vmess-🇨🇿 CZ 77",
+        "05-vmess-🇨🇿 CZ 17",
+        "06-vless-🔥Join Telegram:@Farah_VPN🟣",
+        "07-vless-🔥Join Telegram:@Farah_VPN🟣"
+      ],
+      "tag": "auto",
+      "type": "urltest",
+      "url": "https://www.gstatic.com/generate_204"
+    },
+    {
+      "outbounds": [
+        "auto",
+        "01-vmess-🇨🇿 CZ 8",
+        "02-vmess-🇨🇿 CZ 36",
+        "03-vmess-🇨🇿 CZ 100",
+        "04-vmess-🇨🇿 CZ 77",
+        "05-vmess-🇨🇿 CZ 17",
+        "06-vless-🔥Join Telegram:@Farah_VPN🟣",
+        "07-vless-🔥Join Telegram:@Farah_VPN🟣"
+      ],
+      "tag": "select",
+      "type": "selector"
+    },
+    {
+      "tag": "direct",
+      "type": "direct"
+    }
+  ],
+  "route": {
+    "final": "select"
+  }
+}
