@@ -1,23 +1,21 @@
 proxies:
     - name: "01-trojan-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-      password: humanity
+      password: 86957ec0-b213-433b-a43b-51f2175e0ec3
       port: 443
       server: 45.130.125.126
       skip-cert-verify: false
-      sni: www.calmlunch.com
+      sni: space.byu.id.yxls.eu.cc
       type: trojan
       udp: true
-    - name: "02-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-      network: ws
+    - name: "02-trojan-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+      password: humanity
       port: 443
-      server: 45.130.125.229
-      servername: octopusss5.info
-      skip-cert-verify: false
-      tls: true
-      type: vless
+      server: 45.130.125.69
+      skip-cert-verify: true
+      sni: www.calmloud.com
+      type: trojan
       udp: true
-      uuid: c35050ce-01ab-45a9-91b8-54cec637d0a8
-    - name: "03-trojan-\U0001F3F3️ \U0001F4A5Config_jo-154"
+    - name: "03-trojan-\U0001F3F3️ \U0001F4A5Config_jo-140"
       password: v2TkL6FH3h
       port: 443
       server: 45.130.125.2
@@ -25,31 +23,21 @@ proxies:
       sni: sm.farxmode.ir
       type: trojan
       udp: true
-    - name: "04-trojan-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-      password: humanity
-      port: 443
-      server: 45.130.125.160
-      skip-cert-verify: false
-      sni: www.calmloud.com
-      type: trojan
-      udp: true
 proxy-groups:
     - interval: 300
       name: auto
       proxies:
         - "01-trojan-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-        - "02-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-        - "03-trojan-\U0001F3F3️ \U0001F4A5Config_jo-154"
-        - "04-trojan-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+        - "02-trojan-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+        - "03-trojan-\U0001F3F3️ \U0001F4A5Config_jo-140"
       type: url-test
       url: https://www.gstatic.com/generate_204
     - name: select
       proxies:
         - auto
         - "01-trojan-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-        - "02-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-        - "03-trojan-\U0001F3F3️ \U0001F4A5Config_jo-154"
-        - "04-trojan-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+        - "02-trojan-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+        - "03-trojan-\U0001F3F3️ \U0001F4A5Config_jo-140"
       type: select
 rules:
     - MATCH,select
