@@ -1,0 +1,49 @@
+proxies:
+    - name: "01-vless-\U0001F3F3️ \U0001F4A5Config_jo-183"
+      network: ws
+      port: 443
+      server: 45.12.31.220
+      servername: vangoghhh.info
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: 14b59caf-a196-4ec2-8c70-c7b388062f5b
+    - name: "02-vless-\U0001F3F3️ \U0001F4A5Config_jo-182"
+      network: ws
+      port: 443
+      server: 45.12.30.248
+      servername: vangoghhh.info
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: 14b59caf-a196-4ec2-8c70-c7b388062f5b
+    - name: "03-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+      network: ws
+      port: 443
+      server: 45.12.30.228
+      servername: vangoghhh.info
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: 14b59caf-a196-4ec2-8c70-c7b388062f5b
+proxy-groups:
+    - interval: 300
+      name: auto
+      proxies:
+        - "01-vless-\U0001F3F3️ \U0001F4A5Config_jo-183"
+        - "02-vless-\U0001F3F3️ \U0001F4A5Config_jo-182"
+        - "03-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+      type: url-test
+      url: https://www.gstatic.com/generate_204
+    - name: select
+      proxies:
+        - auto
+        - "01-vless-\U0001F3F3️ \U0001F4A5Config_jo-183"
+        - "02-vless-\U0001F3F3️ \U0001F4A5Config_jo-182"
+        - "03-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+      type: select
+rules:
+    - MATCH,select
