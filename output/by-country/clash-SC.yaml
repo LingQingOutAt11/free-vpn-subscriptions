@@ -1,28 +1,5 @@
 proxies:
-    - name: 01-trojan-EPODONIOS
-      password: 86957ec0-b213-433b-a43b-51f2175e0ec3
-      port: 443
-      server: 45.130.125.126
-      skip-cert-verify: false
-      sni: space.byu.id.yxls.eu.cc
-      type: trojan
-      udp: true
-    - name: 02-trojan-EPODONIOS
-      password: 86957ec0-b213-433b-a43b-51f2175e0ec3
-      port: 443
-      server: 45.130.125.210
-      skip-cert-verify: false
-      sni: space.byu.id.yxls.eu.cc
-      type: trojan
-      udp: true
-    - cipher: aes-256-gcm
-      name: "03-shadowsocks-\U0001F1E8\U0001F1F4[openproxylist.com] ss-CO"
-      password: RexnBgU7EV5ADxG
-      port: 7002
-      server: 156.244.32.9
-      type: ss
-      udp: true
-    - name: "04-trojan-\U0001F3F3️ \U0001F4A5Config_jo-140"
+    - name: "01-trojan-\U0001F3F3️ \U0001F4A5Config_jo-139"
       password: MiTiVPN
       port: 443
       server: 45.130.125.2
@@ -30,7 +7,17 @@ proxies:
       sni: bsw-wwlslw-w.Maqror.ir
       type: trojan
       udp: true
-    - name: "05-vless-\U0001F1E9\U0001F1EA[openproxylist.com] vless-DE"
+    - name: "02-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+      network: ws
+      port: 2053
+      server: 45.130.125.158
+      servername: po.fastbrokencompony.com
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: e7961655-9674-4cbd-a36f-ec0d5d7d660c
+    - name: "03-vless-\U0001F1E9\U0001F1EA[openproxylist.com] vless-DE"
       network: ws
       port: 8443
       server: 45.130.125.158
@@ -40,25 +27,33 @@ proxies:
       type: vless
       udp: true
       uuid: f3b8c2a1-9d4e-4b7f-a6c5-2e8d1f0b4a93
+    - name: "04-vless-\U0001F1E9\U0001F1EA[openproxylist.com] vless-DE"
+      network: ws
+      port: 8443
+      server: 45.130.125.114
+      servername: srv75.perfectbulk.info
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: f3b8c2a1-9d4e-4b7f-a6c5-2e8d1f0b4a93
 proxy-groups:
     - interval: 300
       name: auto
       proxies:
-        - 01-trojan-EPODONIOS
-        - 02-trojan-EPODONIOS
-        - "03-shadowsocks-\U0001F1E8\U0001F1F4[openproxylist.com] ss-CO"
-        - "04-trojan-\U0001F3F3️ \U0001F4A5Config_jo-140"
-        - "05-vless-\U0001F1E9\U0001F1EA[openproxylist.com] vless-DE"
+        - "01-trojan-\U0001F3F3️ \U0001F4A5Config_jo-139"
+        - "02-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+        - "03-vless-\U0001F1E9\U0001F1EA[openproxylist.com] vless-DE"
+        - "04-vless-\U0001F1E9\U0001F1EA[openproxylist.com] vless-DE"
       type: url-test
       url: https://www.gstatic.com/generate_204
     - name: select
       proxies:
         - auto
-        - 01-trojan-EPODONIOS
-        - 02-trojan-EPODONIOS
-        - "03-shadowsocks-\U0001F1E8\U0001F1F4[openproxylist.com] ss-CO"
-        - "04-trojan-\U0001F3F3️ \U0001F4A5Config_jo-140"
-        - "05-vless-\U0001F1E9\U0001F1EA[openproxylist.com] vless-DE"
+        - "01-trojan-\U0001F3F3️ \U0001F4A5Config_jo-139"
+        - "02-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+        - "03-vless-\U0001F1E9\U0001F1EA[openproxylist.com] vless-DE"
+        - "04-vless-\U0001F1E9\U0001F1EA[openproxylist.com] vless-DE"
       type: select
 rules:
     - MATCH,select

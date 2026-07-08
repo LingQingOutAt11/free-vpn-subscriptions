@@ -1,19 +1,11 @@
 {
   "outbounds": [
     {
-      "method": "chacha20-ietf-poly1305",
-      "password": "G5p6ww4o67HB",
-      "server": "108.181.118.10",
-      "server_port": 8388,
-      "tag": "01-shadowsocks-🇨🇦CA-108.181.118.10-0103",
-      "type": "shadowsocks"
-    },
-    {
-      "method": "aes-128-gcm",
-      "password": "shadowsocks",
-      "server": "149.22.95.183",
-      "server_port": 443,
-      "tag": "02-shadowsocks-🇨🇦CA-149.22.95.183-4005",
+      "method": "rc4-md5",
+      "password": "14fFPrbezE3HDZzsMOr6",
+      "server": "137.184.174.93",
+      "server_port": 8080,
+      "tag": "01-shadowsocks-🇨🇦CA-137.184.174.93-0231",
       "type": "shadowsocks"
     },
     {
@@ -21,24 +13,46 @@
       "password": "KixLvKzwjekG00rm",
       "server": "185.196.61.82",
       "server_port": 8080,
-      "tag": "03-shadowsocks-🇨🇦 CA 1",
+      "tag": "02-shadowsocks-🇨🇦 CA 1",
       "type": "shadowsocks"
     },
     {
-      "method": "rc4-md5",
-      "password": "14fFPrbezE3HDZzsMOr6",
-      "server": "137.184.174.93",
-      "server_port": 8080,
-      "tag": "04-shadowsocks-🇨🇦CA-137.184.174.93-0089",
+      "alter_id": 0,
+      "security": "auto",
+      "server": "134.195.196.211",
+      "server_port": 18000,
+      "tag": "03-vmess-🔥Join+Telegram:@Farah_VPN🟣",
+      "type": "vmess",
+      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe"
+    },
+    {
+      "method": "chacha20-ietf-poly1305",
+      "password": "G5p6ww4o67HB",
+      "server": "108.181.118.10",
+      "server_port": 8388,
+      "tag": "04-shadowsocks-🇨🇦CA-108.181.118.10-0085",
       "type": "shadowsocks"
+    },
+    {
+      "server": "velorium.store",
+      "server_port": 443,
+      "tag": "05-vless-🔥Join Telegram:@Farah_VPN🟣",
+      "tls": {
+        "enabled": true,
+        "insecure": false,
+        "server_name": "api.mozestan.dpdns.org"
+      },
+      "type": "vless",
+      "uuid": "cee8c30c-fb13-4a89-abb4-5a32cf716c97"
     },
     {
       "interval": "5m",
       "outbounds": [
-        "01-shadowsocks-🇨🇦CA-108.181.118.10-0103",
-        "02-shadowsocks-🇨🇦CA-149.22.95.183-4005",
-        "03-shadowsocks-🇨🇦 CA 1",
-        "04-shadowsocks-🇨🇦CA-137.184.174.93-0089"
+        "01-shadowsocks-🇨🇦CA-137.184.174.93-0231",
+        "02-shadowsocks-🇨🇦 CA 1",
+        "03-vmess-🔥Join+Telegram:@Farah_VPN🟣",
+        "04-shadowsocks-🇨🇦CA-108.181.118.10-0085",
+        "05-vless-🔥Join Telegram:@Farah_VPN🟣"
       ],
       "tag": "auto",
       "type": "urltest",
@@ -47,10 +61,11 @@
     {
       "outbounds": [
         "auto",
-        "01-shadowsocks-🇨🇦CA-108.181.118.10-0103",
-        "02-shadowsocks-🇨🇦CA-149.22.95.183-4005",
-        "03-shadowsocks-🇨🇦 CA 1",
-        "04-shadowsocks-🇨🇦CA-137.184.174.93-0089"
+        "01-shadowsocks-🇨🇦CA-137.184.174.93-0231",
+        "02-shadowsocks-🇨🇦 CA 1",
+        "03-vmess-🔥Join+Telegram:@Farah_VPN🟣",
+        "04-shadowsocks-🇨🇦CA-108.181.118.10-0085",
+        "05-vless-🔥Join Telegram:@Farah_VPN🟣"
       ],
       "tag": "select",
       "type": "selector"
