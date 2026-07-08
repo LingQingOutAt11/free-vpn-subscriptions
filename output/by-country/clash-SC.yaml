@@ -2,7 +2,7 @@ proxies:
     - name: 01-trojan-EPODONIOS
       password: 86957ec0-b213-433b-a43b-51f2175e0ec3
       port: 443
-      server: 45.130.125.210
+      server: 45.130.125.126
       skip-cert-verify: false
       sni: space.byu.id.yxls.eu.cc
       type: trojan
@@ -10,40 +10,31 @@ proxies:
     - name: 02-trojan-EPODONIOS
       password: 86957ec0-b213-433b-a43b-51f2175e0ec3
       port: 443
-      server: 45.130.125.126
+      server: 45.130.125.210
       skip-cert-verify: false
       sni: space.byu.id.yxls.eu.cc
       type: trojan
       udp: true
-    - name: "03-trojan-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-      password: humanity
-      port: 443
-      server: 45.130.125.75
-      skip-cert-verify: false
-      sni: www.calmlunch.com
-      type: trojan
+    - cipher: aes-256-gcm
+      name: "03-shadowsocks-\U0001F1E8\U0001F1F4[openproxylist.com] ss-CO"
+      password: RexnBgU7EV5ADxG
+      port: 7002
+      server: 156.244.32.9
+      type: ss
       udp: true
-    - name: "04-trojan-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-      password: humanity
-      port: 443
-      server: 45.130.125.76
-      skip-cert-verify: true
-      sni: www.calmlunch.com
-      type: trojan
-      udp: true
-    - name: "05-trojan-\U0001F3F3️ \U0001F4A5Config_jo-163"
-      password: humanity
+    - name: "04-trojan-\U0001F3F3️ \U0001F4A5Config_jo-140"
+      password: MiTiVPN
       port: 443
       server: 45.130.125.2
-      skip-cert-verify: false
-      sni: Www.cReaTIOnLONG.OrG
+      skip-cert-verify: true
+      sni: bsw-wwlslw-w.Maqror.ir
       type: trojan
       udp: true
-    - name: "06-vless-\U0001F1E9\U0001F1EA[openproxylist.com] vless-DE"
+    - name: "05-vless-\U0001F1E9\U0001F1EA[openproxylist.com] vless-DE"
       network: ws
       port: 8443
-      server: 45.130.125.114
-      servername: srv10.perfectbulk.info
+      server: 45.130.125.158
+      servername: srv03.perfectbulk.info
       skip-cert-verify: false
       tls: true
       type: vless
@@ -55,10 +46,9 @@ proxy-groups:
       proxies:
         - 01-trojan-EPODONIOS
         - 02-trojan-EPODONIOS
-        - "03-trojan-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-        - "04-trojan-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-        - "05-trojan-\U0001F3F3️ \U0001F4A5Config_jo-163"
-        - "06-vless-\U0001F1E9\U0001F1EA[openproxylist.com] vless-DE"
+        - "03-shadowsocks-\U0001F1E8\U0001F1F4[openproxylist.com] ss-CO"
+        - "04-trojan-\U0001F3F3️ \U0001F4A5Config_jo-140"
+        - "05-vless-\U0001F1E9\U0001F1EA[openproxylist.com] vless-DE"
       type: url-test
       url: https://www.gstatic.com/generate_204
     - name: select
@@ -66,10 +56,9 @@ proxy-groups:
         - auto
         - 01-trojan-EPODONIOS
         - 02-trojan-EPODONIOS
-        - "03-trojan-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-        - "04-trojan-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-        - "05-trojan-\U0001F3F3️ \U0001F4A5Config_jo-163"
-        - "06-vless-\U0001F1E9\U0001F1EA[openproxylist.com] vless-DE"
+        - "03-shadowsocks-\U0001F1E8\U0001F1F4[openproxylist.com] ss-CO"
+        - "04-trojan-\U0001F3F3️ \U0001F4A5Config_jo-140"
+        - "05-vless-\U0001F1E9\U0001F1EA[openproxylist.com] vless-DE"
       type: select
 rules:
     - MATCH,select
