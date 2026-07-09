@@ -1,75 +1,55 @@
 proxies:
-    - name: 01-trojan-EPODONIOS
-      password: 86957ec0-b213-433b-a43b-51f2175e0ec3
-      port: 443
-      server: 45.130.125.126
-      skip-cert-verify: false
-      sni: space.byu.id.yxls.eu.cc
-      type: trojan
-      udp: true
-    - name: 02-trojan-EPODONIOS
-      password: 86957ec0-b213-433b-a43b-51f2175e0ec3
-      port: 443
-      server: 45.130.125.210
-      skip-cert-verify: false
-      sni: space.byu.id.yxls.eu.cc
-      type: trojan
-      udp: true
-    - name: "03-trojan-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+    - name: "01-trojan-\U0001F3F3️ \U0001F4A5Config_jo-142"
       password: MITIVPN
       port: 443
       server: 45.130.125.2
-      skip-cert-verify: false
+      skip-cert-verify: true
       sni: UsAa-Us.Maqror.ir
       type: trojan
       udp: true
-    - name: "04-trojan-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+    - name: "02-trojan-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
       password: humanity
       port: 443
-      server: 45.130.125.96
+      server: 45.130.125.76
+      skip-cert-verify: true
+      sni: www.calmlunch.com
+      type: trojan
+      udp: true
+    - name: "03-trojan-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+      password: humanity
+      port: 443
+      server: 45.130.125.32
       skip-cert-verify: false
       sni: www.calmloud.com
       type: trojan
       udp: true
-    - name: "05-trojan-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-      password: humanity
-      port: 443
-      server: 45.130.125.75
-      skip-cert-verify: false
-      sni: www.calmlunch.com
-      type: trojan
-      udp: true
-    - name: "06-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+    - name: "04-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
       network: ws
-      port: 2053
-      server: 45.130.125.158
-      servername: po.fastbrokencompony.com
+      port: 8443
+      server: 45.130.125.114
+      servername: srv10.perfectbulk.info
       skip-cert-verify: false
       tls: true
       type: vless
       udp: true
-      uuid: e7961655-9674-4cbd-a36f-ec0d5d7d660c
+      uuid: f3b8c2a1-9d4e-4b7f-a6c5-2e8d1f0b4a93
 proxy-groups:
     - interval: 300
       name: auto
       proxies:
-        - 01-trojan-EPODONIOS
-        - 02-trojan-EPODONIOS
+        - "01-trojan-\U0001F3F3️ \U0001F4A5Config_jo-142"
+        - "02-trojan-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
         - "03-trojan-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-        - "04-trojan-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-        - "05-trojan-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-        - "06-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+        - "04-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
       type: url-test
       url: https://www.gstatic.com/generate_204
     - name: select
       proxies:
         - auto
-        - 01-trojan-EPODONIOS
-        - 02-trojan-EPODONIOS
+        - "01-trojan-\U0001F3F3️ \U0001F4A5Config_jo-142"
+        - "02-trojan-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
         - "03-trojan-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-        - "04-trojan-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-        - "05-trojan-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-        - "06-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+        - "04-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
       type: select
 rules:
     - MATCH,select
