@@ -1,0 +1,68 @@
+{
+  "outbounds": [
+    {
+      "password": "humanity",
+      "server": "45.130.125.160",
+      "server_port": 443,
+      "tag": "01-trojan-🔥Join Telegram:@Farah_VPN🟣",
+      "tls": {
+        "enabled": true,
+        "insecure": false,
+        "server_name": "www.calmloud.com"
+      },
+      "type": "trojan"
+    },
+    {
+      "password": "humanity",
+      "server": "45.130.125.69",
+      "server_port": 443,
+      "tag": "02-trojan-🔥Join Telegram:@Farah_VPN🟣",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "www.calmloud.com"
+      },
+      "type": "trojan"
+    },
+    {
+      "server": "45.130.125.114",
+      "server_port": 8443,
+      "tag": "03-vless-🏳️ 💥Config_jo-299",
+      "tls": {
+        "enabled": true,
+        "insecure": false,
+        "server_name": "srv10.perfectbulk.info"
+      },
+      "type": "vless",
+      "uuid": "f3b8c2a1-9d4e-4b7f-a6c5-2e8d1f0b4a93"
+    },
+    {
+      "interval": "5m",
+      "outbounds": [
+        "01-trojan-🔥Join Telegram:@Farah_VPN🟣",
+        "02-trojan-🔥Join Telegram:@Farah_VPN🟣",
+        "03-vless-🏳️ 💥Config_jo-299"
+      ],
+      "tag": "auto",
+      "type": "urltest",
+      "url": "https://www.gstatic.com/generate_204"
+    },
+    {
+      "outbounds": [
+        "auto",
+        "01-trojan-🔥Join Telegram:@Farah_VPN🟣",
+        "02-trojan-🔥Join Telegram:@Farah_VPN🟣",
+        "03-vless-🏳️ 💥Config_jo-299"
+      ],
+      "tag": "select",
+      "type": "selector"
+    },
+    {
+      "tag": "direct",
+      "type": "direct"
+    }
+  ],
+  "route": {
+    "final": "select"
+  }
+}

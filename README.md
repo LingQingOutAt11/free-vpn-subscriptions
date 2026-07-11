@@ -4,7 +4,7 @@
 
 <p align="center"><img src="https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/assets/hero.png" alt="Free VPN Subscriptions — hourly-refreshed free VPN subscriptions for Clash, sing-box, v2ray" width="780"></p>
 
-![nodes](https://img.shields.io/badge/nodes-145-brightgreen) ![alive](https://img.shields.io/badge/alive-2789-blue) ![median--rtt](https://img.shields.io/badge/median--rtt-238ms-orange) ![updated](https://img.shields.io/badge/updated-2026-07-11_03:48_UTC-informational)
+![nodes](https://img.shields.io/badge/nodes-115-brightgreen) ![alive](https://img.shields.io/badge/alive-2916-blue) ![median--rtt](https://img.shields.io/badge/median--rtt-525ms-orange) ![updated](https://img.shields.io/badge/updated-2026-07-11_08:22_UTC-informational)
 
 > **The easiest way to get a working free VPN — copy a subscription link, paste it into your client, connect.**  
 > No signup. No payment. No installation of binaries. Refreshed hourly from public sources — every published node has demonstrably forwarded real HTTP traffic through sing-box minutes ago.
@@ -77,8 +77,8 @@ Want nodes in a specific region only? Use one of these targeted subscription URL
 
 | Country | Nodes | Clash | sing-box | v2ray |
 |---|---|---|---|---|
-| 🇺🇸 United States (`US`) | 41 | [clash-US.yaml](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/clash-US.yaml) | [singbox-US.json](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/singbox-US.json) | [v2ray-base64-US.txt](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/v2ray-base64-US.txt) |
-| 🇩🇪 Germany (`DE`) | 3 | [clash-DE.yaml](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/clash-DE.yaml) | [singbox-DE.json](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/singbox-DE.json) | [v2ray-base64-DE.txt](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/v2ray-base64-DE.txt) |
+| 🇺🇸 United States (`US`) | 22 | [clash-US.yaml](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/clash-US.yaml) | [singbox-US.json](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/singbox-US.json) | [v2ray-base64-US.txt](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/v2ray-base64-US.txt) |
+| 🇸🇨 SC (`SC`) | 3 | [clash-SC.yaml](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/clash-SC.yaml) | [singbox-SC.json](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/singbox-SC.json) | [v2ray-base64-SC.txt](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/v2ray-base64-SC.txt) |
 
 ## 📖 Step-by-step Guides
 
@@ -99,15 +99,15 @@ New to VPN clients? Pick your platform and follow the tutorial:
 
 ## 📊 Live Stats
 
-- **Nodes selected**: 145
-- **Alive across all sources**: 2789
-- **Fastest node RTT**: 23 ms
-- **Median RTT**: 238 ms
-- **Last updated (UTC)**: 2026-07-11 03:48 UTC
+- **Nodes selected**: 115
+- **Alive across all sources**: 2916
+- **Fastest node RTT**: 14 ms
+- **Median RTT**: 525 ms
+- **Last updated (UTC)**: 2026-07-11 08:22 UTC
 
-**Protocol mix:** shadowsocks × 7 · trojan × 30 · vless × 94 · vmess × 14
+**Protocol mix:** shadowsocks × 3 · trojan × 28 · vless × 73 · vmess × 11
 
-**Sources used this run:** `barry-far-v2ray` × 3 · `mahdi0024` × 2 · `mahdibland-aggregator` × 5 · `mahdibland-shadowsocks` × 6 · `matin-v2ray` × 1 · `ninjastrikers` × 19 · `pawdroid` × 5 · `radikal-clash` × 9 · `roosterkid-openproxylist` × 23 · `ruking-clash` × 1 · `solispirit-v2ray` × 49 · `tg-v2ray-configs-every2h` × 22
+**Sources used this run:** `barry-far-v2ray` × 1 · `mahdi0024` × 2 · `mahdibland-aggregator` × 5 · `mahdibland-shadowsocks` × 4 · `matin-v2ray` × 5 · `ninjastrikers` × 13 · `pawdroid` × 4 · `radikal-clash` × 1 · `roosterkid-openproxylist` × 22 · `solispirit-v2ray` × 33 · `tg-v2ray-configs-every2h` × 25
 
 ## ❓ FAQ
 

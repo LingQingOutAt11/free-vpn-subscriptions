@@ -4,7 +4,7 @@
 
 <p align="center"><img src="https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/assets/hero.png" alt="Free VPN Subscriptions — hourly-refreshed free VPN subscriptions for Clash, sing-box, v2ray" width="780"></p>
 
-![узлы](https://img.shields.io/badge/узлы-145-brightgreen) ![живые](https://img.shields.io/badge/живые-2789-blue) ![медиана--rtt](https://img.shields.io/badge/медиана--rtt-238ms-orange) ![обновлено](https://img.shields.io/badge/обновлено-2026-07-11_03:48_UTC-informational)
+![узлы](https://img.shields.io/badge/узлы-115-brightgreen) ![живые](https://img.shields.io/badge/живые-2916-blue) ![медиана--rtt](https://img.shields.io/badge/медиана--rtt-525ms-orange) ![обновлено](https://img.shields.io/badge/обновлено-2026-07-11_08:22_UTC-informational)
 
 > **Самый простой способ получить рабочий бесплатный VPN — скопируйте ссылку подписки, вставьте в клиент, подключитесь.**  
 > Без регистрации. Без оплаты. Без установки каких-либо бинарников. Обновляется каждый час из публичных источников — каждый публикуемый узел несколько минут назад реально пропустил HTTP-трафик через sing-box.
@@ -77,8 +77,8 @@ proxy-groups:
 
 | Страна | Узлов | Clash | sing-box | v2ray |
 |---|---|---|---|---|
-| 🇺🇸 United States (`US`) | 41 | [clash-US.yaml](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/clash-US.yaml) | [singbox-US.json](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/singbox-US.json) | [v2ray-base64-US.txt](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/v2ray-base64-US.txt) |
-| 🇩🇪 Germany (`DE`) | 3 | [clash-DE.yaml](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/clash-DE.yaml) | [singbox-DE.json](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/singbox-DE.json) | [v2ray-base64-DE.txt](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/v2ray-base64-DE.txt) |
+| 🇺🇸 United States (`US`) | 22 | [clash-US.yaml](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/clash-US.yaml) | [singbox-US.json](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/singbox-US.json) | [v2ray-base64-US.txt](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/v2ray-base64-US.txt) |
+| 🇸🇨 SC (`SC`) | 3 | [clash-SC.yaml](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/clash-SC.yaml) | [singbox-SC.json](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/singbox-SC.json) | [v2ray-base64-SC.txt](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/v2ray-base64-SC.txt) |
 
 ## 📖 Пошаговые инструкции
 
@@ -99,15 +99,15 @@ proxy-groups:
 
 ## 📊 Статистика в реальном времени
 
-- **Выбрано узлов**: 145
-- **Живых во всех источниках**: 2789
-- **RTT самого быстрого узла**: 23 ms
-- **Медиана RTT**: 238 ms
-- **Последнее обновление (UTC)**: 2026-07-11 03:48 UTC
+- **Выбрано узлов**: 115
+- **Живых во всех источниках**: 2916
+- **RTT самого быстрого узла**: 14 ms
+- **Медиана RTT**: 525 ms
+- **Последнее обновление (UTC)**: 2026-07-11 08:22 UTC
 
-**Распределение протоколов:** shadowsocks × 7 · trojan × 30 · vless × 94 · vmess × 14
+**Распределение протоколов:** shadowsocks × 3 · trojan × 28 · vless × 73 · vmess × 11
 
-**Источники в этом запуске:** `barry-far-v2ray` × 3 · `mahdi0024` × 2 · `mahdibland-aggregator` × 5 · `mahdibland-shadowsocks` × 6 · `matin-v2ray` × 1 · `ninjastrikers` × 19 · `pawdroid` × 5 · `radikal-clash` × 9 · `roosterkid-openproxylist` × 23 · `ruking-clash` × 1 · `solispirit-v2ray` × 49 · `tg-v2ray-configs-every2h` × 22
+**Источники в этом запуске:** `barry-far-v2ray` × 1 · `mahdi0024` × 2 · `mahdibland-aggregator` × 5 · `mahdibland-shadowsocks` × 4 · `matin-v2ray` × 5 · `ninjastrikers` × 13 · `pawdroid` × 4 · `radikal-clash` × 1 · `roosterkid-openproxylist` × 22 · `solispirit-v2ray` × 33 · `tg-v2ray-configs-every2h` × 25
 
 ## ❓ Часто задаваемые вопросы
 
