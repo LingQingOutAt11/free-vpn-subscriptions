@@ -9,7 +9,6 @@ import (
 	"os/exec"
 	"strconv"
 	"sync"
-	"syscall"
 	"time"
 
 	"github.com/Au1rxx/free-vpn-subscriptions/pkg/node"
@@ -156,8 +155,7 @@ func startSingbox(parent context.Context, bc *batchConfig, cfg Config) (*singbox
 	}
 
 	cmd := exec.CommandContext(ctx, cfg.SingBoxBin, "run", "-c", bc.path)
-	// Separate process group so we can SIGKILL the whole subtree on stop.
-	cmd.SysProcAttr = &syscall.SysProcAttr{Setpgid: true}
+	configureProcess(cmd)
 	cmd.Stdout = nil
 	cmd.Stderr = nil
 
@@ -194,8 +192,7 @@ func (s *singboxProc) stop() {
 		return
 	}
 	if s.cmd != nil && s.cmd.Process != nil {
-		// Kill the whole process group to cover any child goroutines/pids.
-		_ = syscall.Kill(-s.cmd.Process.Pid, syscall.SIGKILL)
+		stopProcess(s.cmd)
 		_, _ = s.cmd.Process.Wait()
 	}
 	if s.cancel != nil {
@@ -221,4 +218,3 @@ func truncate(s string, n int) string {
 	}
 	return s[:n] + "…"
 }
-
