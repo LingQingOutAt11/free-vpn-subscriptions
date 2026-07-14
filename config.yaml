@@ -116,6 +116,19 @@ sources:
     format: clash
     enabled: true
 
+  # These upstreams were checked from the China-based verifier. GitHub Raw
+  # times out there, so use jsDelivr only for source retrieval; node probes
+  # themselves still use the server's direct egress.
+  - name: autojiedian-clash
+    url: https://cdn.jsdelivr.net/gh/hvwin8/autojiedian@master/clash.yaml
+    format: clash
+    enabled: true
+
+  - name: automerge-verified-clash
+    url: https://cdn.jsdelivr.net/gh/LeilaoMi/AutoMergePublicNodes-Optimized@main/output/verified.yaml
+    format: clash
+    enabled: true
+
 probe:
   timeout_ms: 3000
   concurrency: 100
