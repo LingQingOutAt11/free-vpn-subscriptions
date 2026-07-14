@@ -1,3 +1,4 @@
+mode: rule
 proxies:
     - name: 01-trojan-韩国_Seoul_Amazon.com Inc._Claude7
       password: CF68213490
@@ -139,4 +140,16 @@ proxy-groups:
         - "12-vless-\U0001F1F9\U0001F1F7 \U0001F4A5Config_jo-242"
       type: select
 rules:
+    - DOMAIN-SUFFIX,weixin.qq.com,DIRECT
+    - DOMAIN-SUFFIX,wechat.com,DIRECT
+    - DOMAIN-SUFFIX,weixin.com,DIRECT
+    - DOMAIN-SUFFIX,qq.com,DIRECT
+    - DOMAIN-SUFFIX,tenpay.com,DIRECT
+    - DOMAIN-SUFFIX,gtimg.com,DIRECT
+    - DOMAIN-SUFFIX,qpic.cn,DIRECT
+    - IP-CIDR,127.0.0.0/8,DIRECT,no-resolve
+    - IP-CIDR,10.0.0.0/8,DIRECT,no-resolve
+    - IP-CIDR,172.16.0.0/12,DIRECT,no-resolve
+    - IP-CIDR,192.168.0.0/16,DIRECT,no-resolve
+    - GEOIP,CN,DIRECT,no-resolve
     - MATCH,select

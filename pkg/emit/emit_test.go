@@ -40,6 +40,15 @@ func TestClash_ContainsProxies(t *testing.T) {
 	if !strings.Contains(out, "trojan.example.com") {
 		t.Error("Clash output missing trojan server")
 	}
+	for _, rule := range []string{
+		"DOMAIN-SUFFIX,weixin.qq.com,DIRECT",
+		"GEOIP,CN,DIRECT,no-resolve",
+		"MATCH,select",
+	} {
+		if !strings.Contains(out, rule) {
+			t.Errorf("Clash output missing routing rule %q", rule)
+		}
+	}
 }
 
 func TestSingbox_ValidJSON(t *testing.T) {

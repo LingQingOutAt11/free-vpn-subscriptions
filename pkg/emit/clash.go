@@ -8,7 +8,9 @@ import (
 	"github.com/Au1rxx/free-vpn-subscriptions/pkg/node"
 )
 
-// Clash emits a Clash-compatible YAML profile (proxies + one URL-test group).
+// Clash emits a standalone Clash/Mihomo profile with China and LAN traffic
+// routed directly. This keeps TUN mode from sending local services through
+// short-lived public nodes.
 func Clash(nodes []*node.Node) (string, error) {
 	proxies := make([]map[string]any, 0, len(nodes))
 	names := make([]string, 0, len(nodes))
@@ -37,7 +39,22 @@ func Clash(nodes []*node.Node) (string, error) {
 				"proxies": append([]string{"auto"}, names...),
 			},
 		},
-		"rules": []string{"MATCH,select"},
+		"mode": "rule",
+		"rules": []string{
+			"DOMAIN-SUFFIX,weixin.qq.com,DIRECT",
+			"DOMAIN-SUFFIX,wechat.com,DIRECT",
+			"DOMAIN-SUFFIX,weixin.com,DIRECT",
+			"DOMAIN-SUFFIX,qq.com,DIRECT",
+			"DOMAIN-SUFFIX,tenpay.com,DIRECT",
+			"DOMAIN-SUFFIX,gtimg.com,DIRECT",
+			"DOMAIN-SUFFIX,qpic.cn,DIRECT",
+			"IP-CIDR,127.0.0.0/8,DIRECT,no-resolve",
+			"IP-CIDR,10.0.0.0/8,DIRECT,no-resolve",
+			"IP-CIDR,172.16.0.0/12,DIRECT,no-resolve",
+			"IP-CIDR,192.168.0.0/16,DIRECT,no-resolve",
+			"GEOIP,CN,DIRECT,no-resolve",
+			"MATCH,select",
+		},
 	}
 	b, err := yaml.Marshal(cfg)
 	if err != nil {
