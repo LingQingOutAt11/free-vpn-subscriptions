@@ -1,48 +1,113 @@
 {
   "outbounds": [
     {
-      "alter_id": 0,
-      "security": "auto",
-      "server": "165.140.216.141",
+      "method": "chacha20-ietf-poly1305",
+      "password": "G5p6ww4o67HB",
+      "server": "108.181.0.177",
+      "server_port": 8388,
+      "tag": "01-shadowsocks-🇺🇸US-108.181.0.177-0100",
+      "type": "shadowsocks"
+    },
+    {
+      "method": "chacha20-ietf-poly1305",
+      "password": "hCCWOcIsK5wrFz4OX70rWf",
+      "server": "216.105.168.18",
       "server_port": 443,
-      "tag": "01-vmess-@chillguy_vpn",
-      "type": "vmess",
-      "uuid": "e7d72a8d-26f2-4b54-b366-0c43e0bcba7d"
+      "tag": "02-shadowsocks-🇺🇸US-216.105.168.18-0204",
+      "type": "shadowsocks"
     },
     {
       "alter_id": 0,
       "security": "auto",
-      "server": "173.249.209.146",
-      "server_port": 20086,
-      "tag": "02-vmess-🇺🇸US-173.249.209.146-0116",
+      "server": "129.146.77.248",
+      "server_port": 39495,
+      "tag": "03-vmess-🇺🇸US-129.146.77.248-2353",
       "type": "vmess",
-      "uuid": "3935c2dc-dbb0-43f7-b367-fe89abe87fdf"
+      "uuid": "f836c736-87fc-4fde-aabc-00857ecdff3e"
     },
     {
       "alter_id": 0,
       "security": "auto",
-      "server": "165.140.216.142",
+      "server": "107.161.82.89",
+      "server_port": 27489,
+      "tag": "04-vmess-🇺🇸[openproxylist.com] vmess-US",
+      "type": "vmess",
+      "uuid": "1f111c76-69ce-4fa9-a55c-1ae21cd1ab2a"
+    },
+    {
+      "method": "aes-128-gcm",
+      "password": "shadowsocks",
+      "server": "173.244.56.9",
       "server_port": 443,
-      "tag": "03-vmess-🇺🇸 US 9",
-      "type": "vmess",
-      "uuid": "b65a2d69-5634-42a2-e4be-54e8a6176900"
+      "tag": "05-shadowsocks-🇺🇸US-173.244.56.9-0244",
+      "type": "shadowsocks"
+    },
+    {
+      "method": "aes-128-gcm",
+      "password": "shadowsocks",
+      "server": "173.244.56.6",
+      "server_port": 443,
+      "tag": "06-shadowsocks-🇺🇸US-173.244.56.6-3876",
+      "type": "shadowsocks"
+    },
+    {
+      "server": "69.46.46.33",
+      "server_port": 443,
+      "tag": "07-vless-🔥Join Telegram:@Farah_VPN🟣",
+      "tls": {
+        "enabled": true,
+        "insecure": false,
+        "server_name": "trollhastambotrvg-production-162c.up.railway.app"
+      },
+      "type": "vless",
+      "uuid": "5b25a339-bf7e-2673-1960-919233576ee0"
+    },
+    {
+      "password": "humanity",
+      "server": "165.215.250.14",
+      "server_port": 443,
+      "tag": "08-trojan-🔥Join Telegram:@Farah_VPN🟣",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "www.calmlunch.com"
+      },
+      "type": "trojan"
+    },
+    {
+      "password": "humanity",
+      "server": "198.62.62.23",
+      "server_port": 443,
+      "tag": "09-trojan-🔥Join Telegram:@Farah_VPN🟣",
+      "tls": {
+        "enabled": true,
+        "insecure": false,
+        "server_name": "www.calmlunch.com"
+      },
+      "type": "trojan"
     },
     {
       "alter_id": 0,
       "security": "auto",
-      "server": "216.106.185.141",
-      "server_port": 22324,
-      "tag": "04-vmess-🇺🇸 US 11",
+      "server": "23.236.69.39",
+      "server_port": 24187,
+      "tag": "10-vmess-🇺🇸 美国 | USA 12",
       "type": "vmess",
-      "uuid": "04621bae-ab36-11ec-b909-0242ac120002"
+      "uuid": "12a8ee36-5936-4449-90bd-b5eac6db4c1d"
     },
     {
       "interval": "5m",
       "outbounds": [
-        "01-vmess-@chillguy_vpn",
-        "02-vmess-🇺🇸US-173.249.209.146-0116",
-        "03-vmess-🇺🇸 US 9",
-        "04-vmess-🇺🇸 US 11"
+        "01-shadowsocks-🇺🇸US-108.181.0.177-0100",
+        "02-shadowsocks-🇺🇸US-216.105.168.18-0204",
+        "03-vmess-🇺🇸US-129.146.77.248-2353",
+        "04-vmess-🇺🇸[openproxylist.com] vmess-US",
+        "05-shadowsocks-🇺🇸US-173.244.56.9-0244",
+        "06-shadowsocks-🇺🇸US-173.244.56.6-3876",
+        "07-vless-🔥Join Telegram:@Farah_VPN🟣",
+        "08-trojan-🔥Join Telegram:@Farah_VPN🟣",
+        "09-trojan-🔥Join Telegram:@Farah_VPN🟣",
+        "10-vmess-🇺🇸 美国 | USA 12"
       ],
       "tag": "auto",
       "type": "urltest",
@@ -51,10 +116,16 @@
     {
       "outbounds": [
         "auto",
-        "01-vmess-@chillguy_vpn",
-        "02-vmess-🇺🇸US-173.249.209.146-0116",
-        "03-vmess-🇺🇸 US 9",
-        "04-vmess-🇺🇸 US 11"
+        "01-shadowsocks-🇺🇸US-108.181.0.177-0100",
+        "02-shadowsocks-🇺🇸US-216.105.168.18-0204",
+        "03-vmess-🇺🇸US-129.146.77.248-2353",
+        "04-vmess-🇺🇸[openproxylist.com] vmess-US",
+        "05-shadowsocks-🇺🇸US-173.244.56.9-0244",
+        "06-shadowsocks-🇺🇸US-173.244.56.6-3876",
+        "07-vless-🔥Join Telegram:@Farah_VPN🟣",
+        "08-trojan-🔥Join Telegram:@Farah_VPN🟣",
+        "09-trojan-🔥Join Telegram:@Farah_VPN🟣",
+        "10-vmess-🇺🇸 美国 | USA 12"
       ],
       "tag": "select",
       "type": "selector"
