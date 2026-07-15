@@ -1,0 +1,53 @@
+mode: rule
+proxies:
+    - cipher: chacha20-ietf-poly1305
+      name: "01-shadowsocks-\U0001F1E8\U0001F1E6CA-108.181.118.10-0129"
+      password: G5p6ww4o67HB
+      port: 8388
+      server: 108.181.118.10
+      type: ss
+      udp: true
+    - cipher: rc4-md5
+      name: "02-shadowsocks-\U0001F1E8\U0001F1E6CA-137.184.174.93-0241"
+      password: 14fFPrbezE3HDZzsMOr6
+      port: 8080
+      server: 137.184.174.93
+      type: ss
+      udp: true
+    - cipher: aes-256-gcm
+      name: "03-shadowsocks-\U0001F1E8\U0001F1E6 Join Telegram:@Farah_VPN \U0001F1E8\U0001F1E6"
+      password: KixLvKzwjekG00rm
+      port: 8080
+      server: 185.196.61.82
+      type: ss
+      udp: true
+proxy-groups:
+    - interval: 300
+      name: auto
+      proxies:
+        - "01-shadowsocks-\U0001F1E8\U0001F1E6CA-108.181.118.10-0129"
+        - "02-shadowsocks-\U0001F1E8\U0001F1E6CA-137.184.174.93-0241"
+        - "03-shadowsocks-\U0001F1E8\U0001F1E6 Join Telegram:@Farah_VPN \U0001F1E8\U0001F1E6"
+      type: url-test
+      url: https://www.gstatic.com/generate_204
+    - name: select
+      proxies:
+        - auto
+        - "01-shadowsocks-\U0001F1E8\U0001F1E6CA-108.181.118.10-0129"
+        - "02-shadowsocks-\U0001F1E8\U0001F1E6CA-137.184.174.93-0241"
+        - "03-shadowsocks-\U0001F1E8\U0001F1E6 Join Telegram:@Farah_VPN \U0001F1E8\U0001F1E6"
+      type: select
+rules:
+    - DOMAIN-SUFFIX,weixin.qq.com,DIRECT
+    - DOMAIN-SUFFIX,wechat.com,DIRECT
+    - DOMAIN-SUFFIX,weixin.com,DIRECT
+    - DOMAIN-SUFFIX,qq.com,DIRECT
+    - DOMAIN-SUFFIX,tenpay.com,DIRECT
+    - DOMAIN-SUFFIX,gtimg.com,DIRECT
+    - DOMAIN-SUFFIX,qpic.cn,DIRECT
+    - IP-CIDR,127.0.0.0/8,DIRECT,no-resolve
+    - IP-CIDR,10.0.0.0/8,DIRECT,no-resolve
+    - IP-CIDR,172.16.0.0/12,DIRECT,no-resolve
+    - IP-CIDR,192.168.0.0/16,DIRECT,no-resolve
+    - GEOIP,CN,DIRECT,no-resolve
+    - MATCH,select
