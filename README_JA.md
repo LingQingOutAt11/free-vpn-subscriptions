@@ -4,7 +4,7 @@
 
 <p align="center"><img src="https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/assets/hero.png" alt="Free VPN Subscriptions — hourly-refreshed free VPN subscriptions for Clash, sing-box, v2ray" width="780"></p>
 
-![ノード](https://img.shields.io/badge/ノード-126-brightgreen) ![生存](https://img.shields.io/badge/生存-3058-blue) ![中央値--rtt](https://img.shields.io/badge/中央値--rtt-160ms-orange) ![更新](https://img.shields.io/badge/更新-2026-07-15_03:40_UTC-informational)
+![ノード](https://img.shields.io/badge/ノード-74-brightgreen) ![生存](https://img.shields.io/badge/生存-3200-blue) ![中央値--rtt](https://img.shields.io/badge/中央値--rtt-345ms-orange) ![更新](https://img.shields.io/badge/更新-2026-07-15_08:42_UTC-informational)
 
 > **動作する無料 VPN を手に入れる一番かんたんな方法 —— 購読リンクをコピーしてクライアントに貼るだけ。**  
 > 登録不要。支払い不要。バイナリのインストール不要。公開ソースから毎時自動更新 —— 公開される全ノードは、数分前に sing-box 経由で実 HTTP トラフィックを転送した実績があります。
@@ -77,9 +77,8 @@ proxy-groups:
 
 | 国 | ノード数 | Clash | sing-box | v2ray |
 |---|---|---|---|---|
-| 🇺🇸 United States (`US`) | 38 | [clash-US.yaml](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/clash-US.yaml) | [singbox-US.json](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/singbox-US.json) | [v2ray-base64-US.txt](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/v2ray-base64-US.txt) |
-| 🇸🇨 SC (`SC`) | 6 | [clash-SC.yaml](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/clash-SC.yaml) | [singbox-SC.json](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/singbox-SC.json) | [v2ray-base64-SC.txt](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/v2ray-base64-SC.txt) |
-| 🇨🇦 Canada (`CA`) | 3 | [clash-CA.yaml](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/clash-CA.yaml) | [singbox-CA.json](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/singbox-CA.json) | [v2ray-base64-CA.txt](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/v2ray-base64-CA.txt) |
+| 🇺🇸 United States (`US`) | 10 | [clash-US.yaml](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/clash-US.yaml) | [singbox-US.json](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/singbox-US.json) | [v2ray-base64-US.txt](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/v2ray-base64-US.txt) |
+| 🇸🇨 SC (`SC`) | 3 | [clash-SC.yaml](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/clash-SC.yaml) | [singbox-SC.json](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/singbox-SC.json) | [v2ray-base64-SC.txt](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/v2ray-base64-SC.txt) |
 
 ## 📖 クライアント設定ガイド
 
@@ -100,15 +99,15 @@ proxy-groups:
 
 ## 📊 リアルタイム統計
 
-- **選定ノード**: 126
-- **全ソース生存数**: 3058
-- **最速 RTT**: 46 ms
-- **中央値 RTT**: 160 ms
-- **最終更新 (UTC)**: 2026-07-15 03:40 UTC
+- **選定ノード**: 74
+- **全ソース生存数**: 3200
+- **最速 RTT**: 20 ms
+- **中央値 RTT**: 345 ms
+- **最終更新 (UTC)**: 2026-07-15 08:42 UTC
 
-**プロトコル構成:** shadowsocks × 18 · trojan × 25 · vless × 70 · vmess × 13
+**プロトコル構成:** shadowsocks × 1 · trojan × 22 · vless × 45 · vmess × 6
 
-**今回使用したソース:** `autojiedian-clash` × 3 · `automerge-verified-clash` × 7 · `barry-far-v2ray` × 2 · `epodonios` × 5 · `go4sharing-clash` × 1 · `mahdibland-aggregator` × 1 · `mahdibland-shadowsocks` × 5 · `matin-v2ray` × 2 · `ninjastrikers` × 14 · `pawdroid` × 4 · `radikal-clash` × 3 · `roosterkid-openproxylist` × 11 · `snakem982` × 1 · `solispirit-v2ray` × 44 · `surfboard-eternity` × 2 · `tg-v2ray-configs-every2h` × 21
+**今回使用したソース:** `autojiedian-clash` × 1 · `automerge-verified-clash` × 2 · `epodonios` × 1 · `mahdibland-shadowsocks` × 2 · `matin-v2ray` × 1 · `ninjastrikers` × 8 · `pawdroid` × 4 · `radikal-clash` × 1 · `roosterkid-openproxylist` × 8 · `solispirit-v2ray` × 46
 
 ## ❓ よくある質問
 
