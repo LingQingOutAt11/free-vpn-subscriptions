@@ -1,0 +1,82 @@
+{
+  "outbounds": [
+    {
+      "server": "91.193.59.120",
+      "server_port": 443,
+      "tag": "01-vless-🏳️ 💥Config_jo-207",
+      "tls": {
+        "enabled": true,
+        "insecure": false,
+        "server_name": "cf11.evan00.dpdns.org"
+      },
+      "type": "vless",
+      "uuid": "7612dd26-d0ce-4fe0-be7c-d093bb8645da"
+    },
+    {
+      "server": "91.193.59.55",
+      "server_port": 2096,
+      "tag": "02-vless-🔥Join Telegram:@Farah_VPN🟣",
+      "tls": {
+        "enabled": true,
+        "insecure": false,
+        "server_name": "vp8.cc.cd"
+      },
+      "type": "vless",
+      "uuid": "663cf772-829c-4bc6-893d-b7d021d42f5b"
+    },
+    {
+      "server": "91.193.59.171",
+      "server_port": 8443,
+      "tag": "03-vless-🔥Join Telegram:@Farah_VPN🟣",
+      "tls": {
+        "enabled": true,
+        "insecure": false,
+        "server_name": "vp6.cc.cd"
+      },
+      "type": "vless",
+      "uuid": "663cf772-829c-4bc6-893d-b7d021d42f5b"
+    },
+    {
+      "server": "91.193.58.201",
+      "server_port": 443,
+      "tag": "04-vless-🏳️ 💥Config_jo-172",
+      "tls": {
+        "enabled": true,
+        "insecure": false,
+        "server_name": "vangoghhh.info"
+      },
+      "type": "vless",
+      "uuid": "14b59caf-a196-4ec2-8c70-c7b388062f5b"
+    },
+    {
+      "interval": "5m",
+      "outbounds": [
+        "01-vless-🏳️ 💥Config_jo-207",
+        "02-vless-🔥Join Telegram:@Farah_VPN🟣",
+        "03-vless-🔥Join Telegram:@Farah_VPN🟣",
+        "04-vless-🏳️ 💥Config_jo-172"
+      ],
+      "tag": "auto",
+      "type": "urltest",
+      "url": "https://www.gstatic.com/generate_204"
+    },
+    {
+      "outbounds": [
+        "auto",
+        "01-vless-🏳️ 💥Config_jo-207",
+        "02-vless-🔥Join Telegram:@Farah_VPN🟣",
+        "03-vless-🔥Join Telegram:@Farah_VPN🟣",
+        "04-vless-🏳️ 💥Config_jo-172"
+      ],
+      "tag": "select",
+      "type": "selector"
+    },
+    {
+      "tag": "direct",
+      "type": "direct"
+    }
+  ],
+  "route": {
+    "final": "select"
+  }
+}
