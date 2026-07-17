@@ -1,73 +1,62 @@
 mode: rule
 proxies:
-    - alterId: 0
-      cipher: auto
-      name: "01-vmess-\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3"
-      network: tcp
-      port: 18000
-      server: 84.17.41.2
-      type: vmess
-      udp: true
-      uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-    - client-fingerprint: chrome
+    - client-fingerprint: firefox
       flow: xtls-rprx-vision
-      name: "02-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+      name: "01-vless-\U0001F1FA\U0001F1F8[openproxylist.com] vless-US"
       network: tcp
-      port: 993
+      port: 443
       reality-opts:
-        public-key: oE7ZEghzkaOUiw1q3PqBtpllP1NlPHLY8ydJRuICtko
-        short-id: ""
-      server: 140.235.168.9
-      servername: speed.cloudflare.com
+        public-key: M4KRLRGcJGhJScjCv3JinHE0Da9s79Ku7GlVFSNsTVY
+        short-id: a61500e1
+      server: 198.23.238.35
+      servername: www.cloudflare.com
       tls: true
       type: vless
       udp: true
-      uuid: 526d2855-c7d1-ecf3-e4f8-5a75f77d5bb3
+      uuid: 70f8d74a-7938-4f21-9293-2c437a939247
+    - name: "02-trojan-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+      password: humanity
+      port: 443
+      server: 198.62.62.23
+      skip-cert-verify: false
+      sni: www.calmlunch.com
+      type: trojan
+      udp: true
     - name: "03-trojan-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
       password: humanity
       port: 443
-      server: 216.24.57.6
-      skip-cert-verify: true
-      sni: www.creationlong.org
-      type: trojan
-      udp: true
-    - name: "04-trojan-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-      password: humanity
-      port: 443
-      server: 198.202.211.1
+      server: 216.24.57.1
       skip-cert-verify: false
       sni: www.creationlong.org
       type: trojan
       udp: true
-    - name: "05-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+    - name: "04-vless-\U0001F3F3️ \U0001F4A5Config_jo-218"
       network: ws
-      port: 2096
-      server: 198.202.211.1
-      servername: sinavm5.soft10.ir
+      port: 443
+      server: 199.232.22.39
+      servername: ssl.fastly.com
       skip-cert-verify: false
       tls: true
       type: vless
       udp: true
-      uuid: ddfd4560-61ff-4700-bb4d-61d0cdcd89f3
+      uuid: 891710f4-45f3-41b1-99a6-6f1510f83c10
 proxy-groups:
     - interval: 300
       name: auto
       proxies:
-        - "01-vmess-\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3"
-        - "02-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+        - "01-vless-\U0001F1FA\U0001F1F8[openproxylist.com] vless-US"
+        - "02-trojan-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
         - "03-trojan-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-        - "04-trojan-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-        - "05-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+        - "04-vless-\U0001F3F3️ \U0001F4A5Config_jo-218"
       type: url-test
       url: https://www.gstatic.com/generate_204
     - name: select
       proxies:
         - auto
-        - "01-vmess-\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3"
-        - "02-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+        - "01-vless-\U0001F1FA\U0001F1F8[openproxylist.com] vless-US"
+        - "02-trojan-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
         - "03-trojan-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-        - "04-trojan-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-        - "05-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+        - "04-vless-\U0001F3F3️ \U0001F4A5Config_jo-218"
       type: select
 rules:
     - DOMAIN-SUFFIX,weixin.qq.com,DIRECT

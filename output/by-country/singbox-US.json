@@ -1,80 +1,70 @@
 {
   "outbounds": [
     {
-      "alter_id": 0,
-      "security": "auto",
-      "server": "84.17.41.2",
-      "server_port": 18000,
-      "tag": "01-vmess-🔥Join+Telegram:@Farah_VPN🟣",
-      "type": "vmess",
-      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe"
-    },
-    {
       "flow": "xtls-rprx-vision",
-      "server": "140.235.168.9",
-      "server_port": 993,
-      "tag": "02-vless-🔥Join Telegram:@Farah_VPN🟣",
+      "server": "198.23.238.35",
+      "server_port": 443,
+      "tag": "01-vless-🇺🇸[openproxylist.com] vless-US",
       "tls": {
         "enabled": true,
         "insecure": false,
         "reality": {
           "enabled": true,
-          "public_key": "oE7ZEghzkaOUiw1q3PqBtpllP1NlPHLY8ydJRuICtko",
-          "short_id": ""
+          "public_key": "M4KRLRGcJGhJScjCv3JinHE0Da9s79Ku7GlVFSNsTVY",
+          "short_id": "a61500e1"
         },
-        "server_name": "speed.cloudflare.com",
+        "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         }
       },
       "type": "vless",
-      "uuid": "526d2855-c7d1-ecf3-e4f8-5a75f77d5bb3"
+      "uuid": "70f8d74a-7938-4f21-9293-2c437a939247"
     },
     {
       "password": "humanity",
-      "server": "216.24.57.6",
+      "server": "198.62.62.23",
+      "server_port": 443,
+      "tag": "02-trojan-🔥Join Telegram:@Farah_VPN🟣",
+      "tls": {
+        "enabled": true,
+        "insecure": false,
+        "server_name": "www.calmlunch.com"
+      },
+      "type": "trojan"
+    },
+    {
+      "password": "humanity",
+      "server": "216.24.57.1",
       "server_port": 443,
       "tag": "03-trojan-🔥Join Telegram:@Farah_VPN🟣",
       "tls": {
         "enabled": true,
-        "insecure": true,
+        "insecure": false,
         "server_name": "www.creationlong.org"
       },
       "type": "trojan"
     },
     {
-      "password": "humanity",
-      "server": "198.202.211.1",
+      "server": "199.232.22.39",
       "server_port": 443,
-      "tag": "04-trojan-🔥Join Telegram:@Farah_VPN🟣",
+      "tag": "04-vless-🏳️ 💥Config_jo-218",
       "tls": {
         "enabled": true,
         "insecure": false,
-        "server_name": "www.creationlong.org"
-      },
-      "type": "trojan"
-    },
-    {
-      "server": "198.202.211.1",
-      "server_port": 2096,
-      "tag": "05-vless-🔥Join Telegram:@Farah_VPN🟣",
-      "tls": {
-        "enabled": true,
-        "insecure": false,
-        "server_name": "sinavm5.soft10.ir"
+        "server_name": "ssl.fastly.com"
       },
       "type": "vless",
-      "uuid": "ddfd4560-61ff-4700-bb4d-61d0cdcd89f3"
+      "uuid": "891710f4-45f3-41b1-99a6-6f1510f83c10"
     },
     {
       "interval": "5m",
       "outbounds": [
-        "01-vmess-🔥Join+Telegram:@Farah_VPN🟣",
-        "02-vless-🔥Join Telegram:@Farah_VPN🟣",
+        "01-vless-🇺🇸[openproxylist.com] vless-US",
+        "02-trojan-🔥Join Telegram:@Farah_VPN🟣",
         "03-trojan-🔥Join Telegram:@Farah_VPN🟣",
-        "04-trojan-🔥Join Telegram:@Farah_VPN🟣",
-        "05-vless-🔥Join Telegram:@Farah_VPN🟣"
+        "04-vless-🏳️ 💥Config_jo-218"
       ],
       "tag": "auto",
       "type": "urltest",
@@ -83,11 +73,10 @@
     {
       "outbounds": [
         "auto",
-        "01-vmess-🔥Join+Telegram:@Farah_VPN🟣",
-        "02-vless-🔥Join Telegram:@Farah_VPN🟣",
+        "01-vless-🇺🇸[openproxylist.com] vless-US",
+        "02-trojan-🔥Join Telegram:@Farah_VPN🟣",
         "03-trojan-🔥Join Telegram:@Farah_VPN🟣",
-        "04-trojan-🔥Join Telegram:@Farah_VPN🟣",
-        "05-vless-🔥Join Telegram:@Farah_VPN🟣"
+        "04-vless-🏳️ 💥Config_jo-218"
       ],
       "tag": "select",
       "type": "selector"
