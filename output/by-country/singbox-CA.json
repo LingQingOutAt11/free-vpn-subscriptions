@@ -1,0 +1,82 @@
+{
+  "outbounds": [
+    {
+      "method": "chacha20-ietf-poly1305",
+      "password": "G5p6ww4o67HB",
+      "server": "108.181.118.10",
+      "server_port": 8388,
+      "tag": "01-shadowsocks-🇺🇸 [345.5ms +/-519ms] 🇨🇦CA-108.181.118.1",
+      "type": "shadowsocks"
+    },
+    {
+      "server": "74.49.214.20",
+      "server_port": 443,
+      "tag": "02-vless-加拿大 TELUS",
+      "tls": {
+        "enabled": true,
+        "insecure": false,
+        "server_name": "cf11.evan00.dpdns.org"
+      },
+      "type": "vless",
+      "uuid": "7612dd26-d0ce-4fe0-be7c-d093bb8645da"
+    },
+    {
+      "alter_id": 0,
+      "security": "auto",
+      "server": "134.195.196.211",
+      "server_port": 18000,
+      "tag": "03-vmess-加拿大_Toronto_GLOBALTELEHOST_Gemini_Claude",
+      "type": "vmess",
+      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe"
+    },
+    {
+      "alter_id": 0,
+      "security": "auto",
+      "server": "23.162.200.198",
+      "server_port": 18000,
+      "tag": "04-vmess-加拿大_Toronto_GLOBALTELEHOST_Gemini_Claude",
+      "type": "vmess",
+      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe"
+    },
+    {
+      "method": "chacha20-ietf-poly1305",
+      "password": "Vr06rU_v1vFPYeXq9zbsAA",
+      "server": "184.75.221.134",
+      "server_port": 1080,
+      "tag": "05-shadowsocks-EPODONIOS",
+      "type": "shadowsocks"
+    },
+    {
+      "interval": "5m",
+      "outbounds": [
+        "01-shadowsocks-🇺🇸 [345.5ms +/-519ms] 🇨🇦CA-108.181.118.1",
+        "02-vless-加拿大 TELUS",
+        "03-vmess-加拿大_Toronto_GLOBALTELEHOST_Gemini_Claude",
+        "04-vmess-加拿大_Toronto_GLOBALTELEHOST_Gemini_Claude",
+        "05-shadowsocks-EPODONIOS"
+      ],
+      "tag": "auto",
+      "type": "urltest",
+      "url": "https://www.gstatic.com/generate_204"
+    },
+    {
+      "outbounds": [
+        "auto",
+        "01-shadowsocks-🇺🇸 [345.5ms +/-519ms] 🇨🇦CA-108.181.118.1",
+        "02-vless-加拿大 TELUS",
+        "03-vmess-加拿大_Toronto_GLOBALTELEHOST_Gemini_Claude",
+        "04-vmess-加拿大_Toronto_GLOBALTELEHOST_Gemini_Claude",
+        "05-shadowsocks-EPODONIOS"
+      ],
+      "tag": "select",
+      "type": "selector"
+    },
+    {
+      "tag": "direct",
+      "type": "direct"
+    }
+  ],
+  "route": {
+    "final": "select"
+  }
+}

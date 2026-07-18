@@ -4,7 +4,7 @@
 
 <p align="center"><img src="https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/assets/hero.png" alt="Free VPN Subscriptions — hourly-refreshed free VPN subscriptions for Clash, sing-box, v2ray" width="780"></p>
 
-![노드](https://img.shields.io/badge/노드-94-brightgreen) ![생존](https://img.shields.io/badge/생존-4195-blue) ![중앙값--rtt](https://img.shields.io/badge/중앙값--rtt-65ms-orange) ![업데이트](https://img.shields.io/badge/업데이트-2026-07-18_08:14_UTC-informational)
+![노드](https://img.shields.io/badge/노드-118-brightgreen) ![생존](https://img.shields.io/badge/생존-4423-blue) ![중앙값--rtt](https://img.shields.io/badge/중앙값--rtt-169ms-orange) ![업데이트](https://img.shields.io/badge/업데이트-2026-07-18_13:54_UTC-informational)
 
 > **작동하는 무료 VPN을 얻는 가장 쉬운 방법 —— 구독 링크를 복사하고 클라이언트에 붙여 넣고 연결하세요.**  
 > 가입 불필요. 결제 불필요. 바이너리 설치 불필요. 공개 소스에서 매시간 자동 갱신 —— 발행되는 모든 노드는 몇 분 전에 sing-box 를 통해 실제 HTTP 트래픽을 전달한 이력이 있습니다.
@@ -77,7 +77,11 @@ proxy-groups:
 
 | 국가 | 노드 수 | Clash | sing-box | v2ray |
 |---|---|---|---|---|
-| 🇺🇸 United States (`US`) | 17 | [clash-US.yaml](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/clash-US.yaml) | [singbox-US.json](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/singbox-US.json) | [v2ray-base64-US.txt](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/v2ray-base64-US.txt) |
+| 🇺🇸 United States (`US`) | 33 | [clash-US.yaml](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/clash-US.yaml) | [singbox-US.json](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/singbox-US.json) | [v2ray-base64-US.txt](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/v2ray-base64-US.txt) |
+| 🇨🇦 Canada (`CA`) | 5 | [clash-CA.yaml](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/clash-CA.yaml) | [singbox-CA.json](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/singbox-CA.json) | [v2ray-base64-CA.txt](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/v2ray-base64-CA.txt) |
+| 🇬🇧 United Kingdom (`GB`) | 5 | [clash-GB.yaml](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/clash-GB.yaml) | [singbox-GB.json](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/singbox-GB.json) | [v2ray-base64-GB.txt](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/v2ray-base64-GB.txt) |
+| 🇸🇨 SC (`SC`) | 5 | [clash-SC.yaml](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/clash-SC.yaml) | [singbox-SC.json](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/singbox-SC.json) | [v2ray-base64-SC.txt](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/v2ray-base64-SC.txt) |
+| 🇩🇪 Germany (`DE`) | 4 | [clash-DE.yaml](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/clash-DE.yaml) | [singbox-DE.json](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/singbox-DE.json) | [v2ray-base64-DE.txt](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/v2ray-base64-DE.txt) |
 
 ## 📖 클라이언트 설정 가이드
 
@@ -98,15 +102,15 @@ proxy-groups:
 
 ## 📊 실시간 통계
 
-- **선정된 노드**: 94
-- **전체 소스 생존 수**: 4195
-- **최고 속도 RTT**: 21 ms
-- **중앙값 RTT**: 65 ms
-- **최종 업데이트 (UTC)**: 2026-07-18 08:14 UTC
+- **선정된 노드**: 118
+- **전체 소스 생존 수**: 4423
+- **최고 속도 RTT**: 42 ms
+- **중앙값 RTT**: 169 ms
+- **최종 업데이트 (UTC)**: 2026-07-18 13:54 UTC
 
-**프로토콜 분포:** shadowsocks × 9 · trojan × 17 · vless × 63 · vmess × 5
+**프로토콜 분포:** shadowsocks × 15 · trojan × 26 · vless × 65 · vmess × 12
 
-**이번 실행에 사용된 소스:** `automerge-verified-clash` × 5 · `epodonios` × 3 · `mahdi0024` × 1 · `mahdibland-aggregator` × 2 · `mahdibland-shadowsocks` × 2 · `matin-v2ray` × 4 · `ninjastrikers` × 8 · `pawdroid` × 4 · `roosterkid-openproxylist` × 5 · `snakem982` × 1 · `solispirit-v2ray` × 36 · `surfboard-eternity` × 1 · `tg-v2ray-configs-every2h` × 22
+**이번 실행에 사용된 소스:** `autojiedian-clash` × 9 · `automerge-verified-clash` × 11 · `barry-far-v2ray` × 1 · `epodonios` × 2 · `mahdi0024` × 5 · `mahdibland-aggregator` × 3 · `mahdibland-shadowsocks` × 5 · `matin-v2ray` × 1 · `ninjastrikers` × 7 · `pawdroid` × 12 · `roosterkid-openproxylist` × 3 · `solispirit-v2ray` × 40 · `surfboard-eternity` × 2 · `tg-v2ray-configs-every2h` × 17
 
 ## ❓ 자주 묻는 질문
 
