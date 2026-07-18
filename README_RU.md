@@ -4,7 +4,7 @@
 
 <p align="center"><img src="https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/assets/hero.png" alt="Free VPN Subscriptions — hourly-refreshed free VPN subscriptions for Clash, sing-box, v2ray" width="780"></p>
 
-![узлы](https://img.shields.io/badge/узлы-77-brightgreen) ![живые](https://img.shields.io/badge/живые-4227-blue) ![медиана--rtt](https://img.shields.io/badge/медиана--rtt-177ms-orange) ![обновлено](https://img.shields.io/badge/обновлено-2026-07-17_19:38_UTC-informational)
+![узлы](https://img.shields.io/badge/узлы-101-brightgreen) ![живые](https://img.shields.io/badge/живые-4155-blue) ![медиана--rtt](https://img.shields.io/badge/медиана--rtt-116ms-orange) ![обновлено](https://img.shields.io/badge/обновлено-2026-07-18_03:36_UTC-informational)
 
 > **Самый простой способ получить рабочий бесплатный VPN — скопируйте ссылку подписки, вставьте в клиент, подключитесь.**  
 > Без регистрации. Без оплаты. Без установки каких-либо бинарников. Обновляется каждый час из публичных источников — каждый публикуемый узел несколько минут назад реально пропустил HTTP-трафик через sing-box.
@@ -77,7 +77,8 @@ proxy-groups:
 
 | Страна | Узлов | Clash | sing-box | v2ray |
 |---|---|---|---|---|
-| 🇬🇧 United Kingdom (`GB`) | 4 | [clash-GB.yaml](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/clash-GB.yaml) | [singbox-GB.json](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/singbox-GB.json) | [v2ray-base64-GB.txt](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/v2ray-base64-GB.txt) |
+| 🇺🇸 United States (`US`) | 24 | [clash-US.yaml](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/clash-US.yaml) | [singbox-US.json](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/singbox-US.json) | [v2ray-base64-US.txt](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/v2ray-base64-US.txt) |
+| 🇬🇧 United Kingdom (`GB`) | 5 | [clash-GB.yaml](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/clash-GB.yaml) | [singbox-GB.json](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/singbox-GB.json) | [v2ray-base64-GB.txt](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/v2ray-base64-GB.txt) |
 | 🇸🇨 SC (`SC`) | 3 | [clash-SC.yaml](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/clash-SC.yaml) | [singbox-SC.json](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/singbox-SC.json) | [v2ray-base64-SC.txt](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/v2ray-base64-SC.txt) |
 
 ## 📖 Пошаговые инструкции
@@ -99,15 +100,15 @@ proxy-groups:
 
 ## 📊 Статистика в реальном времени
 
-- **Выбрано узлов**: 77
-- **Живых во всех источниках**: 4227
-- **RTT самого быстрого узла**: 52 ms
-- **Медиана RTT**: 177 ms
-- **Последнее обновление (UTC)**: 2026-07-17 19:38 UTC
+- **Выбрано узлов**: 101
+- **Живых во всех источниках**: 4155
+- **RTT самого быстрого узла**: 16 ms
+- **Медиана RTT**: 116 ms
+- **Последнее обновление (UTC)**: 2026-07-18 03:36 UTC
 
-**Распределение протоколов:** trojan × 17 · vless × 55 · vmess × 5
+**Распределение протоколов:** shadowsocks × 11 · trojan × 18 · vless × 66 · vmess × 6
 
-**Источники в этом запуске:** `mahdibland-shadowsocks` × 3 · `ninjastrikers` × 7 · `pawdroid` × 6 · `roosterkid-openproxylist` × 4 · `solispirit-v2ray` × 33 · `tg-v2ray-configs-every2h` × 24
+**Источники в этом запуске:** `autojiedian-clash` × 1 · `automerge-verified-clash` × 6 · `barry-far-v2ray` × 2 · `epodonios` × 1 · `mahdi0024` × 3 · `mahdibland-aggregator` × 2 · `mahdibland-shadowsocks` × 2 · `matin-v2ray` × 2 · `ninjastrikers` × 17 · `pawdroid` × 4 · `radikal-clash` × 1 · `roosterkid-openproxylist` × 1 · `snakem982` × 1 · `solispirit-v2ray` × 36 · `surfboard-eternity` × 2 · `tg-v2ray-configs-every2h` × 20
 
 ## ❓ Часто задаваемые вопросы
 

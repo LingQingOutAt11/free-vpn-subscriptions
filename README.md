@@ -4,7 +4,7 @@
 
 <p align="center"><img src="https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/assets/hero.png" alt="Free VPN Subscriptions — hourly-refreshed free VPN subscriptions for Clash, sing-box, v2ray" width="780"></p>
 
-![nodes](https://img.shields.io/badge/nodes-77-brightgreen) ![alive](https://img.shields.io/badge/alive-4227-blue) ![median--rtt](https://img.shields.io/badge/median--rtt-177ms-orange) ![updated](https://img.shields.io/badge/updated-2026-07-17_19:38_UTC-informational)
+![nodes](https://img.shields.io/badge/nodes-101-brightgreen) ![alive](https://img.shields.io/badge/alive-4155-blue) ![median--rtt](https://img.shields.io/badge/median--rtt-116ms-orange) ![updated](https://img.shields.io/badge/updated-2026-07-18_03:36_UTC-informational)
 
 > **The easiest way to get a working free VPN — copy a subscription link, paste it into your client, connect.**  
 > No signup. No payment. No installation of binaries. Refreshed hourly from public sources — every published node has demonstrably forwarded real HTTP traffic through sing-box minutes ago.
@@ -77,7 +77,8 @@ Want nodes in a specific region only? Use one of these targeted subscription URL
 
 | Country | Nodes | Clash | sing-box | v2ray |
 |---|---|---|---|---|
-| 🇬🇧 United Kingdom (`GB`) | 4 | [clash-GB.yaml](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/clash-GB.yaml) | [singbox-GB.json](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/singbox-GB.json) | [v2ray-base64-GB.txt](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/v2ray-base64-GB.txt) |
+| 🇺🇸 United States (`US`) | 24 | [clash-US.yaml](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/clash-US.yaml) | [singbox-US.json](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/singbox-US.json) | [v2ray-base64-US.txt](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/v2ray-base64-US.txt) |
+| 🇬🇧 United Kingdom (`GB`) | 5 | [clash-GB.yaml](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/clash-GB.yaml) | [singbox-GB.json](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/singbox-GB.json) | [v2ray-base64-GB.txt](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/v2ray-base64-GB.txt) |
 | 🇸🇨 SC (`SC`) | 3 | [clash-SC.yaml](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/clash-SC.yaml) | [singbox-SC.json](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/singbox-SC.json) | [v2ray-base64-SC.txt](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/v2ray-base64-SC.txt) |
 
 ## 📖 Step-by-step Guides
@@ -99,15 +100,15 @@ New to VPN clients? Pick your platform and follow the tutorial:
 
 ## 📊 Live Stats
 
-- **Nodes selected**: 77
-- **Alive across all sources**: 4227
-- **Fastest node RTT**: 52 ms
-- **Median RTT**: 177 ms
-- **Last updated (UTC)**: 2026-07-17 19:38 UTC
+- **Nodes selected**: 101
+- **Alive across all sources**: 4155
+- **Fastest node RTT**: 16 ms
+- **Median RTT**: 116 ms
+- **Last updated (UTC)**: 2026-07-18 03:36 UTC
 
-**Protocol mix:** trojan × 17 · vless × 55 · vmess × 5
+**Protocol mix:** shadowsocks × 11 · trojan × 18 · vless × 66 · vmess × 6
 
-**Sources used this run:** `mahdibland-shadowsocks` × 3 · `ninjastrikers` × 7 · `pawdroid` × 6 · `roosterkid-openproxylist` × 4 · `solispirit-v2ray` × 33 · `tg-v2ray-configs-every2h` × 24
+**Sources used this run:** `autojiedian-clash` × 1 · `automerge-verified-clash` × 6 · `barry-far-v2ray` × 2 · `epodonios` × 1 · `mahdi0024` × 3 · `mahdibland-aggregator` × 2 · `mahdibland-shadowsocks` × 2 · `matin-v2ray` × 2 · `ninjastrikers` × 17 · `pawdroid` × 4 · `radikal-clash` × 1 · `roosterkid-openproxylist` × 1 · `snakem982` × 1 · `solispirit-v2ray` × 36 · `surfboard-eternity` × 2 · `tg-v2ray-configs-every2h` × 20
 
 ## ❓ FAQ
 
