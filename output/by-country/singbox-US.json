@@ -1,39 +1,120 @@
 {
   "outbounds": [
     {
-      "alter_id": 0,
-      "security": "auto",
-      "server": "165.140.216.142",
+      "method": "aes-128-gcm",
+      "password": "shadowsocks",
+      "server": "156.146.38.167",
       "server_port": 443,
-      "tag": "01-vmess-美国_Denver_Hurricane Electric LLC_Claude1",
-      "type": "vmess",
-      "uuid": "b65a2d69-5634-42a2-e4be-54e8a6176900"
+      "tag": "01-shadowsocks-🇺🇸US-156.146.38.167-6047",
+      "type": "shadowsocks"
     },
     {
-      "alter_id": 0,
-      "security": "auto",
-      "server": "165.140.216.141",
+      "method": "aes-128-gcm",
+      "password": "shadowsocks",
+      "server": "156.146.38.170",
       "server_port": 443,
-      "tag": "02-vmess-美国_Denver_Hurricane Electric LLC_Claude2",
-      "type": "vmess",
-      "uuid": "e7d72a8d-26f2-4b54-b366-0c43e0bcba7d"
+      "tag": "02-shadowsocks-🇺🇸 US 68",
+      "type": "shadowsocks"
     },
     {
-      "password": "humanity",
-      "server": "216.24.57.7",
+      "method": "aes-128-gcm",
+      "password": "shadowsocks",
+      "server": "156.146.38.169",
       "server_port": 443,
-      "tag": "03-trojan-⚡ b2n.ir/v2ray-configs | 402",
+      "tag": "03-shadowsocks-🇺🇸 [276.1ms +/-629ms] shadowsocks-194",
+      "type": "shadowsocks"
+    },
+    {
+      "method": "aes-128-gcm",
+      "password": "shadowsocks",
+      "server": "156.146.38.168",
+      "server_port": 443,
+      "tag": "04-shadowsocks-🇺🇸 US 69",
+      "type": "shadowsocks"
+    },
+    {
+      "password": "kkzh2prsyr2ik47as615",
+      "server": "64.94.95.117",
+      "server_port": 57142,
+      "tag": "05-trojan-美国_Dallas_Dedicated.com_Gemini_Claude3",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "static.rutube.ru"
+      },
+      "type": "trojan"
+    },
+    {
+      "password": "kkzh2prsyr2ik47as615",
+      "server": "64.94.95.115",
+      "server_port": 57142,
+      "tag": "06-trojan-美国_Dallas_Dedicated.com_Gemini_Claude2",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "static.rutube.ru"
+      },
+      "type": "trojan"
+    },
+    {
+      "password": "kkzh2prsyr2ik47as615",
+      "server": "64.94.95.114",
+      "server_port": 57142,
+      "tag": "07-trojan-美国_Dallas_Dedicated.com_Gemini_Claude1",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "static.rutube.ru"
+      },
+      "type": "trojan"
+    },
+    {
+      "password": "kkzh2prsyr2ik47as615",
+      "server": "64.94.95.118",
+      "server_port": 57142,
+      "tag": "08-trojan-美国_Dallas_Dedicated.com_Gemini_Claude4",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "64.94.95.118"
+      },
+      "type": "trojan"
+    },
+    {
+      "server": "192.0.63.30",
+      "server_port": 8880,
+      "tag": "09-vless-美国 V2CROSS.COM",
+      "type": "vless",
+      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    },
+    {
+      "server": "159.112.235.52",
+      "server_port": 443,
+      "tag": "10-vless-🔥Join Telegram:@Farah_VPN🟣",
       "tls": {
         "enabled": true,
         "insecure": false,
-        "server_name": "www.ignitelimit.com"
+        "server_name": "octopusss.net"
+      },
+      "type": "vless",
+      "uuid": "073d1d50-8478-47bf-a828-7a1b381931d5"
+    },
+    {
+      "password": "humanity",
+      "server": "198.202.211.1",
+      "server_port": 443,
+      "tag": "11-trojan-🔥Join Telegram:@Farah_VPN🟣",
+      "tls": {
+        "enabled": true,
+        "insecure": false,
+        "server_name": "www.creationlong.org"
       },
       "type": "trojan"
     },
     {
       "server": "199.232.22.39",
       "server_port": 443,
-      "tag": "04-vless-🏳️ 💥Config_jo-238",
+      "tag": "12-vless-🏳️ 💥Config_jo-239",
       "tls": {
         "enabled": true,
         "insecure": false,
@@ -43,25 +124,20 @@
       "uuid": "891710f4-45f3-41b1-99a6-6f1510f83c10"
     },
     {
-      "password": "humanity",
-      "server": "198.202.211.1",
-      "server_port": 443,
-      "tag": "05-trojan-🔥Join Telegram:@Farah_VPN🟣",
-      "tls": {
-        "enabled": true,
-        "insecure": false,
-        "server_name": "www.creationlong.org"
-      },
-      "type": "trojan"
-    },
-    {
       "interval": "5m",
       "outbounds": [
-        "01-vmess-美国_Denver_Hurricane Electric LLC_Claude1",
-        "02-vmess-美国_Denver_Hurricane Electric LLC_Claude2",
-        "03-trojan-⚡ b2n.ir/v2ray-configs | 402",
-        "04-vless-🏳️ 💥Config_jo-238",
-        "05-trojan-🔥Join Telegram:@Farah_VPN🟣"
+        "01-shadowsocks-🇺🇸US-156.146.38.167-6047",
+        "02-shadowsocks-🇺🇸 US 68",
+        "03-shadowsocks-🇺🇸 [276.1ms +/-629ms] shadowsocks-194",
+        "04-shadowsocks-🇺🇸 US 69",
+        "05-trojan-美国_Dallas_Dedicated.com_Gemini_Claude3",
+        "06-trojan-美国_Dallas_Dedicated.com_Gemini_Claude2",
+        "07-trojan-美国_Dallas_Dedicated.com_Gemini_Claude1",
+        "08-trojan-美国_Dallas_Dedicated.com_Gemini_Claude4",
+        "09-vless-美国 V2CROSS.COM",
+        "10-vless-🔥Join Telegram:@Farah_VPN🟣",
+        "11-trojan-🔥Join Telegram:@Farah_VPN🟣",
+        "12-vless-🏳️ 💥Config_jo-239"
       ],
       "tag": "auto",
       "type": "urltest",
@@ -70,11 +146,18 @@
     {
       "outbounds": [
         "auto",
-        "01-vmess-美国_Denver_Hurricane Electric LLC_Claude1",
-        "02-vmess-美国_Denver_Hurricane Electric LLC_Claude2",
-        "03-trojan-⚡ b2n.ir/v2ray-configs | 402",
-        "04-vless-🏳️ 💥Config_jo-238",
-        "05-trojan-🔥Join Telegram:@Farah_VPN🟣"
+        "01-shadowsocks-🇺🇸US-156.146.38.167-6047",
+        "02-shadowsocks-🇺🇸 US 68",
+        "03-shadowsocks-🇺🇸 [276.1ms +/-629ms] shadowsocks-194",
+        "04-shadowsocks-🇺🇸 US 69",
+        "05-trojan-美国_Dallas_Dedicated.com_Gemini_Claude3",
+        "06-trojan-美国_Dallas_Dedicated.com_Gemini_Claude2",
+        "07-trojan-美国_Dallas_Dedicated.com_Gemini_Claude1",
+        "08-trojan-美国_Dallas_Dedicated.com_Gemini_Claude4",
+        "09-vless-美国 V2CROSS.COM",
+        "10-vless-🔥Join Telegram:@Farah_VPN🟣",
+        "11-trojan-🔥Join Telegram:@Farah_VPN🟣",
+        "12-vless-🏳️ 💥Config_jo-239"
       ],
       "tag": "select",
       "type": "selector"

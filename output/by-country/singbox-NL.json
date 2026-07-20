@@ -1,0 +1,63 @@
+{
+  "outbounds": [
+    {
+      "server": "45.131.209.30",
+      "server_port": 8880,
+      "tag": "01-vless-🔥Join Telegram:@Farah_VPN🟣",
+      "type": "vless",
+      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    },
+    {
+      "password": "c206d543-023d-46cc-9d5a-1f0f2fc16323",
+      "server": "188.164.248.122",
+      "server_port": 443,
+      "tag": "02-trojan-🔥Join Telegram:@Farah_VPN🟣",
+      "tls": {
+        "enabled": true,
+        "insecure": false,
+        "server_name": "space.byu.id.yxls.eu.cc"
+      },
+      "type": "trojan"
+    },
+    {
+      "server": "188.164.248.143",
+      "server_port": 2087,
+      "tag": "03-vless-🏳️ 💥Config_jo-225",
+      "tls": {
+        "enabled": true,
+        "insecure": false,
+        "server_name": "vp24.cc.cd"
+      },
+      "type": "vless",
+      "uuid": "7b102311-43fd-4e8f-877e-8090623c101d"
+    },
+    {
+      "interval": "5m",
+      "outbounds": [
+        "01-vless-🔥Join Telegram:@Farah_VPN🟣",
+        "02-trojan-🔥Join Telegram:@Farah_VPN🟣",
+        "03-vless-🏳️ 💥Config_jo-225"
+      ],
+      "tag": "auto",
+      "type": "urltest",
+      "url": "https://www.gstatic.com/generate_204"
+    },
+    {
+      "outbounds": [
+        "auto",
+        "01-vless-🔥Join Telegram:@Farah_VPN🟣",
+        "02-trojan-🔥Join Telegram:@Farah_VPN🟣",
+        "03-vless-🏳️ 💥Config_jo-225"
+      ],
+      "tag": "select",
+      "type": "selector"
+    },
+    {
+      "tag": "direct",
+      "type": "direct"
+    }
+  ],
+  "route": {
+    "final": "select"
+  }
+}
