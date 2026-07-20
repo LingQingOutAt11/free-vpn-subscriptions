@@ -1,25 +1,15 @@
 mode: rule
 proxies:
     - cipher: rc4-md5
-      name: "01-shadowsocks-\U0001F1FA\U0001F1F8US-138.199.42.68-3869"
+      name: "01-shadowsocks-\U0001F1FA\U0001F1F8 US 11"
       password: 14fFPrbezE3HDZzsMOr6
       port: 8080
       server: 138.199.42.68
       type: ss
       udp: true
-    - name: 02-vless-node
-      network: ws
-      port: 443
-      server: 104.16.72.50
-      servername: t1s1.rittbo.kdns.fr
-      skip-cert-verify: false
-      tls: true
-      type: vless
-      udp: true
-      uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
     - client-fingerprint: firefox
       flow: xtls-rprx-vision
-      name: "03-vless-\U0001F1FA\U0001F1F8[openproxylist.com] vless-US"
+      name: "02-vless-\U0001F1FA\U0001F1F8[openproxylist.com] vless-US"
       network: tcp
       port: 443
       reality-opts:
@@ -31,57 +21,34 @@ proxies:
       type: vless
       udp: true
       uuid: 70f8d74a-7938-4f21-9293-2c437a939247
+    - name: "03-trojan-\U0001F1FA\U0001F1F8 [940.4ms +/-2621ms] trojan-59508879"
+      password: bIsrw94HH7zmhmvmGskKIb4HbmOZdcCR
+      port: 58615
+      server: 148.72.168.35
+      skip-cert-verify: true
+      sni: 148.72.168.35
+      type: trojan
+      udp: true
     - name: "04-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
       network: ws
       port: 443
-      server: 104.17.25.173
+      server: 104.17.180.39
       servername: t1s1.rittbo.kdns.fr
       skip-cert-verify: false
       tls: true
       type: vless
       udp: true
       uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-    - name: "05-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-      network: ws
-      port: 8443
-      server: 45.130.125.207
-      servername: t1s1.rittbo.kdns.fr
-      skip-cert-verify: false
-      tls: true
-      type: vless
+    - alterId: 0
+      cipher: auto
+      name: 05-vmess-加拿大_Toronto_GLOBALTELEHOST_Gemini_Claude
+      network: tcp
+      port: 18000
+      server: 134.195.196.211
+      type: vmess
       udp: true
-      uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-    - name: "06-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-      network: ws
-      port: 443
-      server: 172.64.146.66
-      servername: t1s1.rittbo.kdns.fr
-      skip-cert-verify: false
-      tls: true
-      type: vless
-      udp: true
-      uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-    - name: "07-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-      network: ws
-      port: 443
-      server: 162.159.42.182
-      servername: t1s1.rittbo.kdns.fr
-      skip-cert-verify: false
-      tls: true
-      type: vless
-      udp: true
-      uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-    - name: "08-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-      network: ws
-      port: 443
-      server: 162.159.42.163
-      servername: t1s1.rittbo.kdns.fr
-      skip-cert-verify: false
-      tls: true
-      type: vless
-      udp: true
-      uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-    - name: "09-vless-\U0001F3F3️ \U0001F4A5Config_jo-314"
+      uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+    - name: "06-vless-\U0001F3F3️ \U0001F4A5Config_jo-319"
       network: ws
       port: 8443
       server: 104.16.72.20
@@ -91,73 +58,9 @@ proxies:
       type: vless
       udp: true
       uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-    - name: "10-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+    - name: "07-vless-\U0001F3F3️ \U0001F4A5Config_jo-331"
       network: ws
-      port: 443
-      server: 91.193.58.178
-      servername: 3da0360c.myblog-2hd.pages.dev
-      skip-cert-verify: false
-      tls: true
-      type: vless
-      udp: true
-      uuid: fb978279-0a28-4045-8258-e9ab97deaf2b
-    - name: "11-vless-\U0001F3F3️ \U0001F4A5Config_jo-330"
-      network: ws
-      port: 443
-      server: 172.67.70.92
-      servername: t1s1.rittbo.kdns.fr
-      skip-cert-verify: false
-      tls: true
-      type: vless
-      udp: true
-      uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-    - name: "12-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-      network: ws
-      port: 443
-      server: 162.159.3.48
-      servername: t1s1.rittbo.kdns.fr
-      skip-cert-verify: false
-      tls: true
-      type: vless
-      udp: true
-      uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-    - name: "13-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-      network: ws
-      port: 443
-      server: 104.16.73.137
-      servername: t1s1.rittbo.kdns.fr
-      skip-cert-verify: false
-      tls: true
-      type: vless
-      udp: true
-      uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-    - name: 14-vless-⚡ b2n.ir/v2ray-configs | 27
-      network: ws
-      port: 443
-      server: 104.18.45.104
-      servername: t1s1.rittbo.kdns.fr
-      skip-cert-verify: false
-      tls: true
-      type: vless
-      udp: true
-      uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-    - client-fingerprint: chrome
-      flow: xtls-rprx-vision
-      name: "15-vless-\U0001F1FA\U0001F1F8[openproxylist.com] vless-US"
-      network: tcp
-      port: 18662
-      reality-opts:
-        public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-        short-id: 48050fab
-      server: 67.220.73.204
-      servername: www.apple.com
-      tls: true
-      type: vless
-      udp: true
-      uuid: 814bd064-544d-4255-a070-5705c03f6da9
-    - name: "16-vless-\U0001F3F3️ \U0001F4A5Config_jo-332"
-      network: ws
-      port: 443
+      port: 8443
       server: 45.130.125.207
       servername: t1s1.rittbo.kdns.fr
       skip-cert-verify: false
@@ -165,195 +68,17 @@ proxies:
       type: vless
       udp: true
       uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-    - name: "17-vless-\U0001F3F3️ \U0001F4A5Config_jo-319"
+    - name: "08-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
       network: ws
       port: 443
-      server: 104.21.47.19
+      server: 172.64.147.104
       servername: t1s1.rittbo.kdns.fr
       skip-cert-verify: false
       tls: true
       type: vless
       udp: true
       uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-    - name: "18-vless-\U0001F3F3️ \U0001F4A5Config_jo-329"
-      network: ws
-      port: 443
-      server: 172.66.45.6
-      servername: t1s1.rittbo.kdns.fr
-      skip-cert-verify: false
-      tls: true
-      type: vless
-      udp: true
-      uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-    - name: "19-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-      network: ws
-      port: 443
-      server: 104.26.4.60
-      servername: t1s1.rittbo.kdns.fr
-      skip-cert-verify: false
-      tls: true
-      type: vless
-      udp: true
-      uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-    - name: "20-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-      network: ws
-      port: 443
-      server: 172.64.145.186
-      servername: t1s1.rittbo.kdns.fr
-      skip-cert-verify: false
-      tls: true
-      type: vless
-      udp: true
-      uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-    - name: "21-vless-\U0001F3F3️ \U0001F4A5Config_jo-245"
-      network: ws
-      port: 8443
-      server: 92.243.74.4
-      servername: vp29.cc.cd
-      skip-cert-verify: false
-      tls: true
-      type: vless
-      udp: true
-      uuid: 7b102311-43fd-4e8f-877e-8090623c101d
-    - name: "22-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-      network: ws
-      port: 443
-      server: 172.64.145.2
-      servername: t1s1.rittbo.kdns.fr
-      skip-cert-verify: false
-      tls: true
-      type: vless
-      udp: true
-      uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-    - name: "23-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-      network: ws
-      port: 443
-      server: 173.245.58.87
-      servername: t1s1.rittbo.kdns.fr
-      skip-cert-verify: false
-      tls: true
-      type: vless
-      udp: true
-      uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-    - name: 24-trojan-荷兰 V2CROSS.COM
-      password: c206d543-023d-46cc-9d5a-1f0f2fc16323
-      port: 443
-      server: 188.164.248.122
-      skip-cert-verify: false
-      sni: space.byu.id.yxls.eu.cc
-      type: trojan
-      udp: true
-    - name: "25-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-      network: ws
-      port: 443
-      server: 104.19.145.11
-      servername: t1s1.rittbo.kdns.fr
-      skip-cert-verify: false
-      tls: true
-      type: vless
-      udp: true
-      uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-    - name: "26-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-      network: ws
-      port: 443
-      server: 172.67.167.207
-      servername: edt2.yfqh08811.ccwu.cc
-      skip-cert-verify: false
-      tls: true
-      type: vless
-      udp: true
-      uuid: 4a1441b0-7bc8-4906-85cf-6b59c256b480
-    - name: 27-vless-⚡ b2n.ir/v2ray-configs | 263
-      network: ws
-      port: 443
-      server: support.zoom.us
-      servername: support.zoom.us.yxls.eu.cc
-      skip-cert-verify: false
-      tls: true
-      type: vless
-      udp: true
-      uuid: 5aafc2be-9348-4dec-b896-f4a91253bbca
-    - name: "28-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-      network: ws
-      port: 2087
-      server: 8.35.211.178
-      servername: vp3.cc.cd
-      skip-cert-verify: false
-      tls: true
-      type: vless
-      udp: true
-      uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b
-    - name: 29-vless-⚡ b2n.ir/v2ray-configs | 974
-      network: ws
-      port: 8443
-      server: 8.35.211.186
-      servername: vp11.cc.cd
-      skip-cert-verify: false
-      tls: true
-      type: vless
-      udp: true
-      uuid: 7b102311-43fd-4e8f-877e-8090623c101d
-    - name: "30-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-      network: ws
-      port: 443
-      server: 198.41.223.238
-      servername: t1s1.rittbo.kdns.fr
-      skip-cert-verify: false
-      tls: true
-      type: vless
-      udp: true
-      uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-    - name: "31-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-      network: ws
-      port: 443
-      server: 104.18.42.54
-      servername: t1s1.rittbo.kdns.fr
-      skip-cert-verify: false
-      tls: true
-      type: vless
-      udp: true
-      uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-    - name: "32-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-      network: ws
-      port: 8443
-      server: 198.41.223.216
-      servername: vp15.cc.cd
-      skip-cert-verify: false
-      tls: true
-      type: vless
-      udp: true
-      uuid: 7b102311-43fd-4e8f-877e-8090623c101d
-    - name: 33-vless-⚡ b2n.ir/v2ray-configs | 386
-      network: ws
-      port: 2087
-      server: 188.164.248.143
-      servername: vp24.cc.cd
-      skip-cert-verify: false
-      tls: true
-      type: vless
-      udp: true
-      uuid: 7b102311-43fd-4e8f-877e-8090623c101d
-    - name: "34-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-      network: ws
-      port: 2087
-      server: 141.193.27.16
-      servername: valid22.validbv9501.ir
-      skip-cert-verify: false
-      tls: true
-      type: vless
-      udp: true
-      uuid: 38a43f18-b4d9-443f-9ff1-4cf9de3d666e
-    - name: "35-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-      network: ws
-      port: 2087
-      server: 173.245.58.209
-      servername: wefast.ccwu.cc
-      skip-cert-verify: false
-      tls: true
-      type: vless
-      udp: true
-      uuid: fb978279-0a28-4045-8258-e9ab97deaf2b
-    - name: "36-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+    - name: "09-vless-\U0001F3F3️ \U0001F4A5Config_jo-321"
       network: ws
       port: 443
       server: 104.21.227.134
@@ -363,37 +88,321 @@ proxies:
       type: vless
       udp: true
       uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-    - name: "37-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-      network: ws
-      port: 2087
-      server: 91.193.58.124
-      servername: vp2.cc.cd
-      skip-cert-verify: false
-      tls: true
-      type: vless
-      udp: true
-      uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b
-    - name: "38-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-      network: ws
-      port: 8443
-      server: 198.41.223.58
-      servername: vp28.cc.cd
-      skip-cert-verify: false
-      tls: true
-      type: vless
-      udp: true
-      uuid: 7b102311-43fd-4e8f-877e-8090623c101d
-    - name: "39-vless-\U0001F3F3️ \U0001F4A5Config_jo-320"
+    - name: "10-vless-\U0001F3F3️ \U0001F4A5Config_jo-320"
       network: ws
       port: 443
-      server: 104.21.94.161
+      server: 104.16.72.50
       servername: t1s1.rittbo.kdns.fr
       skip-cert-verify: false
       tls: true
       type: vless
       udp: true
       uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-    - name: "40-vless-\U0001F3F3️ \U0001F4A5Config_jo-238"
+    - name: "11-vless-\U0001F3F3️ \U0001F4A5Config_jo-327"
+      network: ws
+      port: 443
+      server: 172.64.145.186
+      servername: t1s1.rittbo.kdns.fr
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+    - name: "12-vless-\U0001F3F3️ \U0001F4A5Config_jo-329"
+      network: ws
+      port: 443
+      server: 172.64.146.66
+      servername: t1s1.rittbo.kdns.fr
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+    - name: "13-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+      network: ws
+      port: 443
+      server: 66.45.118.13
+      servername: edge-4cb23bf6.pages.dev
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: 4feb7818-dc02-46cd-b985-abf3fdd0cdc5
+    - name: 14-vless-美国 CloudFlare节点
+      network: ws
+      port: 443
+      server: 104.16.72.2
+      servername: t1s1.rittbo.kdns.fr
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+    - name: "15-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+      network: ws
+      port: 443
+      server: 104.16.73.137
+      servername: t1s1.rittbo.kdns.fr
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+    - name: "16-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+      network: ws
+      port: 443
+      server: 45.130.125.207
+      servername: t1s1.rittbo.kdns.fr
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+    - name: "17-vless-\U0001F3F3️ \U0001F4A5Config_jo-230"
+      network: ws
+      port: 443
+      server: 162.159.18.122
+      servername: edt2.yfqh08811.ccwu.cc
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: 4a1441b0-7bc8-4906-85cf-6b59c256b480
+    - alterId: 0
+      cipher: auto
+      name: 18-vmess-加拿大_Toronto_GLOBALTELEHOST_Claude
+      network: tcp
+      port: 18000
+      server: 23.162.200.198
+      type: vmess
+      udp: true
+      uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+    - name: "19-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+      network: ws
+      port: 443
+      server: 172.64.145.2
+      servername: t1s1.rittbo.kdns.fr
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+    - name: "20-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+      network: ws
+      port: 443
+      server: 104.18.38.47
+      servername: t1s1.rittbo.kdns.fr
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+    - name: "21-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+      network: ws
+      port: 443
+      server: 173.245.58.87
+      servername: t1s1.rittbo.kdns.fr
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+    - name: "22-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+      network: ws
+      port: 443
+      server: store.ubi.com
+      servername: t1s1.rittbo.kdns.fr
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+    - name: "23-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+      network: ws
+      port: 443
+      server: 162.159.42.163
+      servername: t1s1.rittbo.kdns.fr
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+    - name: "24-vless-\U0001F3F3️ \U0001F4A5Config_jo-322"
+      network: ws
+      port: 443
+      server: 104.21.47.19
+      servername: t1s1.rittbo.kdns.fr
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+    - name: "25-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+      network: ws
+      port: 8443
+      server: 198.41.223.216
+      servername: vp15.cc.cd
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+    - name: "26-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+      network: ws
+      port: 443
+      server: 172.64.151.158
+      servername: t1s1.rittbo.kdns.fr
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+    - name: "27-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+      network: ws
+      port: 443
+      server: 108.162.196.3
+      servername: t1s1.rittbo.kdns.fr
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+    - name: "28-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+      network: ws
+      port: 2083
+      server: 162.159.11.57
+      servername: t1s1.rittbo.kdns.fr
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+    - cipher: aes-256-gcm
+      name: 29-shadowsocks-加拿大_Toronto_BrainStorm Network Inc_Claud
+      password: KixLvKzwjekG00rm
+      port: 8080
+      server: 185.196.61.82
+      type: ss
+      udp: true
+    - name: "30-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+      network: ws
+      port: 443
+      server: xn--b6gac.eu.org
+      servername: edt2.yfqh08811.ccwu.cc
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: 4a1441b0-7bc8-4906-85cf-6b59c256b480
+    - name: "31-vless-\U0001F3F3️ \U0001F4A5Config_jo-244"
+      network: ws
+      port: 8443
+      server: 92.243.74.4
+      servername: vp29.cc.cd
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+    - name: 32-vless-美国 CloudFlare节点
+      network: ws
+      port: 2053
+      server: 104.18.33.139
+      servername: vp40.cc.cd
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+    - name: "33-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+      network: ws
+      port: 443
+      server: 104.17.25.173
+      servername: t1s1.rittbo.kdns.fr
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+    - name: "34-trojan-\U0001F3F3️ \U0001F4A5Config_jo-181"
+      password: MITIVPN
+      port: 443
+      server: 104.26.15.137
+      skip-cert-verify: true
+      sni: MiTiVPN----o.MAQROR.ir
+      type: trojan
+      udp: true
+    - name: 35-vless-⚡ b2n.ir/v2ray-configs | 283
+      network: ws
+      port: 443
+      server: 162.159.38.119
+      servername: t1s1.rittbo.kdns.fr
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+    - name: "36-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+      network: ws
+      port: 443
+      server: 162.159.8.123
+      servername: t1s1.rittbo.kdns.fr
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+    - name: "37-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+      network: ws
+      port: 8443
+      server: 108.162.198.43
+      servername: t1s1.rittbo.kdns.fr
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+    - name: "38-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+      network: ws
+      port: 443
+      server: 104.18.42.54
+      servername: t1s1.rittbo.kdns.fr
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+    - name: "39-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+      network: ws
+      port: 2083
+      server: 8.35.211.62
+      servername: vp39.cc.cd
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+    - name: "40-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+      network: ws
+      port: 443
+      server: 172.64.53.34
+      servername: t1s1.rittbo.kdns.fr
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+    - name: "41-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+      network: ws
+      port: 443
+      server: 172.66.45.6
+      servername: t1s1.rittbo.kdns.fr
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+    - name: "42-vless-\U0001F3F3️ \U0001F4A5Config_jo-236"
       network: ws
       port: 8443
       server: 91.193.59.165
@@ -403,19 +412,44 @@ proxies:
       type: vless
       udp: true
       uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b
-    - name: 41-vless-⚡ b2n.ir/v2ray-configs | 522
+    - name: "43-trojan-\U0001F3F3️ \U0001F4A5Config_jo-180"
+      password: MITIVPN
+      port: 443
+      server: 104.16.72.251
+      skip-cert-verify: true
+      sni: 7---MiTiVPN---MiTiVPN-7.MAQROR.ir
+      type: trojan
+      udp: true
+    - name: "44-vless-\U0001F3F3️ \U0001F4A5Config_jo-330"
       network: ws
       port: 443
-      server: 104.20.13.116
-      servername: ourfast.ccwu.cc
+      server: 172.64.53.27
+      servername: t1s1.rittbo.kdns.fr
       skip-cert-verify: false
       tls: true
       type: vless
       udp: true
-      uuid: fb978279-0a28-4045-8258-e9ab97deaf2b
+      uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+    - name: "45-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+      network: ws
+      port: 2095
+      server: 104.18.42.163
+      type: vless
+      udp: true
+      uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+    - name: "46-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+      network: ws
+      port: 2083
+      server: 162.159.44.172
+      servername: t1s1.rittbo.kdns.fr
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
     - alterId: 0
       cipher: auto
-      name: "42-vmess-\U0001F1FA\U0001F1F8 US 19"
+      name: "47-vmess-\U0001F1FA\U0001F1F8 US 162"
       network: ws
       port: 443
       server: zt-ai.cloud
@@ -425,157 +459,25 @@ proxies:
       type: vmess
       udp: true
       uuid: fce3d6a4-0f12-49b5-a810-84bcf0fde202
-    - name: "43-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-      network: ws
-      port: 443
-      server: love.ns.cloudflare.com
-      servername: deicl.redstone-vex.sbs
-      skip-cert-verify: false
-      tls: true
-      type: vless
-      udp: true
-      uuid: 8ad6f598-cd8d-4fca-848e-05fc9be15ff3
-    - name: "44-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-      network: ws
-      port: 443
-      server: 159.112.235.52
-      servername: octopusss.net
-      skip-cert-verify: false
-      tls: true
-      type: vless
-      udp: true
-      uuid: 073d1d50-8478-47bf-a828-7a1b381931d5
-    - name: "45-vless-\U0001F3F3️ \U0001F4A5Config_jo-277"
-      network: ws
-      port: 443
-      server: 173.245.58.75
-      servername: terazhediii.info
-      skip-cert-verify: false
-      tls: true
-      type: vless
-      udp: true
-      uuid: b2f6aa3a-2550-4a1c-b2c0-1c94b1207217
-    - name: "46-vless-\U0001F3F3️ \U0001F4A5Config_jo-256"
-      network: ws
-      port: 443
-      server: 199.232.22.39
-      servername: ssl.fastly.com
-      skip-cert-verify: false
-      tls: true
-      type: vless
-      udp: true
-      uuid: 891710f4-45f3-41b1-99a6-6f1510f83c10
-    - name: "47-trojan-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+    - name: "48-trojan-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
       password: humanity
       port: 443
-      server: 45.130.125.2
-      skip-cert-verify: false
-      sni: Www.cReaTIOnLONG.OrG
-      type: trojan
-      udp: true
-    - name: 48-trojan-@filembad
-      password: humanity
-      port: 443
-      server: 188.114.98.0
-      skip-cert-verify: true
-      sni: www.calmlunch.com
-      type: trojan
-      udp: true
-    - name: 49-vless-⚡ b2n.ir/v2ray-configs | 105
-      network: ws
-      port: 443
-      server: 104.27.7.125
-      servername: amooaliii.net
-      skip-cert-verify: false
-      tls: true
-      type: vless
-      udp: true
-      uuid: 72d1797c-cef8-410a-b8fd-db9104dc3cb0
-    - name: "50-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-      network: ws
-      port: 443
-      server: betty.ns.cloudflare.com
-      servername: amooaliii.net
-      skip-cert-verify: false
-      tls: true
-      type: vless
-      udp: true
-      uuid: 72d1797c-cef8-410a-b8fd-db9104dc3cb0
-    - name: "51-trojan-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-      password: humanity
-      port: 443
-      server: 165.215.250.14
+      server: 104.17.121.71
       skip-cert-verify: false
       sni: www.calmlunch.com
       type: trojan
       udp: true
-    - name: "52-trojan-\U0001F1FA\U0001F1F8 30 - US - Trojan/WS/TLS - 443"
-      password: humanity
-      port: 443
-      server: 104.18.12.149
-      skip-cert-verify: false
-      sni: www.calmlunch.com
-      type: trojan
-      udp: true
-    - name: "53-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+    - name: 49-vless-美国 CloudFlare节点
       network: ws
-      port: 443
-      server: 45.130.125.217
-      servername: shegeftihaaa.net
+      port: 8443
+      server: 172.64.52.134
+      servername: t1s1.rittbo.kdns.fr
       skip-cert-verify: false
       tls: true
       type: vless
       udp: true
-      uuid: 7e544a9d-7667-413b-bbb0-b3bb1aac6d77
-    - name: "54-trojan-\U0001F310 WS-TLS | @Express_alaki | src @V2rayng"
-      password: humanity
-      port: 443
-      server: 188.114.96.3
-      skip-cert-verify: false
-      sni: www.calmlunch.com
-      type: trojan
-      udp: true
-    - name: "55-vless-\U0001F3F3️ \U0001F4A5Config_jo-204"
-      network: ws
-      port: 443
-      server: 188.114.97.6
-      servername: vangoghhh.info
-      skip-cert-verify: false
-      tls: true
-      type: vless
-      udp: true
-      uuid: 14b59caf-a196-4ec2-8c70-c7b388062f5b
-    - name: "56-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-      network: ws
-      port: 443
-      server: 104.16.72.2
-      servername: vangoghhh.info
-      skip-cert-verify: false
-      tls: true
-      type: vless
-      udp: true
-      uuid: 14b59caf-a196-4ec2-8c70-c7b388062f5b
-    - name: "57-vless-\U0001F3F3️ \U0001F4A5Config_jo-201"
-      network: ws
-      port: 443
-      server: 104.21.5.137
-      servername: vangoghhh.info
-      skip-cert-verify: false
-      tls: true
-      type: vless
-      udp: true
-      uuid: 14b59caf-a196-4ec2-8c70-c7b388062f5b
-    - name: "58-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-      network: ws
-      port: 443
-      server: 104.16.72.101
-      servername: shegeftihaaa.net
-      skip-cert-verify: false
-      tls: true
-      type: vless
-      udp: true
-      uuid: 7e544a9d-7667-413b-bbb0-b3bb1aac6d77
-    - name: "59-vless-\U0001F3F3️ \U0001F4A5Config_jo-205"
+      uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+    - name: "50-vless-\U0001F3F3️ \U0001F4A5Config_jo-210"
       network: ws
       port: 443
       server: 45.8.211.217
@@ -585,7 +487,63 @@ proxies:
       type: vless
       udp: true
       uuid: 14b59caf-a196-4ec2-8c70-c7b388062f5b
-    - name: "60-vless-\U0001F3F3️ \U0001F4A5Config_jo-248"
+    - name: 51-vless-美国 CloudFlare节点
+      network: ws
+      port: 443
+      server: 104.17.148.22
+      servername: octopusss.net
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: 073d1d50-8478-47bf-a828-7a1b381931d5
+    - name: "52-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+      network: ws
+      port: 443
+      server: 104.17.147.22
+      servername: octopusss.net
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: 073d1d50-8478-47bf-a828-7a1b381931d5
+    - name: 53-trojan-未知38
+      password: humanity
+      port: 443
+      server: 188.114.98.0
+      skip-cert-verify: false
+      sni: www.calmlunch.com
+      type: trojan
+      udp: true
+    - name: "54-vless-\U0001F3F3️ \U0001F4A5Config_jo-281"
+      network: ws
+      port: 443
+      server: 173.245.58.75
+      servername: terazhediii.info
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: b2f6aa3a-2550-4a1c-b2c0-1c94b1207217
+    - name: "55-trojan-\U0001F3F3️ \U0001F4A5Config_jo-183"
+      password: MiTiVPN
+      port: 443
+      server: 104.21.47.19
+      skip-cert-verify: true
+      sni: 6---MiTiVPN---MiTiVPNj.MAQROR.ir
+      type: trojan
+      udp: true
+    - name: "56-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+      network: ws
+      port: 443
+      server: 45.130.125.217
+      servername: shegeftihaaa.net
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: 7e544a9d-7667-413b-bbb0-b3bb1aac6d77
+    - name: "57-vless-\U0001F3F3️ \U0001F4A5Config_jo-249"
       network: ws
       port: 443
       server: 172.67.74.2
@@ -595,7 +553,53 @@ proxies:
       type: vless
       udp: true
       uuid: 7e544a9d-7667-413b-bbb0-b3bb1aac6d77
+    - name: "58-trojan-\U0001F3F3️ \U0001F4A5Config_jo-184"
+      password: MiTiVPN
+      port: 443
+      server: 45.130.125.112
+      skip-cert-verify: true
+      sni: h---MiTiVPN---MiTiVPN-ao.Maqror.ir
+      type: trojan
+      udp: true
+    - name: 59-vless-⚡ b2n.ir/v2ray-configs | 513
+      network: ws
+      port: 443
+      server: 104.16.72.101
+      servername: shegeftihaaa.net
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: 7e544a9d-7667-413b-bbb0-b3bb1aac6d77
+    - name: "60-trojan-\U0001F1FA\U0001F1F8 83 - US - Trojan/WS/TLS/UTLS - 443"
+      password: humanity
+      port: 443
+      server: www.ignitelimit.com
+      skip-cert-verify: false
+      sni: www.ignitelimit.com
+      type: trojan
+      udp: true
     - name: "61-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+      network: ws
+      port: 443
+      server: 188.114.97.6
+      servername: terazhediii.info
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: b2f6aa3a-2550-4a1c-b2c0-1c94b1207217
+    - name: "62-vless-\U0001F1F3\U0001F1F1[openproxylist.com] vless-NL"
+      network: ws
+      port: 443
+      server: 104.26.14.137
+      servername: shegeftihaaa.net
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: 7e544a9d-7667-413b-bbb0-b3bb1aac6d77
+    - name: "63-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
       network: ws
       port: 443
       server: 104.16.72.41
@@ -605,7 +609,25 @@ proxies:
       type: vless
       udp: true
       uuid: 7e544a9d-7667-413b-bbb0-b3bb1aac6d77
-    - name: "62-vless-\U0001F1F3\U0001F1F1[openproxylist.com] vless-NL"
+    - name: "64-trojan-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+      password: humanity
+      port: 443
+      server: 188.114.97.6
+      skip-cert-verify: true
+      sni: www.creationlong.org
+      type: trojan
+      udp: true
+    - name: "65-vless-\U0001F1F3\U0001F1F1[openproxylist.com] vless-NL"
+      network: ws
+      port: 443
+      server: betty.ns.cloudflare.com
+      servername: vangoghhh.info
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: 14b59caf-a196-4ec2-8c70-c7b388062f5b
+    - name: "66-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
       network: ws
       port: 443
       server: 45.131.208.61
@@ -615,79 +637,59 @@ proxies:
       type: vless
       udp: true
       uuid: 14b59caf-a196-4ec2-8c70-c7b388062f5b
-    - alterId: 0
-      cipher: auto
-      name: "63-vmess-\U0001F1FA\U0001F1F8 US 189"
+    - name: "67-vless-\U0001F3F3️ \U0001F4A5Config_jo-205"
       network: ws
       port: 443
-      server: 4cdn.njkrpl.com
-      servername: 4cdn.njkrpl.com
-      skip-cert-verify: false
-      tls: true
-      type: vmess
-      udp: true
-      uuid: a0449b33-d7f6-42a5-8bdc-3b5e727ec9f8
-    - name: 64-vless-法国_Wattrelos_OVH SAS_Claude1
-      network: ws
-      port: 8443
-      server: ad-020.limaklhc6.info
-      servername: ad-020.limaklhc6.info
+      server: 104.21.5.137
+      servername: vangoghhh.info
       skip-cert-verify: false
       tls: true
       type: vless
       udp: true
-      uuid: 1ad37675-b4cf-42fa-9dc5-83fd35cd63cb
-    - name: "65-trojan-\U0001F1FA\U0001F1F8 44 - US - Trojan/WS/TLS - 443"
-      password: humanity
-      port: 443
-      server: 172.64.147.24
-      skip-cert-verify: true
-      sni: www.gossipglove.com
-      type: trojan
-      udp: true
-    - name: 66-trojan-⚡ b2n.ir/v2ray-configs | 292
-      password: humanity
-      port: 443
-      server: 104.18.115.61
-      skip-cert-verify: false
-      sni: www.gossipglove.com
-      type: trojan
-      udp: true
-    - alterId: 0
-      cipher: auto
-      name: "67-vmess-\U0001F1FA\U0001F1F8 US 174"
+      uuid: 14b59caf-a196-4ec2-8c70-c7b388062f5b
+    - name: "68-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
       network: ws
       port: 443
-      server: jp01.scpnb.top
-      servername: jp01.scpnb.top
+      server: 45.131.211.136
+      servername: vangoghhh.info
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: 14b59caf-a196-4ec2-8c70-c7b388062f5b
+    - name: 69-trojan-@V2ray_confiig`
+      password: humanity
+      port: 443
+      server: 172.64.152.23
+      skip-cert-verify: false
+      sni: www.creationlong.org
+      type: trojan
+      udp: true
+    - name: "70-vless-\U0001F3F3️ \U0001F4A5Config_jo-264"
+      network: ws
+      port: 443
+      server: love.ns.cloudflare.com
+      servername: gioub.moonleafbox-kilo.info
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: 8ad6f598-cd8d-4fca-848e-05fc9be15ff3
+    - alterId: 0
+      cipher: auto
+      name: "71-vmess-\U0001F3C1RELAY-104.17.77.77-0559"
+      network: ws
+      port: 8443
+      server: 104.17.77.77
+      servername: v2ray1.dozapp.xyz
       skip-cert-verify: false
       tls: true
       type: vmess
       udp: true
-      uuid: 537a036f-a4ad-4051-80c4-011a46c62bb0
-    - name: "68-trojan-\U0001F1EA\U0001F1F8 67 - ES - Trojan/WS/TLS - 443"
-      password: humanity
-      port: 443
-      server: 185.18.250.252
-      skip-cert-verify: false
-      sni: www.gossipglove.com
-      type: trojan
-      udp: true
+      uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
     - alterId: 0
       cipher: auto
-      name: 69-vmess-104.28.211.186_Claude2
-      network: ws
-      port: 443
-      server: 2cdn.njkrpl.com
-      servername: 2cdn.njkrpl.com
-      skip-cert-verify: false
-      tls: true
-      type: vmess
-      udp: true
-      uuid: a0449b33-d7f6-42a5-8bdc-3b5e727ec9f8
-    - alterId: 0
-      cipher: auto
-      name: "70-vmess-\U0001F1FA\U0001F1F8 US 185"
+      name: 72-vmess-104.28.211.186_Claude1
       network: ws
       port: 443
       server: 8cdn.njkrpl.com
@@ -697,115 +699,123 @@ proxies:
       type: vmess
       udp: true
       uuid: a0449b33-d7f6-42a5-8bdc-3b5e727ec9f8
-    - name: 71-trojan-⚡ b2n.ir/v2ray-configs | 281
+    - name: "73-trojan-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
       password: humanity
       port: 443
-      server: 104.16.174.71
-      skip-cert-verify: false
-      sni: www.ignitelimit.com
-      type: trojan
-      udp: true
-    - name: "72-trojan-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-      password: humanity
-      port: 443
-      server: 198.202.211.1
+      server: 162.159.38.119
       skip-cert-verify: false
       sni: www.creationlong.org
       type: trojan
       udp: true
-    - name: "73-trojan-\U0001F1FA\U0001F1F8 US 172"
-      password: humanity
-      port: 443
-      server: www.multiplydose.com
-      skip-cert-verify: false
-      sni: www.multiplydose.com
-      type: trojan
-      udp: true
-    - name: "74-trojan-\U0001F1FA\U0001F1F8 26 - US - Trojan/WS/TLS - 443"
-      password: humanity
-      port: 443
-      server: 104.18.11.110
-      skip-cert-verify: false
-      sni: www.multiplydose.com
-      type: trojan
-      udp: true
-    - name: 75-trojan-@V2ray_confiig`
-      password: humanity
-      port: 443
-      server: 172.64.152.23
-      skip-cert-verify: false
-      sni: www.creationlong.org
-      type: trojan
-      udp: true
-    - name: "76-trojan-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-      password: humanity
-      port: 443
-      server: 104.18.7.147
-      skip-cert-verify: true
-      sni: www.gossipglove.com
-      type: trojan
-      udp: true
-    - name: "77-trojan-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-      password: humanity
-      port: 443
-      server: 104.19.208.184
-      skip-cert-verify: false
-      sni: www.multiplydose.com
-      type: trojan
-      udp: true
-    - name: "78-vless-\U0001F1F8\U0001F1EC[openproxylist.com] vless-SG"
+    - alterId: 0
+      cipher: auto
+      name: "74-vmess-\U0001F3C1RELAY-104.16.142.237-0206"
       network: ws
-      port: 2096
-      server: 104.17.70.206
-      servername: shalana.xyz
+      port: 443
+      server: 4cdn.njkrpl.com
+      servername: 4cdn.njkrpl.com
+      skip-cert-verify: false
+      tls: true
+      type: vmess
+      udp: true
+      uuid: a0449b33-d7f6-42a5-8bdc-3b5e727ec9f8
+    - name: "75-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+      network: ws
+      port: 2053
+      server: 45.130.125.158
+      servername: po.fastbrokencompony.com
       skip-cert-verify: false
       tls: true
       type: vless
       udp: true
-      uuid: 395d040e-a04a-43d7-a1e9-8635f545879a
+      uuid: e7961655-9674-4cbd-a36f-ec0d5d7d660c
+    - name: "76-vless-\U0001F3F3️ \U0001F4A5Config_jo-260"
+      network: ws
+      port: 443
+      server: 199.232.22.39
+      servername: ssl.fastly.com
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: 891710f4-45f3-41b1-99a6-6f1510f83c10
+    - alterId: 0
+      cipher: auto
+      name: "77-vmess-\U0001F3C1RELAY-104.19.230.21-0200"
+      network: ws
+      port: 443
+      server: 2cdn.njkrpl.com
+      servername: 2cdn.njkrpl.com
+      skip-cert-verify: false
+      tls: true
+      type: vmess
+      udp: true
+      uuid: a0449b33-d7f6-42a5-8bdc-3b5e727ec9f8
+    - name: "78-vless-\U0001F1EB\U0001F1EE[openproxylist.com] vless-FI"
+      network: ws
+      port: 443
+      server: 104.16.75.99
+      servername: fn-2.ariyuz.org
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: 03707fb7-0990-440f-88f6-b0e0f7242a38
     - name: "79-trojan-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
       password: humanity
       port: 443
-      server: 104.21.40.34
+      server: www.creationlong.org
       skip-cert-verify: false
-      sni: www.gossipglove.com
+      sni: ""
       type: trojan
       udp: true
-    - name: 80-trojan-⚡ b2n.ir/v2ray-configs | 69
-      password: humanity
-      port: 443
-      server: 141.101.90.101
-      skip-cert-verify: false
-      sni: www.ignitelimit.com
-      type: trojan
-      udp: true
-    - name: "81-trojan-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-      password: humanity
-      port: 443
-      server: 104.16.174.12
-      skip-cert-verify: false
-      sni: www.ignitelimit.com
-      type: trojan
-      udp: true
-    - name: 82-trojan-⚡ b2n.ir/v2ray-configs | 602
-      password: humanity
-      port: 443
-      server: 104.16.174.37
-      skip-cert-verify: false
-      sni: www.ignitelimit.com
-      type: trojan
-      udp: true
-    - name: "83-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+    - name: "80-vless-\U0001F1F8\U0001F1EC[openproxylist.com] vless-SG"
       network: ws
-      port: 8443
-      server: 172.64.155.209
-      servername: pn.lox30shop.ir
-      skip-cert-verify: false
-      tls: true
+      port: 80
+      server: support.zoom.us
       type: vless
       udp: true
-      uuid: 88360a6d-0fd7-49ef-ad06-6397fc7a80e5
+      uuid: cac6ec8f-99f0-44c5-814f-2f3f65e4db74
+    - name: "81-trojan-\U0001F525@bubuv2raybot"
+      password: humanity
+      port: 443
+      server: 104.18.12.149
+      skip-cert-verify: false
+      sni: www.multiplydose.com
+      type: trojan
+      udp: true
+    - name: "82-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+      network: ws
+      port: 8880
+      server: 162.159.156.214
+      type: vless
+      udp: true
+      uuid: 8991a496-1baa-486f-9948-ffe44e68c072
+    - name: "83-trojan-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+      password: humanity
+      port: 443
+      server: 104.26.14.137
+      skip-cert-verify: false
+      sni: www.ignitelimit.com
+      type: trojan
+      udp: true
     - name: "84-trojan-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+      password: humanity
+      port: 443
+      server: 104.16.174.44
+      skip-cert-verify: false
+      sni: www.ignitelimit.com
+      type: trojan
+      udp: true
+    - name: "85-trojan-\U0001F3F3️ \U0001F4A5Config_jo-182"
+      password: MiTiVPN
+      port: 443
+      server: 104.21.11.206
+      skip-cert-verify: true
+      sni: o---MiTiVPN---MiTiVPN-u.aPp-cLoud.IR
+      type: trojan
+      udp: true
+    - name: "86-trojan-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
       password: humanity
       port: 443
       server: 172.66.44.211
@@ -813,203 +823,259 @@ proxies:
       sni: www.multiplydose.com
       type: trojan
       udp: true
-    - name: "85-trojan-\U0001F1FA\U0001F1F8 83 - US - Trojan/WS/TLS/UTLS - 443"
-      password: humanity
+    - name: "87-vless-\U0001F1E9\U0001F1EA[openproxylist.com] vless-DE"
+      network: ws
       port: 443
-      server: www.ignitelimit.com
+      server: 104.16.75.251
+      servername: germany-2.ariyuz.org
       skip-cert-verify: false
-      sni: www.ignitelimit.com
-      type: trojan
+      tls: true
+      type: vless
       udp: true
-    - name: "86-trojan-\U0001F1FA\U0001F1F8 65 - US - Trojan/WS/TLS - 443"
+      uuid: 03707fb7-0990-440f-88f6-b0e0f7242a38
+    - name: "88-trojan-\U0001F310 WS-TLS | @Express_alaki | src @v2Line"
       password: humanity
       port: 443
       server: 172.67.180.92
+      skip-cert-verify: true
+      sni: www.multiplydose.com
+      type: trojan
+      udp: true
+    - name: "89-trojan-\U0001F310 WS-TLS | @Express_alaki | src @V2rayng"
+      password: humanity
+      port: 443
+      server: 188.114.96.3
+      skip-cert-verify: false
+      sni: www.calmlunch.com
+      type: trojan
+      udp: true
+    - name: "90-trojan-\U0001F1FA\U0001F1F8 26 - US - Trojan/WS/TLS - 443"
+      password: humanity
+      port: 443
+      server: 104.18.11.110
       skip-cert-verify: false
       sni: www.multiplydose.com
+      type: trojan
+      udp: true
+    - name: "91-trojan-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+      password: humanity
+      port: 443
+      server: 188.114.99.0
+      skip-cert-verify: false
+      sni: www.gossipglove.com
+      type: trojan
+      udp: true
+    - name: "92-trojan-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+      password: humanity
+      port: 443
+      server: www.gossipglove.com
+      skip-cert-verify: true
+      sni: ""
+      type: trojan
+      udp: true
+    - name: "93-trojan-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+      password: humanity
+      port: 443
+      server: 104.18.7.147
+      skip-cert-verify: true
+      sni: www.gossipglove.com
       type: trojan
       udp: true
 proxy-groups:
     - interval: 300
       name: auto
       proxies:
-        - "01-shadowsocks-\U0001F1FA\U0001F1F8US-138.199.42.68-3869"
-        - 02-vless-node
-        - "03-vless-\U0001F1FA\U0001F1F8[openproxylist.com] vless-US"
+        - "01-shadowsocks-\U0001F1FA\U0001F1F8 US 11"
+        - "02-vless-\U0001F1FA\U0001F1F8[openproxylist.com] vless-US"
+        - "03-trojan-\U0001F1FA\U0001F1F8 [940.4ms +/-2621ms] trojan-59508879"
         - "04-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-        - "05-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-        - "06-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-        - "07-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+        - 05-vmess-加拿大_Toronto_GLOBALTELEHOST_Gemini_Claude
+        - "06-vless-\U0001F3F3️ \U0001F4A5Config_jo-319"
+        - "07-vless-\U0001F3F3️ \U0001F4A5Config_jo-331"
         - "08-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-        - "09-vless-\U0001F3F3️ \U0001F4A5Config_jo-314"
-        - "10-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-        - "11-vless-\U0001F3F3️ \U0001F4A5Config_jo-330"
-        - "12-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+        - "09-vless-\U0001F3F3️ \U0001F4A5Config_jo-321"
+        - "10-vless-\U0001F3F3️ \U0001F4A5Config_jo-320"
+        - "11-vless-\U0001F3F3️ \U0001F4A5Config_jo-327"
+        - "12-vless-\U0001F3F3️ \U0001F4A5Config_jo-329"
         - "13-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-        - 14-vless-⚡ b2n.ir/v2ray-configs | 27
-        - "15-vless-\U0001F1FA\U0001F1F8[openproxylist.com] vless-US"
-        - "16-vless-\U0001F3F3️ \U0001F4A5Config_jo-332"
-        - "17-vless-\U0001F3F3️ \U0001F4A5Config_jo-319"
-        - "18-vless-\U0001F3F3️ \U0001F4A5Config_jo-329"
+        - 14-vless-美国 CloudFlare节点
+        - "15-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+        - "16-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+        - "17-vless-\U0001F3F3️ \U0001F4A5Config_jo-230"
+        - 18-vmess-加拿大_Toronto_GLOBALTELEHOST_Claude
         - "19-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
         - "20-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-        - "21-vless-\U0001F3F3️ \U0001F4A5Config_jo-245"
+        - "21-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
         - "22-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
         - "23-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-        - 24-trojan-荷兰 V2CROSS.COM
+        - "24-vless-\U0001F3F3️ \U0001F4A5Config_jo-322"
         - "25-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
         - "26-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-        - 27-vless-⚡ b2n.ir/v2ray-configs | 263
+        - "27-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
         - "28-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-        - 29-vless-⚡ b2n.ir/v2ray-configs | 974
+        - 29-shadowsocks-加拿大_Toronto_BrainStorm Network Inc_Claud
         - "30-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-        - "31-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-        - "32-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-        - 33-vless-⚡ b2n.ir/v2ray-configs | 386
-        - "34-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-        - "35-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+        - "31-vless-\U0001F3F3️ \U0001F4A5Config_jo-244"
+        - 32-vless-美国 CloudFlare节点
+        - "33-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+        - "34-trojan-\U0001F3F3️ \U0001F4A5Config_jo-181"
+        - 35-vless-⚡ b2n.ir/v2ray-configs | 283
         - "36-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
         - "37-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
         - "38-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-        - "39-vless-\U0001F3F3️ \U0001F4A5Config_jo-320"
-        - "40-vless-\U0001F3F3️ \U0001F4A5Config_jo-238"
-        - 41-vless-⚡ b2n.ir/v2ray-configs | 522
-        - "42-vmess-\U0001F1FA\U0001F1F8 US 19"
-        - "43-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-        - "44-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-        - "45-vless-\U0001F3F3️ \U0001F4A5Config_jo-277"
-        - "46-vless-\U0001F3F3️ \U0001F4A5Config_jo-256"
-        - "47-trojan-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-        - 48-trojan-@filembad
-        - 49-vless-⚡ b2n.ir/v2ray-configs | 105
-        - "50-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-        - "51-trojan-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-        - "52-trojan-\U0001F1FA\U0001F1F8 30 - US - Trojan/WS/TLS - 443"
-        - "53-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-        - "54-trojan-\U0001F310 WS-TLS | @Express_alaki | src @V2rayng"
-        - "55-vless-\U0001F3F3️ \U0001F4A5Config_jo-204"
+        - "39-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+        - "40-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+        - "41-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+        - "42-vless-\U0001F3F3️ \U0001F4A5Config_jo-236"
+        - "43-trojan-\U0001F3F3️ \U0001F4A5Config_jo-180"
+        - "44-vless-\U0001F3F3️ \U0001F4A5Config_jo-330"
+        - "45-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+        - "46-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+        - "47-vmess-\U0001F1FA\U0001F1F8 US 162"
+        - "48-trojan-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+        - 49-vless-美国 CloudFlare节点
+        - "50-vless-\U0001F3F3️ \U0001F4A5Config_jo-210"
+        - 51-vless-美国 CloudFlare节点
+        - "52-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+        - 53-trojan-未知38
+        - "54-vless-\U0001F3F3️ \U0001F4A5Config_jo-281"
+        - "55-trojan-\U0001F3F3️ \U0001F4A5Config_jo-183"
         - "56-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-        - "57-vless-\U0001F3F3️ \U0001F4A5Config_jo-201"
-        - "58-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-        - "59-vless-\U0001F3F3️ \U0001F4A5Config_jo-205"
-        - "60-vless-\U0001F3F3️ \U0001F4A5Config_jo-248"
+        - "57-vless-\U0001F3F3️ \U0001F4A5Config_jo-249"
+        - "58-trojan-\U0001F3F3️ \U0001F4A5Config_jo-184"
+        - 59-vless-⚡ b2n.ir/v2ray-configs | 513
+        - "60-trojan-\U0001F1FA\U0001F1F8 83 - US - Trojan/WS/TLS/UTLS - 443"
         - "61-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
         - "62-vless-\U0001F1F3\U0001F1F1[openproxylist.com] vless-NL"
-        - "63-vmess-\U0001F1FA\U0001F1F8 US 189"
-        - 64-vless-法国_Wattrelos_OVH SAS_Claude1
-        - "65-trojan-\U0001F1FA\U0001F1F8 44 - US - Trojan/WS/TLS - 443"
-        - 66-trojan-⚡ b2n.ir/v2ray-configs | 292
-        - "67-vmess-\U0001F1FA\U0001F1F8 US 174"
-        - "68-trojan-\U0001F1EA\U0001F1F8 67 - ES - Trojan/WS/TLS - 443"
-        - 69-vmess-104.28.211.186_Claude2
-        - "70-vmess-\U0001F1FA\U0001F1F8 US 185"
-        - 71-trojan-⚡ b2n.ir/v2ray-configs | 281
-        - "72-trojan-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-        - "73-trojan-\U0001F1FA\U0001F1F8 US 172"
-        - "74-trojan-\U0001F1FA\U0001F1F8 26 - US - Trojan/WS/TLS - 443"
-        - 75-trojan-@V2ray_confiig`
-        - "76-trojan-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-        - "77-trojan-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-        - "78-vless-\U0001F1F8\U0001F1EC[openproxylist.com] vless-SG"
+        - "63-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+        - "64-trojan-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+        - "65-vless-\U0001F1F3\U0001F1F1[openproxylist.com] vless-NL"
+        - "66-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+        - "67-vless-\U0001F3F3️ \U0001F4A5Config_jo-205"
+        - "68-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+        - 69-trojan-@V2ray_confiig`
+        - "70-vless-\U0001F3F3️ \U0001F4A5Config_jo-264"
+        - "71-vmess-\U0001F3C1RELAY-104.17.77.77-0559"
+        - 72-vmess-104.28.211.186_Claude1
+        - "73-trojan-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+        - "74-vmess-\U0001F3C1RELAY-104.16.142.237-0206"
+        - "75-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+        - "76-vless-\U0001F3F3️ \U0001F4A5Config_jo-260"
+        - "77-vmess-\U0001F3C1RELAY-104.19.230.21-0200"
+        - "78-vless-\U0001F1EB\U0001F1EE[openproxylist.com] vless-FI"
         - "79-trojan-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-        - 80-trojan-⚡ b2n.ir/v2ray-configs | 69
-        - "81-trojan-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-        - 82-trojan-⚡ b2n.ir/v2ray-configs | 602
-        - "83-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+        - "80-vless-\U0001F1F8\U0001F1EC[openproxylist.com] vless-SG"
+        - "81-trojan-\U0001F525@bubuv2raybot"
+        - "82-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+        - "83-trojan-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
         - "84-trojan-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-        - "85-trojan-\U0001F1FA\U0001F1F8 83 - US - Trojan/WS/TLS/UTLS - 443"
-        - "86-trojan-\U0001F1FA\U0001F1F8 65 - US - Trojan/WS/TLS - 443"
+        - "85-trojan-\U0001F3F3️ \U0001F4A5Config_jo-182"
+        - "86-trojan-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+        - "87-vless-\U0001F1E9\U0001F1EA[openproxylist.com] vless-DE"
+        - "88-trojan-\U0001F310 WS-TLS | @Express_alaki | src @v2Line"
+        - "89-trojan-\U0001F310 WS-TLS | @Express_alaki | src @V2rayng"
+        - "90-trojan-\U0001F1FA\U0001F1F8 26 - US - Trojan/WS/TLS - 443"
+        - "91-trojan-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+        - "92-trojan-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+        - "93-trojan-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
       type: url-test
       url: https://www.gstatic.com/generate_204
     - name: select
       proxies:
         - auto
-        - "01-shadowsocks-\U0001F1FA\U0001F1F8US-138.199.42.68-3869"
-        - 02-vless-node
-        - "03-vless-\U0001F1FA\U0001F1F8[openproxylist.com] vless-US"
+        - "01-shadowsocks-\U0001F1FA\U0001F1F8 US 11"
+        - "02-vless-\U0001F1FA\U0001F1F8[openproxylist.com] vless-US"
+        - "03-trojan-\U0001F1FA\U0001F1F8 [940.4ms +/-2621ms] trojan-59508879"
         - "04-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-        - "05-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-        - "06-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-        - "07-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+        - 05-vmess-加拿大_Toronto_GLOBALTELEHOST_Gemini_Claude
+        - "06-vless-\U0001F3F3️ \U0001F4A5Config_jo-319"
+        - "07-vless-\U0001F3F3️ \U0001F4A5Config_jo-331"
         - "08-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-        - "09-vless-\U0001F3F3️ \U0001F4A5Config_jo-314"
-        - "10-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-        - "11-vless-\U0001F3F3️ \U0001F4A5Config_jo-330"
-        - "12-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+        - "09-vless-\U0001F3F3️ \U0001F4A5Config_jo-321"
+        - "10-vless-\U0001F3F3️ \U0001F4A5Config_jo-320"
+        - "11-vless-\U0001F3F3️ \U0001F4A5Config_jo-327"
+        - "12-vless-\U0001F3F3️ \U0001F4A5Config_jo-329"
         - "13-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-        - 14-vless-⚡ b2n.ir/v2ray-configs | 27
-        - "15-vless-\U0001F1FA\U0001F1F8[openproxylist.com] vless-US"
-        - "16-vless-\U0001F3F3️ \U0001F4A5Config_jo-332"
-        - "17-vless-\U0001F3F3️ \U0001F4A5Config_jo-319"
-        - "18-vless-\U0001F3F3️ \U0001F4A5Config_jo-329"
+        - 14-vless-美国 CloudFlare节点
+        - "15-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+        - "16-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+        - "17-vless-\U0001F3F3️ \U0001F4A5Config_jo-230"
+        - 18-vmess-加拿大_Toronto_GLOBALTELEHOST_Claude
         - "19-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
         - "20-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-        - "21-vless-\U0001F3F3️ \U0001F4A5Config_jo-245"
+        - "21-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
         - "22-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
         - "23-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-        - 24-trojan-荷兰 V2CROSS.COM
+        - "24-vless-\U0001F3F3️ \U0001F4A5Config_jo-322"
         - "25-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
         - "26-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-        - 27-vless-⚡ b2n.ir/v2ray-configs | 263
+        - "27-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
         - "28-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-        - 29-vless-⚡ b2n.ir/v2ray-configs | 974
+        - 29-shadowsocks-加拿大_Toronto_BrainStorm Network Inc_Claud
         - "30-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-        - "31-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-        - "32-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-        - 33-vless-⚡ b2n.ir/v2ray-configs | 386
-        - "34-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-        - "35-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+        - "31-vless-\U0001F3F3️ \U0001F4A5Config_jo-244"
+        - 32-vless-美国 CloudFlare节点
+        - "33-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+        - "34-trojan-\U0001F3F3️ \U0001F4A5Config_jo-181"
+        - 35-vless-⚡ b2n.ir/v2ray-configs | 283
         - "36-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
         - "37-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
         - "38-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-        - "39-vless-\U0001F3F3️ \U0001F4A5Config_jo-320"
-        - "40-vless-\U0001F3F3️ \U0001F4A5Config_jo-238"
-        - 41-vless-⚡ b2n.ir/v2ray-configs | 522
-        - "42-vmess-\U0001F1FA\U0001F1F8 US 19"
-        - "43-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-        - "44-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-        - "45-vless-\U0001F3F3️ \U0001F4A5Config_jo-277"
-        - "46-vless-\U0001F3F3️ \U0001F4A5Config_jo-256"
-        - "47-trojan-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-        - 48-trojan-@filembad
-        - 49-vless-⚡ b2n.ir/v2ray-configs | 105
-        - "50-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-        - "51-trojan-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-        - "52-trojan-\U0001F1FA\U0001F1F8 30 - US - Trojan/WS/TLS - 443"
-        - "53-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-        - "54-trojan-\U0001F310 WS-TLS | @Express_alaki | src @V2rayng"
-        - "55-vless-\U0001F3F3️ \U0001F4A5Config_jo-204"
+        - "39-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+        - "40-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+        - "41-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+        - "42-vless-\U0001F3F3️ \U0001F4A5Config_jo-236"
+        - "43-trojan-\U0001F3F3️ \U0001F4A5Config_jo-180"
+        - "44-vless-\U0001F3F3️ \U0001F4A5Config_jo-330"
+        - "45-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+        - "46-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+        - "47-vmess-\U0001F1FA\U0001F1F8 US 162"
+        - "48-trojan-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+        - 49-vless-美国 CloudFlare节点
+        - "50-vless-\U0001F3F3️ \U0001F4A5Config_jo-210"
+        - 51-vless-美国 CloudFlare节点
+        - "52-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+        - 53-trojan-未知38
+        - "54-vless-\U0001F3F3️ \U0001F4A5Config_jo-281"
+        - "55-trojan-\U0001F3F3️ \U0001F4A5Config_jo-183"
         - "56-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-        - "57-vless-\U0001F3F3️ \U0001F4A5Config_jo-201"
-        - "58-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-        - "59-vless-\U0001F3F3️ \U0001F4A5Config_jo-205"
-        - "60-vless-\U0001F3F3️ \U0001F4A5Config_jo-248"
+        - "57-vless-\U0001F3F3️ \U0001F4A5Config_jo-249"
+        - "58-trojan-\U0001F3F3️ \U0001F4A5Config_jo-184"
+        - 59-vless-⚡ b2n.ir/v2ray-configs | 513
+        - "60-trojan-\U0001F1FA\U0001F1F8 83 - US - Trojan/WS/TLS/UTLS - 443"
         - "61-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
         - "62-vless-\U0001F1F3\U0001F1F1[openproxylist.com] vless-NL"
-        - "63-vmess-\U0001F1FA\U0001F1F8 US 189"
-        - 64-vless-法国_Wattrelos_OVH SAS_Claude1
-        - "65-trojan-\U0001F1FA\U0001F1F8 44 - US - Trojan/WS/TLS - 443"
-        - 66-trojan-⚡ b2n.ir/v2ray-configs | 292
-        - "67-vmess-\U0001F1FA\U0001F1F8 US 174"
-        - "68-trojan-\U0001F1EA\U0001F1F8 67 - ES - Trojan/WS/TLS - 443"
-        - 69-vmess-104.28.211.186_Claude2
-        - "70-vmess-\U0001F1FA\U0001F1F8 US 185"
-        - 71-trojan-⚡ b2n.ir/v2ray-configs | 281
-        - "72-trojan-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-        - "73-trojan-\U0001F1FA\U0001F1F8 US 172"
-        - "74-trojan-\U0001F1FA\U0001F1F8 26 - US - Trojan/WS/TLS - 443"
-        - 75-trojan-@V2ray_confiig`
-        - "76-trojan-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-        - "77-trojan-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-        - "78-vless-\U0001F1F8\U0001F1EC[openproxylist.com] vless-SG"
+        - "63-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+        - "64-trojan-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+        - "65-vless-\U0001F1F3\U0001F1F1[openproxylist.com] vless-NL"
+        - "66-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+        - "67-vless-\U0001F3F3️ \U0001F4A5Config_jo-205"
+        - "68-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+        - 69-trojan-@V2ray_confiig`
+        - "70-vless-\U0001F3F3️ \U0001F4A5Config_jo-264"
+        - "71-vmess-\U0001F3C1RELAY-104.17.77.77-0559"
+        - 72-vmess-104.28.211.186_Claude1
+        - "73-trojan-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+        - "74-vmess-\U0001F3C1RELAY-104.16.142.237-0206"
+        - "75-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+        - "76-vless-\U0001F3F3️ \U0001F4A5Config_jo-260"
+        - "77-vmess-\U0001F3C1RELAY-104.19.230.21-0200"
+        - "78-vless-\U0001F1EB\U0001F1EE[openproxylist.com] vless-FI"
         - "79-trojan-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-        - 80-trojan-⚡ b2n.ir/v2ray-configs | 69
-        - "81-trojan-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-        - 82-trojan-⚡ b2n.ir/v2ray-configs | 602
-        - "83-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+        - "80-vless-\U0001F1F8\U0001F1EC[openproxylist.com] vless-SG"
+        - "81-trojan-\U0001F525@bubuv2raybot"
+        - "82-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+        - "83-trojan-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
         - "84-trojan-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-        - "85-trojan-\U0001F1FA\U0001F1F8 83 - US - Trojan/WS/TLS/UTLS - 443"
-        - "86-trojan-\U0001F1FA\U0001F1F8 65 - US - Trojan/WS/TLS - 443"
+        - "85-trojan-\U0001F3F3️ \U0001F4A5Config_jo-182"
+        - "86-trojan-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+        - "87-vless-\U0001F1E9\U0001F1EA[openproxylist.com] vless-DE"
+        - "88-trojan-\U0001F310 WS-TLS | @Express_alaki | src @v2Line"
+        - "89-trojan-\U0001F310 WS-TLS | @Express_alaki | src @V2rayng"
+        - "90-trojan-\U0001F1FA\U0001F1F8 26 - US - Trojan/WS/TLS - 443"
+        - "91-trojan-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+        - "92-trojan-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+        - "93-trojan-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
       type: select
 rules:
     - DOMAIN-SUFFIX,weixin.qq.com,DIRECT
