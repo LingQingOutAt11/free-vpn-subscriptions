@@ -1,25 +1,123 @@
 mode: rule
 proxies:
-    - cipher: rc4-md5
-      name: "01-shadowsocks-\U0001F1FA\U0001F1F8US-138.199.42.68-3869"
-      password: 14fFPrbezE3HDZzsMOr6
-      port: 8080
-      server: 138.199.42.68
+    - cipher: aes-128-gcm
+      name: "01-shadowsocks-\U0001F1FA\U0001F1F8 Join Telegram:@Farah_VPN \U0001F1FA\U0001F1F8"
+      password: shadowsocks
+      port: 443
+      server: 156.146.38.169
       type: ss
       udp: true
-    - name: "02-trojan-\U0001F1FA\U0001F1F8 [532.1ms +/-1264ms] trojan-59508879"
-      password: bIsrw94HH7zmhmvmGskKIb4HbmOZdcCR
-      port: 58615
-      server: 148.72.168.35
+    - cipher: aes-128-gcm
+      name: "02-shadowsocks-\U0001F1FA\U0001F1F8 [292.2ms +/-654ms] shadowsocks-159"
+      password: shadowsocks
+      port: 443
+      server: 156.146.38.170
+      type: ss
+      udp: true
+    - cipher: aes-128-gcm
+      name: "03-shadowsocks-\U0001F1FA\U0001F1F8US-156.146.38.167-0177"
+      password: shadowsocks
+      port: 443
+      server: 156.146.38.167
+      type: ss
+      udp: true
+    - cipher: aes-128-gcm
+      name: "04-shadowsocks-\U0001F4CA51@oneclickvpnkeys"
+      password: shadowsocks
+      port: 443
+      server: 156.146.38.168
+      type: ss
+      udp: true
+    - name: "05-trojan-\U0001F1FA\U0001F1F8 [650.6ms +/-1693ms] trojan-2520864"
+      password: kkzh2prsyr2ik47as615
+      port: 57142
+      server: 64.94.95.117
       skip-cert-verify: true
-      sni: 148.72.168.35
+      sni: static.rutube.ru
+      type: trojan
+      udp: true
+    - name: "06-trojan-\U0001F1FA\U0001F1F8 [621.6ms +/-1616ms] trojan-2520862"
+      password: kkzh2prsyr2ik47as615
+      port: 57142
+      server: 64.94.95.114
+      skip-cert-verify: true
+      sni: static.rutube.ru
+      type: trojan
+      udp: true
+    - name: "07-trojan-\U0001F1FA\U0001F1F8 [538.0ms +/-1366ms] trojan-2520867"
+      password: kkzh2prsyr2ik47as615
+      port: 57142
+      server: 64.94.95.118
+      skip-cert-verify: true
+      sni: 64.94.95.118
+      type: trojan
+      udp: true
+    - name: "08-trojan-\U0001F1FA\U0001F1F8 [541.1ms +/-1371ms] trojan-2520863"
+      password: kkzh2prsyr2ik47as615
+      port: 57142
+      server: 64.94.95.115
+      skip-cert-verify: true
+      sni: static.rutube.ru
       type: trojan
       udp: true
     - client-fingerprint: chrome
       flow: xtls-rprx-vision
-      name: "03-vless-\U0001F1FA\U0001F1F8[openproxylist.com] vless-US"
+      name: "09-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
       network: tcp
-      port: 18662
+      port: 23576
+      reality-opts:
+        public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+        short-id: "01"
+      server: 15.204.97.216
+      servername: fuck.rkn
+      tls: true
+      type: vless
+      udp: true
+      uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    - client-fingerprint: firefox
+      flow: xtls-rprx-vision
+      name: "10-vless-\U0001F1FA\U0001F1F8 [351.9ms +/-694ms] 4FreeIran-6651"
+      network: tcp
+      port: 443
+      reality-opts:
+        public-key: EMS0wzISeSbEe4JABPD8EgDnyLXgDmrX4_lcfG6VVX4
+        short-id: dbbe8dca27a92c35
+      server: 154.193.55.183
+      servername: storage.yandex.net
+      tls: true
+      type: vless
+      udp: true
+      uuid: 11e57eeb-ffdf-4983-a9fa-ad352dea7253
+    - name: "11-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+      network: ws
+      port: 8443
+      server: 216.24.57.6
+      servername: kakoolnews.dontstealkakoolnews.workers.dev
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: 12cb0a24-0438-4980-8617-9c93205895fa
+    - name: "12-trojan-\U0001F1FA\U0001F1F8 美国 | USA 2"
+      password: 0ebb269c9f2d4e8e46b0cd4105a55134
+      port: 49361
+      server: 163.245.196.68
+      skip-cert-verify: true
+      sni: 163.245.196.68.sslip.io
+      type: trojan
+      udp: true
+    - cipher: aes-256-gcm
+      name: "13-shadowsocks-\U0001F1FA\U0001F1F8 [367.9ms +/-889ms] shadowsocks-11085"
+      password: faBAoD54k87UJG7
+      port: 2375
+      server: 172.245.235.84
+      type: ss
+      udp: true
+    - client-fingerprint: chrome
+      flow: xtls-rprx-vision
+      name: "14-vless-\U0001F1FA\U0001F1F8 [349.3ms +/-684ms] 4FreeIran-10356"
+      network: tcp
+      port: 16016
       reality-opts:
         public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
         short-id: 48050fab
@@ -29,43 +127,69 @@ proxies:
       type: vless
       udp: true
       uuid: 814bd064-544d-4255-a070-5705c03f6da9
-    - name: "04-vless-\U0001F3F3️ \U0001F4A5Config_jo-255"
-      network: ws
+    - client-fingerprint: qq
+      flow: xtls-rprx-vision
+      name: "15-vless-\U0001F1FA\U0001F1F8 [476.8ms +/-911ms] 4FreeIran-8152"
+      network: tcp
       port: 443
-      server: 151.101.57.134
-      servername: default.ssl.fastly.net
-      skip-cert-verify: false
+      reality-opts:
+        public-key: vJBCJXM6AYo1zobLsW7-UzJsznfiqzVpz7OphyAbGX0
+        short-id: 7b661daae97b9789
+      server: 167.88.167.57
+      servername: site.rumedia-cdn.com
       tls: true
       type: vless
       udp: true
-      uuid: XpnTeam-119
-    - name: "05-trojan-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+      uuid: 41cbcc75-759f-4707-984e-aea715046830
+    - name: "16-trojan-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
       password: humanity
       port: 443
-      server: 198.62.62.23
+      server: 198.202.211.1
       skip-cert-verify: false
-      sni: www.calmlunch.com
+      sni: www.creationlong.org
       type: trojan
       udp: true
 proxy-groups:
     - interval: 300
       name: auto
       proxies:
-        - "01-shadowsocks-\U0001F1FA\U0001F1F8US-138.199.42.68-3869"
-        - "02-trojan-\U0001F1FA\U0001F1F8 [532.1ms +/-1264ms] trojan-59508879"
-        - "03-vless-\U0001F1FA\U0001F1F8[openproxylist.com] vless-US"
-        - "04-vless-\U0001F3F3️ \U0001F4A5Config_jo-255"
-        - "05-trojan-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+        - "01-shadowsocks-\U0001F1FA\U0001F1F8 Join Telegram:@Farah_VPN \U0001F1FA\U0001F1F8"
+        - "02-shadowsocks-\U0001F1FA\U0001F1F8 [292.2ms +/-654ms] shadowsocks-159"
+        - "03-shadowsocks-\U0001F1FA\U0001F1F8US-156.146.38.167-0177"
+        - "04-shadowsocks-\U0001F4CA51@oneclickvpnkeys"
+        - "05-trojan-\U0001F1FA\U0001F1F8 [650.6ms +/-1693ms] trojan-2520864"
+        - "06-trojan-\U0001F1FA\U0001F1F8 [621.6ms +/-1616ms] trojan-2520862"
+        - "07-trojan-\U0001F1FA\U0001F1F8 [538.0ms +/-1366ms] trojan-2520867"
+        - "08-trojan-\U0001F1FA\U0001F1F8 [541.1ms +/-1371ms] trojan-2520863"
+        - "09-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+        - "10-vless-\U0001F1FA\U0001F1F8 [351.9ms +/-694ms] 4FreeIran-6651"
+        - "11-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+        - "12-trojan-\U0001F1FA\U0001F1F8 美国 | USA 2"
+        - "13-shadowsocks-\U0001F1FA\U0001F1F8 [367.9ms +/-889ms] shadowsocks-11085"
+        - "14-vless-\U0001F1FA\U0001F1F8 [349.3ms +/-684ms] 4FreeIran-10356"
+        - "15-vless-\U0001F1FA\U0001F1F8 [476.8ms +/-911ms] 4FreeIran-8152"
+        - "16-trojan-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
       type: url-test
       url: https://www.gstatic.com/generate_204
     - name: select
       proxies:
         - auto
-        - "01-shadowsocks-\U0001F1FA\U0001F1F8US-138.199.42.68-3869"
-        - "02-trojan-\U0001F1FA\U0001F1F8 [532.1ms +/-1264ms] trojan-59508879"
-        - "03-vless-\U0001F1FA\U0001F1F8[openproxylist.com] vless-US"
-        - "04-vless-\U0001F3F3️ \U0001F4A5Config_jo-255"
-        - "05-trojan-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+        - "01-shadowsocks-\U0001F1FA\U0001F1F8 Join Telegram:@Farah_VPN \U0001F1FA\U0001F1F8"
+        - "02-shadowsocks-\U0001F1FA\U0001F1F8 [292.2ms +/-654ms] shadowsocks-159"
+        - "03-shadowsocks-\U0001F1FA\U0001F1F8US-156.146.38.167-0177"
+        - "04-shadowsocks-\U0001F4CA51@oneclickvpnkeys"
+        - "05-trojan-\U0001F1FA\U0001F1F8 [650.6ms +/-1693ms] trojan-2520864"
+        - "06-trojan-\U0001F1FA\U0001F1F8 [621.6ms +/-1616ms] trojan-2520862"
+        - "07-trojan-\U0001F1FA\U0001F1F8 [538.0ms +/-1366ms] trojan-2520867"
+        - "08-trojan-\U0001F1FA\U0001F1F8 [541.1ms +/-1371ms] trojan-2520863"
+        - "09-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+        - "10-vless-\U0001F1FA\U0001F1F8 [351.9ms +/-694ms] 4FreeIran-6651"
+        - "11-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+        - "12-trojan-\U0001F1FA\U0001F1F8 美国 | USA 2"
+        - "13-shadowsocks-\U0001F1FA\U0001F1F8 [367.9ms +/-889ms] shadowsocks-11085"
+        - "14-vless-\U0001F1FA\U0001F1F8 [349.3ms +/-684ms] 4FreeIran-10356"
+        - "15-vless-\U0001F1FA\U0001F1F8 [476.8ms +/-911ms] 4FreeIran-8152"
+        - "16-trojan-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
       type: select
 rules:
     - DOMAIN-SUFFIX,weixin.qq.com,DIRECT
