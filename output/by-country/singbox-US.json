@@ -1,89 +1,107 @@
 {
   "outbounds": [
     {
-      "method": "aes-128-gcm",
-      "password": "shadowsocks",
-      "server": "156.146.38.167",
+      "flow": "xtls-rprx-vision",
+      "server": "185.164.111.48",
       "server_port": 443,
-      "tag": "01-shadowsocks-🇺🇸US-156.146.38.167-3995",
+      "tag": "01-vless-🇺🇸[openproxylist.com] vless-US",
+      "tls": {
+        "enabled": true,
+        "insecure": false,
+        "reality": {
+          "enabled": true,
+          "public_key": "4-qE0E0B5ShfnAe0KFM0qRkXJ33rRF39AlHK7MpBzAE",
+          "short_id": "4c5a76834671"
+        },
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "type": "vless",
+      "uuid": "59eefc04-b831-45cf-8d68-63ca23381171"
+    },
+    {
+      "method": "chacha20-ietf-poly1305",
+      "password": "G5p6ww4o67HB",
+      "server": "108.181.0.177",
+      "server_port": 8388,
+      "tag": "02-shadowsocks-🇺🇸US-108.181.0.177-0162",
+      "type": "shadowsocks"
+    },
+    {
+      "method": "chacha20-ietf-poly1305",
+      "password": "hCCWOcIsK5wrFz4OX70rWf",
+      "server": "216.105.168.18",
+      "server_port": 443,
+      "tag": "03-shadowsocks-🇺🇸US-216.105.168.18-0206",
       "type": "shadowsocks"
     },
     {
       "method": "aes-128-gcm",
       "password": "shadowsocks",
-      "server": "156.146.38.169",
+      "server": "173.244.56.9",
       "server_port": 443,
-      "tag": "02-shadowsocks-🇺🇸 Join Telegram:@Farah_VPN 🇺🇸",
+      "tag": "04-shadowsocks-🇺🇸US-173.244.56.9-0157",
       "type": "shadowsocks"
+    },
+    {
+      "flow": "xtls-rprx-vision",
+      "server": "167.17.68.205",
+      "server_port": 443,
+      "tag": "05-vless-[192.7ms +/-493ms] 4Sarina-9078",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "reality": {
+          "enabled": true,
+          "public_key": "UE8hUjH1WYwemxIriq5lvtFCnHTdLF817okXr-u7MGs",
+          "short_id": "250b5976473a"
+        },
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "type": "vless",
+      "uuid": "4e0f4e59-3613-4f0c-b824-7348413d20e6"
     },
     {
       "method": "aes-128-gcm",
       "password": "shadowsocks",
-      "server": "156.146.38.168",
+      "server": "173.244.56.6",
       "server_port": 443,
-      "tag": "03-shadowsocks-🇺🇸US-156.146.38.168-4139",
+      "tag": "06-shadowsocks-🇺🇸US-173.244.56.6-3876",
       "type": "shadowsocks"
     },
     {
-      "method": "aes-128-gcm",
-      "password": "shadowsocks",
-      "server": "156.146.38.170",
-      "server_port": 443,
-      "tag": "04-shadowsocks-🇺🇸US-156.146.38.170-4074",
-      "type": "shadowsocks"
-    },
-    {
-      "password": "kkzh2prsyr2ik47as615",
-      "server": "64.94.95.115",
-      "server_port": 57142,
-      "tag": "05-trojan-🇺🇸 [378.1ms +/-826ms] trojan-2520863",
+      "flow": "xtls-rprx-vision",
+      "server": "176.122.164.194",
+      "server_port": 16384,
+      "tag": "07-vless-🇺🇸 US 2",
       "tls": {
         "enabled": true,
-        "insecure": true,
-        "server_name": "static.rutube.ru"
+        "insecure": false,
+        "reality": {
+          "enabled": true,
+          "public_key": "7rqDoetaJ-DcI7dlfwlF1DaZu8aJIngP1dAqnEIAixg",
+          "short_id": "155b65eefb96e334"
+        },
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
       },
-      "type": "trojan"
-    },
-    {
-      "password": "kkzh2prsyr2ik47as615",
-      "server": "64.94.95.118",
-      "server_port": 57142,
-      "tag": "06-trojan-🇺🇸 [385.3ms +/-843ms] trojan-2520867",
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "server_name": "64.94.95.118"
-      },
-      "type": "trojan"
-    },
-    {
-      "password": "kkzh2prsyr2ik47as615",
-      "server": "64.94.95.117",
-      "server_port": 57142,
-      "tag": "07-trojan-🇺🇸 [384.7ms +/-833ms] trojan-120887",
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "server_name": "static.rutube.ru"
-      },
-      "type": "trojan"
-    },
-    {
-      "password": "kkzh2prsyr2ik47as615",
-      "server": "64.94.95.114",
-      "server_port": 57142,
-      "tag": "08-trojan-🇺🇸 [408.9ms +/-910ms] trojan-2520862",
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "server_name": "static.rutube.ru"
-      },
-      "type": "trojan"
+      "type": "vless",
+      "uuid": "59c07b8c-1f64-4c5c-9b37-c2654109604c"
     },
     {
       "server": "support.zoom.us",
       "server_port": 443,
-      "tag": "09-vless-⚡ b2n.ir/v2ray-configs | 435",
+      "tag": "08-vless-🔥Join Telegram:@Farah_VPN🟣",
       "tls": {
         "enabled": true,
         "insecure": false,
@@ -93,9 +111,59 @@
       "uuid": "5aafc2be-9348-4dec-b896-f4a91253bbca"
     },
     {
+      "method": "aes-128-gcm",
+      "password": "shadowsocks",
+      "server": "156.146.38.169",
+      "server_port": 443,
+      "tag": "09-shadowsocks-EPODONIOS",
+      "type": "shadowsocks"
+    },
+    {
+      "method": "aes-128-gcm",
+      "password": "shadowsocks",
+      "server": "156.146.38.167",
+      "server_port": 443,
+      "tag": "10-shadowsocks-🇺🇸US-156.146.38.167-0120",
+      "type": "shadowsocks"
+    },
+    {
+      "method": "aes-128-gcm",
+      "password": "shadowsocks",
+      "server": "156.146.38.170",
+      "server_port": 443,
+      "tag": "11-shadowsocks-🇺🇸US-156.146.38.170-4074",
+      "type": "shadowsocks"
+    },
+    {
+      "alter_id": 0,
+      "security": "auto",
+      "server": "165.140.216.142",
+      "server_port": 443,
+      "tag": "12-vmess-🇺🇸[openproxylist.com] vmess-US",
+      "type": "vmess",
+      "uuid": "b65a2d69-5634-42a2-e4be-54e8a6176900"
+    },
+    {
+      "method": "aes-128-gcm",
+      "password": "shadowsocks",
+      "server": "156.146.38.168",
+      "server_port": 443,
+      "tag": "13-shadowsocks-🇺🇸US-156.146.38.168-0143",
+      "type": "shadowsocks"
+    },
+    {
+      "alter_id": 0,
+      "security": "auto",
+      "server": "165.140.216.141",
+      "server_port": 443,
+      "tag": "14-vmess-@chillguy_vpn",
+      "type": "vmess",
+      "uuid": "e7d72a8d-26f2-4b54-b366-0c43e0bcba7d"
+    },
+    {
       "server": "141.193.27.16",
       "server_port": 2087,
-      "tag": "10-vless-🇺🇸 💥Config_jo-202",
+      "tag": "15-vless-🇺🇸 💥Config_jo-189",
       "tls": {
         "enabled": true,
         "insecure": false,
@@ -105,34 +173,31 @@
       "uuid": "38a43f18-b4d9-443f-9ff1-4cf9de3d666e"
     },
     {
-      "password": "0ebb269c9f2d4e8e46b0cd4105a55134",
-      "server": "163.245.196.68",
-      "server_port": 49361,
-      "tag": "11-trojan-🇺🇸 [352.2ms +/-676ms] 4Sarina-3247",
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "server_name": "163.245.196.68.sslip.io"
-      },
-      "type": "trojan"
-    },
-    {
-      "server": "69.46.46.80",
-      "server_port": 443,
-      "tag": "12-vless-🇺🇸 💥Config_jo-277",
+      "server": "86.109.75.147",
+      "server_port": 444,
+      "tag": "16-vless-🇺🇸[openproxylist.com] vless-US",
       "tls": {
         "enabled": true,
         "insecure": false,
-        "server_name": "x4g-production-a156.up.railway.app"
+        "reality": {
+          "enabled": true,
+          "public_key": "MF_E-_CYAXdWxC1N_wTkdFyk3K7_1cNqNDPb0vnwl20",
+          "short_id": "8311761729abcdef"
+        },
+        "server_name": "web.max.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       },
       "type": "vless",
-      "uuid": "dc1c5f18-2cb5-e6da-33c5-eec88864837d"
+      "uuid": "0b9bcbc1-b289-4a64-86fa-a5b731b65384"
     },
     {
       "password": "humanity",
       "server": "216.24.57.7",
       "server_port": 443,
-      "tag": "13-trojan-⚡ b2n.ir/v2ray-configs | 684",
+      "tag": "17-trojan-🔥Join Telegram:@Farah_VPN🟣",
       "tls": {
         "enabled": true,
         "insecure": false,
@@ -143,19 +208,23 @@
     {
       "interval": "5m",
       "outbounds": [
-        "01-shadowsocks-🇺🇸US-156.146.38.167-3995",
-        "02-shadowsocks-🇺🇸 Join Telegram:@Farah_VPN 🇺🇸",
-        "03-shadowsocks-🇺🇸US-156.146.38.168-4139",
-        "04-shadowsocks-🇺🇸US-156.146.38.170-4074",
-        "05-trojan-🇺🇸 [378.1ms +/-826ms] trojan-2520863",
-        "06-trojan-🇺🇸 [385.3ms +/-843ms] trojan-2520867",
-        "07-trojan-🇺🇸 [384.7ms +/-833ms] trojan-120887",
-        "08-trojan-🇺🇸 [408.9ms +/-910ms] trojan-2520862",
-        "09-vless-⚡ b2n.ir/v2ray-configs | 435",
-        "10-vless-🇺🇸 💥Config_jo-202",
-        "11-trojan-🇺🇸 [352.2ms +/-676ms] 4Sarina-3247",
-        "12-vless-🇺🇸 💥Config_jo-277",
-        "13-trojan-⚡ b2n.ir/v2ray-configs | 684"
+        "01-vless-🇺🇸[openproxylist.com] vless-US",
+        "02-shadowsocks-🇺🇸US-108.181.0.177-0162",
+        "03-shadowsocks-🇺🇸US-216.105.168.18-0206",
+        "04-shadowsocks-🇺🇸US-173.244.56.9-0157",
+        "05-vless-[192.7ms +/-493ms] 4Sarina-9078",
+        "06-shadowsocks-🇺🇸US-173.244.56.6-3876",
+        "07-vless-🇺🇸 US 2",
+        "08-vless-🔥Join Telegram:@Farah_VPN🟣",
+        "09-shadowsocks-EPODONIOS",
+        "10-shadowsocks-🇺🇸US-156.146.38.167-0120",
+        "11-shadowsocks-🇺🇸US-156.146.38.170-4074",
+        "12-vmess-🇺🇸[openproxylist.com] vmess-US",
+        "13-shadowsocks-🇺🇸US-156.146.38.168-0143",
+        "14-vmess-@chillguy_vpn",
+        "15-vless-🇺🇸 💥Config_jo-189",
+        "16-vless-🇺🇸[openproxylist.com] vless-US",
+        "17-trojan-🔥Join Telegram:@Farah_VPN🟣"
       ],
       "tag": "auto",
       "type": "urltest",
@@ -164,19 +233,23 @@
     {
       "outbounds": [
         "auto",
-        "01-shadowsocks-🇺🇸US-156.146.38.167-3995",
-        "02-shadowsocks-🇺🇸 Join Telegram:@Farah_VPN 🇺🇸",
-        "03-shadowsocks-🇺🇸US-156.146.38.168-4139",
-        "04-shadowsocks-🇺🇸US-156.146.38.170-4074",
-        "05-trojan-🇺🇸 [378.1ms +/-826ms] trojan-2520863",
-        "06-trojan-🇺🇸 [385.3ms +/-843ms] trojan-2520867",
-        "07-trojan-🇺🇸 [384.7ms +/-833ms] trojan-120887",
-        "08-trojan-🇺🇸 [408.9ms +/-910ms] trojan-2520862",
-        "09-vless-⚡ b2n.ir/v2ray-configs | 435",
-        "10-vless-🇺🇸 💥Config_jo-202",
-        "11-trojan-🇺🇸 [352.2ms +/-676ms] 4Sarina-3247",
-        "12-vless-🇺🇸 💥Config_jo-277",
-        "13-trojan-⚡ b2n.ir/v2ray-configs | 684"
+        "01-vless-🇺🇸[openproxylist.com] vless-US",
+        "02-shadowsocks-🇺🇸US-108.181.0.177-0162",
+        "03-shadowsocks-🇺🇸US-216.105.168.18-0206",
+        "04-shadowsocks-🇺🇸US-173.244.56.9-0157",
+        "05-vless-[192.7ms +/-493ms] 4Sarina-9078",
+        "06-shadowsocks-🇺🇸US-173.244.56.6-3876",
+        "07-vless-🇺🇸 US 2",
+        "08-vless-🔥Join Telegram:@Farah_VPN🟣",
+        "09-shadowsocks-EPODONIOS",
+        "10-shadowsocks-🇺🇸US-156.146.38.167-0120",
+        "11-shadowsocks-🇺🇸US-156.146.38.170-4074",
+        "12-vmess-🇺🇸[openproxylist.com] vmess-US",
+        "13-shadowsocks-🇺🇸US-156.146.38.168-0143",
+        "14-vmess-@chillguy_vpn",
+        "15-vless-🇺🇸 💥Config_jo-189",
+        "16-vless-🇺🇸[openproxylist.com] vless-US",
+        "17-trojan-🔥Join Telegram:@Farah_VPN🟣"
       ],
       "tag": "select",
       "type": "selector"
