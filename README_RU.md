@@ -4,7 +4,7 @@
 
 <p align="center"><img src="https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/assets/hero.png" alt="Free VPN Subscriptions — hourly-refreshed free VPN subscriptions for Clash, sing-box, v2ray" width="780"></p>
 
-![узлы](https://img.shields.io/badge/узлы-80-brightgreen) ![живые](https://img.shields.io/badge/живые-3958-blue) ![медиана--rtt](https://img.shields.io/badge/медиана--rtt-107ms-orange) ![обновлено](https://img.shields.io/badge/обновлено-2026-07-24_14:18_UTC-informational)
+![узлы](https://img.shields.io/badge/узлы-76-brightgreen) ![живые](https://img.shields.io/badge/живые-4154-blue) ![медиана--rtt](https://img.shields.io/badge/медиана--rtt-45ms-orange) ![обновлено](https://img.shields.io/badge/обновлено-2026-07-24_19:53_UTC-informational)
 
 > **Самый простой способ получить рабочий бесплатный VPN — скопируйте ссылку подписки, вставьте в клиент, подключитесь.**  
 > Без регистрации. Без оплаты. Без установки каких-либо бинарников. Обновляется каждый час из публичных источников — каждый публикуемый узел несколько минут назад реально пропустил HTTP-трафик через sing-box.
@@ -77,8 +77,7 @@ proxy-groups:
 
 | Страна | Узлов | Clash | sing-box | v2ray |
 |---|---|---|---|---|
-| 🇺🇸 United States (`US`) | 9 | [clash-US.yaml](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/clash-US.yaml) | [singbox-US.json](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/singbox-US.json) | [v2ray-base64-US.txt](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/v2ray-base64-US.txt) |
-| 🇸🇨 SC (`SC`) | 5 | [clash-SC.yaml](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/clash-SC.yaml) | [singbox-SC.json](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/singbox-SC.json) | [v2ray-base64-SC.txt](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/v2ray-base64-SC.txt) |
+| 🇺🇸 United States (`US`) | 15 | [clash-US.yaml](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/clash-US.yaml) | [singbox-US.json](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/singbox-US.json) | [v2ray-base64-US.txt](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/v2ray-base64-US.txt) |
 
 ## 📖 Пошаговые инструкции
 
@@ -99,15 +98,15 @@ proxy-groups:
 
 ## 📊 Статистика в реальном времени
 
-- **Выбрано узлов**: 80
-- **Живых во всех источниках**: 3958
-- **RTT самого быстрого узла**: 31 ms
-- **Медиана RTT**: 107 ms
-- **Последнее обновление (UTC)**: 2026-07-24 14:18 UTC
+- **Выбрано узлов**: 76
+- **Живых во всех источниках**: 4154
+- **RTT самого быстрого узла**: 14 ms
+- **Медиана RTT**: 45 ms
+- **Последнее обновление (UTC)**: 2026-07-24 19:53 UTC
 
-**Распределение протоколов:** shadowsocks × 3 · trojan × 16 · vless × 57 · vmess × 4
+**Распределение протоколов:** shadowsocks × 7 · trojan × 11 · vless × 56 · vmess × 2
 
-**Источники в этом запуске:** `autojiedian-clash` × 3 · `automerge-verified-clash` × 1 · `mahdibland-aggregator` × 2 · `mahdibland-shadowsocks` × 1 · `matin-v2ray` × 3 · `ninjastrikers` × 10 · `roosterkid-openproxylist` × 1 · `snakem982` × 2 · `solispirit-v2ray` × 31 · `surfboard-eternity` × 1 · `tg-v2ray-configs-every2h` × 25
+**Источники в этом запуске:** `autojiedian-clash` × 1 · `automerge-verified-clash` × 6 · `epodonios` × 1 · `go4sharing-clash` × 1 · `mahdibland-aggregator` × 1 · `mahdibland-shadowsocks` × 1 · `matin-v2ray` × 1 · `ninjastrikers` × 6 · `roosterkid-openproxylist` × 4 · `snakem982` × 1 · `solispirit-v2ray` × 30 · `surfboard-eternity` × 1 · `tg-v2ray-configs-every2h` × 22
 
 ## ❓ Часто задаваемые вопросы
 
