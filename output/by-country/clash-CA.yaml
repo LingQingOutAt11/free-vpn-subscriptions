@@ -1,0 +1,60 @@
+mode: rule
+proxies:
+    - cipher: chacha20-ietf-poly1305
+      name: "01-shadowsocks-\U0001F1E8\U0001F1E6CA-108.181.118.10-0065"
+      password: G5p6ww4o67HB
+      port: 8388
+      server: 108.181.118.10
+      type: ss
+      udp: true
+    - cipher: aes-256-gcm
+      name: 02-shadowsocks-加拿大_Toronto_BrainStorm Network Inc_Claud
+      password: KixLvKzwjekG00rm
+      port: 8080
+      server: 185.196.61.82
+      type: ss
+      udp: true
+    - client-fingerprint: chrome
+      flow: xtls-rprx-vision
+      name: "03-vless-\U0001F1E8\U0001F1E6[openproxylist.com] vless-CA"
+      network: tcp
+      port: 41373
+      reality-opts:
+        public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
+        short-id: 0e
+      server: 130.107.73.148
+      servername: google.com
+      tls: true
+      type: vless
+      udp: true
+      uuid: a71c8954-66a8-4321-bedb-2336230d81ce
+proxy-groups:
+    - interval: 300
+      name: auto
+      proxies:
+        - "01-shadowsocks-\U0001F1E8\U0001F1E6CA-108.181.118.10-0065"
+        - 02-shadowsocks-加拿大_Toronto_BrainStorm Network Inc_Claud
+        - "03-vless-\U0001F1E8\U0001F1E6[openproxylist.com] vless-CA"
+      type: url-test
+      url: https://www.gstatic.com/generate_204
+    - name: select
+      proxies:
+        - auto
+        - "01-shadowsocks-\U0001F1E8\U0001F1E6CA-108.181.118.10-0065"
+        - 02-shadowsocks-加拿大_Toronto_BrainStorm Network Inc_Claud
+        - "03-vless-\U0001F1E8\U0001F1E6[openproxylist.com] vless-CA"
+      type: select
+rules:
+    - DOMAIN-SUFFIX,weixin.qq.com,DIRECT
+    - DOMAIN-SUFFIX,wechat.com,DIRECT
+    - DOMAIN-SUFFIX,weixin.com,DIRECT
+    - DOMAIN-SUFFIX,qq.com,DIRECT
+    - DOMAIN-SUFFIX,tenpay.com,DIRECT
+    - DOMAIN-SUFFIX,gtimg.com,DIRECT
+    - DOMAIN-SUFFIX,qpic.cn,DIRECT
+    - IP-CIDR,127.0.0.0/8,DIRECT,no-resolve
+    - IP-CIDR,10.0.0.0/8,DIRECT,no-resolve
+    - IP-CIDR,172.16.0.0/12,DIRECT,no-resolve
+    - IP-CIDR,192.168.0.0/16,DIRECT,no-resolve
+    - GEOIP,CN,DIRECT,no-resolve
+    - MATCH,select
