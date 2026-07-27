@@ -1,0 +1,91 @@
+mode: rule
+proxies:
+    - cipher: aes-256-gcm
+      name: 01-shadowsocks-加拿大_Toronto_Baxet Group Inc_Claude
+      password: 2803361d6c196af8
+      port: 10210
+      server: 50.114.177.134
+      type: ss
+      udp: true
+    - alterId: 0
+      cipher: auto
+      name: 02-vmess-加拿大_Toronto_GLOBALTELEHOST_Gemini_Claude
+      network: tcp
+      port: 18000
+      server: 134.195.196.211
+      type: vmess
+      udp: true
+      uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+    - cipher: rc4-md5
+      name: "03-shadowsocks-\U0001F1E8\U0001F1E6CA-137.184.174.93-0074"
+      password: 14fFPrbezE3HDZzsMOr6
+      port: 8080
+      server: 137.184.174.93
+      type: ss
+      udp: true
+    - cipher: aes-256-gcm
+      name: "04-shadowsocks-\U0001F3B488@oneclickvpnkeys"
+      password: KixLvKzwjekG00rm
+      port: 8080
+      server: 185.196.61.82
+      type: ss
+      udp: true
+    - alterId: 0
+      cipher: auto
+      name: 05-vmess-加拿大_Toronto_GLOBALTELEHOST_Claude
+      network: tcp
+      port: 18000
+      server: 23.162.200.198
+      type: vmess
+      udp: true
+      uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+    - client-fingerprint: chrome
+      flow: xtls-rprx-vision
+      name: "06-vless-\U0001F1E8\U0001F1E6 [397.7ms +/-989ms] 4Sarina-12105"
+      network: tcp
+      port: 41373
+      reality-opts:
+        public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
+        short-id: 0e
+      server: 130.107.73.148
+      servername: google.com
+      tls: true
+      type: vless
+      udp: true
+      uuid: a71c8954-66a8-4321-bedb-2336230d81ce
+proxy-groups:
+    - interval: 300
+      name: auto
+      proxies:
+        - 01-shadowsocks-加拿大_Toronto_Baxet Group Inc_Claude
+        - 02-vmess-加拿大_Toronto_GLOBALTELEHOST_Gemini_Claude
+        - "03-shadowsocks-\U0001F1E8\U0001F1E6CA-137.184.174.93-0074"
+        - "04-shadowsocks-\U0001F3B488@oneclickvpnkeys"
+        - 05-vmess-加拿大_Toronto_GLOBALTELEHOST_Claude
+        - "06-vless-\U0001F1E8\U0001F1E6 [397.7ms +/-989ms] 4Sarina-12105"
+      type: url-test
+      url: https://www.gstatic.com/generate_204
+    - name: select
+      proxies:
+        - auto
+        - 01-shadowsocks-加拿大_Toronto_Baxet Group Inc_Claude
+        - 02-vmess-加拿大_Toronto_GLOBALTELEHOST_Gemini_Claude
+        - "03-shadowsocks-\U0001F1E8\U0001F1E6CA-137.184.174.93-0074"
+        - "04-shadowsocks-\U0001F3B488@oneclickvpnkeys"
+        - 05-vmess-加拿大_Toronto_GLOBALTELEHOST_Claude
+        - "06-vless-\U0001F1E8\U0001F1E6 [397.7ms +/-989ms] 4Sarina-12105"
+      type: select
+rules:
+    - DOMAIN-SUFFIX,weixin.qq.com,DIRECT
+    - DOMAIN-SUFFIX,wechat.com,DIRECT
+    - DOMAIN-SUFFIX,weixin.com,DIRECT
+    - DOMAIN-SUFFIX,qq.com,DIRECT
+    - DOMAIN-SUFFIX,tenpay.com,DIRECT
+    - DOMAIN-SUFFIX,gtimg.com,DIRECT
+    - DOMAIN-SUFFIX,qpic.cn,DIRECT
+    - IP-CIDR,127.0.0.0/8,DIRECT,no-resolve
+    - IP-CIDR,10.0.0.0/8,DIRECT,no-resolve
+    - IP-CIDR,172.16.0.0/12,DIRECT,no-resolve
+    - IP-CIDR,192.168.0.0/16,DIRECT,no-resolve
+    - GEOIP,CN,DIRECT,no-resolve
+    - MATCH,select
