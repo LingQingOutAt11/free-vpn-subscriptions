@@ -4,7 +4,7 @@
 
 <p align="center"><img src="https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/assets/hero.png" alt="Free VPN Subscriptions — hourly-refreshed free VPN subscriptions for Clash, sing-box, v2ray" width="780"></p>
 
-![nodos](https://img.shields.io/badge/nodos-130-brightgreen) ![activos](https://img.shields.io/badge/activos-4065-blue) ![rtt--mediana](https://img.shields.io/badge/rtt--mediana-134ms-orange) ![actualizado](https://img.shields.io/badge/actualizado-2026-07-27_15:20_UTC-informational)
+![nodos](https://img.shields.io/badge/nodos-127-brightgreen) ![activos](https://img.shields.io/badge/activos-4241-blue) ![rtt--mediana](https://img.shields.io/badge/rtt--mediana-169ms-orange) ![actualizado](https://img.shields.io/badge/actualizado-2026-07-27_20:03_UTC-informational)
 
 > **La forma más fácil de obtener una VPN gratuita que funciona — copia un enlace de suscripción, pégalo en tu cliente, conecta.**  
 > Sin registro. Sin pago. Sin instalar ningún binario. Actualizado cada hora desde fuentes públicas — cada nodo publicado ha reenviado tráfico HTTP real a través de sing-box hace minutos.
@@ -77,8 +77,7 @@ Copia la URL que coincida con tu cliente y pégala en el campo de importación d
 
 | País | Nodos | Clash | sing-box | v2ray |
 |---|---|---|---|---|
-| 🇺🇸 United States (`US`) | 54 | [clash-US.yaml](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/clash-US.yaml) | [singbox-US.json](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/singbox-US.json) | [v2ray-base64-US.txt](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/v2ray-base64-US.txt) |
-| 🇨🇦 Canada (`CA`) | 11 | [clash-CA.yaml](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/clash-CA.yaml) | [singbox-CA.json](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/singbox-CA.json) | [v2ray-base64-CA.txt](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/v2ray-base64-CA.txt) |
+| 🇺🇸 United States (`US`) | 61 | [clash-US.yaml](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/clash-US.yaml) | [singbox-US.json](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/singbox-US.json) | [v2ray-base64-US.txt](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/v2ray-base64-US.txt) |
 
 ## 📖 Guías paso a paso
 
@@ -99,15 +98,15 @@ Copia la URL que coincida con tu cliente y pégala en el campo de importación d
 
 ## 📊 Estadísticas en vivo
 
-- **Nodos seleccionados**: 130
-- **Activos en todas las fuentes**: 4065
-- **RTT del nodo más rápido**: 42 ms
-- **RTT mediana**: 134 ms
-- **Última actualización (UTC)**: 2026-07-27 15:20 UTC
+- **Nodos seleccionados**: 127
+- **Activos en todas las fuentes**: 4241
+- **RTT del nodo más rápido**: 23 ms
+- **RTT mediana**: 169 ms
+- **Última actualización (UTC)**: 2026-07-27 20:03 UTC
 
-**Mezcla de protocolos:** hysteria2 × 2 · shadowsocks × 31 · trojan × 23 · vless × 64 · vmess × 10
+**Mezcla de protocolos:** shadowsocks × 12 · trojan × 47 · vless × 60 · vmess × 8
 
-**Fuentes usadas en esta ejecución:** `autojiedian-clash` × 3 · `automerge-verified-clash` × 17 · `barry-far-v2ray` × 1 · `ebrasha-v2ray` × 2 · `epodonios` × 2 · `mahdibland-aggregator` × 8 · `mahdibland-shadowsocks` × 12 · `matin-v2ray` × 1 · `ninjastrikers` × 10 · `pawdroid` × 3 · `radikal-clash` × 1 · `roosterkid-openproxylist` × 10 · `ruking-clash` × 3 · `snakem982` × 2 · `solispirit-v2ray` × 34 · `surfboard-eternity` × 3 · `tg-v2ray-configs-every2h` × 18
+**Fuentes usadas en esta ejecución:** `autojiedian-clash` × 1 · `automerge-verified-clash` × 8 · `barry-far-v2ray` × 2 · `epodonios` × 1 · `mahdibland-aggregator` × 7 · `mahdibland-shadowsocks` × 4 · `matin-v2ray` × 3 · `ninjastrikers` × 10 · `pawdroid` × 3 · `radikal-clash` × 1 · `roosterkid-openproxylist` × 10 · `ruking-clash` × 28 · `solispirit-v2ray` × 35 · `tg-v2ray-configs-every2h` × 14
 
 ## ❓ Preguntas frecuentes
 
