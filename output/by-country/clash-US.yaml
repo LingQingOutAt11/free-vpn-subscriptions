@@ -1,43 +1,80 @@
 mode: rule
 proxies:
     - cipher: aes-256-cfb
-      name: 01-shadowsocks-美国_Ashburn_Amazon.com Inc._Gemini
-      password: amazonskr05
-      port: 443
-      server: 54.167.54.100
-      type: ss
-      udp: true
-    - cipher: aes-256-cfb
-      name: 02-shadowsocks-EPODONIOS
+      name: "01-shadowsocks-\U0001F1FA\U0001F1F8 美国 | USA 31"
       password: amazonskr05
       port: 443
       server: 54.226.105.188
       type: ss
       udp: true
     - cipher: aes-256-cfb
-      name: "03-shadowsocks-\U0001F1FA\U0001F1F8US-54.197.30.38-0294"
-      password: amazonskr05
-      port: 443
-      server: 54.197.30.38
-      type: ss
-      udp: true
-    - cipher: aes-256-cfb
-      name: 04-shadowsocks-美国 - Ashburn - 1
+      name: 02-shadowsocks-美国_Ashburn_Amazon.com Inc._Gemini_Claude
       password: amazonskr05
       port: 443
       server: 34.207.235.215
       type: ss
       udp: true
     - cipher: aes-256-cfb
-      name: 05-shadowsocks-美国_Ashburn_Amazon.com_Claude
+      name: "03-shadowsocks-\U0001F1FA\U0001F1F8US-54.167.54.100-6078"
+      password: amazonskr05
+      port: 443
+      server: 54.167.54.100
+      type: ss
+      udp: true
+    - cipher: aes-256-cfb
+      name: "04-shadowsocks-\U0001F1FA\U0001F1F8US-34.207.112.128-0108"
       password: amazonskr05
       port: 443
       server: 34.207.112.128
       type: ss
       udp: true
+    - cipher: aes-256-cfb
+      name: "05-shadowsocks-\U0001F1FA\U0001F1F8US-54.197.30.38-0294"
+      password: amazonskr05
+      port: 443
+      server: 54.197.30.38
+      type: ss
+      udp: true
+    - cipher: aes-128-gcm
+      name: "06-shadowsocks-\U0001F1FA\U0001F1F8US-37.19.198.160-4079"
+      password: shadowsocks
+      port: 443
+      server: 37.19.198.160
+      type: ss
+      udp: true
+    - cipher: aes-128-gcm
+      name: "07-shadowsocks-\U0001F1FA\U0001F1F8US-37.19.198.236-0145"
+      password: shadowsocks
+      port: 443
+      server: 37.19.198.236
+      type: ss
+      udp: true
+    - cipher: aes-128-gcm
+      name: 08-shadowsocks-EPODONIOS
+      password: shadowsocks
+      port: 443
+      server: 37.19.198.244
+      type: ss
+      udp: true
+    - cipher: aes-128-gcm
+      name: "09-shadowsocks-\U0001F1FA\U0001F1F8US-37.19.198.243-4267"
+      password: shadowsocks
+      port: 443
+      server: 37.19.198.243
+      type: ss
+      udp: true
+    - alterId: 0
+      cipher: auto
+      name: "10-vmess-\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3"
+      network: tcp
+      port: 22324
+      server: 216.106.183.35
+      type: vmess
+      udp: true
+      uuid: 04621bae-ab36-11ec-b909-0242ac120002
     - client-fingerprint: chrome
       flow: xtls-rprx-vision
-      name: "06-vless-US \U0001F1FA\U0001F1F8 | @Raydikalx | 6"
+      name: "11-vless-\U0001F1FA\U0001F1F8 \U0001F4A5Config_jo-188"
       network: tcp
       port: 443
       reality-opts:
@@ -49,31 +86,86 @@ proxies:
       type: vless
       udp: true
       uuid: 055a1ce8-2a16-4a0d-a2c2-22826c9b2413
-    - alterId: 0
-      cipher: aes-128-gcm
-      name: "07-vmess-\U0001F1FA\U0001F1F8 [376.2ms +/-1038ms] 4Nika-16263"
-      network: tcp
-      port: 18000
-      server: 67.220.95.3
-      type: vmess
-      udp: true
-      uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-    - name: "08-trojan-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-      password: humanity
-      port: 443
-      server: 141.193.213.21
+    - name: "12-trojan-\U0001F1FA\U0001F1F8 US 6"
+      password: 9ad83f65a560960e6509b677eb6162c1
+      port: 49271
+      server: 153.75.250.171
       skip-cert-verify: false
-      sni: www.calmloud.com
+      sni: 153.75.250.171.sslip.io
       type: trojan
       udp: true
-    - name: "09-vless-\U0001F3F3️ \U0001F4A5Config_jo-260"
+    - cipher: chacha20-ietf-poly1305
+      name: "13-shadowsocks-\U0001F1FA\U0001F1F8 US 22"
+      password: XF0klw7870vXn3uQIxe19Q
+      port: 1080
+      server: 37.120.139.234
+      type: ss
+      udp: true
+    - cipher: chacha20-ietf-poly1305
+      name: "14-shadowsocks-\U0001F1FA\U0001F1F8 [314.7ms +/-850ms] shadowsocks-184905"
+      password: XF0klw7870vXn3uQIxe19Q
+      port: 1080
+      server: 146.70.34.226
+      type: ss
+      udp: true
+    - cipher: chacha20-ietf-poly1305
+      name: "15-shadowsocks-\U0001F1FA\U0001F1F8 [308.2ms +/-809ms] shadowsocks-184905"
+      password: XF0klw7870vXn3uQIxe19Q
+      port: 1080
+      server: 185.232.22.28
+      type: ss
+      udp: true
+    - cipher: chacha20-ietf-poly1305
+      name: "16-shadowsocks-\U0001F1FA\U0001F1F8 US 8"
+      password: XF0klw7870vXn3uQIxe19Q
+      port: 1080
+      server: 194.124.229.135
+      type: ss
+      udp: true
+    - cipher: chacha20-ietf-poly1305
+      name: "17-shadowsocks-\U0001F1FA\U0001F1F8 [317.7ms +/-825ms] shadowsocks-184905"
+      password: XF0klw7870vXn3uQIxe19Q
+      port: 1080
+      server: 185.232.22.18
+      type: ss
+      udp: true
+    - client-fingerprint: firefox
+      flow: xtls-rprx-vision
+      name: "18-vless-\U0001F1FA\U0001F1F8 \U0001F4A5Config_jo-268"
+      network: tcp
+      port: 55861
+      reality-opts:
+        public-key: t2ndf6SeVxinFCo5bcemnW_ZZhAtmHWiAkllks5qPWs
+        short-id: 7551ed1b
+      server: 47.89.186.170
+      servername: www.intel.com
+      tls: true
+      type: vless
+      udp: true
+      uuid: d51ed55c-d6dd-400b-aaf6-017c33969bfe
+    - cipher: chacha20-ietf-poly1305
+      name: 19-shadowsocks-@meliproxyy
+      password: XF0klw7870vXn3uQIxe19Q
+      port: 1080
+      server: us1.levikogjgfdd.ir
+      type: ss
+      udp: true
+    - name: "20-trojan-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+      password: humanity
+      port: 443
+      server: 198.62.62.23
+      skip-cert-verify: false
+      sni: www.calmlunch.com
+      type: trojan
+      udp: true
+    - name: 21-vless-美国 V2CROSS.COM
       network: ws
       port: 80
-      server: 167.82.0.17
+      server: 167.82.0.1
       type: vless
       udp: true
       uuid: c9380ef8-23f8-422e-81fe-ebbb032202cf
-    - name: "10-trojan-\U0001F3F3️ \U0001F4A5Config_jo-164"
+    - name: "22-trojan-\U0001F3F3️ \U0001F4A5Config_jo-166"
       password: MiTiVPN
       port: 443
       server: 66.81.247.155
@@ -81,54 +173,80 @@ proxies:
       sni: ib-bbg--MiTiVPN---MiTiVPN-u.aPp-cLoud.IR
       type: trojan
       udp: true
-    - name: "11-trojan-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-      password: humanity
-      port: 443
-      server: 216.24.57.7
+    - name: 23-vless-美国 Fastly全球Anycast节点
+      network: ws
+      port: 80
+      server: 151.101.193.54
+      type: vless
+      udp: true
+      uuid: c9380ef8-23f8-422e-81fe-ebbb032202cf
+    - name: "24-vless-\U0001F1EB\U0001F1EE[openproxylist.com] vless-FI"
+      network: ws
+      port: 2053
+      server: 80.209.240.188
+      servername: forfreeuse.sub-flow.online
       skip-cert-verify: false
-      sni: www.ignitelimit.com
-      type: trojan
+      tls: true
+      type: vless
       udp: true
-    - cipher: chacha20-ietf-poly1305
-      name: "12-shadowsocks-\U0001F1FA\U0001F1F8 direct"
-      password: XF0klw7870vXn3uQIxe19Q
-      port: 1080
-      server: us1.levikogjgfdd.ir
-      type: ss
-      udp: true
+      uuid: c7e9c591-2764-423a-afca-efbd010fd396
 proxy-groups:
     - interval: 300
       name: auto
       proxies:
-        - 01-shadowsocks-美国_Ashburn_Amazon.com Inc._Gemini
-        - 02-shadowsocks-EPODONIOS
-        - "03-shadowsocks-\U0001F1FA\U0001F1F8US-54.197.30.38-0294"
-        - 04-shadowsocks-美国 - Ashburn - 1
-        - 05-shadowsocks-美国_Ashburn_Amazon.com_Claude
-        - "06-vless-US \U0001F1FA\U0001F1F8 | @Raydikalx | 6"
-        - "07-vmess-\U0001F1FA\U0001F1F8 [376.2ms +/-1038ms] 4Nika-16263"
-        - "08-trojan-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-        - "09-vless-\U0001F3F3️ \U0001F4A5Config_jo-260"
-        - "10-trojan-\U0001F3F3️ \U0001F4A5Config_jo-164"
-        - "11-trojan-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-        - "12-shadowsocks-\U0001F1FA\U0001F1F8 direct"
+        - "01-shadowsocks-\U0001F1FA\U0001F1F8 美国 | USA 31"
+        - 02-shadowsocks-美国_Ashburn_Amazon.com Inc._Gemini_Claude
+        - "03-shadowsocks-\U0001F1FA\U0001F1F8US-54.167.54.100-6078"
+        - "04-shadowsocks-\U0001F1FA\U0001F1F8US-34.207.112.128-0108"
+        - "05-shadowsocks-\U0001F1FA\U0001F1F8US-54.197.30.38-0294"
+        - "06-shadowsocks-\U0001F1FA\U0001F1F8US-37.19.198.160-4079"
+        - "07-shadowsocks-\U0001F1FA\U0001F1F8US-37.19.198.236-0145"
+        - 08-shadowsocks-EPODONIOS
+        - "09-shadowsocks-\U0001F1FA\U0001F1F8US-37.19.198.243-4267"
+        - "10-vmess-\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3"
+        - "11-vless-\U0001F1FA\U0001F1F8 \U0001F4A5Config_jo-188"
+        - "12-trojan-\U0001F1FA\U0001F1F8 US 6"
+        - "13-shadowsocks-\U0001F1FA\U0001F1F8 US 22"
+        - "14-shadowsocks-\U0001F1FA\U0001F1F8 [314.7ms +/-850ms] shadowsocks-184905"
+        - "15-shadowsocks-\U0001F1FA\U0001F1F8 [308.2ms +/-809ms] shadowsocks-184905"
+        - "16-shadowsocks-\U0001F1FA\U0001F1F8 US 8"
+        - "17-shadowsocks-\U0001F1FA\U0001F1F8 [317.7ms +/-825ms] shadowsocks-184905"
+        - "18-vless-\U0001F1FA\U0001F1F8 \U0001F4A5Config_jo-268"
+        - 19-shadowsocks-@meliproxyy
+        - "20-trojan-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+        - 21-vless-美国 V2CROSS.COM
+        - "22-trojan-\U0001F3F3️ \U0001F4A5Config_jo-166"
+        - 23-vless-美国 Fastly全球Anycast节点
+        - "24-vless-\U0001F1EB\U0001F1EE[openproxylist.com] vless-FI"
       type: url-test
       url: https://www.gstatic.com/generate_204
     - name: select
       proxies:
         - auto
-        - 01-shadowsocks-美国_Ashburn_Amazon.com Inc._Gemini
-        - 02-shadowsocks-EPODONIOS
-        - "03-shadowsocks-\U0001F1FA\U0001F1F8US-54.197.30.38-0294"
-        - 04-shadowsocks-美国 - Ashburn - 1
-        - 05-shadowsocks-美国_Ashburn_Amazon.com_Claude
-        - "06-vless-US \U0001F1FA\U0001F1F8 | @Raydikalx | 6"
-        - "07-vmess-\U0001F1FA\U0001F1F8 [376.2ms +/-1038ms] 4Nika-16263"
-        - "08-trojan-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-        - "09-vless-\U0001F3F3️ \U0001F4A5Config_jo-260"
-        - "10-trojan-\U0001F3F3️ \U0001F4A5Config_jo-164"
-        - "11-trojan-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-        - "12-shadowsocks-\U0001F1FA\U0001F1F8 direct"
+        - "01-shadowsocks-\U0001F1FA\U0001F1F8 美国 | USA 31"
+        - 02-shadowsocks-美国_Ashburn_Amazon.com Inc._Gemini_Claude
+        - "03-shadowsocks-\U0001F1FA\U0001F1F8US-54.167.54.100-6078"
+        - "04-shadowsocks-\U0001F1FA\U0001F1F8US-34.207.112.128-0108"
+        - "05-shadowsocks-\U0001F1FA\U0001F1F8US-54.197.30.38-0294"
+        - "06-shadowsocks-\U0001F1FA\U0001F1F8US-37.19.198.160-4079"
+        - "07-shadowsocks-\U0001F1FA\U0001F1F8US-37.19.198.236-0145"
+        - 08-shadowsocks-EPODONIOS
+        - "09-shadowsocks-\U0001F1FA\U0001F1F8US-37.19.198.243-4267"
+        - "10-vmess-\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3"
+        - "11-vless-\U0001F1FA\U0001F1F8 \U0001F4A5Config_jo-188"
+        - "12-trojan-\U0001F1FA\U0001F1F8 US 6"
+        - "13-shadowsocks-\U0001F1FA\U0001F1F8 US 22"
+        - "14-shadowsocks-\U0001F1FA\U0001F1F8 [314.7ms +/-850ms] shadowsocks-184905"
+        - "15-shadowsocks-\U0001F1FA\U0001F1F8 [308.2ms +/-809ms] shadowsocks-184905"
+        - "16-shadowsocks-\U0001F1FA\U0001F1F8 US 8"
+        - "17-shadowsocks-\U0001F1FA\U0001F1F8 [317.7ms +/-825ms] shadowsocks-184905"
+        - "18-vless-\U0001F1FA\U0001F1F8 \U0001F4A5Config_jo-268"
+        - 19-shadowsocks-@meliproxyy
+        - "20-trojan-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+        - 21-vless-美国 V2CROSS.COM
+        - "22-trojan-\U0001F3F3️ \U0001F4A5Config_jo-166"
+        - 23-vless-美国 Fastly全球Anycast节点
+        - "24-vless-\U0001F1EB\U0001F1EE[openproxylist.com] vless-FI"
       type: select
 rules:
     - DOMAIN-SUFFIX,weixin.qq.com,DIRECT
