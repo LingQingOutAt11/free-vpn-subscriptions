@@ -1,38 +1,47 @@
 {
   "outbounds": [
     {
-      "method": "aes-256-gcm",
-      "password": "2803361d6c196af8",
-      "server": "50.114.177.134",
-      "server_port": 20111,
-      "tag": "01-shadowsocks-🇨🇦 加拿大 | CAN",
+      "method": "rc4-md5",
+      "password": "14fFPrbezE3HDZzsMOr6",
+      "server": "137.184.174.93",
+      "server_port": 8080,
+      "tag": "01-shadowsocks-🇨🇦CA-137.184.174.93-0052",
       "type": "shadowsocks"
+    },
+    {
+      "alter_id": 0,
+      "security": "auto",
+      "server": "23.162.200.198",
+      "server_port": 18000,
+      "tag": "02-vmess-🇨🇦 CA 2",
+      "type": "vmess",
+      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe"
     },
     {
       "alter_id": 0,
       "security": "auto",
       "server": "134.195.196.211",
       "server_port": 18000,
-      "tag": "02-vmess-🇨🇦 CA 1",
+      "tag": "03-vmess-🇨🇦 CA 1",
       "type": "vmess",
       "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe"
     },
     {
-      "method": "rc4-md5",
-      "password": "14fFPrbezE3HDZzsMOr6",
-      "server": "137.184.174.93",
+      "method": "aes-256-gcm",
+      "password": "KixLvKzwjekG00rm",
+      "server": "185.196.61.82",
       "server_port": 8080,
-      "tag": "03-shadowsocks-🇨🇦CA-137.184.174.93-0055",
+      "tag": "04-shadowsocks-🇨🇦 [452.5ms +/-895ms] shadowsocks-11074",
       "type": "shadowsocks"
     },
     {
       "flow": "xtls-rprx-vision",
       "server": "216.152.147.28",
       "server_port": 443,
-      "tag": "04-vless-🇨🇦[openproxylist.com] vless-CA",
+      "tag": "05-vless-🇨🇦 [458.4ms +/-976ms] vless-200282613",
       "tls": {
         "enabled": true,
-        "insecure": false,
+        "insecure": true,
         "reality": {
           "enabled": true,
           "public_key": "kjiuPmjM4IutdZudHfcPZHEwcrBEFY4qBLlvfC6A_Ss",
@@ -48,30 +57,13 @@
       "uuid": "d9e4721d-cdac-44c7-bc91-117367eac194"
     },
     {
-      "alter_id": 0,
-      "security": "auto",
-      "server": "23.162.200.198",
-      "server_port": 18000,
-      "tag": "05-vmess-🇨🇦 CA 2",
-      "type": "vmess",
-      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe"
-    },
-    {
-      "method": "aes-256-gcm",
-      "password": "KixLvKzwjekG00rm",
-      "server": "185.196.61.82",
-      "server_port": 8080,
-      "tag": "06-shadowsocks-🇨🇦 Join Telegram:@Farah_VPN 🇨🇦",
-      "type": "shadowsocks"
-    },
-    {
       "flow": "xtls-rprx-vision",
       "server": "158.69.112.254",
       "server_port": 443,
-      "tag": "07-vless-🇨🇦[openproxylist.com] vless-CA",
+      "tag": "06-vless-🇨🇦 [583.6ms +/-1218ms] vless-202736774",
       "tls": {
         "enabled": true,
-        "insecure": false,
+        "insecure": true,
         "reality": {
           "enabled": true,
           "public_key": "wo417FrFdjy7ZhccQ-VWGZEKcoCHSEfyWcJT1pIVc1Y",
@@ -90,10 +82,10 @@
       "flow": "xtls-rprx-vision",
       "server": "130.107.73.148",
       "server_port": 41373,
-      "tag": "08-vless-🇨🇦 [809.0ms +/-1626ms] vless-206379848",
+      "tag": "07-vless-🇨🇦[openproxylist.com] vless-CA",
       "tls": {
         "enabled": true,
-        "insecure": true,
+        "insecure": false,
         "reality": {
           "enabled": true,
           "public_key": "m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU",
@@ -109,25 +101,15 @@
       "uuid": "a71c8954-66a8-4321-bedb-2336230d81ce"
     },
     {
-      "method": "chacha20-ietf-poly1305",
-      "password": "XF0klw7870vXn3uQIxe19Q",
-      "server": "38.113.188.118",
-      "server_port": 1080,
-      "tag": "09-shadowsocks-加拿大_Toronto_Amanah Tech_Claude",
-      "type": "shadowsocks"
-    },
-    {
       "interval": "5m",
       "outbounds": [
-        "01-shadowsocks-🇨🇦 加拿大 | CAN",
-        "02-vmess-🇨🇦 CA 1",
-        "03-shadowsocks-🇨🇦CA-137.184.174.93-0055",
-        "04-vless-🇨🇦[openproxylist.com] vless-CA",
-        "05-vmess-🇨🇦 CA 2",
-        "06-shadowsocks-🇨🇦 Join Telegram:@Farah_VPN 🇨🇦",
-        "07-vless-🇨🇦[openproxylist.com] vless-CA",
-        "08-vless-🇨🇦 [809.0ms +/-1626ms] vless-206379848",
-        "09-shadowsocks-加拿大_Toronto_Amanah Tech_Claude"
+        "01-shadowsocks-🇨🇦CA-137.184.174.93-0052",
+        "02-vmess-🇨🇦 CA 2",
+        "03-vmess-🇨🇦 CA 1",
+        "04-shadowsocks-🇨🇦 [452.5ms +/-895ms] shadowsocks-11074",
+        "05-vless-🇨🇦 [458.4ms +/-976ms] vless-200282613",
+        "06-vless-🇨🇦 [583.6ms +/-1218ms] vless-202736774",
+        "07-vless-🇨🇦[openproxylist.com] vless-CA"
       ],
       "tag": "auto",
       "type": "urltest",
@@ -136,15 +118,13 @@
     {
       "outbounds": [
         "auto",
-        "01-shadowsocks-🇨🇦 加拿大 | CAN",
-        "02-vmess-🇨🇦 CA 1",
-        "03-shadowsocks-🇨🇦CA-137.184.174.93-0055",
-        "04-vless-🇨🇦[openproxylist.com] vless-CA",
-        "05-vmess-🇨🇦 CA 2",
-        "06-shadowsocks-🇨🇦 Join Telegram:@Farah_VPN 🇨🇦",
-        "07-vless-🇨🇦[openproxylist.com] vless-CA",
-        "08-vless-🇨🇦 [809.0ms +/-1626ms] vless-206379848",
-        "09-shadowsocks-加拿大_Toronto_Amanah Tech_Claude"
+        "01-shadowsocks-🇨🇦CA-137.184.174.93-0052",
+        "02-vmess-🇨🇦 CA 2",
+        "03-vmess-🇨🇦 CA 1",
+        "04-shadowsocks-🇨🇦 [452.5ms +/-895ms] shadowsocks-11074",
+        "05-vless-🇨🇦 [458.4ms +/-976ms] vless-200282613",
+        "06-vless-🇨🇦 [583.6ms +/-1218ms] vless-202736774",
+        "07-vless-🇨🇦[openproxylist.com] vless-CA"
       ],
       "tag": "select",
       "type": "selector"
