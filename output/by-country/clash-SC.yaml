@@ -1,0 +1,64 @@
+mode: rule
+proxies:
+    - client-fingerprint: chrome
+      flow: xtls-rprx-vision
+      name: "01-vless-\U0001F1EC\U0001F1E7 [291.0ms +/-681ms] \U0001F1E8\U0001F1E6"
+      network: tcp
+      port: 443
+      reality-opts:
+        public-key: pPi-WO8qQFFZ9UJWNLW9YClbjcoAAZWJQ2_FM3Kjhz8
+        short-id: 500aec9e9e5e2212
+      server: 45.206.5.122
+      servername: storage.yandex.net
+      tls: true
+      type: vless
+      udp: true
+      uuid: 11e57eeb-ffdf-4983-a9fa-ad352dea7253
+    - name: 02-trojan-美国 V2CROSS.COM
+      password: humanity
+      port: 443
+      server: 45.130.125.75
+      skip-cert-verify: false
+      sni: www.calmlunch.com
+      type: trojan
+      udp: true
+    - name: "03-vless-\U0001F1E9\U0001F1EA[openproxylist.com] vless-DE"
+      network: ws
+      port: 2087
+      server: 45.130.125.239
+      servername: tot1.erooo12345.xyz
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: 03707fb7-0990-440f-88f6-b0e0f7242a38
+proxy-groups:
+    - interval: 300
+      name: auto
+      proxies:
+        - "01-vless-\U0001F1EC\U0001F1E7 [291.0ms +/-681ms] \U0001F1E8\U0001F1E6"
+        - 02-trojan-美国 V2CROSS.COM
+        - "03-vless-\U0001F1E9\U0001F1EA[openproxylist.com] vless-DE"
+      type: url-test
+      url: https://www.gstatic.com/generate_204
+    - name: select
+      proxies:
+        - auto
+        - "01-vless-\U0001F1EC\U0001F1E7 [291.0ms +/-681ms] \U0001F1E8\U0001F1E6"
+        - 02-trojan-美国 V2CROSS.COM
+        - "03-vless-\U0001F1E9\U0001F1EA[openproxylist.com] vless-DE"
+      type: select
+rules:
+    - DOMAIN-SUFFIX,weixin.qq.com,DIRECT
+    - DOMAIN-SUFFIX,wechat.com,DIRECT
+    - DOMAIN-SUFFIX,weixin.com,DIRECT
+    - DOMAIN-SUFFIX,qq.com,DIRECT
+    - DOMAIN-SUFFIX,tenpay.com,DIRECT
+    - DOMAIN-SUFFIX,gtimg.com,DIRECT
+    - DOMAIN-SUFFIX,qpic.cn,DIRECT
+    - IP-CIDR,127.0.0.0/8,DIRECT,no-resolve
+    - IP-CIDR,10.0.0.0/8,DIRECT,no-resolve
+    - IP-CIDR,172.16.0.0/12,DIRECT,no-resolve
+    - IP-CIDR,192.168.0.0/16,DIRECT,no-resolve
+    - GEOIP,CN,DIRECT,no-resolve
+    - MATCH,select
