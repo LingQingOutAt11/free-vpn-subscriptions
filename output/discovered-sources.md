@@ -1,19 +1,29 @@
 # Discovered Public Sources
 
-- Generated at: `2026-07-30T06:13:06Z`
-- Searched repos: `52`
-- Candidates: `1`
+- Generated at: `2026-07-31T06:33:19Z`
+- Searched repos: `49`
+- Candidates: `3`
 
 | Name | Format | Parsed nodes | Raw URL |
 | --- | --- | ---: | --- |
-| `fafa20252025-fafa2031-all-configs-sub` | `uri-list` | 1397 | `https://raw.githubusercontent.com/fafa20252025/fafa2031/main/All_Configs_Sub.txt` |
+| `solispirit-solvpn-all-configs` | `uri-list` | 863 | `https://raw.githubusercontent.com/SoliSpirit/SolVPN/main/all_configs.txt` |
+| `amirkma-proxykma-mix` | `uri-list` | 281 | `https://raw.githubusercontent.com/amirkma/proxykma/main/mix.txt` |
+| `amir-reza-bijandi-v2ray-configs-clash` | `clash` | 93 | `https://raw.githubusercontent.com/amir-reza-bijandi/v2ray-configs/main/clash.yaml` |
 
 ## Copy-ready entries
 
 ```yaml
 sources:
-  - name: fafa20252025-fafa2031-all-configs-sub
-    url: https://raw.githubusercontent.com/fafa20252025/fafa2031/main/All_Configs_Sub.txt
+  - name: solispirit-solvpn-all-configs
+    url: https://raw.githubusercontent.com/SoliSpirit/SolVPN/main/all_configs.txt
     format: uri-list
+    enabled: false
+  - name: amirkma-proxykma-mix
+    url: https://raw.githubusercontent.com/amirkma/proxykma/main/mix.txt
+    format: uri-list
+    enabled: false
+  - name: amir-reza-bijandi-v2ray-configs-clash
+    url: https://raw.githubusercontent.com/amir-reza-bijandi/v2ray-configs/main/clash.yaml
+    format: clash
     enabled: false
 ```
