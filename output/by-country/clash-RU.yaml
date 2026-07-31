@@ -1,0 +1,53 @@
+mode: rule
+proxies:
+    - name: "01-hysteria2- By EbraSha \U0001F303"
+      password: 76713d07-5a6b-49c2-abd8-bc450a2fa7fc
+      port: 443
+      server: 138.124.68.188
+      skip-cert-verify: false
+      sni: usa1.spectrumproxy.shop
+      type: hysteria2
+    - name: "02-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+      network: ws
+      port: 8880
+      server: 185.148.107.40
+      type: vless
+      udp: true
+      uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    - name: 03-vless-立陶宛 V2CROSS.COM
+      network: ws
+      port: 8880
+      server: 185.148.106.30
+      type: vless
+      udp: true
+      uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+proxy-groups:
+    - interval: 300
+      name: auto
+      proxies:
+        - "01-hysteria2- By EbraSha \U0001F303"
+        - "02-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+        - 03-vless-立陶宛 V2CROSS.COM
+      type: url-test
+      url: https://www.gstatic.com/generate_204
+    - name: select
+      proxies:
+        - auto
+        - "01-hysteria2- By EbraSha \U0001F303"
+        - "02-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+        - 03-vless-立陶宛 V2CROSS.COM
+      type: select
+rules:
+    - DOMAIN-SUFFIX,weixin.qq.com,DIRECT
+    - DOMAIN-SUFFIX,wechat.com,DIRECT
+    - DOMAIN-SUFFIX,weixin.com,DIRECT
+    - DOMAIN-SUFFIX,qq.com,DIRECT
+    - DOMAIN-SUFFIX,tenpay.com,DIRECT
+    - DOMAIN-SUFFIX,gtimg.com,DIRECT
+    - DOMAIN-SUFFIX,qpic.cn,DIRECT
+    - IP-CIDR,127.0.0.0/8,DIRECT,no-resolve
+    - IP-CIDR,10.0.0.0/8,DIRECT,no-resolve
+    - IP-CIDR,172.16.0.0/12,DIRECT,no-resolve
+    - IP-CIDR,192.168.0.0/16,DIRECT,no-resolve
+    - GEOIP,CN,DIRECT,no-resolve
+    - MATCH,select

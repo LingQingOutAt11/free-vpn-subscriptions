@@ -1,0 +1,58 @@
+{
+  "outbounds": [
+    {
+      "password": "76713d07-5a6b-49c2-abd8-bc450a2fa7fc",
+      "server": "138.124.68.188",
+      "server_port": 443,
+      "tag": "01-hysteria2- By EbraSha 🌃",
+      "tls": {
+        "enabled": true,
+        "insecure": false,
+        "server_name": "usa1.spectrumproxy.shop"
+      },
+      "type": "hysteria2"
+    },
+    {
+      "server": "185.148.107.40",
+      "server_port": 8880,
+      "tag": "02-vless-🔥Join Telegram:@Farah_VPN🟣",
+      "type": "vless",
+      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    },
+    {
+      "server": "185.148.106.30",
+      "server_port": 8880,
+      "tag": "03-vless-立陶宛 V2CROSS.COM",
+      "type": "vless",
+      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    },
+    {
+      "interval": "5m",
+      "outbounds": [
+        "01-hysteria2- By EbraSha 🌃",
+        "02-vless-🔥Join Telegram:@Farah_VPN🟣",
+        "03-vless-立陶宛 V2CROSS.COM"
+      ],
+      "tag": "auto",
+      "type": "urltest",
+      "url": "https://www.gstatic.com/generate_204"
+    },
+    {
+      "outbounds": [
+        "auto",
+        "01-hysteria2- By EbraSha 🌃",
+        "02-vless-🔥Join Telegram:@Farah_VPN🟣",
+        "03-vless-立陶宛 V2CROSS.COM"
+      ],
+      "tag": "select",
+      "type": "selector"
+    },
+    {
+      "tag": "direct",
+      "type": "direct"
+    }
+  ],
+  "route": {
+    "final": "select"
+  }
+}
