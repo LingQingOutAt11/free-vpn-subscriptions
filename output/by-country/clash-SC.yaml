@@ -1,0 +1,61 @@
+mode: rule
+proxies:
+    - client-fingerprint: chrome
+      flow: xtls-rprx-vision
+      name: "01-vless-\U0001F1EC\U0001F1E7 [424.8ms +/-797ms] 4Nika-5304"
+      network: tcp
+      port: 443
+      reality-opts:
+        public-key: pPi-WO8qQFFZ9UJWNLW9YClbjcoAAZWJQ2_FM3Kjhz8
+        short-id: 500aec9e9e5e2212
+      server: 45.206.5.122
+      servername: storage.yandex.net
+      tls: true
+      type: vless
+      udp: true
+      uuid: 11e57eeb-ffdf-4983-a9fa-ad352dea7253
+    - name: "02-trojan-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+      password: humanity
+      port: 443
+      server: 45.130.125.76
+      skip-cert-verify: true
+      sni: www.calmlunch.com
+      type: trojan
+      udp: true
+    - name: "03-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+      network: ws
+      port: 80
+      server: 45.130.125.209
+      type: vless
+      udp: true
+      uuid: dc8eccdb-ecfa-435f-9ac1-5dc4882e7b51
+proxy-groups:
+    - interval: 300
+      name: auto
+      proxies:
+        - "01-vless-\U0001F1EC\U0001F1E7 [424.8ms +/-797ms] 4Nika-5304"
+        - "02-trojan-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+        - "03-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+      type: url-test
+      url: https://www.gstatic.com/generate_204
+    - name: select
+      proxies:
+        - auto
+        - "01-vless-\U0001F1EC\U0001F1E7 [424.8ms +/-797ms] 4Nika-5304"
+        - "02-trojan-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+        - "03-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+      type: select
+rules:
+    - DOMAIN-SUFFIX,weixin.qq.com,DIRECT
+    - DOMAIN-SUFFIX,wechat.com,DIRECT
+    - DOMAIN-SUFFIX,weixin.com,DIRECT
+    - DOMAIN-SUFFIX,qq.com,DIRECT
+    - DOMAIN-SUFFIX,tenpay.com,DIRECT
+    - DOMAIN-SUFFIX,gtimg.com,DIRECT
+    - DOMAIN-SUFFIX,qpic.cn,DIRECT
+    - IP-CIDR,127.0.0.0/8,DIRECT,no-resolve
+    - IP-CIDR,10.0.0.0/8,DIRECT,no-resolve
+    - IP-CIDR,172.16.0.0/12,DIRECT,no-resolve
+    - IP-CIDR,192.168.0.0/16,DIRECT,no-resolve
+    - GEOIP,CN,DIRECT,no-resolve
+    - MATCH,select
