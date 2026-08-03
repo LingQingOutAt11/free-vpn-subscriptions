@@ -1,44 +1,22 @@
 mode: rule
 proxies:
-    - alterId: 0
-      cipher: auto
-      name: 01-vmess-美国_Los Angeles_Datacamp Limited_Claude15
-      network: tcp
-      port: 180
-      server: 82.198.246.97
-      type: vmess
-      udp: true
-      uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    - alterId: 0
-      cipher: auto
-      name: "02-vmess-\U0001F1FA\U0001F1F8 Join+Telegram:@Farah_VPN \U0001F1FA\U0001F1F8"
-      network: tcp
-      port: 180
-      server: 82.198.246.250
-      type: vmess
-      udp: true
-      uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    - alterId: 0
-      cipher: auto
-      name: "03-vmess-\U0001F1E8\U0001F1FF CZ 2"
-      network: tcp
-      port: 180
-      server: 82.198.246.233
-      type: vmess
-      udp: true
-      uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    - alterId: 0
-      cipher: auto
-      name: 04-vmess-美国_Los Angeles_Datacamp Limited_Claude16
-      network: tcp
-      port: 180
-      server: 82.198.246.37
-      type: vmess
-      udp: true
-      uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
     - client-fingerprint: ios
       flow: xtls-rprx-vision
-      name: "05-vless-\U0001F1FA\U0001F1F8[openproxylist.com] vless-US"
+      name: "01-vless-\U0001F1FA\U0001F1F8 [538.0ms +/-1029ms] vless-226116768"
+      network: tcp
+      port: 443
+      reality-opts:
+        public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+        short-id: c39cc7310a
+      server: 169.40.42.15
+      servername: yahoo.com
+      tls: true
+      type: vless
+      udp: true
+      uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+    - client-fingerprint: ios
+      flow: xtls-rprx-vision
+      name: "02-vless-\U0001F3F3[openproxylist.com] vless-"
       network: tcp
       port: 443
       reality-opts:
@@ -52,21 +30,7 @@ proxies:
       uuid: d65cc14c-f53f-4fe2-b262-97856601319c
     - client-fingerprint: chrome
       flow: xtls-rprx-vision
-      name: "06-vless-\U0001F1F8\U0001F1EA SE 2"
-      network: tcp
-      port: 443
-      reality-opts:
-        public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-        short-id: c39cc7310a
-      server: 169.40.42.15
-      servername: yahoo.com
-      tls: true
-      type: vless
-      udp: true
-      uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-    - client-fingerprint: chrome
-      flow: xtls-rprx-vision
-      name: "07-vless-\U0001F1FA\U0001F1F8[openproxylist.com] vless-US"
+      name: "03-vless-\U0001F1FA\U0001F1F8 [506.5ms +/-1055ms] vless-224678180"
       network: tcp
       port: 443
       reality-opts:
@@ -78,15 +42,15 @@ proxies:
       type: vless
       udp: true
       uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-    - client-fingerprint: ios
+    - client-fingerprint: chrome
       flow: xtls-rprx-vision
-      name: "08-vless-\U0001F1F8\U0001F1EA SE 3"
+      name: "04-vless-\U0001F1FA\U0001F1F8[openproxylist.com] vless-US"
       network: tcp
       port: 443
       reality-opts:
         public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
         short-id: c39cc7310a
-      server: 169.40.42.133
+      server: 169.40.42.173
       servername: yahoo.com
       tls: true
       type: vless
@@ -94,35 +58,7 @@ proxies:
       uuid: d65cc14c-f53f-4fe2-b262-97856601319c
     - client-fingerprint: ios
       flow: xtls-rprx-vision
-      name: "09-vless-\U0001F1FA\U0001F1F8 [499.5ms +/-946ms] vless-192059507"
-      network: tcp
-      port: 443
-      reality-opts:
-        public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-        short-id: c39cc7310a
-      server: 169.40.42.212
-      servername: yahoo.com
-      tls: true
-      type: vless
-      udp: true
-      uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-    - client-fingerprint: ios
-      flow: xtls-rprx-vision
-      name: "10-vless-\U0001F1FA\U0001F1F8 [468.7ms +/-956ms] vless-242894575"
-      network: tcp
-      port: 443
-      reality-opts:
-        public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-        short-id: c39cc7310a
-      server: 169.40.42.52
-      servername: yahoo.com
-      tls: true
-      type: vless
-      udp: true
-      uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-    - client-fingerprint: ios
-      flow: xtls-rprx-vision
-      name: "11-vless-\U0001F1FA\U0001F1F8 [509.1ms +/-1028ms] vless-175711218"
+      name: "05-vless-\U0001F1FA\U0001F1F8 [509.1ms +/-1028ms] vless-175711218"
       network: tcp
       port: 443
       reality-opts:
@@ -136,7 +72,7 @@ proxies:
       uuid: d65cc14c-f53f-4fe2-b262-97856601319c
     - client-fingerprint: ios
       flow: xtls-rprx-vision
-      name: "12-vless-\U0001F1FA\U0001F1F8 [499.6ms +/-1036ms] vless-200281637"
+      name: "06-vless-\U0001F1FA\U0001F1F8 [499.6ms +/-1036ms] vless-200281637"
       network: tcp
       port: 443
       reality-opts:
@@ -148,48 +84,91 @@ proxies:
       type: vless
       udp: true
       uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-    - name: "13-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-      network: ws
-      port: 8880
-      server: 45.80.111.175
+    - client-fingerprint: ios
+      flow: xtls-rprx-vision
+      name: "07-vless-\U0001F1FA\U0001F1F8 [499.5ms +/-946ms] vless-192059507"
+      network: tcp
+      port: 443
+      reality-opts:
+        public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+        short-id: c39cc7310a
+      server: 169.40.42.212
+      servername: yahoo.com
+      tls: true
       type: vless
       udp: true
-      uuid: 6ed59a5b-efef-4ddf-99f2-57d200caed47
+      uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+    - client-fingerprint: chrome
+      flow: xtls-rprx-vision
+      name: "08-vless-\U0001F1FA\U0001F1F8[openproxylist.com] vless-US"
+      network: tcp
+      port: 443
+      reality-opts:
+        public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+        short-id: c39cc7310a
+      server: 169.40.42.75
+      servername: yahoo.com
+      tls: true
+      type: vless
+      udp: true
+      uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+    - client-fingerprint: ios
+      flow: xtls-rprx-vision
+      name: "09-vless-\U0001F1FA\U0001F1F8 [472.9ms +/-954ms] vless-194747182"
+      network: tcp
+      port: 443
+      reality-opts:
+        public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+        short-id: c39cc7310a
+      server: 169.40.42.95
+      servername: yahoo.com
+      tls: true
+      type: vless
+      udp: true
+      uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+    - client-fingerprint: ios
+      flow: xtls-rprx-vision
+      name: "10-vless-\U0001F1F8\U0001F1EA SE 3"
+      network: tcp
+      port: 443
+      reality-opts:
+        public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+        short-id: c39cc7310a
+      server: 169.40.42.133
+      servername: yahoo.com
+      tls: true
+      type: vless
+      udp: true
+      uuid: d65cc14c-f53f-4fe2-b262-97856601319c
 proxy-groups:
     - interval: 300
       name: auto
       proxies:
-        - 01-vmess-美国_Los Angeles_Datacamp Limited_Claude15
-        - "02-vmess-\U0001F1FA\U0001F1F8 Join+Telegram:@Farah_VPN \U0001F1FA\U0001F1F8"
-        - "03-vmess-\U0001F1E8\U0001F1FF CZ 2"
-        - 04-vmess-美国_Los Angeles_Datacamp Limited_Claude16
-        - "05-vless-\U0001F1FA\U0001F1F8[openproxylist.com] vless-US"
-        - "06-vless-\U0001F1F8\U0001F1EA SE 2"
-        - "07-vless-\U0001F1FA\U0001F1F8[openproxylist.com] vless-US"
-        - "08-vless-\U0001F1F8\U0001F1EA SE 3"
-        - "09-vless-\U0001F1FA\U0001F1F8 [499.5ms +/-946ms] vless-192059507"
-        - "10-vless-\U0001F1FA\U0001F1F8 [468.7ms +/-956ms] vless-242894575"
-        - "11-vless-\U0001F1FA\U0001F1F8 [509.1ms +/-1028ms] vless-175711218"
-        - "12-vless-\U0001F1FA\U0001F1F8 [499.6ms +/-1036ms] vless-200281637"
-        - "13-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+        - "01-vless-\U0001F1FA\U0001F1F8 [538.0ms +/-1029ms] vless-226116768"
+        - "02-vless-\U0001F3F3[openproxylist.com] vless-"
+        - "03-vless-\U0001F1FA\U0001F1F8 [506.5ms +/-1055ms] vless-224678180"
+        - "04-vless-\U0001F1FA\U0001F1F8[openproxylist.com] vless-US"
+        - "05-vless-\U0001F1FA\U0001F1F8 [509.1ms +/-1028ms] vless-175711218"
+        - "06-vless-\U0001F1FA\U0001F1F8 [499.6ms +/-1036ms] vless-200281637"
+        - "07-vless-\U0001F1FA\U0001F1F8 [499.5ms +/-946ms] vless-192059507"
+        - "08-vless-\U0001F1FA\U0001F1F8[openproxylist.com] vless-US"
+        - "09-vless-\U0001F1FA\U0001F1F8 [472.9ms +/-954ms] vless-194747182"
+        - "10-vless-\U0001F1F8\U0001F1EA SE 3"
       type: url-test
       url: https://www.gstatic.com/generate_204
     - name: select
       proxies:
         - auto
-        - 01-vmess-美国_Los Angeles_Datacamp Limited_Claude15
-        - "02-vmess-\U0001F1FA\U0001F1F8 Join+Telegram:@Farah_VPN \U0001F1FA\U0001F1F8"
-        - "03-vmess-\U0001F1E8\U0001F1FF CZ 2"
-        - 04-vmess-美国_Los Angeles_Datacamp Limited_Claude16
-        - "05-vless-\U0001F1FA\U0001F1F8[openproxylist.com] vless-US"
-        - "06-vless-\U0001F1F8\U0001F1EA SE 2"
-        - "07-vless-\U0001F1FA\U0001F1F8[openproxylist.com] vless-US"
-        - "08-vless-\U0001F1F8\U0001F1EA SE 3"
-        - "09-vless-\U0001F1FA\U0001F1F8 [499.5ms +/-946ms] vless-192059507"
-        - "10-vless-\U0001F1FA\U0001F1F8 [468.7ms +/-956ms] vless-242894575"
-        - "11-vless-\U0001F1FA\U0001F1F8 [509.1ms +/-1028ms] vless-175711218"
-        - "12-vless-\U0001F1FA\U0001F1F8 [499.6ms +/-1036ms] vless-200281637"
-        - "13-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+        - "01-vless-\U0001F1FA\U0001F1F8 [538.0ms +/-1029ms] vless-226116768"
+        - "02-vless-\U0001F3F3[openproxylist.com] vless-"
+        - "03-vless-\U0001F1FA\U0001F1F8 [506.5ms +/-1055ms] vless-224678180"
+        - "04-vless-\U0001F1FA\U0001F1F8[openproxylist.com] vless-US"
+        - "05-vless-\U0001F1FA\U0001F1F8 [509.1ms +/-1028ms] vless-175711218"
+        - "06-vless-\U0001F1FA\U0001F1F8 [499.6ms +/-1036ms] vless-200281637"
+        - "07-vless-\U0001F1FA\U0001F1F8 [499.5ms +/-946ms] vless-192059507"
+        - "08-vless-\U0001F1FA\U0001F1F8[openproxylist.com] vless-US"
+        - "09-vless-\U0001F1FA\U0001F1F8 [472.9ms +/-954ms] vless-194747182"
+        - "10-vless-\U0001F1F8\U0001F1EA SE 3"
       type: select
 rules:
     - DOMAIN-SUFFIX,weixin.qq.com,DIRECT
