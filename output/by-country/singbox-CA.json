@@ -5,7 +5,7 @@
       "security": "auto",
       "server": "134.195.196.211",
       "server_port": 18000,
-      "tag": "01-vmess-🇨🇦 CA 1",
+      "tag": "01-vmess-加拿大_Toronto_GLOBALTELEHOST_Gemini_Claude",
       "type": "vmess",
       "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe"
     },
@@ -18,22 +18,13 @@
       "type": "shadowsocks"
     },
     {
-      "alter_id": 0,
-      "security": "auto",
-      "server": "23.162.200.198",
-      "server_port": 18000,
-      "tag": "03-vmess-🇨🇦 CA 2",
-      "type": "vmess",
-      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe"
-    },
-    {
       "flow": "xtls-rprx-vision",
       "server": "216.152.147.28",
       "server_port": 443,
-      "tag": "04-vless-🇨🇦 [388.8ms +/-787ms] vless-200282613",
+      "tag": "03-vless-🇨🇦[openproxylist.com] vless-CA",
       "tls": {
         "enabled": true,
-        "insecure": true,
+        "insecure": false,
         "reality": {
           "enabled": true,
           "public_key": "kjiuPmjM4IutdZudHfcPZHEwcrBEFY4qBLlvfC6A_Ss",
@@ -49,10 +40,19 @@
       "uuid": "d9e4721d-cdac-44c7-bc91-117367eac194"
     },
     {
+      "alter_id": 0,
+      "security": "auto",
+      "server": "23.162.200.198",
+      "server_port": 18000,
+      "tag": "04-vmess-加拿大_Toronto_GLOBALTELEHOST_Gemini_Claude",
+      "type": "vmess",
+      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe"
+    },
+    {
       "flow": "xtls-rprx-vision",
       "server": "158.69.112.254",
       "server_port": 443,
-      "tag": "05-vless-🇨🇦 [567.1ms +/-1187ms] vless-51783",
+      "tag": "05-vless-🇨🇦 [581.6ms +/-1213ms] vless-23853903",
       "tls": {
         "enabled": true,
         "insecure": true,
@@ -75,27 +75,41 @@
       "password": "KixLvKzwjekG00rm",
       "server": "185.196.61.82",
       "server_port": 8080,
-      "tag": "06-shadowsocks-🇨🇦 CA 3",
+      "tag": "06-shadowsocks-EPODONIOS",
       "type": "shadowsocks"
     },
     {
-      "method": "chacha20-ietf-poly1305",
-      "password": "XF0klw7870vXn3uQIxe19Q",
-      "server": "68.168.114.238",
-      "server_port": 1080,
-      "tag": "07-shadowsocks-🇨🇦[openproxylist.com] ss-CA",
-      "type": "shadowsocks"
+      "flow": "xtls-rprx-vision",
+      "server": "130.107.73.148",
+      "server_port": 41373,
+      "tag": "07-vless-🇨🇦 [690.4ms +/-1428ms] vless-24252274",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "reality": {
+          "enabled": true,
+          "public_key": "m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU",
+          "short_id": "0e"
+        },
+        "server_name": "google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "type": "vless",
+      "uuid": "a71c8954-66a8-4321-bedb-2336230d81ce"
     },
     {
       "interval": "5m",
       "outbounds": [
-        "01-vmess-🇨🇦 CA 1",
+        "01-vmess-加拿大_Toronto_GLOBALTELEHOST_Gemini_Claude",
         "02-shadowsocks-🇨🇦CA-137.184.174.93-0271",
-        "03-vmess-🇨🇦 CA 2",
-        "04-vless-🇨🇦 [388.8ms +/-787ms] vless-200282613",
-        "05-vless-🇨🇦 [567.1ms +/-1187ms] vless-51783",
-        "06-shadowsocks-🇨🇦 CA 3",
-        "07-shadowsocks-🇨🇦[openproxylist.com] ss-CA"
+        "03-vless-🇨🇦[openproxylist.com] vless-CA",
+        "04-vmess-加拿大_Toronto_GLOBALTELEHOST_Gemini_Claude",
+        "05-vless-🇨🇦 [581.6ms +/-1213ms] vless-23853903",
+        "06-shadowsocks-EPODONIOS",
+        "07-vless-🇨🇦 [690.4ms +/-1428ms] vless-24252274"
       ],
       "tag": "auto",
       "type": "urltest",
@@ -104,13 +118,13 @@
     {
       "outbounds": [
         "auto",
-        "01-vmess-🇨🇦 CA 1",
+        "01-vmess-加拿大_Toronto_GLOBALTELEHOST_Gemini_Claude",
         "02-shadowsocks-🇨🇦CA-137.184.174.93-0271",
-        "03-vmess-🇨🇦 CA 2",
-        "04-vless-🇨🇦 [388.8ms +/-787ms] vless-200282613",
-        "05-vless-🇨🇦 [567.1ms +/-1187ms] vless-51783",
-        "06-shadowsocks-🇨🇦 CA 3",
-        "07-shadowsocks-🇨🇦[openproxylist.com] ss-CA"
+        "03-vless-🇨🇦[openproxylist.com] vless-CA",
+        "04-vmess-加拿大_Toronto_GLOBALTELEHOST_Gemini_Claude",
+        "05-vless-🇨🇦 [581.6ms +/-1213ms] vless-23853903",
+        "06-shadowsocks-EPODONIOS",
+        "07-vless-🇨🇦 [690.4ms +/-1428ms] vless-24252274"
       ],
       "tag": "select",
       "type": "selector"
