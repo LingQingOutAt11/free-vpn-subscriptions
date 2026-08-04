@@ -1,0 +1,105 @@
+{
+  "outbounds": [
+    {
+      "method": "chacha20-ietf-poly1305",
+      "password": "G5p6ww4o67HB",
+      "server": "108.181.118.10",
+      "server_port": 8388,
+      "tag": "01-shadowsocks-🛰️74@oneclickvpnkeys",
+      "type": "shadowsocks"
+    },
+    {
+      "alter_id": 0,
+      "security": "auto",
+      "server": "23.162.200.198",
+      "server_port": 18000,
+      "tag": "02-vmess-加拿大_Toronto_GLOBALTELEHOST_Gemini_Claude",
+      "type": "vmess",
+      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe"
+    },
+    {
+      "method": "aes-256-gcm",
+      "password": "KixLvKzwjekG00rm",
+      "server": "185.196.61.82",
+      "server_port": 8080,
+      "tag": "03-shadowsocks-加拿大_Toronto_BrainStorm Network Inc_Claud",
+      "type": "shadowsocks"
+    },
+    {
+      "flow": "xtls-rprx-vision",
+      "server": "158.69.112.254",
+      "server_port": 443,
+      "tag": "04-vless-🇨🇦 [439.6ms +/-1161ms] vless-202736774",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "reality": {
+          "enabled": true,
+          "public_key": "wo417FrFdjy7ZhccQ-VWGZEKcoCHSEfyWcJT1pIVc1Y",
+          "short_id": "3d3c1e645f763ee3"
+        },
+        "server_name": "www.speedtest.net",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "type": "vless",
+      "uuid": "661f395d-b153-4199-a04b-693f5fe7f261"
+    },
+    {
+      "flow": "xtls-rprx-vision",
+      "server": "130.107.73.148",
+      "server_port": 41373,
+      "tag": "05-vless-🇨🇦 [344.0ms +/-836ms] vless-18572420",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "reality": {
+          "enabled": true,
+          "public_key": "m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU",
+          "short_id": "0e"
+        },
+        "server_name": "google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "type": "vless",
+      "uuid": "a71c8954-66a8-4321-bedb-2336230d81ce"
+    },
+    {
+      "interval": "5m",
+      "outbounds": [
+        "01-shadowsocks-🛰️74@oneclickvpnkeys",
+        "02-vmess-加拿大_Toronto_GLOBALTELEHOST_Gemini_Claude",
+        "03-shadowsocks-加拿大_Toronto_BrainStorm Network Inc_Claud",
+        "04-vless-🇨🇦 [439.6ms +/-1161ms] vless-202736774",
+        "05-vless-🇨🇦 [344.0ms +/-836ms] vless-18572420"
+      ],
+      "tag": "auto",
+      "type": "urltest",
+      "url": "https://www.gstatic.com/generate_204"
+    },
+    {
+      "outbounds": [
+        "auto",
+        "01-shadowsocks-🛰️74@oneclickvpnkeys",
+        "02-vmess-加拿大_Toronto_GLOBALTELEHOST_Gemini_Claude",
+        "03-shadowsocks-加拿大_Toronto_BrainStorm Network Inc_Claud",
+        "04-vless-🇨🇦 [439.6ms +/-1161ms] vless-202736774",
+        "05-vless-🇨🇦 [344.0ms +/-836ms] vless-18572420"
+      ],
+      "tag": "select",
+      "type": "selector"
+    },
+    {
+      "tag": "direct",
+      "type": "direct"
+    }
+  ],
+  "route": {
+    "final": "select"
+  }
+}
