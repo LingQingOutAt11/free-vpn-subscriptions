@@ -1,0 +1,102 @@
+{
+  "outbounds": [
+    {
+      "alter_id": 0,
+      "security": "auto",
+      "server": "134.195.196.211",
+      "server_port": 18000,
+      "tag": "01-vmess-加拿大_Toronto_GLOBALTELEHOST_Gemini_Claude",
+      "type": "vmess",
+      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe"
+    },
+    {
+      "method": "rc4-md5",
+      "password": "14fFPrbezE3HDZzsMOr6",
+      "server": "137.184.174.93",
+      "server_port": 8080,
+      "tag": "02-shadowsocks-加拿大_Toronto_DigitalOcean LLC_Gemini_Clau",
+      "type": "shadowsocks"
+    },
+    {
+      "method": "aes-256-gcm",
+      "password": "b53722b462aad765",
+      "server": "166.88.130.210",
+      "server_port": 7011,
+      "tag": "03-shadowsocks-🟠🇨🇦[🎬🤖📺🎭]_github.com/Ruk1ng001_368a2910",
+      "type": "shadowsocks"
+    },
+    {
+      "alter_id": 0,
+      "security": "auto",
+      "server": "23.162.200.198",
+      "server_port": 18000,
+      "tag": "04-vmess-CA 🇨🇦 | @Raydikalx | 4BA3A6",
+      "type": "vmess",
+      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe"
+    },
+    {
+      "method": "aes-256-gcm",
+      "password": "KixLvKzwjekG00rm",
+      "server": "185.196.61.82",
+      "server_port": 8080,
+      "tag": "05-shadowsocks-加拿大_Toronto_BrainStorm Network Inc_Claud",
+      "type": "shadowsocks"
+    },
+    {
+      "flow": "xtls-rprx-vision",
+      "server": "185.206.170.69",
+      "server_port": 5151,
+      "tag": "06-vless-🇨🇦[openproxylist.com] vless-CA",
+      "tls": {
+        "enabled": true,
+        "insecure": false,
+        "reality": {
+          "enabled": true,
+          "public_key": "T3vWH0zPUrOsgdK7cvEEnMbS3LIJDxQ17_L_GhmZJ0E",
+          "short_id": "69b851"
+        },
+        "server_name": "www.yahoo.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "type": "vless",
+      "uuid": "26c0589f-79e5-4789-8ff7-914f2e26e8e5"
+    },
+    {
+      "interval": "5m",
+      "outbounds": [
+        "01-vmess-加拿大_Toronto_GLOBALTELEHOST_Gemini_Claude",
+        "02-shadowsocks-加拿大_Toronto_DigitalOcean LLC_Gemini_Clau",
+        "03-shadowsocks-🟠🇨🇦[🎬🤖📺🎭]_github.com/Ruk1ng001_368a2910",
+        "04-vmess-CA 🇨🇦 | @Raydikalx | 4BA3A6",
+        "05-shadowsocks-加拿大_Toronto_BrainStorm Network Inc_Claud",
+        "06-vless-🇨🇦[openproxylist.com] vless-CA"
+      ],
+      "tag": "auto",
+      "type": "urltest",
+      "url": "https://www.gstatic.com/generate_204"
+    },
+    {
+      "outbounds": [
+        "auto",
+        "01-vmess-加拿大_Toronto_GLOBALTELEHOST_Gemini_Claude",
+        "02-shadowsocks-加拿大_Toronto_DigitalOcean LLC_Gemini_Clau",
+        "03-shadowsocks-🟠🇨🇦[🎬🤖📺🎭]_github.com/Ruk1ng001_368a2910",
+        "04-vmess-CA 🇨🇦 | @Raydikalx | 4BA3A6",
+        "05-shadowsocks-加拿大_Toronto_BrainStorm Network Inc_Claud",
+        "06-vless-🇨🇦[openproxylist.com] vless-CA"
+      ],
+      "tag": "select",
+      "type": "selector"
+    },
+    {
+      "tag": "direct",
+      "type": "direct"
+    }
+  ],
+  "route": {
+    "final": "select"
+  }
+}
