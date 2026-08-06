@@ -1,58 +1,62 @@
 mode: rule
 proxies:
-    - alterId: 0
-      cipher: auto
-      name: "01-vmess-\U0001F1E8\U0001F1FF CZ 1"
+    - client-fingerprint: chrome
+      flow: xtls-rprx-vision
+      name: "01-vless-\U0001F1FA\U0001F1F8[openproxylist.com] vless-US"
       network: tcp
-      port: 180
-      server: 82.198.246.233
-      type: vmess
+      port: 443
+      reality-opts:
+        public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+        short-id: c39cc7310a
+      server: 169.40.42.15
+      servername: yahoo.com
+      tls: true
+      type: vless
       udp: true
-      uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    - alterId: 0
-      cipher: auto
-      name: 02-vmess-EPODONIOS
+      uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+    - client-fingerprint: ios
+      flow: xtls-rprx-vision
+      name: "02-vless-\U0001F1FA\U0001F1F8 (7)"
       network: tcp
-      port: 180
-      server: 82.198.246.250
-      type: vmess
+      port: 443
+      reality-opts:
+        public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+        short-id: c39cc7310a
+      server: 169.40.42.179
+      servername: yahoo.com
+      tls: true
+      type: vless
       udp: true
-      uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    - alterId: 0
-      cipher: auto
-      name: 03-vmess-美国_Los Angeles_Datacamp Limited_Claude5
+      uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+    - client-fingerprint: chrome
+      flow: xtls-rprx-vision
+      name: "03-vless-\U0001F1FA\U0001F1F8 [299.1ms +/-740ms] @tootffarangi\U0001F353-13"
       network: tcp
-      port: 180
-      server: 82.198.246.97
-      type: vmess
+      port: 443
+      reality-opts:
+        public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+        short-id: c39cc7310a
+      server: 169.40.42.16
+      servername: yahoo.com
+      tls: true
+      type: vless
       udp: true
-      uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    - alterId: 0
-      cipher: auto
-      name: 04-vmess-美国_Los Angeles_Datacamp Limited_Claude1
-      network: tcp
-      port: 180
-      server: 82.198.246.37
-      type: vmess
-      udp: true
-      uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+      uuid: d65cc14c-f53f-4fe2-b262-97856601319c
 proxy-groups:
     - interval: 300
       name: auto
       proxies:
-        - "01-vmess-\U0001F1E8\U0001F1FF CZ 1"
-        - 02-vmess-EPODONIOS
-        - 03-vmess-美国_Los Angeles_Datacamp Limited_Claude5
-        - 04-vmess-美国_Los Angeles_Datacamp Limited_Claude1
+        - "01-vless-\U0001F1FA\U0001F1F8[openproxylist.com] vless-US"
+        - "02-vless-\U0001F1FA\U0001F1F8 (7)"
+        - "03-vless-\U0001F1FA\U0001F1F8 [299.1ms +/-740ms] @tootffarangi\U0001F353-13"
       type: url-test
       url: https://www.gstatic.com/generate_204
     - name: select
       proxies:
         - auto
-        - "01-vmess-\U0001F1E8\U0001F1FF CZ 1"
-        - 02-vmess-EPODONIOS
-        - 03-vmess-美国_Los Angeles_Datacamp Limited_Claude5
-        - 04-vmess-美国_Los Angeles_Datacamp Limited_Claude1
+        - "01-vless-\U0001F1FA\U0001F1F8[openproxylist.com] vless-US"
+        - "02-vless-\U0001F1FA\U0001F1F8 (7)"
+        - "03-vless-\U0001F1FA\U0001F1F8 [299.1ms +/-740ms] @tootffarangi\U0001F353-13"
       type: select
 rules:
     - DOMAIN-SUFFIX,weixin.qq.com,DIRECT
