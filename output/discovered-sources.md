@@ -1,19 +1,19 @@
 # Discovered Public Sources
 
-- Generated at: `2026-08-05T06:12:17Z`
-- Searched repos: `50`
+- Generated at: `2026-08-06T06:15:19Z`
+- Searched repos: `52`
 - Candidates: `1`
 
 | Name | Format | Parsed nodes | Raw URL |
 | --- | --- | ---: | --- |
-| `alexantswe-v2ray-config-all-configs-sub` | `uri-list` | 1355 | `https://raw.githubusercontent.com/alexantSWE/V2ray-Config/main/All_Configs_Sub.txt` |
+| `hvwin8-autojiedian-clash` | `clash` | 721 | `https://raw.githubusercontent.com/hvwin8/autojiedian/master/clash.yaml` |
 
 ## Copy-ready entries
 
 ```yaml
 sources:
-  - name: alexantswe-v2ray-config-all-configs-sub
-    url: https://raw.githubusercontent.com/alexantSWE/V2ray-Config/main/All_Configs_Sub.txt
-    format: uri-list
+  - name: hvwin8-autojiedian-clash
+    url: https://raw.githubusercontent.com/hvwin8/autojiedian/master/clash.yaml
+    format: clash
     enabled: false
 ```
