@@ -4,7 +4,7 @@
 
 <p align="center"><img src="https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/assets/hero.png" alt="Free VPN Subscriptions — hourly-refreshed free VPN subscriptions for Clash, sing-box, v2ray" width="780"></p>
 
-![ノード](https://img.shields.io/badge/ノード-83-brightgreen) ![生存](https://img.shields.io/badge/生存-3467-blue) ![中央値--rtt](https://img.shields.io/badge/中央値--rtt-100ms-orange) ![更新](https://img.shields.io/badge/更新-2026-08-05_20:01_UTC-informational)
+![ノード](https://img.shields.io/badge/ノード-103-brightgreen) ![生存](https://img.shields.io/badge/生存-3552-blue) ![中央値--rtt](https://img.shields.io/badge/中央値--rtt-98ms-orange) ![更新](https://img.shields.io/badge/更新-2026-08-06_03:43_UTC-informational)
 
 > **動作する無料 VPN を手に入れる一番かんたんな方法 —— 購読リンクをコピーしてクライアントに貼るだけ。**  
 > 登録不要。支払い不要。バイナリのインストール不要。公開ソースから毎時自動更新 —— 公開される全ノードは、数分前に sing-box 経由で実 HTTP トラフィックを転送した実績があります。
@@ -77,8 +77,8 @@ proxy-groups:
 
 | 国 | ノード数 | Clash | sing-box | v2ray |
 |---|---|---|---|---|
-| 🇺🇸 United States (`US`) | 42 | [clash-US.yaml](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/clash-US.yaml) | [singbox-US.json](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/singbox-US.json) | [v2ray-base64-US.txt](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/v2ray-base64-US.txt) |
-| 🇩🇪 Germany (`DE`) | 3 | [clash-DE.yaml](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/clash-DE.yaml) | [singbox-DE.json](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/singbox-DE.json) | [v2ray-base64-DE.txt](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/v2ray-base64-DE.txt) |
+| 🇺🇸 United States (`US`) | 55 | [clash-US.yaml](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/clash-US.yaml) | [singbox-US.json](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/singbox-US.json) | [v2ray-base64-US.txt](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/v2ray-base64-US.txt) |
+| 🇩🇪 Germany (`DE`) | 4 | [clash-DE.yaml](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/clash-DE.yaml) | [singbox-DE.json](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/singbox-DE.json) | [v2ray-base64-DE.txt](https://github.com/LingQingOutAt11/free-vpn-subscriptions/raw/main/output/by-country/v2ray-base64-DE.txt) |
 
 ## 📖 クライアント設定ガイド
 
@@ -99,15 +99,15 @@ proxy-groups:
 
 ## 📊 リアルタイム統計
 
-- **選定ノード**: 83
-- **全ソース生存数**: 3467
-- **最速 RTT**: 22 ms
-- **中央値 RTT**: 100 ms
-- **最終更新 (UTC)**: 2026-08-05 20:01 UTC
+- **選定ノード**: 103
+- **全ソース生存数**: 3552
+- **最速 RTT**: 26 ms
+- **中央値 RTT**: 98 ms
+- **最終更新 (UTC)**: 2026-08-06 03:43 UTC
 
-**プロトコル構成:** hysteria2 × 1 · shadowsocks × 7 · trojan × 19 · vless × 48 · vmess × 8
+**プロトコル構成:** shadowsocks × 7 · trojan × 25 · vless × 61 · vmess × 10
 
-**今回使用したソース:** `autojiedian-clash` × 15 · `automerge-verified-clash` × 9 · `barry-far-v2ray` × 1 · `epodonios` × 1 · `mahdi0024` × 5 · `mahdibland-aggregator` × 2 · `mahdibland-shadowsocks` × 1 · `ninjastrikers` × 3 · `pawdroid` × 1 · `roosterkid-openproxylist` × 14 · `ruking-clash` × 2 · `snakem982` × 2 · `solispirit-v2ray` × 14 · `surfboard-eternity` × 1 · `tg-v2ray-configs-every2h` × 12
+**今回使用したソース:** `autojiedian-clash` × 12 · `automerge-verified-clash` × 13 · `epodonios` × 3 · `mahdi0024` × 5 · `mahdibland-aggregator` × 2 · `mahdibland-shadowsocks` × 2 · `matin-v2ray` × 1 · `ninjastrikers` × 11 · `pawdroid` × 3 · `radikal-clash` × 1 · `roosterkid-openproxylist` × 12 · `ruking-clash` × 1 · `snakem982` × 1 · `solispirit-v2ray` × 21 · `tg-v2ray-configs-every2h` × 15
 
 ## ❓ よくある質問
 
