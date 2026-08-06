@@ -1,22 +1,8 @@
 mode: rule
 proxies:
-    - client-fingerprint: chrome
-      flow: xtls-rprx-vision
-      name: "01-vless-\U0001F1FA\U0001F1F8[openproxylist.com] vless-US"
-      network: tcp
-      port: 443
-      reality-opts:
-        public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-        short-id: c39cc7310a
-      server: 169.40.42.15
-      servername: yahoo.com
-      tls: true
-      type: vless
-      udp: true
-      uuid: d65cc14c-f53f-4fe2-b262-97856601319c
     - client-fingerprint: ios
       flow: xtls-rprx-vision
-      name: "02-vless-\U0001F1FA\U0001F1F8 (7)"
+      name: 01-vless-EPODONIOS
       network: tcp
       port: 443
       reality-opts:
@@ -28,9 +14,65 @@ proxies:
       type: vless
       udp: true
       uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+    - client-fingerprint: ios
+      flow: xtls-rprx-vision
+      name: "02-vless-\U0001F1FA\U0001F1F8[openproxylist.com] vless-US"
+      network: tcp
+      port: 443
+      reality-opts:
+        public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+        short-id: c39cc7310a
+      server: 169.40.42.184
+      servername: yahoo.com
+      tls: true
+      type: vless
+      udp: true
+      uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+    - client-fingerprint: ios
+      flow: xtls-rprx-vision
+      name: "03-vless-\U0001F1FA\U0001F1F8 [823.7ms +/-1972ms] vless-288146061"
+      network: tcp
+      port: 443
+      reality-opts:
+        public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+        short-id: c39cc7310a
+      server: 169.40.42.192
+      servername: yahoo.com
+      tls: true
+      type: vless
+      udp: true
+      uuid: d65cc14c-f53f-4fe2-b262-97856601319c
     - client-fingerprint: chrome
       flow: xtls-rprx-vision
-      name: "03-vless-\U0001F1FA\U0001F1F8 [299.1ms +/-740ms] @tootffarangi\U0001F353-13"
+      name: "04-vless-\U0001F1FA\U0001F1F8[openproxylist.com] vless-US"
+      network: tcp
+      port: 443
+      reality-opts:
+        public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+        short-id: c39cc7310a
+      server: 169.40.42.15
+      servername: yahoo.com
+      tls: true
+      type: vless
+      udp: true
+      uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+    - client-fingerprint: chrome
+      flow: xtls-rprx-vision
+      name: "05-vless-\U0001F1FA\U0001F1F8 [430.6ms +/-924ms] @tootffarangi\U0001F353-12"
+      network: tcp
+      port: 443
+      reality-opts:
+        public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+        short-id: c39cc7310a
+      server: 169.40.42.133
+      servername: yahoo.com
+      tls: true
+      type: vless
+      udp: true
+      uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+    - client-fingerprint: chrome
+      flow: xtls-rprx-vision
+      name: "06-vless-\U0001F1FA\U0001F1F8 [433.2ms +/-1003ms] @tootffarangi\U0001F353-13"
       network: tcp
       port: 443
       reality-opts:
@@ -46,17 +88,23 @@ proxy-groups:
     - interval: 300
       name: auto
       proxies:
-        - "01-vless-\U0001F1FA\U0001F1F8[openproxylist.com] vless-US"
-        - "02-vless-\U0001F1FA\U0001F1F8 (7)"
-        - "03-vless-\U0001F1FA\U0001F1F8 [299.1ms +/-740ms] @tootffarangi\U0001F353-13"
+        - 01-vless-EPODONIOS
+        - "02-vless-\U0001F1FA\U0001F1F8[openproxylist.com] vless-US"
+        - "03-vless-\U0001F1FA\U0001F1F8 [823.7ms +/-1972ms] vless-288146061"
+        - "04-vless-\U0001F1FA\U0001F1F8[openproxylist.com] vless-US"
+        - "05-vless-\U0001F1FA\U0001F1F8 [430.6ms +/-924ms] @tootffarangi\U0001F353-12"
+        - "06-vless-\U0001F1FA\U0001F1F8 [433.2ms +/-1003ms] @tootffarangi\U0001F353-13"
       type: url-test
       url: https://www.gstatic.com/generate_204
     - name: select
       proxies:
         - auto
-        - "01-vless-\U0001F1FA\U0001F1F8[openproxylist.com] vless-US"
-        - "02-vless-\U0001F1FA\U0001F1F8 (7)"
-        - "03-vless-\U0001F1FA\U0001F1F8 [299.1ms +/-740ms] @tootffarangi\U0001F353-13"
+        - 01-vless-EPODONIOS
+        - "02-vless-\U0001F1FA\U0001F1F8[openproxylist.com] vless-US"
+        - "03-vless-\U0001F1FA\U0001F1F8 [823.7ms +/-1972ms] vless-288146061"
+        - "04-vless-\U0001F1FA\U0001F1F8[openproxylist.com] vless-US"
+        - "05-vless-\U0001F1FA\U0001F1F8 [430.6ms +/-924ms] @tootffarangi\U0001F353-12"
+        - "06-vless-\U0001F1FA\U0001F1F8 [433.2ms +/-1003ms] @tootffarangi\U0001F353-13"
       type: select
 rules:
     - DOMAIN-SUFFIX,weixin.qq.com,DIRECT
