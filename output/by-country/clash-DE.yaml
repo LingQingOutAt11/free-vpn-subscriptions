@@ -2,35 +2,7 @@ mode: rule
 proxies:
     - client-fingerprint: ios
       flow: xtls-rprx-vision
-      name: "01-vless-\U0001F1FA\U0001F1F8 [823.7ms +/-1972ms] vless-288146061"
-      network: tcp
-      port: 443
-      reality-opts:
-        public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-        short-id: c39cc7310a
-      server: 169.40.42.192
-      servername: yahoo.com
-      tls: true
-      type: vless
-      udp: true
-      uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-    - client-fingerprint: chrome
-      flow: xtls-rprx-vision
-      name: "02-vless-\U0001F1FA\U0001F1F8 [430.6ms +/-924ms] @tootffarangi\U0001F353-12"
-      network: tcp
-      port: 443
-      reality-opts:
-        public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-        short-id: c39cc7310a
-      server: 169.40.42.133
-      servername: yahoo.com
-      tls: true
-      type: vless
-      udp: true
-      uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-    - client-fingerprint: ios
-      flow: xtls-rprx-vision
-      name: "03-vless-\U0001F1E9\U0001F1EA \U0001F4A5Config_jo-216"
+      name: 01-vless-EPODONIOS
       network: tcp
       port: 443
       reality-opts:
@@ -42,15 +14,15 @@ proxies:
       type: vless
       udp: true
       uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-    - client-fingerprint: chrome
+    - client-fingerprint: firefox
       flow: xtls-rprx-vision
-      name: "04-vless-\U0001F1FA\U0001F1F8 [433.2ms +/-1003ms] @tootffarangi\U0001F353-13"
+      name: "02-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
       network: tcp
       port: 443
       reality-opts:
         public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
         short-id: c39cc7310a
-      server: 169.40.42.16
+      server: 169.40.42.184
       servername: yahoo.com
       tls: true
       type: vless
@@ -58,7 +30,21 @@ proxies:
       uuid: d65cc14c-f53f-4fe2-b262-97856601319c
     - client-fingerprint: chrome
       flow: xtls-rprx-vision
-      name: "05-vless-\U0001F1FA\U0001F1F8[openproxylist.com] vless-US"
+      name: "03-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+      network: tcp
+      port: 443
+      reality-opts:
+        public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+        short-id: c39cc7310a
+      server: 169.40.42.173
+      servername: yahoo.com
+      tls: true
+      type: vless
+      udp: true
+      uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+    - client-fingerprint: chrome
+      flow: xtls-rprx-vision
+      name: "04-vless-\U0001F1FA\U0001F1F8[openproxylist.com] vless-US"
       network: tcp
       port: 443
       reality-opts:
@@ -70,41 +56,23 @@ proxies:
       type: vless
       udp: true
       uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-    - client-fingerprint: chrome
-      flow: xtls-rprx-vision
-      name: "06-vless-\U0001F1FA\U0001F1F8 [362.2ms +/-714ms] @tootffarangi\U0001F353-14"
-      network: tcp
-      port: 443
-      reality-opts:
-        public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-        short-id: c39cc7310a
-      server: 169.40.42.121
-      servername: yahoo.com
-      tls: true
-      type: vless
-      udp: true
-      uuid: d65cc14c-f53f-4fe2-b262-97856601319c
 proxy-groups:
     - interval: 300
       name: auto
       proxies:
-        - "01-vless-\U0001F1FA\U0001F1F8 [823.7ms +/-1972ms] vless-288146061"
-        - "02-vless-\U0001F1FA\U0001F1F8 [430.6ms +/-924ms] @tootffarangi\U0001F353-12"
-        - "03-vless-\U0001F1E9\U0001F1EA \U0001F4A5Config_jo-216"
-        - "04-vless-\U0001F1FA\U0001F1F8 [433.2ms +/-1003ms] @tootffarangi\U0001F353-13"
-        - "05-vless-\U0001F1FA\U0001F1F8[openproxylist.com] vless-US"
-        - "06-vless-\U0001F1FA\U0001F1F8 [362.2ms +/-714ms] @tootffarangi\U0001F353-14"
+        - 01-vless-EPODONIOS
+        - "02-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+        - "03-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+        - "04-vless-\U0001F1FA\U0001F1F8[openproxylist.com] vless-US"
       type: url-test
       url: https://www.gstatic.com/generate_204
     - name: select
       proxies:
         - auto
-        - "01-vless-\U0001F1FA\U0001F1F8 [823.7ms +/-1972ms] vless-288146061"
-        - "02-vless-\U0001F1FA\U0001F1F8 [430.6ms +/-924ms] @tootffarangi\U0001F353-12"
-        - "03-vless-\U0001F1E9\U0001F1EA \U0001F4A5Config_jo-216"
-        - "04-vless-\U0001F1FA\U0001F1F8 [433.2ms +/-1003ms] @tootffarangi\U0001F353-13"
-        - "05-vless-\U0001F1FA\U0001F1F8[openproxylist.com] vless-US"
-        - "06-vless-\U0001F1FA\U0001F1F8 [362.2ms +/-714ms] @tootffarangi\U0001F353-14"
+        - 01-vless-EPODONIOS
+        - "02-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+        - "03-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+        - "04-vless-\U0001F1FA\U0001F1F8[openproxylist.com] vless-US"
       type: select
 rules:
     - DOMAIN-SUFFIX,weixin.qq.com,DIRECT
