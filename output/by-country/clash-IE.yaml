@@ -1,0 +1,76 @@
+mode: rule
+proxies:
+    - name: "01-trojan-\U0001F1EE\U0001F1EA [607.5ms +/-1075ms] trojan-281604221"
+      password: UO36402987
+      port: 443
+      server: 54.216.124.178
+      skip-cert-verify: true
+      sni: warm-bass.rooster465.autos
+      type: trojan
+      udp: true
+    - name: "02-trojan-\U0001F1EE\U0001F1EA [621.1ms +/-1095ms] trojan-309177205"
+      password: ND91608427
+      port: 443
+      server: 54.217.133.71
+      skip-cert-verify: true
+      sni: willing-beagle.rooster465.autos
+      type: trojan
+      udp: true
+    - name: 03-trojan-其他地区_Dublin_Amazon.com Inc._Claude3
+      password: UO36402987
+      port: 443
+      server: 34.251.228.118
+      skip-cert-verify: true
+      sni: definite-ladybird.rooster465.autos
+      type: trojan
+      udp: true
+    - name: 04-trojan-其他地区_Dublin_Amazon.com Inc._Claude5
+      password: UO36402987
+      port: 443
+      server: warm-bass.rooster465.autos
+      skip-cert-verify: false
+      sni: ""
+      type: trojan
+      udp: true
+    - name: 05-trojan-其他地区_Dublin_Amazon Technologies Inc._Cla
+      password: UO36402987
+      port: 443
+      server: definite-ladybird.rooster465.autos
+      skip-cert-verify: false
+      sni: definite-ladybird.rooster465.autos
+      type: trojan
+      udp: true
+proxy-groups:
+    - interval: 300
+      name: auto
+      proxies:
+        - "01-trojan-\U0001F1EE\U0001F1EA [607.5ms +/-1075ms] trojan-281604221"
+        - "02-trojan-\U0001F1EE\U0001F1EA [621.1ms +/-1095ms] trojan-309177205"
+        - 03-trojan-其他地区_Dublin_Amazon.com Inc._Claude3
+        - 04-trojan-其他地区_Dublin_Amazon.com Inc._Claude5
+        - 05-trojan-其他地区_Dublin_Amazon Technologies Inc._Cla
+      type: url-test
+      url: https://www.gstatic.com/generate_204
+    - name: select
+      proxies:
+        - auto
+        - "01-trojan-\U0001F1EE\U0001F1EA [607.5ms +/-1075ms] trojan-281604221"
+        - "02-trojan-\U0001F1EE\U0001F1EA [621.1ms +/-1095ms] trojan-309177205"
+        - 03-trojan-其他地区_Dublin_Amazon.com Inc._Claude3
+        - 04-trojan-其他地区_Dublin_Amazon.com Inc._Claude5
+        - 05-trojan-其他地区_Dublin_Amazon Technologies Inc._Cla
+      type: select
+rules:
+    - DOMAIN-SUFFIX,weixin.qq.com,DIRECT
+    - DOMAIN-SUFFIX,wechat.com,DIRECT
+    - DOMAIN-SUFFIX,weixin.com,DIRECT
+    - DOMAIN-SUFFIX,qq.com,DIRECT
+    - DOMAIN-SUFFIX,tenpay.com,DIRECT
+    - DOMAIN-SUFFIX,gtimg.com,DIRECT
+    - DOMAIN-SUFFIX,qpic.cn,DIRECT
+    - IP-CIDR,127.0.0.0/8,DIRECT,no-resolve
+    - IP-CIDR,10.0.0.0/8,DIRECT,no-resolve
+    - IP-CIDR,172.16.0.0/12,DIRECT,no-resolve
+    - IP-CIDR,192.168.0.0/16,DIRECT,no-resolve
+    - GEOIP,CN,DIRECT,no-resolve
+    - MATCH,select

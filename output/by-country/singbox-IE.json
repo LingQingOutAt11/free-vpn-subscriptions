@@ -1,0 +1,96 @@
+{
+  "outbounds": [
+    {
+      "password": "UO36402987",
+      "server": "54.216.124.178",
+      "server_port": 443,
+      "tag": "01-trojan-🇮🇪 [607.5ms +/-1075ms] trojan-281604221",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "warm-bass.rooster465.autos"
+      },
+      "type": "trojan"
+    },
+    {
+      "password": "ND91608427",
+      "server": "54.217.133.71",
+      "server_port": 443,
+      "tag": "02-trojan-🇮🇪 [621.1ms +/-1095ms] trojan-309177205",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "willing-beagle.rooster465.autos"
+      },
+      "type": "trojan"
+    },
+    {
+      "password": "UO36402987",
+      "server": "34.251.228.118",
+      "server_port": 443,
+      "tag": "03-trojan-其他地区_Dublin_Amazon.com Inc._Claude3",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "definite-ladybird.rooster465.autos"
+      },
+      "type": "trojan"
+    },
+    {
+      "password": "UO36402987",
+      "server": "warm-bass.rooster465.autos",
+      "server_port": 443,
+      "tag": "04-trojan-其他地区_Dublin_Amazon.com Inc._Claude5",
+      "tls": {
+        "enabled": true,
+        "insecure": false,
+        "server_name": ""
+      },
+      "type": "trojan"
+    },
+    {
+      "password": "UO36402987",
+      "server": "definite-ladybird.rooster465.autos",
+      "server_port": 443,
+      "tag": "05-trojan-其他地区_Dublin_Amazon Technologies Inc._Cla",
+      "tls": {
+        "enabled": true,
+        "insecure": false,
+        "server_name": "definite-ladybird.rooster465.autos"
+      },
+      "type": "trojan"
+    },
+    {
+      "interval": "5m",
+      "outbounds": [
+        "01-trojan-🇮🇪 [607.5ms +/-1075ms] trojan-281604221",
+        "02-trojan-🇮🇪 [621.1ms +/-1095ms] trojan-309177205",
+        "03-trojan-其他地区_Dublin_Amazon.com Inc._Claude3",
+        "04-trojan-其他地区_Dublin_Amazon.com Inc._Claude5",
+        "05-trojan-其他地区_Dublin_Amazon Technologies Inc._Cla"
+      ],
+      "tag": "auto",
+      "type": "urltest",
+      "url": "https://www.gstatic.com/generate_204"
+    },
+    {
+      "outbounds": [
+        "auto",
+        "01-trojan-🇮🇪 [607.5ms +/-1075ms] trojan-281604221",
+        "02-trojan-🇮🇪 [621.1ms +/-1095ms] trojan-309177205",
+        "03-trojan-其他地区_Dublin_Amazon.com Inc._Claude3",
+        "04-trojan-其他地区_Dublin_Amazon.com Inc._Claude5",
+        "05-trojan-其他地区_Dublin_Amazon Technologies Inc._Cla"
+      ],
+      "tag": "select",
+      "type": "selector"
+    },
+    {
+      "tag": "direct",
+      "type": "direct"
+    }
+  ],
+  "route": {
+    "final": "select"
+  }
+}
