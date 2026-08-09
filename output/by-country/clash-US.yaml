@@ -1,122 +1,29 @@
 mode: rule
 proxies:
-    - alterId: 0
-      cipher: auto
-      name: "01-vmess-\U0001F1FA\U0001F1F8US-173.249.209.146-0102"
-      network: ws
-      port: 20086
-      server: 173.249.209.146
-      type: vmess
+    - name: 01-vless-美国_Phoenix_Hostinger International Limit
+      network: tcp
+      port: 8443
+      server: 62.72.26.31
+      type: vless
       udp: true
-      uuid: 3935c2dc-dbb0-43f7-b367-fe89abe87fdf
+      uuid: d41090b8-4a53-47cd-817b-9956c3a430d6
     - cipher: chacha20-ietf-poly1305
-      name: 02-shadowsocks-EPODONIOS
+      name: "02-shadowsocks-\U0001F1FA\U0001F1F8 [432.3ms +/-1062ms] shadowsocks-157"
       password: G5p6ww4o67HB
       port: 8388
       server: 108.181.0.177
       type: ss
       udp: true
-    - alterId: 0
-      cipher: auto
-      name: 03-vmess->>@v2ray_configs_pool::US::US::US::US::U
+    - name: "03-vless-\U0001F1FA\U0001F1F8 [604.5ms +/-1641ms] vless-207323022"
       network: tcp
-      port: 443
-      server: 165.140.216.141
-      type: vmess
+      port: 10000
+      server: 180.178.60.252
+      type: vless
       udp: true
-      uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
-    - alterId: 0
-      cipher: auto
-      name: 04-vmess-美国_San Francisco_Xicomm LLC_Claude
-      network: tcp
-      port: 443
-      server: 165.140.216.142
-      type: vmess
-      udp: true
-      uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
+      uuid: 431fe973-a43a-4fac-bf83-2a772e0d0625
     - client-fingerprint: chrome
       flow: xtls-rprx-vision
-      name: "05-vless-\U0001F1FA\U0001F1F8 [536.3ms +/-1179ms] vless-234481661"
-      network: tcp
-      port: 443
-      reality-opts:
-        public-key: 0i_xAxYgSNx5NMpK2lOaWGS-CvAiD_LneYPO0MF0owo
-        short-id: 1a
-      server: 66.175.217.170
-      servername: www.amazon.com
-      tls: true
-      type: vless
-      udp: true
-      uuid: b98d4c6e-6770-4a31-8256-a4750cdea0e7
-    - client-fingerprint: firefox
-      flow: xtls-rprx-vision
-      name: "06-vless-\U0001F1FA\U0001F1F8 US 9"
-      network: tcp
-      port: 443
-      reality-opts:
-        public-key: 0i_xAxYgSNx5NMpK2lOaWGS-CvAiD_LneYPO0MF0owo
-        short-id: 1a
-      server: 186.241.106.97
-      servername: www.amazon.com
-      tls: true
-      type: vless
-      udp: true
-      uuid: b98d4c6e-6770-4a31-8256-a4750cdea0e7
-    - client-fingerprint: chrome
-      name: "07-vless-\U0001F1FA\U0001F1F8 [340.4ms +/-626ms] vless-224664185"
-      network: tcp
-      port: 46197
-      reality-opts:
-        public-key: npJEB6VpYJ9iYTZ-z0IL06Xs7PEz0N3fZU_IRwftQ00
-        short-id: f24c17bb7fc284
-      server: 70.39.197.13
-      servername: updates.cdn-apple.com
-      tls: true
-      type: vless
-      udp: true
-      uuid: 5aab0d40-c509-4560-b048-ade921fdfb6a
-    - client-fingerprint: chrome
-      name: "08-vless-\U0001F1FA\U0001F1F8 [329.0ms +/-605ms] vless-279395531"
-      network: tcp
-      port: 47588
-      reality-opts:
-        public-key: ViI3P61PX_g1Qw5isp6C1ZaGqKQO471V9cCEJwHFpE4
-        short-id: 8b2730e4eb1313
-      server: 179.255.148.66
-      servername: yellowpages.amazon.com
-      tls: true
-      type: vless
-      udp: true
-      uuid: 14be84e2-8b22-42c0-a1ba-3535fc8e9257
-    - client-fingerprint: random
-      name: "09-vless-\U0001F1FA\U0001F1F8 [357.7ms +/-609ms] vless-166253163"
-      network: tcp
-      port: 34045
-      reality-opts:
-        public-key: cDaDzPr3PlS3NM8lreHZbdo-Mhqz8vMBzMSkHXhGIUA
-        short-id: e8ab71d0
-      server: 64.23.143.23
-      servername: visit-this-invitation-link-to-join-tg-enkelte-notif.ekt.me
-      tls: true
-      type: vless
-      udp: true
-      uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a
-    - client-fingerprint: chrome
-      name: "10-vless-\U0001F1FA\U0001F1F8 [336.3ms +/-619ms] vless-270582448"
-      network: tcp
-      port: 25129
-      reality-opts:
-        public-key: e6k1bLp6j0tseHRtnoqDuEsp56GIUWWcXxcv0fEVuTE
-        short-id: 3fc24b3df5
-      server: 179.253.240.24
-      servername: www.sony.cl
-      tls: true
-      type: vless
-      udp: true
-      uuid: 98d58579-9dc4-4e3e-b94e-6a472faf6a41
-    - client-fingerprint: chrome
-      flow: xtls-rprx-vision
-      name: "11-vless-\U0001F1FA\U0001F1F8 US 8"
+      name: "04-vless-\U0001F1FA\U0001F1F8 [283.4ms +/-642ms] vless-65128003"
       network: tcp
       port: 443
       reality-opts:
@@ -129,74 +36,60 @@ proxies:
       udp: true
       uuid: 4e0f4e59-3613-4f0c-b824-7348413d20e6
     - client-fingerprint: chrome
+      name: "05-vless-\U0001F1FA\U0001F1F8 [241.8ms +/-525ms] vless-279395531"
+      network: tcp
+      port: 47588
+      reality-opts:
+        public-key: ViI3P61PX_g1Qw5isp6C1ZaGqKQO471V9cCEJwHFpE4
+        short-id: 8b2730e4eb1313
+      server: 179.255.148.66
+      servername: yellowpages.amazon.com
+      tls: true
+      type: vless
+      udp: true
+      uuid: 14be84e2-8b22-42c0-a1ba-3535fc8e9257
+    - client-fingerprint: chrome
+      name: "06-vless-\U0001F1FA\U0001F1F8 [268.1ms +/-602ms] vless-44765"
+      network: tcp
+      port: 8443
+      reality-opts:
+        public-key: D3ojIs3AUKP_tV0E4TEjh90HBVJp24Nq3qMfdxD30kc
+        short-id: df8611c07d
+      server: 107.173.237.146
+      servername: updates.cdn-apple.com
+      tls: true
+      type: vless
+      udp: true
+      uuid: 1d39f715-2740-4d99-bc3b-197cc48dcee7
+    - client-fingerprint: chrome
+      name: "07-vless-\U0001F1FA\U0001F1F8 [248.5ms +/-539ms] vless-269029061"
+      network: tcp
+      port: 25129
+      reality-opts:
+        public-key: e6k1bLp6j0tseHRtnoqDuEsp56GIUWWcXxcv0fEVuTE
+        short-id: 3fc24b3df5
+      server: 179.253.240.24
+      servername: www.sony.cl
+      tls: true
+      type: vless
+      udp: true
+      uuid: 98d58579-9dc4-4e3e-b94e-6a472faf6a41
+    - client-fingerprint: firefox
       flow: xtls-rprx-vision
-      name: "12-vless-\U0001F1FA\U0001F1F8 US 5"
+      name: "08-vless-\U0001F1FA\U0001F1F8 [248.3ms +/-524ms] vless-305242773"
       network: tcp
       port: 443
       reality-opts:
-        public-key: PRLqQ27t_SqA759-vyfr1OMgcawB5sqUsUdyyEldXTs
-        short-id: abcd1234
-      server: 172.247.109.66
-      servername: www.apple.com
+        public-key: 0i_xAxYgSNx5NMpK2lOaWGS-CvAiD_LneYPO0MF0owo
+        short-id: 1a
+      server: 186.241.106.97
+      servername: www.amazon.com
       tls: true
       type: vless
       udp: true
-      uuid: 92868492-9572-47fa-946c-9e44edeb62ec
-    - cipher: chacha20-ietf-poly1305
-      name: "13-shadowsocks-\U0001F1FA\U0001F1F8US-216.105.168.18-0119"
-      password: hCCWOcIsK5wrFz4OX70rWf
-      port: 443
-      server: 216.105.168.18
-      type: ss
-      udp: true
-    - alterId: 0
-      cipher: auto
-      name: "14-vmess-\U0001F1FA\U0001F1F8 US 34"
-      network: tcp
-      port: 18000
-      server: 169.197.142.22
-      type: vmess
-      udp: true
-      uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+      uuid: b98d4c6e-6770-4a31-8256-a4750cdea0e7
     - client-fingerprint: chrome
-      flow: xtls-rprx-vision
-      name: "15-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-      network: tcp
-      port: 23576
-      reality-opts:
-        public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-        short-id: "01"
-      server: 15.204.97.216
-      servername: fuck.rkn
-      tls: true
-      type: vless
-      udp: true
-      uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-    - client-fingerprint: chrome
-      flow: xtls-rprx-vision
-      name: "16-vless-\U0001F1FA\U0001F1F8 418 - US - VLESS/REALITY/PBK/SID/VISI"
-      network: tcp
-      port: 23576
-      reality-opts:
-        public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-        short-id: "01"
-      server: 15.204.97.214
-      servername: fuck.rkn
-      tls: true
-      type: vless
-      udp: true
-      uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-    - alterId: 0
-      cipher: auto
-      name: 17-vmess-美国_Seattle_DataCamp Limited_Gemini_Claud
-      network: tcp
-      port: 18000
-      server: 84.17.41.2
-      type: vmess
-      udp: true
-      uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-    - client-fingerprint: chrome
-      name: "18-vless-\U0001F1FA\U0001F1F8 [336.2ms +/-572ms] vless-245487954"
+      name: "09-vless-\U0001F1FA\U0001F1F8 [243.4ms +/-522ms] vless-212073511"
       network: tcp
       port: 46197
       reality-opts:
@@ -208,29 +101,21 @@ proxies:
       type: vless
       udp: true
       uuid: 5aab0d40-c509-4560-b048-ade921fdfb6a
-    - client-fingerprint: firefox
-      flow: xtls-rprx-vision
-      name: "19-vless-\U0001F1FA\U0001F1F8 [335.9ms +/-660ms] vless-252739617"
+    - client-fingerprint: chrome
+      name: "10-vless-\U0001F1FA\U0001F1F8 US 7"
       network: tcp
-      port: 443
+      port: 46197
       reality-opts:
-        public-key: 4-qE0E0B5ShfnAe0KFM0qRkXJ33rRF39AlHK7MpBzAE
-        short-id: 4c5a76834671
-      server: 185.164.111.48
-      servername: www.cloudflare.com
+        public-key: npJEB6VpYJ9iYTZ-z0IL06Xs7PEz0N3fZU_IRwftQ00
+        short-id: f24c17bb7fc284
+      server: 70.39.197.13
+      servername: updates.cdn-apple.com
       tls: true
       type: vless
       udp: true
-      uuid: 59eefc04-b831-45cf-8d68-63ca23381171
-    - cipher: aes-128-gcm
-      name: "20-shadowsocks-US \U0001F1FA\U0001F1F8 | @Raydikalx | C86ABA"
-      password: shadowsocks
-      port: 443
-      server: 173.244.56.6
-      type: ss
-      udp: true
+      uuid: 5aab0d40-c509-4560-b048-ade921fdfb6a
     - client-fingerprint: chrome
-      name: "21-vless-\U0001F1FA\U0001F1F8 [373.7ms +/-734ms] vless-245487957"
+      name: "11-vless-\U0001F1FA\U0001F1F8 [249.0ms +/-524ms] vless-211487808"
       network: tcp
       port: 46197
       reality-opts:
@@ -243,69 +128,121 @@ proxies:
       udp: true
       uuid: 5aab0d40-c509-4560-b048-ade921fdfb6a
     - cipher: aes-128-gcm
-      name: 22-shadowsocks-EPODONIOS
+      name: "12-shadowsocks-US \U0001F1FA\U0001F1F8 | @Raydikalx | C86ABA"
+      password: shadowsocks
+      port: 443
+      server: 173.244.56.6
+      type: ss
+      udp: true
+    - cipher: aes-128-gcm
+      name: "13-shadowsocks-\U0001F1FA\U0001F1F8US-173.244.56.9-0062"
       password: shadowsocks
       port: 443
       server: 173.244.56.9
       type: ss
       udp: true
+    - cipher: aes-128-gcm
+      name: "14-shadowsocks-\U0001F1FA\U0001F1F8US-156.146.38.167-0069"
+      password: shadowsocks
+      port: 443
+      server: 156.146.38.167
+      type: ss
+      udp: true
+    - cipher: aes-128-gcm
+      name: 15-shadowsocks-EPODONIOS
+      password: shadowsocks
+      port: 443
+      server: 156.146.38.169
+      type: ss
+      udp: true
+    - cipher: aes-128-gcm
+      name: "16-shadowsocks-US \U0001F1FA\U0001F1F8 | @Raydikalx | FEA075"
+      password: shadowsocks
+      port: 443
+      server: 156.146.38.170
+      type: ss
+      udp: true
+    - cipher: aes-128-gcm
+      name: 17-shadowsocks-EPODONIOS
+      password: shadowsocks
+      port: 443
+      server: 156.146.38.168
+      type: ss
+      udp: true
+    - cipher: chacha20-ietf-poly1305
+      name: "18-shadowsocks-\U0001F1FA\U0001F1F8US-216.105.168.18-0119"
+      password: hCCWOcIsK5wrFz4OX70rWf
+      port: 443
+      server: 216.105.168.18
+      type: ss
+      udp: true
+    - name: "19-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+      network: ws
+      port: 443
+      server: 170.114.46.6
+      servername: support.zoom.us.yxls.eu.cc
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: 5aafc2be-9348-4dec-b896-f4a91253bbca
     - alterId: 0
       cipher: auto
-      name: "23-vmess-\U0001F1FA\U0001F1F8 US 1"
+      name: "20-vmess-\U0001F1FA\U0001F1F8US-173.249.209.146-0102"
       network: ws
-      port: 39495
-      server: 129.146.77.248
+      port: 20086
+      server: 173.249.209.146
       type: vmess
       udp: true
-      uuid: f836c736-87fc-4fde-aabc-00857ecdff3e
-    - name: "24-trojan-\U0001F1FA\U0001F1F8 [445.2ms +/-806ms] trojan-331180962"
-      password: ND91608427
+      uuid: 3935c2dc-dbb0-43f7-b367-fe89abe87fdf
+    - alterId: 0
+      cipher: auto
+      name: 21-vmess->>@v2ray_configs_pool::US::US::US::US::U
+      network: tcp
       port: 443
-      server: 44.242.235.129
-      skip-cert-verify: true
-      sni: devoted-tapir.rooster465.autos
-      type: trojan
+      server: 165.140.216.141
+      type: vmess
       udp: true
-    - name: "25-trojan-\U0001F1FA\U0001F1F8 [427.2ms +/-738ms] trojan-307470929"
-      password: ND91608427
-      port: 443
-      server: 44.244.3.114
-      skip-cert-verify: true
-      sni: pet-ghost.rooster465.autos
-      type: trojan
+      uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
+    - alterId: 0
+      cipher: auto
+      name: "22-vmess-US \U0001F1FA\U0001F1F8 | @Raydikalx | E38DDB"
+      network: tcp
+      port: 18000
+      server: 169.197.142.22
+      type: vmess
       udp: true
-    - name: 26-trojan-美国_Portland_Amazon.com Inc._Gemini_Claud
-      password: ND91608427
-      port: 443
-      server: 35.86.90.51
-      skip-cert-verify: true
-      sni: natural-collie.rooster465.autos
-      type: trojan
-      udp: true
-    - name: "27-trojan-\U0001F1FA\U0001F1F8 [404.9ms +/-695ms] trojan-277396507"
-      password: ND91608427
-      port: 443
-      server: 44.246.163.102
-      skip-cert-verify: true
-      sni: fleet-bonefish.rooster465.autos
-      type: trojan
-      udp: true
-    - name: "28-vless-\U0001F1FA\U0001F1F8[openproxylist.com] vless-US"
+      uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+    - name: "23-vless-\U0001F1FA\U0001F1F8[openproxylist.com] vless-US"
       network: tcp
       port: 59216
       server: 70.39.197.9
       type: vless
       udp: true
       uuid: 0bcec952-a452-43ed-9468-4547b9f5dfc4
+    - cipher: aes-256-gcm
+      name: "24-shadowsocks-\U0001F1FA\U0001F1F8 [485.9ms +/-710ms] shadowsocks-11085"
+      password: faBAoD54k87UJG7
+      port: 2375
+      server: 172.245.235.84
+      type: ss
+      udp: true
     - cipher: chacha20-ietf-poly1305
-      name: 29-shadowsocks-EPODONIOS
+      name: 25-shadowsocks-EPODONIOS
       password: jiUTzfdPo7fW
       port: 42747
       server: 70.39.178.204
       type: ss
       udp: true
+    - name: 26-vless-美国_Los Angeles_SICLOUD INFORMATION TECHN
+      network: tcp
+      port: 52535
+      server: 154.19.184.40
+      type: vless
+      udp: true
+      uuid: a1ac8747-4fd7-486b-b099-19fbb45610be
     - client-fingerprint: chrome
-      name: "30-vless-\U0001F1FA\U0001F1F8 US 64"
+      name: "27-vless-\U0001F1FA\U0001F1F8 [593.3ms +/-604ms] vless-234984375"
       network: tcp
       port: 46197
       reality-opts:
@@ -317,97 +254,28 @@ proxies:
       type: vless
       udp: true
       uuid: 5aab0d40-c509-4560-b048-ade921fdfb6a
-    - client-fingerprint: firefox
+    - client-fingerprint: qq
       flow: xtls-rprx-vision
-      name: "31-vless-\U0001F1FA\U0001F1F8 US 95"
-      network: tcp
-      port: 8443
-      reality-opts:
-        public-key: mr5AF0LFyDzYDRoYAwH6QNcHXL77-LoiwRx50ZzU8QU
-        short-id: ""
-      server: 31.58.50.200
-      servername: tradingview.com
-      tls: true
-      type: vless
-      udp: true
-      uuid: 5ef4b1d5-1039-4d26-99c8-7b5d5b570819
-    - client-fingerprint: chrome
-      flow: xtls-rprx-vision
-      name: "32-vless-\U0001F1FA\U0001F1F8[openproxylist.com] vless-US"
+      name: "28-vless-\U0001F1FA\U0001F1F8 [450.7ms +/-853ms] vless-16910"
       network: tcp
       port: 443
       reality-opts:
-        public-key: aBNWkd8CVkuimbtzgsDNsIUIENI-PQuKkpUInLncz2o
-        short-id: fdda9806fe5d8584
-      server: 89.185.80.195
-      servername: 5us.skorostnet.space
+        public-key: AYL1z7PNyo6LqYLeZpXa50FnK9eEu7o18KHRhOlST1w
+        short-id: bd72
+      server: 216.227.169.104
+      servername: deepl.com
       tls: true
       type: vless
       udp: true
-      uuid: c04bf2df-2b7f-44da-a893-3792d3910fd8
+      uuid: b8794f67-80d9-4124-8fc5-2d2ce5516573
     - cipher: chacha20-ietf-poly1305
-      name: 33-shadowsocks-EPODONIOS
+      name: 29-shadowsocks-EPODONIOS
       password: EvLfWGe0AKvK
       port: 54166
       server: 70.39.198.35
       type: ss
       udp: true
-    - name: "34-trojan-\U0001F1FA\U0001F1F8US-157.254.38.210-0237"
-      password: 41c406e2-12b5-41f2-a329-d0621052d675
-      port: 20129
-      server: hkdcrtc-e.catcat321.com
-      skip-cert-verify: false
-      sni: hk.catxstar.com
-      type: trojan
-      udp: true
-    - name: 35-trojan-北美地区 V2CROSS.COM
-      password: humanity
-      port: 443
-      server: 198.62.62.23
-      skip-cert-verify: false
-      sni: www.calmlunch.com
-      type: trojan
-      udp: true
-    - name: "36-trojan-\U0001F1FA\U0001F1F8US-157.254.38.210-0480"
-      password: 41c406e2-12b5-41f2-a329-d0621052d675
-      port: 20066
-      server: oplosgru-c.catcat321.com
-      skip-cert-verify: false
-      sni: hk.catxstar.com
-      type: trojan
-      udp: true
-    - name: 37-vless-美国_Phoenix_Hostinger International Limit
-      network: tcp
-      port: 8443
-      server: 62.72.26.31
-      type: vless
-      udp: true
-      uuid: d41090b8-4a53-47cd-817b-9956c3a430d6
-    - name: 38-trojan-英国_London_Catixs Ltd_Claude2
-      password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
-      port: 20041
-      server: 157.254.38.210
-      skip-cert-verify: true
-      sni: de.catxstar.com
-      type: trojan
-      udp: true
-    - name: 39-trojan-英国_London_Catixs Ltd_Claude3
-      password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
-      port: 20041
-      server: Hkdcrtc-e.catcat321.com
-      skip-cert-verify: true
-      sni: de.catxstar.com
-      type: trojan
-      udp: true
-    - name: "40-trojan-\U0001F1EC\U0001F1E7 英国 | GBR 2"
-      password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
-      port: 20041
-      server: hkdcrtc-e.catcat321.com
-      skip-cert-verify: true
-      sni: de.catxstar.com
-      type: trojan
-      udp: true
-    - name: "41-vless-\U0001F1EC\U0001F1E7[openproxylist.com] vless-GB"
+    - name: "30-vless-\U0001F3F3️ \U0001F4A5Config_jo-216"
       network: ws
       port: 443
       server: 140.248.186.45
@@ -416,8 +284,26 @@ proxies:
       tls: true
       type: vless
       udp: true
-      uuid: XpnTeam-19
-    - name: "42-trojan-\U0001F1FA\U0001F1F8 US 96"
+      uuid: XpnTeam-21
+    - name: "31-trojan-\U0001F1EE\U0001F1F3[openproxylist.com] trojan-IN"
+      password: 41c406e2-12b5-41f2-a329-d0621052d675
+      port: 20034
+      server: oplosgru-c.catcat321.com
+      skip-cert-verify: false
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: "32-vless-\U0001F1F9\U0001F1ED[openproxylist.com] vless-TH"
+      network: ws
+      port: 443
+      server: www.true.th
+      servername: d1yxsk0zprgivr.cloudfront.net
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: 7ce54bb3-d612-4aa7-be08-089d3c461d53
+    - name: "33-trojan-\U0001F1FA\U0001F1F8 US 32"
       password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
       port: 20004
       server: 157.254.38.210
@@ -425,108 +311,81 @@ proxies:
       sni: hk.catxstar.com
       type: trojan
       udp: true
-    - name: "43-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-      network: ws
-      port: 80
-      server: www.true.th
-      type: vless
-      udp: true
-      uuid: 63ae5b68-f6f8-432e-b440-d975053cfbc2
 proxy-groups:
     - interval: 300
       name: auto
       proxies:
-        - "01-vmess-\U0001F1FA\U0001F1F8US-173.249.209.146-0102"
-        - 02-shadowsocks-EPODONIOS
-        - 03-vmess->>@v2ray_configs_pool::US::US::US::US::U
-        - 04-vmess-美国_San Francisco_Xicomm LLC_Claude
-        - "05-vless-\U0001F1FA\U0001F1F8 [536.3ms +/-1179ms] vless-234481661"
-        - "06-vless-\U0001F1FA\U0001F1F8 US 9"
-        - "07-vless-\U0001F1FA\U0001F1F8 [340.4ms +/-626ms] vless-224664185"
-        - "08-vless-\U0001F1FA\U0001F1F8 [329.0ms +/-605ms] vless-279395531"
-        - "09-vless-\U0001F1FA\U0001F1F8 [357.7ms +/-609ms] vless-166253163"
-        - "10-vless-\U0001F1FA\U0001F1F8 [336.3ms +/-619ms] vless-270582448"
-        - "11-vless-\U0001F1FA\U0001F1F8 US 8"
-        - "12-vless-\U0001F1FA\U0001F1F8 US 5"
-        - "13-shadowsocks-\U0001F1FA\U0001F1F8US-216.105.168.18-0119"
-        - "14-vmess-\U0001F1FA\U0001F1F8 US 34"
-        - "15-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-        - "16-vless-\U0001F1FA\U0001F1F8 418 - US - VLESS/REALITY/PBK/SID/VISI"
-        - 17-vmess-美国_Seattle_DataCamp Limited_Gemini_Claud
-        - "18-vless-\U0001F1FA\U0001F1F8 [336.2ms +/-572ms] vless-245487954"
-        - "19-vless-\U0001F1FA\U0001F1F8 [335.9ms +/-660ms] vless-252739617"
-        - "20-shadowsocks-US \U0001F1FA\U0001F1F8 | @Raydikalx | C86ABA"
-        - "21-vless-\U0001F1FA\U0001F1F8 [373.7ms +/-734ms] vless-245487957"
-        - 22-shadowsocks-EPODONIOS
-        - "23-vmess-\U0001F1FA\U0001F1F8 US 1"
-        - "24-trojan-\U0001F1FA\U0001F1F8 [445.2ms +/-806ms] trojan-331180962"
-        - "25-trojan-\U0001F1FA\U0001F1F8 [427.2ms +/-738ms] trojan-307470929"
-        - 26-trojan-美国_Portland_Amazon.com Inc._Gemini_Claud
-        - "27-trojan-\U0001F1FA\U0001F1F8 [404.9ms +/-695ms] trojan-277396507"
-        - "28-vless-\U0001F1FA\U0001F1F8[openproxylist.com] vless-US"
+        - 01-vless-美国_Phoenix_Hostinger International Limit
+        - "02-shadowsocks-\U0001F1FA\U0001F1F8 [432.3ms +/-1062ms] shadowsocks-157"
+        - "03-vless-\U0001F1FA\U0001F1F8 [604.5ms +/-1641ms] vless-207323022"
+        - "04-vless-\U0001F1FA\U0001F1F8 [283.4ms +/-642ms] vless-65128003"
+        - "05-vless-\U0001F1FA\U0001F1F8 [241.8ms +/-525ms] vless-279395531"
+        - "06-vless-\U0001F1FA\U0001F1F8 [268.1ms +/-602ms] vless-44765"
+        - "07-vless-\U0001F1FA\U0001F1F8 [248.5ms +/-539ms] vless-269029061"
+        - "08-vless-\U0001F1FA\U0001F1F8 [248.3ms +/-524ms] vless-305242773"
+        - "09-vless-\U0001F1FA\U0001F1F8 [243.4ms +/-522ms] vless-212073511"
+        - "10-vless-\U0001F1FA\U0001F1F8 US 7"
+        - "11-vless-\U0001F1FA\U0001F1F8 [249.0ms +/-524ms] vless-211487808"
+        - "12-shadowsocks-US \U0001F1FA\U0001F1F8 | @Raydikalx | C86ABA"
+        - "13-shadowsocks-\U0001F1FA\U0001F1F8US-173.244.56.9-0062"
+        - "14-shadowsocks-\U0001F1FA\U0001F1F8US-156.146.38.167-0069"
+        - 15-shadowsocks-EPODONIOS
+        - "16-shadowsocks-US \U0001F1FA\U0001F1F8 | @Raydikalx | FEA075"
+        - 17-shadowsocks-EPODONIOS
+        - "18-shadowsocks-\U0001F1FA\U0001F1F8US-216.105.168.18-0119"
+        - "19-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+        - "20-vmess-\U0001F1FA\U0001F1F8US-173.249.209.146-0102"
+        - 21-vmess->>@v2ray_configs_pool::US::US::US::US::U
+        - "22-vmess-US \U0001F1FA\U0001F1F8 | @Raydikalx | E38DDB"
+        - "23-vless-\U0001F1FA\U0001F1F8[openproxylist.com] vless-US"
+        - "24-shadowsocks-\U0001F1FA\U0001F1F8 [485.9ms +/-710ms] shadowsocks-11085"
+        - 25-shadowsocks-EPODONIOS
+        - 26-vless-美国_Los Angeles_SICLOUD INFORMATION TECHN
+        - "27-vless-\U0001F1FA\U0001F1F8 [593.3ms +/-604ms] vless-234984375"
+        - "28-vless-\U0001F1FA\U0001F1F8 [450.7ms +/-853ms] vless-16910"
         - 29-shadowsocks-EPODONIOS
-        - "30-vless-\U0001F1FA\U0001F1F8 US 64"
-        - "31-vless-\U0001F1FA\U0001F1F8 US 95"
-        - "32-vless-\U0001F1FA\U0001F1F8[openproxylist.com] vless-US"
-        - 33-shadowsocks-EPODONIOS
-        - "34-trojan-\U0001F1FA\U0001F1F8US-157.254.38.210-0237"
-        - 35-trojan-北美地区 V2CROSS.COM
-        - "36-trojan-\U0001F1FA\U0001F1F8US-157.254.38.210-0480"
-        - 37-vless-美国_Phoenix_Hostinger International Limit
-        - 38-trojan-英国_London_Catixs Ltd_Claude2
-        - 39-trojan-英国_London_Catixs Ltd_Claude3
-        - "40-trojan-\U0001F1EC\U0001F1E7 英国 | GBR 2"
-        - "41-vless-\U0001F1EC\U0001F1E7[openproxylist.com] vless-GB"
-        - "42-trojan-\U0001F1FA\U0001F1F8 US 96"
-        - "43-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+        - "30-vless-\U0001F3F3️ \U0001F4A5Config_jo-216"
+        - "31-trojan-\U0001F1EE\U0001F1F3[openproxylist.com] trojan-IN"
+        - "32-vless-\U0001F1F9\U0001F1ED[openproxylist.com] vless-TH"
+        - "33-trojan-\U0001F1FA\U0001F1F8 US 32"
       type: url-test
       url: https://www.gstatic.com/generate_204
     - name: select
       proxies:
         - auto
-        - "01-vmess-\U0001F1FA\U0001F1F8US-173.249.209.146-0102"
-        - 02-shadowsocks-EPODONIOS
-        - 03-vmess->>@v2ray_configs_pool::US::US::US::US::U
-        - 04-vmess-美国_San Francisco_Xicomm LLC_Claude
-        - "05-vless-\U0001F1FA\U0001F1F8 [536.3ms +/-1179ms] vless-234481661"
-        - "06-vless-\U0001F1FA\U0001F1F8 US 9"
-        - "07-vless-\U0001F1FA\U0001F1F8 [340.4ms +/-626ms] vless-224664185"
-        - "08-vless-\U0001F1FA\U0001F1F8 [329.0ms +/-605ms] vless-279395531"
-        - "09-vless-\U0001F1FA\U0001F1F8 [357.7ms +/-609ms] vless-166253163"
-        - "10-vless-\U0001F1FA\U0001F1F8 [336.3ms +/-619ms] vless-270582448"
-        - "11-vless-\U0001F1FA\U0001F1F8 US 8"
-        - "12-vless-\U0001F1FA\U0001F1F8 US 5"
-        - "13-shadowsocks-\U0001F1FA\U0001F1F8US-216.105.168.18-0119"
-        - "14-vmess-\U0001F1FA\U0001F1F8 US 34"
-        - "15-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
-        - "16-vless-\U0001F1FA\U0001F1F8 418 - US - VLESS/REALITY/PBK/SID/VISI"
-        - 17-vmess-美国_Seattle_DataCamp Limited_Gemini_Claud
-        - "18-vless-\U0001F1FA\U0001F1F8 [336.2ms +/-572ms] vless-245487954"
-        - "19-vless-\U0001F1FA\U0001F1F8 [335.9ms +/-660ms] vless-252739617"
-        - "20-shadowsocks-US \U0001F1FA\U0001F1F8 | @Raydikalx | C86ABA"
-        - "21-vless-\U0001F1FA\U0001F1F8 [373.7ms +/-734ms] vless-245487957"
-        - 22-shadowsocks-EPODONIOS
-        - "23-vmess-\U0001F1FA\U0001F1F8 US 1"
-        - "24-trojan-\U0001F1FA\U0001F1F8 [445.2ms +/-806ms] trojan-331180962"
-        - "25-trojan-\U0001F1FA\U0001F1F8 [427.2ms +/-738ms] trojan-307470929"
-        - 26-trojan-美国_Portland_Amazon.com Inc._Gemini_Claud
-        - "27-trojan-\U0001F1FA\U0001F1F8 [404.9ms +/-695ms] trojan-277396507"
-        - "28-vless-\U0001F1FA\U0001F1F8[openproxylist.com] vless-US"
+        - 01-vless-美国_Phoenix_Hostinger International Limit
+        - "02-shadowsocks-\U0001F1FA\U0001F1F8 [432.3ms +/-1062ms] shadowsocks-157"
+        - "03-vless-\U0001F1FA\U0001F1F8 [604.5ms +/-1641ms] vless-207323022"
+        - "04-vless-\U0001F1FA\U0001F1F8 [283.4ms +/-642ms] vless-65128003"
+        - "05-vless-\U0001F1FA\U0001F1F8 [241.8ms +/-525ms] vless-279395531"
+        - "06-vless-\U0001F1FA\U0001F1F8 [268.1ms +/-602ms] vless-44765"
+        - "07-vless-\U0001F1FA\U0001F1F8 [248.5ms +/-539ms] vless-269029061"
+        - "08-vless-\U0001F1FA\U0001F1F8 [248.3ms +/-524ms] vless-305242773"
+        - "09-vless-\U0001F1FA\U0001F1F8 [243.4ms +/-522ms] vless-212073511"
+        - "10-vless-\U0001F1FA\U0001F1F8 US 7"
+        - "11-vless-\U0001F1FA\U0001F1F8 [249.0ms +/-524ms] vless-211487808"
+        - "12-shadowsocks-US \U0001F1FA\U0001F1F8 | @Raydikalx | C86ABA"
+        - "13-shadowsocks-\U0001F1FA\U0001F1F8US-173.244.56.9-0062"
+        - "14-shadowsocks-\U0001F1FA\U0001F1F8US-156.146.38.167-0069"
+        - 15-shadowsocks-EPODONIOS
+        - "16-shadowsocks-US \U0001F1FA\U0001F1F8 | @Raydikalx | FEA075"
+        - 17-shadowsocks-EPODONIOS
+        - "18-shadowsocks-\U0001F1FA\U0001F1F8US-216.105.168.18-0119"
+        - "19-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+        - "20-vmess-\U0001F1FA\U0001F1F8US-173.249.209.146-0102"
+        - 21-vmess->>@v2ray_configs_pool::US::US::US::US::U
+        - "22-vmess-US \U0001F1FA\U0001F1F8 | @Raydikalx | E38DDB"
+        - "23-vless-\U0001F1FA\U0001F1F8[openproxylist.com] vless-US"
+        - "24-shadowsocks-\U0001F1FA\U0001F1F8 [485.9ms +/-710ms] shadowsocks-11085"
+        - 25-shadowsocks-EPODONIOS
+        - 26-vless-美国_Los Angeles_SICLOUD INFORMATION TECHN
+        - "27-vless-\U0001F1FA\U0001F1F8 [593.3ms +/-604ms] vless-234984375"
+        - "28-vless-\U0001F1FA\U0001F1F8 [450.7ms +/-853ms] vless-16910"
         - 29-shadowsocks-EPODONIOS
-        - "30-vless-\U0001F1FA\U0001F1F8 US 64"
-        - "31-vless-\U0001F1FA\U0001F1F8 US 95"
-        - "32-vless-\U0001F1FA\U0001F1F8[openproxylist.com] vless-US"
-        - 33-shadowsocks-EPODONIOS
-        - "34-trojan-\U0001F1FA\U0001F1F8US-157.254.38.210-0237"
-        - 35-trojan-北美地区 V2CROSS.COM
-        - "36-trojan-\U0001F1FA\U0001F1F8US-157.254.38.210-0480"
-        - 37-vless-美国_Phoenix_Hostinger International Limit
-        - 38-trojan-英国_London_Catixs Ltd_Claude2
-        - 39-trojan-英国_London_Catixs Ltd_Claude3
-        - "40-trojan-\U0001F1EC\U0001F1E7 英国 | GBR 2"
-        - "41-vless-\U0001F1EC\U0001F1E7[openproxylist.com] vless-GB"
-        - "42-trojan-\U0001F1FA\U0001F1F8 US 96"
-        - "43-vless-\U0001F525Join Telegram:@Farah_VPN\U0001F7E3"
+        - "30-vless-\U0001F3F3️ \U0001F4A5Config_jo-216"
+        - "31-trojan-\U0001F1EE\U0001F1F3[openproxylist.com] trojan-IN"
+        - "32-vless-\U0001F1F9\U0001F1ED[openproxylist.com] vless-TH"
+        - "33-trojan-\U0001F1FA\U0001F1F8 US 32"
       type: select
 rules:
     - DOMAIN-SUFFIX,weixin.qq.com,DIRECT
