@@ -1,19 +1,24 @@
 # Discovered Public Sources
 
-- Generated at: `2026-08-11T04:53:44Z`
-- Searched repos: `44`
-- Candidates: `1`
+- Generated at: `2026-08-12T05:18:42Z`
+- Searched repos: `49`
+- Candidates: `2`
 
 | Name | Format | Parsed nodes | Raw URL |
 | --- | --- | ---: | --- |
-| `ziabelle18-krizziavpn-clash` | `clash` | 22 | `https://raw.githubusercontent.com/Ziabelle18/KrizziaVPN/main/clash.yaml` |
+| `alexantswe-v2ray-config-all-configs-sub` | `uri-list` | 1290 | `https://raw.githubusercontent.com/alexantSWE/V2ray-Config/main/All_Configs_Sub.txt` |
+| `argh73-vpnconfigcollector-all-configs-sub` | `uri-list` | 1009 | `https://raw.githubusercontent.com/Argh73/VpnConfigCollector/main/All_Configs_Sub.txt` |
 
 ## Copy-ready entries
 
 ```yaml
 sources:
-  - name: ziabelle18-krizziavpn-clash
-    url: https://raw.githubusercontent.com/Ziabelle18/KrizziaVPN/main/clash.yaml
-    format: clash
+  - name: alexantswe-v2ray-config-all-configs-sub
+    url: https://raw.githubusercontent.com/alexantSWE/V2ray-Config/main/All_Configs_Sub.txt
+    format: uri-list
+    enabled: false
+  - name: argh73-vpnconfigcollector-all-configs-sub
+    url: https://raw.githubusercontent.com/Argh73/VpnConfigCollector/main/All_Configs_Sub.txt
+    format: uri-list
     enabled: false
 ```
